@@ -4,6 +4,7 @@ const AIRCRAFT_IMAGES_URL = "data/aircraft-images.json";
 const IMAGERY_TILE_URL = "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}";
 const TILE_SIZE = 256;
 const MAX_LAT = 85.05112878;
+const MAX_CENTER_LAT = 89.5;
 const WHEEL_ZOOM_SENSITIVITY = 0.0015;
 const MAX_WHEEL_ZOOM_STEP = 0.2;
 const BUTTON_ZOOM_STEP = 0.25;
@@ -11,6 +12,24 @@ const DOUBLE_CLICK_ZOOM_STEP = 0.5;
 const FIT_SAMPLE_LIMIT = 700;
 const FIT_ZOOM_BREATHING_ROOM = 0.18;
 const FIT_EDGE_CLEARANCE = 4;
+const DOMAINS = {
+  flights: { label: "Flights", singular: "Flight" },
+  sailing: { label: "Sailing", singular: "Sailing journey" },
+  rail: { label: "Rail", singular: "Rail journey" },
+  "road-races": { label: "Road / Races", singular: "Road journey" },
+  overland: { label: "Overland", singular: "Overland journey" },
+  "ocean-liners": { label: "Ocean Liners", singular: "Ocean voyage" },
+  river: { label: "River", singular: "River journey" },
+  "human-powered": { label: "Human Powered", singular: "Human-powered journey" },
+};
+
+function inferredLine(properties, trackType) {
+  if (!trackType) return properties.quality.includes("illustrative");
+  return trackType === "waypoint-interpolation"
+    || properties.geometry_confidence?.toLowerCase() === "low";
+}
+const EMPTY_COLLECTION = { type: "FeatureCollection", features: [] };
+const researchCache = new Map();
 
 const THEMES = {
   satellite: {
@@ -151,9 +170,9 @@ class CanvasSlippyMap {
     return TILE_SIZE * 2 ** zoom;
   }
 
-  project(lon, lat, zoom = this.zoom) {
+  project(lon, lat, zoom = this.zoom, maxLatitude = MAX_LAT) {
     const size = this.worldSize(zoom);
-    const safeLat = clamp(lat, -MAX_LAT, MAX_LAT);
+    const safeLat = clamp(lat, -maxLatitude, maxLatitude);
     const sin = Math.sin(safeLat * Math.PI / 180);
     return {
       x: (lon + 180) / 360 * size,
@@ -166,7 +185,7 @@ class CanvasSlippyMap {
     const lon = x / size * 360 - 180;
     const n = Math.PI - 2 * Math.PI * y / size;
     const lat = 180 / Math.PI * Math.atan(Math.sinh(n));
-    return { lon: normalizeLon(lon), lat: clamp(lat, -MAX_LAT, MAX_LAT) };
+    return { lon: normalizeLon(lon), lat: clamp(lat, -MAX_CENTER_LAT, MAX_CENTER_LAT) };
   }
 
   resize() {
@@ -217,7 +236,7 @@ class CanvasSlippyMap {
   }
 
   setView(lon, lat, zoom) {
-    this.center = { lon: normalizeLon(lon), lat: clamp(lat, -MAX_LAT, MAX_LAT) };
+    this.center = { lon: normalizeLon(lon), lat: clamp(lat, -MAX_CENTER_LAT, MAX_CENTER_LAT) };
     this.zoom = clamp(zoom, this.minZoom, this.maxZoom);
     this.updateReadout();
     this.requestRender();
@@ -227,9 +246,9 @@ class CanvasSlippyMap {
     const oldZoom = this.zoom;
     const newZoom = clamp(oldZoom + delta, this.minZoom, this.maxZoom);
     if (Math.abs(newZoom - oldZoom) < 0.001) return;
-    const oldCenter = this.project(this.center.lon, this.center.lat, oldZoom);
+    const oldCenter = this.project(this.center.lon, this.center.lat, oldZoom, MAX_CENTER_LAT);
     const anchorGeo = this.unproject(oldCenter.x + anchorX - this.width / 2, oldCenter.y + anchorY - this.height / 2, oldZoom);
-    const newAnchor = this.project(anchorGeo.lon, anchorGeo.lat, newZoom);
+    const newAnchor = this.project(anchorGeo.lon, anchorGeo.lat, newZoom, MAX_CENTER_LAT);
     const newCenter = this.unproject(newAnchor.x - anchorX + this.width / 2, newAnchor.y - anchorY + this.height / 2, newZoom);
     this.center = newCenter;
     this.zoom = newZoom;
@@ -382,12 +401,12 @@ class CanvasSlippyMap {
       const y = point.y * scale + translateY;
       return pointInPolygon(x, y, polygon) && distanceToPolygon(x, y, polygon) >= FIT_EDGE_CLEARANCE;
     });
-    const shiftAllowance = (translateX, translateY, directionX, directionY) => {
+    const shiftAllowance = (translateX, translateY, directionX, directionY, fits = translationFits) => {
       let low = 0;
       let high = Math.max(this.width, this.height);
       for (let iteration = 0; iteration < 14; iteration += 1) {
         const distance = (low + high) / 2;
-        if (translationFits(translateX + directionX * distance, translateY + directionY * distance)) low = distance;
+        if (fits(translateX + directionX * distance, translateY + directionY * distance)) low = distance;
         else high = distance;
       }
       return low;
@@ -400,6 +419,68 @@ class CanvasSlippyMap {
       const downRoom = shiftAllowance(placement.translateX, placement.translateY, 0, 1);
       placement.translateY += (downRoom - upRoom) / 2;
     }
+    const roomAt = (translateX, translateY) => ({
+      left: shiftAllowance(translateX, translateY, -1, 0),
+      right: shiftAllowance(translateX, translateY, 1, 0),
+      up: shiftAllowance(translateX, translateY, 0, -1),
+      down: shiftAllowance(translateX, translateY, 0, 1),
+    });
+    const roomImbalance = (room) => Math.max(
+      Math.abs(room.left - room.right),
+      Math.abs(room.up - room.down),
+    );
+    // An L-shaped viewport can make horizontal and vertical centering coupled:
+    // shifting just past the detail-card corner may open much more vertical room.
+    let bestBalance = roomImbalance(roomAt(placement.translateX, placement.translateY));
+    if (bestBalance > Math.max(14, Math.min(this.width, this.height) * 0.045)) {
+      const originalX = placement.translateX;
+      const originalY = placement.translateY;
+      for (const dx of [-64, -32, -16, -8, -4, -2, 2, 4, 8, 16, 32, 64]) {
+        const translateX = originalX + dx;
+        if (!translationFits(translateX, originalY)) continue;
+        const up = shiftAllowance(translateX, originalY, 0, -1);
+        const down = shiftAllowance(translateX, originalY, 0, 1);
+        const translateY = originalY + (down - up) / 2;
+        if (!translationFits(translateX, translateY)) continue;
+        const imbalance = roomImbalance(roomAt(translateX, translateY));
+        if (imbalance < bestBalance) {
+          bestBalance = imbalance;
+          placement.translateX = translateX;
+          placement.translateY = translateY;
+        }
+      }
+    }
+    // The safety clearance can change abruptly at a concave card corner. Use
+    // the visible polygon to judge balance, but keep the clearance for every
+    // candidate placement.
+    const insideFits = (translateX, translateY) => points.every((point) =>
+      pointInPolygon(point.x * scale + translateX, point.y * scale + translateY, polygon));
+    const visualRoomAt = (translateX, translateY) => ({
+      left: shiftAllowance(translateX, translateY, -1, 0, insideFits),
+      right: shiftAllowance(translateX, translateY, 1, 0, insideFits),
+      up: shiftAllowance(translateX, translateY, 0, -1, insideFits),
+      down: shiftAllowance(translateX, translateY, 0, 1, insideFits),
+    });
+    const visualRoom = visualRoomAt(placement.translateX, placement.translateY);
+    let visualImbalance = roomImbalance(visualRoom);
+    if (visualImbalance > Math.max(14, Math.min(this.width, this.height) * 0.045)) {
+      const originalX = placement.translateX;
+      const originalY = placement.translateY;
+      const targetY = (visualRoom.down - visualRoom.up) / 2;
+      for (const dx of [0, -2, 2, -4, 4, -8, 8, -16, 16, -32, 32, -64, 64]) {
+        for (const fraction of [1, 0.75, 0.5, 0.25]) {
+          const translateX = originalX + dx;
+          const translateY = originalY + targetY * fraction;
+          if (!translationFits(translateX, translateY)) continue;
+          const imbalance = roomImbalance(visualRoomAt(translateX, translateY));
+          if (imbalance < visualImbalance) {
+            visualImbalance = imbalance;
+            placement.translateX = translateX;
+            placement.translateY = translateY;
+          }
+        }
+      }
+    }
     placement = evaluate(scale, placement.translateX, placement.translateY);
     const center = this.unproject(
       this.width / 2 - placement.translateX,
@@ -408,10 +489,10 @@ class CanvasSlippyMap {
     );
     document.body.dataset.fitMode = "viewport-polygon";
     document.body.dataset.fitRoute = feature.properties.id;
-    document.body.dataset.fitZoom = zoom.toFixed(3);
-    document.body.dataset.fitCenter = `${center.lon.toFixed(7)},${center.lat.toFixed(7)}`;
+    document.body.dataset.fitZoom = zoom.toFixed(8);
+    document.body.dataset.fitCenter = `${center.lon.toFixed(10)},${center.lat.toFixed(10)}`;
     document.body.dataset.fitCenterOffset = placement.centerDistance.toFixed(2);
-    document.body.dataset.fitPolygon = polygon.map((point) => `${point.x.toFixed(2)},${point.y.toFixed(2)}`).join(" ");
+    document.body.dataset.fitPolygon = polygon.map((point) => `${point.x.toFixed(4)},${point.y.toFixed(4)}`).join(" ");
     this.setView(center.lon, center.lat, zoom);
   }
 
@@ -434,7 +515,7 @@ class CanvasSlippyMap {
   }
 
   centerWorld() {
-    return this.project(this.center.lon, this.center.lat);
+    return this.project(this.center.lon, this.center.lat, this.zoom, MAX_CENTER_LAT);
   }
 
   unwrapWorldLine(coordinates) {
@@ -540,7 +621,7 @@ class CanvasSlippyMap {
     const tileZoom = clamp(Math.round(this.zoom), 0, 18);
     const scale = 2 ** (this.zoom - tileZoom);
     const tilePixels = TILE_SIZE * scale;
-    const center = this.project(this.center.lon, this.center.lat, tileZoom);
+    const center = this.project(this.center.lon, this.center.lat, tileZoom, MAX_CENTER_LAT);
     const left = center.x - this.width / (2 * scale);
     const top = center.y - this.height / (2 * scale);
     const right = center.x + this.width / (2 * scale);
@@ -661,16 +742,21 @@ class CanvasSlippyMap {
     const ctx = this.ctx;
     ctx.save();
     ctx.strokeStyle = p.color;
-    ctx.lineWidth = selected ? 5 : 2.35;
-    ctx.globalAlpha = selected ? 1 : 0.82;
+    ctx.lineWidth = selected ? 5 : (p.domain ? 1.9 : 2.35);
+    ctx.globalAlpha = selected ? 1 : (p.domain ? 0.42 : 0.82);
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
-    if (p.quality.includes("illustrative")) ctx.setLineDash(selected ? [11, 7] : [7, 7]);
     if (selected) {
       ctx.shadowColor = p.color;
       ctx.shadowBlur = 10;
     }
-    for (const coordinates of geometryLines(feature.geometry)) {
+    for (const [index, coordinates] of geometryLines(feature.geometry).entries()) {
+      const trackType = p.line_styles?.[index]?.track_type;
+      // All journeys interpolate between anchors. The stroke distinguishes
+      // comparatively well-anchored corridors from inferred/low-confidence
+      // connections, not interpolated geometry from observed telemetry.
+      const inferred = inferredLine(p, trackType);
+      ctx.setLineDash(inferred ? (selected ? [11, 7] : [7, 7]) : []);
       for (const line of this.screenCopies(coordinates)) {
         ctx.beginPath();
         this.traceLine(line);
@@ -821,14 +907,19 @@ class CanvasSlippyMap {
 
 const state = {
   collection: null,
+  collections: new Map(),
+  visibilityByDomain: new Map(),
+  countries: null,
+  activeDomain: "flights",
+  domainRequest: 0,
   visible: new Set(),
   selected: null,
 };
 
 const routeList = document.querySelector("#route-list");
 const detailCard = document.querySelector("#detail-card");
-const visibleCount = document.querySelector("#visible-count");
-const vertexCount = document.querySelector("#vertex-count");
+const collectionStatus = document.querySelector("#collection-status");
+const searchInput = document.querySelector("#search");
 const mapView = new CanvasSlippyMap(
   document.querySelector("#map-canvas"),
   document.querySelector("#map-readout"),
@@ -879,14 +970,15 @@ function formatDistance(km) {
 function renderList() {
   routeList.innerHTML = state.collection.features.map((feature) => {
     const p = feature.properties;
+    const visible = state.visible.has(p.id);
     return `
-      <article class="route-item" data-id="${p.id}" tabindex="0" role="button" aria-label="Inspect ${p.title}">
+      <article class="route-item${visible ? "" : " off"}" data-id="${p.id}" tabindex="0" role="button" aria-label="Inspect ${p.title}">
         <span class="rank">${String(p.rank).padStart(2, "0")}</span>
         <div class="route-copy">
           <strong>${p.short_title}</strong>
           <div class="route-meta"><i class="color-key" style="background:${p.color};color:${p.color}"></i><span>${p.date.slice(0, 4)}</span><span>${p.era}</span></div>
         </div>
-        <input class="route-toggle" style="--route-color:${p.color}" type="checkbox" checked aria-label="Show ${p.short_title}">
+        <input class="route-toggle" style="--route-color:${p.color}" type="checkbox" ${visible ? "checked" : ""} aria-label="Show ${p.short_title}">
       </article>`;
   }).join("");
 
@@ -905,6 +997,59 @@ function renderList() {
   });
 }
 
+async function renderResearchList(domain) {
+  try {
+    let candidates = researchCache.get(domain);
+    if (!candidates) {
+      const response = await fetch(`research/${domain}.md`);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const markdown = await response.text();
+      candidates = markdown.split("\n").filter((line) => /^\|\s*\d+\s*\|/.test(line)).map((line) => {
+        const cells = line.split("|").slice(1, -1).map((cell) => cell.trim());
+        const source = cells.at(-1).match(/\]\((https?:\/\/[^)]+)\)/);
+        return {
+          rank: Number(cells[0]),
+          title: cells[1].replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/[*`]/g, ""),
+          sourceUrl: source?.[1] || null,
+        };
+      });
+      if (candidates.length !== 25) throw new Error(`Expected 25 candidates, found ${candidates.length}`);
+      researchCache.set(domain, candidates);
+    }
+    if (state.activeDomain !== domain) return;
+    routeList.replaceChildren();
+    const note = document.createElement("p");
+    note.className = "research-note";
+    note.innerHTML = `<strong>25 researched journeys</strong>Candidate routes and sources are ready for review. Map geometry is still being prepared. <a href="research/${domain}.md" target="_blank" rel="noreferrer">Read the full brief ↗</a>`;
+    routeList.append(note);
+    for (const candidate of candidates) {
+      const item = document.createElement(candidate.sourceUrl ? "a" : "div");
+      item.className = "research-candidate";
+      if (candidate.sourceUrl) {
+        item.href = candidate.sourceUrl;
+        item.target = "_blank";
+        item.rel = "noreferrer";
+        item.setAttribute("aria-label", `Research source for ${candidate.title}`);
+      }
+      const rank = document.createElement("span");
+      rank.className = "rank";
+      rank.textContent = String(candidate.rank).padStart(2, "0");
+      const title = document.createElement("strong");
+      title.textContent = candidate.title;
+      const source = document.createElement("span");
+      source.className = "research-source";
+      source.textContent = candidate.sourceUrl ? "Source ↗" : "Source pending";
+      item.append(rank, title, source);
+      routeList.append(item);
+    }
+  } catch (error) {
+    if (state.activeDomain === domain) {
+      routeList.innerHTML = `<p class="research-note"><strong>Research list unavailable</strong>Could not load this collection's brief.</p>`;
+    }
+    console.error(`Could not load ${domain} research:`, error);
+  }
+}
+
 function setVisibility(id, show) {
   if (show) state.visible.add(id); else state.visible.delete(id);
   const item = routeList.querySelector(`[data-id="${id}"]`);
@@ -912,13 +1057,8 @@ function setVisibility(id, show) {
   const toggle = item?.querySelector(".route-toggle");
   if (toggle) toggle.checked = show;
   if (!show && state.selected === id) clearSelection();
-  visibleCount.textContent = state.visible.size;
   mapView.visible = state.visible;
   mapView.requestRender();
-}
-
-function bulkVisibility(predicate) {
-  for (const feature of state.collection.features) setVisibility(feature.properties.id, predicate(feature.properties));
 }
 
 function selectRoute(id, fit = false) {
@@ -936,7 +1076,7 @@ function clearSelection() {
   mapView.select(null, false);
   routeList.querySelectorAll(".route-item").forEach((item) => item.classList.remove("selected"));
   detailCard.className = "detail-card empty";
-  detailCard.innerHTML = `<div class="empty-state"><span class="empty-mark">↗</span><div><strong>Select a flight</strong><p>Click a route in the sidebar or a line on the map.</p></div></div>`;
+  detailCard.innerHTML = `<div class="empty-state"><span class="empty-mark">↗</span><div><strong>Select a journey</strong><p>Click a route in the sidebar or a line on the map.</p></div></div>`;
   delete document.body.dataset.sheetState;
 }
 
@@ -944,7 +1084,7 @@ function setSheetExpanded(expanded) {
   detailCard.classList.toggle("sheet-expanded", expanded);
   const handle = detailCard.querySelector(".sheet-handle");
   handle?.setAttribute("aria-expanded", String(expanded));
-  if (handle) handle.setAttribute("aria-label", expanded ? "Collapse flight details" : "Expand flight details");
+  if (handle) handle.setAttribute("aria-label", expanded ? "Collapse journey details" : "Expand journey details");
   document.body.dataset.sheetState = expanded ? "expanded" : "collapsed";
 }
 
@@ -996,23 +1136,30 @@ function bindSheetGesture() {
 
 function renderDetail(feature) {
   const p = feature.properties;
+  const journeyLabel = DOMAINS[state.activeDomain].singular;
   detailCard.className = "detail-card";
   const anchors = p.anchors.map((anchor) => `<li><b>${anchor.name}</b>${anchor.note ? ` — ${anchor.note}` : ""}</li>`).join("");
+  const overview = p.overview && p.overview !== p.why_famous && p.overview !== p.route_summary
+    ? `<p class="overview">${p.overview}</p>` : "";
+  const segmentDetails = p.segments?.length ? `<details class="waypoints"><summary>${p.segments.length} route segment${p.segments.length === 1 ? "" : "s"} and evidence</summary><ol>${p.segments.map((segment) => {
+    const lineStyle = inferredLine(p, segment.track_type) ? "inferred" : "anchored";
+    return `<li data-line-style="${lineStyle}"><b>${segment.mode}</b> · ${segment.track_type.replaceAll("-", " ")} · ${lineStyle === "inferred" ? "dashed" : "solid"} · <a href="${segment.source_url}" target="_blank" rel="noreferrer">source ↗</a></li>`;
+  }).join("")}</ol></details>` : "";
   const aircraftImage = p.image ? `
     <figure class="aircraft-figure">
       <img src="${p.image.path}" alt="${p.image.alt}" decoding="async" style="object-position:${p.image.position || "center"}">
       <figcaption><a class="image-credit" href="${p.image.source_url}" target="_blank" rel="noreferrer">${p.image.credit}</a><a href="${p.image.license_url}" target="_blank" rel="noreferrer">${p.image.license} ↗</a></figcaption>
     </figure>` : "";
   detailCard.innerHTML = `
-    <button class="sheet-handle" type="button" aria-expanded="false" aria-label="Expand flight details"><span></span></button>
+    <button class="sheet-handle" type="button" aria-expanded="false" aria-label="Expand journey details"><span></span></button>
     <div class="detail-top">
-      <div><div class="detail-rank">Flight ${String(p.rank).padStart(2, "0")} · ${p.group}</div><h2>${p.title}</h2><div class="detail-date">${p.date} · ${p.era}</div></div>
+      <div><div class="detail-rank">${journeyLabel} ${String(p.rank).padStart(2, "0")} · ${p.group}</div><h2>${p.title}</h2><div class="detail-date">${p.date} · ${p.era}</div></div>
       <button class="close-detail" type="button" aria-label="Close details">×</button>
     </div>
     <div class="why-famous"><span>Why it was famous</span><p>${p.why_famous}</p></div>
     ${aircraftImage}
     <p class="route-summary">${p.route_summary}</p>
-    <p class="overview">${p.overview}</p>
+    ${overview}
     <div class="metrics">
       <div class="metric"><strong>${formatDistance(p.distance_km)}</strong><span>anchor path</span></div>
       <div class="metric"><strong>${p.vertex_count.toLocaleString()}</strong><span>WKT vertices</span></div>
@@ -1025,8 +1172,9 @@ function renderDetail(feature) {
       <button type="button" class="copy-wkt">Copy WKT</button>
       <button type="button" class="download-geojson">Download GeoJSON</button>
       <a class="source" href="${p.source_url}" target="_blank" rel="noreferrer">Research source ↗</a>
-      <a class="wiki" href="${p.wiki_url}" target="_blank" rel="noreferrer" title="${p.wiki_title}">Wikipedia ↗</a>
+      ${p.wiki_url ? `<a class="wiki" href="${p.wiki_url}" target="_blank" rel="noreferrer" title="${p.wiki_title}">Wikipedia ↗</a>` : ""}
     </div>
+    ${segmentDetails}
     <details class="waypoints"><summary>${p.anchors.length} researched route anchors</summary><ol>${anchors}</ol></details>`;
 
   detailCard.querySelector(".close-detail").addEventListener("click", clearSelection);
@@ -1051,18 +1199,102 @@ function renderDetail(feature) {
   });
 }
 
-document.querySelectorAll("[data-action]").forEach((button) => {
-  button.addEventListener("click", () => {
-    const action = button.dataset.action;
-    if (action === "all") bulkVisibility(() => true);
-    if (action === "top") bulkVisibility((p) => p.rank <= 10);
-    if (action === "middle") bulkVisibility((p) => p.rank >= 11 && p.rank <= 20);
-    if (action === "new") bulkVisibility((p) => p.rank >= 21);
+async function setDomain(domain, updateUrl = true) {
+  if (!DOMAINS[domain] || !state.collections.has("flights")) return;
+  const request = ++state.domainRequest;
+  if (state.collection?.features.length) state.visibilityByDomain.set(state.activeDomain, state.visible);
+  clearSelection();
+  state.activeDomain = domain;
+  document.querySelectorAll(".domain-tabs [role=tab]").forEach((tab) => {
+    const active = tab.dataset.domain === domain;
+    tab.setAttribute("aria-selected", String(active));
+    tab.tabIndex = active ? 0 : -1;
+  });
+  routeList.setAttribute("aria-labelledby", `tab-${domain}`);
+  document.querySelector("#collection-heading").textContent = DOMAINS[domain].label;
+  document.querySelector(".map-shell").classList.add("research-mode");
+  document.querySelector("#collection-hint").textContent = "loading";
+  searchInput.disabled = false;
+  searchInput.value = "";
+  searchInput.placeholder = domain === "flights"
+    ? "Search flights, years, eras…"
+    : `Search ${DOMAINS[domain].label.toLowerCase()} journeys…`;
+  routeList.classList.add("researching");
+  routeList.innerHTML = `<p class="research-note"><strong>Loading ${DOMAINS[domain].label}…</strong></p>`;
+  collectionStatus.innerHTML = `<strong>${DOMAINS[domain].label}</strong>Loading journeys…`;
+  collectionStatus.hidden = false;
+  mapView.setData(state.countries, EMPTY_COLLECTION, new Set());
+  if (updateUrl) {
+    const url = new URL(window.location.href);
+    if (domain === "flights") url.searchParams.delete("domain");
+    else url.searchParams.set("domain", domain);
+    url.searchParams.delete("flight");
+    url.searchParams.delete("journey");
+    url.searchParams.delete("sheet");
+    history.replaceState(null, "", url);
+  }
+  let collection = state.collections.get(domain);
+  if (!collection && domain !== "flights") {
+    try {
+      const response = await fetch(`data/journeys/${domain}.geojson?v=journey-1`);
+      if (response.ok) {
+        collection = await response.json();
+        if (collection.features?.length !== 25) throw new Error(`Expected 25 mapped journeys in ${domain}`);
+        collection.features.sort((a, b) => a.properties.rank - b.properties.rank);
+        state.collections.set(domain, collection);
+      }
+    } catch (error) {
+      console.error(`Could not load ${domain} route geometry:`, error);
+    }
+  }
+  if (request !== state.domainRequest) return;
+  if (collection) {
+    state.collection = collection;
+    state.visible = state.visibilityByDomain.get(domain) || new Set(collection.features.map((feature) => feature.properties.id));
+    state.visibilityByDomain.set(domain, state.visible);
+    routeList.classList.remove("researching");
+    renderList();
+    document.querySelector("#collection-hint").textContent = "click to inspect";
+    document.querySelector(".map-shell").classList.remove("research-mode");
+    collectionStatus.hidden = true;
+    mapView.setData(state.countries, collection, state.visible);
+    mapView.setView(5, 23, 2);
+  } else {
+    state.collection = EMPTY_COLLECTION;
+    state.visible = new Set();
+    document.querySelector("#collection-hint").textContent = "25 candidates";
+    routeList.innerHTML = `<p class="research-note"><strong>Loading ${DOMAINS[domain].label} research…</strong></p>`;
+    collectionStatus.innerHTML = `<strong>${DOMAINS[domain].label}</strong>25 journeys researched. Map routes will appear as their geometry is verified.`;
+    mapView.setView(5, 23, 2);
+    void renderResearchList(domain);
+  }
+}
+
+const domainTabs = [...document.querySelectorAll(".domain-tabs [role=tab]")];
+domainTabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => { void setDomain(tab.dataset.domain); });
+  tab.addEventListener("keydown", (event) => {
+    let next = index;
+    if (event.key === "ArrowRight") next = (index + 1) % domainTabs.length;
+    else if (event.key === "ArrowLeft") next = (index - 1 + domainTabs.length) % domainTabs.length;
+    else if (event.key === "Home") next = 0;
+    else if (event.key === "End") next = domainTabs.length - 1;
+    else return;
+    event.preventDefault();
+    domainTabs[next].focus();
+    domainTabs[next].scrollIntoView({ block: "nearest", inline: "nearest" });
+    void setDomain(domainTabs[next].dataset.domain);
   });
 });
 
-document.querySelector("#search").addEventListener("input", (event) => {
+searchInput.addEventListener("input", (event) => {
   const query = event.target.value.trim().toLowerCase();
+  if (!state.collection.features.length) {
+    routeList.querySelectorAll(".research-candidate").forEach((item) => {
+      item.classList.toggle("hidden-filter", query && !item.textContent.toLowerCase().includes(query));
+    });
+    return;
+  }
   routeList.querySelectorAll(".route-item").forEach((item) => {
     const p = state.collection.features.find((feature) => feature.properties.id === item.dataset.id).properties;
     const haystack = `${p.title} ${p.date} ${p.era} ${p.route_summary}`.toLowerCase();
@@ -1093,24 +1325,27 @@ async function init() {
       throw new Error(`route HTTP ${routesResponse.status}; basemap HTTP ${basemapResponse.status}; images HTTP ${imagesResponse.status}`);
     }
     state.collection = await routesResponse.json();
-    const countries = await basemapResponse.json();
+    state.countries = await basemapResponse.json();
     const aircraftImages = await imagesResponse.json();
     state.collection.features.forEach((feature) => {
       feature.properties.image = aircraftImages[feature.properties.id] || null;
     });
     state.collection.features.sort((a, b) => a.properties.rank - b.properties.rank);
     state.collection.features.forEach((feature) => state.visible.add(feature.properties.id));
-    renderList();
-    vertexCount.textContent = state.collection.features.reduce((sum, feature) => sum + feature.properties.vertex_count, 0).toLocaleString();
-    mapView.setData(countries, state.collection, state.visible);
+    state.collections.set("flights", state.collection);
+    state.visibilityByDomain.set("flights", state.visible);
+    mapView.setData(state.countries, state.collection, state.visible);
     const requestedBasemap = new URLSearchParams(window.location.search).get("basemap");
     const basemapSelect = document.querySelector("#basemap");
     if (requestedBasemap && THEMES[requestedBasemap]) basemapSelect.value = requestedBasemap;
     mapView.setTheme(basemapSelect.value);
     document.querySelector("#loading").classList.add("done");
-    const requestedFlight = new URLSearchParams(window.location.search).get("flight");
-    if (requestedFlight) selectRoute(requestedFlight, true);
-    if (requestedFlight && new URLSearchParams(window.location.search).get("sheet") === "expanded") {
+    const query = new URLSearchParams(window.location.search);
+    const requestedDomain = query.get("domain");
+    await setDomain(DOMAINS[requestedDomain] ? requestedDomain : "flights", false);
+    const requestedJourney = query.get("journey") || query.get("flight");
+    if (requestedJourney && state.collection.features.length) selectRoute(requestedJourney, true);
+    if (requestedJourney && state.collection.features.length && query.get("sheet") === "expanded") {
       setSheetExpanded(true);
     }
     // Paint once synchronously after data and query-state are installed. This

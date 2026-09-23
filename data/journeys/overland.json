@@ -1,0 +1,2381 @@
+[
+  {
+    "id": "lewis-clark-expedition",
+    "rank": 1,
+    "title": "Lewis and Clark expedition",
+    "short_title": "Lewis and Clark",
+    "date": "1804–1806",
+    "why_famous": "A landmark U.S. survey to the Pacific, made possible by Indigenous knowledge and guidance.",
+    "route_summary": "Camp Dubois up the Missouri, across the Rockies and down the Columbia to Fort Clatsop; return along related routes.",
+    "source_title": "National Park Service: Lewis and Clark trail maps",
+    "source_url": "https://home.nps.gov/lecl/planyourvisit/maps.htm",
+    "geometry_confidence": "medium",
+    "geometry_note": "Principal outbound places only; the 1806 return diverged and is omitted rather than falsely folded into one line. River legs follow place anchors, not channel centerlines.",
+    "segments": [
+      {
+        "mode": "river boat",
+        "track_type": "historical-corridor",
+        "source_url": "https://home.nps.gov/lecl/planyourvisit/maps.htm",
+        "anchors": [
+          {
+            "name": "Camp Dubois",
+            "lat": 38.8,
+            "lon": -90.1,
+            "note": "Expedition departure near the Missouri confluence."
+          },
+          {
+            "name": "Council Bluffs",
+            "lat": 41.26,
+            "lon": -95.85,
+            "note": "Missouri River council region."
+          },
+          {
+            "name": "Fort Mandan",
+            "lat": 47.3,
+            "lon": -101.04,
+            "note": "1804–05 winter camp; Mandan and Hidatsa homelands."
+          },
+          {
+            "name": "Great Falls",
+            "lat": 47.5,
+            "lon": -111.3,
+            "note": "Missouri River portage."
+          },
+          {
+            "name": "Three Forks",
+            "lat": 45.93,
+            "lon": -111.5,
+            "note": "Missouri headwaters."
+          }
+        ]
+      },
+      {
+        "mode": "horse and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://home.nps.gov/lecl/planyourvisit/maps.htm",
+        "anchors": [
+          {
+            "name": "Three Forks",
+            "lat": 45.93,
+            "lon": -111.5,
+            "note": "Headwaters region."
+          },
+          {
+            "name": "Lemhi Pass",
+            "lat": 44.97,
+            "lon": -113.45,
+            "note": "Continental Divide crossing."
+          },
+          {
+            "name": "Lolo Pass",
+            "lat": 46.64,
+            "lon": -114.58,
+            "note": "Bitterroot crossing corridor."
+          },
+          {
+            "name": "Canoe Camp near Orofino",
+            "lat": 46.48,
+            "lon": -116.24,
+            "note": "Canoes built near present-day Orofino."
+          }
+        ]
+      },
+      {
+        "mode": "river boat",
+        "track_type": "historical-corridor",
+        "source_url": "https://home.nps.gov/lecl/planyourvisit/maps.htm",
+        "anchors": [
+          {
+            "name": "Canoe Camp near Orofino",
+            "lat": 46.48,
+            "lon": -116.24,
+            "note": "Clearwater launch."
+          },
+          {
+            "name": "Snake–Columbia confluence",
+            "lat": 46.26,
+            "lon": -119.26,
+            "note": "Columbia entry."
+          },
+          {
+            "name": "The Dalles",
+            "lat": 45.6,
+            "lon": -121.18,
+            "note": "Columbia gorge."
+          },
+          {
+            "name": "Fort Clatsop",
+            "lat": 46.13,
+            "lon": -123.88,
+            "note": "Pacific winter camp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "xuanzang-pilgrimage",
+    "rank": 2,
+    "title": "Xuanzang pilgrimage",
+    "short_title": "Xuanzang",
+    "date": "629–645",
+    "why_famous": "Collected Buddhist texts in India and brought them back to China, reshaping East Asian Buddhist scholarship.",
+    "route_summary": "Chang'an via the Tarim oases and Central Asia to northern India, returning by the southern Tarim corridor.",
+    "source_title": "British Library: Buddhist travellers and pilgrims",
+    "source_url": "https://idp.bl.uk/discover/learning/buddhism-on-the-silk-roads/articles/transmission-of-buddhism/buddhist-travellers-and-pilgrims/",
+    "geometry_confidence": "low",
+    "geometry_note": "Only broad textual itinerary; city anchors are modern place approximations, and the passages between them are historical corridors, not a measured seventh-century track.",
+    "segments": [
+      {
+        "mode": "caravan and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://idp.bl.uk/discover/learning/buddhism-on-the-silk-roads/articles/transmission-of-buddhism/buddhist-travellers-and-pilgrims/",
+        "anchors": [
+          {
+            "name": "Chang'an",
+            "lat": 34.26,
+            "lon": 108.95,
+            "note": "Modern Xi'an."
+          },
+          {
+            "name": "Dunhuang",
+            "lat": 40.14,
+            "lon": 94.66,
+            "note": "Gansu oasis."
+          },
+          {
+            "name": "Turfan",
+            "lat": 42.95,
+            "lon": 89.19,
+            "note": "Northern Tarim region."
+          },
+          {
+            "name": "Samarkand",
+            "lat": 39.65,
+            "lon": 66.96,
+            "note": "Central Asian visit."
+          },
+          {
+            "name": "Bamiyan",
+            "lat": 34.82,
+            "lon": 67.83,
+            "note": "Afghan Buddhist site."
+          },
+          {
+            "name": "Nalanda",
+            "lat": 25.14,
+            "lon": 85.44,
+            "note": "Indian monastic center."
+          }
+        ]
+      },
+      {
+        "mode": "caravan and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://idp.bl.uk/discover/learning/buddhism-on-the-silk-roads/articles/transmission-of-buddhism/buddhist-travellers-and-pilgrims/",
+        "anchors": [
+          {
+            "name": "Nalanda",
+            "lat": 25.14,
+            "lon": 85.44,
+            "note": "Approximate return departure."
+          },
+          {
+            "name": "Kashgar",
+            "lat": 39.47,
+            "lon": 75.99,
+            "note": "Western Tarim oasis."
+          },
+          {
+            "name": "Khotan",
+            "lat": 37.11,
+            "lon": 79.92,
+            "note": "Southern Tarim oasis."
+          },
+          {
+            "name": "Dunhuang",
+            "lat": 40.14,
+            "lon": 94.66,
+            "note": "China reentry corridor."
+          },
+          {
+            "name": "Chang'an",
+            "lat": 34.26,
+            "lon": 108.95,
+            "note": "Return with scriptures."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ibn-battuta-travels",
+    "rank": 3,
+    "title": "Ibn Battuta travels",
+    "short_title": "Ibn Battuta",
+    "date": "1325–1354",
+    "why_famous": "His Rihla records one of history's most extensive travel accounts across Afro-Eurasia.",
+    "route_summary": "Selected documented stages: Tangier to Mecca, overland to Delhi, sea journey through the Maldives and Sumatra toward China, and later Sahara journey to Mali.",
+    "source_title": "University of California Berkeley: The Travels of Ibn Battuta",
+    "source_url": "https://orias.berkeley.edu/node/163",
+    "geometry_confidence": "low",
+    "geometry_note": "Four selected journeys, with discontinuities and broad city corridors. China itinerary and chronology are debated; Quanzhou represents the reported port rather than a verified endpoint.",
+    "segments": [
+      {
+        "mode": "caravan and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://orias.berkeley.edu/node/163",
+        "anchors": [
+          {
+            "name": "Tangier",
+            "lat": 35.78,
+            "lon": -5.81,
+            "note": "1325 departure."
+          },
+          {
+            "name": "Cairo",
+            "lat": 30.04,
+            "lon": 31.24,
+            "note": "Egyptian stage."
+          },
+          {
+            "name": "Damascus",
+            "lat": 33.51,
+            "lon": 36.29,
+            "note": "Joined pilgrimage caravan."
+          },
+          {
+            "name": "Mecca",
+            "lat": 21.42,
+            "lon": 39.83,
+            "note": "Hajj."
+          }
+        ]
+      },
+      {
+        "mode": "caravan and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://orias.berkeley.edu/node/163",
+        "anchors": [
+          {
+            "name": "Mecca",
+            "lat": 21.42,
+            "lon": 39.83,
+            "note": "Selected later departure region; connecting itinerary omitted."
+          },
+          {
+            "name": "Bukhara",
+            "lat": 39.77,
+            "lon": 64.42,
+            "note": "Central Asian stage."
+          },
+          {
+            "name": "Kabul",
+            "lat": 34.53,
+            "lon": 69.17,
+            "note": "Afghan corridor."
+          },
+          {
+            "name": "Delhi",
+            "lat": 28.61,
+            "lon": 77.21,
+            "note": "Long residence."
+          }
+        ]
+      },
+      {
+        "mode": "sailing",
+        "track_type": "historical-corridor",
+        "source_url": "https://orias.berkeley.edu/node/163",
+        "anchors": [
+          {
+            "name": "Malabar coast",
+            "lat": 11.25,
+            "lon": 75.78,
+            "note": "Southwest India departure region."
+          },
+          {
+            "name": "Malé",
+            "lat": 4.18,
+            "lon": 73.51,
+            "note": "Maldives."
+          },
+          {
+            "name": "Samudera Pasai region",
+            "lat": 5.15,
+            "lon": 97.0,
+            "note": "Northern Sumatra; exact medieval site uncertain."
+          },
+          {
+            "name": "Strait of Malacca",
+            "lat": 3.0,
+            "lon": 101.0,
+            "note": "Illustrative sea control; not an observed voyage position."
+          },
+          {
+            "name": "South China Sea west sector",
+            "lat": 7.0,
+            "lon": 109.0,
+            "note": "Illustrative offshore control; not an observed voyage position."
+          },
+          {
+            "name": "South China Sea east sector",
+            "lat": 16.0,
+            "lon": 114.0,
+            "note": "Illustrative offshore control; not an observed voyage position."
+          },
+          {
+            "name": "South China Sea off Fujian",
+            "lat": 23.0,
+            "lon": 118.0,
+            "note": "Illustrative offshore approach; not an observed voyage position."
+          },
+          {
+            "name": "Quanzhou",
+            "lat": 24.87,
+            "lon": 118.68,
+            "note": "Reported Chinese port; onward claims disputed."
+          }
+        ]
+      },
+      {
+        "mode": "caravan",
+        "track_type": "historical-corridor",
+        "source_url": "https://orias.berkeley.edu/node/163",
+        "anchors": [
+          {
+            "name": "Sijilmasa",
+            "lat": 31.28,
+            "lon": -4.28,
+            "note": "Saharan departure."
+          },
+          {
+            "name": "Taghaza region",
+            "lat": 23.6,
+            "lon": -6.5,
+            "note": "Salt mining district, imprecise location."
+          },
+          {
+            "name": "Walata",
+            "lat": 17.3,
+            "lon": -7.03,
+            "note": "Sahelian stop."
+          },
+          {
+            "name": "Timbuktu",
+            "lat": 16.77,
+            "lon": -3.01,
+            "note": "Mali journey stage."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "marco-polo-travels",
+    "rank": 4,
+    "title": "Marco Polo travels",
+    "short_title": "Marco Polo",
+    "date": "c. 1271–1295",
+    "why_famous": "His account gave European readers a lasting picture of Yuan China and Asian trade routes.",
+    "route_summary": "Venice to Acre, overland through Persia and the Pamirs to Yuan China; maritime return by Southeast Asia and the Indian Ocean.",
+    "source_title": "Library of Congress: Travels of Marco Polo manuscript",
+    "source_url": "https://www.loc.gov/resource/gdcwdl.wdl_14300/?st=gallery",
+    "geometry_confidence": "low",
+    "geometry_note": "Selected literary itinerary, not an independently verified track. Specific Silk Road legs and Chinese travel remain disputed; maritime return is kept separate.",
+    "segments": [
+      {
+        "mode": "sailing",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/resource/gdcwdl.wdl_14300/?st=gallery",
+        "anchors": [
+          {
+            "name": "Venice",
+            "lat": 45.44,
+            "lon": 12.34,
+            "note": "Home port."
+          },
+          {
+            "name": "Adriatic Sea",
+            "lat": 43.0,
+            "lon": 14.5,
+            "note": "Illustrative offshore control; not an observed voyage position."
+          },
+          {
+            "name": "Ionian Sea",
+            "lat": 39.0,
+            "lon": 19.0,
+            "note": "Illustrative offshore control; not an observed voyage position."
+          },
+          {
+            "name": "Mediterranean south of Greece",
+            "lat": 34.0,
+            "lon": 25.0,
+            "note": "Illustrative offshore control; not an observed voyage position."
+          },
+          {
+            "name": "Eastern Mediterranean",
+            "lat": 33.0,
+            "lon": 32.0,
+            "note": "Illustrative offshore control; not an observed voyage position."
+          },
+          {
+            "name": "Acre",
+            "lat": 32.93,
+            "lon": 35.08,
+            "note": "Levant landing."
+          }
+        ]
+      },
+      {
+        "mode": "caravan",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/resource/gdcwdl.wdl_14300/?st=gallery",
+        "anchors": [
+          {
+            "name": "Acre",
+            "lat": 32.93,
+            "lon": 35.08,
+            "note": "Overland departure."
+          },
+          {
+            "name": "Tabriz",
+            "lat": 38.08,
+            "lon": 46.29,
+            "note": "Persian corridor."
+          },
+          {
+            "name": "Hormuz",
+            "lat": 27.1,
+            "lon": 56.46,
+            "note": "Sea passage considered and abandoned, according to account."
+          },
+          {
+            "name": "Balkh",
+            "lat": 36.76,
+            "lon": 66.9,
+            "note": "Afghan corridor, approximate."
+          },
+          {
+            "name": "Kashgar",
+            "lat": 39.47,
+            "lon": 75.99,
+            "note": "Silk Road oasis."
+          },
+          {
+            "name": "Khotan",
+            "lat": 37.11,
+            "lon": 79.92,
+            "note": "Southern Tarim oasis."
+          },
+          {
+            "name": "Shangdu region",
+            "lat": 42.36,
+            "lon": 116.18,
+            "note": "Yuan summer capital site."
+          }
+        ]
+      },
+      {
+        "mode": "sailing",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/resource/gdcwdl.wdl_14300/?st=gallery",
+        "anchors": [
+          {
+            "name": "Quanzhou",
+            "lat": 24.87,
+            "lon": 118.68,
+            "note": "Reported maritime departure."
+          },
+          {
+            "name": "South China Sea off Guangdong",
+            "lat": 19.0,
+            "lon": 116.0,
+            "note": "Illustrative offshore control; not an observed voyage position."
+          },
+          {
+            "name": "South China Sea central",
+            "lat": 12.0,
+            "lon": 112.0,
+            "note": "Illustrative offshore control; not an observed voyage position."
+          },
+          {
+            "name": "South China Sea south",
+            "lat": 5.0,
+            "lon": 106.0,
+            "note": "Illustrative offshore control; not an observed voyage position."
+          },
+          {
+            "name": "Natuna Sea",
+            "lat": 2.0,
+            "lon": 108.0,
+            "note": "Illustrative offshore control; not an observed voyage position."
+          },
+          {
+            "name": "Singapore Strait",
+            "lat": 1.3,
+            "lon": 104.0,
+            "note": "Illustrative sea-passage control; not an observed voyage position."
+          },
+          {
+            "name": "Singapore Strait western exit",
+            "lat": 1.1,
+            "lon": 103.5,
+            "note": "Illustrative sea-passage control; not an observed voyage position."
+          },
+          {
+            "name": "Strait of Malacca south",
+            "lat": 2.0,
+            "lon": 101.5,
+            "note": "Illustrative sea-passage control; not an observed voyage position."
+          },
+          {
+            "name": "Strait of Malacca",
+            "lat": 4.0,
+            "lon": 100.0,
+            "note": "Illustrative sea-passage control; not an observed voyage position."
+          },
+          {
+            "name": "Sumatra",
+            "lat": 3.59,
+            "lon": 98.67,
+            "note": "Northern island stop, approximate."
+          },
+          {
+            "name": "Sri Lanka",
+            "lat": 6.93,
+            "lon": 79.85,
+            "note": "Indian Ocean stage."
+          },
+          {
+            "name": "Arabian Sea south of India",
+            "lat": 6.0,
+            "lon": 77.0,
+            "note": "Illustrative offshore control; not an observed voyage position."
+          },
+          {
+            "name": "Central Arabian Sea",
+            "lat": 9.0,
+            "lon": 67.0,
+            "note": "Illustrative offshore control; not an observed voyage position."
+          },
+          {
+            "name": "Gulf of Oman",
+            "lat": 23.0,
+            "lon": 60.0,
+            "note": "Illustrative offshore control; not an observed voyage position."
+          },
+          {
+            "name": "Hormuz",
+            "lat": 27.1,
+            "lon": 56.46,
+            "note": "Persian Gulf return landing."
+          }
+        ]
+      },
+      {
+        "mode": "caravan and sailing",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/resource/gdcwdl.wdl_14300/?st=gallery",
+        "anchors": [
+          {
+            "name": "Hormuz",
+            "lat": 27.1,
+            "lon": 56.46,
+            "note": "Return overland start."
+          },
+          {
+            "name": "Tabriz",
+            "lat": 38.08,
+            "lon": 46.29,
+            "note": "Persian stage."
+          },
+          {
+            "name": "Trebizond",
+            "lat": 41.0,
+            "lon": 39.73,
+            "note": "Black Sea port; subsequent sea leg compressed."
+          },
+          {
+            "name": "Venice",
+            "lat": 45.44,
+            "lon": 12.34,
+            "note": "Return."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cherokee-removal-northern-route",
+    "rank": 5,
+    "title": "Cherokee forced removal",
+    "short_title": "Cherokee removal",
+    "date": "1838–1839",
+    "why_famous": "The U.S. government forced Cherokee communities from their homelands, causing widespread death and dispossession.",
+    "route_summary": "A representative northern land route from southeastern Cherokee territory through Tennessee, Kentucky, Illinois, Missouri, and Arkansas to Indian Territory.",
+    "source_title": "National Park Service: Trail of Tears route map",
+    "source_url": "https://www.nps.gov/trte/planyourvisit/upload/National-Park-Service-Trail-of-Tears-Map-508.pdf",
+    "geometry_confidence": "medium",
+    "geometry_note": "Represents one northern overland removal corridor, not all detachments. The NPS maps multiple land and water routes; place controls do not identify a single named detachment.",
+    "segments": [
+      {
+        "mode": "forced overland migration",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/trte/planyourvisit/upload/National-Park-Service-Trail-of-Tears-Map-508.pdf",
+        "anchors": [
+          {
+            "name": "Red Clay council site",
+            "lat": 34.99,
+            "lon": -84.96,
+            "note": "Cherokee homeland site near removal origin; not every detachment began here."
+          },
+          {
+            "name": "Fort Cass area",
+            "lat": 35.27,
+            "lon": -84.52,
+            "note": "Removal staging region."
+          },
+          {
+            "name": "Mantle Rock",
+            "lat": 37.34,
+            "lon": -88.37,
+            "note": "Kentucky winter delay site."
+          },
+          {
+            "name": "Golconda",
+            "lat": 37.37,
+            "lon": -88.49,
+            "note": "Ohio River crossing region; precise route varies."
+          },
+          {
+            "name": "Cape Girardeau region",
+            "lat": 37.31,
+            "lon": -89.52,
+            "note": "Mississippi crossing corridor."
+          },
+          {
+            "name": "Pea Ridge",
+            "lat": 36.45,
+            "lon": -94.03,
+            "note": "Arkansas trail corridor."
+          },
+          {
+            "name": "Tahlequah region",
+            "lat": 35.92,
+            "lon": -94.97,
+            "note": "Eastern Indian Territory destination region."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "oregon-trail-migrations",
+    "rank": 6,
+    "title": "Oregon Trail migrations",
+    "short_title": "Oregon Trail",
+    "date": "1840s–1860s",
+    "why_famous": "A major settler wagon corridor to the Pacific Northwest with profound effects on Native nations.",
+    "route_summary": "Representative main corridor from Independence along the Platte through South Pass, the Snake and Columbia basins to Oregon City.",
+    "source_title": "National Park Service: historic trail GIS",
+    "source_url": "https://www.nps.gov/orgs/1453/gis-data.htm",
+    "geometry_confidence": "medium",
+    "geometry_note": "Collective migration over decades. This is a main-corridor place sequence; cutoffs and alternate river and wagon endings are omitted.",
+    "segments": [
+      {
+        "mode": "wagon and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/orgs/1453/gis-data.htm",
+        "anchors": [
+          {
+            "name": "Independence",
+            "lat": 39.09,
+            "lon": -94.42,
+            "note": "Representative Missouri departure."
+          },
+          {
+            "name": "Fort Kearny",
+            "lat": 40.65,
+            "lon": -98.99,
+            "note": "Platte River corridor."
+          },
+          {
+            "name": "Chimney Rock",
+            "lat": 41.7,
+            "lon": -103.35,
+            "note": "Trail landmark."
+          },
+          {
+            "name": "Fort Laramie",
+            "lat": 42.21,
+            "lon": -104.52,
+            "note": "Trail junction."
+          },
+          {
+            "name": "South Pass",
+            "lat": 42.37,
+            "lon": -108.91,
+            "note": "Continental Divide crossing."
+          },
+          {
+            "name": "Fort Bridger",
+            "lat": 41.32,
+            "lon": -110.39,
+            "note": "Western junction."
+          },
+          {
+            "name": "Fort Hall",
+            "lat": 43.02,
+            "lon": -112.63,
+            "note": "Snake River corridor."
+          },
+          {
+            "name": "Boise River crossing",
+            "lat": 43.62,
+            "lon": -116.2,
+            "note": "Snake Basin route region."
+          },
+          {
+            "name": "The Dalles",
+            "lat": 45.6,
+            "lon": -121.18,
+            "note": "Columbia River decision point."
+          },
+          {
+            "name": "Oregon City",
+            "lat": 45.36,
+            "lon": -122.61,
+            "note": "Oregon terminal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gandhi-salt-march",
+    "rank": 7,
+    "title": "Gandhi's Salt March",
+    "short_title": "Salt March",
+    "date": "1930",
+    "why_famous": "The 24-day march to the sea became a defining nonviolent protest against British colonial salt laws.",
+    "route_summary": "Sabarmati Ashram through Gujarat villages to Dandi on the Arabian Sea.",
+    "source_title": "Library of Congress: Salt March route planning",
+    "source_url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/93/46/2020719346/2020719346.pdf",
+    "geometry_confidence": "medium",
+    "geometry_note": "Named settlement sequence is indicative; individual village streets are not digitized from Gandhi's daily march log.",
+    "segments": [
+      {
+        "mode": "walking",
+        "track_type": "source-derived",
+        "source_url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/93/46/2020719346/2020719346.pdf",
+        "anchors": [
+          {
+            "name": "Sabarmati Ashram",
+            "lat": 23.06,
+            "lon": 72.58,
+            "note": "12 March departure."
+          },
+          {
+            "name": "Aslali",
+            "lat": 22.92,
+            "lon": 72.6,
+            "note": "Early village stage."
+          },
+          {
+            "name": "Bareja",
+            "lat": 22.86,
+            "lon": 72.59,
+            "note": "Village stage."
+          },
+          {
+            "name": "Nadiad",
+            "lat": 22.69,
+            "lon": 72.86,
+            "note": "Kheda stage."
+          },
+          {
+            "name": "Anand",
+            "lat": 22.56,
+            "lon": 72.95,
+            "note": "Central Gujarat stage."
+          },
+          {
+            "name": "Borsad",
+            "lat": 22.41,
+            "lon": 72.9,
+            "note": "Central Gujarat stage."
+          },
+          {
+            "name": "Bharuch",
+            "lat": 21.71,
+            "lon": 72.99,
+            "note": "Narmada crossing region."
+          },
+          {
+            "name": "Navsari",
+            "lat": 20.95,
+            "lon": 72.93,
+            "note": "Coastal approach."
+          },
+          {
+            "name": "Dandi",
+            "lat": 20.89,
+            "lon": 72.81,
+            "note": "Salt-law protest site."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "burke-wills-expedition",
+    "rank": 8,
+    "title": "Burke and Wills expedition",
+    "short_title": "Burke and Wills",
+    "date": "1860–1861",
+    "why_famous": "The celebrated Australian north–south crossing ended fatally on the return, despite assistance from Yandruwandha people.",
+    "route_summary": "Melbourne to Menindee and Cooper Creek, north to the Gulf of Carpentaria mangroves, then back to Cooper Creek.",
+    "source_title": "National Museum of Australia: Burke and Wills collection",
+    "source_url": "https://www.nma.gov.au/explore/collection/highlights/burke-and-wills",
+    "geometry_confidence": "medium",
+    "geometry_note": "Wills's historic map informs the northern stage. The Gulf anchor is a coastal mangrove region, not an ocean shoreline actually reached by the party.",
+    "segments": [
+      {
+        "mode": "camel, wagon and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nma.gov.au/explore/collection/highlights/burke-and-wills",
+        "anchors": [
+          {
+            "name": "Royal Park, Melbourne",
+            "lat": -37.79,
+            "lon": 144.95,
+            "note": "1860 departure."
+          },
+          {
+            "name": "Swan Hill",
+            "lat": -35.34,
+            "lon": 143.56,
+            "note": "Murray River corridor."
+          },
+          {
+            "name": "Menindee",
+            "lat": -32.4,
+            "lon": 142.43,
+            "note": "Expedition staging point."
+          },
+          {
+            "name": "Cooper Creek camp",
+            "lat": -27.68,
+            "lon": 141.91,
+            "note": "Approximate Dig Tree region."
+          },
+          {
+            "name": "Boulia region",
+            "lat": -22.91,
+            "lon": 139.91,
+            "note": "Broad inland northward corridor control, not a documented camp."
+          },
+          {
+            "name": "Gulf mangroves near Flinders River",
+            "lat": -17.6,
+            "lon": 140.9,
+            "note": "Northernmost mangrove region; no open sea sighting."
+          }
+        ]
+      },
+      {
+        "mode": "camel and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nma.gov.au/explore/collection/highlights/burke-and-wills",
+        "anchors": [
+          {
+            "name": "Gulf mangroves near Flinders River",
+            "lat": -17.6,
+            "lon": 140.9,
+            "note": "Turnaround region."
+          },
+          {
+            "name": "Cooper Creek camp",
+            "lat": -27.68,
+            "lon": 141.91,
+            "note": "Return after depot party left."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "california-trail-migrations",
+    "rank": 9,
+    "title": "California Trail migrations",
+    "short_title": "California Trail",
+    "date": "1840s–1860s",
+    "why_famous": "A principal overland route of the Gold Rush and westward settler movement.",
+    "route_summary": "Representative Humboldt River and Truckee River branch from the Missouri River through South Pass to Sacramento.",
+    "source_title": "National Park Service: historic trail GIS",
+    "source_url": "https://www.nps.gov/orgs/1453/gis-data.htm",
+    "geometry_confidence": "medium",
+    "geometry_note": "Selected Truckee branch of a network; bypasses and other Sierra crossings are excluded. Place-to-place segments are cartographic approximations.",
+    "segments": [
+      {
+        "mode": "wagon and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/orgs/1453/gis-data.htm",
+        "anchors": [
+          {
+            "name": "Independence",
+            "lat": 39.09,
+            "lon": -94.42,
+            "note": "Representative eastern departure."
+          },
+          {
+            "name": "Fort Kearny",
+            "lat": 40.65,
+            "lon": -98.99,
+            "note": "Platte corridor."
+          },
+          {
+            "name": "Fort Laramie",
+            "lat": 42.21,
+            "lon": -104.52,
+            "note": "Trail station."
+          },
+          {
+            "name": "South Pass",
+            "lat": 42.37,
+            "lon": -108.91,
+            "note": "Continental Divide."
+          },
+          {
+            "name": "Fort Bridger",
+            "lat": 41.32,
+            "lon": -110.39,
+            "note": "Junction west of pass."
+          },
+          {
+            "name": "Fort Hall",
+            "lat": 43.02,
+            "lon": -112.63,
+            "note": "California Trail junction."
+          },
+          {
+            "name": "Humboldt River at Elko",
+            "lat": 40.84,
+            "lon": -115.76,
+            "note": "Humboldt River corridor."
+          },
+          {
+            "name": "Humboldt Sink",
+            "lat": 40.09,
+            "lon": -118.58,
+            "note": "Desert crossing start."
+          },
+          {
+            "name": "Truckee River at Reno",
+            "lat": 39.53,
+            "lon": -119.81,
+            "note": "Selected Truckee branch."
+          },
+          {
+            "name": "Donner Pass",
+            "lat": 39.32,
+            "lon": -120.33,
+            "note": "Sierra Nevada crossing region."
+          },
+          {
+            "name": "Sacramento",
+            "lat": 38.58,
+            "lon": -121.49,
+            "note": "California destination region."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "anza-colonizing-expedition",
+    "rank": 10,
+    "title": "Anza colonizing expedition",
+    "short_title": "Anza expedition",
+    "date": "1775–1776",
+    "why_famous": "A well-documented Spanish colonizing caravan reached the San Francisco Bay region from Sonora, accelerating the colonization of Alta California.",
+    "route_summary": "Horcasitas to Tubac, Yuma, San Gabriel and Monterey; Anza then explored the San Francisco Bay with a smaller party.",
+    "source_title": "National Park Service: Anza expedition campsite mapping",
+    "source_url": "https://www.nps.gov/juba/learn/historyculture/mapping-historic-campsites-of-the-anza-colonizing-expedition.htm",
+    "geometry_confidence": "medium",
+    "geometry_note": "NPS distinguishes fixed from hypothesized camps; these are selected named controls, not the complete campsite GIS. Bay reconnaissance was by Anza's smaller party after the colonists stopped at Monterey.",
+    "segments": [
+      {
+        "mode": "horse and pack caravan",
+        "track_type": "source-derived",
+        "source_url": "https://www.nps.gov/juba/learn/historyculture/mapping-historic-campsites-of-the-anza-colonizing-expedition.htm",
+        "anchors": [
+          {
+            "name": "Horcasitas",
+            "lat": 29.49,
+            "lon": -110.72,
+            "note": "NPS fixed campsite; departure of mapped colonizing leg."
+          },
+          {
+            "name": "Magdalena",
+            "lat": 30.63,
+            "lon": -110.98,
+            "note": "NPS fixed campsite."
+          },
+          {
+            "name": "Tubac",
+            "lat": 31.6,
+            "lon": -111.05,
+            "note": "NPS fixed presidio campsite."
+          },
+          {
+            "name": "Mission San Xavier del Bac",
+            "lat": 32.11,
+            "lon": -111.01,
+            "note": "NPS fixed campsite."
+          },
+          {
+            "name": "Picacho Peak",
+            "lat": 32.62,
+            "lon": -111.53,
+            "note": "NPS fixed control."
+          },
+          {
+            "name": "Gila–Colorado confluence",
+            "lat": 32.72,
+            "lon": -114.62,
+            "note": "Yuma crossing with Quechan help; exact camp area varies."
+          },
+          {
+            "name": "Borrego Springs region",
+            "lat": 33.26,
+            "lon": -116.38,
+            "note": "Anza–Borrego desert corridor."
+          },
+          {
+            "name": "Mission San Gabriel",
+            "lat": 34.1,
+            "lon": -118.11,
+            "note": "Documented California stop."
+          },
+          {
+            "name": "San Luis Obispo",
+            "lat": 35.28,
+            "lon": -120.66,
+            "note": "Coastal corridor."
+          },
+          {
+            "name": "Presidio of Monterey",
+            "lat": 36.6,
+            "lon": -121.89,
+            "note": "Colonist destination."
+          }
+        ]
+      },
+      {
+        "mode": "horseback reconnaissance",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/juba/learn/historyculture/california-anza-trail-sites.htm",
+        "anchors": [
+          {
+            "name": "Presidio of Monterey",
+            "lat": 36.6,
+            "lon": -121.89,
+            "note": "Anza's smaller party departed after colonists settled."
+          },
+          {
+            "name": "San Juan Bautista region",
+            "lat": 36.85,
+            "lon": -121.54,
+            "note": "Historic corridor."
+          },
+          {
+            "name": "San Francisco Bay peninsula",
+            "lat": 37.76,
+            "lon": -122.45,
+            "note": "Reconnaissance destination, not colonists' 1776 destination."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pony-express-service",
+    "rank": 11,
+    "title": "Pony Express service route",
+    "short_title": "Pony Express",
+    "date": "1860–1861",
+    "why_famous": "A celebrated relay mail service carried news between Missouri and California before the transcontinental telegraph.",
+    "route_summary": "St. Joseph through Fort Kearny, Fort Laramie, Salt Lake City and Carson City to Sacramento.",
+    "source_title": "National Park Service: Pony Express trail map",
+    "source_url": "https://www.nps.gov/poex/planyourvisit/upload/National-Park-Service-Pony-Express-Map-508.pdf",
+    "geometry_confidence": "medium",
+    "geometry_note": "Service network represented by principal stations and crossings, not one rider's continuous trip. The Sacramento to San Francisco steamer continuation is omitted.",
+    "segments": [
+      {
+        "mode": "horse relay",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/poex/planyourvisit/upload/National-Park-Service-Pony-Express-Map-508.pdf",
+        "anchors": [
+          {
+            "name": "St. Joseph",
+            "lat": 39.77,
+            "lon": -94.85,
+            "note": "Eastern relay terminal."
+          },
+          {
+            "name": "Marysville",
+            "lat": 39.84,
+            "lon": -96.65,
+            "note": "Kansas station."
+          },
+          {
+            "name": "Fort Kearny",
+            "lat": 40.65,
+            "lon": -98.99,
+            "note": "Nebraska station."
+          },
+          {
+            "name": "Fort Laramie",
+            "lat": 42.21,
+            "lon": -104.52,
+            "note": "Wyoming station."
+          },
+          {
+            "name": "South Pass",
+            "lat": 42.37,
+            "lon": -108.91,
+            "note": "Continental Divide corridor."
+          },
+          {
+            "name": "Fort Bridger",
+            "lat": 41.32,
+            "lon": -110.39,
+            "note": "Wyoming junction."
+          },
+          {
+            "name": "Salt Lake City",
+            "lat": 40.76,
+            "lon": -111.89,
+            "note": "Utah relay hub."
+          },
+          {
+            "name": "Simpson Springs",
+            "lat": 40.04,
+            "lon": -112.78,
+            "note": "Great Basin station."
+          },
+          {
+            "name": "Eureka region",
+            "lat": 39.5,
+            "lon": -115.96,
+            "note": "Central Nevada corridor."
+          },
+          {
+            "name": "Carson City",
+            "lat": 39.16,
+            "lon": -119.77,
+            "note": "Sierra approach."
+          },
+          {
+            "name": "Placerville",
+            "lat": 38.73,
+            "lon": -120.8,
+            "note": "California station."
+          },
+          {
+            "name": "Sacramento",
+            "lat": 38.58,
+            "lon": -121.49,
+            "note": "Western overland terminal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mormon-pioneer-vanguard",
+    "rank": 12,
+    "title": "Mormon pioneer migration",
+    "short_title": "Mormon pioneers",
+    "date": "1846–1847",
+    "why_famous": "The 1846 evacuation and 1847 vanguard trek established a Latter-day Saint settlement in the Salt Lake Valley.",
+    "route_summary": "Nauvoo across Iowa to Winter Quarters, then Brigham Young's 1847 vanguard by the Platte, South Pass and Fort Bridger to the Salt Lake Valley.",
+    "source_title": "National Park Service: Mormon Pioneer Trail timeline",
+    "source_url": "https://www.nps.gov/articles/000/mormon-pioneer-trail-timeline.htm",
+    "geometry_confidence": "medium",
+    "geometry_note": "The 1846 Iowa evacuation and 1847 vanguard are distinct stages; anchors do not represent all later emigrant companies.",
+    "segments": [
+      {
+        "mode": "wagon and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/articles/000/mormon-pioneer-trail-timeline.htm",
+        "anchors": [
+          {
+            "name": "Nauvoo",
+            "lat": 40.55,
+            "lon": -91.38,
+            "note": "1846 exodus departure."
+          },
+          {
+            "name": "Garden Grove",
+            "lat": 40.83,
+            "lon": -93.6,
+            "note": "Temporary Iowa settlement."
+          },
+          {
+            "name": "Winter Quarters",
+            "lat": 41.33,
+            "lon": -95.96,
+            "note": "1846–47 winter settlement."
+          }
+        ]
+      },
+      {
+        "mode": "wagon and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://home.nps.gov/mopi/learn/historyculture/the-1847-trek.htm",
+        "anchors": [
+          {
+            "name": "Winter Quarters",
+            "lat": 41.33,
+            "lon": -95.96,
+            "note": "1847 vanguard departure."
+          },
+          {
+            "name": "Chimney Rock",
+            "lat": 41.7,
+            "lon": -103.35,
+            "note": "Platte River landmark."
+          },
+          {
+            "name": "Fort Laramie",
+            "lat": 42.21,
+            "lon": -104.52,
+            "note": "North Platte crossing."
+          },
+          {
+            "name": "South Pass",
+            "lat": 42.37,
+            "lon": -108.91,
+            "note": "Continental Divide."
+          },
+          {
+            "name": "Fort Bridger",
+            "lat": 41.32,
+            "lon": -110.39,
+            "note": "Western junction."
+          },
+          {
+            "name": "Emigration Canyon",
+            "lat": 40.75,
+            "lon": -111.8,
+            "note": "Salt Lake Valley entry."
+          },
+          {
+            "name": "Salt Lake Valley camp",
+            "lat": 40.76,
+            "lon": -111.89,
+            "note": "1847 arrival region."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "becknell-santa-fe-journey",
+    "rank": 13,
+    "title": "William Becknell's Santa Fe journey",
+    "short_title": "Becknell 1821",
+    "date": "1821",
+    "why_famous": "Opened a commercial route from Missouri to Santa Fe that became the Santa Fe Trail.",
+    "route_summary": "Franklin, Missouri through the Arkansas River and Raton Pass corridor to Santa Fe.",
+    "source_title": "National Park Service: Santa Fe Trail maps",
+    "source_url": "https://www.nps.gov/safe/planyourvisit/maps.htm",
+    "geometry_confidence": "low",
+    "geometry_note": "Represents Becknell's first 1821 journey via the Mountain Route corridor; the later Cimarron Cutoff is intentionally not substituted. Exact 1821 track is not surveyed.",
+    "segments": [
+      {
+        "mode": "packhorse caravan",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/safe/planyourvisit/maps.htm",
+        "anchors": [
+          {
+            "name": "Franklin, Missouri",
+            "lat": 39.01,
+            "lon": -92.75,
+            "note": "Historic departure town."
+          },
+          {
+            "name": "Council Grove",
+            "lat": 38.66,
+            "lon": -96.49,
+            "note": "Eastern trail corridor."
+          },
+          {
+            "name": "Fort Larned region",
+            "lat": 38.18,
+            "lon": -99.22,
+            "note": "Arkansas River approach; fort built later."
+          },
+          {
+            "name": "Bent's Old Fort region",
+            "lat": 38.04,
+            "lon": -103.43,
+            "note": "Upper Arkansas corridor; fort built later."
+          },
+          {
+            "name": "Raton Pass",
+            "lat": 36.99,
+            "lon": -104.49,
+            "note": "Mountain Route crossing corridor."
+          },
+          {
+            "name": "Santa Fe",
+            "lat": 35.69,
+            "lon": -105.94,
+            "note": "New Mexico destination."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "coronado-expedition",
+    "rank": 14,
+    "title": "Coronado expedition",
+    "short_title": "Coronado",
+    "date": "1540–1542",
+    "why_famous": "A Spanish colonial expedition crossed the Southwest and Great Plains in a search for wealthy cities.",
+    "route_summary": "Compostela region through Culiacán and the Southwest toward Hawikuh and the Rio Grande; later journey toward Quivira in the central plains.",
+    "source_title": "National Park Service: Coronado route uncertainty",
+    "source_url": "https://www.nps.gov/coro/learn/historyculture/what-route-did-the-expedition-take.htm",
+    "geometry_confidence": "low",
+    "geometry_note": "NPS states the entire route is unknown and Arizona evidence may redraw it. This schematic only joins broad regions; Hawikuh and Quivira identifications require caution.",
+    "segments": [
+      {
+        "mode": "horse and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/coro/learn/historyculture/what-route-did-the-expedition-take.htm",
+        "anchors": [
+          {
+            "name": "Compostela region",
+            "lat": 21.24,
+            "lon": -104.9,
+            "note": "New Galicia starting region."
+          },
+          {
+            "name": "Culiacán",
+            "lat": 24.81,
+            "lon": -107.39,
+            "note": "Northbound staging region."
+          },
+          {
+            "name": "Sonora corridor",
+            "lat": 29.0,
+            "lon": -110.9,
+            "note": "Schematic desert control, not a documented camp."
+          },
+          {
+            "name": "Hawikuh region",
+            "lat": 35.07,
+            "lon": -108.91,
+            "note": "Zuni Pueblo region."
+          },
+          {
+            "name": "Rio Grande pueblos",
+            "lat": 35.14,
+            "lon": -106.57,
+            "note": "Tiguex province broadly located near Albuquerque."
+          }
+        ]
+      },
+      {
+        "mode": "horse and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/coro/learn/historyculture/what-route-did-the-expedition-take.htm",
+        "anchors": [
+          {
+            "name": "Rio Grande pueblos",
+            "lat": 35.14,
+            "lon": -106.57,
+            "note": "Eastward expedition stage."
+          },
+          {
+            "name": "Texas Panhandle",
+            "lat": 35.2,
+            "lon": -101.8,
+            "note": "Broad plains corridor only."
+          },
+          {
+            "name": "Central Kansas region",
+            "lat": 38.0,
+            "lon": -98.0,
+            "note": "Proposed Quivira region, not a fixed endpoint."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "de-soto-expedition",
+    "rank": 15,
+    "title": "De Soto expedition",
+    "short_title": "De Soto",
+    "date": "1539–1542",
+    "why_famous": "A violent Spanish colonial incursion into southeastern Native homelands, followed by the first documented European encounter with the Mississippi River.",
+    "route_summary": "Florida landing through the Southeast and across the Mississippi; the surviving party departed by river after de Soto's death.",
+    "source_title": "National Park Service: de Soto expedition",
+    "source_url": "https://www.nps.gov/liri/learn/historyculture/de-soto-expedition-1539-1542.htm",
+    "geometry_confidence": "low",
+    "geometry_note": "The expedition alignment is contested. Region anchors are a schematic of scholarly proposals, not asserted town or village identifications.",
+    "segments": [
+      {
+        "mode": "horse and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/liri/learn/historyculture/de-soto-expedition-1539-1542.htm",
+        "anchors": [
+          {
+            "name": "Tampa Bay region",
+            "lat": 27.75,
+            "lon": -82.55,
+            "note": "Florida landing region."
+          },
+          {
+            "name": "Northern Florida region",
+            "lat": 30.4,
+            "lon": -84.3,
+            "note": "Broad interior corridor."
+          },
+          {
+            "name": "Central Georgia region",
+            "lat": 32.7,
+            "lon": -83.5,
+            "note": "Broad corridor only."
+          },
+          {
+            "name": "Alabama interior",
+            "lat": 33.2,
+            "lon": -87.2,
+            "note": "Broad corridor only."
+          },
+          {
+            "name": "Mississippi River near Memphis",
+            "lat": 35.15,
+            "lon": -90.05,
+            "note": "One proposed river-crossing region; exact point unknown."
+          },
+          {
+            "name": "Arkansas interior",
+            "lat": 34.8,
+            "lon": -92.4,
+            "note": "Broad westward stage."
+          }
+        ]
+      },
+      {
+        "mode": "river boat",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/liri/learn/historyculture/de-soto-expedition-1539-1542.htm",
+        "anchors": [
+          {
+            "name": "Lower Mississippi region",
+            "lat": 32.5,
+            "lon": -91.0,
+            "note": "Survivors' downstream escape; embarkation uncertain."
+          },
+          {
+            "name": "Mississippi delta",
+            "lat": 29.3,
+            "lon": -89.4,
+            "note": "Gulf exit corridor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "livingstone-crossing",
+    "rank": 16,
+    "title": "David Livingstone's African crossing",
+    "short_title": "Livingstone",
+    "date": "1853–1856",
+    "why_famous": "His east–west and west–east journeys shaped European geographic knowledge while relying on African guides and networks.",
+    "route_summary": "Linyanti to Luanda and back, then via Victoria Falls and the Zambezi basin to Quelimane.",
+    "source_title": "Library of Congress: historical African expedition route map",
+    "source_url": "https://www.loc.gov/resource/g8201s.ct000153/",
+    "geometry_confidence": "low",
+    "geometry_note": "A nineteenth-century comparative map supplies broad itinerary. Long rivers and overland legs are separated where identifiable, but exact crossings remain uncertain.",
+    "segments": [
+      {
+        "mode": "foot and caravan",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/resource/g8201s.ct000153/",
+        "anchors": [
+          {
+            "name": "Linyanti",
+            "lat": -18.38,
+            "lon": 23.98,
+            "note": "Makololo capital region."
+          },
+          {
+            "name": "Upper Zambezi crossing",
+            "lat": -15.8,
+            "lon": 22.7,
+            "note": "Broad western corridor."
+          },
+          {
+            "name": "Luanda",
+            "lat": -8.84,
+            "lon": 13.23,
+            "note": "Atlantic coast arrival."
+          }
+        ]
+      },
+      {
+        "mode": "foot and caravan",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/resource/g8201s.ct000153/",
+        "anchors": [
+          {
+            "name": "Luanda",
+            "lat": -8.84,
+            "lon": 13.23,
+            "note": "Return east."
+          },
+          {
+            "name": "Linyanti",
+            "lat": -18.38,
+            "lon": 23.98,
+            "note": "Interior base."
+          },
+          {
+            "name": "Victoria Falls",
+            "lat": -17.93,
+            "lon": 25.86,
+            "note": "Known locally as Mosi-oa-Tunya."
+          },
+          {
+            "name": "Tete",
+            "lat": -16.16,
+            "lon": 33.59,
+            "note": "Lower Zambezi stage."
+          }
+        ]
+      },
+      {
+        "mode": "river boat and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/resource/g8201s.ct000153/",
+        "anchors": [
+          {
+            "name": "Tete",
+            "lat": -16.16,
+            "lon": 33.59,
+            "note": "Zambezi corridor."
+          },
+          {
+            "name": "Sena",
+            "lat": -17.44,
+            "lon": 35.02,
+            "note": "Lower river settlement."
+          },
+          {
+            "name": "Quelimane",
+            "lat": -17.88,
+            "lon": 36.89,
+            "note": "Indian Ocean destination."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "heinrich-barth-expedition",
+    "rank": 17,
+    "title": "Heinrich Barth expedition",
+    "short_title": "Heinrich Barth",
+    "date": "1850–1855",
+    "why_famous": "Produced detailed geographic, linguistic, and cultural observations across North and West Africa.",
+    "route_summary": "Tripoli through the Sahara to Lake Chad and west to Timbuktu, followed by return to North Africa.",
+    "source_title": "Library of Congress: historic African expedition route map",
+    "source_url": "https://www.loc.gov/resource/g8201s.ct000153/",
+    "geometry_confidence": "low",
+    "geometry_note": "Selected historically named oases and cities. The long Sahara passages are corridors on a comparative historic map, not surveyed travel positions.",
+    "segments": [
+      {
+        "mode": "camel caravan and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/resource/g8201s.ct000153/",
+        "anchors": [
+          {
+            "name": "Tripoli",
+            "lat": 32.89,
+            "lon": 13.19,
+            "note": "1850 departure."
+          },
+          {
+            "name": "Murzuq",
+            "lat": 25.92,
+            "lon": 13.92,
+            "note": "Fezzan oasis."
+          },
+          {
+            "name": "Agadez",
+            "lat": 16.97,
+            "lon": 7.99,
+            "note": "Saharan crossroads."
+          },
+          {
+            "name": "Lake Chad west shore",
+            "lat": 13.3,
+            "lon": 14.1,
+            "note": "Lake Chad region."
+          },
+          {
+            "name": "Kano",
+            "lat": 12.0,
+            "lon": 8.52,
+            "note": "Hausa city."
+          },
+          {
+            "name": "Sokoto",
+            "lat": 13.06,
+            "lon": 5.25,
+            "note": "West African stage."
+          },
+          {
+            "name": "Timbuktu",
+            "lat": 16.77,
+            "lon": -3.01,
+            "note": "Documented extended stay."
+          }
+        ]
+      },
+      {
+        "mode": "camel caravan and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/resource/g8201s.ct000153/",
+        "anchors": [
+          {
+            "name": "Timbuktu",
+            "lat": 16.77,
+            "lon": -3.01,
+            "note": "Return departure."
+          },
+          {
+            "name": "Agadez",
+            "lat": 16.97,
+            "lon": 7.99,
+            "note": "Saharan return region."
+          },
+          {
+            "name": "Murzuq",
+            "lat": 25.92,
+            "lon": 13.92,
+            "note": "Fezzan stage."
+          },
+          {
+            "name": "Tripoli",
+            "lat": 32.89,
+            "lon": 13.19,
+            "note": "North African return."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "stuart-crossing",
+    "rank": 18,
+    "title": "John McDouall Stuart crossing",
+    "short_title": "Stuart crossing",
+    "date": "1861–1862",
+    "why_famous": "A successful European south–north crossing of Australia and return, helping define the Overland Telegraph corridor.",
+    "route_summary": "Adelaide via the interior to the north coast near present-day Darwin, then back along the same broad corridor.",
+    "source_title": "National Museum of Australia: McDouall Stuart",
+    "source_url": "https://www.nma.gov.au/exhibitions/spirited/objects/mcdouall-stuart-watch",
+    "geometry_confidence": "low",
+    "geometry_note": "Approximate chain of interior landmarks, not Stuart's measured camp log. Several places became named sites later and stand for nearby route regions.",
+    "segments": [
+      {
+        "mode": "horse and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nma.gov.au/exhibitions/spirited/objects/mcdouall-stuart-watch",
+        "anchors": [
+          {
+            "name": "Adelaide",
+            "lat": -34.93,
+            "lon": 138.6,
+            "note": "Southern departure."
+          },
+          {
+            "name": "Port Augusta",
+            "lat": -32.49,
+            "lon": 137.76,
+            "note": "Northern Flinders approach region."
+          },
+          {
+            "name": "Coober Pedy region",
+            "lat": -29.0,
+            "lon": 134.75,
+            "note": "Desert corridor control; settlement founded later."
+          },
+          {
+            "name": "Alice Springs region",
+            "lat": -23.7,
+            "lon": 133.88,
+            "note": "Central Australian corridor; town founded later."
+          },
+          {
+            "name": "Newcastle Waters",
+            "lat": -17.37,
+            "lon": 133.41,
+            "note": "Interior water source."
+          },
+          {
+            "name": "Daly Waters",
+            "lat": -16.25,
+            "lon": 133.39,
+            "note": "Northern interior."
+          },
+          {
+            "name": "Chambers Bay",
+            "lat": -12.27,
+            "lon": 131.31,
+            "note": "Northern coastal arrival region."
+          }
+        ]
+      },
+      {
+        "mode": "horse and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nma.gov.au/exhibitions/spirited/objects/mcdouall-stuart-watch",
+        "anchors": [
+          {
+            "name": "Chambers Bay",
+            "lat": -12.27,
+            "lon": 131.31,
+            "note": "Return south."
+          },
+          {
+            "name": "Alice Springs region",
+            "lat": -23.7,
+            "lon": 133.88,
+            "note": "Interior return corridor."
+          },
+          {
+            "name": "Adelaide",
+            "lat": -34.93,
+            "lon": 138.6,
+            "note": "Return destination."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "leichhardt-first-expedition",
+    "rank": 19,
+    "title": "Ludwig Leichhardt's first expedition",
+    "short_title": "Leichhardt",
+    "date": "1844–1845",
+    "why_famous": "An unusually long documented Australian traverse from the Darling Downs to Port Essington.",
+    "route_summary": "Jimbour through Queensland and the Gulf country to Arnhem Land and Port Essington.",
+    "source_title": "National Museum of Australia: Leichhardt expedition",
+    "source_url": "https://www.nma.gov.au/defining-moments/resources/leichhardt-expedition",
+    "geometry_confidence": "low",
+    "geometry_note": "This is the 1844–45 successful expedition, not Leichhardt's lost 1848 journey. Sparse regional controls do not reconstruct the historic daily route.",
+    "segments": [
+      {
+        "mode": "horse and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nma.gov.au/defining-moments/resources/leichhardt-expedition",
+        "anchors": [
+          {
+            "name": "Jimbour, Darling Downs",
+            "lat": -26.96,
+            "lon": 151.22,
+            "note": "1844 departure."
+          },
+          {
+            "name": "Dawson River region",
+            "lat": -25.6,
+            "lon": 150.1,
+            "note": "Queensland interior."
+          },
+          {
+            "name": "Burdekin River region",
+            "lat": -20.4,
+            "lon": 146.0,
+            "note": "Northern Queensland passage."
+          },
+          {
+            "name": "Gulf of Carpentaria south shore",
+            "lat": -16.8,
+            "lon": 139.5,
+            "note": "Broad Gulf country corridor."
+          },
+          {
+            "name": "Roper River region",
+            "lat": -14.7,
+            "lon": 134.5,
+            "note": "Arnhem Land approach."
+          },
+          {
+            "name": "Port Essington",
+            "lat": -11.36,
+            "lon": 132.16,
+            "note": "1845 destination."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gertrude-bell-euphrates",
+    "rank": 20,
+    "title": "Gertrude Bell's Euphrates survey",
+    "short_title": "Gertrude Bell",
+    "date": "1909",
+    "why_famous": "Her caravan survey documented archaeological sites along the Euphrates and informed later scholarship.",
+    "route_summary": "Aleppo through the upper and middle Euphrates to Hit and Baghdad.",
+    "source_title": "Library of Congress: Gertrude Bell caravan map",
+    "source_url": "https://blogs.loc.gov/maps/2022/03/gertrude-bell/",
+    "geometry_confidence": "medium",
+    "geometry_note": "LOC's original map covers the east-bank Euphrates between Jerablus and Hit. The Aleppo approach and onward Baghdad link are less constrained; Mosul is excluded because it is not part of this specific mapped 1909 corridor.",
+    "segments": [
+      {
+        "mode": "caravan",
+        "track_type": "historical-corridor",
+        "source_url": "https://blogs.loc.gov/maps/2022/03/gertrude-bell/",
+        "anchors": [
+          {
+            "name": "Aleppo",
+            "lat": 36.2,
+            "lon": 37.16,
+            "note": "Caravan departure."
+          },
+          {
+            "name": "Jerablus",
+            "lat": 36.82,
+            "lon": 38.01,
+            "note": "Euphrates entry; LOC map begins here."
+          }
+        ]
+      },
+      {
+        "mode": "caravan",
+        "track_type": "source-derived",
+        "source_url": "https://blogs.loc.gov/maps/2022/03/gertrude-bell/",
+        "anchors": [
+          {
+            "name": "Jerablus",
+            "lat": 36.82,
+            "lon": 38.01,
+            "note": "Original mapped reach begins."
+          },
+          {
+            "name": "Raqqa",
+            "lat": 35.95,
+            "lon": 39.01,
+            "note": "Upper Euphrates corridor."
+          },
+          {
+            "name": "Deir ez-Zor",
+            "lat": 35.34,
+            "lon": 40.14,
+            "note": "Middle Euphrates corridor."
+          },
+          {
+            "name": "Abu Kamal",
+            "lat": 34.45,
+            "lon": 40.92,
+            "note": "Syrian lower river."
+          },
+          {
+            "name": "Anah",
+            "lat": 34.37,
+            "lon": 41.95,
+            "note": "Iraqi Euphrates settlement."
+          },
+          {
+            "name": "Hit",
+            "lat": 33.64,
+            "lon": 42.83,
+            "note": "Original mapped reach ends."
+          }
+        ]
+      },
+      {
+        "mode": "caravan",
+        "track_type": "historical-corridor",
+        "source_url": "https://blogs.loc.gov/maps/2022/03/gertrude-bell/",
+        "anchors": [
+          {
+            "name": "Hit",
+            "lat": 33.64,
+            "lon": 42.83,
+            "note": "Middle Euphrates terminus of original map."
+          },
+          {
+            "name": "Baghdad",
+            "lat": 33.31,
+            "lon": 44.37,
+            "note": "Later destination."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aurel-stein-first-expedition",
+    "rank": 21,
+    "title": "Aurel Stein's first Central Asian expedition",
+    "short_title": "Aurel Stein",
+    "date": "1900–1901",
+    "why_famous": "A major archaeological survey of Silk Road sites, with cultural object removals now contested.",
+    "route_summary": "Kashmir over the Karakoram to the Tarim Basin and Khotan region, returning to India.",
+    "source_title": "British Museum: exploring the Silk Roads",
+    "source_url": "https://www.britishmuseum.org/collection/china/exploring-silk-roads",
+    "geometry_confidence": "low",
+    "geometry_note": "Broad regional itinerary; pass selection and individual archaeological sites are not resolved by the summary source. Return route omitted.",
+    "segments": [
+      {
+        "mode": "caravan and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.britishmuseum.org/collection/china/exploring-silk-roads",
+        "anchors": [
+          {
+            "name": "Srinagar",
+            "lat": 34.08,
+            "lon": 74.88,
+            "note": "Kashmir starting region."
+          },
+          {
+            "name": "Leh",
+            "lat": 34.16,
+            "lon": 77.58,
+            "note": "Ladakh caravan hub."
+          },
+          {
+            "name": "Karakoram Pass",
+            "lat": 35.5,
+            "lon": 77.82,
+            "note": "Representative mountain crossing; passage requires verification against the expedition diary."
+          },
+          {
+            "name": "Yarkand",
+            "lat": 38.42,
+            "lon": 77.25,
+            "note": "Tarim Basin oasis."
+          },
+          {
+            "name": "Khotan",
+            "lat": 37.11,
+            "lon": 79.92,
+            "note": "Principal first-expedition study region."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lady-anne-blunt-arabian-journeys",
+    "rank": 22,
+    "title": "Lady Anne Blunt's Arabian journeys",
+    "short_title": "Lady Anne Blunt",
+    "date": "1878–1879",
+    "why_famous": "Her published Arabian travels and surviving route map record two uncommon nineteenth-century European journeys through the region.",
+    "route_summary": "Separate 1878 Beirut–Baghdad–Alexandretta and 1879 Beirut–Al Jawf–Hā'il–Baghdad–Būshehr itineraries.",
+    "source_title": "Library of Congress: Lady Anne Blunt route map",
+    "source_url": "https://www.loc.gov/resource/g7420.ct003750/",
+    "geometry_confidence": "medium",
+    "geometry_note": "Two itineraries are intentionally separate. The 1879 route via Al Jawf, Hā'il and Baghdad is corroborated by her account and contemporary descriptions; exact desert line and final Persian Gulf crossing remain indicative.",
+    "segments": [
+      {
+        "mode": "horse and camel caravan",
+        "track_type": "source-derived",
+        "source_url": "https://www.loc.gov/resource/g7420.ct003750/",
+        "anchors": [
+          {
+            "name": "Beirut",
+            "lat": 33.89,
+            "lon": 35.5,
+            "note": "1878 departure."
+          },
+          {
+            "name": "Palmyra region",
+            "lat": 34.55,
+            "lon": 38.27,
+            "note": "Northern Syrian Desert corridor."
+          },
+          {
+            "name": "Euphrates crossing region",
+            "lat": 34.45,
+            "lon": 40.92,
+            "note": "Approximate eastward control."
+          },
+          {
+            "name": "Baghdad",
+            "lat": 33.31,
+            "lon": 44.37,
+            "note": "1878 eastern destination."
+          },
+          {
+            "name": "Mosul",
+            "lat": 36.34,
+            "lon": 43.13,
+            "note": "Northward Tigris return corridor."
+          },
+          {
+            "name": "Alexandretta",
+            "lat": 36.59,
+            "lon": 36.17,
+            "note": "Modern İskenderun; Mediterranean end of 1878 route."
+          }
+        ]
+      },
+      {
+        "mode": "horse and camel caravan",
+        "track_type": "source-derived",
+        "source_url": "https://www.loc.gov/resource/g7420.ct003750/",
+        "anchors": [
+          {
+            "name": "Beirut",
+            "lat": 33.89,
+            "lon": 35.5,
+            "note": "1879 departure."
+          },
+          {
+            "name": "Damascus",
+            "lat": 33.51,
+            "lon": 36.29,
+            "note": "Caravan staging city."
+          },
+          {
+            "name": "Wadi Sirhan region",
+            "lat": 31.0,
+            "lon": 38.1,
+            "note": "Broad desert corridor."
+          },
+          {
+            "name": "Al Jawf",
+            "lat": 29.97,
+            "lon": 40.2,
+            "note": "Oasis stop before Hā'il."
+          },
+          {
+            "name": "Hā'il",
+            "lat": 27.52,
+            "lon": 41.7,
+            "note": "Najd stay."
+          },
+          {
+            "name": "Karbala",
+            "lat": 32.62,
+            "lon": 44.03,
+            "note": "Pilgrim caravan return corridor."
+          },
+          {
+            "name": "Baghdad",
+            "lat": 33.31,
+            "lon": 44.37,
+            "note": "Return to Mesopotamia."
+          },
+          {
+            "name": "Basra",
+            "lat": 30.51,
+            "lon": 47.78,
+            "note": "Lower Mesopotamia corridor; precise onward transport uncertain."
+          }
+        ]
+      },
+      {
+        "mode": "sailing",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/resource/g7420.ct003750/",
+        "anchors": [
+          {
+            "name": "Basra",
+            "lat": 30.51,
+            "lon": 47.78,
+            "note": "Indicative Persian Gulf embarkation."
+          },
+          {
+            "name": "Būshehr",
+            "lat": 28.97,
+            "lon": 50.84,
+            "note": "LOC-named journey endpoint in Persia."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "faxian-pilgrimage",
+    "rank": 23,
+    "title": "Faxian pilgrimage",
+    "short_title": "Faxian",
+    "date": "c. 399–414",
+    "why_famous": "His account of Buddhist sites and texts is among the earliest major Chinese records of travel to India.",
+    "route_summary": "China via Central Asia to Buddhist sites in India; maritime return through Sri Lanka and Southeast Asia.",
+    "source_title": "British Library: Buddhist travellers and pilgrims",
+    "source_url": "https://idp.bl.uk/discover/learning/buddhism-on-the-silk-roads/articles/transmission-of-buddhism/buddhist-travellers-and-pilgrims/",
+    "geometry_confidence": "low",
+    "geometry_note": "Fourth/fifth-century itinerary is generalized to major regions; exact oasis sequence and Indian paths are not measured tracks. Return voyage is a separate segment.",
+    "segments": [
+      {
+        "mode": "caravan and foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://idp.bl.uk/discover/learning/buddhism-on-the-silk-roads/articles/transmission-of-buddhism/buddhist-travellers-and-pilgrims/",
+        "anchors": [
+          {
+            "name": "Chang'an region",
+            "lat": 34.26,
+            "lon": 108.95,
+            "note": "Chinese departure region."
+          },
+          {
+            "name": "Dunhuang",
+            "lat": 40.14,
+            "lon": 94.66,
+            "note": "Gansu oasis."
+          },
+          {
+            "name": "Khotan",
+            "lat": 37.11,
+            "lon": 79.92,
+            "note": "Tarim Basin Buddhist center."
+          },
+          {
+            "name": "Taxila region",
+            "lat": 33.75,
+            "lon": 72.82,
+            "note": "Northwestern subcontinent."
+          },
+          {
+            "name": "Pataliputra",
+            "lat": 25.61,
+            "lon": 85.14,
+            "note": "Modern Patna; long Indian stay."
+          },
+          {
+            "name": "Tamralipta region",
+            "lat": 22.31,
+            "lon": 87.92,
+            "note": "Bay of Bengal embarkation."
+          }
+        ]
+      },
+      {
+        "mode": "sailing",
+        "track_type": "historical-corridor",
+        "source_url": "https://idp.bl.uk/discover/learning/buddhism-on-the-silk-roads/articles/transmission-of-buddhism/buddhist-travellers-and-pilgrims/",
+        "anchors": [
+          {
+            "name": "Tamralipta region",
+            "lat": 22.31,
+            "lon": 87.92,
+            "note": "Indian embarkation."
+          },
+          {
+            "name": "Sri Lanka",
+            "lat": 6.93,
+            "lon": 79.85,
+            "note": "Island stay."
+          },
+          {
+            "name": "Indian Ocean south of Sri Lanka",
+            "lat": 4.0,
+            "lon": 82.0,
+            "note": "Illustrative offshore control; not an observed ship position."
+          },
+          {
+            "name": "Bay of Bengal central",
+            "lat": 2.0,
+            "lon": 91.0,
+            "note": "Illustrative offshore control; not an observed ship position."
+          },
+          {
+            "name": "Indian Ocean off western Java",
+            "lat": -6.5,
+            "lon": 103.0,
+            "note": "Illustrative offshore control; not an observed ship position."
+          },
+          {
+            "name": "Java",
+            "lat": -6.2,
+            "lon": 106.82,
+            "note": "Ship stop; region represented near northwestern Java."
+          },
+          {
+            "name": "Java Sea",
+            "lat": -3.5,
+            "lon": 108.0,
+            "note": "Illustrative offshore control; not an observed ship position."
+          },
+          {
+            "name": "Natuna Sea",
+            "lat": 2.0,
+            "lon": 109.0,
+            "note": "Illustrative offshore control; not an observed ship position."
+          },
+          {
+            "name": "South China Sea",
+            "lat": 10.0,
+            "lon": 113.0,
+            "note": "Illustrative offshore control; not an observed ship position."
+          },
+          {
+            "name": "East of Taiwan",
+            "lat": 25.0,
+            "lon": 124.0,
+            "note": "Illustrative offshore control; not an observed ship position."
+          },
+          {
+            "name": "Yellow Sea",
+            "lat": 33.0,
+            "lon": 124.0,
+            "note": "Illustrative offshore approach; not an observed ship position."
+          },
+          {
+            "name": "Shandong coast",
+            "lat": 36.3,
+            "lon": 120.4,
+            "note": "Return landing region, precise site uncertain."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cabeza-de-vaca-traverse",
+    "rank": 24,
+    "title": "Cabeza de Vaca traverse",
+    "short_title": "Cabeza de Vaca",
+    "date": "c. 1528–1536",
+    "why_famous": "A survival account after the Narváez expedition shipwreck, involving years among Indigenous communities of the southern North American interior.",
+    "route_summary": "Gulf shipwreck near Galveston Island followed by a disputed inland traverse toward northern Mexico and Culiacán.",
+    "source_title": "Library of Congress: Cabeza de Vaca historical background",
+    "source_url": "https://blogs.loc.gov/international-collections/2019/10/pas-por-aqui-the-hispanic-heritage-in-the-united-states/",
+    "geometry_confidence": "low",
+    "geometry_note": "Proposed paths differ widely across Texas and northern Mexico. These few regional anchors are a corridor schematic, not a claim that each city was visited.",
+    "segments": [
+      {
+        "mode": "foot",
+        "track_type": "historical-corridor",
+        "source_url": "https://blogs.loc.gov/international-collections/2019/10/pas-por-aqui-the-hispanic-heritage-in-the-united-states/",
+        "anchors": [
+          {
+            "name": "Galveston Island region",
+            "lat": 29.29,
+            "lon": -94.79,
+            "note": "Approximate shipwreck and early captivity region."
+          },
+          {
+            "name": "South Texas interior",
+            "lat": 28.0,
+            "lon": -99.0,
+            "note": "Broad regional control, not an identified campsite."
+          },
+          {
+            "name": "Northern Mexico interior",
+            "lat": 27.0,
+            "lon": -105.0,
+            "note": "Broad corridor; route disputed."
+          },
+          {
+            "name": "Culiacán",
+            "lat": 24.81,
+            "lon": -107.39,
+            "note": "Spanish settlement reached in 1536."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "camino-real-tierra-adentro",
+    "rank": 25,
+    "title": "El Camino Real de Tierra Adentro",
+    "short_title": "Camino Real",
+    "date": "1598 onward",
+    "why_famous": "A long-lived colonial road linking central Mexico to New Mexico, built over older Indigenous routes and tied to trade and colonization.",
+    "route_summary": "Representative road corridor from Mexico City through Zacatecas, Chihuahua and El Paso to Santa Fe.",
+    "source_title": "National Park Service: El Camino Real maps",
+    "source_url": "https://home.nps.gov/es-es/elca/planyourvisit/maps.htm",
+    "geometry_confidence": "medium",
+    "geometry_note": "This is a route network over centuries, not one person's trip. Historic alignments moved; place anchors define the corridor only.",
+    "segments": [
+      {
+        "mode": "caravan and wagon",
+        "track_type": "historical-corridor",
+        "source_url": "https://home.nps.gov/es-es/elca/planyourvisit/maps.htm",
+        "anchors": [
+          {
+            "name": "Mexico City",
+            "lat": 19.43,
+            "lon": -99.13,
+            "note": "Southern road terminal."
+          },
+          {
+            "name": "Querétaro",
+            "lat": 20.59,
+            "lon": -100.39,
+            "note": "Central Mexico junction."
+          },
+          {
+            "name": "San Luis Potosí",
+            "lat": 22.15,
+            "lon": -100.98,
+            "note": "Northern route corridor."
+          },
+          {
+            "name": "Zacatecas",
+            "lat": 22.77,
+            "lon": -102.58,
+            "note": "Mining center."
+          },
+          {
+            "name": "Durango",
+            "lat": 24.03,
+            "lon": -104.65,
+            "note": "Northern New Spain stage."
+          },
+          {
+            "name": "Chihuahua",
+            "lat": 28.63,
+            "lon": -106.07,
+            "note": "Regional center."
+          },
+          {
+            "name": "Ciudad Juárez / El Paso",
+            "lat": 31.74,
+            "lon": -106.49,
+            "note": "Rio Grande crossing region."
+          },
+          {
+            "name": "Jornada del Muerto",
+            "lat": 33.3,
+            "lon": -106.8,
+            "note": "Desert road corridor; approximate midpoint."
+          },
+          {
+            "name": "Socorro",
+            "lat": 34.06,
+            "lon": -106.89,
+            "note": "Rio Grande settlement."
+          },
+          {
+            "name": "Santa Fe",
+            "lat": 35.69,
+            "lon": -105.94,
+            "note": "Northern route terminal."
+          }
+        ]
+      }
+    ]
+  }
+]

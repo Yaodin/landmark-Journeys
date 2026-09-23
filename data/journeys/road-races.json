@@ -1,0 +1,2778 @@
+[
+  {
+    "id": "bertha-benz-1888",
+    "rank": 1,
+    "title": "Bertha Benz's long-distance drive",
+    "short_title": "Bertha Benz",
+    "date": "1888-08-05",
+    "why_famous": "The first long-distance automobile journey demonstrated that the motorcar could be practical transport.",
+    "route_summary": "Mannheim to Pforzheim via Heidelberg, Wiesloch and Bruchsal; a different return through Bretten.",
+    "source_title": "Mercedes-Benz: Bertha Benz and the long-distance journey",
+    "source_url": "https://group.mercedes-benz.com/company/tradition/company-history/1885-1886.html",
+    "geometry_confidence": "medium",
+    "geometry_note": "Town-level outward and return reconstruction. Connecting lines do not claim the exact unpaved road alignment of 1888.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.bertha-benz.de/berthabenzmemorialroute/",
+        "anchors": [
+          {
+            "name": "Mannheim",
+            "lat": 49.4875,
+            "lon": 8.466,
+            "note": "Start"
+          },
+          {
+            "name": "Heidelberg",
+            "lat": 49.3988,
+            "lon": 8.6724,
+            "note": "Outward-route city"
+          },
+          {
+            "name": "Wiesloch",
+            "lat": 49.295,
+            "lon": 8.698,
+            "note": "Pharmacy fuel stop"
+          },
+          {
+            "name": "Bruchsal",
+            "lat": 49.1243,
+            "lon": 8.598,
+            "note": "Outward-route city"
+          },
+          {
+            "name": "Pforzheim",
+            "lat": 48.8906,
+            "lon": 8.7029,
+            "note": "Destination"
+          }
+        ]
+      },
+      {
+        "mode": "road",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.bertha-benz.de/berthabenzmemorialroute/",
+        "anchors": [
+          {
+            "name": "Pforzheim",
+            "lat": 48.8906,
+            "lon": 8.7029,
+            "note": "Return start"
+          },
+          {
+            "name": "Bretten",
+            "lat": 49.0367,
+            "lon": 8.7075,
+            "note": "Return-route city"
+          },
+          {
+            "name": "Mannheim",
+            "lat": 49.4875,
+            "lon": 8.466,
+            "note": "Return destination"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jackson-1903",
+    "rank": 2,
+    "title": "First U.S. cross-country automobile drive",
+    "short_title": "Jackson crossing",
+    "date": "1903-05-23/1903-07-26",
+    "why_famous": "Jackson, Crocker and their dog Bud completed the first automobile crossing of the United States.",
+    "route_summary": "San Francisco to New York through the northern Rockies and Midwest.",
+    "source_title": "Smithsonian: Crossing the Country",
+    "source_url": "https://americanhistory.si.edu/explore/exhibitions/america-on-the-move/online/crossing-country",
+    "geometry_confidence": "medium",
+    "geometry_note": "Chronological stop corridor, not a trace of individual roads or detours; no transcontinental highway existed.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://americanhistory.si.edu/explore/exhibitions/america-on-the-move/online/crossing-country",
+        "anchors": [
+          {
+            "name": "San Francisco",
+            "lat": 37.7749,
+            "lon": -122.4194,
+            "note": "Departure"
+          },
+          {
+            "name": "Sacramento",
+            "lat": 38.5816,
+            "lon": -121.4944,
+            "note": "California corridor"
+          },
+          {
+            "name": "Reno",
+            "lat": 39.5296,
+            "lon": -119.8138,
+            "note": "Nevada corridor"
+          },
+          {
+            "name": "Elko",
+            "lat": 40.833,
+            "lon": -115.7631,
+            "note": "Nevada stop"
+          },
+          {
+            "name": "Boise",
+            "lat": 43.615,
+            "lon": -116.2023,
+            "note": "Idaho stop"
+          },
+          {
+            "name": "Pocatello",
+            "lat": 42.8713,
+            "lon": -112.4455,
+            "note": "Idaho corridor"
+          },
+          {
+            "name": "Cheyenne",
+            "lat": 41.14,
+            "lon": -104.8202,
+            "note": "Wyoming stop"
+          },
+          {
+            "name": "Omaha",
+            "lat": 41.2565,
+            "lon": -95.9345,
+            "note": "Nebraska corridor"
+          },
+          {
+            "name": "Chicago",
+            "lat": 41.8781,
+            "lon": -87.6298,
+            "note": "Midwestern stop"
+          },
+          {
+            "name": "Cleveland",
+            "lat": 41.4993,
+            "lon": -81.6944,
+            "note": "Ohio corridor"
+          },
+          {
+            "name": "New York City",
+            "lat": 40.7128,
+            "lon": -74.006,
+            "note": "Arrival"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "peking-paris-1907",
+    "rank": 3,
+    "title": "Peking–Paris Motor Race",
+    "short_title": "Peking–Paris",
+    "date": "1907",
+    "why_famous": "Borghese's Itala crossed Asia and Europe, proving that automobiles could survive an unprecedented continental journey.",
+    "route_summary": "Beijing through Mongolia and Siberia to European Russia, Germany and Paris.",
+    "source_title": "Louwman Museum: The Peking–Paris Automobile Race in 1907",
+    "source_url": "https://www.louwmanmuseum.nl/en/news/the-peking-paris-automobile-race-in-1907",
+    "geometry_confidence": "medium",
+    "geometry_note": "Borghese-focused named-place corridor; Gobi tracks and period roads are not surveyed geometry.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.louwmanmuseum.nl/en/news/the-peking-paris-automobile-race-in-1907",
+        "anchors": [
+          {
+            "name": "Beijing",
+            "lat": 39.9042,
+            "lon": 116.4074,
+            "note": "Race departure"
+          },
+          {
+            "name": "Zhangjiakou",
+            "lat": 40.8244,
+            "lon": 114.8875,
+            "note": "Pass toward Mongolia"
+          },
+          {
+            "name": "Ulaanbaatar",
+            "lat": 47.9184,
+            "lon": 106.9177,
+            "note": "Mongolian corridor"
+          },
+          {
+            "name": "Kyākhta",
+            "lat": 50.3551,
+            "lon": 106.4497,
+            "note": "Siberian gateway"
+          },
+          {
+            "name": "Irkutsk",
+            "lat": 52.2869,
+            "lon": 104.305,
+            "note": "Siberian stop"
+          },
+          {
+            "name": "Krasnoyarsk",
+            "lat": 56.0153,
+            "lon": 92.8932,
+            "note": "Siberian corridor"
+          },
+          {
+            "name": "Omsk",
+            "lat": 54.9885,
+            "lon": 73.3242,
+            "note": "Siberian corridor"
+          },
+          {
+            "name": "Yekaterinburg",
+            "lat": 56.8389,
+            "lon": 60.6057,
+            "note": "Ural crossing"
+          },
+          {
+            "name": "Moscow",
+            "lat": 55.7558,
+            "lon": 37.6173,
+            "note": "European Russia"
+          },
+          {
+            "name": "Berlin",
+            "lat": 52.52,
+            "lon": 13.405,
+            "note": "German stop"
+          },
+          {
+            "name": "Paris",
+            "lat": 48.8566,
+            "lon": 2.3522,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "new-york-paris-1908",
+    "rank": 4,
+    "title": "New York–Paris Race",
+    "short_title": "New York–Paris",
+    "date": "1908",
+    "why_famous": "Schuster's Thomas Flyer won the intercontinental endurance contest through North America, Asia and Europe.",
+    "route_summary": "New York to San Francisco by road, sea transfer to Valdez and back to Seattle, then via Japan to Vladivostok by ship; across Eurasia by road to Paris.",
+    "source_title": "The Henry Ford: 1908 New York to Paris Race",
+    "source_url": "https://www.thehenryford.org/collections/explore/artifact/370831",
+    "geometry_confidence": "medium",
+    "geometry_note": "Separate road and ship corridors. The American team landed in Alaska but did not drive across the Bering Strait; the Siberian roads remain generalized.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.thehenryford.org/collections/explore/artifact/370831",
+        "anchors": [
+          {
+            "name": "New York City",
+            "lat": 40.7128,
+            "lon": -74.006,
+            "note": "Start"
+          },
+          {
+            "name": "Chicago",
+            "lat": 41.8781,
+            "lon": -87.6298,
+            "note": "Western crossing"
+          },
+          {
+            "name": "Omaha",
+            "lat": 41.2565,
+            "lon": -95.9345,
+            "note": "Plains corridor"
+          },
+          {
+            "name": "Cheyenne",
+            "lat": 41.14,
+            "lon": -104.8202,
+            "note": "Rail and road corridor"
+          },
+          {
+            "name": "Salt Lake City",
+            "lat": 40.7608,
+            "lon": -111.891,
+            "note": "Great Basin"
+          },
+          {
+            "name": "San Francisco",
+            "lat": 37.7749,
+            "lon": -122.4194,
+            "note": "Pacific embarkation"
+          }
+        ]
+      },
+      {
+        "mode": "ship",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.thehenryford.org/collections/explore/artifact/370679",
+        "anchors": [
+          {
+            "name": "San Francisco",
+            "lat": 37.7749,
+            "lon": -122.4194,
+            "note": "Pacific embarkation"
+          },
+          {
+            "name": "Pacific off northern California",
+            "lat": 39.0,
+            "lon": -125.0,
+            "note": "Illustrative offshore ship control; not a logged position."
+          },
+          {
+            "name": "Pacific off Oregon",
+            "lat": 44.0,
+            "lon": -126.0,
+            "note": "Illustrative offshore ship control; not a logged position."
+          },
+          {
+            "name": "Strait of Juan de Fuca entrance",
+            "lat": 48.3,
+            "lon": -124.7,
+            "note": "Illustrative sea-passage control; not a logged position."
+          },
+          {
+            "name": "Strait of Juan de Fuca",
+            "lat": 48.3,
+            "lon": -123.0,
+            "note": "Illustrative sea-passage control; not a logged position."
+          },
+          {
+            "name": "Puget Sound",
+            "lat": 47.8,
+            "lon": -122.45,
+            "note": "Illustrative sea-passage control; not a logged position."
+          },
+          {
+            "name": "Seattle",
+            "lat": 47.6062,
+            "lon": -122.3321,
+            "note": "Alaska transfer port"
+          },
+          {
+            "name": "Valdez",
+            "lat": 61.1308,
+            "lon": -146.3483,
+            "note": "Thomas Flyer landed; over-ice drive abandoned"
+          },
+          {
+            "name": "Seattle",
+            "lat": 47.6062,
+            "lon": -122.3321,
+            "note": "Return from Alaska"
+          },
+          {
+            "name": "Yokohama",
+            "lat": 35.4437,
+            "lon": 139.638,
+            "note": "Japan transfer"
+          },
+          {
+            "name": "Vladivostok",
+            "lat": 43.1155,
+            "lon": 131.8855,
+            "note": "Road journey resumes"
+          }
+        ]
+      },
+      {
+        "mode": "road",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.thehenryford.org/collections/explore/artifact/370831",
+        "anchors": [
+          {
+            "name": "Vladivostok",
+            "lat": 43.1155,
+            "lon": 131.8855,
+            "note": "Asian road departure"
+          },
+          {
+            "name": "Khabarovsk",
+            "lat": 48.4802,
+            "lon": 135.0719,
+            "note": "Far East corridor"
+          },
+          {
+            "name": "Chita",
+            "lat": 52.034,
+            "lon": 113.4994,
+            "note": "Siberian corridor"
+          },
+          {
+            "name": "Irkutsk",
+            "lat": 52.2869,
+            "lon": 104.305,
+            "note": "Siberian corridor"
+          },
+          {
+            "name": "Krasnoyarsk",
+            "lat": 56.0153,
+            "lon": 92.8932,
+            "note": "Siberian corridor"
+          },
+          {
+            "name": "Omsk",
+            "lat": 54.9885,
+            "lon": 73.3242,
+            "note": "Siberian corridor"
+          },
+          {
+            "name": "Moscow",
+            "lat": 55.7558,
+            "lon": 37.6173,
+            "note": "European Russia"
+          },
+          {
+            "name": "Berlin",
+            "lat": 52.52,
+            "lon": 13.405,
+            "note": "German corridor"
+          },
+          {
+            "name": "Paris",
+            "lat": 48.8566,
+            "lon": 2.3522,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "moss-mille-miglia-1955",
+    "rank": 5,
+    "title": "Stirling Moss's 1955 Mille Miglia",
+    "short_title": "Moss's Mille Miglia",
+    "date": "1955-04-30/1955-05-01",
+    "why_famous": "Moss and Jenkinson's record-setting 300 SLR run became one of road racing's defining performances.",
+    "route_summary": "The 1955 clockwise Brescia–Adriatic coast–Rome–Tuscany–Bologna–Brescia course.",
+    "source_title": "1000 Miglia: race history",
+    "source_url": "https://1000miglia.it/en/history-of-1000-miglia/",
+    "geometry_confidence": "medium",
+    "geometry_note": "1955 route control points, with no claim that straight interpolations follow period pavement. Unlike revival routes, this follows the 1955 edition's broad loop.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "source-derived",
+        "source_url": "https://en.wikipedia.org/wiki/1955_Mille_Miglia",
+        "anchors": [
+          {
+            "name": "Brescia",
+            "lat": 45.5416,
+            "lon": 10.2118,
+            "note": "Start and finish"
+          },
+          {
+            "name": "Verona",
+            "lat": 45.4384,
+            "lon": 10.9916,
+            "note": "Outward course"
+          },
+          {
+            "name": "Vicenza",
+            "lat": 45.5455,
+            "lon": 11.5354,
+            "note": "Outward course"
+          },
+          {
+            "name": "Padua",
+            "lat": 45.4064,
+            "lon": 11.8768,
+            "note": "Outward course"
+          },
+          {
+            "name": "Rovigo",
+            "lat": 45.0698,
+            "lon": 11.7902,
+            "note": "Outward course"
+          },
+          {
+            "name": "Ferrara",
+            "lat": 44.8381,
+            "lon": 11.6198,
+            "note": "Outward course"
+          },
+          {
+            "name": "Ravenna",
+            "lat": 44.4184,
+            "lon": 12.2035,
+            "note": "Outward course"
+          },
+          {
+            "name": "Rimini",
+            "lat": 44.0678,
+            "lon": 12.5695,
+            "note": "Adriatic coast"
+          },
+          {
+            "name": "Ancona",
+            "lat": 43.6158,
+            "lon": 13.5189,
+            "note": "Adriatic coast"
+          },
+          {
+            "name": "Pescara",
+            "lat": 42.4618,
+            "lon": 14.2161,
+            "note": "Control"
+          },
+          {
+            "name": "L'Aquila",
+            "lat": 42.3498,
+            "lon": 13.3995,
+            "note": "Control"
+          },
+          {
+            "name": "Rieti",
+            "lat": 42.4045,
+            "lon": 12.8567,
+            "note": "Control"
+          },
+          {
+            "name": "Rome",
+            "lat": 41.9028,
+            "lon": 12.4964,
+            "note": "Southern turn"
+          },
+          {
+            "name": "Viterbo",
+            "lat": 42.4169,
+            "lon": 12.1049,
+            "note": "Return course"
+          },
+          {
+            "name": "Radicofani",
+            "lat": 42.8959,
+            "lon": 11.7687,
+            "note": "Return course"
+          },
+          {
+            "name": "Siena",
+            "lat": 43.3188,
+            "lon": 11.3308,
+            "note": "Time control"
+          },
+          {
+            "name": "Florence",
+            "lat": 43.7696,
+            "lon": 11.2558,
+            "note": "Return course"
+          },
+          {
+            "name": "Futa Pass",
+            "lat": 44.092,
+            "lon": 11.274,
+            "note": "Apennine pass"
+          },
+          {
+            "name": "Raticosa Pass",
+            "lat": 44.2005,
+            "lon": 11.3385,
+            "note": "Apennine pass"
+          },
+          {
+            "name": "Bologna",
+            "lat": 44.4949,
+            "lon": 11.3426,
+            "note": "Return course"
+          },
+          {
+            "name": "Modena",
+            "lat": 44.6471,
+            "lon": 10.9252,
+            "note": "Return course"
+          },
+          {
+            "name": "Parma",
+            "lat": 44.8015,
+            "lon": 10.3279,
+            "note": "Return course"
+          },
+          {
+            "name": "Piacenza",
+            "lat": 45.0526,
+            "lon": 9.693,
+            "note": "Return course"
+          },
+          {
+            "name": "Cremona",
+            "lat": 45.1332,
+            "lon": 10.0227,
+            "note": "Return course"
+          },
+          {
+            "name": "Mantua",
+            "lat": 45.1564,
+            "lon": 10.7914,
+            "note": "Return course"
+          },
+          {
+            "name": "Montichiari",
+            "lat": 45.4156,
+            "lon": 10.392,
+            "note": "Return course"
+          },
+          {
+            "name": "Brescia",
+            "lat": 45.5416,
+            "lon": 10.2118,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "paris-dakar-1979",
+    "rank": 6,
+    "title": "First Paris–Dakar Rally",
+    "short_title": "Paris–Dakar 1979",
+    "date": "1978-12-26/1979-01-14",
+    "why_famous": "Thierry Sabine's first desert rally launched the Dakar tradition.",
+    "route_summary": "Paris to Marseille, Mediterranean transfer to Algiers, then the documented 1979 stage towns through Algeria, Niger, Mali and Senegal to Dakar.",
+    "source_title": "Dakar Rally historical archive",
+    "source_url": "https://www.dakar.com/en/historical",
+    "geometry_confidence": "medium",
+    "geometry_note": "Stage towns are more specific than the desert tracks. Actual paths between them and participant deviations remain unresolved.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.dakar.com/en/historical",
+        "anchors": [
+          {
+            "name": "Paris",
+            "lat": 48.8566,
+            "lon": 2.3522,
+            "note": "Ceremonial start"
+          },
+          {
+            "name": "Marseille",
+            "lat": 43.2965,
+            "lon": 5.3698,
+            "note": "Mediterranean transfer corridor"
+          }
+        ]
+      },
+      {
+        "mode": "ship",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.dakar.com/en/historical",
+        "anchors": [
+          {
+            "name": "Marseille",
+            "lat": 43.2965,
+            "lon": 5.3698,
+            "note": "Ferry embarkation region; exact port unverified"
+          },
+          {
+            "name": "Algiers",
+            "lat": 36.7538,
+            "lon": 3.0588,
+            "note": "Algerian arrival"
+          }
+        ]
+      },
+      {
+        "mode": "off-road",
+        "track_type": "source-derived",
+        "source_url": "https://en.wikipedia.org/wiki/1979_Paris%E2%80%93Dakar_Rally",
+        "anchors": [
+          {
+            "name": "Algiers",
+            "lat": 36.7538,
+            "lon": 3.0588,
+            "note": "African start"
+          },
+          {
+            "name": "Reggane",
+            "lat": 26.7159,
+            "lon": 0.1714,
+            "note": "1979 liaison"
+          },
+          {
+            "name": "In Salah",
+            "lat": 27.1935,
+            "lon": 2.4607,
+            "note": "1979 stage town"
+          },
+          {
+            "name": "Tamanrasset",
+            "lat": 22.785,
+            "lon": 5.5228,
+            "note": "1979 stage town"
+          },
+          {
+            "name": "In Guezzam",
+            "lat": 19.5679,
+            "lon": 5.7706,
+            "note": "Algerian border stage"
+          },
+          {
+            "name": "Assamaka",
+            "lat": 19.356,
+            "lon": 5.765,
+            "note": "Niger border stage"
+          },
+          {
+            "name": "Arlit",
+            "lat": 18.736,
+            "lon": 7.3853,
+            "note": "1979 stage town"
+          },
+          {
+            "name": "Agadez",
+            "lat": 16.9742,
+            "lon": 7.9866,
+            "note": "1979 stage town"
+          },
+          {
+            "name": "Niamey",
+            "lat": 13.5116,
+            "lon": 2.1254,
+            "note": "1979 stage town"
+          },
+          {
+            "name": "Gao",
+            "lat": 16.2666,
+            "lon": -0.0426,
+            "note": "1979 rest stop; timed stage cancelled"
+          },
+          {
+            "name": "Mopti",
+            "lat": 14.4843,
+            "lon": -4.1829,
+            "note": "1979 stage town"
+          },
+          {
+            "name": "Bamako",
+            "lat": 12.6392,
+            "lon": -8.0029,
+            "note": "1979 liaison"
+          },
+          {
+            "name": "Nioro du Sahel",
+            "lat": 15.2293,
+            "lon": -9.5927,
+            "note": "1979 stage town"
+          },
+          {
+            "name": "Kayes",
+            "lat": 14.4469,
+            "lon": -11.4445,
+            "note": "1979 stage town"
+          },
+          {
+            "name": "Bakel",
+            "lat": 14.9045,
+            "lon": -12.4568,
+            "note": "Senegal liaison"
+          },
+          {
+            "name": "Dakar",
+            "lat": 14.7167,
+            "lon": -17.4677,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "baja-1000-1967",
+    "rank": 7,
+    "title": "First Baja 1000",
+    "short_title": "Baja 1000 1967",
+    "date": "1967",
+    "why_famous": "The first sanctioned Mexican 1000 established Baja's iconic desert endurance race.",
+    "route_summary": "Tijuana and Ensenada south along Baja California to La Paz.",
+    "source_title": "SCORE International: First Baja 1000",
+    "source_url": "https://score-international.com/score-news-story.php?newsID=2229",
+    "geometry_confidence": "medium",
+    "geometry_note": "1967 peninsula control corridor, not today's Baja 1000 course or exact desert trails.",
+    "segments": [
+      {
+        "mode": "off-road",
+        "track_type": "historical-corridor",
+        "source_url": "https://score-international.com/score-news-story.php?newsID=2229",
+        "anchors": [
+          {
+            "name": "Tijuana",
+            "lat": 32.5149,
+            "lon": -117.0382,
+            "note": "Northern departure corridor"
+          },
+          {
+            "name": "Ensenada",
+            "lat": 31.8667,
+            "lon": -116.6,
+            "note": "Race start region"
+          },
+          {
+            "name": "San Quintín",
+            "lat": 30.4794,
+            "lon": -115.9475,
+            "note": "Peninsula corridor"
+          },
+          {
+            "name": "El Rosario",
+            "lat": 30.0574,
+            "lon": -115.726,
+            "note": "Peninsula corridor"
+          },
+          {
+            "name": "Cataviña",
+            "lat": 29.73,
+            "lon": -114.72,
+            "note": "Desert corridor"
+          },
+          {
+            "name": "Guerrero Negro",
+            "lat": 27.9689,
+            "lon": -114.0461,
+            "note": "Peninsula corridor"
+          },
+          {
+            "name": "San Ignacio",
+            "lat": 27.2822,
+            "lon": -112.8972,
+            "note": "Peninsula corridor"
+          },
+          {
+            "name": "Santa Rosalía",
+            "lat": 27.3405,
+            "lon": -112.2663,
+            "note": "Peninsula corridor"
+          },
+          {
+            "name": "Loreto",
+            "lat": 26.0118,
+            "lon": -111.3477,
+            "note": "Peninsula corridor"
+          },
+          {
+            "name": "La Paz",
+            "lat": 24.1426,
+            "lon": -110.3128,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "carrera-panamericana-1950",
+    "rank": 8,
+    "title": "First Carrera Panamericana",
+    "short_title": "Carrera Panamericana",
+    "date": "1950",
+    "why_famous": "The border-to-border race celebrated Mexico's Pan-American Highway and became an extreme road-racing test.",
+    "route_summary": "Ciudad Juárez south through Chihuahua, Durango, Mexico City and Oaxaca to the Guatemala frontier.",
+    "source_title": "La Carrera Panamericana: History",
+    "source_url": "https://lacarrerapanamericana.com.mx/en/historia-de-la-carrera/",
+    "geometry_confidence": "medium",
+    "geometry_note": "1950 stage-city corridor. Straight links should not be read as the historical Pan-American Highway road centerline.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://lacarrerapanamericana.com.mx/en/historia-de-la-carrera/",
+        "anchors": [
+          {
+            "name": "Ciudad Juárez",
+            "lat": 31.6904,
+            "lon": -106.4245,
+            "note": "Northern start"
+          },
+          {
+            "name": "Chihuahua",
+            "lat": 28.632,
+            "lon": -106.0691,
+            "note": "Stage city"
+          },
+          {
+            "name": "Parral",
+            "lat": 26.9328,
+            "lon": -105.6666,
+            "note": "Northern highway corridor"
+          },
+          {
+            "name": "Durango",
+            "lat": 24.0277,
+            "lon": -104.6532,
+            "note": "Stage city"
+          },
+          {
+            "name": "Zacatecas",
+            "lat": 22.7709,
+            "lon": -102.5833,
+            "note": "Central plateau"
+          },
+          {
+            "name": "León",
+            "lat": 21.125,
+            "lon": -101.686,
+            "note": "Central plateau"
+          },
+          {
+            "name": "Mexico City",
+            "lat": 19.4326,
+            "lon": -99.1332,
+            "note": "Stage city"
+          },
+          {
+            "name": "Puebla",
+            "lat": 19.0414,
+            "lon": -98.2063,
+            "note": "Southward route"
+          },
+          {
+            "name": "Oaxaca",
+            "lat": 17.0732,
+            "lon": -96.7266,
+            "note": "Stage city"
+          },
+          {
+            "name": "Tehuantepec",
+            "lat": 16.3246,
+            "lon": -95.2378,
+            "note": "Isthmus corridor"
+          },
+          {
+            "name": "Tuxtla Gutiérrez",
+            "lat": 16.7516,
+            "lon": -93.1029,
+            "note": "Chiapas corridor"
+          },
+          {
+            "name": "Ciudad Cuauhtémoc",
+            "lat": 15.6672,
+            "lon": -92.0006,
+            "note": "Guatemala frontier finish area"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "alice-ramsey-1909",
+    "rank": 9,
+    "title": "Alice Huyler Ramsey's cross-country drive",
+    "short_title": "Alice Ramsey",
+    "date": "1909",
+    "why_famous": "Ramsey became the first woman to drive an automobile coast to coast in the United States.",
+    "route_summary": "New York to San Francisco via the Midwest, Nebraska, Wyoming, Utah and Nevada.",
+    "source_title": "Smithsonian: Crossing the Country",
+    "source_url": "https://americanhistory.si.edu/explore/exhibitions/america-on-the-move/online/crossing-country",
+    "geometry_confidence": "medium",
+    "geometry_note": "Named-city reconstruction; individual farm roads, bridges and detours remain unverified.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "historical-corridor",
+        "source_url": "https://americanhistory.si.edu/explore/exhibitions/america-on-the-move/online/crossing-country",
+        "anchors": [
+          {
+            "name": "New York City",
+            "lat": 40.7128,
+            "lon": -74.006,
+            "note": "Departure"
+          },
+          {
+            "name": "Philadelphia",
+            "lat": 39.9526,
+            "lon": -75.1636,
+            "note": "Eastern corridor"
+          },
+          {
+            "name": "Chicago",
+            "lat": 41.8781,
+            "lon": -87.6298,
+            "note": "Midwest corridor"
+          },
+          {
+            "name": "Omaha",
+            "lat": 41.2565,
+            "lon": -95.9345,
+            "note": "Plains corridor"
+          },
+          {
+            "name": "Cheyenne",
+            "lat": 41.14,
+            "lon": -104.8202,
+            "note": "Wyoming corridor"
+          },
+          {
+            "name": "Salt Lake City",
+            "lat": 40.7608,
+            "lon": -111.891,
+            "note": "Utah corridor"
+          },
+          {
+            "name": "Reno",
+            "lat": 39.5296,
+            "lon": -119.8138,
+            "note": "Nevada corridor"
+          },
+          {
+            "name": "San Francisco",
+            "lat": 37.7749,
+            "lon": -122.4194,
+            "note": "Arrival"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "london-brighton-1896",
+    "rank": 10,
+    "title": "London–Brighton Emancipation Run",
+    "short_title": "London–Brighton",
+    "date": "1896-11-14",
+    "why_famous": "The celebratory motor run marked the relaxation of Britain's restrictive motoring rules.",
+    "route_summary": "London to Brighton through Surrey and Sussex, including Reigate and Crawley corridors.",
+    "source_title": "Royal Automobile Club: Veteran Car Run history",
+    "source_url": "https://www.rac.co.uk/drive/news/motoring-news/rm-sothebys-veteran-car-run-goes-virtual-for-2020/",
+    "geometry_confidence": "low",
+    "geometry_note": "1896 endpoint corridor with intermediate regional anchors. Modern Veteran Car Run routing is not projected backward onto the original event.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.rac.co.uk/drive/news/motoring-news/rm-sothebys-veteran-car-run-goes-virtual-for-2020/",
+        "anchors": [
+          {
+            "name": "London",
+            "lat": 51.5074,
+            "lon": -0.1278,
+            "note": "Departure city"
+          },
+          {
+            "name": "Croydon",
+            "lat": 51.3727,
+            "lon": -0.1099,
+            "note": "Southern London corridor"
+          },
+          {
+            "name": "Reigate",
+            "lat": 51.2373,
+            "lon": -0.2058,
+            "note": "Surrey corridor"
+          },
+          {
+            "name": "Crawley",
+            "lat": 51.1091,
+            "lon": -0.1872,
+            "note": "Sussex corridor"
+          },
+          {
+            "name": "Brighton",
+            "lat": 50.8225,
+            "lon": -0.1372,
+            "note": "Arrival"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "paris-rouen-1894",
+    "rank": 11,
+    "title": "Paris–Rouen motor competition",
+    "short_title": "Paris–Rouen",
+    "date": "1894-07-22",
+    "why_famous": "The Paris–Rouen trial is widely considered the first organized automobile contest.",
+    "route_summary": "Paris northwest to Rouen, with period roads unresolved.",
+    "source_title": "FIA: History of the first motoring competitions",
+    "source_url": "https://www.fia.com/news/blink-eye-40-years-disappeared-0",
+    "geometry_confidence": "low",
+    "geometry_note": "Endpoints and broad Seine valley corridor only; a contemporary route sheet is needed for road-level geometry.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.fia.com/news/blink-eye-40-years-disappeared-0",
+        "anchors": [
+          {
+            "name": "Paris",
+            "lat": 48.8566,
+            "lon": 2.3522,
+            "note": "Competition start"
+          },
+          {
+            "name": "Saint-Germain-en-Laye",
+            "lat": 48.8989,
+            "lon": 2.0938,
+            "note": "Northwest corridor"
+          },
+          {
+            "name": "Mantes-la-Jolie",
+            "lat": 48.9903,
+            "lon": 1.7206,
+            "note": "Seine valley corridor"
+          },
+          {
+            "name": "Rouen",
+            "lat": 49.4432,
+            "lon": 1.0993,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "paris-bordeaux-paris-1895",
+    "rank": 12,
+    "title": "Paris–Bordeaux–Paris race",
+    "short_title": "Paris–Bordeaux–Paris",
+    "date": "1895-06",
+    "why_famous": "The endurance event helped establish long-distance motor racing and the Automobile Club de France.",
+    "route_summary": "Paris to Bordeaux and back along western French roads.",
+    "source_title": "Automobile Club de France: Foundation",
+    "source_url": "https://automobileclubdefrance.fr/histoire/fondation/",
+    "geometry_confidence": "low",
+    "geometry_note": "Directional town corridors inferred from endpoints and geography; period control list and road alignment need archival verification.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "historical-corridor",
+        "source_url": "https://automobileclubdefrance.fr/histoire/fondation/",
+        "anchors": [
+          {
+            "name": "Paris",
+            "lat": 48.8566,
+            "lon": 2.3522,
+            "note": "Start"
+          },
+          {
+            "name": "Chartres",
+            "lat": 48.4469,
+            "lon": 1.489,
+            "note": "Southwest corridor"
+          },
+          {
+            "name": "Tours",
+            "lat": 47.3941,
+            "lon": 0.6848,
+            "note": "Loire corridor"
+          },
+          {
+            "name": "Poitiers",
+            "lat": 46.5802,
+            "lon": 0.3404,
+            "note": "Southwest corridor"
+          },
+          {
+            "name": "Angoulême",
+            "lat": 45.6484,
+            "lon": 0.1562,
+            "note": "Southwest corridor"
+          },
+          {
+            "name": "Bordeaux",
+            "lat": 44.8378,
+            "lon": -0.5792,
+            "note": "Turnaround"
+          }
+        ]
+      },
+      {
+        "mode": "road",
+        "track_type": "historical-corridor",
+        "source_url": "https://automobileclubdefrance.fr/histoire/fondation/",
+        "anchors": [
+          {
+            "name": "Bordeaux",
+            "lat": 44.8378,
+            "lon": -0.5792,
+            "note": "Return start"
+          },
+          {
+            "name": "Angoulême",
+            "lat": 45.6484,
+            "lon": 0.1562,
+            "note": "Unverified return corridor"
+          },
+          {
+            "name": "Poitiers",
+            "lat": 46.5802,
+            "lon": 0.3404,
+            "note": "Unverified return corridor"
+          },
+          {
+            "name": "Tours",
+            "lat": 47.3941,
+            "lon": 0.6848,
+            "note": "Unverified return corridor"
+          },
+          {
+            "name": "Chartres",
+            "lat": 48.4469,
+            "lon": 1.489,
+            "note": "Unverified return corridor"
+          },
+          {
+            "name": "Paris",
+            "lat": 48.8566,
+            "lon": 2.3522,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "french-grand-prix-1906",
+    "rank": 13,
+    "title": "First French Grand Prix",
+    "short_title": "French Grand Prix 1906",
+    "date": "1906-06-26/1906-06-27",
+    "why_famous": "The inaugural Grand Prix established a demanding long public-road circuit near Le Mans.",
+    "route_summary": "One 103-km 1906 Sarthe circuit lap, repeated six times on each of two days.",
+    "source_title": "Automobile Club de l'Ouest: 1906 Grand Prix route",
+    "source_url": "https://www.lemans.org/fr/actualites/aco/patrimoine-les-etapes-et-le-parcours-des-110-ans-du-1er-grand-prix-de-l-acf-de-1906-41777",
+    "geometry_confidence": "medium",
+    "geometry_note": "Period town and bend anchors describe one 1906 loop; temporary wooden bypasses at Saint-Calais and Vibraye are schematic, and repeated laps are metadata only.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "source-derived",
+        "source_url": "https://cnum.cnam.fr/pgi/redir.php?ident=P575.3&onglet=c",
+        "anchors": [
+          {
+            "name": "Montfort-le-Gesnois start",
+            "lat": 48.05,
+            "lon": 0.417,
+            "note": "Start region"
+          },
+          {
+            "name": "Saint-Mars-la-Brière",
+            "lat": 48.0305,
+            "lon": 0.3728,
+            "note": "Westbound"
+          },
+          {
+            "name": "Yvré-l'Évêque / Fourche",
+            "lat": 48.013,
+            "lon": 0.271,
+            "note": "Southwest corner region"
+          },
+          {
+            "name": "Bouloire",
+            "lat": 47.972,
+            "lon": 0.5495,
+            "note": "Southeast leg"
+          },
+          {
+            "name": "Saint-Calais bypass",
+            "lat": 47.92,
+            "lon": 0.743,
+            "note": "Temporary wooden bypass schematic"
+          },
+          {
+            "name": "Berfay",
+            "lat": 47.9986,
+            "lon": 0.7738,
+            "note": "Northbound leg"
+          },
+          {
+            "name": "Vibraye bypass",
+            "lat": 48.054,
+            "lon": 0.733,
+            "note": "Temporary wooden bypass schematic"
+          },
+          {
+            "name": "La Ferté-Bernard",
+            "lat": 48.1858,
+            "lon": 0.6534,
+            "note": "Northeast corner region"
+          },
+          {
+            "name": "Connerré",
+            "lat": 48.0607,
+            "lon": 0.493,
+            "note": "Westward return"
+          },
+          {
+            "name": "Montfort-le-Gesnois start",
+            "lat": 48.05,
+            "lon": 0.417,
+            "note": "One loop complete"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "targa-florio-1906",
+    "rank": 14,
+    "title": "First Targa Florio",
+    "short_title": "Targa Florio 1906",
+    "date": "1906-05-06",
+    "why_famous": "The race inaugurated one of motorsport's oldest and most difficult mountain-road contests.",
+    "route_summary": "One Grande Circuito delle Madonie loop from Campofelice through Cerda, Petralia and Castelbuono, repeated three times.",
+    "source_title": "Targapedia: 1906 first Targa Florio",
+    "source_url": "https://www.targaflorio.info/01.htm",
+    "geometry_confidence": "medium",
+    "geometry_note": "The 1906 Grande circuit is represented by town anchors, not a later 72-km Piccolo loop or a claim of surveyed historic pavement.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "source-derived",
+        "source_url": "https://www.targaflorio.info/01.htm",
+        "anchors": [
+          {
+            "name": "Pistavecchia / Campofelice",
+            "lat": 37.99,
+            "lon": 13.905,
+            "note": "Start region"
+          },
+          {
+            "name": "Cerda",
+            "lat": 37.9021,
+            "lon": 13.8137,
+            "note": "Grande circuit"
+          },
+          {
+            "name": "Caltavuturo",
+            "lat": 37.82,
+            "lon": 13.89,
+            "note": "Grande circuit"
+          },
+          {
+            "name": "Castellana Sicula",
+            "lat": 37.7859,
+            "lon": 14.04,
+            "note": "Grande circuit"
+          },
+          {
+            "name": "Petralia Sottana",
+            "lat": 37.811,
+            "lon": 14.092,
+            "note": "Grande circuit"
+          },
+          {
+            "name": "Petralia Soprana",
+            "lat": 37.8017,
+            "lon": 14.1093,
+            "note": "Grande circuit"
+          },
+          {
+            "name": "Geraci Siculo",
+            "lat": 37.859,
+            "lon": 14.153,
+            "note": "Grande circuit"
+          },
+          {
+            "name": "Castelbuono",
+            "lat": 37.932,
+            "lon": 14.087,
+            "note": "Grande circuit"
+          },
+          {
+            "name": "Isnello",
+            "lat": 37.945,
+            "lon": 14.006,
+            "note": "Grande circuit"
+          },
+          {
+            "name": "Collesano",
+            "lat": 37.918,
+            "lon": 13.934,
+            "note": "Grande circuit"
+          },
+          {
+            "name": "Pistavecchia / Campofelice",
+            "lat": 37.99,
+            "lon": 13.905,
+            "note": "One loop complete"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "monte-carlo-rally-1911",
+    "rank": 15,
+    "title": "First Monte-Carlo Rally",
+    "short_title": "Monte-Carlo Rally 1911",
+    "date": "1911-01",
+    "why_famous": "The inaugural winter rally created a celebrated European motoring event.",
+    "route_summary": "Henri Rougier's Paris-to-Monte-Carlo concentration run.",
+    "source_title": "Automobile Club de Monaco: Club history",
+    "source_url": "https://acm.mc/en/automobile-club/the-club/lautomobile-club-de-monaco/history/",
+    "geometry_confidence": "low",
+    "geometry_note": "Rougier's endpoints are established, but his specific chosen roads are not documented by this source. Intermediate cities are a broad southbound corridor.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "historical-corridor",
+        "source_url": "https://acm.mc/en/automobile-club/the-club/lautomobile-club-de-monaco/history/",
+        "anchors": [
+          {
+            "name": "Paris",
+            "lat": 48.8566,
+            "lon": 2.3522,
+            "note": "Rougier departure"
+          },
+          {
+            "name": "Auxerre",
+            "lat": 47.7982,
+            "lon": 3.5738,
+            "note": "Possible southeast corridor, unverified stop"
+          },
+          {
+            "name": "Lyon",
+            "lat": 45.764,
+            "lon": 4.8357,
+            "note": "Possible Rhône corridor, unverified stop"
+          },
+          {
+            "name": "Avignon",
+            "lat": 43.9493,
+            "lon": 4.8055,
+            "note": "Possible Rhône corridor, unverified stop"
+          },
+          {
+            "name": "Nice",
+            "lat": 43.7102,
+            "lon": 7.262,
+            "note": "Riviera approach corridor"
+          },
+          {
+            "name": "Monte Carlo",
+            "lat": 43.7384,
+            "lon": 7.4246,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "indianapolis-500-1911",
+    "rank": 16,
+    "title": "First Indianapolis 500",
+    "short_title": "Indy 500 1911",
+    "date": "1911-05-30",
+    "why_famous": "Ray Harroun won the first Indianapolis 500, one of the world's defining motor races.",
+    "route_summary": "One counterclockwise 1911 Indianapolis Motor Speedway oval lap, repeated 200 times.",
+    "source_title": "Indianapolis Motor Speedway: The first 500",
+    "source_url": "https://www.indianapolismotorspeedway.com/history/first-500",
+    "geometry_confidence": "medium",
+    "geometry_note": "Schematic four-corner 1911 oval footprint; race distance is 200 laps, not the single rendered loop. Exact banking and track edges are not traced.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "source-derived",
+        "source_url": "https://www.indianapolismotorspeedway.com/history/first-500",
+        "anchors": [
+          {
+            "name": "Front straight / start",
+            "lat": 39.7952,
+            "lon": -86.234,
+            "note": "Schematic start line"
+          },
+          {
+            "name": "Turn 1",
+            "lat": 39.7905,
+            "lon": -86.2331,
+            "note": "Southeast oval corner"
+          },
+          {
+            "name": "Back straight south",
+            "lat": 39.7902,
+            "lon": -86.2381,
+            "note": "South end"
+          },
+          {
+            "name": "Turn 2",
+            "lat": 39.7908,
+            "lon": -86.2414,
+            "note": "Southwest corner"
+          },
+          {
+            "name": "Back straight north",
+            "lat": 39.799,
+            "lon": -86.2414,
+            "note": "West side"
+          },
+          {
+            "name": "Turn 3",
+            "lat": 39.7997,
+            "lon": -86.238,
+            "note": "Northwest corner"
+          },
+          {
+            "name": "Turn 4",
+            "lat": 39.7993,
+            "lon": -86.2333,
+            "note": "Northeast corner"
+          },
+          {
+            "name": "Front straight / start",
+            "lat": 39.7952,
+            "lon": -86.234,
+            "note": "One lap complete"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "golden-flier-1916",
+    "rank": 17,
+    "title": "Golden Flier suffrage tour",
+    "short_title": "Golden Flier",
+    "date": "1916",
+    "why_famous": "Nell Richardson and Alice Burke carried the women's suffrage campaign to towns across the United States by automobile.",
+    "route_summary": "New York to New Orleans, Los Angeles, San Francisco, Seattle, Minneapolis, Chicago, Detroit and back to New York.",
+    "source_title": "Smithsonian: Traveling for Suffrage, Part 1",
+    "source_url": "https://americanhistory.si.edu/explore/stories/traveling-suffrage-part-1-two-women-cat-car-and-mission",
+    "geometry_confidence": "medium",
+    "geometry_note": "Smithsonian-listed principal stops are ordered as a tour; intermediate lines are regional corridors, not precise roads.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "source-derived",
+        "source_url": "https://americanhistory.si.edu/explore/stories/traveling-suffrage-part-1-two-women-cat-car-and-mission",
+        "anchors": [
+          {
+            "name": "New York City",
+            "lat": 40.7128,
+            "lon": -74.006,
+            "note": "Departure"
+          },
+          {
+            "name": "Washington, D.C.",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "note": "Eastern corridor, unverified tour stop"
+          },
+          {
+            "name": "New Orleans",
+            "lat": 29.9511,
+            "lon": -90.0715,
+            "note": "Documented principal stop"
+          },
+          {
+            "name": "Houston",
+            "lat": 29.7604,
+            "lon": -95.3698,
+            "note": "Southwest corridor, unverified tour stop"
+          },
+          {
+            "name": "El Paso",
+            "lat": 31.7619,
+            "lon": -106.485,
+            "note": "Southwest corridor, unverified tour stop"
+          },
+          {
+            "name": "Los Angeles",
+            "lat": 34.0522,
+            "lon": -118.2437,
+            "note": "Documented principal stop"
+          },
+          {
+            "name": "San Francisco",
+            "lat": 37.7749,
+            "lon": -122.4194,
+            "note": "Documented principal stop"
+          },
+          {
+            "name": "Portland",
+            "lat": 45.5152,
+            "lon": -122.6784,
+            "note": "Pacific northwest corridor, unverified tour stop"
+          },
+          {
+            "name": "Seattle",
+            "lat": 47.6062,
+            "lon": -122.3321,
+            "note": "Documented principal stop"
+          },
+          {
+            "name": "Minneapolis",
+            "lat": 44.9778,
+            "lon": -93.265,
+            "note": "Documented principal stop"
+          },
+          {
+            "name": "Chicago",
+            "lat": 41.8781,
+            "lon": -87.6298,
+            "note": "Documented principal stop"
+          },
+          {
+            "name": "Detroit",
+            "lat": 42.3314,
+            "lon": -83.0458,
+            "note": "Documented principal stop"
+          },
+          {
+            "name": "New York City",
+            "lat": 40.7128,
+            "lon": -74.006,
+            "note": "Return"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pikes-peak-1916",
+    "rank": 18,
+    "title": "First Pikes Peak Auto Hill Climb",
+    "short_title": "Pikes Peak 1916",
+    "date": "1916",
+    "why_famous": "The inaugural Race to the Clouds began the famous ascent to Pikes Peak's summit.",
+    "route_summary": "Original Crystal Reservoir start up the Pikes Peak Highway to the summit.",
+    "source_title": "Pikes Peak International Hill Climb history",
+    "source_url": "https://ppihc.org/wp-content/uploads/History-The-Pikes-Peak-International-Hill-Climb.pdf",
+    "geometry_confidence": "medium",
+    "geometry_note": "1916 starting region differs from today's route. The anchors follow named highway landmarks, with modern coordinates used only for landmark position.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "source-derived",
+        "source_url": "https://ppihc.org/wp-content/uploads/History-The-Pikes-Peak-International-Hill-Climb.pdf",
+        "anchors": [
+          {
+            "name": "Crystal Reservoir bridge",
+            "lat": 38.938,
+            "lon": -105.01,
+            "note": "Approximate original start area"
+          },
+          {
+            "name": "Halfway Picnic Ground",
+            "lat": 38.918,
+            "lon": -105.042,
+            "note": "Named ascent area"
+          },
+          {
+            "name": "Glen Cove",
+            "lat": 38.9037,
+            "lon": -105.0612,
+            "note": "Highway landmark"
+          },
+          {
+            "name": "Devil's Playground",
+            "lat": 38.8819,
+            "lon": -105.0701,
+            "note": "Highway landmark"
+          },
+          {
+            "name": "Pikes Peak summit",
+            "lat": 38.8409,
+            "lon": -105.0423,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "le-mans-1923",
+    "rank": 19,
+    "title": "First 24 Hours of Le Mans",
+    "short_title": "Le Mans 1923",
+    "date": "1923-05-26/1923-05-27",
+    "why_famous": "The inaugural 24 Hours of Le Mans began the world's best-known endurance race.",
+    "route_summary": "One 17.262-km 1923 Sarthe public-road circuit lap, repeated during 24 hours.",
+    "source_title": "Automobile Club de l'Ouest: Origin of the 24 Hours",
+    "source_url": "https://www.lemans.org/en/news/aco/the-aco-s-120th-anniversary-how-the-24-hours-of-le-mans-came-into-being-60406",
+    "geometry_confidence": "medium",
+    "geometry_note": "A 1923-specific schematic through Pontlieue, Tertre Rouge, Mulsanne, Arnage and Maison Blanche; current Le Mans barriers and chicanes are excluded.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "source-derived",
+        "source_url": "https://www.lemans.org/en/news/aco/the-aco-s-120th-anniversary-how-the-24-hours-of-le-mans-came-into-being-60406",
+        "anchors": [
+          {
+            "name": "Les Raineries start",
+            "lat": 47.9569,
+            "lon": 0.2076,
+            "note": "Approximate 1923 pit region"
+          },
+          {
+            "name": "Pontlieue",
+            "lat": 47.973,
+            "lon": 0.221,
+            "note": "Northern 1923 corner"
+          },
+          {
+            "name": "Tertre Rouge",
+            "lat": 47.9577,
+            "lon": 0.244,
+            "note": "Mulsanne Straight entry"
+          },
+          {
+            "name": "Hunaudières",
+            "lat": 47.928,
+            "lon": 0.248,
+            "note": "Unchicaned straight"
+          },
+          {
+            "name": "Mulsanne",
+            "lat": 47.9129,
+            "lon": 0.2425,
+            "note": "Southeast corner"
+          },
+          {
+            "name": "Indianapolis",
+            "lat": 47.9218,
+            "lon": 0.211,
+            "note": "Westbound turn"
+          },
+          {
+            "name": "Arnage",
+            "lat": 47.9232,
+            "lon": 0.2071,
+            "note": "Southwest corner"
+          },
+          {
+            "name": "Maison Blanche",
+            "lat": 47.9403,
+            "lon": 0.2183,
+            "note": "Return section"
+          },
+          {
+            "name": "Les Raineries start",
+            "lat": 47.9569,
+            "lon": 0.2076,
+            "note": "One lap complete"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mille-miglia-1927",
+    "rank": 20,
+    "title": "First Mille Miglia",
+    "short_title": "Mille Miglia 1927",
+    "date": "1927-03-26/1927-03-27",
+    "why_famous": "The first Brescia–Rome–Brescia race established Italy's thousand-mile public-road classic.",
+    "route_summary": "1927 anticlockwise circuit via Parma, Bologna, Florence, Siena and Rome, returning via Umbria, the Adriatic, Treviso and Verona.",
+    "source_title": "1000 Miglia: The first race in 1927",
+    "source_url": "https://1000miglia.it/en/history-of-1000-miglia/1927-the-first-1000-miglia/",
+    "geometry_confidence": "medium",
+    "geometry_note": "Edition-specific town sequence differs substantially from 1955 and modern revival routes; straight links are not historical road centerlines.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "source-derived",
+        "source_url": "https://it.wikipedia.org/wiki/Mille_Miglia_1927",
+        "anchors": [
+          {
+            "name": "Brescia",
+            "lat": 45.5416,
+            "lon": 10.2118,
+            "note": "Start"
+          },
+          {
+            "name": "Montichiari",
+            "lat": 45.4156,
+            "lon": 10.392,
+            "note": "1927 outbound"
+          },
+          {
+            "name": "Piadena",
+            "lat": 45.129,
+            "lon": 10.368,
+            "note": "1927 outbound"
+          },
+          {
+            "name": "Parma",
+            "lat": 44.8015,
+            "lon": 10.3279,
+            "note": "1927 outbound"
+          },
+          {
+            "name": "Modena",
+            "lat": 44.6471,
+            "lon": 10.9252,
+            "note": "1927 outbound"
+          },
+          {
+            "name": "Bologna",
+            "lat": 44.4949,
+            "lon": 11.3426,
+            "note": "1927 outbound"
+          },
+          {
+            "name": "Raticosa Pass",
+            "lat": 44.2005,
+            "lon": 11.3385,
+            "note": "Apennine pass"
+          },
+          {
+            "name": "Futa Pass",
+            "lat": 44.092,
+            "lon": 11.274,
+            "note": "Apennine pass"
+          },
+          {
+            "name": "Florence",
+            "lat": 43.7696,
+            "lon": 11.2558,
+            "note": "1927 outbound"
+          },
+          {
+            "name": "Siena",
+            "lat": 43.3188,
+            "lon": 11.3308,
+            "note": "1927 outbound"
+          },
+          {
+            "name": "Radicofani",
+            "lat": 42.8959,
+            "lon": 11.7687,
+            "note": "1927 outbound"
+          },
+          {
+            "name": "Viterbo",
+            "lat": 42.4169,
+            "lon": 12.1049,
+            "note": "1927 outbound"
+          },
+          {
+            "name": "Rome",
+            "lat": 41.9028,
+            "lon": 12.4964,
+            "note": "Turnaround"
+          },
+          {
+            "name": "Terni",
+            "lat": 42.5641,
+            "lon": 12.641,
+            "note": "1927 return"
+          },
+          {
+            "name": "Spoleto",
+            "lat": 42.735,
+            "lon": 12.738,
+            "note": "1927 return"
+          },
+          {
+            "name": "Perugia",
+            "lat": 43.1107,
+            "lon": 12.3908,
+            "note": "1927 return"
+          },
+          {
+            "name": "Gubbio",
+            "lat": 43.351,
+            "lon": 12.575,
+            "note": "1927 return"
+          },
+          {
+            "name": "Fabriano",
+            "lat": 43.337,
+            "lon": 12.905,
+            "note": "1927 return"
+          },
+          {
+            "name": "Macerata",
+            "lat": 43.3,
+            "lon": 13.453,
+            "note": "1927 return"
+          },
+          {
+            "name": "Ancona",
+            "lat": 43.6158,
+            "lon": 13.5189,
+            "note": "Adriatic course"
+          },
+          {
+            "name": "Pesaro",
+            "lat": 43.9125,
+            "lon": 12.9155,
+            "note": "Adriatic course"
+          },
+          {
+            "name": "Rimini",
+            "lat": 44.0678,
+            "lon": 12.5695,
+            "note": "Adriatic course"
+          },
+          {
+            "name": "Forlì",
+            "lat": 44.2226,
+            "lon": 12.0407,
+            "note": "1927 return"
+          },
+          {
+            "name": "Bologna",
+            "lat": 44.4949,
+            "lon": 11.3426,
+            "note": "Course crossing"
+          },
+          {
+            "name": "Ferrara",
+            "lat": 44.8381,
+            "lon": 11.6198,
+            "note": "1927 return"
+          },
+          {
+            "name": "Padua",
+            "lat": 45.4064,
+            "lon": 11.8768,
+            "note": "1927 return"
+          },
+          {
+            "name": "Treviso",
+            "lat": 45.6669,
+            "lon": 12.243,
+            "note": "1927 return"
+          },
+          {
+            "name": "Feltre",
+            "lat": 46.0186,
+            "lon": 11.9061,
+            "note": "Northern detour"
+          },
+          {
+            "name": "Bassano del Grappa",
+            "lat": 45.7666,
+            "lon": 11.7287,
+            "note": "1927 return"
+          },
+          {
+            "name": "Vicenza",
+            "lat": 45.5455,
+            "lon": 11.5354,
+            "note": "1927 return"
+          },
+          {
+            "name": "Verona",
+            "lat": 45.4384,
+            "lon": 10.9916,
+            "note": "1927 return"
+          },
+          {
+            "name": "Brescia",
+            "lat": 45.5416,
+            "lon": 10.2118,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "monaco-grand-prix-1929",
+    "rank": 21,
+    "title": "First Monaco Grand Prix",
+    "short_title": "Monaco GP 1929",
+    "date": "1929-04-14",
+    "why_famous": "The first Monaco Grand Prix turned the principality's city streets into a motor-racing icon.",
+    "route_summary": "One 1929 Boulevard Albert I–Casino–Station–Portier–harbour–Gasometer loop, repeated 100 times.",
+    "source_title": "Automobile Club de Monaco: Club history",
+    "source_url": "https://acm.mc/en/automobile-club/the-club/lautomobile-club-de-monaco/history/",
+    "geometry_confidence": "medium",
+    "geometry_note": "Historic corner sequence with approximate coordinates. The 1929 Station Hairpin, tunnel and Gasometer differ from later roadworks and today's circuit.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "source-derived",
+        "source_url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/monaco-grand-prix-circuit-layout-how-its-changed-since-1929/",
+        "anchors": [
+          {
+            "name": "Boulevard Albert I start",
+            "lat": 43.7345,
+            "lon": 7.4205,
+            "note": "Start and finish"
+          },
+          {
+            "name": "Sainte Dévote",
+            "lat": 43.738,
+            "lon": 7.4218,
+            "note": "Turn 1"
+          },
+          {
+            "name": "Beau Rivage",
+            "lat": 43.7404,
+            "lon": 7.4262,
+            "note": "Uphill section"
+          },
+          {
+            "name": "Casino Square",
+            "lat": 43.7396,
+            "lon": 7.4276,
+            "note": "Upper turn"
+          },
+          {
+            "name": "Mirabeau",
+            "lat": 43.7412,
+            "lon": 7.429,
+            "note": "Downhill section"
+          },
+          {
+            "name": "Station Hairpin",
+            "lat": 43.7408,
+            "lon": 7.4312,
+            "note": "Original hairpin area"
+          },
+          {
+            "name": "Portier",
+            "lat": 43.7399,
+            "lon": 7.4318,
+            "note": "Seafront turn"
+          },
+          {
+            "name": "Tir aux Pigeons tunnel",
+            "lat": 43.7381,
+            "lon": 7.4319,
+            "note": "Original tunnel corridor"
+          },
+          {
+            "name": "Harbour chicane",
+            "lat": 43.7351,
+            "lon": 7.4274,
+            "note": "1929 harbour approach"
+          },
+          {
+            "name": "Tabac",
+            "lat": 43.7346,
+            "lon": 7.4234,
+            "note": "Harbour turn"
+          },
+          {
+            "name": "Gasometer hairpin",
+            "lat": 43.733,
+            "lon": 7.4209,
+            "note": "1929 hairpin, later replaced"
+          },
+          {
+            "name": "Boulevard Albert I start",
+            "lat": 43.7345,
+            "lon": 7.4205,
+            "note": "One lap complete"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "coronation-safari-1953",
+    "rank": 22,
+    "title": "East African Coronation Safari",
+    "short_title": "Safari Rally 1953",
+    "date": "1953-05-27/1953-06-01",
+    "why_famous": "The first Safari Rally became East Africa's legendary long-distance motorsport challenge.",
+    "route_summary": "Nairobi-starting field over a broad Lake Victoria region circuit through Kenya, Uganda and Tanganyika, returning to Nairobi.",
+    "source_title": "East African Safari Rally: Our history",
+    "source_url": "https://www.eastafricansafarirally.com/our-history",
+    "geometry_confidence": "low",
+    "geometry_note": "Illustrative Nairobi-start corridor. The 1953 rally used multiple starting points and individualized road choices; no specific crew's control card is available here. Inland anchors avoid drawing roads across Lake Victoria but are not asserted 1953 controls.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.thesafarirally.com/history/",
+        "anchors": [
+          {
+            "name": "Nairobi",
+            "lat": -1.2921,
+            "lon": 36.8219,
+            "note": "Kenyan starting point and finish"
+          },
+          {
+            "name": "Nakuru",
+            "lat": -0.3031,
+            "lon": 36.08,
+            "note": "Kenyan Lake Victoria corridor, not verified 1953 control"
+          },
+          {
+            "name": "Kisumu",
+            "lat": -0.0917,
+            "lon": 34.768,
+            "note": "Lake Victoria east shore corridor"
+          },
+          {
+            "name": "Kampala",
+            "lat": 0.3476,
+            "lon": 32.5825,
+            "note": "Ugandan capital starting-point region"
+          },
+          {
+            "name": "Masaka",
+            "lat": -0.3338,
+            "lon": 31.7341,
+            "note": "Ugandan lake corridor, not verified control"
+          },
+          {
+            "name": "Bukoba",
+            "lat": -1.3317,
+            "lon": 31.8122,
+            "note": "Tanganyikan lake corridor, not verified control"
+          },
+          {
+            "name": "Biharamulo",
+            "lat": -2.632,
+            "lon": 31.312,
+            "note": "Inland routing aid, not verified control"
+          },
+          {
+            "name": "Shinyanga",
+            "lat": -3.661,
+            "lon": 33.423,
+            "note": "Inland routing aid, not verified control"
+          },
+          {
+            "name": "Mwanza",
+            "lat": -2.5164,
+            "lon": 32.9175,
+            "note": "Tanganyikan lake corridor, not verified control"
+          },
+          {
+            "name": "Musoma",
+            "lat": -1.5,
+            "lon": 33.8,
+            "note": "East lake corridor, not verified control"
+          },
+          {
+            "name": "Nairobi",
+            "lat": -1.2921,
+            "lon": 36.8219,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ford-le-mans-1966",
+    "rank": 23,
+    "title": "Ford's first Le Mans win",
+    "short_title": "Ford at Le Mans",
+    "date": "1966-06-18/1966-06-19",
+    "why_famous": "Ford's GT40 victory ended Ferrari's run and produced a famous staged finish.",
+    "route_summary": "One lap of the 1966, approximately 13.6-km Sarthe circuit, repeated through 24 hours.",
+    "source_title": "Automobile Club de l'Ouest: Le Mans 66 archive",
+    "source_url": "https://assets.lemans.org/explorer/pdf/courses/2019/24-heures-du-mans/press/dossier-presse-exposition-le-mans-66.pdf",
+    "geometry_confidence": "medium",
+    "geometry_note": "1966 period circuit schematic, avoiding post-1990 Mulsanne chicanes and later infield sections. One loop shown; race mileage depends on laps.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "source-derived",
+        "source_url": "https://assets.lemans.org/explorer/pdf/courses/2019/24-heures-du-mans/press/dossier-presse-exposition-le-mans-66.pdf",
+        "anchors": [
+          {
+            "name": "Pit straight",
+            "lat": 47.956,
+            "lon": 0.207,
+            "note": "1966 start and finish"
+          },
+          {
+            "name": "Dunlop curve",
+            "lat": 47.9587,
+            "lon": 0.2112,
+            "note": "Infield entry"
+          },
+          {
+            "name": "Tertre Rouge",
+            "lat": 47.9577,
+            "lon": 0.244,
+            "note": "Straight entry"
+          },
+          {
+            "name": "Hunaudières",
+            "lat": 47.928,
+            "lon": 0.248,
+            "note": "Unchicaned 1966 straight"
+          },
+          {
+            "name": "Mulsanne",
+            "lat": 47.9129,
+            "lon": 0.2425,
+            "note": "Southeast turn"
+          },
+          {
+            "name": "Indianapolis",
+            "lat": 47.9218,
+            "lon": 0.211,
+            "note": "Westbound turn"
+          },
+          {
+            "name": "Arnage",
+            "lat": 47.9232,
+            "lon": 0.2071,
+            "note": "Southwest turn"
+          },
+          {
+            "name": "Maison Blanche",
+            "lat": 47.9403,
+            "lon": 0.2183,
+            "note": "1966 return corridor"
+          },
+          {
+            "name": "Pit straight",
+            "lat": 47.956,
+            "lon": 0.207,
+            "note": "One lap complete"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "london-sydney-1968",
+    "rank": 24,
+    "title": "London–Sydney Marathon",
+    "short_title": "London–Sydney 1968",
+    "date": "1968-11-24/1968-12-18",
+    "why_famous": "The marathon rally took its competitors from London across Eurasia and Australia in a landmark endurance event.",
+    "route_summary": "London to Bombay by road with a Dover–Calais ferry; Bombay to Fremantle by ship; Fremantle to Sydney by road.",
+    "source_title": "British Motor Museum: 1968 London–Sydney Marathon",
+    "source_url": "https://www.britishmotormuseum.co.uk/online-collections/details-page?row_id=76417441818",
+    "geometry_confidence": "medium",
+    "geometry_note": "Control-city geometry follows the 1968 event; some crews chose different roads between controls. The two sea transfers are distinct from driving segments.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://mgb-register.org/Files/Articles/Jean%20Denton/The%20London%20to%20Sydney%20Route.pdf",
+        "anchors": [
+          {
+            "name": "London / Crystal Palace",
+            "lat": 51.4191,
+            "lon": -0.0715,
+            "note": "Start"
+          },
+          {
+            "name": "Dover",
+            "lat": 51.1279,
+            "lon": 1.3134,
+            "note": "Channel embarkation"
+          }
+        ]
+      },
+      {
+        "mode": "ship",
+        "track_type": "source-derived",
+        "source_url": "https://mgb-register.org/Files/Articles/Jean%20Denton/The%20London%20to%20Sydney%20Route.pdf",
+        "anchors": [
+          {
+            "name": "Dover",
+            "lat": 51.1279,
+            "lon": 1.3134,
+            "note": "Channel ferry"
+          },
+          {
+            "name": "Calais",
+            "lat": 50.9513,
+            "lon": 1.8587,
+            "note": "Channel ferry"
+          }
+        ]
+      },
+      {
+        "mode": "road",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://mgb-register.org/Files/Articles/Jean%20Denton/The%20London%20to%20Sydney%20Route.pdf",
+        "anchors": [
+          {
+            "name": "Calais",
+            "lat": 50.9513,
+            "lon": 1.8587,
+            "note": "European road restart"
+          },
+          {
+            "name": "Paris",
+            "lat": 48.8566,
+            "lon": 2.3522,
+            "note": "Control"
+          },
+          {
+            "name": "Turin",
+            "lat": 45.0703,
+            "lon": 7.6869,
+            "note": "Control"
+          },
+          {
+            "name": "Belgrade",
+            "lat": 44.7866,
+            "lon": 20.4489,
+            "note": "Control"
+          },
+          {
+            "name": "Sofia",
+            "lat": 42.6977,
+            "lon": 23.3219,
+            "note": "Balkan corridor"
+          },
+          {
+            "name": "Istanbul",
+            "lat": 41.0082,
+            "lon": 28.9784,
+            "note": "Control"
+          },
+          {
+            "name": "Sivas",
+            "lat": 39.7477,
+            "lon": 37.0179,
+            "note": "Anatolian corridor"
+          },
+          {
+            "name": "Erzincan",
+            "lat": 39.75,
+            "lon": 39.5,
+            "note": "Anatolian corridor"
+          },
+          {
+            "name": "Tehran",
+            "lat": 35.6892,
+            "lon": 51.389,
+            "note": "Control"
+          },
+          {
+            "name": "Herat",
+            "lat": 34.3529,
+            "lon": 62.204,
+            "note": "Afghan corridor, crew choices varied"
+          },
+          {
+            "name": "Kabul",
+            "lat": 34.5553,
+            "lon": 69.2075,
+            "note": "Control"
+          },
+          {
+            "name": "Khyber Pass",
+            "lat": 34.0721,
+            "lon": 71.1427,
+            "note": "Mountain crossing"
+          },
+          {
+            "name": "New Delhi",
+            "lat": 28.6139,
+            "lon": 77.209,
+            "note": "Indian control"
+          },
+          {
+            "name": "Bombay / Mumbai",
+            "lat": 18.9388,
+            "lon": 72.8354,
+            "note": "Ship embarkation"
+          }
+        ]
+      },
+      {
+        "mode": "ship",
+        "track_type": "source-derived",
+        "source_url": "https://mgb-register.org/Files/Articles/Jean%20Denton/The%20London%20to%20Sydney%20Route.pdf",
+        "anchors": [
+          {
+            "name": "Bombay / Mumbai",
+            "lat": 18.9388,
+            "lon": 72.8354,
+            "note": "Cars boarded ship"
+          },
+          {
+            "name": "Arabian Sea off Mumbai",
+            "lat": 17.0,
+            "lon": 70.0,
+            "note": "Illustrative offshore ship control; not a logged position."
+          },
+          {
+            "name": "Central Indian Ocean",
+            "lat": 0.0,
+            "lon": 78.0,
+            "note": "Illustrative offshore ship control; not a logged position."
+          },
+          {
+            "name": "Southern Indian Ocean",
+            "lat": -25.0,
+            "lon": 95.0,
+            "note": "Illustrative offshore ship control; not a logged position."
+          },
+          {
+            "name": "Indian Ocean off western Australia",
+            "lat": -32.0,
+            "lon": 112.0,
+            "note": "Illustrative offshore approach; not a logged position."
+          },
+          {
+            "name": "Fremantle",
+            "lat": -32.0569,
+            "lon": 115.7439,
+            "note": "Cars disembarked"
+          }
+        ]
+      },
+      {
+        "mode": "road",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://mgb-register.org/Files/Articles/Jean%20Denton/The%20London%20to%20Sydney%20Route.pdf",
+        "anchors": [
+          {
+            "name": "Fremantle",
+            "lat": -32.0569,
+            "lon": 115.7439,
+            "note": "Australian road restart"
+          },
+          {
+            "name": "Perth",
+            "lat": -31.9505,
+            "lon": 115.8605,
+            "note": "Control"
+          },
+          {
+            "name": "Kalgoorlie",
+            "lat": -30.7489,
+            "lon": 121.4658,
+            "note": "Goldfields corridor"
+          },
+          {
+            "name": "Eucla",
+            "lat": -31.6774,
+            "lon": 128.8877,
+            "note": "Nullarbor crossing"
+          },
+          {
+            "name": "Port Augusta",
+            "lat": -32.4906,
+            "lon": 137.7658,
+            "note": "South Australian corridor"
+          },
+          {
+            "name": "Adelaide",
+            "lat": -34.9285,
+            "lon": 138.6007,
+            "note": "Control"
+          },
+          {
+            "name": "Melbourne",
+            "lat": -37.8136,
+            "lon": 144.9631,
+            "note": "Control"
+          },
+          {
+            "name": "Canberra",
+            "lat": -35.2809,
+            "lon": 149.13,
+            "note": "Eastern corridor"
+          },
+          {
+            "name": "Sydney",
+            "lat": -33.8688,
+            "lon": 151.2093,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "london-mexico-1970",
+    "rank": 25,
+    "title": "London–Mexico World Cup Rally",
+    "short_title": "London–Mexico 1970",
+    "date": "1970-04-19/1970-05-27",
+    "why_famous": "Mikkola and Palm won a six-week rally linking Europe and the Americas in a Ford Escort.",
+    "route_summary": "London to Lisbon by road, ship to Rio de Janeiro, drive through South America, ship across the Darién gap, then Central America to Mexico City.",
+    "source_title": "Historic Marathon Rally Group: London to Mexico World Cup Rally",
+    "source_url": "https://historicmarathonrallygroup.co.uk/wcr40-website-archive/london-to-mexico-world-cup-rally/",
+    "geometry_confidence": "medium",
+    "geometry_note": "Official control cities and sea transfers give the broad route; mountainous stage choices and the exact ship tracks remain unresolved.",
+    "segments": [
+      {
+        "mode": "road",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://historicmarathonrallygroup.co.uk/wcr40-website-archive/london-to-mexico-world-cup-rally/",
+        "anchors": [
+          {
+            "name": "London / Wembley",
+            "lat": 51.556,
+            "lon": -0.2796,
+            "note": "Start"
+          },
+          {
+            "name": "Dover",
+            "lat": 51.1279,
+            "lon": 1.3134,
+            "note": "Channel embarkation"
+          }
+        ]
+      },
+      {
+        "mode": "ship",
+        "track_type": "historical-corridor",
+        "source_url": "https://historicmarathonrallygroup.co.uk/wcr40-website-archive/london-to-mexico-world-cup-rally/",
+        "anchors": [
+          {
+            "name": "Dover",
+            "lat": 51.1279,
+            "lon": 1.3134,
+            "note": "Channel crossing, exact ferry itinerary unverified"
+          },
+          {
+            "name": "Calais",
+            "lat": 50.9513,
+            "lon": 1.8587,
+            "note": "Continental arrival"
+          }
+        ]
+      },
+      {
+        "mode": "road",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://historicmarathonrallygroup.co.uk/wcr40-website-archive/london-to-mexico-world-cup-rally/",
+        "anchors": [
+          {
+            "name": "Calais",
+            "lat": 50.9513,
+            "lon": 1.8587,
+            "note": "European road restart"
+          },
+          {
+            "name": "Vienna",
+            "lat": 48.2082,
+            "lon": 16.3738,
+            "note": "European control"
+          },
+          {
+            "name": "Belgrade",
+            "lat": 44.7866,
+            "lon": 20.4489,
+            "note": "European control"
+          },
+          {
+            "name": "Sofia",
+            "lat": 42.6977,
+            "lon": 23.3219,
+            "note": "European control"
+          },
+          {
+            "name": "Venice",
+            "lat": 45.4408,
+            "lon": 12.3155,
+            "note": "European control"
+          },
+          {
+            "name": "Salamanca",
+            "lat": 40.9701,
+            "lon": -5.6635,
+            "note": "Iberian control"
+          },
+          {
+            "name": "Lisbon",
+            "lat": 38.7223,
+            "lon": -9.1393,
+            "note": "Atlantic embarkation"
+          }
+        ]
+      },
+      {
+        "mode": "ship",
+        "track_type": "source-derived",
+        "source_url": "https://historicmarathonrallygroup.co.uk/wcr40-website-archive/london-to-mexico-world-cup-rally/",
+        "anchors": [
+          {
+            "name": "Lisbon",
+            "lat": 38.7223,
+            "lon": -9.1393,
+            "note": "Atlantic ship departure"
+          },
+          {
+            "name": "Atlantic west of Iberia",
+            "lat": 32.0,
+            "lon": -14.0,
+            "note": "Illustrative offshore ship control; not a logged position."
+          },
+          {
+            "name": "Equatorial Atlantic",
+            "lat": 0.0,
+            "lon": -25.0,
+            "note": "Illustrative offshore ship control; not a logged position."
+          },
+          {
+            "name": "South Atlantic east of Brazil",
+            "lat": -15.0,
+            "lon": -31.0,
+            "note": "Illustrative offshore ship control; not a logged position."
+          },
+          {
+            "name": "Atlantic off Rio de Janeiro",
+            "lat": -22.0,
+            "lon": -40.0,
+            "note": "Illustrative offshore approach; not a logged position."
+          },
+          {
+            "name": "Rio de Janeiro",
+            "lat": -22.9068,
+            "lon": -43.1729,
+            "note": "Ship arrival"
+          }
+        ]
+      },
+      {
+        "mode": "road",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://historicmarathonrallygroup.co.uk/wcr40-website-archive/london-to-mexico-world-cup-rally/",
+        "anchors": [
+          {
+            "name": "Rio de Janeiro",
+            "lat": -22.9068,
+            "lon": -43.1729,
+            "note": "South American road restart"
+          },
+          {
+            "name": "Montevideo",
+            "lat": -34.9011,
+            "lon": -56.1645,
+            "note": "Control"
+          },
+          {
+            "name": "Colonia del Sacramento",
+            "lat": -34.472,
+            "lon": -57.843,
+            "note": "Car ferry embarkation for Buenos Aires"
+          }
+        ]
+      },
+      {
+        "mode": "ferry",
+        "track_type": "source-derived",
+        "source_url": "https://historicmarathonrallygroup.co.uk/wp-content/uploads/2022/03/Press-release-502-HMRG-DM-copybb-quote.pdf",
+        "anchors": [
+          {
+            "name": "Colonia del Sacramento",
+            "lat": -34.472,
+            "lon": -57.843,
+            "note": "Cars boarded the ferry across the Río de la Plata"
+          },
+          {
+            "name": "Buenos Aires",
+            "lat": -34.6037,
+            "lon": -58.3816,
+            "note": "Cars disembarked"
+          }
+        ]
+      },
+      {
+        "mode": "road",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://historicmarathonrallygroup.co.uk/wcr40-website-archive/london-to-mexico-world-cup-rally/",
+        "anchors": [
+          {
+            "name": "Buenos Aires",
+            "lat": -34.6037,
+            "lon": -58.3816,
+            "note": "Control"
+          },
+          {
+            "name": "Santiago",
+            "lat": -33.4489,
+            "lon": -70.6693,
+            "note": "Andean-side control"
+          },
+          {
+            "name": "La Paz",
+            "lat": -16.4897,
+            "lon": -68.1193,
+            "note": "High-altitude control"
+          },
+          {
+            "name": "Lima",
+            "lat": -12.0464,
+            "lon": -77.0428,
+            "note": "Pacific-side control"
+          },
+          {
+            "name": "Cali",
+            "lat": 3.4516,
+            "lon": -76.532,
+            "note": "Colombian control"
+          },
+          {
+            "name": "Buenaventura",
+            "lat": 3.8801,
+            "lon": -77.0312,
+            "note": "Darién-avoidance embarkation"
+          }
+        ]
+      },
+      {
+        "mode": "ship",
+        "track_type": "source-derived",
+        "source_url": "https://historicmarathonrallygroup.co.uk/wcr40-website-archive/london-to-mexico-world-cup-rally/",
+        "anchors": [
+          {
+            "name": "Buenaventura",
+            "lat": 3.8801,
+            "lon": -77.0312,
+            "note": "Cars boarded ship to bypass Darién Gap"
+          },
+          {
+            "name": "Panama City",
+            "lat": 8.9824,
+            "lon": -79.5199,
+            "note": "Cars disembarked"
+          }
+        ]
+      },
+      {
+        "mode": "road",
+        "track_type": "historical-corridor",
+        "source_url": "https://historicmarathonrallygroup.co.uk/wcr40-website-archive/london-to-mexico-world-cup-rally/",
+        "anchors": [
+          {
+            "name": "Panama City",
+            "lat": 8.9824,
+            "lon": -79.5199,
+            "note": "Central American road restart"
+          },
+          {
+            "name": "San José",
+            "lat": 9.9281,
+            "lon": -84.0907,
+            "note": "Costa Rica corridor"
+          },
+          {
+            "name": "Managua",
+            "lat": 12.1149,
+            "lon": -86.2362,
+            "note": "Nicaragua corridor"
+          },
+          {
+            "name": "San Salvador",
+            "lat": 13.6929,
+            "lon": -89.2182,
+            "note": "El Salvador corridor"
+          },
+          {
+            "name": "Guatemala City",
+            "lat": 14.6349,
+            "lon": -90.5069,
+            "note": "Guatemala corridor"
+          },
+          {
+            "name": "Oaxaca",
+            "lat": 17.0732,
+            "lon": -96.7266,
+            "note": "Mexico corridor"
+          },
+          {
+            "name": "Mexico City",
+            "lat": 19.4326,
+            "lon": -99.1332,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -19,11 +19,13 @@ function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
-async function inspectRoute(page, routeId) {
-  return page.evaluate(async (selectedId) => {
+async function inspectRoute(page, routeId, domain = "flights") {
+  return page.evaluate(async ({ selectedId, domainName }) => {
     const canvas = document.querySelector("#map-canvas");
     const context = canvas.getContext("2d", { willReadFrequently: true });
-    const collection = await fetch("data/routes.geojson?v=smooth-routes-1").then((response) => response.json());
+    const routeFile = domainName === "flights" ? "data/routes.geojson?v=smooth-routes-1" : `data/journeys/${domainName}.geojson?v=journey-1`;
+    window.__viewportCollections ||= {};
+    const collection = window.__viewportCollections[routeFile] ||= await fetch(routeFile).then((response) => response.json());
     const feature = collection.features.find((candidate) => candidate.properties.id === selectedId);
     const zoom = Number(document.body.dataset.fitZoom);
     const [centerLon, centerLat] = document.body.dataset.fitCenter.split(",").map(Number);
@@ -35,8 +37,8 @@ async function inspectRoute(page, routeId) {
     const size = 256 * 2 ** zoom;
     const maxLat = 85.05112878;
 
-    function project(lon, lat) {
-      const safeLat = Math.max(-maxLat, Math.min(maxLat, lat));
+    function project(lon, lat, maxLatitude = maxLat) {
+      const safeLat = Math.max(-maxLatitude, Math.min(maxLatitude, lat));
       const sin = Math.sin(safeLat * Math.PI / 180);
       return {
         x: (lon + 180) / 360 * size,
@@ -69,7 +71,7 @@ async function inspectRoute(page, routeId) {
         world.push(project(lon, lat));
       }
     }
-    const center = project(centerLon, centerLat);
+    const center = project(centerLon, centerLat, 89.5);
     const meanX = world.reduce((sum, point) => sum + point.x, 0) / world.length;
     const copyShift = Math.round((center.x - meanX) / size) * size;
     const screen = world.map((point) => ({
@@ -144,6 +146,10 @@ async function inspectRoute(page, routeId) {
       inspected: inspected.length,
       fitMode: document.body.dataset.fitMode,
       fitRoute: document.body.dataset.fitRoute,
+      fitZoom: zoom,
+      fitCenter: [centerLon, centerLat],
+      copyShift,
+      fitCenterOffset: document.body.dataset.fitCenterOffset,
       centerImbalance,
       centerTolerance: Math.max(14, Math.min(canvas.clientWidth, canvas.clientHeight) * 0.045),
       shiftRoom,
@@ -154,13 +160,27 @@ async function inspectRoute(page, routeId) {
         bottom: cardRect.bottom - canvasRect.top,
       },
     };
-  }, routeId);
+  }, { selectedId: routeId, domainName: domain });
 }
 
 (async () => {
   fs.mkdirSync(outputDir, { recursive: true });
   const browser = await chromium.launch({ headless: true });
   try {
+    const inspectOnly = process.argv.find((argument) => argument.startsWith("--inspect="))?.split("=", 2)[1];
+    if (inspectOnly) {
+      const domain = process.argv.find((argument) => argument.startsWith("--domain="))?.split("=", 2)[1] || "flights";
+      const page = await browser.newPage({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 });
+      await page.goto(`${baseUrl}/?basemap=atlas`, { waitUntil: "networkidle" });
+      if (domain !== "flights") await page.locator(`[role="tab"][data-domain="${domain}"]`).click();
+      await page.locator(`.route-item[data-id="${inspectOnly}"]`).click();
+      await page.waitForFunction((route) => document.body.dataset.fitRoute === route, inspectOnly);
+      await page.waitForTimeout(100);
+      const result = await inspectRoute(page, inspectOnly, domain);
+      console.log(JSON.stringify(result, null, 2));
+      await page.screenshot({ path: path.join(outputDir, `inspect-${inspectOnly}.png`) });
+      return;
+    }
     for (const infoCase of [
       { name: "desktop-site-info", viewport: { width: 1440, height: 900 } },
       { name: "phone-site-info", viewport: { width: 390, height: 844 } },
@@ -183,7 +203,7 @@ async function inspectRoute(page, routeId) {
       assert(info.open, `${infoCase.name}: information dialog did not open`);
       assert(info.rect.left >= 8 && info.rect.top >= 8 && info.rect.right <= infoCase.viewport.width - 8 && info.rect.bottom <= infoCase.viewport.height - 8, `${infoCase.name}: dialog escapes viewport: ${JSON.stringify(info.rect)}`);
       assert(info.sectionCount === 4, `${infoCase.name}: expected four information sections`);
-      for (const phrase of ["Routes and uncertainty", "Research sources", "Maps and photographs", "Data and access", "CC BY-SA 3.0"]) {
+      for (const phrase of ["Route geometry and uncertainty", "Research sources", "Maps and photographs", "Data and access", "CC BY-SA 3.0"]) {
         assert(info.text.includes(phrase), `${infoCase.name}: missing information: ${phrase}`);
       }
       assert(info.github === "https://github.com/Yaodin/vibe-flights", `${infoCase.name}: repository link is missing or wrong`);
@@ -237,6 +257,56 @@ async function inspectRoute(page, routeId) {
       }
       console.log(`PASS ${layout.name}: all ${routeIds.length} sidebar items fit geometrically and visually`);
       await context.close();
+    }
+
+    if (process.argv.includes("--journeys")) {
+      const requestedDomain = process.argv.find((argument) => argument.startsWith("--domain="))?.split("=", 2)[1];
+      const journeyDomains = ["sailing", "rail", "road-races", "overland", "ocean-liners", "river", "human-powered"];
+      for (const domain of requestedDomain ? journeyDomains.filter((name) => name === requestedDomain) : journeyDomains) {
+        const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 });
+        const page = await context.newPage();
+        await page.goto(`${baseUrl}/?basemap=atlas`, { waitUntil: "networkidle" });
+        const mapped = await page.evaluate(async (name) => (await fetch(`data/journeys/${name}.geojson?v=journey-1`)).ok, domain);
+        if (!mapped && !process.argv.includes("--all-mapped")) {
+          console.log(`SKIP ${domain}: geometry not generated yet`);
+          await context.close();
+          continue;
+        }
+        assert(mapped, `${domain}: geometry not generated`);
+        await page.locator(`[role="tab"][data-domain="${domain}"]`).click();
+        await page.locator(".route-item").first().waitFor();
+        const routeIds = await page.locator(".route-item").evaluateAll((items) => items.map((item) => item.dataset.id));
+        assert(routeIds.length === 25, `${domain}: expected 25 mapped journeys, got ${routeIds.length}`);
+        for (const routeId of routeIds) {
+          await page.locator(`.route-item[data-id="${routeId}"]`).click();
+          await page.waitForFunction((route) => document.body.dataset.fitRoute === route, routeId);
+          await page.waitForTimeout(40);
+          const result = await inspectRoute(page, routeId, domain);
+          assert(result.fitMode === "viewport-polygon", `${domain}/${routeId}: polygon fitter did not run`);
+          assert(result.polygon.length === 6, `${domain}/${routeId}: wrong viewport polygon`);
+          assert(result.outside === 0, `${domain}/${routeId}: ${result.outside}/${result.totalPoints} points outside viewport polygon: ${JSON.stringify(result.outsideSample)}`);
+          assert(result.centerImbalance <= result.centerTolerance, `${domain}/${routeId}: center imbalance ${result.centerImbalance.toFixed(1)}px`);
+          assert(result.visualHits >= result.inspected * 0.55, `${domain}/${routeId}: only ${result.visualHits}/${result.inspected} route-colored pixel hits`);
+        }
+        await page.screenshot({ path: path.join(outputDir, `${domain}-all-routes.png`) });
+        console.log(`PASS ${domain}: all ${routeIds.length} journeys fit and render visually`);
+        await context.close();
+
+        const phoneContext = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1 });
+        const phonePage = await phoneContext.newPage();
+        await phonePage.goto(`${baseUrl}/?basemap=atlas&domain=${domain}`, { waitUntil: "networkidle" });
+        const phoneRoute = routeIds.at(-1);
+        await phonePage.locator(`.route-item[data-id="${phoneRoute}"]`).click();
+        await phonePage.waitForFunction((route) => document.body.dataset.fitRoute === route, phoneRoute);
+        await phonePage.waitForTimeout(100);
+        const phoneResult = await inspectRoute(phonePage, phoneRoute, domain);
+        assert(phoneResult.polygon.length === 4, `${domain}/phone: wrong viewport polygon`);
+        assert(phoneResult.outside === 0, `${domain}/phone: ${phoneResult.outside}/${phoneResult.totalPoints} points outside viewport polygon`);
+        assert(phoneResult.visualHits >= phoneResult.inspected * 0.55, `${domain}/phone: only ${phoneResult.visualHits}/${phoneResult.inspected} route-colored pixel hits`);
+        await phonePage.screenshot({ path: path.join(outputDir, `${domain}-phone-route.png`) });
+        console.log(`PASS ${domain}/phone: route ${phoneRoute} fits and renders above the card`);
+        await phoneContext.close();
+      }
     }
   } finally {
     await browser.close();

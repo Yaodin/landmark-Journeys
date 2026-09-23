@@ -1,0 +1,3149 @@
+[
+  {
+    "id": "magellan-elcano",
+    "rank": 1,
+    "title": "Magellan–Elcano circumnavigation",
+    "short_title": "Magellan–Elcano",
+    "date": "1519–1522",
+    "why_famous": "The first completed circumnavigation of Earth.",
+    "route_summary": "Sanlúcar de Barrameda via South America, the Strait of Magellan, tropical Pacific, Philippines, Moluccas, Timor and Cape of Good Hope back to Spain.",
+    "source_title": "Ohio State University: Magellan's circumnavigation",
+    "source_url": "https://origins.osu.edu/milestones/magellan-circumnavigation-earth?language_content_entity=en",
+    "geometry_confidence": "medium",
+    "geometry_note": "Named ports are documented. Four broad Pacific sea controls keep the route in the historically supported west-northwest corridor; they are cartographic interpolation, not ship positions or claimed island sightings.",
+    "segments": [
+      {
+        "mode": "sailing",
+        "track_type": "historical-corridor",
+        "source_url": "https://origins.osu.edu/milestones/magellan-circumnavigation-earth?language_content_entity=en",
+        "anchors": [
+          {
+            "name": "Sanlúcar de Barrameda",
+            "lat": 36.78,
+            "lon": -6.35,
+            "note": "Spanish departure port."
+          },
+          {
+            "name": "Canary Islands",
+            "lat": 28.1,
+            "lon": -15.4,
+            "note": "Atlantic staging archipelago; point represents the islands."
+          },
+          {
+            "name": "South Atlantic approach to Brazil",
+            "lat": -12.0,
+            "lon": -31.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Off southeast Brazil",
+            "lat": -21.0,
+            "lon": -38.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Guanabara Bay",
+            "lat": -22.9,
+            "lon": -43.17,
+            "note": "Rio de Janeiro region."
+          },
+          {
+            "name": "Puerto San Julián",
+            "lat": -49.31,
+            "lon": -67.72,
+            "note": "Patagonian wintering place."
+          },
+          {
+            "name": "Strait of Magellan, Atlantic entrance",
+            "lat": -52.5,
+            "lon": -68.45,
+            "note": "Passage entrance."
+          },
+          {
+            "name": "Strait of Magellan, Pacific exit",
+            "lat": -52.65,
+            "lon": -74.75,
+            "note": "Passage exit."
+          },
+          {
+            "name": "Southeast Pacific corridor",
+            "lat": -32.0,
+            "lon": -95.0,
+            "note": "Broad west-northwest sea corridor, not a logged fix."
+          },
+          {
+            "name": "South-central Pacific corridor",
+            "lat": -16.0,
+            "lon": -135.0,
+            "note": "Broad west-northwest sea corridor, not a claimed island sighting."
+          },
+          {
+            "name": "Central Pacific corridor",
+            "lat": -12.0,
+            "lon": -160.0,
+            "note": "Broad tropical sea corridor, not a logged fix."
+          },
+          {
+            "name": "Western Pacific corridor",
+            "lat": 0.0,
+            "lon": 175.0,
+            "note": "Broad tropical sea corridor, not a logged fix."
+          },
+          {
+            "name": "Guam",
+            "lat": 13.44,
+            "lon": 144.79,
+            "note": "First major Pacific landfall after crossing."
+          },
+          {
+            "name": "Cebu",
+            "lat": 10.31,
+            "lon": 123.9,
+            "note": "Philippine landfall."
+          },
+          {
+            "name": "Sea south of Cebu",
+            "lat": 9.0,
+            "lon": 124.0,
+            "note": "Interpolated sea control; not a recorded ship position."
+          },
+          {
+            "name": "Philippine Sea east of Mindanao",
+            "lat": 8.0,
+            "lon": 129.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Molucca Sea",
+            "lat": 3.0,
+            "lon": 129.5,
+            "note": "Interpolated sea control; not a recorded ship position."
+          },
+          {
+            "name": "Tidore",
+            "lat": 0.67,
+            "lon": 127.41,
+            "note": "Moluccas spice island."
+          },
+          {
+            "name": "Timor",
+            "lat": -10.17,
+            "lon": 123.58,
+            "note": "Victoria's final island stop; point represents the island's western end."
+          },
+          {
+            "name": "South of Sunda Islands",
+            "lat": -11.0,
+            "lon": 105.0,
+            "note": "Cartographic sea control only; not an observed vessel position."
+          },
+          {
+            "name": "Cape of Good Hope",
+            "lat": -34.36,
+            "lon": 18.5,
+            "note": "African return passage."
+          },
+          {
+            "name": "Santiago, Cape Verde",
+            "lat": 14.93,
+            "lon": -23.51,
+            "note": "Victoria's documented Atlantic return stop."
+          },
+          {
+            "name": "Sanlúcar de Barrameda",
+            "lat": 36.78,
+            "lon": -6.35,
+            "note": "Victoria's return to Spain."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "columbus-first-voyage",
+    "rank": 2,
+    "title": "Columbus's first voyage",
+    "short_title": "Columbus 1492",
+    "date": "1492–1493",
+    "why_famous": "Began sustained European contact and colonization in the Americas.",
+    "route_summary": "Palos via the Canary Islands to the Bahamas, Cuba and Hispaniola, returning by the Azores.",
+    "source_title": "Library of Congress: Spanish and Portuguese exploration",
+    "source_url": "https://www.loc.gov/classroom-materials/spanish-and-portuguese-exploration-in-the-americas/",
+    "geometry_confidence": "low",
+    "geometry_note": "The first Bahamas landfall is disputed. The Bahamas anchor locates the archipelago only; no particular island is asserted.",
+    "segments": [
+      {
+        "mode": "sailing",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/classroom-materials/spanish-and-portuguese-exploration-in-the-americas/",
+        "anchors": [
+          {
+            "name": "Palos de la Frontera",
+            "lat": 37.23,
+            "lon": -6.89,
+            "note": "Departure port."
+          },
+          {
+            "name": "La Gomera, Canary Islands",
+            "lat": 28.09,
+            "lon": -17.11,
+            "note": "Atlantic departure point."
+          },
+          {
+            "name": "Bahamas archipelago",
+            "lat": 24.5,
+            "lon": -76.5,
+            "note": "First landfall lies somewhere in the Bahamas; precise island contested."
+          },
+          {
+            "name": "North Cuba",
+            "lat": 21.8,
+            "lon": -78.7,
+            "note": "Representative island waypoint, not a logged position."
+          },
+          {
+            "name": "North Hispaniola",
+            "lat": 19.3,
+            "lon": -70.6,
+            "note": "Island visited; Santa María wrecked near today's Haiti."
+          }
+        ]
+      },
+      {
+        "mode": "sailing",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/classroom-materials/spanish-and-portuguese-exploration-in-the-americas/",
+        "anchors": [
+          {
+            "name": "North Hispaniola",
+            "lat": 19.3,
+            "lon": -70.6,
+            "note": "Return departure region."
+          },
+          {
+            "name": "Santa Maria, Azores",
+            "lat": 36.95,
+            "lon": -25.1,
+            "note": "Return voyage landfall."
+          },
+          {
+            "name": "Lisbon",
+            "lat": 38.7,
+            "lon": -9.15,
+            "note": "Return stop."
+          },
+          {
+            "name": "Palos de la Frontera",
+            "lat": 37.23,
+            "lon": -6.89,
+            "note": "Return port."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cook-endeavour",
+    "rank": 3,
+    "title": "Cook's first Pacific voyage",
+    "short_title": "Cook's Endeavour",
+    "date": "1768–1771",
+    "why_famous": "Observed the transit of Venus and charted New Zealand and Australia's east coast for Britain.",
+    "route_summary": "Plymouth through Cape Horn to Tahiti, New Zealand and eastern Australia, then Batavia and home via the Cape of Good Hope.",
+    "source_title": "Royal Museums Greenwich: exploration research guide",
+    "source_url": "https://www.rmg.co.uk/collections/research-guides/research-guide-q1-exploration-discovery",
+    "geometry_confidence": "high",
+    "geometry_note": "Ports and coast sectors are supported by logs and charts; this file is a coarse waypoint interpretation, not a digitized log.",
+    "segments": [
+      {
+        "mode": "sailing",
+        "track_type": "source-derived",
+        "source_url": "https://www.rmg.co.uk/collections/research-guides/research-guide-q1-exploration-discovery",
+        "anchors": [
+          {
+            "name": "Plymouth",
+            "lat": 50.37,
+            "lon": -4.14,
+            "note": "Departure."
+          },
+          {
+            "name": "Atlantic west of Iberia",
+            "lat": 45.0,
+            "lon": -13.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Equatorial Atlantic",
+            "lat": 0.0,
+            "lon": -25.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic east of Brazil",
+            "lat": -25.0,
+            "lon": -36.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic east of Patagonia",
+            "lat": -50.0,
+            "lon": -56.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Cape Horn",
+            "lat": -55.98,
+            "lon": -67.29,
+            "note": "Pacific entry passage."
+          },
+          {
+            "name": "Matavai Bay, Tahiti",
+            "lat": -17.5,
+            "lon": -149.49,
+            "note": "Transit of Venus observations."
+          },
+          {
+            "name": "Tolaga Bay, New Zealand",
+            "lat": -38.37,
+            "lon": 178.32,
+            "note": "Representative New Zealand east-coast charting anchor."
+          },
+          {
+            "name": "Cape Palliser",
+            "lat": -41.61,
+            "lon": 175.29,
+            "note": "Named headland used as coast-routing control, not a logged fix."
+          },
+          {
+            "name": "Cook Strait",
+            "lat": -41.25,
+            "lon": 174.6,
+            "note": "Named passage between the main islands."
+          },
+          {
+            "name": "Cape Farewell, New Zealand",
+            "lat": -40.5,
+            "lon": 172.68,
+            "note": "New Zealand circuit anchor."
+          },
+          {
+            "name": "Botany Bay",
+            "lat": -34.0,
+            "lon": 151.23,
+            "note": "Australian landfall."
+          },
+          {
+            "name": "Tasman Sea off New South Wales",
+            "lat": -32.0,
+            "lon": 153.0,
+            "note": "Interpolated offshore coast control; not a logged fix."
+          },
+          {
+            "name": "Tasman Sea off northern New South Wales",
+            "lat": -29.0,
+            "lon": 154.0,
+            "note": "Interpolated offshore coast control; not a logged fix."
+          },
+          {
+            "name": "Cape Byron",
+            "lat": -28.64,
+            "lon": 153.64,
+            "note": "Named coastal routing control, not a logged fix."
+          },
+          {
+            "name": "K'gari east coast",
+            "lat": -25.25,
+            "lon": 153.35,
+            "note": "Named coastal routing control, not a logged fix."
+          },
+          {
+            "name": "Whitsunday Islands",
+            "lat": -20.3,
+            "lon": 149.1,
+            "note": "Named coastal routing control, not a logged fix."
+          },
+          {
+            "name": "Endeavour River",
+            "lat": -15.46,
+            "lon": 145.25,
+            "note": "Careening site near modern Cooktown."
+          },
+          {
+            "name": "Torres Strait",
+            "lat": -10.5,
+            "lon": 142.5,
+            "note": "Passage north of Australia."
+          },
+          {
+            "name": "Sunda Strait",
+            "lat": -6.0,
+            "lon": 105.8,
+            "note": "Indonesian passage before Batavia; corridor control."
+          },
+          {
+            "name": "Batavia",
+            "lat": -6.13,
+            "lon": 106.81,
+            "note": "Modern Jakarta."
+          },
+          {
+            "name": "Cape of Good Hope",
+            "lat": -34.36,
+            "lon": 18.5,
+            "note": "Return passage."
+          },
+          {
+            "name": "Atlantic southwest of Cape",
+            "lat": -36.0,
+            "lon": 13.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic west of Africa",
+            "lat": -20.0,
+            "lon": 5.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Equatorial Atlantic west of Africa",
+            "lat": 0.0,
+            "lon": -25.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "North Atlantic west of Africa",
+            "lat": 20.0,
+            "lon": -20.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Atlantic west of Iberia",
+            "lat": 45.0,
+            "lon": -13.0,
+            "note": "Interpolated offshore control before Plymouth."
+          },
+          {
+            "name": "Plymouth",
+            "lat": 50.37,
+            "lon": -4.14,
+            "note": "Return region."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beagle-second-voyage",
+    "rank": 4,
+    "title": "Second voyage of HMS Beagle",
+    "short_title": "HMS Beagle",
+    "date": "1831–1836",
+    "why_famous": "Darwin's observations on the voyage helped shape evolutionary theory.",
+    "route_summary": "Plymouth via Cape Verde, South America, the Galápagos, Tahiti, New Zealand, Australia and the Cape of Good Hope.",
+    "source_title": "Royal Museums Greenwich: HMS Beagle",
+    "source_url": "https://www.rmg.co.uk/stories/maritime-history/hms-beagle",
+    "geometry_confidence": "high",
+    "geometry_note": "Named stops are documented; major coastal surveys and return detours are simplified and ocean links are interpolated.",
+    "segments": [
+      {
+        "mode": "sailing",
+        "track_type": "source-derived",
+        "source_url": "https://www.rmg.co.uk/stories/maritime-history/hms-beagle",
+        "anchors": [
+          {
+            "name": "Plymouth",
+            "lat": 50.37,
+            "lon": -4.14,
+            "note": "Departure."
+          },
+          {
+            "name": "Praia, Cape Verde",
+            "lat": 14.92,
+            "lon": -23.51,
+            "note": "Atlantic stop."
+          },
+          {
+            "name": "Atlantic off northeast Brazil",
+            "lat": -6.0,
+            "lon": -32.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Bahia",
+            "lat": -12.97,
+            "lon": -38.5,
+            "note": "Brazilian stop."
+          },
+          {
+            "name": "Atlantic off eastern Brazil",
+            "lat": -18.0,
+            "lon": -36.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Atlantic off southeastern Brazil",
+            "lat": -24.0,
+            "lon": -40.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic off Brazil",
+            "lat": -27.0,
+            "lon": -45.0,
+            "note": "Coastal sea corridor control, not a logged position."
+          },
+          {
+            "name": "South Atlantic off Uruguay",
+            "lat": -33.0,
+            "lon": -52.0,
+            "note": "Coastal sea corridor control, not a logged position."
+          },
+          {
+            "name": "Río de la Plata outer estuary",
+            "lat": -35.2,
+            "lon": -55.0,
+            "note": "Interpolated sea approach; not a logged position."
+          },
+          {
+            "name": "Buenos Aires",
+            "lat": -34.6,
+            "lon": -58.38,
+            "note": "South American survey region."
+          },
+          {
+            "name": "Río de la Plata outer estuary",
+            "lat": -35.2,
+            "lon": -55.0,
+            "note": "Interpolated sea departure; not a logged position."
+          },
+          {
+            "name": "South Atlantic off Patagonia north",
+            "lat": -39.0,
+            "lon": -59.0,
+            "note": "Interpolated offshore coast control; not a logged position."
+          },
+          {
+            "name": "South Atlantic off Patagonia south",
+            "lat": -48.0,
+            "lon": -65.0,
+            "note": "Interpolated offshore coast control; not a logged position."
+          },
+          {
+            "name": "Strait of Magellan Atlantic entrance",
+            "lat": -52.5,
+            "lon": -68.45,
+            "note": "Interpolated passage control; not a logged position."
+          },
+          {
+            "name": "Strait of Magellan",
+            "lat": -53.0,
+            "lon": -70.8,
+            "note": "Patagonian passage and surveys."
+          },
+          {
+            "name": "Pacific exit of Strait of Magellan",
+            "lat": -52.65,
+            "lon": -74.75,
+            "note": "Named passage exit."
+          },
+          {
+            "name": "Pacific off Tierra del Fuego",
+            "lat": -52.0,
+            "lon": -78.0,
+            "note": "Interpolated offshore control; not a logged position."
+          },
+          {
+            "name": "Pacific off southern Chile",
+            "lat": -47.0,
+            "lon": -79.0,
+            "note": "Interpolated offshore control; not a logged position."
+          },
+          {
+            "name": "Off southern Chile",
+            "lat": -44.0,
+            "lon": -76.0,
+            "note": "Coastal sea corridor control, not a logged position."
+          },
+          {
+            "name": "Off central Chile",
+            "lat": -36.0,
+            "lon": -74.0,
+            "note": "Coastal sea corridor control, not a logged position."
+          },
+          {
+            "name": "Valparaíso",
+            "lat": -33.05,
+            "lon": -71.62,
+            "note": "Chile stop."
+          },
+          {
+            "name": "San Cristóbal, Galápagos",
+            "lat": -0.9,
+            "lon": -89.55,
+            "note": "Representative Galápagos island stop."
+          },
+          {
+            "name": "Tahiti",
+            "lat": -17.54,
+            "lon": -149.57,
+            "note": "Pacific stop."
+          },
+          {
+            "name": "Bay of Islands, New Zealand",
+            "lat": -35.23,
+            "lon": 174.12,
+            "note": "New Zealand stop."
+          },
+          {
+            "name": "Sydney",
+            "lat": -33.87,
+            "lon": 151.21,
+            "note": "Australia stop."
+          },
+          {
+            "name": "Hobart",
+            "lat": -42.88,
+            "lon": 147.33,
+            "note": "Documented Tasmanian stop."
+          },
+          {
+            "name": "King George Sound",
+            "lat": -35.02,
+            "lon": 117.89,
+            "note": "Documented southwest Australian stop."
+          },
+          {
+            "name": "Cape of Good Hope",
+            "lat": -34.36,
+            "lon": 18.5,
+            "note": "Return stop."
+          },
+          {
+            "name": "South Atlantic west of Africa",
+            "lat": -20.0,
+            "lon": -15.0,
+            "note": "Open-ocean routing control, not a logged position."
+          },
+          {
+            "name": "North Atlantic west of Africa",
+            "lat": 10.0,
+            "lon": -20.0,
+            "note": "Open-ocean routing control, not a logged position."
+          },
+          {
+            "name": "Plymouth",
+            "lat": 50.37,
+            "lon": -4.14,
+            "note": "Return to England."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mayflower",
+    "rank": 5,
+    "title": "Mayflower crossing",
+    "short_title": "Mayflower",
+    "date": "1620",
+    "why_famous": "Brought English colonists to New England and became a central event in US history.",
+    "route_summary": "Plymouth, England, across the North Atlantic to Cape Cod and Plymouth Harbor, Massachusetts.",
+    "source_title": "Plimoth Patuxet Museums: Mayflower",
+    "source_url": "https://plimoth.org/for-students/homework-help/mayflower-and-mayflower-compact",
+    "geometry_confidence": "medium",
+    "geometry_note": "Endpoints are well established, but the open Atlantic path is a broad inferred corridor.",
+    "segments": [
+      {
+        "mode": "sailing",
+        "track_type": "historical-corridor",
+        "source_url": "https://plimoth.org/for-students/homework-help/mayflower-and-mayflower-compact",
+        "anchors": [
+          {
+            "name": "Plymouth, England",
+            "lat": 50.37,
+            "lon": -4.14,
+            "note": "Final departure after earlier Southampton and Dartmouth attempts."
+          },
+          {
+            "name": "North Atlantic west of Newfoundland",
+            "lat": 45.0,
+            "lon": -50.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Atlantic southeast of Cape Cod",
+            "lat": 41.0,
+            "lon": -66.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Cape Cod",
+            "lat": 41.8,
+            "lon": -70.04,
+            "note": "First New England landfall region."
+          },
+          {
+            "name": "Plymouth Harbor, Massachusetts",
+            "lat": 41.96,
+            "lon": -70.66,
+            "note": "Settlement harbor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "vasco-da-gama-india",
+    "rank": 6,
+    "title": "Vasco da Gama's first India voyage",
+    "short_title": "Vasco da Gama",
+    "date": "1497–1499",
+    "why_famous": "Opened a direct European sea route to India around Africa.",
+    "route_summary": "Lisbon around the Cape of Good Hope and through East Africa to Calicut, returning to Portugal.",
+    "source_title": "Royal Museums Greenwich: Vasco da Gama collection",
+    "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-14176",
+    "geometry_confidence": "medium",
+    "geometry_note": "Voyage ports and passages are historical; south Atlantic loops and open ocean legs are indicative only.",
+    "segments": [
+      {
+        "mode": "sailing",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-14176",
+        "anchors": [
+          {
+            "name": "Lisbon",
+            "lat": 38.72,
+            "lon": -9.14,
+            "note": "Departure."
+          },
+          {
+            "name": "Cape Verde Islands",
+            "lat": 14.9,
+            "lon": -23.5,
+            "note": "Archipelago region."
+          },
+          {
+            "name": "South Atlantic west of Africa",
+            "lat": -20.0,
+            "lon": -15.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Cape of Good Hope",
+            "lat": -34.36,
+            "lon": 18.5,
+            "note": "African rounding."
+          },
+          {
+            "name": "Indian Ocean southeast of Cape",
+            "lat": -36.0,
+            "lon": 28.0,
+            "note": "Interpolated offshore control around southern Africa."
+          },
+          {
+            "name": "Mozambique Channel south",
+            "lat": -26.0,
+            "lon": 38.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Mozambique Island",
+            "lat": -15.03,
+            "lon": 40.74,
+            "note": "East African stop."
+          },
+          {
+            "name": "Mozambique Channel north",
+            "lat": -10.0,
+            "lon": 43.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Indian Ocean east of Mombasa",
+            "lat": -5.0,
+            "lon": 42.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Mombasa",
+            "lat": -4.05,
+            "lon": 39.67,
+            "note": "East African stop."
+          },
+          {
+            "name": "Malindi",
+            "lat": -3.22,
+            "lon": 40.12,
+            "note": "Pilot obtained for Indian Ocean crossing."
+          },
+          {
+            "name": "Calicut",
+            "lat": 11.25,
+            "lon": 75.78,
+            "note": "Modern Kozhikode."
+          }
+        ]
+      },
+      {
+        "mode": "sailing",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-14176",
+        "anchors": [
+          {
+            "name": "Calicut",
+            "lat": 11.25,
+            "lon": 75.78,
+            "note": "Return departure."
+          },
+          {
+            "name": "Malindi",
+            "lat": -3.22,
+            "lon": 40.12,
+            "note": "East African coast."
+          },
+          {
+            "name": "East African offshore corridor",
+            "lat": -16.0,
+            "lon": 42.0,
+            "note": "Interpolated sea control; not a recorded ship position."
+          },
+          {
+            "name": "Mozambique Channel south",
+            "lat": -26.0,
+            "lon": 38.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Indian Ocean southeast of Cape",
+            "lat": -36.0,
+            "lon": 28.0,
+            "note": "Interpolated offshore control around southern Africa."
+          },
+          {
+            "name": "Cape of Good Hope",
+            "lat": -34.36,
+            "lon": 18.5,
+            "note": "African rounding."
+          },
+          {
+            "name": "Atlantic southwest of Cape",
+            "lat": -36.0,
+            "lon": 13.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic west of Africa",
+            "lat": -20.0,
+            "lon": 5.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Equatorial Atlantic west of Africa",
+            "lat": 0.0,
+            "lon": -25.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "North Atlantic west of Africa",
+            "lat": 20.0,
+            "lon": -20.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Atlantic west of Iberia",
+            "lat": 38.0,
+            "lon": -13.0,
+            "note": "Interpolated offshore control before Lisbon."
+          },
+          {
+            "name": "Lisbon",
+            "lat": 38.72,
+            "lon": -9.14,
+            "note": "Voyage return."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "drake-circumnavigation",
+    "rank": 7,
+    "title": "Drake's circumnavigation",
+    "short_title": "Francis Drake",
+    "date": "1577–1580",
+    "why_famous": "The first English circumnavigation.",
+    "route_summary": "Plymouth via South America and the Strait of Magellan, the Pacific coast, the Moluccas and Cape of Good Hope back to England.",
+    "source_title": "Royal Museums Greenwich: Drake route chart",
+    "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-544048",
+    "geometry_confidence": "medium",
+    "geometry_note": "Pacific landfall at New Albion is disputed and is omitted; mapped places are named passage regions, not a complete chart trace.",
+    "segments": [
+      {
+        "mode": "sailing",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-544048",
+        "anchors": [
+          {
+            "name": "Plymouth",
+            "lat": 50.37,
+            "lon": -4.14,
+            "note": "Departure."
+          },
+          {
+            "name": "Cape Verde Islands",
+            "lat": 14.9,
+            "lon": -23.5,
+            "note": "Atlantic passage."
+          },
+          {
+            "name": "Tropical Atlantic west of Brazil",
+            "lat": -8.0,
+            "lon": -34.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Atlantic off eastern Brazil",
+            "lat": -16.0,
+            "lon": -36.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Atlantic off southeastern Brazil",
+            "lat": -23.0,
+            "lon": -40.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic off Brazil",
+            "lat": -28.0,
+            "lon": -47.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Atlantic off southern Brazil",
+            "lat": -33.0,
+            "lon": -51.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Río de la Plata",
+            "lat": -35.0,
+            "lon": -56.0,
+            "note": "South American coast region."
+          },
+          {
+            "name": "Strait of Magellan, Atlantic entrance",
+            "lat": -52.5,
+            "lon": -68.45,
+            "note": "Pacific passage."
+          },
+          {
+            "name": "Strait of Magellan, Pacific exit",
+            "lat": -52.65,
+            "lon": -74.75,
+            "note": "Pacific passage."
+          },
+          {
+            "name": "Pacific off southern Chile",
+            "lat": -42.0,
+            "lon": -77.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Pacific off central Chile",
+            "lat": -35.0,
+            "lon": -75.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Valparaíso",
+            "lat": -33.05,
+            "lon": -71.62,
+            "note": "Chile raid region."
+          },
+          {
+            "name": "Callao",
+            "lat": -12.05,
+            "lon": -77.15,
+            "note": "Peru coast region."
+          },
+          {
+            "name": "Guatulco",
+            "lat": 15.72,
+            "lon": -96.32,
+            "note": "Mexico coast raid region."
+          },
+          {
+            "name": "Ternate",
+            "lat": 0.8,
+            "lon": 127.38,
+            "note": "Moluccas stop."
+          },
+          {
+            "name": "Cape of Good Hope",
+            "lat": -34.36,
+            "lon": 18.5,
+            "note": "African return passage."
+          },
+          {
+            "name": "Atlantic southwest of Cape",
+            "lat": -36.0,
+            "lon": 13.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic west of Africa",
+            "lat": -20.0,
+            "lon": 5.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Equatorial Atlantic west of Africa",
+            "lat": 0.0,
+            "lon": -25.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "North Atlantic west of Africa",
+            "lat": 20.0,
+            "lon": -20.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Atlantic west of Iberia",
+            "lat": 45.0,
+            "lon": -13.0,
+            "note": "Interpolated offshore control before Plymouth."
+          },
+          {
+            "name": "Plymouth",
+            "lat": 50.37,
+            "lon": -4.14,
+            "note": "Return."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "endurance-james-caird",
+    "rank": 8,
+    "title": "Endurance and James Caird escape",
+    "short_title": "Endurance escape",
+    "date": "1914–1916",
+    "why_famous": "Shackleton's crew survived the loss of Endurance and an open-boat rescue crossing.",
+    "route_summary": "South Georgia into Weddell Sea pack ice, drift to the open sea, Elephant Island, then James Caird to South Georgia.",
+    "source_title": "Scott Polar Research Institute: Imperial Trans-Antarctic Expedition",
+    "source_url": "https://www.spri.cam.ac.uk/museum/exhibitions/endurance/essay.pdf",
+    "geometry_confidence": "medium",
+    "geometry_note": "Ship travel, ice drift and open-boat sailing are distinct. The drift anchors are approximate named regions, not recovered daily positions; the South Georgia mountain crossing is excluded.",
+    "segments": [
+      {
+        "mode": "sailing",
+        "track_type": "source-derived",
+        "source_url": "https://www.spri.cam.ac.uk/museum/exhibitions/endurance/essay.pdf",
+        "anchors": [
+          {
+            "name": "Grytviken, South Georgia",
+            "lat": -54.28,
+            "lon": -36.51,
+            "note": "Departure for Weddell Sea."
+          },
+          {
+            "name": "Coats Land offing",
+            "lat": -73.5,
+            "lon": -20.0,
+            "note": "Coast sighted before ice entrapment; position representative."
+          },
+          {
+            "name": "Weddell Sea ice entrapment region",
+            "lat": -76.5,
+            "lon": -31.0,
+            "note": "Approximate ice entrapment area; not a fix."
+          }
+        ]
+      },
+      {
+        "mode": "ice-drift",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.spri.cam.ac.uk/museum/exhibitions/endurance/essay.pdf",
+        "anchors": [
+          {
+            "name": "Weddell Sea ice entrapment region",
+            "lat": -76.5,
+            "lon": -31.0,
+            "note": "Approximate drift start."
+          },
+          {
+            "name": "Northern Weddell Sea",
+            "lat": -68.0,
+            "lon": -48.0,
+            "note": "Approximate drift corridor, not a logged position."
+          },
+          {
+            "name": "Open water near Elephant Island",
+            "lat": -62.7,
+            "lon": -54.0,
+            "note": "End of ice drift; approximate."
+          }
+        ]
+      },
+      {
+        "mode": "small-boat escape",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.spri.cam.ac.uk/museum/exhibitions/endurance/essay.pdf",
+        "anchors": [
+          {
+            "name": "Open water near Elephant Island",
+            "lat": -62.7,
+            "lon": -54.0,
+            "note": "Approximate point where the party left the ice; not a fix."
+          },
+          {
+            "name": "Elephant Island",
+            "lat": -61.13,
+            "lon": -55.1,
+            "note": "Small-boat landing and crew refuge."
+          }
+        ]
+      },
+      {
+        "mode": "open-boat sailing",
+        "track_type": "source-derived",
+        "source_url": "https://www.spri.cam.ac.uk/museum/exhibitions/endurance/essay.pdf",
+        "anchors": [
+          {
+            "name": "Elephant Island",
+            "lat": -61.13,
+            "lon": -55.1,
+            "note": "Crew refuge and James Caird departure."
+          },
+          {
+            "name": "King Haakon Bay, South Georgia",
+            "lat": -54.15,
+            "lon": -37.32,
+            "note": "James Caird landing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bligh-bounty-launch",
+    "rank": 9,
+    "title": "Bligh's Bounty launch",
+    "short_title": "Bligh's launch",
+    "date": "1789",
+    "why_famous": "A remarkable 3,600 nautical mile open-boat survival voyage after the Bounty mutiny.",
+    "route_summary": "Near Tofua through Fiji waters and Torres Strait to Timor.",
+    "source_title": "Royal Museums Greenwich: Bligh chart",
+    "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-149152",
+    "geometry_confidence": "high",
+    "geometry_note": "Historical chart exists; these named locations form a coarse reconstruction rather than a chart digitization.",
+    "segments": [
+      {
+        "mode": "open-boat sailing",
+        "track_type": "source-derived",
+        "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-149152",
+        "anchors": [
+          {
+            "name": "Tofua",
+            "lat": -19.75,
+            "lon": -175.08,
+            "note": "Only landing before Timor; launch cast adrift nearby."
+          },
+          {
+            "name": "Fiji waters",
+            "lat": -17.7,
+            "lon": 178.0,
+            "note": "Archipelago passage, not a fixed landfall."
+          },
+          {
+            "name": "Torres Strait",
+            "lat": -10.5,
+            "lon": 142.5,
+            "note": "Australian passage."
+          },
+          {
+            "name": "Kupang, Timor",
+            "lat": -10.17,
+            "lon": 123.58,
+            "note": "Safe arrival."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "slocum-spray",
+    "rank": 10,
+    "title": "Joshua Slocum's solo circumnavigation",
+    "short_title": "Joshua Slocum",
+    "date": "1895–1898",
+    "why_famous": "The first recorded solo sailing circumnavigation.",
+    "route_summary": "Boston via Gibraltar, South America, the Strait of Magellan, Pacific and Indian oceans, Cape of Good Hope and Caribbean to Newport.",
+    "source_title": "Smithsonian Libraries: Sailing Alone Around the World",
+    "source_url": "https://www.si.edu/object/sailing-alone-around-world-captain-joshua-slocum-illustrated-thomas-fogarty-george-varian%3Asiris_sil_561337",
+    "geometry_confidence": "high",
+    "geometry_note": "Slocum's account records stops; the line here joins selected stops and does not claim day-by-day fixes.",
+    "segments": [
+      {
+        "mode": "sailing",
+        "track_type": "source-derived",
+        "source_url": "https://www.si.edu/object/sailing-alone-around-world-captain-joshua-slocum-illustrated-thomas-fogarty-george-varian%3Asiris_sil_561337",
+        "anchors": [
+          {
+            "name": "Boston",
+            "lat": 42.36,
+            "lon": -71.05,
+            "note": "Departure region."
+          },
+          {
+            "name": "Gibraltar",
+            "lat": 36.14,
+            "lon": -5.35,
+            "note": "European stop."
+          },
+          {
+            "name": "Atlantic west of Morocco",
+            "lat": 32.0,
+            "lon": -13.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "North Atlantic west of Africa",
+            "lat": 18.0,
+            "lon": -24.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Equatorial Atlantic",
+            "lat": 0.0,
+            "lon": -30.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Pernambuco",
+            "lat": -8.05,
+            "lon": -34.87,
+            "note": "Modern Recife."
+          },
+          {
+            "name": "South Atlantic off eastern Brazil",
+            "lat": -18.0,
+            "lon": -36.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic off southeastern Brazil",
+            "lat": -27.0,
+            "lon": -45.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Atlantic east of Uruguay",
+            "lat": -35.0,
+            "lon": -53.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Montevideo",
+            "lat": -34.91,
+            "lon": -56.16,
+            "note": "South America stop."
+          },
+          {
+            "name": "Strait of Magellan",
+            "lat": -53.0,
+            "lon": -70.8,
+            "note": "Pacific passage."
+          },
+          {
+            "name": "Pacific exit of Strait of Magellan",
+            "lat": -52.65,
+            "lon": -74.75,
+            "note": "Interpolated passage control; not a recorded ship position."
+          },
+          {
+            "name": "Pacific off southern Chile",
+            "lat": -44.0,
+            "lon": -78.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Juan Fernández Islands",
+            "lat": -33.63,
+            "lon": -78.85,
+            "note": "Pacific stop."
+          },
+          {
+            "name": "Apia, Samoa",
+            "lat": -13.83,
+            "lon": -171.76,
+            "note": "Pacific stop."
+          },
+          {
+            "name": "Torres Strait",
+            "lat": -10.5,
+            "lon": 142.5,
+            "note": "Australian passage."
+          },
+          {
+            "name": "Arafura Sea",
+            "lat": -10.0,
+            "lon": 132.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Indian Ocean south of Timor",
+            "lat": -13.0,
+            "lon": 122.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Indian Ocean south of Java",
+            "lat": -16.0,
+            "lon": 105.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Mauritius",
+            "lat": -20.16,
+            "lon": 57.5,
+            "note": "Indian Ocean stop."
+          },
+          {
+            "name": "Indian Ocean southeast of Cape",
+            "lat": -36.0,
+            "lon": 28.0,
+            "note": "Interpolated offshore control around southern Africa."
+          },
+          {
+            "name": "Cape of Good Hope",
+            "lat": -34.36,
+            "lon": 18.5,
+            "note": "African passage."
+          },
+          {
+            "name": "Atlantic southwest of Cape",
+            "lat": -36.0,
+            "lon": 13.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic",
+            "lat": -20.0,
+            "lon": 0.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Equatorial Atlantic",
+            "lat": 0.0,
+            "lon": -30.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "North Atlantic east of Caribbean",
+            "lat": 15.0,
+            "lon": -50.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Caribbean Sea",
+            "lat": 16.0,
+            "lon": -66.0,
+            "note": "Broad return region."
+          },
+          {
+            "name": "Newport, Rhode Island",
+            "lat": 41.49,
+            "lon": -71.31,
+            "note": "Voyage completion."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "franklin-final-expedition",
+    "rank": 11,
+    "title": "Franklin's final expedition",
+    "short_title": "Franklin expedition",
+    "date": "1845–1848",
+    "why_famous": "The disappearance of Erebus, Terror and their crews became a defining Northwest Passage mystery.",
+    "route_summary": "Greenhithe via Disko Bay and Lancaster Sound to Beechey Island; ships later trapped near King William Island.",
+    "source_title": "Parks Canada: Franklin's 1845 expedition",
+    "source_url": "https://parks.canada.ca/lhn-nhs/nu/epaveswrecks/culture/histoire-history/expedition",
+    "geometry_confidence": "low",
+    "geometry_note": "Parks Canada explicitly depicts approximate routes. The wreck sites do not establish the full paths after abandonment, so they are not connected as a sailing segment.",
+    "segments": [
+      {
+        "mode": "sailing",
+        "track_type": "historical-corridor",
+        "source_url": "https://parks.canada.ca/lhn-nhs/nu/epaveswrecks/culture/histoire-history/expedition",
+        "anchors": [
+          {
+            "name": "Greenhithe",
+            "lat": 51.45,
+            "lon": 0.28,
+            "note": "Departure on 19 May 1845."
+          },
+          {
+            "name": "Thames Estuary",
+            "lat": 51.5,
+            "lon": 1.3,
+            "note": "Waterway exit from Greenhithe; corridor control, not a vessel fix."
+          },
+          {
+            "name": "English Channel south of Cornwall",
+            "lat": 49.8,
+            "lon": -5.0,
+            "note": "Interpolated offshore passage; not a recorded ship position."
+          },
+          {
+            "name": "Western Approaches",
+            "lat": 50.0,
+            "lon": -12.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "North Atlantic west of Ireland",
+            "lat": 55.0,
+            "lon": -20.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Cape Farewell, Greenland",
+            "lat": 59.77,
+            "lon": -43.93,
+            "note": "Southern Greenland rounding region, not a recorded stop."
+          },
+          {
+            "name": "Labrador Sea southwest of Greenland",
+            "lat": 59.0,
+            "lon": -48.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Davis Strait southern approach",
+            "lat": 62.0,
+            "lon": -56.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Davis Strait",
+            "lat": 65.0,
+            "lon": -54.0,
+            "note": "Sea passage west of Greenland."
+          },
+          {
+            "name": "Disko Bay",
+            "lat": 69.3,
+            "lon": -53.9,
+            "note": "Whalefish Islands supply ship parted company."
+          },
+          {
+            "name": "Lancaster Sound",
+            "lat": 74.0,
+            "lon": -83.0,
+            "note": "Northwest Passage approach."
+          },
+          {
+            "name": "Beechey Island",
+            "lat": 74.72,
+            "lon": -91.83,
+            "note": "1845–46 wintering place."
+          }
+        ]
+      },
+      {
+        "mode": "sailing and ice drift",
+        "track_type": "historical-corridor",
+        "source_url": "https://parks.canada.ca/lhn-nhs/nu/epaveswrecks/culture/histoire-history/expedition",
+        "anchors": [
+          {
+            "name": "Beechey Island",
+            "lat": 74.72,
+            "lon": -91.83,
+            "note": "Last secure wintering location."
+          },
+          {
+            "name": "Peel Sound",
+            "lat": 72.0,
+            "lon": -96.0,
+            "note": "Approximate southbound passage."
+          },
+          {
+            "name": "Northwest King William Island",
+            "lat": 70.3,
+            "lon": -98.5,
+            "note": "Ships trapped in ice September 1846; approximate region."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kon-tiki",
+    "rank": 12,
+    "title": "Kon-Tiki expedition",
+    "short_title": "Kon-Tiki",
+    "date": "1947",
+    "why_famous": "An experimental raft voyage demonstrating that a drift crossing from South America to Polynesia was possible.",
+    "route_summary": "Callao, Peru, west across the Pacific under winds and currents to Raroia Atoll.",
+    "source_title": "Kon-Tiki Museum: Kon-Tiki expedition",
+    "source_url": "https://www.kon-tiki.no/en/heyerdahls-expeditions/kon-tiki",
+    "geometry_confidence": "high",
+    "geometry_note": "The endpoints are documented; the open-water line is a broad drift corridor unless log positions are digitized.",
+    "segments": [
+      {
+        "mode": "raft drift and sailing",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.kon-tiki.no/en/heyerdahls-expeditions/kon-tiki",
+        "anchors": [
+          {
+            "name": "Callao",
+            "lat": -12.05,
+            "lon": -77.15,
+            "note": "Departure port."
+          },
+          {
+            "name": "Raroia Atoll",
+            "lat": -16.05,
+            "lon": -142.48,
+            "note": "Raft landfall."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amundsen-gjoa",
+    "rank": 13,
+    "title": "Amundsen's Gjøa expedition",
+    "short_title": "Gjøa",
+    "date": "1903–1906",
+    "why_famous": "The first complete transit of the Northwest Passage by ship.",
+    "route_summary": "Oslo via Baffin Bay and King William Island, west through the Canadian Arctic to Nome.",
+    "source_title": "Royal Museums Greenwich: Amundsen Northwest Passage",
+    "source_url": "https://www.rmg.co.uk/stories/maritime-history/roald-amundsen-north-west-passage-expedition-1903-06",
+    "geometry_confidence": "high",
+    "geometry_note": "Major passages and wintering harbor are established; narrow-channel routing requires chart digitization for exact geometry.",
+    "segments": [
+      {
+        "mode": "sailing",
+        "track_type": "source-derived",
+        "source_url": "https://www.rmg.co.uk/stories/maritime-history/roald-amundsen-north-west-passage-expedition-1903-06",
+        "anchors": [
+          {
+            "name": "Oslo",
+            "lat": 59.91,
+            "lon": 10.75,
+            "note": "Departure city."
+          },
+          {
+            "name": "Skagerrak",
+            "lat": 57.9,
+            "lon": 8.0,
+            "note": "Sea exit from Oslofjord, not a logged fix."
+          },
+          {
+            "name": "North Sea west of Norway",
+            "lat": 57.0,
+            "lon": 3.0,
+            "note": "Interpolated offshore control; not a logged ship position."
+          },
+          {
+            "name": "Norwegian Sea",
+            "lat": 64.0,
+            "lon": 2.0,
+            "note": "Offshore corridor control, not a logged fix."
+          },
+          {
+            "name": "North Atlantic south of Iceland",
+            "lat": 61.0,
+            "lon": -16.0,
+            "note": "Interpolated offshore control; not a logged ship position."
+          },
+          {
+            "name": "Cape Farewell, Greenland",
+            "lat": 59.77,
+            "lon": -43.93,
+            "note": "Southern Greenland rounding region, not a recorded stop."
+          },
+          {
+            "name": "Labrador Sea southwest of Greenland",
+            "lat": 59.0,
+            "lon": -48.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Davis Strait southern approach",
+            "lat": 62.0,
+            "lon": -56.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Davis Strait",
+            "lat": 65.0,
+            "lon": -54.0,
+            "note": "Sea passage west of Greenland."
+          },
+          {
+            "name": "Baffin Bay",
+            "lat": 73.0,
+            "lon": -60.0,
+            "note": "Approach to Canadian Arctic."
+          },
+          {
+            "name": "Lancaster Sound",
+            "lat": 74.0,
+            "lon": -83.0,
+            "note": "Passage entrance."
+          },
+          {
+            "name": "Peel Sound",
+            "lat": 72.0,
+            "lon": -96.0,
+            "note": "Southbound channel."
+          },
+          {
+            "name": "Gjøa Haven",
+            "lat": 68.63,
+            "lon": -95.88,
+            "note": "Two-year wintering harbor."
+          },
+          {
+            "name": "Simpson Strait",
+            "lat": 68.6,
+            "lon": -98.0,
+            "note": "Westward channel."
+          },
+          {
+            "name": "Canadian Arctic western channels",
+            "lat": 69.5,
+            "lon": -108.0,
+            "note": "Interpolated passage control; not a logged ship position."
+          },
+          {
+            "name": "Coronation Gulf",
+            "lat": 68.7,
+            "lon": -112.0,
+            "note": "Interpolated sea-passage control; not a logged ship position."
+          },
+          {
+            "name": "Dolphin and Union Strait",
+            "lat": 69.3,
+            "lon": -116.0,
+            "note": "Interpolated sea-passage control; not a logged ship position."
+          },
+          {
+            "name": "Western Arctic coastal waters",
+            "lat": 71.5,
+            "lon": -120.0,
+            "note": "Interpolated offshore control; not a logged ship position."
+          },
+          {
+            "name": "Beaufort Sea",
+            "lat": 70.5,
+            "lon": -131.0,
+            "note": "Arctic western exit."
+          },
+          {
+            "name": "Point Barrow offing",
+            "lat": 71.5,
+            "lon": -156.5,
+            "note": "North Alaska rounding, cartographic sea control."
+          },
+          {
+            "name": "Chukchi Sea west of Alaska",
+            "lat": 69.0,
+            "lon": -166.0,
+            "note": "Interpolated offshore control; not a logged ship position."
+          },
+          {
+            "name": "Bering Strait",
+            "lat": 66.0,
+            "lon": -168.0,
+            "note": "Pacific exit passage."
+          },
+          {
+            "name": "Nome",
+            "lat": 64.5,
+            "lon": -165.41,
+            "note": "Completion port."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zheng-he-first-voyage",
+    "rank": 14,
+    "title": "Zheng He's first treasure fleet voyage",
+    "short_title": "Zheng He",
+    "date": "1405–1407",
+    "why_famous": "A major Ming diplomatic and trade expedition across the Indian Ocean.",
+    "route_summary": "Liujiagang and China coast via Southeast Asia, Java, Malacca, Sri Lanka and Calicut, then return.",
+    "source_title": "UNESCO Silk Roads: Zheng He study",
+    "source_url": "https://en.unesco.org/silkroad/sites/default/files/knowledge-bank-article/recent_studies_in_china_on_admiral_zheng_he.pdf",
+    "geometry_confidence": "medium",
+    "geometry_note": "Sources identify main ports; a large fleet could split, so this is a shared corridor, not one ship's positions.",
+    "segments": [
+      {
+        "mode": "sailing fleet",
+        "track_type": "historical-corridor",
+        "source_url": "https://en.unesco.org/silkroad/sites/default/files/knowledge-bank-article/recent_studies_in_china_on_admiral_zheng_he.pdf",
+        "anchors": [
+          {
+            "name": "Liujiagang",
+            "lat": 31.46,
+            "lon": 121.1,
+            "note": "Yangtze estuary assembly/departure region."
+          },
+          {
+            "name": "Zhoushan Islands offing",
+            "lat": 30.0,
+            "lon": 122.5,
+            "note": "Coastal sea control, not a logged fleet position."
+          },
+          {
+            "name": "Taiwan Strait",
+            "lat": 26.8,
+            "lon": 120.5,
+            "note": "Coastal sea control, not a logged fleet position."
+          },
+          {
+            "name": "Changle, Fujian",
+            "lat": 25.96,
+            "lon": 119.52,
+            "note": "China coast staging area."
+          },
+          {
+            "name": "Quy Nhơn region",
+            "lat": 13.77,
+            "lon": 109.23,
+            "note": "Champa coast, representative region."
+          },
+          {
+            "name": "South China Sea",
+            "lat": 9.0,
+            "lon": 112.0,
+            "note": "Offshore corridor control, not a fleet fix."
+          },
+          {
+            "name": "Natuna Sea",
+            "lat": 3.0,
+            "lon": 108.0,
+            "note": "West of Borneo corridor control, not a fleet fix."
+          },
+          {
+            "name": "Java Sea",
+            "lat": -5.0,
+            "lon": 108.0,
+            "note": "Sea corridor control, not a fleet fix."
+          },
+          {
+            "name": "Java north coast",
+            "lat": -6.65,
+            "lon": 110.7,
+            "note": "Java stop region; precise port not asserted."
+          },
+          {
+            "name": "Malacca",
+            "lat": 2.19,
+            "lon": 102.25,
+            "note": "Strait of Malacca center."
+          },
+          {
+            "name": "Andaman Sea",
+            "lat": 6.0,
+            "lon": 97.0,
+            "note": "Interpolated offshore control; not a recorded fleet position."
+          },
+          {
+            "name": "Bay of Bengal",
+            "lat": 8.0,
+            "lon": 90.0,
+            "note": "Interpolated offshore control; not a recorded fleet position."
+          },
+          {
+            "name": "Colombo, Sri Lanka",
+            "lat": 6.93,
+            "lon": 79.85,
+            "note": "Sri Lanka stop region."
+          },
+          {
+            "name": "Arabian Sea off southwest India",
+            "lat": 8.0,
+            "lon": 74.0,
+            "note": "Interpolated offshore control; not a recorded fleet position."
+          },
+          {
+            "name": "Arabian Sea off Kerala",
+            "lat": 11.0,
+            "lon": 74.0,
+            "note": "Interpolated offshore control; not a recorded fleet position."
+          },
+          {
+            "name": "Calicut",
+            "lat": 11.25,
+            "lon": 75.78,
+            "note": "Indian Ocean western endpoint."
+          }
+        ]
+      },
+      {
+        "mode": "sailing fleet",
+        "track_type": "historical-corridor",
+        "source_url": "https://en.unesco.org/silkroad/sites/default/files/knowledge-bank-article/recent_studies_in_china_on_admiral_zheng_he.pdf",
+        "anchors": [
+          {
+            "name": "Calicut",
+            "lat": 11.25,
+            "lon": 75.78,
+            "note": "Return departure."
+          },
+          {
+            "name": "Arabian Sea off Kerala",
+            "lat": 11.0,
+            "lon": 74.0,
+            "note": "Interpolated offshore control; not a recorded fleet position."
+          },
+          {
+            "name": "Indian Ocean south of Sri Lanka",
+            "lat": 5.0,
+            "lon": 81.0,
+            "note": "Interpolated offshore control; not a recorded fleet position."
+          },
+          {
+            "name": "Bay of Bengal",
+            "lat": 8.0,
+            "lon": 91.0,
+            "note": "Interpolated offshore control; not a recorded fleet position."
+          },
+          {
+            "name": "Andaman Sea",
+            "lat": 6.0,
+            "lon": 97.0,
+            "note": "Interpolated offshore control; not a recorded fleet position."
+          },
+          {
+            "name": "Strait of Malacca north approach",
+            "lat": 4.0,
+            "lon": 100.0,
+            "note": "Interpolated sea-passage control; not a recorded fleet position."
+          },
+          {
+            "name": "Malacca",
+            "lat": 2.19,
+            "lon": 102.25,
+            "note": "Return passage."
+          },
+          {
+            "name": "South China Sea",
+            "lat": 12.0,
+            "lon": 112.0,
+            "note": "Fleet return corridor control, not a logged fix."
+          },
+          {
+            "name": "Taiwan Strait",
+            "lat": 25.0,
+            "lon": 120.0,
+            "note": "Fleet return corridor control, not a logged fix."
+          },
+          {
+            "name": "Zhoushan Islands offing",
+            "lat": 30.0,
+            "lon": 122.5,
+            "note": "Coastal sea control, not a logged fleet position."
+          },
+          {
+            "name": "Liujiagang",
+            "lat": 31.46,
+            "lon": 121.1,
+            "note": "Return region."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hokulea-tahiti",
+    "rank": 15,
+    "title": "Hōkūleʻa voyage to Tahiti",
+    "short_title": "Hōkūleʻa",
+    "date": "1976",
+    "why_famous": "Revived Polynesian long-distance wayfinding with traditional navigation.",
+    "route_summary": "Maui to Tahiti, followed by the return to Hawaiʻi.",
+    "source_title": "Polynesian Voyaging Society: Hōkūleʻa",
+    "source_url": "https://archive.hokulea.com/aboutpvs.html",
+    "geometry_confidence": "high",
+    "geometry_note": "Island endpoints are established, but the open Pacific leg is an interpolated corridor; no logged daily positions are claimed.",
+    "segments": [
+      {
+        "mode": "sailing canoe",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://archive.hokulea.com/aboutpvs.html",
+        "anchors": [
+          {
+            "name": "Honolua Bay, Maui",
+            "lat": 21.01,
+            "lon": -156.65,
+            "note": "1976 departure area."
+          },
+          {
+            "name": "Tahiti",
+            "lat": -17.54,
+            "lon": -149.57,
+            "note": "Polynesian arrival island."
+          }
+        ]
+      },
+      {
+        "mode": "sailing canoe",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://archive.hokulea.com/aboutpvs.html",
+        "anchors": [
+          {
+            "name": "Tahiti",
+            "lat": -17.54,
+            "lon": -149.57,
+            "note": "Return departure."
+          },
+          {
+            "name": "Hawaiʻi",
+            "lat": 19.7,
+            "lon": -155.5,
+            "note": "Return island; exact port not asserted."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "first-fleet",
+    "rank": 16,
+    "title": "First Fleet to Australia",
+    "short_title": "First Fleet",
+    "date": "1787–1788",
+    "why_famous": "The convoy initiated Britain's penal colony at Sydney and a major phase of settler colonization.",
+    "route_summary": "Portsmouth via Tenerife, Rio de Janeiro, Cape Town and Botany Bay to Port Jackson.",
+    "source_title": "National Museum of Australia: First Fleet",
+    "source_url": "https://www.nma.gov.au/defining-moments/resources/convict-cargo",
+    "geometry_confidence": "high",
+    "geometry_note": "Fleet stops are documented; individual ships differed and open-water legs are generalized.",
+    "segments": [
+      {
+        "mode": "sailing convoy",
+        "track_type": "source-derived",
+        "source_url": "https://www.nma.gov.au/defining-moments/resources/convict-cargo",
+        "anchors": [
+          {
+            "name": "Portsmouth",
+            "lat": 50.8,
+            "lon": -1.09,
+            "note": "Fleet departure."
+          },
+          {
+            "name": "Western Approaches",
+            "lat": 48.0,
+            "lon": -9.0,
+            "note": "Interpolated offshore control; not a recorded fleet position."
+          },
+          {
+            "name": "Atlantic west of Iberia",
+            "lat": 39.0,
+            "lon": -13.0,
+            "note": "Interpolated offshore control; not a recorded fleet position."
+          },
+          {
+            "name": "Santa Cruz de Tenerife",
+            "lat": 28.46,
+            "lon": -16.25,
+            "note": "Canary Islands stop."
+          },
+          {
+            "name": "South Atlantic east of Brazil",
+            "lat": -12.0,
+            "lon": -31.0,
+            "note": "Interpolated offshore control; not a recorded fleet position."
+          },
+          {
+            "name": "Atlantic southeast of Brazil",
+            "lat": -21.0,
+            "lon": -38.0,
+            "note": "Interpolated offshore control; not a recorded fleet position."
+          },
+          {
+            "name": "Rio de Janeiro",
+            "lat": -22.9,
+            "lon": -43.17,
+            "note": "South American stop."
+          },
+          {
+            "name": "Cape Town",
+            "lat": -33.92,
+            "lon": 18.42,
+            "note": "Cape stop."
+          },
+          {
+            "name": "Southern Indian Ocean",
+            "lat": -43.0,
+            "lon": 80.0,
+            "note": "Interpolated offshore control; not a recorded fleet position."
+          },
+          {
+            "name": "South of Australia",
+            "lat": -45.0,
+            "lon": 115.0,
+            "note": "Interpolated offshore control; not a recorded fleet position."
+          },
+          {
+            "name": "Tasman Sea east of Tasmania",
+            "lat": -43.0,
+            "lon": 153.0,
+            "note": "Interpolated offshore control; not a recorded fleet position."
+          },
+          {
+            "name": "Botany Bay",
+            "lat": -34.0,
+            "lon": 151.23,
+            "note": "Initial Australian arrival."
+          },
+          {
+            "name": "Port Jackson",
+            "lat": -33.86,
+            "lon": 151.22,
+            "note": "Settlement moved to Sydney Harbour."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nansen-fram",
+    "rank": 17,
+    "title": "Nansen's Fram expedition",
+    "short_title": "Fram drift",
+    "date": "1893–1896",
+    "why_famous": "The ship was deliberately frozen into Arctic ice to test transpolar drift.",
+    "route_summary": "Norway along the Siberian coast to ice entrapment, drift northwest, then Fram returned via Svalbard waters to Norway.",
+    "source_title": "Fram Museum: First Fram expedition",
+    "source_url": "https://frammuseum.no/polarhistorie/ekspedisjoner/forste-fram-ferd-1893-1896/",
+    "geometry_confidence": "high",
+    "geometry_note": "Ice drift and later sailing are separated. Nansen and Johansen's sledge journey is omitted because this is the ship route.",
+    "segments": [
+      {
+        "mode": "sailing",
+        "track_type": "source-derived",
+        "source_url": "https://frammuseum.no/polarhistorie/ekspedisjoner/forste-fram-ferd-1893-1896/",
+        "anchors": [
+          {
+            "name": "Oslofjord",
+            "lat": 59.9,
+            "lon": 10.7,
+            "note": "Departure from Norway."
+          },
+          {
+            "name": "Skagerrak",
+            "lat": 57.9,
+            "lon": 8.0,
+            "note": "Sea exit from Oslofjord, not a logged fix."
+          },
+          {
+            "name": "North Sea west of Norway",
+            "lat": 57.0,
+            "lon": 3.0,
+            "note": "Interpolated offshore control; not a logged ship position."
+          },
+          {
+            "name": "Norwegian Sea",
+            "lat": 65.0,
+            "lon": 5.0,
+            "note": "Offshore coast corridor, not a logged fix."
+          },
+          {
+            "name": "North Cape, Norway",
+            "lat": 71.17,
+            "lon": 25.78,
+            "note": "Northern Norway rounding; corridor control."
+          },
+          {
+            "name": "Barents Sea",
+            "lat": 73.0,
+            "lon": 43.0,
+            "note": "Offshore Arctic corridor, not a logged fix."
+          },
+          {
+            "name": "Kara Sea",
+            "lat": 75.0,
+            "lon": 70.0,
+            "note": "Siberian Arctic passage."
+          },
+          {
+            "name": "Cape Chelyuskin offing",
+            "lat": 78.0,
+            "lon": 104.3,
+            "note": "Northernmost Taimyr passage, approximate sea control."
+          },
+          {
+            "name": "New Siberian Islands",
+            "lat": 75.5,
+            "lon": 143.0,
+            "note": "Region near entry into pack ice."
+          }
+        ]
+      },
+      {
+        "mode": "ice-drift",
+        "track_type": "historical-corridor",
+        "source_url": "https://frammuseum.no/polarhistorie/ekspedisjoner/forste-fram-ferd-1893-1896/",
+        "anchors": [
+          {
+            "name": "New Siberian Islands",
+            "lat": 75.5,
+            "lon": 143.0,
+            "note": "Approximate freeze-in region."
+          },
+          {
+            "name": "Central Arctic Ocean",
+            "lat": 85.0,
+            "lon": 110.0,
+            "note": "Representative drift region, not a daily fix."
+          },
+          {
+            "name": "North of Svalbard",
+            "lat": 82.0,
+            "lon": 18.0,
+            "note": "Approximate release sector."
+          }
+        ]
+      },
+      {
+        "mode": "sailing",
+        "track_type": "source-derived",
+        "source_url": "https://frammuseum.no/polarhistorie/ekspedisjoner/forste-fram-ferd-1893-1896/",
+        "anchors": [
+          {
+            "name": "North of Svalbard",
+            "lat": 82.0,
+            "lon": 18.0,
+            "note": "Approximate post-drift departure."
+          },
+          {
+            "name": "Tromsø",
+            "lat": 69.65,
+            "lon": 18.96,
+            "note": "Norwegian return port."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "taeping-tea-race",
+    "rank": 18,
+    "title": "Taeping in the Great Tea Race",
+    "short_title": "Taeping",
+    "date": "1866",
+    "why_famous": "Won the celebrated China-to-London clipper race after a remarkably close finish.",
+    "route_summary": "Foochow through the South China Sea, around the Cape of Good Hope and past the Lizard to London.",
+    "source_title": "Royal Museums Greenwich: Great China Race print",
+    "source_url": "https://prints.rmg.co.uk/products/the-great-china-race-the-clipper-ships-taeping-ariel-passing-the-lizard-6-september-1866-a7187",
+    "geometry_confidence": "medium",
+    "geometry_note": "Endpoints, Cape passage and final approach are known; the Indian and Atlantic ocean course is indicative.",
+    "segments": [
+      {
+        "mode": "sailing clipper",
+        "track_type": "historical-corridor",
+        "source_url": "https://prints.rmg.co.uk/products/the-great-china-race-the-clipper-ships-taeping-ariel-passing-the-lizard-6-september-1866-a7187",
+        "anchors": [
+          {
+            "name": "Fuzhou",
+            "lat": 26.08,
+            "lon": 119.3,
+            "note": "Historic Foochow tea port."
+          },
+          {
+            "name": "South China Sea",
+            "lat": 12.0,
+            "lon": 112.0,
+            "note": "Representative sea corridor."
+          },
+          {
+            "name": "Sunda Strait",
+            "lat": -6.0,
+            "lon": 105.8,
+            "note": "Indonesia passage; route needs log verification."
+          },
+          {
+            "name": "Cape of Good Hope",
+            "lat": -34.36,
+            "lon": 18.5,
+            "note": "African rounding."
+          },
+          {
+            "name": "Atlantic southwest of Cape",
+            "lat": -36.0,
+            "lon": 13.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic west of Africa",
+            "lat": -20.0,
+            "lon": 5.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Equatorial Atlantic west of Africa",
+            "lat": 0.0,
+            "lon": -25.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "North Atlantic west of Africa",
+            "lat": 20.0,
+            "lon": -20.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Atlantic west of Iberia",
+            "lat": 45.0,
+            "lon": -13.0,
+            "note": "Interpolated offshore control before The Lizard."
+          },
+          {
+            "name": "The Lizard",
+            "lat": 49.96,
+            "lon": -5.21,
+            "note": "Recorded close finish approach to Channel."
+          },
+          {
+            "name": "London Docks",
+            "lat": 51.51,
+            "lon": -0.07,
+            "note": "Arrival."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tasman-first-voyage",
+    "rank": 19,
+    "title": "Abel Tasman's first Pacific voyage",
+    "short_title": "Abel Tasman",
+    "date": "1642–1643",
+    "why_famous": "First recorded European charting of Tasmania and New Zealand.",
+    "route_summary": "Batavia via Mauritius and southern Indian Ocean to Tasmania, New Zealand, Tonga and Fiji, returning through Southeast Asia.",
+    "source_title": "National Library of Australia: Abel Tasman",
+    "source_url": "https://help.nla.gov.au/sites/default/files/blogs/m_1558_abel_tasman.pdf",
+    "geometry_confidence": "high",
+    "geometry_note": "Voyage journals and charts support major island and coastal stops; mapped line is still a coarse interpretation.",
+    "segments": [
+      {
+        "mode": "sailing",
+        "track_type": "source-derived",
+        "source_url": "https://help.nla.gov.au/sites/default/files/blogs/m_1558_abel_tasman.pdf",
+        "anchors": [
+          {
+            "name": "Batavia",
+            "lat": -6.13,
+            "lon": 106.81,
+            "note": "Departure and return city."
+          },
+          {
+            "name": "Mauritius",
+            "lat": -20.16,
+            "lon": 57.5,
+            "note": "Indian Ocean stop."
+          },
+          {
+            "name": "West coast Tasmania",
+            "lat": -42.5,
+            "lon": 145.5,
+            "note": "Van Diemen's Land sighting region."
+          },
+          {
+            "name": "Golden Bay, New Zealand",
+            "lat": -40.75,
+            "lon": 172.8,
+            "note": "South Island contact region."
+          },
+          {
+            "name": "Tonga",
+            "lat": -20.0,
+            "lon": -175.2,
+            "note": "Archipelago stop region."
+          },
+          {
+            "name": "Fiji",
+            "lat": -17.7,
+            "lon": 178.0,
+            "note": "Archipelago passage."
+          },
+          {
+            "name": "Western Pacific east of New Guinea",
+            "lat": 0.0,
+            "lon": 150.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Celebes Sea",
+            "lat": 4.0,
+            "lon": 124.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Makassar Strait",
+            "lat": -2.0,
+            "lon": 117.0,
+            "note": "Interpolated sea-passage control; not a recorded ship position."
+          },
+          {
+            "name": "Java Sea",
+            "lat": -5.0,
+            "lon": 112.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Batavia",
+            "lat": -6.13,
+            "lon": 106.81,
+            "note": "Return to Dutch East Indies."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flinders-investigator",
+    "rank": 20,
+    "title": "Flinders circumnavigates Australia",
+    "short_title": "Matthew Flinders",
+    "date": "1801–1803",
+    "why_famous": "First recorded circumnavigation of Australia and major coastal survey.",
+    "route_summary": "England via Cape of Good Hope to the Australian south coast, Sydney, Torres Strait, Gulf of Carpentaria and western coast, then Sydney.",
+    "source_title": "National Museum of Australia: Flinders circumnavigates Australia",
+    "source_url": "https://www.nma.gov.au/defining-moments/resources/flinders-circumnavigates-australia",
+    "geometry_confidence": "high",
+    "geometry_note": "Circumnavigation is simplified to capes and survey regions; exact coastal tracing requires Flinders charts.",
+    "segments": [
+      {
+        "mode": "sailing survey",
+        "track_type": "source-derived",
+        "source_url": "https://www.nma.gov.au/defining-moments/resources/flinders-circumnavigates-australia",
+        "anchors": [
+          {
+            "name": "Portsmouth",
+            "lat": 50.8,
+            "lon": -1.09,
+            "note": "Departure from England."
+          },
+          {
+            "name": "Atlantic west of Iberia",
+            "lat": 45.0,
+            "lon": -13.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "North Atlantic west of Africa",
+            "lat": 20.0,
+            "lon": -20.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Equatorial Atlantic west of Africa",
+            "lat": 0.0,
+            "lon": -25.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic west of Africa",
+            "lat": -20.0,
+            "lon": 5.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Atlantic southwest of Cape",
+            "lat": -36.0,
+            "lon": 13.0,
+            "note": "Interpolated offshore control around southern Africa."
+          },
+          {
+            "name": "Cape of Good Hope",
+            "lat": -34.36,
+            "lon": 18.5,
+            "note": "Cape route."
+          },
+          {
+            "name": "Cape Leeuwin",
+            "lat": -34.38,
+            "lon": 115.14,
+            "note": "Southwest Australian corner."
+          },
+          {
+            "name": "Spencer Gulf",
+            "lat": -34.0,
+            "lon": 136.0,
+            "note": "South coast survey."
+          },
+          {
+            "name": "Southern Ocean off Spencer Gulf",
+            "lat": -36.0,
+            "lon": 136.0,
+            "note": "Interpolated offshore survey corridor; not a logged fix."
+          },
+          {
+            "name": "Southern Ocean off Victoria",
+            "lat": -39.0,
+            "lon": 141.0,
+            "note": "Interpolated offshore survey corridor; not a logged fix."
+          },
+          {
+            "name": "Cape Otway",
+            "lat": -38.85,
+            "lon": 143.5,
+            "note": "Southern coast routing control, not a logged fix."
+          },
+          {
+            "name": "Bass Strait",
+            "lat": -40.0,
+            "lon": 147.0,
+            "note": "Eastern sea passage."
+          },
+          {
+            "name": "Tasman Sea off New South Wales south",
+            "lat": -38.0,
+            "lon": 151.0,
+            "note": "Interpolated offshore coast control; not a logged fix."
+          },
+          {
+            "name": "Tasman Sea off Sydney",
+            "lat": -34.5,
+            "lon": 153.0,
+            "note": "Interpolated offshore coast control; not a logged fix."
+          },
+          {
+            "name": "Sydney",
+            "lat": -33.87,
+            "lon": 151.21,
+            "note": "Survey departure and later return."
+          },
+          {
+            "name": "Tasman Sea off New South Wales",
+            "lat": -32.0,
+            "lon": 153.0,
+            "note": "Interpolated offshore coast control; not a logged fix."
+          },
+          {
+            "name": "Tasman Sea off northern New South Wales",
+            "lat": -29.0,
+            "lon": 154.0,
+            "note": "Interpolated offshore coast control; not a logged fix."
+          },
+          {
+            "name": "Cape Byron",
+            "lat": -28.64,
+            "lon": 153.64,
+            "note": "East coast routing control, not a logged fix."
+          },
+          {
+            "name": "K'gari east coast",
+            "lat": -25.25,
+            "lon": 153.35,
+            "note": "East coast routing control, not a logged fix."
+          },
+          {
+            "name": "Whitsunday Islands",
+            "lat": -20.3,
+            "lon": 149.1,
+            "note": "East coast routing control, not a logged fix."
+          },
+          {
+            "name": "Cape York",
+            "lat": -10.68,
+            "lon": 142.53,
+            "note": "Torres Strait approach."
+          },
+          {
+            "name": "Gulf of Carpentaria",
+            "lat": -15.0,
+            "lon": 139.0,
+            "note": "Northern survey region."
+          },
+          {
+            "name": "Northern Gulf of Carpentaria",
+            "lat": -12.0,
+            "lon": 139.0,
+            "note": "Interpolated waterway control; not a logged fix."
+          },
+          {
+            "name": "Arafura Sea east",
+            "lat": -11.0,
+            "lon": 136.0,
+            "note": "Interpolated offshore control; not a logged fix."
+          },
+          {
+            "name": "Arafura Sea",
+            "lat": -11.5,
+            "lon": 133.0,
+            "note": "Northern coast routing region, not a logged fix."
+          },
+          {
+            "name": "Timor Sea north of Kimberley",
+            "lat": -11.5,
+            "lon": 126.0,
+            "note": "Interpolated offshore coast control; not a logged fix."
+          },
+          {
+            "name": "Timor Sea west of Kimberley",
+            "lat": -14.0,
+            "lon": 121.0,
+            "note": "Interpolated offshore coast control; not a logged fix."
+          },
+          {
+            "name": "Cape Leveque",
+            "lat": -16.4,
+            "lon": 122.9,
+            "note": "Northwest coast routing control, not a logged fix."
+          },
+          {
+            "name": "Northwest Cape",
+            "lat": -21.8,
+            "lon": 114.16,
+            "note": "Western coast survey region."
+          },
+          {
+            "name": "Indian Ocean off northwest Australia",
+            "lat": -25.0,
+            "lon": 111.0,
+            "note": "Interpolated offshore survey corridor; not a recorded ship position."
+          },
+          {
+            "name": "Indian Ocean off western Australia",
+            "lat": -30.0,
+            "lon": 111.0,
+            "note": "Interpolated offshore survey corridor; not a recorded ship position."
+          },
+          {
+            "name": "Indian Ocean off southwest Australia",
+            "lat": -34.0,
+            "lon": 113.0,
+            "note": "Interpolated offshore survey corridor; not a recorded ship position."
+          },
+          {
+            "name": "Cape Leeuwin",
+            "lat": -34.38,
+            "lon": 115.14,
+            "note": "Southwest corner on return."
+          },
+          {
+            "name": "Bass Strait",
+            "lat": -40.0,
+            "lon": 147.0,
+            "note": "Southern return passage."
+          },
+          {
+            "name": "Tasman Sea off New South Wales south",
+            "lat": -38.0,
+            "lon": 151.0,
+            "note": "Interpolated offshore coast control; not a logged fix."
+          },
+          {
+            "name": "Tasman Sea off Sydney",
+            "lat": -34.5,
+            "lon": 153.0,
+            "note": "Interpolated offshore coast control; not a logged fix."
+          },
+          {
+            "name": "Sydney",
+            "lat": -33.87,
+            "lon": 151.21,
+            "note": "Voyage completion."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chichester-gipsy-moth",
+    "rank": 21,
+    "title": "Francis Chichester's circumnavigation",
+    "short_title": "Francis Chichester",
+    "date": "1966–1967",
+    "why_famous": "Solo circumnavigation via the great capes with only one stop.",
+    "route_summary": "Plymouth around Cape of Good Hope to Sydney, then around Cape Horn to Plymouth.",
+    "source_title": "Royal Museums Greenwich: Gipsy Moth IV",
+    "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-13959",
+    "geometry_confidence": "high",
+    "geometry_note": "Race-scale waypoints are secure but the plotted great-circle-like legs are not actual sailing tracks.",
+    "segments": [
+      {
+        "mode": "solo sailing",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-13959",
+        "anchors": [
+          {
+            "name": "Plymouth",
+            "lat": 50.37,
+            "lon": -4.14,
+            "note": "Departure."
+          },
+          {
+            "name": "North Atlantic west of Africa",
+            "lat": 10.0,
+            "lon": -20.0,
+            "note": "Open-ocean routing control, not a logged position."
+          },
+          {
+            "name": "South Atlantic west of Africa",
+            "lat": -20.0,
+            "lon": -15.0,
+            "note": "Open-ocean routing control, not a logged position."
+          },
+          {
+            "name": "Cape of Good Hope",
+            "lat": -34.36,
+            "lon": 18.5,
+            "note": "First great cape."
+          },
+          {
+            "name": "Cape Leeuwin",
+            "lat": -34.38,
+            "lon": 115.14,
+            "note": "Australian approach passage."
+          },
+          {
+            "name": "Southern Ocean south of Australia",
+            "lat": -42.0,
+            "lon": 135.0,
+            "note": "Sea corridor control, not a logged position."
+          },
+          {
+            "name": "Bass Strait",
+            "lat": -40.0,
+            "lon": 147.0,
+            "note": "Sea passage south of mainland Australia."
+          },
+          {
+            "name": "Tasman Sea off New South Wales south",
+            "lat": -38.0,
+            "lon": 151.0,
+            "note": "Interpolated offshore coast control; not a logged position."
+          },
+          {
+            "name": "Tasman Sea off Sydney",
+            "lat": -34.5,
+            "lon": 153.0,
+            "note": "Interpolated offshore coast control; not a logged position."
+          },
+          {
+            "name": "Sydney",
+            "lat": -33.87,
+            "lon": 151.21,
+            "note": "Only stop."
+          }
+        ]
+      },
+      {
+        "mode": "solo sailing",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-13959",
+        "anchors": [
+          {
+            "name": "Sydney",
+            "lat": -33.87,
+            "lon": 151.21,
+            "note": "Return leg departure."
+          },
+          {
+            "name": "Southern Pacific west sector",
+            "lat": -50.0,
+            "lon": 170.0,
+            "note": "Broad sea corridor control, not a logged position."
+          },
+          {
+            "name": "Southern Pacific central sector",
+            "lat": -54.0,
+            "lon": -120.0,
+            "note": "Broad sea corridor control, not a logged position."
+          },
+          {
+            "name": "Cape Horn",
+            "lat": -55.98,
+            "lon": -67.29,
+            "note": "Second great cape."
+          },
+          {
+            "name": "South Atlantic east of Patagonia",
+            "lat": -50.0,
+            "lon": -56.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic east of Brazil",
+            "lat": -25.0,
+            "lon": -36.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Equatorial Atlantic",
+            "lat": 0.0,
+            "lon": -25.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Atlantic west of Iberia",
+            "lat": 45.0,
+            "lon": -13.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Plymouth",
+            "lat": 50.37,
+            "lon": -4.14,
+            "note": "Return."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "knox-johnston-suhaili",
+    "rank": 22,
+    "title": "Robin Knox-Johnston's nonstop circumnavigation",
+    "short_title": "Robin Knox-Johnston",
+    "date": "1968–1969",
+    "why_famous": "First solo nonstop sailing circumnavigation.",
+    "route_summary": "Falmouth eastward around Cape of Good Hope, Cape Leeuwin and Cape Horn, returning to Falmouth.",
+    "source_title": "Golden Globe Race: 1968 race history",
+    "source_url": "https://goldengloberace.com/the-history/",
+    "geometry_confidence": "high",
+    "geometry_note": "The three-cape course is known; offshore details and daily positions need race logs for precise mapping.",
+    "segments": [
+      {
+        "mode": "solo sailing",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://goldengloberace.com/the-history/",
+        "anchors": [
+          {
+            "name": "Falmouth",
+            "lat": 50.15,
+            "lon": -5.07,
+            "note": "Start and finish."
+          },
+          {
+            "name": "Atlantic west of Iberia",
+            "lat": 45.0,
+            "lon": -13.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "North Atlantic west of Africa",
+            "lat": 20.0,
+            "lon": -20.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Equatorial Atlantic west of Africa",
+            "lat": 0.0,
+            "lon": -25.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic west of Africa",
+            "lat": -20.0,
+            "lon": 5.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Atlantic southwest of Cape",
+            "lat": -36.0,
+            "lon": 13.0,
+            "note": "Interpolated offshore control around southern Africa."
+          },
+          {
+            "name": "Cape of Good Hope",
+            "lat": -34.36,
+            "lon": 18.5,
+            "note": "First great cape."
+          },
+          {
+            "name": "Cape Leeuwin",
+            "lat": -34.38,
+            "lon": 115.14,
+            "note": "Second great cape."
+          },
+          {
+            "name": "Southern Pacific west sector",
+            "lat": -50.0,
+            "lon": 170.0,
+            "note": "Broad sea corridor control, not a logged position."
+          },
+          {
+            "name": "Southern Pacific central sector",
+            "lat": -54.0,
+            "lon": -120.0,
+            "note": "Broad sea corridor control, not a logged position."
+          },
+          {
+            "name": "Cape Horn",
+            "lat": -55.98,
+            "lon": -67.29,
+            "note": "Third great cape."
+          },
+          {
+            "name": "South Atlantic east of Patagonia",
+            "lat": -50.0,
+            "lon": -56.0,
+            "note": "Interpolated offshore control; not a logged race position."
+          },
+          {
+            "name": "South Atlantic east of Brazil",
+            "lat": -25.0,
+            "lon": -36.0,
+            "note": "Interpolated offshore control; not a logged race position."
+          },
+          {
+            "name": "Equatorial Atlantic",
+            "lat": 0.0,
+            "lon": -25.0,
+            "note": "Interpolated offshore control; not a logged race position."
+          },
+          {
+            "name": "North Atlantic west of Africa",
+            "lat": 20.0,
+            "lon": -23.0,
+            "note": "Interpolated offshore control; not a logged race position."
+          },
+          {
+            "name": "Atlantic west of Iberia",
+            "lat": 45.0,
+            "lon": -13.0,
+            "note": "Interpolated offshore control; not a logged race position."
+          },
+          {
+            "name": "Falmouth",
+            "lat": 50.15,
+            "lon": -5.07,
+            "note": "Nonstop return."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "maiden-whitbread",
+    "rank": 23,
+    "title": "Maiden in the Whitbread Round the World Race",
+    "short_title": "Maiden",
+    "date": "1989–1990",
+    "why_famous": "The race's first all-woman crew won its class on two legs.",
+    "route_summary": "Southampton via Punta del Este, Fremantle, Auckland, Punta del Este and Fort Lauderdale back to Southampton.",
+    "source_title": "The Maiden Factor: Maiden's story",
+    "source_url": "https://www.themaidenfactor.org/the-maiden-factor",
+    "geometry_confidence": "high",
+    "geometry_note": "Race stopovers are known; each offshore racing leg is waypoint interpolation, not a navigational track.",
+    "segments": [
+      {
+        "mode": "ocean racing",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.themaidenfactor.org/the-maiden-factor",
+        "anchors": [
+          {
+            "name": "Southampton",
+            "lat": 50.91,
+            "lon": -1.4,
+            "note": "Race start."
+          },
+          {
+            "name": "North Atlantic",
+            "lat": 32.0,
+            "lon": -20.0,
+            "note": "Sea corridor control, not a logged position."
+          },
+          {
+            "name": "Tropical Atlantic",
+            "lat": 5.0,
+            "lon": -30.0,
+            "note": "Sea corridor control, not a logged position."
+          },
+          {
+            "name": "South Atlantic offshore Brazil",
+            "lat": -12.0,
+            "lon": -33.0,
+            "note": "Interpolated offshore race corridor; not a logged position."
+          },
+          {
+            "name": "South Atlantic southeast of Brazil",
+            "lat": -25.0,
+            "lon": -42.0,
+            "note": "Interpolated offshore race corridor; not a logged position."
+          },
+          {
+            "name": "Atlantic off Uruguay",
+            "lat": -35.0,
+            "lon": -52.0,
+            "note": "Interpolated offshore approach; not a logged position."
+          },
+          {
+            "name": "Punta del Este",
+            "lat": -34.96,
+            "lon": -54.95,
+            "note": "Stopover 1."
+          },
+          {
+            "name": "Cape of Good Hope",
+            "lat": -34.36,
+            "lon": 18.5,
+            "note": "Great-cape routing control, not a logged fix."
+          },
+          {
+            "name": "Fremantle",
+            "lat": -32.05,
+            "lon": 115.74,
+            "note": "Stopover 2."
+          },
+          {
+            "name": "Cape Leeuwin",
+            "lat": -34.38,
+            "lon": 115.14,
+            "note": "Southwest Australia passage."
+          },
+          {
+            "name": "South of Tasmania",
+            "lat": -44.3,
+            "lon": 147.0,
+            "note": "Southern ocean passage, cartographic control only."
+          },
+          {
+            "name": "Auckland",
+            "lat": -36.85,
+            "lon": 174.76,
+            "note": "Stopover 3."
+          },
+          {
+            "name": "Southern Pacific west sector",
+            "lat": -48.0,
+            "lon": -170.0,
+            "note": "Race leg sea corridor control, not a logged position."
+          },
+          {
+            "name": "Southern Pacific central sector",
+            "lat": -54.0,
+            "lon": -120.0,
+            "note": "Race leg sea corridor control, not a logged position."
+          },
+          {
+            "name": "Cape Horn",
+            "lat": -55.98,
+            "lon": -67.29,
+            "note": "South American rounding."
+          },
+          {
+            "name": "Punta del Este",
+            "lat": -34.96,
+            "lon": -54.95,
+            "note": "Stopover 4."
+          },
+          {
+            "name": "South Atlantic off Brazil",
+            "lat": -25.0,
+            "lon": -38.0,
+            "note": "Offshore control to keep the race leg over water; not a logged position."
+          },
+          {
+            "name": "South Atlantic east of Brazil",
+            "lat": -15.0,
+            "lon": -32.0,
+            "note": "Interpolated offshore race corridor; not a logged position."
+          },
+          {
+            "name": "Equatorial Atlantic",
+            "lat": 0.0,
+            "lon": -35.0,
+            "note": "Ocean corridor control, not a logged fix."
+          },
+          {
+            "name": "Fort Lauderdale",
+            "lat": 26.12,
+            "lon": -80.13,
+            "note": "Stopover 5."
+          },
+          {
+            "name": "Southampton",
+            "lat": 50.91,
+            "lon": -1.4,
+            "note": "Race finish."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "america-isle-of-wight",
+    "rank": 24,
+    "title": "America around the Isle of Wight",
+    "short_title": "America 1851",
+    "date": "1851",
+    "why_famous": "Its victory established the America's Cup.",
+    "route_summary": "Cowes clockwise around the Isle of Wight and back, along the historic race circuit.",
+    "source_title": "America's Cup: Where it all began",
+    "source_url": "https://www.americascup.com/news/1429_Where-It-All-Began-A-Race-Around-The-Isle-Of-Wight",
+    "geometry_confidence": "high",
+    "geometry_note": "Clockwise course and landmarks are documented; this is a circuit reconstruction and not America's observed track.",
+    "segments": [
+      {
+        "mode": "yacht racing",
+        "track_type": "source-derived",
+        "source_url": "https://www.americascup.com/news/1429_Where-It-All-Began-A-Race-Around-The-Isle-Of-Wight",
+        "anchors": [
+          {
+            "name": "Cowes",
+            "lat": 50.76,
+            "lon": -1.3,
+            "note": "Start and finish vicinity."
+          },
+          {
+            "name": "Spithead",
+            "lat": 50.78,
+            "lon": -1.11,
+            "note": "Solent channel north of the island; course control."
+          },
+          {
+            "name": "Bembridge Ledge",
+            "lat": 50.7,
+            "lon": -1.05,
+            "note": "Eastern rounding outside the island."
+          },
+          {
+            "name": "Sandown Bay",
+            "lat": 50.63,
+            "lon": -1.13,
+            "note": "South-east coastal passage."
+          },
+          {
+            "name": "St Catherine's Point",
+            "lat": 50.57,
+            "lon": -1.3,
+            "note": "Southern island rounding."
+          },
+          {
+            "name": "The Needles",
+            "lat": 50.66,
+            "lon": -1.59,
+            "note": "Western island passage."
+          },
+          {
+            "name": "Western Solent",
+            "lat": 50.73,
+            "lon": -1.46,
+            "note": "Channel north of the island; course control."
+          },
+          {
+            "name": "Cowes",
+            "lat": 50.76,
+            "lon": -1.3,
+            "note": "Return through western Solent."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ellen-macarthur-record",
+    "rank": 25,
+    "title": "Ellen MacArthur's solo world record",
+    "short_title": "Ellen MacArthur",
+    "date": "2004–2005",
+    "why_famous": "Set the fastest solo nonstop circumnavigation record at the time.",
+    "route_summary": "Ushant eastward around Cape of Good Hope, Cape Leeuwin and Cape Horn, returning to Ushant.",
+    "source_title": "World Sailing: MacArthur's Ushant–Leeuwin record passage",
+    "source_url": "https://www.sailing.org/2004/12/29/another-new-solo-record-for-macarthur/",
+    "geometry_confidence": "high",
+    "geometry_note": "World Sailing verifies the start and first two cape benchmarks; the line is a three-cape course skeleton, not logged positions.",
+    "segments": [
+      {
+        "mode": "solo racing",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.sailing.org/2004/12/29/another-new-solo-record-for-macarthur/",
+        "anchors": [
+          {
+            "name": "Ushant",
+            "lat": 48.46,
+            "lon": -5.1,
+            "note": "Record start and finish line region."
+          },
+          {
+            "name": "Atlantic west of Iberia",
+            "lat": 43.0,
+            "lon": -13.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "North Atlantic west of Africa",
+            "lat": 20.0,
+            "lon": -20.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Equatorial Atlantic west of Africa",
+            "lat": 0.0,
+            "lon": -25.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic west of Africa",
+            "lat": -20.0,
+            "lon": 5.0,
+            "note": "Interpolated offshore control; not a recorded ship position."
+          },
+          {
+            "name": "Atlantic southwest of Cape",
+            "lat": -36.0,
+            "lon": 13.0,
+            "note": "Interpolated offshore control around southern Africa."
+          },
+          {
+            "name": "Cape of Good Hope",
+            "lat": -34.36,
+            "lon": 18.5,
+            "note": "First great cape."
+          },
+          {
+            "name": "Cape Leeuwin",
+            "lat": -34.38,
+            "lon": 115.14,
+            "note": "Second great cape."
+          },
+          {
+            "name": "Southern Pacific west sector",
+            "lat": -50.0,
+            "lon": 170.0,
+            "note": "Broad sea corridor control, not a logged position."
+          },
+          {
+            "name": "Southern Pacific central sector",
+            "lat": -54.0,
+            "lon": -120.0,
+            "note": "Broad sea corridor control, not a logged position."
+          },
+          {
+            "name": "Cape Horn",
+            "lat": -55.98,
+            "lon": -67.29,
+            "note": "Third great cape."
+          },
+          {
+            "name": "Ushant",
+            "lat": 48.46,
+            "lon": -5.1,
+            "note": "Return."
+          }
+        ]
+      }
+    ]
+  }
+]

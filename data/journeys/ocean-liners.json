@@ -1,0 +1,2025 @@
+[
+  {
+    "id": "titanic-maiden-1912",
+    "rank": 1,
+    "title": "Titanic maiden voyage",
+    "short_title": "Titanic",
+    "date": "1912-04-10–15",
+    "why_famous": "The best-known ocean-liner disaster, which drove major changes in maritime safety.",
+    "route_summary": "Southampton–Cherbourg–Queenstown (Cobh)–Titanic wreck site; New York was the intended destination, not a reached port.",
+    "source_title": "Royal Museums Greenwich: Titanic facts and voyage timeline",
+    "source_url": "https://www.rmg.co.uk/stories/topics/rms-titanic-facts?open=",
+    "geometry_confidence": "high",
+    "geometry_note": "Three embarkation ports are documented. The final point is NOAA's surveyed bow wreck position, not necessarily the exact iceberg-impact or sinking surface position. Ocean controls indicate only a plausible offshore corridor; New York is excluded from the sailed line.",
+    "segments": [
+      {
+        "mode": "ocean liner",
+        "track_type": "source-derived",
+        "source_url": "https://www.rmg.co.uk/stories/topics/rms-titanic-facts?open=",
+        "anchors": [
+          {
+            "name": "Southampton",
+            "lat": 50.91,
+            "lon": -1.4,
+            "note": "Documented departure port."
+          },
+          {
+            "name": "Eastern Solent",
+            "lat": 50.73,
+            "lon": -1.06,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Cherbourg",
+            "lat": 49.64,
+            "lon": -1.62,
+            "note": "Documented passenger embarkation stop."
+          },
+          {
+            "name": "Channel south of Cornwall",
+            "lat": 49.65,
+            "lon": -4.7,
+            "note": "Interpolated offshore control; not a logged ship position."
+          },
+          {
+            "name": "Celtic Sea south of Ireland",
+            "lat": 51.35,
+            "lon": -8.7,
+            "note": "Interpolated offshore control; not a logged ship position."
+          },
+          {
+            "name": "Queenstown (Cobh)",
+            "lat": 51.85,
+            "lon": -8.3,
+            "note": "Final documented port call."
+          },
+          {
+            "name": "South of Cork",
+            "lat": 51.55,
+            "lon": -8.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Western Approaches",
+            "lat": 51.2,
+            "lon": -11,
+            "note": "Offshore corridor control, not a logged fix."
+          },
+          {
+            "name": "Central North Atlantic",
+            "lat": 48,
+            "lon": -28,
+            "note": "Offshore corridor control, not a logged fix."
+          },
+          {
+            "name": "Titanic wreck, bow section",
+            "lat": 41.733,
+            "lon": -49.947,
+            "note": "Approximate surveyed wreck position; NOAA 2004 expedition: 41°43′57″N 49°56′49″W."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lusitania-final-1915",
+    "rank": 2,
+    "title": "Lusitania final Atlantic crossing",
+    "short_title": "Lusitania",
+    "date": "1915-05-01–07",
+    "why_famous": "A U-boat sank the liner with heavy civilian loss, escalating public opposition to Germany during World War I.",
+    "route_summary": "New York–Atlantic–off Old Head of Kinsale, Ireland; Liverpool was the intended destination.",
+    "source_title": "Library of Congress: Lusitania resource guide",
+    "source_url": "https://guides.loc.gov/lusitania",
+    "geometry_confidence": "medium",
+    "geometry_note": "New York departure and torpedoing off Kinsale are documented. The wreck-area anchor is approximate; the Atlantic crossing is inferred. Liverpool is intentionally omitted from the sailed line.",
+    "segments": [
+      {
+        "mode": "ocean liner",
+        "track_type": "historical-corridor",
+        "source_url": "https://guides.loc.gov/lusitania",
+        "anchors": [
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Departure port."
+          },
+          {
+            "name": "Ambrose entrance",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "New York harbor exit corridor."
+          },
+          {
+            "name": "Western North Atlantic",
+            "lat": 43.0,
+            "lon": -53.0,
+            "note": "Broad Atlantic corridor control, not a logged fix."
+          },
+          {
+            "name": "Eastern North Atlantic",
+            "lat": 49.8,
+            "lon": -22.0,
+            "note": "Broad Atlantic corridor control, not a logged fix."
+          },
+          {
+            "name": "Off Old Head of Kinsale",
+            "lat": 51.42,
+            "lon": -8.55,
+            "note": "Approximate torpedoing and sinking area south of the Irish coast."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "andrea-doria-final-1956",
+    "rank": 3,
+    "title": "Andrea Doria final crossing",
+    "short_title": "Andrea Doria",
+    "date": "1956-07-17–26",
+    "why_famous": "Its collision with Stockholm became a defining radar-age maritime disaster and rescue.",
+    "route_summary": "Genoa–western Mediterranean–Strait of Gibraltar–Atlantic–collision southeast of Nantucket; New York was the intended destination.",
+    "source_title": "United States Coast Guard: Andrea Doria collision history",
+    "source_url": "https://www.dco.uscg.mil/Portals/9/DCO%20Documents/Proceedings%20Magazine/Archive/2001/Vol58_No1_Jan-Mar2001.pdf",
+    "geometry_confidence": "medium",
+    "geometry_note": "The collision area is approximate and the offshore corridor is inferred. Other Mediterranean port calls on this particular sailing require a passenger manifest or log before insertion. New York is not joined to the final voyage line.",
+    "segments": [
+      {
+        "mode": "ocean liner",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.dco.uscg.mil/Portals/9/DCO%20Documents/Proceedings%20Magazine/Archive/2001/Vol58_No1_Jan-Mar2001.pdf",
+        "anchors": [
+          {
+            "name": "Genoa",
+            "lat": 44.4,
+            "lon": 8.93,
+            "note": "Departure port."
+          },
+          {
+            "name": "Ligurian Sea",
+            "lat": 43.7,
+            "lon": 8.35,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Western Tyrrhenian Sea",
+            "lat": 42,
+            "lon": 7.45,
+            "note": "Sea corridor west of Corsica, not a logged fix."
+          },
+          {
+            "name": "South of Sardinia",
+            "lat": 38.3,
+            "lon": 7.25,
+            "note": "Sea corridor south of Sardinia, not a logged fix."
+          },
+          {
+            "name": "Western Mediterranean",
+            "lat": 37.1,
+            "lon": 0,
+            "note": "Broad sea control, not a logged fix."
+          },
+          {
+            "name": "Strait of Gibraltar",
+            "lat": 35.95,
+            "lon": -5.65,
+            "note": "Passage control, not a logged fix."
+          },
+          {
+            "name": "Central North Atlantic",
+            "lat": 39,
+            "lon": -32,
+            "note": "Broad sea control, not a logged fix."
+          },
+          {
+            "name": "Collision southeast of Nantucket",
+            "lat": 40.49,
+            "lon": -69.85,
+            "note": "Approximate collision/wreck vicinity; position should be refined from inquiry or hydrographic record."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "great-western-1838",
+    "rank": 4,
+    "title": "Great Western inaugural Atlantic crossing",
+    "short_title": "Great Western",
+    "date": "1838-04",
+    "why_famous": "Showed that regular steam-powered passenger crossings of the Atlantic were practical.",
+    "route_summary": "Bristol–Bristol Channel–North Atlantic–New York.",
+    "source_title": "Royal Museums Greenwich: Great Western captain's log",
+    "source_url": "https://www.rmg.co.uk/stories/maritime-history/library-archive/caird-connections",
+    "geometry_confidence": "medium",
+    "geometry_note": "Departure and arrival ports are secure. The sea route is a coarse corridor; no daily entries from the surviving log have been digitized into this record.",
+    "segments": [
+      {
+        "mode": "steam liner",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.rmg.co.uk/stories/maritime-history/library-archive/caird-connections",
+        "anchors": [
+          {
+            "name": "Bristol",
+            "lat": 51.45,
+            "lon": -2.61,
+            "note": "Departure port."
+          },
+          {
+            "name": "Bristol Channel",
+            "lat": 51.42,
+            "lon": -4.8,
+            "note": "Sea passage control, not a logged fix."
+          },
+          {
+            "name": "Western Approaches",
+            "lat": 50.8,
+            "lon": -10,
+            "note": "Offshore control, not a logged fix."
+          },
+          {
+            "name": "Mid-Atlantic",
+            "lat": 45.5,
+            "lon": -38,
+            "note": "Broad sea corridor control, not a logged fix."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -71.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Ambrose approach",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Arrival port."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "carpathia-titanic-rescue-1912",
+    "rank": 5,
+    "title": "Carpathia Titanic rescue diversion",
+    "short_title": "Carpathia",
+    "date": "1912-04-14–18",
+    "why_famous": "Reached Titanic's lifeboats and carried the survivors to New York.",
+    "route_summary": "New York eastbound toward the Mediterranean–Titanic rescue scene–New York; the planned Mediterranean route was abandoned.",
+    "source_title": "British Wreck Commissioner: rescue by Carpathia",
+    "source_url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepRescue.php",
+    "geometry_confidence": "medium",
+    "geometry_note": "The inquiry documents the eastbound voyage and reversal, but the exact point of turn and lifeboat pickup positions are not represented. The reported Titanic distress position differs from the surveyed wreck site; the rescue anchor is shown near the latter, not as a precise fix.",
+    "segments": [
+      {
+        "mode": "ocean liner",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepRescue.php",
+        "anchors": [
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Carpathia's original departure."
+          },
+          {
+            "name": "Ambrose approach",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Interpolated offshore departure control."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -71.5,
+            "note": "Interpolated offshore control; not a logged ship position."
+          },
+          {
+            "name": "Titanic rescue area",
+            "lat": 41.73,
+            "lon": -49.95,
+            "note": "Approximate rescue vicinity near surveyed wreck; not a logged lifeboat position."
+          }
+        ]
+      },
+      {
+        "mode": "rescue return",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepRescue.php",
+        "anchors": [
+          {
+            "name": "Titanic rescue area",
+            "lat": 41.73,
+            "lon": -49.95,
+            "note": "Rescue vicinity."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -71.5,
+            "note": "Interpolated offshore control; not a logged ship position."
+          },
+          {
+            "name": "Ambrose approach",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Interpolated offshore arrival control."
+          },
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Survivors disembarked 18 April."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mauretania-1909-record",
+    "rank": 6,
+    "title": "Mauretania westbound Blue Riband crossing",
+    "short_title": "Mauretania",
+    "date": "1909-09-26–30",
+    "why_famous": "Its westbound speed record stood for two decades, helping cement its legendary Blue Riband reputation.",
+    "route_summary": "Liverpool–Queenstown (Cobh)–Ambrose Lightship–New York; the timed record leg ran from Queenstown to Ambrose Light.",
+    "source_title": "GG Archives: Mauretania voyage and speed records",
+    "source_url": "https://www.ggarchives.com/OT/Ships/Mauretania.html",
+    "geometry_confidence": "medium",
+    "geometry_note": "The September 1909 westbound record and timed terminals are documented. The intermediate Atlantic line is schematic. The November 1907 maiden westbound crossing was not this record passage.",
+    "segments": [
+      {
+        "mode": "express liner",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.ggarchives.com/OT/Ships/Mauretania.html",
+        "anchors": [
+          {
+            "name": "Liverpool",
+            "lat": 53.4,
+            "lon": -3,
+            "note": "Voyage origin."
+          },
+          {
+            "name": "Liverpool Bay",
+            "lat": 53.5,
+            "lon": -3.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Irish Sea",
+            "lat": 52.6,
+            "lon": -5.6,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "St George's Channel",
+            "lat": 51.75,
+            "lon": -6.35,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "South of Ireland",
+            "lat": 51.35,
+            "lon": -8,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Queenstown (Cobh)",
+            "lat": 51.85,
+            "lon": -8.3,
+            "note": "Start of timed Blue Riband leg."
+          },
+          {
+            "name": "South of Cork",
+            "lat": 51.55,
+            "lon": -8.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Western Approaches",
+            "lat": 51,
+            "lon": -11,
+            "note": "Sea corridor control, not a logged fix."
+          },
+          {
+            "name": "Central Atlantic",
+            "lat": 47,
+            "lon": -37,
+            "note": "Broad corridor control, not a logged fix."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -71.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Ambrose Lightship",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "End of timed leg, approximate historic station."
+          },
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Voyage arrival."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "normandie-1935-maiden",
+    "rank": 7,
+    "title": "Normandie maiden Blue Riband crossing",
+    "short_title": "Normandie",
+    "date": "1935-05-29–06-03",
+    "why_famous": "The Art Deco liner took the Atlantic speed record on its first voyage.",
+    "route_summary": "Le Havre–Southampton–New York; the Blue Riband crossing was measured between sea markers rather than docks.",
+    "source_title": "Royal Museums Greenwich: Normandie",
+    "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-67461",
+    "geometry_confidence": "medium",
+    "geometry_note": "Port sequence is supported by contemporary passenger records; no position-by-position voyage log is encoded. The short Le Havre–Southampton transfer and ocean crossing are separate segments.",
+    "segments": [
+      {
+        "mode": "express liner",
+        "track_type": "source-derived",
+        "source_url": "https://www.ggarchives.com/OT/PLs/Ships/Normandie-PassengerLists.html",
+        "anchors": [
+          {
+            "name": "Le Havre",
+            "lat": 49.49,
+            "lon": 0.1,
+            "note": "Departure port."
+          },
+          {
+            "name": "Southampton",
+            "lat": 50.91,
+            "lon": -1.4,
+            "note": "British passenger stop."
+          },
+          {
+            "name": "Eastern Solent",
+            "lat": 50.73,
+            "lon": -1.06,
+            "note": "Cartographic sea control, not a logged fix."
+          }
+        ]
+      },
+      {
+        "mode": "express liner",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-67461",
+        "anchors": [
+          {
+            "name": "Southampton",
+            "lat": 50.91,
+            "lon": -1.4,
+            "note": "Atlantic departure region."
+          },
+          {
+            "name": "Eastern Solent",
+            "lat": 50.73,
+            "lon": -1.06,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "English Channel south of Cornwall",
+            "lat": 49.65,
+            "lon": -4.7,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Bishop Rock",
+            "lat": 49.87,
+            "lon": -6.45,
+            "note": "Eastern Atlantic timing mark vicinity."
+          },
+          {
+            "name": "Central North Atlantic",
+            "lat": 45.2,
+            "lon": -39,
+            "note": "Broad corridor control, not a logged fix."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -71.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Ambrose Lightship",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Western timing mark vicinity."
+          },
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Arrival port."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "queen-mary-1938-record",
+    "rank": 8,
+    "title": "Queen Mary 1938 Blue Riband record crossing",
+    "short_title": "Queen Mary 1938",
+    "date": "1938-08",
+    "why_famous": "Reclaimed the Blue Riband and set a prewar record that stood until 1952.",
+    "route_summary": "Southampton–Cherbourg–Bishop Rock–Ambrose Lightship–New York, representing the August 1938 westbound voyage.",
+    "source_title": "National Park Service: Queen Mary historic nomination",
+    "source_url": "https://npgallery.nps.gov/GetAsset/c29268bb-2f70-4fdb-bd66-a013fbd8b834",
+    "geometry_confidence": "medium",
+    "geometry_note": "The National Park Service documents the 1938 westbound and eastbound records. This is the westbound voyage; timed markers and ports are distinct, and offshore vertices are interpolated.",
+    "segments": [
+      {
+        "mode": "express liner",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://npgallery.nps.gov/GetAsset/c29268bb-2f70-4fdb-bd66-a013fbd8b834",
+        "anchors": [
+          {
+            "name": "Southampton",
+            "lat": 50.91,
+            "lon": -1.4,
+            "note": "Voyage origin."
+          },
+          {
+            "name": "Eastern Solent",
+            "lat": 50.73,
+            "lon": -1.06,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Cherbourg",
+            "lat": 49.64,
+            "lon": -1.62,
+            "note": "French passenger stop; verify this specific sailing's call from log."
+          },
+          {
+            "name": "English Channel south of Cornwall",
+            "lat": 49.65,
+            "lon": -4.7,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Bishop Rock",
+            "lat": 49.87,
+            "lon": -6.45,
+            "note": "Eastern timing area."
+          },
+          {
+            "name": "Central North Atlantic",
+            "lat": 45,
+            "lon": -39,
+            "note": "Broad corridor control, not a logged fix."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -71.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Ambrose Lightship",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Western timing area."
+          },
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Voyage arrival."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "united-states-1952-record",
+    "rank": 9,
+    "title": "United States maiden Blue Riband crossing",
+    "short_title": "United States",
+    "date": "1952-07-03–07",
+    "why_famous": "Set the fastest transatlantic passenger-liner crossing record on its maiden voyage.",
+    "route_summary": "New York–Ambrose Lightship–Bishop Rock–Le Havre–Southampton, eastbound.",
+    "source_title": "Mariners' Museum: United States 1952 voyage log",
+    "source_url": "https://catalogs.marinersmuseum.org/media/Media/00001/MS15.19524%20United%20States00635822369151364486.pdf",
+    "geometry_confidence": "high",
+    "geometry_note": "Voyage and timing endpoints have a museum log. The plotted Atlantic path is still waypoint interpolation; full log positions have not been transcribed.",
+    "segments": [
+      {
+        "mode": "express liner",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://catalogs.marinersmuseum.org/media/Media/00001/MS15.19524%20United%20States00635822369151364486.pdf",
+        "anchors": [
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Maiden voyage departure."
+          },
+          {
+            "name": "Ambrose Lightship",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Start of timed record crossing."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -71.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Central North Atlantic",
+            "lat": 45,
+            "lon": -39,
+            "note": "Broad Atlantic corridor control, not a transcribed log fix."
+          },
+          {
+            "name": "Bishop Rock",
+            "lat": 49.87,
+            "lon": -6.45,
+            "note": "End of timed record crossing."
+          },
+          {
+            "name": "English Channel south of Cornwall",
+            "lat": 49.65,
+            "lon": -4.7,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Le Havre",
+            "lat": 49.49,
+            "lon": 0.1,
+            "note": "French destination stop."
+          },
+          {
+            "name": "Southampton",
+            "lat": 50.91,
+            "lon": -1.4,
+            "note": "Final scheduled destination."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "great-britain-1845",
+    "rank": 10,
+    "title": "Great Britain maiden Atlantic crossing",
+    "short_title": "Great Britain",
+    "date": "1845-07-26–08-08",
+    "why_famous": "The first iron-hulled, screw-driven ocean liner made its maiden Atlantic crossing.",
+    "route_summary": "Liverpool–North Atlantic–New York.",
+    "source_title": "SS Great Britain Trust: voyage database",
+    "source_url": "https://globalstories.ssgreatbritain.org/_/voyages/",
+    "geometry_confidence": "medium",
+    "geometry_note": "The Trust confirms both ports and dates. Ocean controls preserve a plausible passage; they are not ship log positions.",
+    "segments": [
+      {
+        "mode": "steam liner",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://globalstories.ssgreatbritain.org/_/voyages/",
+        "anchors": [
+          {
+            "name": "Liverpool",
+            "lat": 53.4,
+            "lon": -3,
+            "note": "Trust voyage database departure."
+          },
+          {
+            "name": "Liverpool Bay",
+            "lat": 53.5,
+            "lon": -3.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Irish Sea",
+            "lat": 52.6,
+            "lon": -5.6,
+            "note": "Open-water control, not a logged fix."
+          },
+          {
+            "name": "St George's Channel",
+            "lat": 51.75,
+            "lon": -6.35,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "South of Ireland",
+            "lat": 51.35,
+            "lon": -8,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Western Approaches",
+            "lat": 51.4,
+            "lon": -11,
+            "note": "Open-water control, not a logged fix."
+          },
+          {
+            "name": "Central Atlantic",
+            "lat": 46,
+            "lon": -38,
+            "note": "Broad sea corridor control, not a logged fix."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -71.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Ambrose approach",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Trust voyage database arrival."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "empress-ireland-1914",
+    "rank": 11,
+    "title": "Empress of Ireland final voyage",
+    "short_title": "Empress of Ireland",
+    "date": "1914-05-28–29",
+    "why_famous": "Canada's deadliest peacetime maritime disaster followed a collision on the Saint Lawrence.",
+    "route_summary": "Québec City–downstream Saint Lawrence–collision and wreck off Sainte-Luce; Liverpool was the intended destination.",
+    "source_title": "Parks Canada: Pointe-au-Père and Empress of Ireland",
+    "source_url": "https://parks.canada.ca/lhn-nhs/qc/pointeaupere/culture/histoire-history/services",
+    "geometry_confidence": "high",
+    "geometry_note": "The river passage and wreck vicinity are constrained by the coastline. The last anchor marks a broad wreck area, not a surveyed coordinate; Liverpool is not on the sailed line.",
+    "segments": [
+      {
+        "mode": "ocean liner",
+        "track_type": "source-derived",
+        "source_url": "https://parks.canada.ca/lhn-nhs/qc/pointeaupere/culture/histoire-history/services",
+        "anchors": [
+          {
+            "name": "Québec City",
+            "lat": 46.82,
+            "lon": -71.2,
+            "note": "Departure port."
+          },
+          {
+            "name": "Île d'Orléans north channel",
+            "lat": 46.95,
+            "lon": -70.9,
+            "note": "River corridor control, not a logged fix."
+          },
+          {
+            "name": "La Malbaie reach",
+            "lat": 47.58,
+            "lon": -70.0,
+            "note": "Saint Lawrence channel corridor."
+          },
+          {
+            "name": "Rivière-du-Loup reach",
+            "lat": 47.95,
+            "lon": -69.55,
+            "note": "Saint Lawrence channel corridor."
+          },
+          {
+            "name": "Pointe-au-Père",
+            "lat": 48.52,
+            "lon": -68.47,
+            "note": "Pilot-station area near Rimouski."
+          },
+          {
+            "name": "Off Sainte-Luce",
+            "lat": 48.6,
+            "lon": -68.37,
+            "note": "Approximate collision and wreck vicinity; not a charted wreck fix."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "britannia-1840",
+    "rank": 12,
+    "title": "Britannia inaugural Cunard mail voyage",
+    "short_title": "Britannia",
+    "date": "1840-07-04–19",
+    "why_famous": "Opened Cunard's scheduled transatlantic mail and passenger service.",
+    "route_summary": "Liverpool–Halifax–Boston.",
+    "source_title": "University of Liverpool: original Cunard passenger lists",
+    "source_url": "https://manuscriptsandmore.liverpool.ac.uk/digital-heritage-lab-cunards-original-passenger-lists/",
+    "geometry_confidence": "medium",
+    "geometry_note": "Contemporary passenger lists establish the Liverpool departure, while the scheduled Halifax and Boston calls are supported by route history. Offshore line is a coarse inferred corridor.",
+    "segments": [
+      {
+        "mode": "steam liner",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.bu.edu/bhr/2015/02/01/cunard-in-boston/",
+        "anchors": [
+          {
+            "name": "Liverpool",
+            "lat": 53.4,
+            "lon": -3,
+            "note": "Departure port."
+          },
+          {
+            "name": "Liverpool Bay",
+            "lat": 53.5,
+            "lon": -3.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Irish Sea",
+            "lat": 52.6,
+            "lon": -5.6,
+            "note": "Open-water control, not a logged fix."
+          },
+          {
+            "name": "St George's Channel",
+            "lat": 51.75,
+            "lon": -6.35,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "South of Ireland",
+            "lat": 51.35,
+            "lon": -8,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Western Approaches",
+            "lat": 51,
+            "lon": -11,
+            "note": "Open-water control, not a logged fix."
+          },
+          {
+            "name": "North Atlantic",
+            "lat": 46,
+            "lon": -39,
+            "note": "Broad sea corridor control, not a logged fix."
+          },
+          {
+            "name": "Halifax",
+            "lat": 44.65,
+            "lon": -63.58,
+            "note": "Documented first North American mail call."
+          },
+          {
+            "name": "Atlantic south of Nova Scotia",
+            "lat": 43.5,
+            "lon": -62.5,
+            "note": "Interpolated offshore control; not a logged ship position."
+          },
+          {
+            "name": "Atlantic east of Massachusetts",
+            "lat": 42.0,
+            "lon": -68.0,
+            "note": "Interpolated offshore control; not a logged ship position."
+          },
+          {
+            "name": "Boston",
+            "lat": 42.35,
+            "lon": -71.05,
+            "note": "Final voyage port."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "great-eastern-1860",
+    "rank": 13,
+    "title": "Great Eastern maiden Atlantic voyage",
+    "short_title": "Great Eastern",
+    "date": "1860-06-17–28",
+    "why_famous": "Brunel's giant steamship crossed the Atlantic on its first New York voyage.",
+    "route_summary": "Southampton–North Atlantic–New York.",
+    "source_title": "Contemporary report: Great Eastern voyage to New York",
+    "source_url": "https://paperspast.natlib.govt.nz/newspapers/TC18600925.2.3",
+    "geometry_confidence": "medium",
+    "geometry_note": "Contemporary reports and a passenger manifest indicate Southampton departure on 17 June 1860. The researched Liverpool departure was incorrect. No daily ship log fixes are encoded.",
+    "segments": [
+      {
+        "mode": "steam liner",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://paperspast.natlib.govt.nz/newspapers/TC18600925.2.3",
+        "anchors": [
+          {
+            "name": "Southampton",
+            "lat": 50.91,
+            "lon": -1.4,
+            "note": "Contemporary-reported departure."
+          },
+          {
+            "name": "Eastern Solent",
+            "lat": 50.73,
+            "lon": -1.06,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "English Channel south of Cornwall",
+            "lat": 49.65,
+            "lon": -4.7,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Bishop Rock approaches",
+            "lat": 49.9,
+            "lon": -6.5,
+            "note": "Offshore corridor control, not a documented timing mark for this voyage."
+          },
+          {
+            "name": "Central North Atlantic",
+            "lat": 45.5,
+            "lon": -38,
+            "note": "Broad sea corridor control, not a logged fix."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -71.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Ambrose approach",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Arrival port."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "republic-wireless-1909",
+    "rank": 14,
+    "title": "Republic wireless rescue",
+    "short_title": "Republic",
+    "date": "1909-01-22–24",
+    "why_famous": "An early CQD radio distress call enabled a large-scale rescue after a collision.",
+    "route_summary": "New York–collision near Nantucket; Gibraltar and Mediterranean ports were intended, not reached.",
+    "source_title": "U.S. NTIA: January 1909 wireless history",
+    "source_url": "https://its.ntia.gov/this-month-in-its-history/january-1909",
+    "geometry_confidence": "medium",
+    "geometry_note": "New York departure and collision near Nantucket are documented. No precise collision or wreck coordinate is claimed; the Mediterranean destination is excluded from the sailed line.",
+    "segments": [
+      {
+        "mode": "ocean liner",
+        "track_type": "historical-corridor",
+        "source_url": "https://its.ntia.gov/this-month-in-its-history/january-1909",
+        "anchors": [
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Departure for Mediterranean voyage."
+          },
+          {
+            "name": "Ambrose approach",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -72,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Nantucket Shoals approaches",
+            "lat": 40.72,
+            "lon": -70.2,
+            "note": "Broad offshore approach, not a logged fix."
+          },
+          {
+            "name": "Collision near Nantucket",
+            "lat": 40.68,
+            "lon": -69.85,
+            "note": "Approximate collision vicinity; seek charted wreck position for high precision."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "queen-elizabeth-1940",
+    "rank": 15,
+    "title": "Queen Elizabeth secret wartime first crossing",
+    "short_title": "Queen Elizabeth",
+    "date": "1940-03",
+    "why_famous": "The unfinished giant liner slipped out of wartime Britain and reached New York safely.",
+    "route_summary": "Clydebank/Clyde estuary–Atlantic–New York.",
+    "source_title": "West Dunbartonshire: The Three Queens",
+    "source_url": "https://www.west-dunbarton.gov.uk/leisure-parks-events/museums-and-galleries/collections/shipbuilding/shipbuilding-clydebank/the-three-queens",
+    "geometry_confidence": "low",
+    "geometry_note": "Departure and arrival are supported, but wartime secrecy makes the actual route and timing of any zigzags uncertain. The offshore line is an illustrative corridor only.",
+    "segments": [
+      {
+        "mode": "ocean liner",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.west-dunbarton.gov.uk/leisure-parks-events/museums-and-galleries/collections/shipbuilding/shipbuilding-clydebank/the-three-queens",
+        "anchors": [
+          {
+            "name": "Clydebank",
+            "lat": 55.91,
+            "lon": -4.4,
+            "note": "Builder's yard and departure region."
+          },
+          {
+            "name": "Firth of Clyde",
+            "lat": 55.72,
+            "lon": -5.1,
+            "note": "Sea exit control, not a logged fix."
+          },
+          {
+            "name": "West of Kintyre",
+            "lat": 55.4,
+            "lon": -6.3,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Northwest of Ireland",
+            "lat": 55.3,
+            "lon": -9,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "West of Ireland",
+            "lat": 52.5,
+            "lon": -12,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Southwest of Ireland",
+            "lat": 50.5,
+            "lon": -12,
+            "note": "Broad Atlantic departure corridor, not an asserted wartime position."
+          },
+          {
+            "name": "North Atlantic",
+            "lat": 46,
+            "lon": -38,
+            "note": "Illustrative corridor control, not a wartime log position."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -71.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Ambrose approach",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Arrival port."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "queen-mary-final-1967",
+    "rank": 16,
+    "title": "Queen Mary final ocean voyage",
+    "short_title": "Queen Mary 1967",
+    "date": "1967-10-31–12-09",
+    "why_famous": "The historic liner sailed around Cape Horn to its permanent home at Long Beach.",
+    "route_summary": "Southampton–Lisbon–Las Palmas–Rio de Janeiro–Cape Horn–Valparaíso–Callao–Balboa–Acapulco–Long Beach.",
+    "source_title": "Queen Mary: final voyage account",
+    "source_url": "https://www.sterling.rmplc.co.uk/history/lasttrip.html",
+    "geometry_confidence": "medium",
+    "geometry_note": "Listed port calls and Cape Horn routing are documented. Controls around the Horn, Pacific coast and Baja are solely cartographic sea corridors; they are not observed ship positions.",
+    "segments": [
+      {
+        "mode": "retirement voyage",
+        "track_type": "source-derived",
+        "source_url": "https://www.sterling.rmplc.co.uk/history/lasttrip.html",
+        "anchors": [
+          {
+            "name": "Southampton",
+            "lat": 50.91,
+            "lon": -1.4,
+            "note": "Final departure."
+          },
+          {
+            "name": "Eastern Solent",
+            "lat": 50.73,
+            "lon": -1.06,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "West of Brittany",
+            "lat": 48.3,
+            "lon": -7,
+            "note": "Offshore sea control, not a logged fix."
+          },
+          {
+            "name": "West of Galicia",
+            "lat": 43.5,
+            "lon": -11,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Lisbon",
+            "lat": 38.72,
+            "lon": -9.14,
+            "note": "Documented call."
+          },
+          {
+            "name": "Las Palmas",
+            "lat": 28.14,
+            "lon": -15.43,
+            "note": "Documented Canary Islands call."
+          },
+          {
+            "name": "Equatorial Atlantic",
+            "lat": 2,
+            "lon": -27,
+            "note": "Broad sea control, not a logged fix."
+          },
+          {
+            "name": "Off eastern Brazil",
+            "lat": -20,
+            "lon": -39,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Atlantic off Rio",
+            "lat": -23.0,
+            "lon": -41.5,
+            "note": "Interpolated offshore control; not a logged ship position."
+          },
+          {
+            "name": "Rio de Janeiro",
+            "lat": -22.9,
+            "lon": -43.18,
+            "note": "Documented call."
+          },
+          {
+            "name": "Southwest Atlantic",
+            "lat": -48,
+            "lon": -58,
+            "note": "Sea control east of Patagonia, not a logged fix."
+          },
+          {
+            "name": "Cape Horn",
+            "lat": -55.98,
+            "lon": -67.29,
+            "note": "Documented rounding region, not a precise fix."
+          },
+          {
+            "name": "South of Cape Horn",
+            "lat": -57,
+            "lon": -68,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "South of Tierra del Fuego",
+            "lat": -57,
+            "lon": -75,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Southwest of Chile",
+            "lat": -51,
+            "lon": -76,
+            "note": "Offshore Pacific control, not a logged fix."
+          },
+          {
+            "name": "Off central Chile",
+            "lat": -39,
+            "lon": -76,
+            "note": "Offshore Pacific control, not a logged fix."
+          },
+          {
+            "name": "Valparaíso",
+            "lat": -33.05,
+            "lon": -71.63,
+            "note": "Documented call."
+          },
+          {
+            "name": "Callao",
+            "lat": -12.05,
+            "lon": -77.15,
+            "note": "Documented Peru call."
+          },
+          {
+            "name": "Off north Peru",
+            "lat": -6,
+            "lon": -82,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Off Ecuador",
+            "lat": 0,
+            "lon": -84,
+            "note": "Offshore Pacific control, not a logged fix."
+          },
+          {
+            "name": "Balboa",
+            "lat": 8.96,
+            "lon": -79.56,
+            "note": "Documented Panama call on Pacific side."
+          },
+          {
+            "name": "South of Panama",
+            "lat": 7,
+            "lon": -80,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "South of Costa Rica",
+            "lat": 6.8,
+            "lon": -83,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Off Costa Rica",
+            "lat": 8.4,
+            "lon": -84.5,
+            "note": "Pacific coastal sea control, not a logged fix."
+          },
+          {
+            "name": "Off Guatemala",
+            "lat": 13,
+            "lon": -93,
+            "note": "Pacific coastal sea control, not a logged fix."
+          },
+          {
+            "name": "Acapulco",
+            "lat": 16.86,
+            "lon": -99.9,
+            "note": "Documented Mexico call."
+          },
+          {
+            "name": "Off Acapulco",
+            "lat": 16.5,
+            "lon": -101,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Off southwest Mexico",
+            "lat": 18,
+            "lon": -106,
+            "note": "Pacific sea control, not a logged fix."
+          },
+          {
+            "name": "Off Baja California",
+            "lat": 26,
+            "lon": -115,
+            "note": "Pacific sea control, not a logged fix."
+          },
+          {
+            "name": "Long Beach",
+            "lat": 33.75,
+            "lon": -118.2,
+            "note": "Retirement home and final arrival."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "qe2-maiden-1969",
+    "rank": 17,
+    "title": "Queen Elizabeth 2 maiden transatlantic voyage",
+    "short_title": "QE2",
+    "date": "1969-05-02–07",
+    "why_famous": "Introduced the liner that became the symbol of the late transatlantic passenger era.",
+    "route_summary": "Southampton–New York.",
+    "source_title": "Mariners' Museum: QE2 maiden New York arrival",
+    "source_url": "https://catalogs.marinersmuseum.org/object/LB97501",
+    "geometry_confidence": "medium",
+    "geometry_note": "The Southampton departure and New York maiden arrival are known. The mid-ocean route is inferred from endpoints and broad sea controls.",
+    "segments": [
+      {
+        "mode": "express liner",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://catalogs.marinersmuseum.org/object/LB97501",
+        "anchors": [
+          {
+            "name": "Southampton",
+            "lat": 50.91,
+            "lon": -1.4,
+            "note": "Maiden Atlantic departure."
+          },
+          {
+            "name": "Eastern Solent",
+            "lat": 50.73,
+            "lon": -1.06,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "English Channel south of Cornwall",
+            "lat": 49.65,
+            "lon": -4.7,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Bishop Rock approaches",
+            "lat": 49.9,
+            "lon": -6.5,
+            "note": "Offshore control, not a documented timing mark."
+          },
+          {
+            "name": "Central North Atlantic",
+            "lat": 45,
+            "lon": -39,
+            "note": "Broad sea control, not a logged fix."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -71.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Ambrose approach",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Maiden Atlantic arrival."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "qm2-first-atlantic-2004",
+    "rank": 18,
+    "title": "Queen Mary 2 first scheduled Atlantic crossing",
+    "short_title": "Queen Mary 2",
+    "date": "2004-04-16–22",
+    "why_famous": "The purpose-built liner inaugurated its regular Atlantic service.",
+    "route_summary": "Southampton–New York.",
+    "source_title": "New York City: Queen Mary 2 inaugural arrival",
+    "source_url": "https://www.nyc.gov/html/edc/html/queen_mary.html",
+    "geometry_confidence": "medium",
+    "geometry_note": "Ports and dates are documented, but no AIS or bridge track for this specific 2004 voyage is encoded. This is an indicative offshore passage.",
+    "segments": [
+      {
+        "mode": "express liner",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.nyc.gov/html/edc/html/queen_mary.html",
+        "anchors": [
+          {
+            "name": "Southampton",
+            "lat": 50.91,
+            "lon": -1.4,
+            "note": "First scheduled Atlantic departure."
+          },
+          {
+            "name": "Eastern Solent",
+            "lat": 50.73,
+            "lon": -1.06,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "English Channel south of Cornwall",
+            "lat": 49.65,
+            "lon": -4.7,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Bishop Rock approaches",
+            "lat": 49.9,
+            "lon": -6.5,
+            "note": "Open-ocean departure corridor, not a timed or observed fix."
+          },
+          {
+            "name": "Central North Atlantic",
+            "lat": 45,
+            "lon": -39,
+            "note": "Broad offshore control, not an AIS position."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -71.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Ambrose approach",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Inaugural New York arrival."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aquitania-maiden-1914",
+    "rank": 19,
+    "title": "Aquitania maiden Atlantic crossing",
+    "short_title": "Aquitania",
+    "date": "1914-05-30–06-05",
+    "why_famous": "The celebrated Cunard liner began a long Atlantic career just before World War I.",
+    "route_summary": "Liverpool–New York, direct on the 1914 maiden voyage.",
+    "source_title": "Liverpool Maritime Society: Aquitania maiden voyage",
+    "source_url": "https://liverpoolmaritimesociety.org/wp-content/uploads/2019/03/Bulletin-Vol-42-1998.pdf",
+    "geometry_confidence": "medium",
+    "geometry_note": "A maritime-history account states the May 1914 maiden voyage left Liverpool direct for New York. Southampton/Cherbourg were later service ports, not asserted for this voyage. Offshore course remains interpolated.",
+    "segments": [
+      {
+        "mode": "express liner",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://liverpoolmaritimesociety.org/wp-content/uploads/2019/03/Bulletin-Vol-42-1998.pdf",
+        "anchors": [
+          {
+            "name": "Liverpool",
+            "lat": 53.4,
+            "lon": -3,
+            "note": "Maiden voyage departure."
+          },
+          {
+            "name": "Liverpool Bay",
+            "lat": 53.5,
+            "lon": -3.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Irish Sea",
+            "lat": 52.6,
+            "lon": -5.6,
+            "note": "Sea exit corridor control, not a logged fix."
+          },
+          {
+            "name": "St George's Channel",
+            "lat": 51.75,
+            "lon": -6.35,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "South of Ireland",
+            "lat": 51.35,
+            "lon": -8,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Western Approaches",
+            "lat": 51,
+            "lon": -11,
+            "note": "Offshore control, not a logged fix."
+          },
+          {
+            "name": "Central North Atlantic",
+            "lat": 46,
+            "lon": -39,
+            "note": "Broad sea corridor control, not a logged fix."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -71.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Ambrose approach",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Maiden voyage arrival."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "olympic-maiden-1911",
+    "rank": 20,
+    "title": "Olympic inaugural Atlantic service",
+    "short_title": "Olympic",
+    "date": "1911-06",
+    "why_famous": "The first Olympic-class liner inaugurated White Star's giant-ship Atlantic service.",
+    "route_summary": "Southampton–Cherbourg–Queenstown (Cobh)–New York.",
+    "source_title": "Royal Museums Greenwich: Olympic model",
+    "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-101101",
+    "geometry_confidence": "medium",
+    "geometry_note": "The class's scheduled ports are represented; this specific maiden voyage's complete call sequence should be checked against passenger lists before treating every intermediate stop as voyage-observed. Offshore line is inferred.",
+    "segments": [
+      {
+        "mode": "ocean liner",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-101101",
+        "anchors": [
+          {
+            "name": "Southampton",
+            "lat": 50.91,
+            "lon": -1.4,
+            "note": "Maiden voyage departure."
+          },
+          {
+            "name": "Eastern Solent",
+            "lat": 50.73,
+            "lon": -1.06,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Cherbourg",
+            "lat": 49.64,
+            "lon": -1.62,
+            "note": "Scheduled French stop; verify inaugural manifest."
+          },
+          {
+            "name": "Channel south of Cornwall",
+            "lat": 49.65,
+            "lon": -4.7,
+            "note": "Interpolated offshore control; not a logged ship position."
+          },
+          {
+            "name": "Celtic Sea south of Ireland",
+            "lat": 51.35,
+            "lon": -8.7,
+            "note": "Interpolated offshore control; not a logged ship position."
+          },
+          {
+            "name": "Queenstown (Cobh)",
+            "lat": 51.85,
+            "lon": -8.3,
+            "note": "Scheduled Irish stop; verify inaugural manifest."
+          },
+          {
+            "name": "South of Cork",
+            "lat": 51.55,
+            "lon": -8.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Western Approaches",
+            "lat": 51,
+            "lon": -11,
+            "note": "Open-water control, not a logged fix."
+          },
+          {
+            "name": "Central North Atlantic",
+            "lat": 46,
+            "lon": -39,
+            "note": "Broad corridor control, not a logged fix."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -71.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Ambrose approach",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Maiden voyage arrival."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bremen-1929-maiden",
+    "rank": 21,
+    "title": "Bremen Blue Riband maiden voyage",
+    "short_title": "Bremen",
+    "date": "1929-07-16–22",
+    "why_famous": "Took the Atlantic speed record from Mauretania on its first westbound voyage.",
+    "route_summary": "Bremerhaven–Southampton–Cherbourg–New York; the timed record leg began after the European calls.",
+    "source_title": "GG Archives: Bremen archival collection",
+    "source_url": "https://www.ggarchives.com/OT/Ships/Bremen.html",
+    "geometry_confidence": "medium",
+    "geometry_note": "Archival sailing material supports the 1929 European port sequence. Do not equate the complete port-to-port voyage with the timed record leg. Atlantic positions are interpolated.",
+    "segments": [
+      {
+        "mode": "express liner",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.ggarchives.com/OT/Ships/Bremen.html",
+        "anchors": [
+          {
+            "name": "Bremerhaven",
+            "lat": 53.55,
+            "lon": 8.58,
+            "note": "Maiden departure."
+          },
+          {
+            "name": "Helgoland Bight",
+            "lat": 54.05,
+            "lon": 7.9,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "North Sea",
+            "lat": 53,
+            "lon": 4,
+            "note": "Offshore corridor control, not a logged fix."
+          },
+          {
+            "name": "Strait of Dover",
+            "lat": 51,
+            "lon": 1.2,
+            "note": "Passage control, not a logged fix."
+          },
+          {
+            "name": "Eastern Solent",
+            "lat": 50.73,
+            "lon": -1.06,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Southampton",
+            "lat": 50.91,
+            "lon": -1.4,
+            "note": "British stop."
+          },
+          {
+            "name": "Cherbourg",
+            "lat": 49.64,
+            "lon": -1.62,
+            "note": "French stop before timed Atlantic leg."
+          },
+          {
+            "name": "English Channel south of Cornwall",
+            "lat": 49.65,
+            "lon": -4.7,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Bishop Rock approaches",
+            "lat": 49.9,
+            "lon": -6.45,
+            "note": "Atlantic passage control, not a stated race mark for this voyage."
+          },
+          {
+            "name": "Central North Atlantic",
+            "lat": 45,
+            "lon": -39,
+            "note": "Broad sea control, not a logged fix."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -71.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Ambrose approach",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Maiden voyage arrival."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "europa-1930-maiden",
+    "rank": 22,
+    "title": "Europa Blue Riband maiden voyage",
+    "short_title": "Europa",
+    "date": "1930-03-19–25",
+    "why_famous": "Improved the westbound Atlantic speed record on its first voyage.",
+    "route_summary": "Bremerhaven–Channel passage–New York; a Cherbourg call is plausible but requires the exact 1930 sailing record.",
+    "source_title": "Royal Museums Greenwich: Bremen and Europa",
+    "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-68739",
+    "geometry_confidence": "medium",
+    "geometry_note": "Bremerhaven and New York endpoints and record are supported; this file avoids asserting unverified maiden passenger calls. The English Channel and Atlantic route are broad inferred corridors.",
+    "segments": [
+      {
+        "mode": "express liner",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-68739",
+        "anchors": [
+          {
+            "name": "Bremerhaven",
+            "lat": 53.55,
+            "lon": 8.58,
+            "note": "Maiden departure."
+          },
+          {
+            "name": "Helgoland Bight",
+            "lat": 54.05,
+            "lon": 7.9,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "North Sea",
+            "lat": 53,
+            "lon": 4,
+            "note": "Offshore control, not a logged fix."
+          },
+          {
+            "name": "Strait of Dover",
+            "lat": 51,
+            "lon": 1.2,
+            "note": "Channel passage control, not a logged fix."
+          },
+          {
+            "name": "Central English Channel",
+            "lat": 50,
+            "lon": -1,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Western Channel",
+            "lat": 49.8,
+            "lon": -3,
+            "note": "Sea control; not an asserted Cherbourg call."
+          },
+          {
+            "name": "Bishop Rock approaches",
+            "lat": 49.9,
+            "lon": -6.45,
+            "note": "Atlantic entry corridor, not a confirmed timed position."
+          },
+          {
+            "name": "Central North Atlantic",
+            "lat": 45,
+            "lon": -39,
+            "note": "Broad sea control, not a logged fix."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -71.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Ambrose approach",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Maiden destination."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ile-de-france-rescue-1956",
+    "rank": 23,
+    "title": "Île de France Andrea Doria rescue diversion",
+    "short_title": "Île de France",
+    "date": "1956-07-25–26",
+    "why_famous": "Turned back across the Atlantic and took aboard 753 Andrea Doria survivors.",
+    "route_summary": "New York eastbound–Andrea Doria rescue area–New York to land survivors–resumed voyage to Europe.",
+    "source_title": "U.S. Maritime Administration: Île de France Gallant Ship citation",
+    "source_url": "https://www.maritime.dot.gov/history/gallant-ship-award/ss-%C3%AEle-de-france",
+    "geometry_confidence": "medium",
+    "geometry_note": "MARAD confirms the eastbound turn, rescue, New York return, and later resumed Europe voyage. The precise turn point and later Europe landing port are not supplied, so the represented journey ends at the documented New York survivor disembarkation.",
+    "segments": [
+      {
+        "mode": "ocean liner",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.maritime.dot.gov/history/gallant-ship-award/ss-%C3%AEle-de-france",
+        "anchors": [
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Eastbound departure."
+          },
+          {
+            "name": "Ambrose approach",
+            "lat": 40.46,
+            "lon": -73.83,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "South of Long Island",
+            "lat": 40.3,
+            "lon": -72,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Andrea Doria rescue area",
+            "lat": 40.49,
+            "lon": -69.85,
+            "note": "Approximate collision/rescue vicinity; exact turn point not plotted."
+          }
+        ]
+      },
+      {
+        "mode": "rescue return",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.maritime.dot.gov/history/gallant-ship-award/ss-%C3%AEle-de-france",
+        "anchors": [
+          {
+            "name": "Andrea Doria rescue area",
+            "lat": 40.49,
+            "lon": -69.85,
+            "note": "Rescue vicinity."
+          },
+          {
+            "name": "New York",
+            "lat": 40.7,
+            "lon": -74.01,
+            "note": "Survivors disembarked."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hikawa-maru-chaplin-1932",
+    "rank": 24,
+    "title": "Hikawa Maru voyage with Charlie Chaplin",
+    "short_title": "Hikawa Maru",
+    "date": "1932-06",
+    "why_famous": "The preserved Japanese Pacific liner carried Charlie Chaplin from Japan to North America.",
+    "route_summary": "Yokohama–North Pacific–Seattle; intermediary calls on Chaplin's exact 1932 passage are unconfirmed.",
+    "source_title": "NYK Line Hikawa Maru Museum: ship history",
+    "source_url": "https://hikawamaru.nyk.com/en/history.html",
+    "geometry_confidence": "medium",
+    "geometry_note": "NYK explicitly confirms Chaplin traveled Yokohama to Seattle in June 1932. The usual Vancouver and occasional Honolulu stops are not asserted for his particular crossing; North Pacific controls are cartographic only.",
+    "segments": [
+      {
+        "mode": "Pacific liner",
+        "track_type": "historical-corridor",
+        "source_url": "https://hikawamaru.nyk.com/en/history.html",
+        "anchors": [
+          {
+            "name": "Yokohama",
+            "lat": 35.45,
+            "lon": 139.65,
+            "note": "Chaplin's documented boarding port."
+          },
+          {
+            "name": "Northwest Pacific",
+            "lat": 43,
+            "lon": 152,
+            "note": "Broad offshore corridor, not a logged fix."
+          },
+          {
+            "name": "Date Line sector",
+            "lat": 47,
+            "lon": 177,
+            "note": "Broad North Pacific corridor, not a logged fix."
+          },
+          {
+            "name": "Northeast Pacific",
+            "lat": 49,
+            "lon": -155,
+            "note": "Broad offshore corridor, not a logged fix."
+          },
+          {
+            "name": "Strait of Juan de Fuca entrance",
+            "lat": 48.3,
+            "lon": -124.7,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Strait of Juan de Fuca",
+            "lat": 48.3,
+            "lon": -123,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Puget Sound",
+            "lat": 47.8,
+            "lon": -122.45,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Seattle",
+            "lat": 47.6,
+            "lon": -122.34,
+            "note": "NYK-documented destination."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arctic-final-1854",
+    "rank": 25,
+    "title": "Arctic final Atlantic crossing",
+    "short_title": "Arctic",
+    "date": "1854-09-20–27",
+    "why_famous": "The Collins Line liner sank after a collision off Newfoundland, exposing catastrophic weaknesses in shipboard evacuation.",
+    "route_summary": "Liverpool–Atlantic–collision off Cape Race, Newfoundland; New York was the intended destination.",
+    "source_title": "Contemporary account: Morning Post, October 1854",
+    "source_url": "https://dai.mun.ca/pdfs/morningpost/MorningPost18541003.pdf",
+    "geometry_confidence": "medium",
+    "geometry_note": "Contemporary reports support Liverpool departure and a collision roughly 50–55 miles southeast of Cape Race. Reported position and distance do not align perfectly, so the last point is an approximate casualty area; New York is excluded from the sailed line.",
+    "segments": [
+      {
+        "mode": "steam liner",
+        "track_type": "historical-corridor",
+        "source_url": "https://dai.mun.ca/pdfs/morningpost/MorningPost18541003.pdf",
+        "anchors": [
+          {
+            "name": "Liverpool",
+            "lat": 53.4,
+            "lon": -3,
+            "note": "Last voyage departure."
+          },
+          {
+            "name": "Liverpool Bay",
+            "lat": 53.5,
+            "lon": -3.5,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Irish Sea",
+            "lat": 52.6,
+            "lon": -5.6,
+            "note": "Offshore sea control, not a logged fix."
+          },
+          {
+            "name": "St George's Channel",
+            "lat": 51.75,
+            "lon": -6.35,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "South of Ireland",
+            "lat": 51.35,
+            "lon": -8,
+            "note": "Cartographic sea control, not a logged fix."
+          },
+          {
+            "name": "Western Approaches",
+            "lat": 51,
+            "lon": -11,
+            "note": "Broad offshore control, not a logged fix."
+          },
+          {
+            "name": "Central North Atlantic",
+            "lat": 47.5,
+            "lon": -35,
+            "note": "Broad sea control, not a logged fix."
+          },
+          {
+            "name": "Collision southeast of Cape Race",
+            "lat": 46.3,
+            "lon": -52.6,
+            "note": "Approximate casualty area, not a surveyed wreck fix."
+          }
+        ]
+      }
+    ]
+  }
+]

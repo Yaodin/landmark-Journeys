@@ -1,0 +1,3509 @@
+[
+  {
+    "id": "river-powell-1869",
+    "rank": 1,
+    "title": "Powell's first Green–Colorado expedition",
+    "short_title": "Powell expedition",
+    "date": "1869-05-24 to 1869-08-30",
+    "why_famous": "The first recorded complete boat descent of the Green and Colorado canyons through the Grand Canyon by a U.S. scientific party.",
+    "route_summary": "Green River, Wyoming → Green River canyons → Colorado confluence → Grand Canyon → St. Thomas, Nevada.",
+    "source_title": "National Park Service — John Wesley Powell",
+    "source_url": "https://www.nps.gov/dino/learn/historyculture/john-wesley-powell.htm",
+    "geometry_confidence": "medium",
+    "geometry_note": "Named canyon and confluence anchors trace the pre-dam river corridor. Lake Flaming Gorge, Lake Powell, and Lake Mead now obscure major reaches; interpolated lines do not recover the 1869 channel.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/dino/learn/historyculture/john-wesley-powell.htm",
+        "anchors": [
+          {
+            "name": "Green River, Wyoming",
+            "lat": 41.528,
+            "lon": -109.466,
+            "note": "Expedition launch"
+          },
+          {
+            "name": "Flaming Gorge",
+            "lat": 40.917,
+            "lon": -109.423,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Gates of Lodore",
+            "lat": 40.738,
+            "lon": -108.889,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Yampa confluence",
+            "lat": 40.53,
+            "lon": -108.986,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Jensen",
+            "lat": 40.37,
+            "lon": -109.35,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Desolation Canyon",
+            "lat": 39.55,
+            "lon": -109.96,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Green River, Utah",
+            "lat": 38.995,
+            "lon": -110.157,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Mineral Bottom",
+            "lat": 38.566,
+            "lon": -109.999,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Green–Colorado confluence",
+            "lat": 38.19,
+            "lon": -109.88,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Cataract Canyon",
+            "lat": 37.96,
+            "lon": -110.02,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Hite Crossing",
+            "lat": 37.892,
+            "lon": -110.374,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Glen Canyon",
+            "lat": 37.43,
+            "lon": -110.72,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Lees Ferry",
+            "lat": 36.86,
+            "lon": -111.593,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Little Colorado confluence",
+            "lat": 36.194,
+            "lon": -111.798,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Phantom Ranch",
+            "lat": 36.102,
+            "lon": -112.096,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Diamond Creek",
+            "lat": 35.751,
+            "lon": -113.379,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Grand Wash Cliffs",
+            "lat": 36.12,
+            "lon": -113.94,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "St. Thomas, Nevada",
+            "lat": 36.468,
+            "lon": -114.363,
+            "note": "Journey endpoint; town later submerged"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-orellana-amazon-1542",
+    "rank": 2,
+    "title": "Orellana's Amazon descent",
+    "short_title": "Orellana's Amazon",
+    "date": "1541–1542",
+    "why_famous": "The first recorded European voyage from the Amazon headwaters to the Atlantic, documented by expedition chronicler Gaspar de Carvajal.",
+    "route_summary": "Napo/Curaray vicinity → Napo → Solimões/Amazon → Atlantic mouth.",
+    "source_title": "Museo de América — Proyecto Amazonas",
+    "source_url": "https://www.cultura.gob.es/museodeamerica/investigacion/proyectos/proyecto-amazonas2.html",
+    "geometry_confidence": "low",
+    "geometry_note": "The upper Napo start, 1542 channel, island passages, and exact Atlantic outlet are uncertain. Named modern confluences provide a broad corridor only.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.cultura.gob.es/museodeamerica/investigacion/proyectos/proyecto-amazonas2.html",
+        "anchors": [
+          {
+            "name": "Curaray–Napo vicinity",
+            "lat": -1.05,
+            "lon": -75.55,
+            "note": "Approximate departure vicinity"
+          },
+          {
+            "name": "Nuevo Rocafuerte",
+            "lat": -0.92,
+            "lon": -75.39,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Napo near Mazán",
+            "lat": -3.48,
+            "lon": -73.13,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Napo–Amazon confluence",
+            "lat": -3.46,
+            "lon": -72.78,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Benjamin Constant",
+            "lat": -4.38,
+            "lon": -70.03,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Leticia/Tabatinga",
+            "lat": -4.21,
+            "lon": -69.94,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Tonantins",
+            "lat": -2.87,
+            "lon": -67.8,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Tefé",
+            "lat": -3.35,
+            "lon": -64.72,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Coari",
+            "lat": -4.08,
+            "lon": -63.14,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Manaus / Rio Negro",
+            "lat": -3.14,
+            "lon": -59.95,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Itacoatiara",
+            "lat": -3.143,
+            "lon": -58.445,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Parintins",
+            "lat": -2.63,
+            "lon": -56.74,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Santarém / Tapajós",
+            "lat": -2.43,
+            "lon": -54.7,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Almeirim",
+            "lat": -1.52,
+            "lon": -52.58,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Gurupá",
+            "lat": -1.41,
+            "lon": -51.64,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Amazon estuary near Macapá",
+            "lat": 0.04,
+            "lon": -51.05,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "sea",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.cultura.gob.es/museodeamerica/investigacion/proyectos/proyecto-amazonas2.html",
+        "anchors": [
+          {
+            "name": "Amazon estuary near Macapá",
+            "lat": 0.04,
+            "lon": -51.05,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Atlantic outlet near North Channel",
+            "lat": 1.15,
+            "lon": -49.3,
+            "note": "Approximate ocean outlet"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-marquette-jolliet-1673",
+    "rank": 3,
+    "title": "Marquette–Jolliet Mississippi journey",
+    "short_title": "Marquette & Jolliet",
+    "date": "1673",
+    "why_famous": "Their account traced much of the Mississippi for France, building on longstanding Indigenous knowledge of its waterways.",
+    "route_summary": "Lake Michigan → Fox–Wisconsin portage → Mississippi to Arkansas River vicinity → Illinois River return.",
+    "source_title": "National Park Service — River of History",
+    "source_url": "https://home.nps.gov/miss/learn/historyculture/river-of-history-chapter-3.htm",
+    "geometry_confidence": "medium",
+    "geometry_note": "Portage and return are separate legs. River junctions are supported historically, while seventeenth-century channels and precise canoe tracks are not.",
+    "segments": [
+      {
+        "mode": "lake",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://home.nps.gov/miss/learn/historyculture/river-of-history-chapter-3.htm",
+        "anchors": [
+          {
+            "name": "St. Ignace",
+            "lat": 45.87,
+            "lon": -84.73,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Lake Michigan north shore",
+            "lat": 45.55,
+            "lon": -86.25,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Green Bay",
+            "lat": 44.52,
+            "lon": -88,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://home.nps.gov/miss/learn/historyculture/river-of-history-chapter-3.htm",
+        "anchors": [
+          {
+            "name": "Green Bay / Fox River",
+            "lat": 44.52,
+            "lon": -88,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "De Pere",
+            "lat": 44.45,
+            "lon": -88.06,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Lake Winnebago",
+            "lat": 44,
+            "lon": -88.54,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Oshkosh",
+            "lat": 44.02,
+            "lon": -88.54,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Berlin",
+            "lat": 43.97,
+            "lon": -88.94,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Portage, Wisconsin",
+            "lat": 43.54,
+            "lon": -89.46,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "portage",
+        "track_type": "historical-corridor",
+        "source_url": "https://home.nps.gov/miss/learn/historyculture/river-of-history-chapter-3.htm",
+        "anchors": [
+          {
+            "name": "Fox River portage",
+            "lat": 43.54,
+            "lon": -89.46,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Wisconsin River landing",
+            "lat": 43.53,
+            "lon": -89.47,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://home.nps.gov/miss/learn/historyculture/river-of-history-chapter-3.htm",
+        "anchors": [
+          {
+            "name": "Portage on Wisconsin River",
+            "lat": 43.53,
+            "lon": -89.47,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Wisconsin Dells",
+            "lat": 43.64,
+            "lon": -89.78,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Prairie du Sac",
+            "lat": 43.29,
+            "lon": -89.73,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Prairie du Chien / Mississippi",
+            "lat": 43.053,
+            "lon": -91.156,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Dubuque",
+            "lat": 42.5,
+            "lon": -90.67,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Quad Cities",
+            "lat": 41.51,
+            "lon": -90.57,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Hannibal",
+            "lat": 39.71,
+            "lon": -91.36,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "St. Louis",
+            "lat": 38.63,
+            "lon": -90.19,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Cape Girardeau",
+            "lat": 37.31,
+            "lon": -89.52,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Memphis",
+            "lat": 35.15,
+            "lon": -90.05,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Arkansas River confluence",
+            "lat": 33.77,
+            "lon": -91.08,
+            "note": "Approximate turn point"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://home.nps.gov/miss/learn/historyculture/river-of-history-chapter-3.htm",
+        "anchors": [
+          {
+            "name": "Arkansas River confluence",
+            "lat": 33.77,
+            "lon": -91.08,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Memphis",
+            "lat": 35.15,
+            "lon": -90.05,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Cape Girardeau",
+            "lat": 37.31,
+            "lon": -89.52,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Illinois River confluence",
+            "lat": 38.97,
+            "lon": -90.44,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Pere Marquette / lower Illinois",
+            "lat": 39.02,
+            "lon": -90.47,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Peoria",
+            "lat": 40.69,
+            "lon": -89.58,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "La Salle / Illinois",
+            "lat": 41.33,
+            "lon": -89.09,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Des Plaines approach",
+            "lat": 41.58,
+            "lon": -88.08,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "portage",
+        "track_type": "historical-corridor",
+        "source_url": "https://home.nps.gov/miss/learn/historyculture/river-of-history-chapter-3.htm",
+        "anchors": [
+          {
+            "name": "Des Plaines approach",
+            "lat": 41.58,
+            "lon": -88.08,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Chicago Portage",
+            "lat": 41.78,
+            "lon": -87.84,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Lake Michigan shore",
+            "lat": 41.88,
+            "lon": -87.62,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-lasalle-mississippi-1682",
+    "rank": 4,
+    "title": "La Salle's Mississippi descent",
+    "short_title": "La Salle's descent",
+    "date": "1682",
+    "why_famous": "La Salle reached the Gulf of Mexico and claimed the Mississippi basin for France as Louisiana.",
+    "route_summary": "Illinois River country → Mississippi → Gulf of Mexico.",
+    "source_title": "National Park Service — La Salle and Louisiana",
+    "source_url": "https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm",
+    "geometry_confidence": "medium",
+    "geometry_note": "The river course is anchored by known confluences and settlements. Exact 1682 channels and the party's distributary through the delta are unresolved.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm",
+        "anchors": [
+          {
+            "name": "Starved Rock / Illinois River",
+            "lat": 41.32,
+            "lon": -89,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort Crèvecoeur / Peoria",
+            "lat": 40.67,
+            "lon": -89.58,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Illinois–Mississippi confluence",
+            "lat": 38.97,
+            "lon": -90.44,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "St. Louis",
+            "lat": 38.63,
+            "lon": -90.19,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Cape Girardeau",
+            "lat": 37.31,
+            "lon": -89.52,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Memphis",
+            "lat": 35.15,
+            "lon": -90.05,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Arkansas River confluence",
+            "lat": 33.77,
+            "lon": -91.08,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Vicksburg",
+            "lat": 32.35,
+            "lon": -90.88,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Natchez",
+            "lat": 31.56,
+            "lon": -91.4,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Baton Rouge",
+            "lat": 30.45,
+            "lon": -91.19,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "New Orleans area",
+            "lat": 29.95,
+            "lon": -90.07,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Mississippi Delta mouth",
+            "lat": 29.13,
+            "lon": -89.25,
+            "note": "Distributary approximate"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-fulton-clermont-1807",
+    "rank": 5,
+    "title": "Fulton's North River Steamboat",
+    "short_title": "Fulton's steamboat",
+    "date": "1807-08-17",
+    "why_famous": "Its New York to Albany service made steam propulsion commercially credible on the Hudson River.",
+    "route_summary": "New York City → Livingston estate at Clermont → Albany → return.",
+    "source_title": "Smithsonian — Fulton's firsthand account",
+    "source_url": "https://americanexperience.si.edu/historical-eras/industrial-united-states/pair-iron-mine-storm-king/",
+    "geometry_confidence": "high",
+    "geometry_note": "Documented terminals and river towns; exact 1807 ferry channel and landing at Clermont are approximate.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://americanexperience.si.edu/historical-eras/industrial-united-states/pair-iron-mine-storm-king/",
+        "anchors": [
+          {
+            "name": "New York City",
+            "lat": 40.71,
+            "lon": -74.01,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Yonkers",
+            "lat": 40.93,
+            "lon": -73.9,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Tarrytown",
+            "lat": 41.08,
+            "lon": -73.86,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "West Point",
+            "lat": 41.39,
+            "lon": -73.96,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Newburgh",
+            "lat": 41.5,
+            "lon": -74.01,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Poughkeepsie",
+            "lat": 41.7,
+            "lon": -73.94,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Kingston",
+            "lat": 41.93,
+            "lon": -73.96,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Clermont / Livingston estate",
+            "lat": 42.09,
+            "lon": -73.91,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Hudson",
+            "lat": 42.25,
+            "lon": -73.8,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Albany",
+            "lat": 42.65,
+            "lon": -73.75,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://americanexperience.si.edu/historical-eras/industrial-united-states/pair-iron-mine-storm-king/",
+        "anchors": [
+          {
+            "name": "Albany",
+            "lat": 42.65,
+            "lon": -73.75,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Clermont / Livingston estate",
+            "lat": 42.09,
+            "lon": -73.91,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Poughkeepsie",
+            "lat": 41.7,
+            "lon": -73.94,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "West Point",
+            "lat": 41.39,
+            "lon": -73.96,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "New York City",
+            "lat": 40.71,
+            "lon": -74.01,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-lewis-clark-1804",
+    "rank": 6,
+    "title": "Lewis and Clark's Missouri–Columbia journey",
+    "short_title": "Lewis & Clark",
+    "date": "1804–1806",
+    "why_famous": "The federally backed expedition crossed North America to the Pacific and kept detailed journals and maps.",
+    "route_summary": "St. Louis → Missouri River → continental divide portage → Clearwater, Snake, Columbia → Pacific coast.",
+    "source_title": "National Park Service — Lewis and Clark journey",
+    "source_url": "https://home.nps.gov/lewi/learn/historyculture/journey.htm",
+    "geometry_confidence": "medium",
+    "geometry_note": "Outbound route only. River anchors trace a well documented sequence, but meanders, portages, and channel alignments are simplified.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://home.nps.gov/lewi/learn/historyculture/journey.htm",
+        "anchors": [
+          {
+            "name": "Camp Dubois / St. Louis area",
+            "lat": 38.82,
+            "lon": -90.12,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Missouri River near St. Charles",
+            "lat": 38.78,
+            "lon": -90.49,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Jefferson City",
+            "lat": 38.58,
+            "lon": -92.17,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Kansas City",
+            "lat": 39.11,
+            "lon": -94.62,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "St. Joseph",
+            "lat": 39.77,
+            "lon": -94.86,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Council Bluffs",
+            "lat": 41.26,
+            "lon": -95.94,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Sioux City",
+            "lat": 42.5,
+            "lon": -96.4,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Yankton",
+            "lat": 42.87,
+            "lon": -97.4,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Chamberlain",
+            "lat": 43.81,
+            "lon": -99.33,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Pierre",
+            "lat": 44.37,
+            "lon": -100.35,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Mobridge",
+            "lat": 45.54,
+            "lon": -100.43,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort Mandan",
+            "lat": 47.28,
+            "lon": -101.07,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort Union / Yellowstone confluence",
+            "lat": 47.98,
+            "lon": -104.04,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort Peck",
+            "lat": 48,
+            "lon": -106.45,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort Benton",
+            "lat": 47.82,
+            "lon": -110.67,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Great Falls",
+            "lat": 47.5,
+            "lon": -111.3,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Three Forks",
+            "lat": 45.92,
+            "lon": -111.55,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Beaverhead River",
+            "lat": 45.17,
+            "lon": -112.36,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "overland",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/teachers/classrooms/upload/TwHP-Lessons_108lewisclark.pdf",
+        "anchors": [
+          {
+            "name": "Beaverhead River",
+            "lat": 45.17,
+            "lon": -112.36,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Lemhi Pass",
+            "lat": 44.97,
+            "lon": -113.45,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Bitterroot Valley",
+            "lat": 46.18,
+            "lon": -114.12,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Lolo Pass",
+            "lat": 46.63,
+            "lon": -114.58,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Weippe Prairie",
+            "lat": 46.37,
+            "lon": -115.94,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Canoe Camp / Clearwater",
+            "lat": 46.44,
+            "lon": -116.81,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://home.nps.gov/lewi/learn/historyculture/journey.htm",
+        "anchors": [
+          {
+            "name": "Canoe Camp / Clearwater",
+            "lat": 46.44,
+            "lon": -116.81,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Lewiston / Snake confluence",
+            "lat": 46.42,
+            "lon": -117.02,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Lower Granite reach",
+            "lat": 46.66,
+            "lon": -117.43,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Tri-Cities / Columbia confluence",
+            "lat": 46.21,
+            "lon": -119.09,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "The Dalles",
+            "lat": 45.6,
+            "lon": -121.19,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Cascades",
+            "lat": 45.66,
+            "lon": -121.91,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Vancouver",
+            "lat": 45.63,
+            "lon": -122.67,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Columbia mouth",
+            "lat": 46.25,
+            "lon": -123.99,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort Clatsop / Pacific",
+            "lat": 46.13,
+            "lon": -123.88,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-stanley-congo-1877",
+    "rank": 7,
+    "title": "Stanley's Lualaba–Congo descent",
+    "short_title": "Stanley's Congo",
+    "date": "1876–1877",
+    "why_famous": "The expedition demonstrated that the Lualaba drained west into the Congo and followed it toward the Atlantic.",
+    "route_summary": "Nyangwe → Lualaba → Kisangani/Stanley Falls → middle Congo → Pool Malebo → lower Congo → Atlantic.",
+    "source_title": "Library of Congress — Through the Dark Continent",
+    "source_url": "https://www.loc.gov/item/2021666780/",
+    "geometry_confidence": "low",
+    "geometry_note": "This is a broad named-river reconstruction. Rapids, forced carries, uncertain nineteenth-century channels, and contested local place names prevent a precise track.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/item/2021666780/",
+        "anchors": [
+          {
+            "name": "Nyangwe",
+            "lat": -4.23,
+            "lon": 26.08,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Kindu",
+            "lat": -2.95,
+            "lon": 25.92,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Ubundu",
+            "lat": -0.36,
+            "lon": 25.45,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Kisangani / Stanley Falls",
+            "lat": 0.52,
+            "lon": 25.2,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Isangi",
+            "lat": 0.79,
+            "lon": 24.28,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Basoko",
+            "lat": 1.23,
+            "lon": 23.62,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Bumba",
+            "lat": 2.18,
+            "lon": 22.47,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Lisala",
+            "lat": 2.14,
+            "lon": 21.52,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Mbandaka",
+            "lat": 0.05,
+            "lon": 18.26,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Lukolela",
+            "lat": -1.06,
+            "lon": 17.19,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Bolobo",
+            "lat": -2.16,
+            "lon": 16.23,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Pool Malebo / Kinshasa",
+            "lat": -4.32,
+            "lon": 15.3,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river and portage",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/item/2021666780/",
+        "anchors": [
+          {
+            "name": "Pool Malebo / Kinshasa",
+            "lat": -4.32,
+            "lon": 15.3,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Kongo Central cataracts",
+            "lat": -5.15,
+            "lon": 14.23,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Matadi",
+            "lat": -5.82,
+            "lon": 13.45,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Boma",
+            "lat": -5.85,
+            "lon": 13.05,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Banana / Atlantic",
+            "lat": -6,
+            "lon": 12.4,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-roosevelt-rondon-1914",
+    "rank": 8,
+    "title": "Roosevelt–Rondon River of Doubt expedition",
+    "short_title": "River of Doubt",
+    "date": "1914",
+    "why_famous": "Roosevelt and Rondon charted a little known Amazon tributary during a dangerous downstream expedition.",
+    "route_summary": "Rio da Dúvida headwaters → Rio Roosevelt → Aripuanã confluence.",
+    "source_title": "Library of Congress — Roosevelt–Rondon guide",
+    "source_url": "https://guides.loc.gov/brazil-us-relations/roosevelt-rondon-expedition",
+    "geometry_confidence": "low",
+    "geometry_note": "The upper river's exact launch and 1914 camps are not georeferenced here. Broad waypoints indicate the surveyed corridor through central Amazonia, not observed positions.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://guides.loc.gov/brazil-us-relations/roosevelt-rondon-expedition",
+        "anchors": [
+          {
+            "name": "Rio da Dúvida headwaters",
+            "lat": -12.52,
+            "lon": -60.95,
+            "note": "Very approximate launch area"
+          },
+          {
+            "name": "Mato Grosso upper reach",
+            "lat": -11.8,
+            "lon": -60.83,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Upper Rio Roosevelt",
+            "lat": -10.45,
+            "lon": -60.88,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Middle Rio Roosevelt",
+            "lat": -9.2,
+            "lon": -60.95,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Rio Roosevelt forest reach",
+            "lat": -7.85,
+            "lon": -60.78,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Aripuanã confluence",
+            "lat": -7.575,
+            "lon": -60.672,
+            "note": "Modern confluence; historic river camps unresolved"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-humboldt-casiquiare-1800",
+    "rank": 9,
+    "title": "Humboldt–Bonpland Orinoco/Casiquiare circuit",
+    "short_title": "Humboldt circuit",
+    "date": "1800",
+    "why_famous": "The journey documented the natural Casiquiare water connection between the Orinoco and Amazon basins.",
+    "route_summary": "Apure → Orinoco → Atabapo → Rio Negro → Casiquiare → upper Orinoco.",
+    "source_title": "Humboldt digital edition — 1800 itinerary",
+    "source_url": "https://edition-humboldt.de/chronologie/index.xql?jahr=1800&view=f",
+    "geometry_confidence": "medium",
+    "geometry_note": "The documented circuit is reconstructed at named confluences. Remote side channels and nineteenth-century river courses are approximate.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://edition-humboldt.de/chronologie/index.xql?jahr=1800&view=f",
+        "anchors": [
+          {
+            "name": "San Fernando de Apure",
+            "lat": 7.89,
+            "lon": -67.47,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Apure–Orinoco confluence",
+            "lat": 7.53,
+            "lon": -66.55,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Caicara del Orinoco",
+            "lat": 7.63,
+            "lon": -66.17,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Atures / Puerto Ayacucho",
+            "lat": 5.66,
+            "lon": -67.62,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Orinoco–Atabapo confluence",
+            "lat": 3.9,
+            "lon": -67.94,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "San Fernando de Atabapo",
+            "lat": 4.05,
+            "lon": -67.7,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Atabapo upper reach",
+            "lat": 3.5,
+            "lon": -67.25,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Yavita / Temi River",
+            "lat": 2.92245,
+            "lon": -67.43592,
+            "note": "Canoe portage began here at the Atabapo–Temi headwaters"
+          }
+        ]
+      },
+      {
+        "mode": "portage",
+        "track_type": "source-derived",
+        "source_url": "https://darwin-online.org.uk/converted/Ancillary/BeagleLibrary/1819-29_Humboldt_A597.5a.html",
+        "anchors": [
+          {
+            "name": "Yavita / Temi River",
+            "lat": 2.92245,
+            "lon": -67.43592,
+            "note": "Humboldt described carrying the boats across the divide"
+          },
+          {
+            "name": "Pimichín landing",
+            "lat": 2.86028,
+            "lon": -67.53556,
+            "note": "Canoes relaunched on a Río Negro tributary"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://edition-humboldt.de/chronologie/index.xql?jahr=1800&view=f",
+        "anchors": [
+          {
+            "name": "Pimichín landing",
+            "lat": 2.86028,
+            "lon": -67.53556,
+            "note": "Canoes relaunched after the portage"
+          },
+          {
+            "name": "Rio Negro / San Carlos",
+            "lat": 1.92,
+            "lon": -67.06,
+            "note": "Rio Negro destination before ascending the Casiquiare"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://edition-humboldt.de/chronologie/index.xql?jahr=1800&view=f",
+        "anchors": [
+          {
+            "name": "Rio Negro / San Carlos",
+            "lat": 1.92,
+            "lon": -67.06,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Casiquiare mouth",
+            "lat": 2.02,
+            "lon": -67.11,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Casiquiare middle reach",
+            "lat": 2.56,
+            "lon": -66.9,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Casiquiare bifurcation",
+            "lat": 3.13,
+            "lon": -65.88,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Upper Orinoco",
+            "lat": 3.74,
+            "lon": -65.73,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Esmeralda",
+            "lat": 3.17,
+            "lon": -65.54,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-la-condamine-amazon-1744",
+    "rank": 10,
+    "title": "La Condamine's Amazon survey",
+    "short_title": "La Condamine",
+    "date": "1743–1744",
+    "why_famous": "La Condamine's scientific descent produced a longitude based map of the navigable Amazon.",
+    "route_summary": "Jaén/Borja → Marañón/Amazon → Pará/Belém → Atlantic transfer toward Cayenne.",
+    "source_title": "Bibliothèque nationale de France — La Condamine map",
+    "source_url": "https://catalogue.bnf.fr/ark%3A/12148/cb40622019t",
+    "geometry_confidence": "medium",
+    "geometry_note": "Amazon riverway anchored by named towns and tributary junctions; eighteenth-century channels and the transfer from the Amazon mouth to Cayenne are approximate.",
+    "segments": [
+      {
+        "mode": "overland",
+        "track_type": "historical-corridor",
+        "source_url": "https://catalogue.bnf.fr/ark%3A/12148/cb40622019t",
+        "anchors": [
+          {
+            "name": "Jaén, Peru",
+            "lat": -5.7,
+            "lon": -78.81,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Borja / Marañón",
+            "lat": -4.37,
+            "lon": -77.67,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://catalogue.bnf.fr/ark%3A/12148/cb40622019t",
+        "anchors": [
+          {
+            "name": "Borja / Marañón",
+            "lat": -4.37,
+            "lon": -77.67,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Marañón near Nauta",
+            "lat": -4.5,
+            "lon": -73.58,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Nauta / Ucayali confluence",
+            "lat": -4.51,
+            "lon": -73.57,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Iquitos",
+            "lat": -3.75,
+            "lon": -73.25,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Leticia",
+            "lat": -4.21,
+            "lon": -69.94,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Tefé",
+            "lat": -3.35,
+            "lon": -64.72,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Manaus",
+            "lat": -3.14,
+            "lon": -59.95,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Itacoatiara",
+            "lat": -3.143,
+            "lon": -58.445,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Parintins",
+            "lat": -2.63,
+            "lon": -56.74,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Santarém",
+            "lat": -2.43,
+            "lon": -54.7,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Almeirim",
+            "lat": -1.52,
+            "lon": -52.58,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Gurupá",
+            "lat": -1.41,
+            "lon": -51.64,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Belém",
+            "lat": -1.455,
+            "lon": -48.49,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "sea",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://catalogue.bnf.fr/ark%3A/12148/cb40622019t",
+        "anchors": [
+          {
+            "name": "Belém",
+            "lat": -1.455,
+            "lon": -48.49,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Atlantic off Amapá",
+            "lat": 1.3,
+            "lon": -49.05,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Cayenne",
+            "lat": 4.94,
+            "lon": -52.33,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-teixeira-amazon-1639",
+    "rank": 11,
+    "title": "Pedro Teixeira's Amazon ascent and return",
+    "short_title": "Teixeira's Amazon",
+    "date": "1637–1639",
+    "why_famous": "The Portuguese expedition traversed the Amazon from Pará toward the Andes and returned, extending colonial knowledge and claims.",
+    "route_summary": "Pará/Belém → Amazon → Napo → Quito region → return to Pará.",
+    "source_title": "Library of Congress — Portugal country study",
+    "source_url": "https://tile.loc.gov/storage-services/master/frd/frdcstdy/po/portugalcountrys00sols_0/portugalcountrys00sols_0.pdf",
+    "geometry_confidence": "low",
+    "geometry_note": "The full expedition's land route to Quito and river courses are simplified. Historic distributaries and return path are not recoverable from these city anchors.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://tile.loc.gov/storage-services/master/frd/frdcstdy/po/portugalcountrys00sols_0/portugalcountrys00sols_0.pdf",
+        "anchors": [
+          {
+            "name": "Belém / Pará",
+            "lat": -1.455,
+            "lon": -48.49,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Gurupá",
+            "lat": -1.41,
+            "lon": -51.64,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Almeirim",
+            "lat": -1.52,
+            "lon": -52.58,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Santarém",
+            "lat": -2.43,
+            "lon": -54.7,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Parintins",
+            "lat": -2.63,
+            "lon": -56.74,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Manaus",
+            "lat": -3.14,
+            "lon": -59.95,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Tefé",
+            "lat": -3.35,
+            "lon": -64.72,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Leticia",
+            "lat": -4.21,
+            "lon": -69.94,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Napo–Amazon confluence",
+            "lat": -3.46,
+            "lon": -72.78,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Nuevo Rocafuerte",
+            "lat": -0.92,
+            "lon": -75.39,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Coca / Napo",
+            "lat": -0.47,
+            "lon": -76.986,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "overland",
+        "track_type": "historical-corridor",
+        "source_url": "https://tile.loc.gov/storage-services/master/frd/frdcstdy/po/portugalcountrys00sols_0/portugalcountrys00sols_0.pdf",
+        "anchors": [
+          {
+            "name": "Coca / Napo",
+            "lat": -0.47,
+            "lon": -76.986,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Quito",
+            "lat": -0.18,
+            "lon": -78.47,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "overland",
+        "track_type": "historical-corridor",
+        "source_url": "https://tile.loc.gov/storage-services/master/frd/frdcstdy/po/portugalcountrys00sols_0/portugalcountrys00sols_0.pdf",
+        "anchors": [
+          {
+            "name": "Quito",
+            "lat": -0.18,
+            "lon": -78.47,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Coca / Napo",
+            "lat": -0.47,
+            "lon": -76.986,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://tile.loc.gov/storage-services/master/frd/frdcstdy/po/portugalcountrys00sols_0/portugalcountrys00sols_0.pdf",
+        "anchors": [
+          {
+            "name": "Coca / Napo",
+            "lat": -0.47,
+            "lon": -76.986,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Nuevo Rocafuerte",
+            "lat": -0.92,
+            "lon": -75.39,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Napo–Amazon confluence",
+            "lat": -3.46,
+            "lon": -72.78,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Leticia",
+            "lat": -4.21,
+            "lon": -69.94,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Tefé",
+            "lat": -3.35,
+            "lon": -64.72,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Manaus",
+            "lat": -3.14,
+            "lon": -59.95,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Santarém",
+            "lat": -2.43,
+            "lon": -54.7,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Gurupá",
+            "lat": -1.41,
+            "lon": -51.64,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Belém / Pará",
+            "lat": -1.455,
+            "lon": -48.49,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-mackenzie-arctic-1789",
+    "rank": 12,
+    "title": "Mackenzie's Arctic river journey",
+    "short_title": "Mackenzie's Arctic",
+    "date": "1789",
+    "why_famous": "Mackenzie reached the Arctic Ocean by the great northern river that later took his name.",
+    "route_summary": "Fort Chipewyan → Lake Athabasca → Slave River → Great Slave Lake → Mackenzie/Dehcho → Arctic delta → return.",
+    "source_title": "Smithsonian Libraries — Mackenzie and Dene account",
+    "source_url": "https://www.si.edu/object/siris_sil_1098354",
+    "geometry_confidence": "medium",
+    "geometry_note": "Lakes, Slave River, Mackenzie/Dehcho, and return are distinct legs. Delta distributary and eighteenth-century camp positions remain uncertain.",
+    "segments": [
+      {
+        "mode": "lake",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.si.edu/object/siris_sil_1098354",
+        "anchors": [
+          {
+            "name": "Fort Chipewyan",
+            "lat": 58.72,
+            "lon": -111.15,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Lake Athabasca west end",
+            "lat": 59.02,
+            "lon": -111.48,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Slave River outlet",
+            "lat": 59.05,
+            "lon": -111.45,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.si.edu/object/siris_sil_1098354",
+        "anchors": [
+          {
+            "name": "Slave River outlet",
+            "lat": 59.05,
+            "lon": -111.45,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort Smith",
+            "lat": 60,
+            "lon": -111.89,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Great Slave Lake east inlet",
+            "lat": 61.25,
+            "lon": -113.58,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "lake",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.si.edu/object/siris_sil_1098354",
+        "anchors": [
+          {
+            "name": "Great Slave Lake east inlet",
+            "lat": 61.25,
+            "lon": -113.58,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Great Slave Lake north shore",
+            "lat": 61.98,
+            "lon": -114.37,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort Providence",
+            "lat": 61.35,
+            "lon": -117.66,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.si.edu/object/siris_sil_1098354",
+        "anchors": [
+          {
+            "name": "Fort Providence / Mackenzie start",
+            "lat": 61.35,
+            "lon": -117.66,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort Simpson",
+            "lat": 61.87,
+            "lon": -121.35,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Wrigley",
+            "lat": 63.23,
+            "lon": -123.51,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Norman Wells",
+            "lat": 65.28,
+            "lon": -126.83,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort Good Hope",
+            "lat": 66.26,
+            "lon": -128.64,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Tsiigehtchic",
+            "lat": 67.44,
+            "lon": -133.75,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Aklavik",
+            "lat": 68.22,
+            "lon": -135,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Mackenzie delta / Arctic",
+            "lat": 69.1,
+            "lon": -135.1,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.si.edu/object/siris_sil_1098354",
+        "anchors": [
+          {
+            "name": "Mackenzie delta / Arctic",
+            "lat": 69.1,
+            "lon": -135.1,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Aklavik",
+            "lat": 68.22,
+            "lon": -135,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Tsiigehtchic",
+            "lat": 67.44,
+            "lon": -133.75,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort Good Hope",
+            "lat": 66.26,
+            "lon": -128.64,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Norman Wells",
+            "lat": 65.28,
+            "lon": -126.83,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort Simpson",
+            "lat": 61.87,
+            "lon": -121.35,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort Providence",
+            "lat": 61.35,
+            "lon": -117.66,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "lake and river",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.si.edu/object/siris_sil_1098354",
+        "anchors": [
+          {
+            "name": "Fort Providence",
+            "lat": 61.35,
+            "lon": -117.66,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Great Slave Lake",
+            "lat": 61.98,
+            "lon": -114.37,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort Smith",
+            "lat": 60,
+            "lon": -111.89,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort Chipewyan",
+            "lat": 58.72,
+            "lon": -111.15,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-thompson-columbia-1811",
+    "rank": 13,
+    "title": "David Thompson's Columbia passage",
+    "short_title": "Thompson's Columbia",
+    "date": "1811",
+    "why_famous": "Thompson followed the Columbia to its Pacific mouth and mapped a major transcontinental trade waterway.",
+    "route_summary": "Kootenae House → overland to Kettle Falls → Columbia to Fort Astoria → river return to Boat Encampment.",
+    "source_title": "Parks Canada — David Thompson route guide",
+    "source_url": "https://parks.canada.ca/pn-np/bc/revelstoke/activ/~/media/pn-np/bc/revelstoke/visit/visit11/kookoosint-en.ashx",
+    "geometry_confidence": "medium",
+    "geometry_note": "Parks Canada identifies an overland approach from Kootenae House to the Columbia in present Washington. Approximate land waypoints and named river towns mark the corridor; reservoirs have submerged historical reaches.",
+    "segments": [
+      {
+        "mode": "overland",
+        "track_type": "historical-corridor",
+        "source_url": "https://parks.canada.ca/pn-np/bc/revelstoke/activ/~/media/pn-np/bc/revelstoke/visit/visit11/kookoosint-en.ashx",
+        "anchors": [
+          {
+            "name": "Kootenae House near Invermere",
+            "lat": 50.51,
+            "lon": -116.03,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Kootenay valley",
+            "lat": 49.51,
+            "lon": -115.77,
+            "note": "Approximate southward approach"
+          },
+          {
+            "name": "Spokane country",
+            "lat": 47.66,
+            "lon": -117.43,
+            "note": "Approximate overland corridor"
+          },
+          {
+            "name": "Kettle Falls",
+            "lat": 48.6,
+            "lon": -118.08,
+            "note": "Columbia River put-in"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://parks.canada.ca/pn-np/bc/revelstoke/activ/~/media/pn-np/bc/revelstoke/visit/visit11/kookoosint-en.ashx",
+        "anchors": [
+          {
+            "name": "Kettle Falls",
+            "lat": 48.6,
+            "lon": -118.08,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Spokane River confluence",
+            "lat": 47.9,
+            "lon": -118.13,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Wenatchee",
+            "lat": 47.42,
+            "lon": -120.31,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Priest Rapids",
+            "lat": 46.65,
+            "lon": -119.94,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Tri-Cities",
+            "lat": 46.22,
+            "lon": -119.1,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Umatilla",
+            "lat": 45.92,
+            "lon": -119.34,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "The Dalles",
+            "lat": 45.6,
+            "lon": -121.19,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Cascades",
+            "lat": 45.66,
+            "lon": -121.91,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Vancouver",
+            "lat": 45.63,
+            "lon": -122.67,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Astoria / Fort Astoria",
+            "lat": 46.19,
+            "lon": -123.83,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://parks.canada.ca/pn-np/bc/revelstoke/activ/~/media/pn-np/bc/revelstoke/visit/visit11/kookoosint-en.ashx",
+        "anchors": [
+          {
+            "name": "Astoria / Fort Astoria",
+            "lat": 46.19,
+            "lon": -123.83,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Vancouver",
+            "lat": 45.63,
+            "lon": -122.67,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "The Dalles",
+            "lat": 45.6,
+            "lon": -121.19,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Tri-Cities",
+            "lat": 46.22,
+            "lon": -119.1,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Wenatchee",
+            "lat": 47.42,
+            "lon": -120.31,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Kettle Falls",
+            "lat": 48.6,
+            "lon": -118.08,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Castlegar",
+            "lat": 49.32,
+            "lon": -117.67,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Arrow Lakes",
+            "lat": 50.2,
+            "lon": -117.8,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Revelstoke",
+            "lat": 50.99,
+            "lon": -118.2,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Boat Encampment",
+            "lat": 52.13,
+            "lon": -118.34,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-fraser-1808",
+    "rank": 14,
+    "title": "Simon Fraser's Fraser River descent",
+    "short_title": "Fraser's descent",
+    "date": "1808",
+    "why_famous": "Fraser and his party traversed the formidable canyon of the river later named for him, reaching its Pacific mouth.",
+    "route_summary": "Fort George/Prince George → Fraser Canyon → Fraser Delta → return.",
+    "source_title": "Parks Canada — Simon Fraser history",
+    "source_url": "https://parks.canada.ca/lhn-nhs/bc/stjames/visit/directions/visit5",
+    "geometry_confidence": "medium",
+    "geometry_note": "River course follows present named reaches and settlements. Historic canyon passages, tidal delta branches, and the upriver return are schematic.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://parks.canada.ca/lhn-nhs/bc/stjames/visit/directions/visit5",
+        "anchors": [
+          {
+            "name": "Fort George / Prince George",
+            "lat": 53.92,
+            "lon": -122.75,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Quesnel",
+            "lat": 52.98,
+            "lon": -122.49,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Alexandria",
+            "lat": 52.6,
+            "lon": -122.44,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Soda Creek",
+            "lat": 52.34,
+            "lon": -122.27,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Chilcotin confluence",
+            "lat": 51.07,
+            "lon": -122.3,
+            "note": "Approximate Fraser River junction"
+          },
+          {
+            "name": "Lillooet",
+            "lat": 50.69,
+            "lon": -121.94,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Boston Bar",
+            "lat": 49.86,
+            "lon": -121.44,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Hell's Gate",
+            "lat": 49.77,
+            "lon": -121.44,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Yale",
+            "lat": 49.56,
+            "lon": -121.43,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Hope",
+            "lat": 49.38,
+            "lon": -121.44,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Chilliwack",
+            "lat": 49.16,
+            "lon": -121.95,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Mission",
+            "lat": 49.13,
+            "lon": -122.31,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "New Westminster",
+            "lat": 49.21,
+            "lon": -122.91,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fraser mouth",
+            "lat": 49.1,
+            "lon": -123.12,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://parks.canada.ca/lhn-nhs/bc/stjames/visit/directions/visit5",
+        "anchors": [
+          {
+            "name": "Fraser mouth",
+            "lat": 49.1,
+            "lon": -123.12,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "New Westminster",
+            "lat": 49.21,
+            "lon": -122.91,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Mission",
+            "lat": 49.13,
+            "lon": -122.31,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Hope",
+            "lat": 49.38,
+            "lon": -121.44,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Yale",
+            "lat": 49.56,
+            "lon": -121.43,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Hell's Gate",
+            "lat": 49.77,
+            "lon": -121.44,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Lillooet",
+            "lat": 50.69,
+            "lon": -121.94,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Quesnel",
+            "lat": 52.98,
+            "lon": -122.49,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort George / Prince George",
+            "lat": 53.92,
+            "lon": -122.75,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-mekong-commission-1866",
+    "rank": 15,
+    "title": "French Mekong exploration commission",
+    "short_title": "Mekong commission",
+    "date": "1866–1868",
+    "why_famous": "The commission mapped the Mekong basin and showed that its cataracts frustrated hopes of a continuous trade route to China.",
+    "route_summary": "Saigon → Cambodia and Mekong → Laos → Yunnan overland → Red/Yangtze rivers → Shanghai.",
+    "source_title": "BnF — Mekong expedition itinerary map",
+    "source_url": "https://catalogue.bnf.fr/ark%3A/12148/cb406986975",
+    "geometry_confidence": "medium",
+    "geometry_note": "The mission changed modes repeatedly. Lower Mekong, upper Mekong, overland Yunnan, and Yangtze legs are separated; exact 1860s channels and inland paths remain approximate.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://catalogue.bnf.fr/ark%3A/12148/cb406986975",
+        "anchors": [
+          {
+            "name": "Saigon",
+            "lat": 10.82,
+            "lon": 106.63,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Mekong Delta / My Tho",
+            "lat": 10.36,
+            "lon": 106.37,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Vinh Long",
+            "lat": 10.25,
+            "lon": 105.97,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Chau Doc",
+            "lat": 10.71,
+            "lon": 105.12,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Phnom Penh",
+            "lat": 11.56,
+            "lon": 104.93,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Kampong Cham",
+            "lat": 11.99,
+            "lon": 105.46,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Kratie",
+            "lat": 12.49,
+            "lon": 106.02,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Stung Treng",
+            "lat": 13.53,
+            "lon": 106,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Khone Falls",
+            "lat": 13.97,
+            "lon": 105.93,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "portage",
+        "track_type": "historical-corridor",
+        "source_url": "https://digital.library.cornell.edu/catalog/sea011a",
+        "anchors": [
+          {
+            "name": "Khone Falls",
+            "lat": 13.97,
+            "lon": 105.93,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Champasak",
+            "lat": 14.89,
+            "lon": 105.88,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://digital.library.cornell.edu/catalog/sea011a",
+        "anchors": [
+          {
+            "name": "Champasak",
+            "lat": 14.89,
+            "lon": 105.88,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Pakse",
+            "lat": 15.12,
+            "lon": 105.8,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Savannakhet",
+            "lat": 16.55,
+            "lon": 104.75,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Thakhek",
+            "lat": 17.4,
+            "lon": 104.8,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Vientiane",
+            "lat": 17.96,
+            "lon": 102.61,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Pak Lay",
+            "lat": 18.2,
+            "lon": 101.42,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Luang Prabang",
+            "lat": 19.89,
+            "lon": 102.14,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Pakbeng",
+            "lat": 19.89,
+            "lon": 101.13,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Huay Xai",
+            "lat": 20.28,
+            "lon": 100.41,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Golden Triangle",
+            "lat": 20.35,
+            "lon": 100.08,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Xieng Kok",
+            "lat": 20.84,
+            "lon": 100.6,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "overland",
+        "track_type": "historical-corridor",
+        "source_url": "https://digital.library.cornell.edu/catalog/sea011a",
+        "anchors": [
+          {
+            "name": "Xieng Kok",
+            "lat": 20.84,
+            "lon": 100.6,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Jinghong",
+            "lat": 22.01,
+            "lon": 100.8,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Simao / Pu'er",
+            "lat": 22.79,
+            "lon": 100.97,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Kunming / Yunnan-fu",
+            "lat": 25.04,
+            "lon": 102.71,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Zhaotong",
+            "lat": 27.34,
+            "lon": 103.72,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Chongqing",
+            "lat": 29.56,
+            "lon": 106.55,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://catalogue.bnf.fr/ark%3A/12148/cb406986975",
+        "anchors": [
+          {
+            "name": "Chongqing",
+            "lat": 29.56,
+            "lon": 106.55,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Yichang",
+            "lat": 30.69,
+            "lon": 111.29,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Wuhan / Hankou",
+            "lat": 30.58,
+            "lon": 114.3,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Nanjing",
+            "lat": 32.06,
+            "lon": 118.8,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Shanghai",
+            "lat": 31.23,
+            "lon": 121.47,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-livingstone-zambezi-1858",
+    "rank": 16,
+    "title": "Livingstone's Zambezi and Shire expedition",
+    "short_title": "Livingstone's Zambezi",
+    "date": "1858–1864",
+    "why_famous": "The expedition surveyed the Zambezi and Shire river systems as possible routes into inland southeast Africa.",
+    "route_summary": "Zambezi delta → lower Zambezi → Shire River → Lake Nyasa, with multiple excursions.",
+    "source_title": "Library of Congress — Narrative of an Expedition to the Zambesi",
+    "source_url": "https://www.loc.gov/resource/gdc.05015249/",
+    "geometry_confidence": "medium",
+    "geometry_note": "The expedition made repeated trips; this is a representative connected river and lake itinerary, not a single continuous voyage. Delta and Shire channels are approximate.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/resource/gdc.05015249/",
+        "anchors": [
+          {
+            "name": "Zambezi delta / Chinde",
+            "lat": -18.58,
+            "lon": 36.47,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Marromeu",
+            "lat": -18.28,
+            "lon": 35.95,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Caia",
+            "lat": -17.83,
+            "lon": 35.33,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Sena",
+            "lat": -17.45,
+            "lon": 35.04,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Tete",
+            "lat": -16.16,
+            "lon": 33.59,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Cahora Bassa reach",
+            "lat": -15.62,
+            "lon": 32.76,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/resource/gdc.05015249/",
+        "anchors": [
+          {
+            "name": "Shire–Zambezi confluence",
+            "lat": -17.75,
+            "lon": 35.31,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Chikwawa",
+            "lat": -16.03,
+            "lon": 34.8,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Matope",
+            "lat": -15.96,
+            "lon": 35.03,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Murchison Cataracts / Shire",
+            "lat": -15.53,
+            "lon": 35.28,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Liwonde",
+            "lat": -15.06,
+            "lon": 35.23,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Mangochi",
+            "lat": -14.48,
+            "lon": 35.27,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Lake Nyasa south end",
+            "lat": -14.4,
+            "lon": 35.2,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-mungo-park-niger-1805",
+    "rank": 17,
+    "title": "Mungo Park's final Niger expedition",
+    "short_title": "Mungo Park's Niger",
+    "date": "1805–1806",
+    "why_famous": "Park's attempt to follow the Niger to the sea ended at the rapids near Bussa.",
+    "route_summary": "Upper Niger near Bamako → Timbuktu bend → downstream to Bussa.",
+    "source_title": "Library of Congress — Nigeria country study",
+    "source_url": "https://tile.loc.gov/storage-services/master/frd/frdcstdy/ni/nigeriacountryst00metz_0/nigeriacountryst00metz_0.pdf",
+    "geometry_confidence": "low",
+    "geometry_note": "Surviving accounts establish major reaches and the Bussa endpoint but not an exact 1805–06 track. The broad Niger bend is reconstructed with modern place anchors.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://tile.loc.gov/storage-services/master/frd/frdcstdy/ni/nigeriacountryst00metz_0/nigeriacountryst00metz_0.pdf",
+        "anchors": [
+          {
+            "name": "Bamako",
+            "lat": 12.64,
+            "lon": -7.99,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Koulikoro",
+            "lat": 12.86,
+            "lon": -7.56,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Ségou",
+            "lat": 13.43,
+            "lon": -6.26,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Sansanding",
+            "lat": 13.75,
+            "lon": -5.7,
+            "note": "Flat-bottomed boat prepared here"
+          },
+          {
+            "name": "Mopti / Bani confluence",
+            "lat": 14.5,
+            "lon": -4.2,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Timbuktu bend",
+            "lat": 16.77,
+            "lon": -3.01,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Gao",
+            "lat": 16.27,
+            "lon": -0.04,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Ansongo",
+            "lat": 15.67,
+            "lon": 0.5,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Ayorou",
+            "lat": 14.73,
+            "lon": 0.92,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Niamey",
+            "lat": 13.52,
+            "lon": 2.11,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Gaya",
+            "lat": 11.88,
+            "lon": 3.45,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Kainji reach",
+            "lat": 10.4,
+            "lon": 4.56,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Bussa rapids",
+            "lat": 10.19,
+            "lon": 4.6,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-lander-niger-1830",
+    "rank": 18,
+    "title": "Richard and John Lander's Niger descent",
+    "short_title": "Lander brothers",
+    "date": "1830–1831",
+    "why_famous": "The brothers' downstream voyage established the Niger's outlet through its delta to the Gulf of Guinea.",
+    "route_summary": "Bussa → Niger → Nun River distributary → Atlantic.",
+    "source_title": "Royal Geographical Society — Richard Lander",
+    "source_url": "https://www.rgs.org/our-collections/stories-from-our-collections/explore-our-collections/portrait-of-richard-lander",
+    "geometry_confidence": "medium",
+    "geometry_note": "The river and delta route is anchored at modern towns. The nineteenth-century delta distributary and exact ocean exit are approximate.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.rgs.org/our-collections/stories-from-our-collections/explore-our-collections/portrait-of-richard-lander",
+        "anchors": [
+          {
+            "name": "Bussa",
+            "lat": 10.19,
+            "lon": 4.6,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Jebba",
+            "lat": 9.12,
+            "lon": 4.83,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Lokoja / Benue confluence",
+            "lat": 7.8,
+            "lon": 6.74,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Idah",
+            "lat": 7.11,
+            "lon": 6.74,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Onitsha",
+            "lat": 6.15,
+            "lon": 6.78,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Asaba",
+            "lat": 6.2,
+            "lon": 6.75,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Aboh",
+            "lat": 5.55,
+            "lon": 6.52,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Nun River branch",
+            "lat": 5.05,
+            "lon": 6.25,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Akassa / Nun mouth",
+            "lat": 4.32,
+            "lon": 6.07,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-pike-mississippi-1805",
+    "rank": 19,
+    "title": "Zebulon Pike's upper Mississippi reconnaissance",
+    "short_title": "Pike's Mississippi",
+    "date": "1805–1806",
+    "why_famous": "Pike led an early U.S. military survey up the upper Mississippi after the Louisiana Purchase.",
+    "route_summary": "St. Louis → upper Mississippi → Little Falls vicinity → return.",
+    "source_title": "National Park Service — Pike expedition history",
+    "source_url": "https://www.nps.gov/articles/what-happened-while-lewis-and-clark-were-gone.htm",
+    "geometry_confidence": "medium",
+    "geometry_note": "Upper river itinerary follows known settlements; 1805 side channels and the expedition's farthest northern boat point are approximate.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/articles/what-happened-while-lewis-and-clark-were-gone.htm",
+        "anchors": [
+          {
+            "name": "St. Louis",
+            "lat": 38.63,
+            "lon": -90.19,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Alton",
+            "lat": 38.89,
+            "lon": -90.18,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Hannibal",
+            "lat": 39.71,
+            "lon": -91.36,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Burlington",
+            "lat": 40.81,
+            "lon": -91.1,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Quad Cities",
+            "lat": 41.52,
+            "lon": -90.57,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Dubuque",
+            "lat": 42.5,
+            "lon": -90.67,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Prairie du Chien",
+            "lat": 43.05,
+            "lon": -91.15,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "La Crosse",
+            "lat": 43.81,
+            "lon": -91.25,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Winona",
+            "lat": 44.05,
+            "lon": -91.64,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Lake Pepin",
+            "lat": 44.45,
+            "lon": -92.17,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "St. Paul",
+            "lat": 44.95,
+            "lon": -93.09,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "St. Anthony Falls",
+            "lat": 44.98,
+            "lon": -93.26,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "St. Cloud",
+            "lat": 45.56,
+            "lon": -94.15,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Little Falls",
+            "lat": 45.98,
+            "lon": -94.37,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/articles/what-happened-while-lewis-and-clark-were-gone.htm",
+        "anchors": [
+          {
+            "name": "Little Falls",
+            "lat": 45.98,
+            "lon": -94.37,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "St. Cloud",
+            "lat": 45.56,
+            "lon": -94.15,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "St. Anthony Falls",
+            "lat": 44.98,
+            "lon": -93.26,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "St. Paul",
+            "lat": 44.95,
+            "lon": -93.09,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Prairie du Chien",
+            "lat": 43.05,
+            "lon": -91.15,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Quad Cities",
+            "lat": 41.52,
+            "lon": -90.57,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "St. Louis",
+            "lat": 38.63,
+            "lon": -90.19,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-ives-colorado-1857",
+    "rank": 20,
+    "title": "J. C. Ives's Colorado steamboat survey",
+    "short_title": "Ives's Colorado",
+    "date": "1857–1858",
+    "why_famous": "Ives's steamboat survey and subsequent land work mapped the lower Colorado and the Grand Canyon region.",
+    "route_summary": "Gulf of California → Colorado River mouth → lower Colorado → Black Canyon vicinity → overland Grand Canyon survey.",
+    "source_title": "Library of Congress — Ives expedition map",
+    "source_url": "https://www.loc.gov/item/79692915/",
+    "geometry_confidence": "medium",
+    "geometry_note": "The upstream steamboat limit and land survey are separate. Lower Colorado has been heavily altered by dams and diversions; the historic channel is schematic.",
+    "segments": [
+      {
+        "mode": "sea",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.loc.gov/item/79692915/",
+        "anchors": [
+          {
+            "name": "Gulf of California",
+            "lat": 31,
+            "lon": -114.6,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Historic Colorado delta mouth",
+            "lat": 31.76,
+            "lon": -114.79,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/item/79692915/",
+        "anchors": [
+          {
+            "name": "Historic Colorado delta mouth",
+            "lat": 31.76,
+            "lon": -114.79,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Yuma",
+            "lat": 32.69,
+            "lon": -114.62,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Parker",
+            "lat": 34.15,
+            "lon": -114.29,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Topock",
+            "lat": 34.72,
+            "lon": -114.49,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Needles",
+            "lat": 34.85,
+            "lon": -114.61,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Fort Mohave",
+            "lat": 35.04,
+            "lon": -114.62,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Black Canyon / Explorer's Rock",
+            "lat": 35.91,
+            "lon": -114.72,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "overland",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/item/79692915/",
+        "anchors": [
+          {
+            "name": "Black Canyon",
+            "lat": 35.91,
+            "lon": -114.72,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Grand Canyon west rim",
+            "lat": 36.11,
+            "lon": -113.95,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Grand Canyon south rim",
+            "lat": 36.06,
+            "lon": -112.14,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-hudson-half-moon-1609",
+    "rank": 21,
+    "title": "Henry Hudson's Half Moon river ascent",
+    "short_title": "Hudson's Half Moon",
+    "date": "1609",
+    "why_famous": "Hudson's Dutch sponsored voyage made a famous early European survey of the river later named for him.",
+    "route_summary": "New York Bay → Hudson estuary → Albany vicinity → return.",
+    "source_title": "National Park Service — Hudson River Valley",
+    "source_url": "https://www.nps.gov/places/hudson-river-valley-national-heritage-area.htm",
+    "geometry_confidence": "medium",
+    "geometry_note": "The vessel's turnaround near present Albany is historically broad; estuary channel and anchorage positions are approximate.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/places/hudson-river-valley-national-heritage-area.htm",
+        "anchors": [
+          {
+            "name": "New York Bay",
+            "lat": 40.69,
+            "lon": -74.04,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Manhattan west shore",
+            "lat": 40.78,
+            "lon": -74,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Yonkers",
+            "lat": 40.93,
+            "lon": -73.9,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Tarrytown",
+            "lat": 41.08,
+            "lon": -73.86,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "West Point",
+            "lat": 41.39,
+            "lon": -73.96,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Newburgh",
+            "lat": 41.5,
+            "lon": -74.01,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Poughkeepsie",
+            "lat": 41.7,
+            "lon": -73.94,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Kingston",
+            "lat": 41.93,
+            "lon": -73.96,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Hudson",
+            "lat": 42.25,
+            "lon": -73.8,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Albany vicinity",
+            "lat": 42.65,
+            "lon": -73.75,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/places/hudson-river-valley-national-heritage-area.htm",
+        "anchors": [
+          {
+            "name": "Albany vicinity",
+            "lat": 42.65,
+            "lon": -73.75,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Hudson",
+            "lat": 42.25,
+            "lon": -73.8,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Kingston",
+            "lat": 41.93,
+            "lon": -73.96,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Poughkeepsie",
+            "lat": 41.7,
+            "lon": -73.94,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "West Point",
+            "lat": 41.39,
+            "lon": -73.96,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "New York Bay",
+            "lat": 40.69,
+            "lon": -74.04,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-champlain-ottawa-1613",
+    "rank": 22,
+    "title": "Champlain's Ottawa River journey",
+    "short_title": "Champlain's Ottawa",
+    "date": "1613",
+    "why_famous": "Champlain's journey helped document a longstanding Indigenous travel corridor between the St. Lawrence and upper Ottawa.",
+    "route_summary": "Montréal → Ottawa River → Chenaux portage and Muskrat Lake → Morrison Island near Allumette Lake.",
+    "source_title": "Parks Canada — Champlain route history",
+    "source_url": "https://publications.gc.ca/collections/collection_2017/pc/R64-35-1968-eng.pdf",
+    "geometry_confidence": "low",
+    "geometry_note": "A Parks Canada historical study traces the 1613 detour through small lakes to Muskrat Lake and Morrison Island. These lake and portage waypoints are approximate; the route follows a longstanding Indigenous waterway.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://publications.gc.ca/collections/collection_2017/pc/R64-35-1968-eng.pdf",
+        "anchors": [
+          {
+            "name": "Montréal / Ottawa confluence",
+            "lat": 45.46,
+            "lon": -73.99,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Lac des Deux Montagnes",
+            "lat": 45.45,
+            "lon": -74.06,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Hawkesbury",
+            "lat": 45.61,
+            "lon": -74.61,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Grenville",
+            "lat": 45.63,
+            "lon": -74.6,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Ottawa / Chaudière Falls",
+            "lat": 45.42,
+            "lon": -75.72,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Arnprior",
+            "lat": 45.44,
+            "lon": -76.35,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Chenaux reach",
+            "lat": 45.6,
+            "lon": -76.72,
+            "note": "River departure for Indigenous guided bypass"
+          }
+        ]
+      },
+      {
+        "mode": "portage and lake",
+        "track_type": "historical-corridor",
+        "source_url": "https://publications.gc.ca/collections/collection_2017/pc/R64-35-1968-eng.pdf",
+        "anchors": [
+          {
+            "name": "Chenaux reach",
+            "lat": 45.6,
+            "lon": -76.72,
+            "note": "Approximate portage beginning"
+          },
+          {
+            "name": "Muskrat Lake",
+            "lat": 45.66,
+            "lon": -76.92,
+            "note": "Historic bypass lake"
+          },
+          {
+            "name": "Muskrat River / Pembroke",
+            "lat": 45.83,
+            "lon": -77.12,
+            "note": "Return to Ottawa corridor"
+          },
+          {
+            "name": "Morrison Island / Allumette Lake",
+            "lat": 45.85,
+            "lon": -77.17,
+            "note": "Meeting with Tessoüat, approximate"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-sultana-1865",
+    "rank": 23,
+    "title": "Sultana's final Mississippi voyage",
+    "short_title": "Sultana's final voyage",
+    "date": "1865-04-27",
+    "why_famous": "An overloaded steamboat exploded north of Memphis in the deadliest U.S. maritime disaster.",
+    "route_summary": "Vicksburg → Memphis → explosion site north of Memphis; intended Cairo/St. Louis not mapped.",
+    "source_title": "National Park Service — Sultana history",
+    "source_url": "https://home.nps.gov/stri/learn/historyculture/nickersonhome.htm",
+    "geometry_confidence": "high",
+    "geometry_note": "Documented origin, Memphis stop, and explosion reach. The 1865 main channel and precise wreck location shifted over time.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://home.nps.gov/stri/learn/historyculture/nickersonhome.htm",
+        "anchors": [
+          {
+            "name": "Vicksburg",
+            "lat": 32.35,
+            "lon": -90.88,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Greenville",
+            "lat": 33.41,
+            "lon": -91.06,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Helena",
+            "lat": 34.53,
+            "lon": -90.59,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Memphis",
+            "lat": 35.15,
+            "lon": -90.05,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Explosion reach near Marion, Arkansas",
+            "lat": 35.21,
+            "lon": -90.05,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-steamboat-race-1870",
+    "rank": 24,
+    "title": "Robert E. Lee versus Natchez steamboat race",
+    "short_title": "Lee–Natchez race",
+    "date": "1870",
+    "why_famous": "The New Orleans to St. Louis contest became the most celebrated Mississippi steamboat race.",
+    "route_summary": "New Orleans → Baton Rouge → Natchez → Vicksburg → Memphis → St. Louis.",
+    "source_title": "Library of Congress — contemporary race print",
+    "source_url": "https://www.loc.gov/pictures/resource/cph.3a52044/",
+    "geometry_confidence": "medium",
+    "geometry_note": "Race endpoints and major ports are known; routes through nineteenth-century cutoffs, bends, and the vessels' separate stops are not resolved.",
+    "segments": [
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.loc.gov/pictures/resource/cph.3a52044/",
+        "anchors": [
+          {
+            "name": "New Orleans",
+            "lat": 29.95,
+            "lon": -90.07,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Baton Rouge",
+            "lat": 30.45,
+            "lon": -91.19,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Natchez",
+            "lat": 31.56,
+            "lon": -91.4,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Vicksburg",
+            "lat": 32.35,
+            "lon": -90.88,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Greenville",
+            "lat": 33.41,
+            "lon": -91.06,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Memphis",
+            "lat": 35.15,
+            "lon": -90.05,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Cape Girardeau",
+            "lat": 37.31,
+            "lon": -89.52,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "St. Louis",
+            "lat": 38.63,
+            "lon": -90.19,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-franklin-coppermine-1821",
+    "rank": 25,
+    "title": "Franklin's Coppermine River expedition",
+    "short_title": "Franklin's Coppermine",
+    "date": "1819–1822",
+    "why_famous": "Franklin's Arctic survey followed the Coppermine to Coronation Gulf and became notorious for its disastrous return.",
+    "route_summary": "Fort Enterprise → Coppermine River → Coronation Gulf → Point Turnagain → Arctic Sound and Hood River → overland via Point Lake to Fort Enterprise.",
+    "source_title": "Royal Museums Greenwich — Franklin expedition archive",
+    "source_url": "https://www.rmg.co.uk/collections/archive/rmgc-object-491754",
+    "geometry_confidence": "low",
+    "geometry_note": "The sea passage follows broad coastal waypoints; Point Turnagain uses the expedition's approximate plotted position. The return crossed to Hood River, then went overland via Point Lake, rather than retracing the Coppermine. Remote river, coast, and portage corridors are schematic.",
+    "segments": [
+      {
+        "mode": "overland",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.rmg.co.uk/collections/archive/rmgc-object-491754",
+        "anchors": [
+          {
+            "name": "Fort Enterprise vicinity",
+            "lat": 64.49,
+            "lon": -113.02,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Coppermine River upper reach",
+            "lat": 65.2,
+            "lon": -112.4,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.rmg.co.uk/collections/archive/rmgc-object-491754",
+        "anchors": [
+          {
+            "name": "Coppermine River upper reach",
+            "lat": 65.2,
+            "lon": -112.4,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Middle Coppermine",
+            "lat": 66.08,
+            "lon": -113.37,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Bloody Falls / Kugluk",
+            "lat": 67.73,
+            "lon": -115.23,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Coppermine mouth / Kugluktuk",
+            "lat": 67.82,
+            "lon": -115.1,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "sea",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.rmg.co.uk/collections/archive/rmgc-object-491754",
+        "anchors": [
+          {
+            "name": "Coppermine mouth / Kugluktuk",
+            "lat": 67.82,
+            "lon": -115.1,
+            "note": "Approximate named route waypoint"
+          },
+          {
+            "name": "Coronation Gulf coastal passage",
+            "lat": 68.15,
+            "lon": -111.8,
+            "note": "Approximate coastal passage toward Point Turnagain"
+          },
+          {
+            "name": "Point Turnagain (historic plotted position)",
+            "lat": 68.3,
+            "lon": -110.083,
+            "note": "Easternmost 1821 survey point; historical longitude is approximate"
+          }
+        ]
+      },
+      {
+        "mode": "sea",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-262653",
+        "anchors": [
+          {
+            "name": "Point Turnagain (historic plotted position)",
+            "lat": 68.3,
+            "lon": -110.083,
+            "note": "Return by canoe across Coronation Gulf toward Arctic Sound"
+          },
+          {
+            "name": "Arctic Sound approach",
+            "lat": 67.82,
+            "lon": -109.28,
+            "note": "Broad waterway control; precise 1821 canoe track unknown"
+          },
+          {
+            "name": "Hood River mouth",
+            "lat": 67.421,
+            "lon": -108.873,
+            "note": "Canoes entered Hood River from Arctic Sound"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-262653",
+        "anchors": [
+          {
+            "name": "Hood River mouth",
+            "lat": 67.421,
+            "lon": -108.873,
+            "note": "Canoes entered Hood River"
+          },
+          {
+            "name": "Hood River first rapid",
+            "lat": 67.35,
+            "lon": -108.94,
+            "note": "Approximate end of canoe travel before inland march"
+          }
+        ]
+      },
+      {
+        "mode": "overland",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-262653",
+        "anchors": [
+          {
+            "name": "Hood River first rapid",
+            "lat": 67.35,
+            "lon": -108.94,
+            "note": "Approximate start of overland retreat"
+          },
+          {
+            "name": "Point Lake",
+            "lat": 65.233,
+            "lon": -113.15,
+            "note": "Crossing and waypoint on the return to Fort Enterprise"
+          },
+          {
+            "name": "Fort Enterprise vicinity",
+            "lat": 64.49,
+            "lon": -113.02,
+            "note": "Approximate named route waypoint"
+          }
+        ]
+      }
+    ]
+  }
+]

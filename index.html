@@ -4,43 +4,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <title>Landmark Flight Atlas — Historic Aviation Routes</title>
-  <link rel="stylesheet" href="style.css?v=site-info-1">
+  <title>Landmark Journeys — Historic Routes</title>
+  <link rel="stylesheet" href="style.css?v=journeys-2">
 </head>
 <body>
-  <aside class="sidebar" aria-label="Flight selector">
+  <aside class="sidebar" aria-label="Journey selector">
     <header class="brand">
-      <div class="eyebrow">Routes that changed aviation</div>
+      <div class="eyebrow">Routes that made History</div>
       <div class="brand-title">
-        <h1>Landmark Flight Atlas</h1>
+        <h1>Landmark Journeys</h1>
         <button id="site-info-open" class="site-info-button" type="button" aria-label="About this atlas" aria-haspopup="dialog">i</button>
       </div>
     </header>
 
-    <section class="summary" aria-label="Dataset summary">
-      <div><strong id="visible-count">25</strong><span>visible</span></div>
-      <div><strong>25</strong><span>routes</span></div>
-      <div><strong id="vertex-count">—</strong><span>vertices</span></div>
-    </section>
-
     <section class="controls">
       <label class="searchbox">
         <span aria-hidden="true">⌕</span>
-        <input id="search" type="search" placeholder="Find a flight, year or era…" autocomplete="off">
+        <input id="search" type="search" placeholder="Search flights, years, eras…" autocomplete="off">
       </label>
-      <div class="button-row">
-        <button type="button" data-action="all">All</button>
-        <button type="button" data-action="top">1–10</button>
-        <button type="button" data-action="middle">11–20</button>
-        <button type="button" data-action="new">21–25</button>
+      <div class="domain-tabs" role="tablist" aria-label="Journey domains">
+        <button type="button" role="tab" id="tab-flights" aria-controls="route-list" aria-selected="true" data-domain="flights">Flights</button>
+        <button type="button" role="tab" id="tab-sailing" aria-controls="route-list" aria-selected="false" tabindex="-1" data-domain="sailing">Sailing</button>
+        <button type="button" role="tab" id="tab-rail" aria-controls="route-list" aria-selected="false" tabindex="-1" data-domain="rail">Rail</button>
+        <button type="button" role="tab" id="tab-road-races" aria-controls="route-list" aria-selected="false" tabindex="-1" data-domain="road-races">Road / Races</button>
+        <button type="button" role="tab" id="tab-overland" aria-controls="route-list" aria-selected="false" tabindex="-1" data-domain="overland">Overland</button>
+        <button type="button" role="tab" id="tab-ocean-liners" aria-controls="route-list" aria-selected="false" tabindex="-1" data-domain="ocean-liners">Ocean Liners</button>
+        <button type="button" role="tab" id="tab-river" aria-controls="route-list" aria-selected="false" tabindex="-1" data-domain="river">River</button>
+        <button type="button" role="tab" id="tab-human-powered" aria-controls="route-list" aria-selected="false" tabindex="-1" data-domain="human-powered">Human Powered</button>
       </div>
     </section>
 
     <div class="list-heading">
-      <span>Flights</span>
-      <span>click to inspect</span>
+      <span id="collection-heading">Flights</span>
+      <span id="collection-hint">click to inspect</span>
     </div>
-    <section id="route-list" class="route-list" aria-live="polite"></section>
+    <section id="route-list" class="route-list" role="tabpanel" aria-labelledby="tab-flights" aria-live="polite"></section>
 
   </aside>
 
@@ -49,20 +47,20 @@
       <header class="site-info-header">
         <div>
           <div class="eyebrow">About this project</div>
-          <h2 id="site-info-title">Landmark Flight Atlas</h2>
+          <h2 id="site-info-title">Landmark Journeys</h2>
         </div>
         <button id="site-info-close" class="site-info-close" type="button" aria-label="Close information">×</button>
       </header>
-      <p class="site-info-intro">An interactive atlas of 25 aviation flights selected for their historical impact, technical achievement, or enduring public significance.</p>
+      <p class="site-info-intro">An interactive atlas of 200 routes that shaped history: 25 flights and 25 journeys in each of seven other domains.</p>
       <div class="site-info-grid">
         <section>
-          <h3>Routes and uncertainty</h3>
+          <h3>Route geometry and uncertainty</h3>
           <p>Most flights predate continuous position recording. The map connects researched endpoints, stops, landfalls, and logged positions. Two-point routes use great-circle arcs; multi-point routes use a spherical spline through every anchor.</p>
-          <p><strong>Dense vertices make the lines smooth—not more historically certain.</strong> Every flight card states its evidence class and the limits of its reconstruction.</p>
+          <p><strong>Dense vertices make the lines smooth—not more historically certain.</strong> All domains interpolate between researched anchors. Solid strokes mark better-anchored courses; dashes mark inferred connections or low-confidence routes. Neither means an observed track. Each card states its evidence and limits.</p>
         </section>
         <section>
           <h3>Research sources</h3>
-          <p>Flight cards link to their principal source and a specific Wikipedia article. Sources include NASA, the NPS, NTSB, Smithsonian museums, national archives, manufacturers, and other institutional histories.</p>
+          <p>Flight cards link to their principal source and a specific Wikipedia article. The other domains link to segment sources and source-backed research briefs. Sources include NASA, the NPS, NTSB, Smithsonian museums, national archives, manufacturers, and other institutional histories.</p>
           <p>Open <em>researched route anchors</em> in any card to see the named points used to construct its track.</p>
         </section>
         <section>
@@ -72,23 +70,24 @@
         </section>
         <section>
           <h3>Data and access</h3>
-          <p>Each flight can be downloaded as WKT or GeoJSON in CRS84. The atlas is a static, client-side site with no account or analytics; satellite mode requests map tiles from Esri.</p>
+          <p>Each route can be downloaded as WKT or GeoJSON in CRS84. The atlas is a static, client-side site with no account or analytics; satellite mode requests map tiles from Esri.</p>
           <p>No blanket license replaces the terms attached to third-party maps or images. Follow the linked source and license for reuse.</p>
         </section>
       </div>
       <footer class="site-info-footer">
-        <span>56,243 generated route vertices · 25 researched flights</span>
+        <span>200 mapped journeys · 8 domains</span>
         <a href="https://github.com/Yaodin/vibe-flights" target="_blank" rel="noreferrer">View source on GitHub ↗</a>
       </footer>
     </div>
   </dialog>
 
   <main class="map-shell">
-    <div id="map" role="application" aria-label="Interactive map of historic aviation routes">
+    <div id="map" role="application" aria-label="Interactive map of landmark journeys">
       <canvas id="map-canvas"></canvas>
       <div id="map-readout" class="map-readout">0.0°, 0.0° · z2.0</div>
       <a id="map-attribution" class="map-attribution" href="https://www.esri.com/" target="_blank" rel="noreferrer">Imagery © Esri and contributors</a>
     </div>
+    <div id="collection-status" class="collection-status" hidden aria-live="polite"></div>
 
     <div class="map-toolbar" aria-label="Map controls">
       <label>Basemap
@@ -107,19 +106,19 @@
     <section id="detail-card" class="detail-card empty" aria-live="polite">
       <div class="empty-state">
         <span class="empty-mark">↗</span>
-        <div><strong>Select a flight</strong><p>Click a route in the sidebar or a line on the map.</p></div>
+        <div><strong>Select a journey</strong><p>Click a route in the sidebar or a line on the map.</p></div>
       </div>
     </section>
 
     <div class="legend">
-      <span><i class="solid"></i>visible route</span>
-      <span><i class="dash"></i>illustrative corridor</span>
+      <span><i class="solid"></i>anchored course</span>
+      <span><i class="dash"></i>inferred / low confidence</span>
       <span><i class="dot"></i>selected anchors</span>
     </div>
 
     <div id="loading" class="loading"><span></span>Loading 25 routes…</div>
   </main>
 
-  <script type="module" src="app.js?v=site-info-1"></script>
+  <script type="module" src="app.js?v=journeys-2"></script>
 </body>
 </html>

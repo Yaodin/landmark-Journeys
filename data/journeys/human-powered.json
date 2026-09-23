@@ -1,0 +1,4118 @@
+[
+  {
+    "id": "human-jason-lewis-1994",
+    "rank": 1,
+    "title": "Jason Lewis's human-powered circumnavigation",
+    "short_title": "Jason Lewis",
+    "date": "1994–2007",
+    "why_famous": "Lewis completed a Guinness-recognized human-powered circumnavigation after thirteen years, using pedal boat, bicycle, skates, kayak, and other human-powered travel.",
+    "route_summary": "Greenwich–Portugal–Atlantic–North America–Pacific–Australia–Southeast Asia–India–Arabian Sea–Africa–Europe–Greenwich.",
+    "source_title": "Jason Lewis — global circumnavigation",
+    "source_url": "https://explorerjason.com/global-circumnavigation-1",
+    "geometry_confidence": "low",
+    "geometry_note": "Continental legs show broad published corridors, not a continuous GPS track. Ocean legs use named landfalls and open-water waypoints; mode changes are separated. The Egypt–Jordan land-border route follows Lewis's own July 2007 journal.",
+    "segments": [
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.expedition360.com/reference/historic_overview.htm",
+        "anchors": [
+          {
+            "name": "Greenwich",
+            "lat": 51.477,
+            "lon": 0,
+            "note": "Start"
+          },
+          {
+            "name": "Rye",
+            "lat": 50.95,
+            "lon": 0.73,
+            "note": "Documented Channel pedal-boat departure"
+          }
+        ]
+      },
+      {
+        "mode": "pedal boat",
+        "track_type": "source-derived",
+        "source_url": "https://www.expedition360.com/reference/historic_overview.htm",
+        "anchors": [
+          {
+            "name": "Rye",
+            "lat": 50.95,
+            "lon": 0.73,
+            "note": "Channel departure"
+          },
+          {
+            "name": "Boulogne-sur-Mer",
+            "lat": 50.73,
+            "lon": 1.6,
+            "note": "Documented French landfall"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.expedition360.com/reference/historic_overview.htm",
+        "anchors": [
+          {
+            "name": "Boulogne-sur-Mer",
+            "lat": 50.73,
+            "lon": 1.6,
+            "note": "Cycle stage start"
+          },
+          {
+            "name": "Western France inland",
+            "lat": 46.6,
+            "lon": 0.8,
+            "note": "Illustrative inland cycle corridor"
+          },
+          {
+            "name": "Madrid",
+            "lat": 40.42,
+            "lon": -3.7,
+            "note": "Broad inland Spanish corridor"
+          },
+          {
+            "name": "Lisbon",
+            "lat": 38.72,
+            "lon": -9.14,
+            "note": "Broad Portuguese corridor"
+          },
+          {
+            "name": "Lagos, Portugal",
+            "lat": 37.1,
+            "lon": -8.67,
+            "note": "Documented Atlantic departure"
+          }
+        ]
+      },
+      {
+        "mode": "pedal boat",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.expedition360.com/reference/historic_overview.htm",
+        "anchors": [
+          {
+            "name": "Lagos, Portugal",
+            "lat": 37.1,
+            "lon": -8.67,
+            "note": "Atlantic pedal-boat departure"
+          },
+          {
+            "name": "Subtropical Atlantic",
+            "lat": 27,
+            "lon": -35,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Western Atlantic",
+            "lat": 25,
+            "lon": -65,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Miami",
+            "lat": 25.78,
+            "lon": -80.18,
+            "note": "American landfall"
+          }
+        ]
+      },
+      {
+        "mode": "cycling and skating",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.expedition360.com/reference/historic_overview.htm",
+        "anchors": [
+          {
+            "name": "Miami",
+            "lat": 25.78,
+            "lon": -80.18,
+            "note": "Atlantic arrival"
+          },
+          {
+            "name": "Tallahassee region",
+            "lat": 30.44,
+            "lon": -84.28,
+            "note": "Inland Gulf Coast corridor"
+          },
+          {
+            "name": "Mobile region",
+            "lat": 30.69,
+            "lon": -88.04,
+            "note": "Inland Gulf Coast corridor"
+          },
+          {
+            "name": "New Orleans region",
+            "lat": 29.95,
+            "lon": -90.07,
+            "note": "Broad inland corridor"
+          },
+          {
+            "name": "Texas",
+            "lat": 31.76,
+            "lon": -106.49,
+            "note": "Broad inland corridor"
+          },
+          {
+            "name": "Arizona",
+            "lat": 33.45,
+            "lon": -112.07,
+            "note": "Broad inland corridor"
+          },
+          {
+            "name": "San Francisco",
+            "lat": 37.81,
+            "lon": -122.47,
+            "note": "Pacific departure"
+          }
+        ]
+      },
+      {
+        "mode": "pedal boat",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://explorerjason.com/pedalling-the-pacific-1",
+        "anchors": [
+          {
+            "name": "San Francisco",
+            "lat": 37.81,
+            "lon": -122.47,
+            "note": "Pacific departure"
+          },
+          {
+            "name": "Hilo, Hawaii",
+            "lat": 19.73,
+            "lon": -155.09,
+            "note": "Named stop"
+          },
+          {
+            "name": "Tarawa",
+            "lat": 1.36,
+            "lon": 173.16,
+            "note": "Named stop"
+          },
+          {
+            "name": "Solomon Islands",
+            "lat": -9.43,
+            "lon": 160.03,
+            "note": "Named stop region"
+          },
+          {
+            "name": "Port Douglas",
+            "lat": -16.49,
+            "lon": 145.46,
+            "note": "Australian landfall"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://explorerjason.com/global-circumnavigation-1",
+        "anchors": [
+          {
+            "name": "Port Douglas",
+            "lat": -16.49,
+            "lon": 145.46,
+            "note": "Australian landfall"
+          },
+          {
+            "name": "Alice Springs",
+            "lat": -23.7,
+            "lon": 133.88,
+            "note": "Outback corridor approximate"
+          },
+          {
+            "name": "Darwin",
+            "lat": -12.46,
+            "lon": 130.84,
+            "note": "Northern departure"
+          }
+        ]
+      },
+      {
+        "mode": "pedal boat",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.expedition360.com/reference/historic_overview.htm",
+        "anchors": [
+          {
+            "name": "Darwin",
+            "lat": -12.46,
+            "lon": 130.84,
+            "note": "Pedal-boat departure"
+          },
+          {
+            "name": "Timor Sea east approach",
+            "lat": -8.0,
+            "lon": 127.8,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Dili",
+            "lat": -8.55,
+            "lon": 125.57,
+            "note": "Documented East Timor landfall"
+          }
+        ]
+      },
+      {
+        "mode": "kayaking",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.expedition360.com/media_releases/archives/2005/06/around_the_worl_4.html",
+        "anchors": [
+          {
+            "name": "Dili",
+            "lat": -8.55,
+            "lon": 125.57,
+            "note": "Documented kayak departure"
+          },
+          {
+            "name": "Kalabahi, Alor",
+            "lat": -8.22,
+            "lon": 124.5,
+            "note": "Expedition journal stop"
+          },
+          {
+            "name": "Larantuka, Flores",
+            "lat": -8.34,
+            "lon": 122.99,
+            "note": "Expedition journal stop"
+          },
+          {
+            "name": "Flores north coast",
+            "lat": -8.15,
+            "lon": 120.7,
+            "note": "Illustrative island-coast corridor"
+          },
+          {
+            "name": "Komodo north coast",
+            "lat": -8.47,
+            "lon": 119.5,
+            "note": "Expedition journal region"
+          },
+          {
+            "name": "Sumbawa north offshore",
+            "lat": -8.0,
+            "lon": 118.1,
+            "note": "Illustrative island-coast corridor"
+          },
+          {
+            "name": "Lombok north offshore",
+            "lat": -8.25,
+            "lon": 116.6,
+            "note": "Illustrative island-coast corridor"
+          },
+          {
+            "name": "Bali south offshore",
+            "lat": -8.8,
+            "lon": 115.2,
+            "note": "Illustrative approach around Bali"
+          },
+          {
+            "name": "Bali Strait",
+            "lat": -8.6,
+            "lon": 114.6,
+            "note": "Illustrative strait crossing"
+          },
+          {
+            "name": "Ketapang, Java",
+            "lat": -8.15,
+            "lon": 114.4,
+            "note": "Eastern Java cycle stage begins"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.expedition360.com/press_room/clippings_indonesia/timor_sun.pdf",
+        "anchors": [
+          {
+            "name": "Ketapang, Java",
+            "lat": -8.15,
+            "lon": 114.4,
+            "note": "Approximate eastern Java start"
+          },
+          {
+            "name": "Surabaya",
+            "lat": -7.26,
+            "lon": 112.75,
+            "note": "Broad road corridor"
+          },
+          {
+            "name": "Semarang",
+            "lat": -6.98,
+            "lon": 110.42,
+            "note": "Broad road corridor"
+          },
+          {
+            "name": "Jakarta",
+            "lat": -6.21,
+            "lon": 106.85,
+            "note": "Broad road corridor"
+          },
+          {
+            "name": "Anyer",
+            "lat": -6.04,
+            "lon": 105.91,
+            "note": "Sunda Strait kayak departure"
+          }
+        ]
+      },
+      {
+        "mode": "kayaking",
+        "track_type": "source-derived",
+        "source_url": "https://www.expedition360.com/journal/archives/2005/10/",
+        "anchors": [
+          {
+            "name": "Anyer",
+            "lat": -6.04,
+            "lon": 105.91,
+            "note": "Documented Sunda Strait kayak departure"
+          },
+          {
+            "name": "Sangiang Island",
+            "lat": -5.94,
+            "lon": 105.86,
+            "note": "Documented intermediate island"
+          },
+          {
+            "name": "Bakauheni, Sumatra",
+            "lat": -5.87,
+            "lon": 105.75,
+            "note": "Approximate Sumatra landing"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.expedition360.com/journal/archives/2005/10/",
+        "anchors": [
+          {
+            "name": "Bakauheni, Sumatra",
+            "lat": -5.87,
+            "lon": 105.75,
+            "note": "Approximate ride start"
+          },
+          {
+            "name": "Bandar Lampung",
+            "lat": -5.43,
+            "lon": 105.27,
+            "note": "Lampung region"
+          },
+          {
+            "name": "Palembang",
+            "lat": -2.99,
+            "lon": 104.76,
+            "note": "Named expedition region"
+          },
+          {
+            "name": "Jambi",
+            "lat": -1.61,
+            "lon": 103.61,
+            "note": "Named expedition stop"
+          },
+          {
+            "name": "Kuala Tungkal",
+            "lat": -0.82,
+            "lon": 103.47,
+            "note": "Approximate eastern Sumatra kayak departure"
+          }
+        ]
+      },
+      {
+        "mode": "kayaking",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.expedition360.com/media_releases/archives/2005/06/around_the_worl_4.html",
+        "anchors": [
+          {
+            "name": "Kuala Tungkal",
+            "lat": -0.82,
+            "lon": 103.47,
+            "note": "Approximate eastern Sumatra departure"
+          },
+          {
+            "name": "Riau Islands waters",
+            "lat": 0.3,
+            "lon": 103.7,
+            "note": "Illustrative island-water corridor"
+          },
+          {
+            "name": "Batam Strait",
+            "lat": 1.1,
+            "lon": 103.9,
+            "note": "Illustrative final water passage"
+          },
+          {
+            "name": "Singapore",
+            "lat": 1.26,
+            "lon": 103.82,
+            "note": "Arrival"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://explorerjason.com/global-circumnavigation-1",
+        "anchors": [
+          {
+            "name": "Singapore",
+            "lat": 1.29,
+            "lon": 103.85,
+            "note": "Departure"
+          },
+          {
+            "name": "Bangkok",
+            "lat": 13.76,
+            "lon": 100.5,
+            "note": "Southeast Asia corridor"
+          },
+          {
+            "name": "Tibetan Plateau",
+            "lat": 29.65,
+            "lon": 91.1,
+            "note": "Broad plateau corridor"
+          },
+          {
+            "name": "Kathmandu",
+            "lat": 27.72,
+            "lon": 85.32,
+            "note": "Himalayan corridor"
+          },
+          {
+            "name": "Mumbai",
+            "lat": 18.94,
+            "lon": 72.83,
+            "note": "Arabian Sea departure"
+          }
+        ]
+      },
+      {
+        "mode": "pedal boat",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.expedition360.com/reference/historic_overview.htm",
+        "anchors": [
+          {
+            "name": "Mumbai",
+            "lat": 18.94,
+            "lon": 72.83,
+            "note": "Departure"
+          },
+          {
+            "name": "Arabian Sea",
+            "lat": 13,
+            "lon": 60,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Gulf of Aden",
+            "lat": 12.4,
+            "lon": 49,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Djibouti",
+            "lat": 11.6,
+            "lon": 43.14,
+            "note": "African landfall"
+          }
+        ]
+      },
+      {
+        "mode": "cycling and paddling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.expedition360.com/journal/archives/2007/07/out_of_africain.html",
+        "anchors": [
+          {
+            "name": "Djibouti",
+            "lat": 11.6,
+            "lon": 43.14,
+            "note": "African landfall"
+          },
+          {
+            "name": "Addis Ababa",
+            "lat": 9.03,
+            "lon": 38.75,
+            "note": "Ethiopia corridor"
+          },
+          {
+            "name": "Khartoum",
+            "lat": 15.5,
+            "lon": 32.56,
+            "note": "Sudan corridor"
+          },
+          {
+            "name": "Aswan",
+            "lat": 24.09,
+            "lon": 32.9,
+            "note": "Nile corridor"
+          },
+          {
+            "name": "Hurghada region",
+            "lat": 27.25,
+            "lon": 33.81,
+            "note": "Lewis reports cycling north along the Red Sea coast"
+          },
+          {
+            "name": "Suez",
+            "lat": 29.97,
+            "lon": 32.55,
+            "note": "Ahmed Hamdi Tunnel crossing"
+          },
+          {
+            "name": "Taba",
+            "lat": 29.49,
+            "lon": 34.9,
+            "note": "Egypt–Israel land border"
+          },
+          {
+            "name": "Eilat",
+            "lat": 29.56,
+            "lon": 34.95,
+            "note": "Israel–Jordan land-border approach"
+          },
+          {
+            "name": "Aqaba",
+            "lat": 29.53,
+            "lon": 35.01,
+            "note": "Jordan arrival after land-border crossing"
+          },
+          {
+            "name": "Istanbul",
+            "lat": 41.01,
+            "lon": 28.97,
+            "note": "European approach"
+          },
+          {
+            "name": "Ostend",
+            "lat": 51.23,
+            "lon": 2.92,
+            "note": "Channel departure"
+          }
+        ]
+      },
+      {
+        "mode": "pedal boat",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.expedition360.com/journal/archives/2007/10/circumnavigatio.html",
+        "anchors": [
+          {
+            "name": "Ostend",
+            "lat": 51.23,
+            "lon": 2.92,
+            "note": "Final water crossing"
+          },
+          {
+            "name": "Thames estuary",
+            "lat": 51.5,
+            "lon": 0.73,
+            "note": "River approach"
+          },
+          {
+            "name": "Greenwich",
+            "lat": 51.48,
+            "lon": 0,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-erden-eruc-2007",
+    "rank": 2,
+    "title": "Erden Eruç's solo human-powered circumnavigation",
+    "short_title": "Erden Eruç",
+    "date": "2007–2012",
+    "why_famous": "Eruç completed the first solo human-powered circumnavigation, rowing three oceans and crossing land by bicycle, foot, and kayak.",
+    "route_summary": "Bodega Bay–Papua New Guinea–Australia–Madagascar–Africa–Venezuela–Louisiana–Bodega Bay.",
+    "source_title": "Around-n-Over — circumnavigation summary",
+    "source_url": "https://www.around-n-over.org/media/summary_HPC.pdf",
+    "geometry_confidence": "medium",
+    "geometry_note": "Published stage endpoints are preserved. Intermediate ocean points illustrate broad corridors, not a recorded track; land segments simplify roads and trails.",
+    "segments": [
+      {
+        "mode": "rowing",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.around-n-over.org/media/summary_HPC.pdf",
+        "anchors": [
+          {
+            "name": "Bodega Bay",
+            "lat": 38.33,
+            "lon": -123.05,
+            "note": "Start"
+          },
+          {
+            "name": "North Pacific",
+            "lat": 20,
+            "lon": -150,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Equatorial Pacific",
+            "lat": 2,
+            "lon": 175,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Bismarck Sea approach",
+            "lat": -7.1,
+            "lon": 150.4,
+            "note": "Illustrative offshore approach east of Papua New Guinea"
+          },
+          {
+            "name": "Finschhafen offshore",
+            "lat": -6.85,
+            "lon": 148.8,
+            "note": "Offshore approach to the north coast"
+          },
+          {
+            "name": "Finschhafen, Papua New Guinea",
+            "lat": -6.6,
+            "lon": 147.85,
+            "note": "Pacific landfall"
+          }
+        ]
+      },
+      {
+        "mode": "walking and kayaking",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.around-n-over.org/media/summary_HPC.pdf",
+        "anchors": [
+          {
+            "name": "Finschhafen",
+            "lat": -6.6,
+            "lon": 147.85,
+            "note": "Departure"
+          },
+          {
+            "name": "Oro Bay",
+            "lat": -8.89,
+            "lon": 148.47,
+            "note": "Coast-to-coast start"
+          },
+          {
+            "name": "Kokoda",
+            "lat": -8.88,
+            "lon": 147.74,
+            "note": "Kokoda Track corridor"
+          },
+          {
+            "name": "Port Moresby",
+            "lat": -9.47,
+            "lon": 147.16,
+            "note": "South coast"
+          }
+        ]
+      },
+      {
+        "mode": "rowing and kayaking",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.around-n-over.org/media/summary_HPC.pdf",
+        "anchors": [
+          {
+            "name": "Port Moresby",
+            "lat": -9.47,
+            "lon": 147.16,
+            "note": "Coral Sea departure"
+          },
+          {
+            "name": "Coral Sea",
+            "lat": -11.1,
+            "lon": 145,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Cape York",
+            "lat": -10.69,
+            "lon": 142.53,
+            "note": "Australian landfall"
+          },
+          {
+            "name": "Cooktown",
+            "lat": -15.47,
+            "lon": 145.25,
+            "note": "Kayak leg end"
+          }
+        ]
+      },
+      {
+        "mode": "cycling and hiking",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.around-n-over.org/media/summary_HPC.pdf",
+        "anchors": [
+          {
+            "name": "Cooktown",
+            "lat": -15.47,
+            "lon": 145.25,
+            "note": "Cycling start"
+          },
+          {
+            "name": "Cairns",
+            "lat": -16.92,
+            "lon": 145.78,
+            "note": "Queensland corridor"
+          },
+          {
+            "name": "Brisbane",
+            "lat": -27.47,
+            "lon": 153.03,
+            "note": "East coast corridor"
+          },
+          {
+            "name": "Thredbo",
+            "lat": -36.5,
+            "lon": 148.31,
+            "note": "Kosciuszko approach"
+          },
+          {
+            "name": "Mount Kosciuszko",
+            "lat": -36.456,
+            "lon": 148.263,
+            "note": "Summit detour"
+          },
+          {
+            "name": "Adelaide",
+            "lat": -34.93,
+            "lon": 138.6,
+            "note": "South coast corridor"
+          },
+          {
+            "name": "Carnarvon",
+            "lat": -24.88,
+            "lon": 113.66,
+            "note": "Indian Ocean departure"
+          }
+        ]
+      },
+      {
+        "mode": "rowing",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.around-n-over.org/media/summary_HPC.pdf",
+        "anchors": [
+          {
+            "name": "Carnarvon",
+            "lat": -24.88,
+            "lon": 113.66,
+            "note": "Indian Ocean departure"
+          },
+          {
+            "name": "Southern Indian Ocean",
+            "lat": -22,
+            "lon": 82,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "North of Madagascar",
+            "lat": -9.2,
+            "lon": 52.4,
+            "note": "Offshore approach around Madagascar's north coast"
+          },
+          {
+            "name": "Comoros passage",
+            "lat": -12.2,
+            "lon": 44.9,
+            "note": "Eruç describes passage between Mohéli and Grande Comore"
+          },
+          {
+            "name": "Cape Saint-André offshore",
+            "lat": -15.0,
+            "lon": 45.0,
+            "note": "Approximate northwest Madagascar coast approach"
+          },
+          {
+            "name": "Mahajanga",
+            "lat": -15.72,
+            "lon": 46.32,
+            "note": "Madagascar landfall"
+          }
+        ]
+      },
+      {
+        "mode": "rowing",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.around-n-over.org/media/summary_HPC.pdf",
+        "anchors": [
+          {
+            "name": "Mahajanga",
+            "lat": -15.72,
+            "lon": 46.32,
+            "note": "Madagascar departure"
+          },
+          {
+            "name": "Mozambique Channel",
+            "lat": -16,
+            "lon": 42,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Angoche",
+            "lat": -16.23,
+            "lon": 39.91,
+            "note": "African landfall"
+          }
+        ]
+      },
+      {
+        "mode": "cycling and hiking",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.around-n-over.org/media/summary_HPC.pdf",
+        "anchors": [
+          {
+            "name": "Angoche",
+            "lat": -16.23,
+            "lon": 39.91,
+            "note": "Cycling start"
+          },
+          {
+            "name": "Arusha",
+            "lat": -3.37,
+            "lon": 36.69,
+            "note": "Kilimanjaro approach"
+          },
+          {
+            "name": "Kilimanjaro",
+            "lat": -3.067,
+            "lon": 37.356,
+            "note": "Summit detour"
+          },
+          {
+            "name": "Lusaka",
+            "lat": -15.42,
+            "lon": 28.28,
+            "note": "Southwest corridor approximate"
+          },
+          {
+            "name": "Lüderitz",
+            "lat": -26.65,
+            "lon": 15.16,
+            "note": "Atlantic departure"
+          }
+        ]
+      },
+      {
+        "mode": "rowing",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.around-n-over.org/media/summary_HPC.pdf",
+        "anchors": [
+          {
+            "name": "Lüderitz",
+            "lat": -26.65,
+            "lon": 15.16,
+            "note": "South Atlantic departure"
+          },
+          {
+            "name": "South Atlantic",
+            "lat": -21,
+            "lon": -10,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Equatorial Atlantic",
+            "lat": -2,
+            "lon": -35,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Güiria",
+            "lat": 10.58,
+            "lon": -62.3,
+            "note": "Venezuelan landfall"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.around-n-over.org/media/summary_HPC.pdf",
+        "anchors": [
+          {
+            "name": "Güiria",
+            "lat": 10.58,
+            "lon": -62.3,
+            "note": "Departure"
+          },
+          {
+            "name": "Carúpano",
+            "lat": 10.67,
+            "lon": -63.26,
+            "note": "Rowing restart"
+          }
+        ]
+      },
+      {
+        "mode": "rowing",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.around-n-over.org/media/summary_HPC.pdf",
+        "anchors": [
+          {
+            "name": "Carúpano",
+            "lat": 10.67,
+            "lon": -63.26,
+            "note": "Caribbean departure"
+          },
+          {
+            "name": "Caribbean Sea",
+            "lat": 16,
+            "lon": -75,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Yucatán Channel",
+            "lat": 21.6,
+            "lon": -85.7,
+            "note": "Named passage"
+          },
+          {
+            "name": "Gulf of Mexico",
+            "lat": 26,
+            "lon": -90,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Cameron, Louisiana",
+            "lat": 29.8,
+            "lon": -93.33,
+            "note": "U.S. landfall"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.around-n-over.org/media/summary_HPC.pdf",
+        "anchors": [
+          {
+            "name": "Cameron",
+            "lat": 29.8,
+            "lon": -93.33,
+            "note": "Final land leg start"
+          },
+          {
+            "name": "Houston",
+            "lat": 29.76,
+            "lon": -95.37,
+            "note": "Broad corridor"
+          },
+          {
+            "name": "El Paso",
+            "lat": 31.76,
+            "lon": -106.49,
+            "note": "Broad corridor"
+          },
+          {
+            "name": "Phoenix",
+            "lat": 33.45,
+            "lon": -112.07,
+            "note": "Broad corridor"
+          },
+          {
+            "name": "Los Angeles",
+            "lat": 34.05,
+            "lon": -118.24,
+            "note": "Broad corridor"
+          },
+          {
+            "name": "Bodega Bay",
+            "lat": 38.33,
+            "lon": -123.05,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-nansen-greenland-1888",
+    "rank": 3,
+    "title": "Nansen's Greenland ice-sheet crossing",
+    "short_title": "Nansen's Greenland crossing",
+    "date": "1888",
+    "why_famous": "Nansen and five companions, including Sámi skiers Samuel Balto and Ole Ravna, made the first crossing of Greenland's ice sheet.",
+    "route_summary": "Umivik on the east coast across the ice sheet to the Ameralik Fjord and Nuuk area.",
+    "source_title": "Fram Museum — Across the Greenland Ice",
+    "source_url": "https://frammuseum.no/en/polar-history/expeditions/polar-history-expeditions-across-the-greenland-ice-1888-1889/",
+    "geometry_confidence": "medium",
+    "geometry_note": "East and west landing regions are known, but intermediate ice-sheet points represent a broad corridor rather than camp coordinates.",
+    "segments": [
+      {
+        "mode": "skiing and walking",
+        "track_type": "historical-corridor",
+        "source_url": "https://frammuseum.no/en/polar-history/expeditions/polar-history-expeditions-across-the-greenland-ice-1888-1889/",
+        "anchors": [
+          {
+            "name": "Umivik",
+            "lat": 64.3,
+            "lon": -40.5,
+            "note": "East-coast departure area"
+          },
+          {
+            "name": "Eastern ice sheet",
+            "lat": 64.5,
+            "lon": -43.5,
+            "note": "Illustrative interior waypoint"
+          },
+          {
+            "name": "Greenland ice divide",
+            "lat": 64.7,
+            "lon": -46.5,
+            "note": "Illustrative interior waypoint"
+          },
+          {
+            "name": "Western ice margin",
+            "lat": 64.3,
+            "lon": -49.5,
+            "note": "Illustrative interior waypoint"
+          },
+          {
+            "name": "Ameralik Fjord",
+            "lat": 64.17,
+            "lon": -51.1,
+            "note": "West-coast descent"
+          }
+        ]
+      },
+      {
+        "mode": "paddling and walking",
+        "track_type": "historical-corridor",
+        "source_url": "https://frammuseum.no/en/polar-history/expeditions/polar-history-expeditions-across-the-greenland-ice-1888-1889/",
+        "anchors": [
+          {
+            "name": "Ameralik Fjord",
+            "lat": 64.17,
+            "lon": -51.1,
+            "note": "West coast"
+          },
+          {
+            "name": "Nuuk area",
+            "lat": 64.18,
+            "lon": -51.74,
+            "note": "Journey conclusion"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-scott-south-pole-1911",
+    "rank": 4,
+    "title": "Scott's South Pole journey",
+    "short_title": "Scott's polar party",
+    "date": "1911–1912",
+    "why_famous": "Scott's party reached the South Pole after Amundsen and all five men died on the return journey, making it one of the best-known polar tragedies.",
+    "route_summary": "Cape Evans–Ross Ice Shelf–Beardmore Glacier–South Pole–return toward One Ton Depot.",
+    "source_title": "Royal Museums Greenwich — race to the South Pole",
+    "source_url": "https://www.rmg.co.uk/stories/maritime-history/race-south-pole-scott-amundsen",
+    "geometry_confidence": "medium",
+    "geometry_note": "Camp and glacier waypoints are approximate. The return is a separate leg ending near the last camp rather than falsely completing a loop. The South Pole has no unique longitude; 160°E is used here for map continuity.",
+    "segments": [
+      {
+        "mode": "walking and skiing",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.rmg.co.uk/stories/maritime-history/race-south-pole-scott-amundsen",
+        "anchors": [
+          {
+            "name": "Cape Evans",
+            "lat": -77.636,
+            "lon": 166.417,
+            "note": "Base"
+          },
+          {
+            "name": "Hut Point",
+            "lat": -77.85,
+            "lon": 166.63,
+            "note": "Ross Island departure"
+          },
+          {
+            "name": "One Ton Depot",
+            "lat": -79.48,
+            "lon": 169.9,
+            "note": "Approximate depot"
+          },
+          {
+            "name": "Beardmore Glacier foot",
+            "lat": -83.4,
+            "lon": 171,
+            "note": "Transantarctic Mountains approach"
+          },
+          {
+            "name": "Beardmore Glacier upper",
+            "lat": -85.2,
+            "lon": 165,
+            "note": "Approximate glacier corridor"
+          },
+          {
+            "name": "Polar Plateau",
+            "lat": -87.5,
+            "lon": 160,
+            "note": "Broad plateau corridor"
+          },
+          {
+            "name": "South Pole",
+            "lat": -90,
+            "lon": 160,
+            "note": "Reached January 1912; display longitude follows approach meridian"
+          }
+        ]
+      },
+      {
+        "mode": "walking and skiing",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.rmg.co.uk/stories/maritime-history/race-south-pole-scott-amundsen",
+        "anchors": [
+          {
+            "name": "South Pole",
+            "lat": -90,
+            "lon": 160,
+            "note": "Return start; display longitude follows approach meridian"
+          },
+          {
+            "name": "Polar Plateau",
+            "lat": -87.5,
+            "lon": 160,
+            "note": "Broad return corridor"
+          },
+          {
+            "name": "Beardmore Glacier",
+            "lat": -84.3,
+            "lon": 169,
+            "note": "Mountain descent"
+          },
+          {
+            "name": "Final camp",
+            "lat": -79.63,
+            "lon": 169.5,
+            "note": "Approximate site south of One Ton Depot"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-everest-hillary-tenzing-1953",
+    "rank": 5,
+    "title": "Hillary and Tenzing's first Everest summit",
+    "short_title": "First Everest summit",
+    "date": "1953-05-29",
+    "why_famous": "Edmund Hillary and Tenzing Norgay achieved the first confirmed ascent of Mount Everest.",
+    "route_summary": "South Base Camp–Khumbu Icefall–Western Cwm–Lhotse Face–South Col–southeast ridge–summit.",
+    "source_title": "Royal Geographical Society — Everest 1953",
+    "source_url": "https://www.rgs.org/our-collections/buy-and-license-images/platinum-prints/everest-1953",
+    "geometry_confidence": "medium",
+    "geometry_note": "Known route features are shown schematically; geographic line spacing cannot represent cliffs, crevasses, or vertical exposure.",
+    "segments": [
+      {
+        "mode": "mountaineering",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.rgs.org/our-collections/buy-and-license-images/platinum-prints/everest-1953",
+        "anchors": [
+          {
+            "name": "South Base Camp",
+            "lat": 28.003,
+            "lon": 86.853,
+            "note": "1953 base region"
+          },
+          {
+            "name": "Khumbu Icefall",
+            "lat": 27.995,
+            "lon": 86.864,
+            "note": "Approximate route feature"
+          },
+          {
+            "name": "Western Cwm",
+            "lat": 27.983,
+            "lon": 86.892,
+            "note": "Approximate route feature"
+          },
+          {
+            "name": "Lhotse Face",
+            "lat": 27.979,
+            "lon": 86.918,
+            "note": "Approximate route feature"
+          },
+          {
+            "name": "South Col",
+            "lat": 27.974,
+            "lon": 86.929,
+            "note": "High camp region"
+          },
+          {
+            "name": "Southeast Ridge",
+            "lat": 27.982,
+            "lon": 86.928,
+            "note": "Summit ridge"
+          },
+          {
+            "name": "Everest summit",
+            "lat": 27.9881,
+            "lon": 86.925,
+            "note": "Summit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-everest-messner-habeler-1978",
+    "rank": 6,
+    "title": "Messner and Habeler's oxygen-free Everest ascent",
+    "short_title": "Everest without oxygen",
+    "date": "1978-05-08",
+    "why_famous": "Reinhold Messner and Peter Habeler became the first climbers to summit Everest without supplemental oxygen.",
+    "route_summary": "Nepal side via the South Col and southeast ridge to Everest summit.",
+    "source_title": "American Alpine Club — 1978 Everest account",
+    "source_url": "https://publications.americanalpineclub.org/articles/12197926200",
+    "geometry_confidence": "medium",
+    "geometry_note": "Route-feature anchors are schematic and do not show the exact line of the climb or exposure.",
+    "segments": [
+      {
+        "mode": "mountaineering",
+        "track_type": "historical-corridor",
+        "source_url": "https://publications.americanalpineclub.org/articles/12197926200",
+        "anchors": [
+          {
+            "name": "South Base Camp",
+            "lat": 28.003,
+            "lon": 86.853,
+            "note": "Nepal side"
+          },
+          {
+            "name": "Khumbu Icefall",
+            "lat": 27.995,
+            "lon": 86.864,
+            "note": "Approach feature"
+          },
+          {
+            "name": "Western Cwm",
+            "lat": 27.983,
+            "lon": 86.892,
+            "note": "Approach feature"
+          },
+          {
+            "name": "Lhotse Face",
+            "lat": 27.979,
+            "lon": 86.918,
+            "note": "Approach feature"
+          },
+          {
+            "name": "South Col",
+            "lat": 27.974,
+            "lon": 86.929,
+            "note": "Summit route"
+          },
+          {
+            "name": "Everest summit",
+            "lat": 27.9881,
+            "lon": 86.925,
+            "note": "Summit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-everest-messner-solo-1980",
+    "rank": 7,
+    "title": "Messner's solo Everest ascent",
+    "short_title": "Messner solo Everest",
+    "date": "1980-08-20",
+    "why_famous": "Messner made the first solo Everest ascent without supplemental oxygen, using the north side of the mountain.",
+    "route_summary": "North Base Camp–East Rongbuk area–North Col–north face/Great Couloir–Everest summit.",
+    "source_title": "American Alpine Club — Everest route register",
+    "source_url": "https://publications.americanalpineclub.org/articles/12198818300/First-Ascents-of-Routes-on-Mount-Everest-1963-1987",
+    "geometry_confidence": "medium",
+    "geometry_note": "North-face route features are approximate; a flat map cannot represent the steep Great Couloir or exact climbing line.",
+    "segments": [
+      {
+        "mode": "mountaineering",
+        "track_type": "historical-corridor",
+        "source_url": "https://publications.americanalpineclub.org/articles/12198818300/First-Ascents-of-Routes-on-Mount-Everest-1963-1987",
+        "anchors": [
+          {
+            "name": "North Base Camp",
+            "lat": 28.141,
+            "lon": 86.852,
+            "note": "Tibet side"
+          },
+          {
+            "name": "East Rongbuk Glacier",
+            "lat": 28.072,
+            "lon": 86.89,
+            "note": "Approximate approach"
+          },
+          {
+            "name": "North Col",
+            "lat": 28.024,
+            "lon": 86.905,
+            "note": "North approach"
+          },
+          {
+            "name": "North Face",
+            "lat": 28.01,
+            "lon": 86.917,
+            "note": "Approximate face"
+          },
+          {
+            "name": "Great Couloir",
+            "lat": 27.997,
+            "lon": 86.923,
+            "note": "Approximate couloir"
+          },
+          {
+            "name": "Everest summit",
+            "lat": 27.9881,
+            "lon": 86.925,
+            "note": "Summit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-shaffer-appalachian-1948",
+    "rank": 8,
+    "title": "Earl Shaffer's Appalachian Trail thru-hike",
+    "short_title": "Earl Shaffer",
+    "date": "1948",
+    "why_famous": "Shaffer completed the first reported end-to-end Appalachian Trail thru-hike in a single season.",
+    "route_summary": "Springer Mountain, Georgia, to Mount Katahdin, Maine, by the Appalachian Trail.",
+    "source_title": "Appalachian Trail Conservancy — The Long Cruise",
+    "source_url": "https://appalachiantrail.org/news-stories/the-long-cruise-earl-shaffer-at-thru-hike/",
+    "geometry_confidence": "medium",
+    "geometry_note": "Named trail regions reconstruct the trail corridor; the exact 1948 alignment changed in many places afterward.",
+    "segments": [
+      {
+        "mode": "walking",
+        "track_type": "historical-corridor",
+        "source_url": "https://appalachiantrail.org/news-stories/the-long-cruise-earl-shaffer-at-thru-hike/",
+        "anchors": [
+          {
+            "name": "Springer Mountain",
+            "lat": 34.627,
+            "lon": -84.193,
+            "note": "Georgia terminus"
+          },
+          {
+            "name": "Great Smoky Mountains",
+            "lat": 35.61,
+            "lon": -83.44,
+            "note": "Trail region"
+          },
+          {
+            "name": "Roan Highlands",
+            "lat": 36.1,
+            "lon": -82.08,
+            "note": "Trail region"
+          },
+          {
+            "name": "Damascus",
+            "lat": 36.634,
+            "lon": -81.79,
+            "note": "Virginia trail town"
+          },
+          {
+            "name": "Shenandoah",
+            "lat": 38.63,
+            "lon": -78.31,
+            "note": "Trail region"
+          },
+          {
+            "name": "Harpers Ferry",
+            "lat": 39.325,
+            "lon": -77.739,
+            "note": "Trail town"
+          },
+          {
+            "name": "Delaware Water Gap",
+            "lat": 40.987,
+            "lon": -75.142,
+            "note": "Trail crossing"
+          },
+          {
+            "name": "Bear Mountain",
+            "lat": 41.312,
+            "lon": -73.988,
+            "note": "New York trail region"
+          },
+          {
+            "name": "Berkshires",
+            "lat": 42.5,
+            "lon": -73.15,
+            "note": "Massachusetts trail region"
+          },
+          {
+            "name": "Green Mountains",
+            "lat": 43.9,
+            "lon": -72.9,
+            "note": "Vermont trail region"
+          },
+          {
+            "name": "White Mountains",
+            "lat": 44.27,
+            "lon": -71.3,
+            "note": "New Hampshire trail region"
+          },
+          {
+            "name": "Mount Katahdin",
+            "lat": 45.904,
+            "lon": -68.922,
+            "note": "Maine terminus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-gatewood-appalachian-1955",
+    "rank": 9,
+    "title": "Grandma Gatewood's Appalachian Trail hike",
+    "short_title": "Grandma Gatewood",
+    "date": "1955",
+    "why_famous": "Emma Gatewood became the first woman to complete the Appalachian Trail alone, challenging ideas about who belonged outdoors.",
+    "route_summary": "Springer Mountain to Mount Katahdin along the Appalachian Trail.",
+    "source_title": "Appalachian Trail Conservancy — Trail Tested",
+    "source_url": "https://journeys.appalachiantrail.org/issue/fall-2025/trail-tested/",
+    "geometry_confidence": "medium",
+    "geometry_note": "Trail-region anchors show the general 1955 corridor, not Gatewood's observed path or the exact historic trail alignment.",
+    "segments": [
+      {
+        "mode": "walking",
+        "track_type": "historical-corridor",
+        "source_url": "https://journeys.appalachiantrail.org/issue/fall-2025/trail-tested/",
+        "anchors": [
+          {
+            "name": "Springer Mountain",
+            "lat": 34.627,
+            "lon": -84.193,
+            "note": "Georgia terminus"
+          },
+          {
+            "name": "Great Smoky Mountains",
+            "lat": 35.61,
+            "lon": -83.44,
+            "note": "Trail region"
+          },
+          {
+            "name": "Damascus",
+            "lat": 36.634,
+            "lon": -81.79,
+            "note": "Virginia trail town"
+          },
+          {
+            "name": "Shenandoah",
+            "lat": 38.63,
+            "lon": -78.31,
+            "note": "Trail region"
+          },
+          {
+            "name": "Harpers Ferry",
+            "lat": 39.325,
+            "lon": -77.739,
+            "note": "Trail town"
+          },
+          {
+            "name": "Delaware Water Gap",
+            "lat": 40.987,
+            "lon": -75.142,
+            "note": "Trail crossing"
+          },
+          {
+            "name": "Bear Mountain",
+            "lat": 41.312,
+            "lon": -73.988,
+            "note": "New York trail region"
+          },
+          {
+            "name": "Green Mountains",
+            "lat": 43.9,
+            "lon": -72.9,
+            "note": "Vermont trail region"
+          },
+          {
+            "name": "White Mountains",
+            "lat": 44.27,
+            "lon": -71.3,
+            "note": "New Hampshire trail region"
+          },
+          {
+            "name": "Mount Katahdin",
+            "lat": 45.904,
+            "lon": -68.922,
+            "note": "Maine terminus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-strayed-pct-1995",
+    "rank": 10,
+    "title": "Cheryl Strayed's Pacific Crest Trail journey",
+    "short_title": "Cheryl Strayed",
+    "date": "1995",
+    "why_famous": "The solo walk became the subject of the memoir Wild and introduced many readers to long-distance hiking.",
+    "route_summary": "Tehachapi Pass through California and Oregon to Bridge of the Gods, the section she actually hiked.",
+    "source_title": "Pacific Crest Trail Association — Hikes from Wild",
+    "source_url": "https://wild.pcta.org/hikes/hikes-from-wild/",
+    "geometry_confidence": "medium",
+    "geometry_note": "PCTA confirms selected locations. Connecting lines approximate the walking corridor and should not imply every intervening mile was walked.",
+    "segments": [
+      {
+        "mode": "walking",
+        "track_type": "historical-corridor",
+        "source_url": "https://wild.pcta.org/hikes/hikes-from-wild/",
+        "anchors": [
+          {
+            "name": "Tehachapi Pass",
+            "lat": 35.1,
+            "lon": -118.45,
+            "note": "Start area"
+          },
+          {
+            "name": "Walker Pass",
+            "lat": 35.66,
+            "lon": -118.03,
+            "note": "Southern Sierra approach"
+          },
+          {
+            "name": "Sierra City",
+            "lat": 39.566,
+            "lon": -120.634,
+            "note": "Named resupply stop"
+          },
+          {
+            "name": "Hat Creek Rim",
+            "lat": 40.85,
+            "lon": -121.44,
+            "note": "Named trail section"
+          },
+          {
+            "name": "Marble Mountain Wilderness",
+            "lat": 41.58,
+            "lon": -123.18,
+            "note": "Named trail region"
+          },
+          {
+            "name": "Ashland area",
+            "lat": 42.19,
+            "lon": -122.7,
+            "note": "Oregon crossing"
+          },
+          {
+            "name": "Sky Lakes Wilderness",
+            "lat": 42.8,
+            "lon": -122.2,
+            "note": "Named trail region"
+          },
+          {
+            "name": "Crater Lake",
+            "lat": 42.94,
+            "lon": -122.1,
+            "note": "Named trail region"
+          },
+          {
+            "name": "Central Oregon Cascades",
+            "lat": 44.2,
+            "lon": -121.8,
+            "note": "Broad trail corridor"
+          },
+          {
+            "name": "Mount Hood region",
+            "lat": 45.37,
+            "lon": -121.7,
+            "note": "Broad trail corridor"
+          },
+          {
+            "name": "Bridge of the Gods",
+            "lat": 45.662,
+            "lon": -121.901,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-stafford-amazon-2008",
+    "rank": 11,
+    "title": "Ed Stafford walks the Amazon",
+    "short_title": "Walking the Amazon",
+    "date": "2008–2010",
+    "why_famous": "Stafford made the first recorded walk along the full length of the Amazon River system.",
+    "route_summary": "Nevado Mismi in Peru along Amazon headwater and river corridors to the Atlantic mouth in Brazil.",
+    "source_title": "Guinness World Records — walk the Amazon",
+    "source_url": "https://www.guinnessworldrecords.com/world-records/first-person-to-walk-the-length-of-the-amazon-river",
+    "geometry_confidence": "low",
+    "geometry_note": "The route was an overland walk near the river, not a passage along the water centerline. Settlement anchors are broad and do not recover daily detours or bank choices.",
+    "segments": [
+      {
+        "mode": "walking",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.guinnessworldrecords.com/world-records/first-person-to-walk-the-length-of-the-amazon-river",
+        "anchors": [
+          {
+            "name": "Nevado Mismi",
+            "lat": -15.52,
+            "lon": -71.69,
+            "note": "Headwater area"
+          },
+          {
+            "name": "Atalaya",
+            "lat": -10.73,
+            "lon": -73.76,
+            "note": "Ucayali corridor"
+          },
+          {
+            "name": "Pucallpa",
+            "lat": -8.38,
+            "lon": -74.55,
+            "note": "Ucayali city"
+          },
+          {
+            "name": "Iquitos",
+            "lat": -3.75,
+            "lon": -73.25,
+            "note": "Upper Amazon city"
+          },
+          {
+            "name": "Leticia",
+            "lat": -4.22,
+            "lon": -69.94,
+            "note": "Border region"
+          },
+          {
+            "name": "Tefé",
+            "lat": -3.35,
+            "lon": -64.71,
+            "note": "Amazon river town"
+          },
+          {
+            "name": "Manaus",
+            "lat": -3.12,
+            "lon": -60.02,
+            "note": "Amazon city"
+          },
+          {
+            "name": "Santarém",
+            "lat": -2.44,
+            "lon": -54.7,
+            "note": "Amazon city"
+          },
+          {
+            "name": "Belém estuary area",
+            "lat": -1.45,
+            "lon": -48.5,
+            "note": "Atlantic mouth region"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-beaumont-world-cycle-2017",
+    "rank": 12,
+    "title": "Mark Beaumont's 78-day world cycle",
+    "short_title": "Mark Beaumont",
+    "date": "2017",
+    "why_famous": "Beaumont completed an officially recognized bicycle circumnavigation in 78 days, setting a new speed mark.",
+    "route_summary": "Paris–Beijing; Perth–Brisbane; Invercargill–Auckland; Anchorage–Halifax; Lisbon–Paris, with flights omitted.",
+    "source_title": "Guinness World Records — Mark Beaumont",
+    "source_url": "https://www.guinnessworldrecords.com/news/2017/9/british-endurance-cyclist-mark-beaumont-completes-record-breaking-circumnavigatio-495072",
+    "geometry_confidence": "low",
+    "geometry_note": "Major stages are confirmed; inland waypoints approximate roads. Transoceanic flights remain gaps.",
+    "segments": [
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.guinnessworldrecords.com/news/2017/9/british-endurance-cyclist-mark-beaumont-completes-record-breaking-circumnavigatio-495072",
+        "anchors": [
+          {
+            "name": "Paris",
+            "lat": 48.873,
+            "lon": 2.295,
+            "note": "Arc de Triomphe start"
+          },
+          {
+            "name": "Warsaw",
+            "lat": 52.23,
+            "lon": 21.01,
+            "note": "Broad European corridor"
+          },
+          {
+            "name": "Moscow",
+            "lat": 55.75,
+            "lon": 37.62,
+            "note": "Broad Russia corridor"
+          },
+          {
+            "name": "Kazan",
+            "lat": 55.79,
+            "lon": 49.12,
+            "note": "Broad Russia corridor"
+          },
+          {
+            "name": "Novosibirsk",
+            "lat": 55.03,
+            "lon": 82.92,
+            "note": "Broad Russia corridor"
+          },
+          {
+            "name": "Ulaanbaatar",
+            "lat": 47.92,
+            "lon": 106.92,
+            "note": "Eastern corridor approximate"
+          },
+          {
+            "name": "Beijing",
+            "lat": 39.91,
+            "lon": 116.4,
+            "note": "China stage region"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.guinnessworldrecords.com/news/2017/9/british-endurance-cyclist-mark-beaumont-completes-record-breaking-circumnavigatio-495072",
+        "anchors": [
+          {
+            "name": "Perth",
+            "lat": -31.95,
+            "lon": 115.86,
+            "note": "Australian stage start"
+          },
+          {
+            "name": "Kalgoorlie",
+            "lat": -30.75,
+            "lon": 121.47,
+            "note": "Inland corridor"
+          },
+          {
+            "name": "Ceduna",
+            "lat": -32.13,
+            "lon": 133.68,
+            "note": "Nullarbor crossing"
+          },
+          {
+            "name": "Adelaide",
+            "lat": -34.93,
+            "lon": 138.6,
+            "note": "South coast corridor"
+          },
+          {
+            "name": "Melbourne",
+            "lat": -37.81,
+            "lon": 144.96,
+            "note": "South coast corridor"
+          },
+          {
+            "name": "Sydney",
+            "lat": -33.87,
+            "lon": 151.21,
+            "note": "Eastern corridor"
+          },
+          {
+            "name": "Brisbane",
+            "lat": -27.47,
+            "lon": 153.03,
+            "note": "Stage end"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.guinnessworldrecords.com/news/2017/9/british-endurance-cyclist-mark-beaumont-completes-record-breaking-circumnavigatio-495072",
+        "anchors": [
+          {
+            "name": "Invercargill",
+            "lat": -46.41,
+            "lon": 168.35,
+            "note": "New Zealand stage start"
+          },
+          {
+            "name": "Dunedin",
+            "lat": -45.88,
+            "lon": 170.5,
+            "note": "South Island corridor"
+          },
+          {
+            "name": "Christchurch",
+            "lat": -43.53,
+            "lon": 172.63,
+            "note": "South Island corridor"
+          },
+          {
+            "name": "Picton",
+            "lat": -41.29,
+            "lon": 174.01,
+            "note": "Ferry departure"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.guinnessworldrecords.com/news/2017/9/british-endurance-cyclist-mark-beaumont-completes-record-breaking-circumnavigatio-495072",
+        "anchors": [
+          {
+            "name": "Wellington",
+            "lat": -41.29,
+            "lon": 174.78,
+            "note": "Ferry arrival; sailing gap omitted"
+          },
+          {
+            "name": "Taupō",
+            "lat": -38.69,
+            "lon": 176.07,
+            "note": "North Island corridor"
+          },
+          {
+            "name": "Auckland",
+            "lat": -36.85,
+            "lon": 174.76,
+            "note": "Stage end"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.guinnessworldrecords.com/news/2017/9/british-endurance-cyclist-mark-beaumont-completes-record-breaking-circumnavigatio-495072",
+        "anchors": [
+          {
+            "name": "Anchorage",
+            "lat": 61.22,
+            "lon": -149.9,
+            "note": "North America start"
+          },
+          {
+            "name": "Tok",
+            "lat": 63.34,
+            "lon": -142.99,
+            "note": "Alaska corridor"
+          },
+          {
+            "name": "Whitehorse",
+            "lat": 60.72,
+            "lon": -135.05,
+            "note": "Yukon corridor"
+          },
+          {
+            "name": "Edmonton",
+            "lat": 53.55,
+            "lon": -113.49,
+            "note": "Canada corridor"
+          },
+          {
+            "name": "Winnipeg",
+            "lat": 49.89,
+            "lon": -97.14,
+            "note": "Prairie corridor"
+          },
+          {
+            "name": "Thunder Bay",
+            "lat": 48.38,
+            "lon": -89.25,
+            "note": "Ontario corridor"
+          },
+          {
+            "name": "Ottawa",
+            "lat": 45.42,
+            "lon": -75.7,
+            "note": "Eastern Canada corridor"
+          },
+          {
+            "name": "Moncton",
+            "lat": 46.09,
+            "lon": -64.78,
+            "note": "New Brunswick corridor"
+          },
+          {
+            "name": "Halifax",
+            "lat": 44.65,
+            "lon": -63.57,
+            "note": "Stage end"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.guinnessworldrecords.com/news/2017/9/british-endurance-cyclist-mark-beaumont-completes-record-breaking-circumnavigatio-495072",
+        "anchors": [
+          {
+            "name": "Lisbon",
+            "lat": 38.72,
+            "lon": -9.14,
+            "note": "European return region"
+          },
+          {
+            "name": "Madrid",
+            "lat": 40.42,
+            "lon": -3.7,
+            "note": "Broad return corridor"
+          },
+          {
+            "name": "Paris",
+            "lat": 48.873,
+            "lon": 2.295,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-jenny-graham-world-cycle-2018",
+    "rank": 13,
+    "title": "Jenny Graham's unsupported world cycle",
+    "short_title": "Jenny Graham",
+    "date": "2018",
+    "why_famous": "Graham set a women's unsupported bicycle circumnavigation speed record in 2018, riding solo across four major cycling stages.",
+    "route_summary": "Berlin–Beijing; Perth–Brisbane; Invercargill–Auckland; Anchorage–Halifax; Lisbon–Berlin, with flights omitted.",
+    "source_title": "Jenny Graham — round the world itinerary",
+    "source_url": "https://jenny-graham.com/round-the-world/",
+    "geometry_confidence": "medium",
+    "geometry_note": "Graham's own stage list fixes the endpoints and regions. Inland roads are schematic; flights remain gaps.",
+    "segments": [
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://jenny-graham.com/round-the-world/",
+        "anchors": [
+          {
+            "name": "Berlin Brandenburg Gate",
+            "lat": 52.516,
+            "lon": 13.378,
+            "note": "Start"
+          },
+          {
+            "name": "Warsaw",
+            "lat": 52.23,
+            "lon": 21.01,
+            "note": "Poland corridor"
+          },
+          {
+            "name": "Vilnius",
+            "lat": 54.69,
+            "lon": 25.28,
+            "note": "Lithuania corridor"
+          },
+          {
+            "name": "Riga",
+            "lat": 56.95,
+            "lon": 24.11,
+            "note": "Latvia corridor"
+          },
+          {
+            "name": "Moscow",
+            "lat": 55.75,
+            "lon": 37.62,
+            "note": "Russia corridor"
+          },
+          {
+            "name": "Novosibirsk",
+            "lat": 55.03,
+            "lon": 82.92,
+            "note": "Siberia corridor"
+          },
+          {
+            "name": "Ulaanbaatar",
+            "lat": 47.92,
+            "lon": 106.92,
+            "note": "Mongolia"
+          },
+          {
+            "name": "China stage end",
+            "lat": 40,
+            "lon": 116.4,
+            "note": "Transfer region approximate"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://jenny-graham.com/round-the-world/",
+        "anchors": [
+          {
+            "name": "Perth",
+            "lat": -31.95,
+            "lon": 115.86,
+            "note": "Australian stage start"
+          },
+          {
+            "name": "Kalgoorlie",
+            "lat": -30.75,
+            "lon": 121.47,
+            "note": "Inland corridor"
+          },
+          {
+            "name": "Port Augusta",
+            "lat": -32.49,
+            "lon": 137.77,
+            "note": "Inland corridor"
+          },
+          {
+            "name": "Adelaide",
+            "lat": -34.93,
+            "lon": 138.6,
+            "note": "Southern corridor"
+          },
+          {
+            "name": "Sydney",
+            "lat": -33.87,
+            "lon": 151.21,
+            "note": "East coast corridor"
+          },
+          {
+            "name": "Brisbane",
+            "lat": -27.47,
+            "lon": 153.03,
+            "note": "Australian stage end"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://jenny-graham.com/round-the-world/",
+        "anchors": [
+          {
+            "name": "Invercargill",
+            "lat": -46.41,
+            "lon": 168.35,
+            "note": "New Zealand stage start"
+          },
+          {
+            "name": "Dunedin",
+            "lat": -45.88,
+            "lon": 170.5,
+            "note": "South Island corridor"
+          },
+          {
+            "name": "Christchurch",
+            "lat": -43.53,
+            "lon": 172.63,
+            "note": "South Island corridor"
+          },
+          {
+            "name": "Picton",
+            "lat": -41.29,
+            "lon": 174.01,
+            "note": "Ferry departure"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://jenny-graham.com/round-the-world/",
+        "anchors": [
+          {
+            "name": "Wellington",
+            "lat": -41.29,
+            "lon": 174.78,
+            "note": "Ferry arrival; sailing gap omitted"
+          },
+          {
+            "name": "Taupō",
+            "lat": -38.69,
+            "lon": 176.07,
+            "note": "North Island corridor"
+          },
+          {
+            "name": "Auckland",
+            "lat": -36.85,
+            "lon": 174.76,
+            "note": "Stage end"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://jenny-graham.com/round-the-world/",
+        "anchors": [
+          {
+            "name": "Anchorage",
+            "lat": 61.22,
+            "lon": -149.9,
+            "note": "North America start"
+          },
+          {
+            "name": "Whitehorse",
+            "lat": 60.72,
+            "lon": -135.05,
+            "note": "Yukon corridor"
+          },
+          {
+            "name": "Prince George",
+            "lat": 53.92,
+            "lon": -122.75,
+            "note": "British Columbia corridor"
+          },
+          {
+            "name": "Edmonton",
+            "lat": 53.55,
+            "lon": -113.49,
+            "note": "Alberta corridor"
+          },
+          {
+            "name": "Regina",
+            "lat": 50.45,
+            "lon": -104.61,
+            "note": "Saskatchewan corridor"
+          },
+          {
+            "name": "Fargo",
+            "lat": 46.88,
+            "lon": -96.79,
+            "note": "North Dakota corridor"
+          },
+          {
+            "name": "Minneapolis",
+            "lat": 44.98,
+            "lon": -93.27,
+            "note": "Minnesota corridor"
+          },
+          {
+            "name": "Madison",
+            "lat": 43.07,
+            "lon": -89.4,
+            "note": "Wisconsin corridor"
+          },
+          {
+            "name": "Toronto",
+            "lat": 43.65,
+            "lon": -79.38,
+            "note": "Ontario corridor"
+          },
+          {
+            "name": "Montreal",
+            "lat": 45.5,
+            "lon": -73.57,
+            "note": "Quebec corridor"
+          },
+          {
+            "name": "Moncton",
+            "lat": 46.09,
+            "lon": -64.78,
+            "note": "New Brunswick corridor"
+          },
+          {
+            "name": "Halifax",
+            "lat": 44.65,
+            "lon": -63.57,
+            "note": "Stage end"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://jenny-graham.com/round-the-world/",
+        "anchors": [
+          {
+            "name": "Lisbon",
+            "lat": 38.72,
+            "lon": -9.14,
+            "note": "Final European stage"
+          },
+          {
+            "name": "Madrid",
+            "lat": 40.42,
+            "lon": -3.7,
+            "note": "Iberian corridor"
+          },
+          {
+            "name": "Paris",
+            "lat": 48.86,
+            "lon": 2.35,
+            "note": "Western Europe corridor"
+          },
+          {
+            "name": "Brussels",
+            "lat": 50.85,
+            "lon": 4.35,
+            "note": "Belgium corridor"
+          },
+          {
+            "name": "Amsterdam",
+            "lat": 52.37,
+            "lon": 4.9,
+            "note": "Netherlands corridor"
+          },
+          {
+            "name": "Berlin Brandenburg Gate",
+            "lat": 52.516,
+            "lon": 13.378,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-annie-londonderry-1894",
+    "rank": 14,
+    "title": "Annie Londonderry's bicycle world journey",
+    "short_title": "Annie Londonderry",
+    "date": "1894–1895",
+    "why_famous": "Her highly publicized journey made Annie Londonderry a pioneering figure in women's cycling and self-promotion.",
+    "route_summary": "Boston–Chicago–New York; European and Asian bicycle stages; San Francisco–Boston, with ship travel between continents.",
+    "source_title": "Smithsonian Magazine — Annie Londonderry",
+    "source_url": "https://www.smithsonianmag.com/arts-culture/books-on-bike-perfection-and-womens-bike-won-freedom-2-7159592/",
+    "geometry_confidence": "low",
+    "geometry_note": "The historical itinerary used ships as well as bicycles. Only broad bicycle legs are shown; precise roads and some stop order require further archival confirmation.",
+    "segments": [
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.smithsonianmag.com/arts-culture/books-on-bike-perfection-and-womens-bike-won-freedom-2-7159592/",
+        "anchors": [
+          {
+            "name": "Boston",
+            "lat": 42.36,
+            "lon": -71.06,
+            "note": "Start"
+          },
+          {
+            "name": "Albany",
+            "lat": 42.65,
+            "lon": -73.75,
+            "note": "Approximate Northeast corridor"
+          },
+          {
+            "name": "Cleveland",
+            "lat": 41.5,
+            "lon": -81.69,
+            "note": "Approximate Midwest corridor"
+          },
+          {
+            "name": "Chicago",
+            "lat": 41.88,
+            "lon": -87.63,
+            "note": "Known stop"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.smithsonianmag.com/arts-culture/books-on-bike-perfection-and-womens-bike-won-freedom-2-7159592/",
+        "anchors": [
+          {
+            "name": "Paris",
+            "lat": 48.86,
+            "lon": 2.35,
+            "note": "European stage"
+          },
+          {
+            "name": "Marseille",
+            "lat": 43.3,
+            "lon": 5.37,
+            "note": "Mediterranean embarkation region"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.smithsonianmag.com/arts-culture/books-on-bike-perfection-and-womens-bike-won-freedom-2-7159592/",
+        "anchors": [
+          {
+            "name": "San Francisco",
+            "lat": 37.77,
+            "lon": -122.42,
+            "note": "U.S. return"
+          },
+          {
+            "name": "Sacramento",
+            "lat": 38.58,
+            "lon": -121.49,
+            "note": "California corridor"
+          },
+          {
+            "name": "Reno",
+            "lat": 39.53,
+            "lon": -119.81,
+            "note": "Nevada corridor"
+          },
+          {
+            "name": "Salt Lake City",
+            "lat": 40.76,
+            "lon": -111.89,
+            "note": "Utah corridor"
+          },
+          {
+            "name": "Denver",
+            "lat": 39.74,
+            "lon": -104.99,
+            "note": "Rockies corridor"
+          },
+          {
+            "name": "Chicago",
+            "lat": 41.88,
+            "lon": -87.63,
+            "note": "Midwest corridor"
+          },
+          {
+            "name": "Boston",
+            "lat": 42.36,
+            "lon": -71.06,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-thomas-stevens-1884",
+    "rank": 15,
+    "title": "Thomas Stevens's bicycle journey around the world",
+    "short_title": "Thomas Stevens",
+    "date": "1884–1886",
+    "why_famous": "Stevens became the first person to travel around the world with a bicycle, combining riding with sea crossings.",
+    "route_summary": "San Francisco–Boston; Europe–Tehran; Karachi–Kolkata; Chinese and Japanese rides, with ship and other transport gaps.",
+    "source_title": "International Conference on the History of Cartography — Stevens route study",
+    "source_url": "https://www.ichc.biz/proceedings/ICHC-030-14.pdf",
+    "geometry_confidence": "low",
+    "geometry_note": "The bicycle voyage used steamers and other transport. Each mapped ride is separate; historic road alignments are schematic.",
+    "segments": [
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.ichc.biz/proceedings/ICHC-030-14.pdf",
+        "anchors": [
+          {
+            "name": "San Francisco",
+            "lat": 37.77,
+            "lon": -122.42,
+            "note": "American start"
+          },
+          {
+            "name": "Sacramento",
+            "lat": 38.58,
+            "lon": -121.49,
+            "note": "California corridor"
+          },
+          {
+            "name": "Reno",
+            "lat": 39.53,
+            "lon": -119.81,
+            "note": "Nevada corridor"
+          },
+          {
+            "name": "Salt Lake City",
+            "lat": 40.76,
+            "lon": -111.89,
+            "note": "Utah corridor"
+          },
+          {
+            "name": "Omaha",
+            "lat": 41.26,
+            "lon": -95.94,
+            "note": "Plains corridor"
+          },
+          {
+            "name": "Chicago",
+            "lat": 41.88,
+            "lon": -87.63,
+            "note": "Midwest corridor"
+          },
+          {
+            "name": "Boston",
+            "lat": 42.36,
+            "lon": -71.06,
+            "note": "Atlantic transfer"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.ichc.biz/proceedings/ICHC-030-14.pdf",
+        "anchors": [
+          {
+            "name": "London",
+            "lat": 51.51,
+            "lon": -0.13,
+            "note": "European start region"
+          },
+          {
+            "name": "Paris",
+            "lat": 48.86,
+            "lon": 2.35,
+            "note": "European corridor"
+          },
+          {
+            "name": "Vienna",
+            "lat": 48.21,
+            "lon": 16.37,
+            "note": "Central Europe"
+          },
+          {
+            "name": "Istanbul",
+            "lat": 41.01,
+            "lon": 28.97,
+            "note": "Ottoman hub"
+          },
+          {
+            "name": "Ankara region",
+            "lat": 39.93,
+            "lon": 32.86,
+            "note": "Anatolian corridor"
+          },
+          {
+            "name": "Tehran region",
+            "lat": 35.69,
+            "lon": 51.39,
+            "note": "Iran corridor"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.ichc.biz/proceedings/ICHC-030-14.pdf",
+        "anchors": [
+          {
+            "name": "Karachi",
+            "lat": 24.86,
+            "lon": 67.01,
+            "note": "Indian stage after ship transfer"
+          },
+          {
+            "name": "Hyderabad, Sindh",
+            "lat": 25.4,
+            "lon": 68.37,
+            "note": "Historic road corridor"
+          },
+          {
+            "name": "Lahore",
+            "lat": 31.55,
+            "lon": 74.35,
+            "note": "Punjab corridor"
+          },
+          {
+            "name": "Delhi",
+            "lat": 28.61,
+            "lon": 77.21,
+            "note": "Grand Trunk Road corridor"
+          },
+          {
+            "name": "Kanpur",
+            "lat": 26.45,
+            "lon": 80.33,
+            "note": "Gangetic Plain corridor"
+          },
+          {
+            "name": "Varanasi",
+            "lat": 25.32,
+            "lon": 82.97,
+            "note": "Gangetic Plain corridor"
+          },
+          {
+            "name": "Kolkata",
+            "lat": 22.57,
+            "lon": 88.36,
+            "note": "Ship transfer onward"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.ichc.biz/proceedings/ICHC-030-14.pdf",
+        "anchors": [
+          {
+            "name": "Hong Kong",
+            "lat": 22.31,
+            "lon": 114.17,
+            "note": "China stage after steamer"
+          },
+          {
+            "name": "Guangzhou",
+            "lat": 23.13,
+            "lon": 113.26,
+            "note": "Pearl River corridor"
+          },
+          {
+            "name": "China inland road",
+            "lat": 25.04,
+            "lon": 115.12,
+            "note": "Broad corridor; actual route uncertain"
+          },
+          {
+            "name": "Shanghai",
+            "lat": 31.23,
+            "lon": 121.47,
+            "note": "Japan steamer departure region"
+          }
+        ]
+      },
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.ichc.biz/proceedings/ICHC-030-14.pdf",
+        "anchors": [
+          {
+            "name": "Nagasaki",
+            "lat": 32.75,
+            "lon": 129.88,
+            "note": "Japan stage after steamer"
+          },
+          {
+            "name": "Hiroshima",
+            "lat": 34.39,
+            "lon": 132.46,
+            "note": "Western Japan corridor"
+          },
+          {
+            "name": "Osaka",
+            "lat": 34.69,
+            "lon": 135.5,
+            "note": "Central Japan corridor"
+          },
+          {
+            "name": "Kyoto",
+            "lat": 35.01,
+            "lon": 135.77,
+            "note": "Central Japan corridor"
+          },
+          {
+            "name": "Yokohama",
+            "lat": 35.45,
+            "lon": 139.64,
+            "note": "Bicycle journey finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-25th-infantry-bicycle-1897",
+    "rank": 16,
+    "title": "25th Infantry Bicycle Corps ride",
+    "short_title": "Iron Riders",
+    "date": "1897",
+    "why_famous": "Black U.S. soldiers rode roughly 1,900 miles from Montana to Missouri in a major military test of bicycle transport.",
+    "route_summary": "Fort Missoula–Yellowstone region–Wyoming–Nebraska–Kansas–St. Louis.",
+    "source_title": "U.S. Army Transportation Corps — Iron Riders",
+    "source_url": "https://transportation.army.mil/New_Resources/ironriders.html",
+    "geometry_confidence": "medium",
+    "geometry_note": "Military itinerary and settlements define the corridor; individual 1897 tracks and road surfaces are not fully recovered.",
+    "segments": [
+      {
+        "mode": "cycling",
+        "track_type": "historical-corridor",
+        "source_url": "https://transportation.army.mil/New_Resources/ironriders.html",
+        "anchors": [
+          {
+            "name": "Fort Missoula",
+            "lat": 46.84,
+            "lon": -114.06,
+            "note": "Start"
+          },
+          {
+            "name": "Helena",
+            "lat": 46.59,
+            "lon": -112.04,
+            "note": "Montana corridor"
+          },
+          {
+            "name": "Livingston",
+            "lat": 45.66,
+            "lon": -110.56,
+            "note": "Yellowstone approach"
+          },
+          {
+            "name": "Yellowstone region",
+            "lat": 44.98,
+            "lon": -110.7,
+            "note": "Park region"
+          },
+          {
+            "name": "Cody",
+            "lat": 44.53,
+            "lon": -109.06,
+            "note": "Wyoming corridor"
+          },
+          {
+            "name": "Casper",
+            "lat": 42.85,
+            "lon": -106.31,
+            "note": "Wyoming corridor"
+          },
+          {
+            "name": "Cheyenne",
+            "lat": 41.14,
+            "lon": -104.82,
+            "note": "Wyoming corridor"
+          },
+          {
+            "name": "North Platte",
+            "lat": 41.14,
+            "lon": -100.76,
+            "note": "Nebraska corridor"
+          },
+          {
+            "name": "Omaha",
+            "lat": 41.26,
+            "lon": -95.94,
+            "note": "Nebraska corridor"
+          },
+          {
+            "name": "Kansas City",
+            "lat": 39.1,
+            "lon": -94.58,
+            "note": "Missouri corridor"
+          },
+          {
+            "name": "St. Louis",
+            "lat": 38.63,
+            "lon": -90.2,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-oskar-speck-1932",
+    "rank": 17,
+    "title": "Oskar Speck kayaks from Germany to Australia",
+    "short_title": "Oskar Speck",
+    "date": "1932–1939",
+    "why_famous": "Speck paddled a folding kayak from Germany through the Middle East and Asia to Australia over seven years.",
+    "route_summary": "Ulm–Danube; Euphrates–Persian Gulf; South Asian coasts–Strait of Malacca–Indonesia–Papua New Guinea–Saibai Island.",
+    "source_title": "Australian National Maritime Museum collection",
+    "source_url": "https://www.flickr.com/photos/anmm_thecommons/39641319601",
+    "geometry_confidence": "low",
+    "geometry_note": "Museum's country list and known rivers guide broad coastal corridors. The route from the Danube to Syria is a gap; intermediate waterways and port choices need archival verification. Sea waypoints are illustrative and do not recover Speck's actual daily course.",
+    "segments": [
+      {
+        "mode": "kayaking",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.flickr.com/photos/anmm_thecommons/39641319601",
+        "anchors": [
+          {
+            "name": "Ulm",
+            "lat": 48.4,
+            "lon": 9.99,
+            "note": "Start on Danube"
+          },
+          {
+            "name": "Vienna",
+            "lat": 48.21,
+            "lon": 16.38,
+            "note": "Danube corridor"
+          },
+          {
+            "name": "Budapest",
+            "lat": 47.5,
+            "lon": 19.05,
+            "note": "Danube corridor"
+          },
+          {
+            "name": "Belgrade",
+            "lat": 44.82,
+            "lon": 20.47,
+            "note": "Danube corridor"
+          },
+          {
+            "name": "Iron Gates",
+            "lat": 44.66,
+            "lon": 22.3,
+            "note": "Danube gorge"
+          },
+          {
+            "name": "Lower Danube, Romania",
+            "lat": 45.4,
+            "lon": 28.5,
+            "note": "River exit region"
+          }
+        ]
+      },
+      {
+        "mode": "kayaking",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.flickr.com/photos/anmm_thecommons/39641319601",
+        "anchors": [
+          {
+            "name": "Euphrates, Syria",
+            "lat": 35.95,
+            "lon": 39.02,
+            "note": "River leg after unshown transfer"
+          },
+          {
+            "name": "Deir ez-Zor",
+            "lat": 35.34,
+            "lon": 40.15,
+            "note": "Euphrates city"
+          },
+          {
+            "name": "Al-Qa'im",
+            "lat": 34.39,
+            "lon": 41.01,
+            "note": "Iraq river corridor"
+          },
+          {
+            "name": "Fallujah",
+            "lat": 33.35,
+            "lon": 43.78,
+            "note": "Lower Euphrates region"
+          },
+          {
+            "name": "Nasiriyah",
+            "lat": 31.06,
+            "lon": 46.26,
+            "note": "Lower Euphrates"
+          },
+          {
+            "name": "Shatt al-Arab",
+            "lat": 30.5,
+            "lon": 48.1,
+            "note": "Gulf outlet"
+          }
+        ]
+      },
+      {
+        "mode": "kayaking",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.flickr.com/photos/anmm_thecommons/39641319601",
+        "anchors": [
+          {
+            "name": "Persian Gulf",
+            "lat": 29.8,
+            "lon": 48.4,
+            "note": "Gulf departure"
+          },
+          {
+            "name": "Northern Gulf waters",
+            "lat": 27.8,
+            "lon": 49.9,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Central Gulf waters",
+            "lat": 26.5,
+            "lon": 52.2,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Eastern Gulf waters",
+            "lat": 25.7,
+            "lon": 54.6,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Hormuz Strait",
+            "lat": 26.55,
+            "lon": 56.4,
+            "note": "Named passage"
+          },
+          {
+            "name": "Oman Sea offshore",
+            "lat": 24.4,
+            "lon": 57.8,
+            "note": "Illustrative offshore waypoint south of Iran"
+          },
+          {
+            "name": "Makran offshore",
+            "lat": 24.0,
+            "lon": 60.6,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Gwadar coast",
+            "lat": 25.12,
+            "lon": 62.33,
+            "note": "Pakistan coast corridor"
+          },
+          {
+            "name": "Karachi coast",
+            "lat": 24.81,
+            "lon": 66.98,
+            "note": "Pakistan coast"
+          },
+          {
+            "name": "Kutch offshore",
+            "lat": 22.7,
+            "lon": 67.3,
+            "note": "Arabian Sea coastal corridor"
+          },
+          {
+            "name": "Saurashtra offshore",
+            "lat": 20.3,
+            "lon": 70,
+            "note": "Arabian Sea coastal corridor"
+          },
+          {
+            "name": "Mumbai coast",
+            "lat": 18.9,
+            "lon": 72.78,
+            "note": "India west coast"
+          },
+          {
+            "name": "Goa coast",
+            "lat": 15.5,
+            "lon": 73.72,
+            "note": "India west coast"
+          },
+          {
+            "name": "Mangalore coast",
+            "lat": 12.86,
+            "lon": 74.8,
+            "note": "India west coast"
+          },
+          {
+            "name": "Kochi coast",
+            "lat": 9.93,
+            "lon": 76.19,
+            "note": "India west coast"
+          },
+          {
+            "name": "Cape Comorin",
+            "lat": 8.08,
+            "lon": 77.54,
+            "note": "India southern tip"
+          },
+          {
+            "name": "Sri Lanka coast",
+            "lat": 6.93,
+            "lon": 79.84,
+            "note": "Island coast region"
+          },
+          {
+            "name": "Northwest Sri Lanka offshore",
+            "lat": 9.3,
+            "lon": 79.3,
+            "note": "Illustrative passage around Sri Lanka"
+          },
+          {
+            "name": "Palk Strait east waters",
+            "lat": 10.3,
+            "lon": 79.7,
+            "note": "Illustrative channel waypoint"
+          },
+          {
+            "name": "Tamil Nadu offshore",
+            "lat": 11.7,
+            "lon": 80.1,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Chennai coast",
+            "lat": 13.07,
+            "lon": 80.29,
+            "note": "India east coast"
+          },
+          {
+            "name": "Bay of Bengal east",
+            "lat": 16,
+            "lon": 94,
+            "note": "Illustrative open-water leg"
+          },
+          {
+            "name": "Yangon coast",
+            "lat": 16.77,
+            "lon": 96.15,
+            "note": "Myanmar coast"
+          },
+          {
+            "name": "Phuket",
+            "lat": 7.88,
+            "lon": 98.39,
+            "note": "Thailand coast"
+          },
+          {
+            "name": "Penang",
+            "lat": 5.41,
+            "lon": 100.34,
+            "note": "Malay Peninsula"
+          },
+          {
+            "name": "Malacca Strait north",
+            "lat": 3.8,
+            "lon": 100.1,
+            "note": "Illustrative channel waypoint"
+          },
+          {
+            "name": "Malacca Strait central",
+            "lat": 2.5,
+            "lon": 101.1,
+            "note": "Illustrative channel waypoint"
+          },
+          {
+            "name": "Malacca Strait south",
+            "lat": 1.4,
+            "lon": 103.0,
+            "note": "Illustrative channel waypoint"
+          },
+          {
+            "name": "Singapore",
+            "lat": 1.26,
+            "lon": 103.82,
+            "note": "Strait of Malacca end"
+          }
+        ]
+      },
+      {
+        "mode": "kayaking",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.flickr.com/photos/anmm_thecommons/39641319601",
+        "anchors": [
+          {
+            "name": "Singapore",
+            "lat": 1.26,
+            "lon": 103.82,
+            "note": "Indonesia stage"
+          },
+          {
+            "name": "Riau waters",
+            "lat": 0.2,
+            "lon": 105.0,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Java Sea northwest",
+            "lat": -2.0,
+            "lon": 106.5,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Java Sea west",
+            "lat": -4.6,
+            "lon": 106.4,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Java north coast",
+            "lat": -6.1,
+            "lon": 106.9,
+            "note": "Island coast region"
+          },
+          {
+            "name": "Central Java north offshore",
+            "lat": -5.9,
+            "lon": 110.4,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "East Java north offshore",
+            "lat": -6.7,
+            "lon": 112.5,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Java eastern tip offshore",
+            "lat": -7.4,
+            "lon": 114.6,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Bali Strait",
+            "lat": -8.2,
+            "lon": 114.45,
+            "note": "Illustrative channel waypoint"
+          },
+          {
+            "name": "Bali south coast",
+            "lat": -8.75,
+            "lon": 115.23,
+            "note": "Island-chain region"
+          },
+          {
+            "name": "Lombok south offshore",
+            "lat": -9.5,
+            "lon": 117,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Sumba south offshore",
+            "lat": -10.5,
+            "lon": 119.4,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Timor Sea west approach",
+            "lat": -10.8,
+            "lon": 122,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Timor",
+            "lat": -10.17,
+            "lon": 123.58,
+            "note": "Island chain"
+          },
+          {
+            "name": "Aru Islands",
+            "lat": -6.18,
+            "lon": 134.1,
+            "note": "Island chain region"
+          },
+          {
+            "name": "West New Guinea south coast",
+            "lat": -8.5,
+            "lon": 139,
+            "note": "Illustrative offshore point south of the island"
+          },
+          {
+            "name": "Torres Strait east offshore",
+            "lat": -9.7,
+            "lon": 142.2,
+            "note": "Illustrative offshore waypoint south of New Guinea"
+          },
+          {
+            "name": "Papua Gulf offshore",
+            "lat": -10.4,
+            "lon": 145.1,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Port Moresby offshore",
+            "lat": -10,
+            "lon": 147.2,
+            "note": "Illustrative offshore approach"
+          },
+          {
+            "name": "Port Moresby",
+            "lat": -9.47,
+            "lon": 147.16,
+            "note": "Papua New Guinea"
+          },
+          {
+            "name": "Daru",
+            "lat": -9.08,
+            "lon": 143.21,
+            "note": "Torres Strait approach"
+          },
+          {
+            "name": "Saibai Island",
+            "lat": -9.4,
+            "lon": 142.6,
+            "note": "Australian arrival"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-paul-caffyn-australia-1981",
+    "rank": 18,
+    "title": "Paul Caffyn kayaks around Australia",
+    "short_title": "Paul Caffyn",
+    "date": "1981–1982",
+    "why_famous": "Caffyn completed the first sea-kayak circumnavigation of mainland Australia, a year-long voyage of roughly 15,000 km.",
+    "route_summary": "Queenscliff–east coast–Gulf of Carpentaria–Darwin–Kimberley–west coast–Great Australian Bight–Queenscliff.",
+    "source_title": "Expedition Kayak — Caffyn Australia",
+    "source_url": "https://www.expeditionkayak.com/expeditions/caffyn-australia-1982.html",
+    "geometry_confidence": "medium",
+    "geometry_note": "Coastal capes and towns outline the voyage, not daily landings. Northern Gulf waypoints follow the shore rather than drawing a shortcut across land.",
+    "segments": [
+      {
+        "mode": "sea kayaking",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.expeditionkayak.com/expeditions/caffyn-australia-1982.html",
+        "anchors": [
+          {
+            "name": "Queenscliff",
+            "lat": -38.27,
+            "lon": 144.66,
+            "note": "Start"
+          },
+          {
+            "name": "Wilsons Promontory offshore",
+            "lat": -39.16,
+            "lon": 146.45,
+            "note": "Southeast cape"
+          },
+          {
+            "name": "Eden",
+            "lat": -37.07,
+            "lon": 149.91,
+            "note": "East coast"
+          },
+          {
+            "name": "Sydney coast",
+            "lat": -33.86,
+            "lon": 151.27,
+            "note": "East coast"
+          },
+          {
+            "name": "Newcastle offshore",
+            "lat": -32.9,
+            "lon": 152.0,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Port Macquarie offshore",
+            "lat": -31.4,
+            "lon": 153.0,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Coffs Harbour offshore",
+            "lat": -30.3,
+            "lon": 153.25,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Byron Bay offshore",
+            "lat": -28.65,
+            "lon": 153.65,
+            "note": "East coast"
+          },
+          {
+            "name": "Brisbane coast",
+            "lat": -27.45,
+            "lon": 153.19,
+            "note": "East coast"
+          },
+          {
+            "name": "Fraser Island offshore",
+            "lat": -25.4,
+            "lon": 153.4,
+            "note": "Island coast"
+          },
+          {
+            "name": "Rockhampton coast",
+            "lat": -23.5,
+            "lon": 151.2,
+            "note": "Queensland coast"
+          },
+          {
+            "name": "Whitsunday offshore",
+            "lat": -21.3,
+            "lon": 150.1,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Bowen offshore",
+            "lat": -20.4,
+            "lon": 149.0,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Palm Islands offshore",
+            "lat": -19.0,
+            "lon": 147.2,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Townsville coast",
+            "lat": -19.25,
+            "lon": 146.9,
+            "note": "Queensland coast"
+          },
+          {
+            "name": "Cairns coast",
+            "lat": -16.92,
+            "lon": 145.79,
+            "note": "Queensland coast"
+          },
+          {
+            "name": "Lizard Island offshore",
+            "lat": -14.5,
+            "lon": 145.4,
+            "note": "Illustrative east-coast waypoint"
+          },
+          {
+            "name": "Lockhart coast offshore",
+            "lat": -13.0,
+            "lon": 144.5,
+            "note": "Illustrative east-coast waypoint"
+          },
+          {
+            "name": "Cape York east offshore",
+            "lat": -11.5,
+            "lon": 143.5,
+            "note": "Illustrative east-coast waypoint"
+          },
+          {
+            "name": "Cape York",
+            "lat": -10.69,
+            "lon": 142.53,
+            "note": "Northern cape"
+          },
+          {
+            "name": "Weipa coast",
+            "lat": -12.62,
+            "lon": 141.88,
+            "note": "Cape York west coast"
+          },
+          {
+            "name": "Aurukun coast",
+            "lat": -13.35,
+            "lon": 141.72,
+            "note": "Gulf coast"
+          },
+          {
+            "name": "Kowanyama coast",
+            "lat": -15.47,
+            "lon": 141.74,
+            "note": "Gulf coast"
+          },
+          {
+            "name": "Karumba",
+            "lat": -17.49,
+            "lon": 140.84,
+            "note": "Gulf coast"
+          },
+          {
+            "name": "Southwest Gulf offshore",
+            "lat": -16.6,
+            "lon": 138.6,
+            "note": "Broad coastal corridor"
+          },
+          {
+            "name": "Borroloola coast",
+            "lat": -15.89,
+            "lon": 136.8,
+            "note": "Gulf southwest coast"
+          },
+          {
+            "name": "Groote Eylandt south",
+            "lat": -14.5,
+            "lon": 136.9,
+            "note": "Gulf offshore corridor"
+          },
+          {
+            "name": "Nhulunbuy",
+            "lat": -12.18,
+            "lon": 136.78,
+            "note": "Arnhem Land coast"
+          },
+          {
+            "name": "Cape Wessel",
+            "lat": -11,
+            "lon": 136.75,
+            "note": "Northern coast"
+          },
+          {
+            "name": "Darwin",
+            "lat": -12.42,
+            "lon": 130.82,
+            "note": "Top End"
+          },
+          {
+            "name": "Kimberley northeast offshore",
+            "lat": -13.6,
+            "lon": 127.5,
+            "note": "Offshore waypoint"
+          },
+          {
+            "name": "Kimberley northwest offshore",
+            "lat": -14.1,
+            "lon": 125.2,
+            "note": "Offshore waypoint"
+          },
+          {
+            "name": "Dampier Peninsula offshore",
+            "lat": -16.5,
+            "lon": 122.2,
+            "note": "Offshore waypoint"
+          },
+          {
+            "name": "Broome",
+            "lat": -17.95,
+            "lon": 122.24,
+            "note": "Kimberley coast"
+          },
+          {
+            "name": "Karratha coast",
+            "lat": -20.7,
+            "lon": 116.8,
+            "note": "Pilbara coast"
+          },
+          {
+            "name": "North West Cape",
+            "lat": -21.8,
+            "lon": 114.15,
+            "note": "Western cape"
+          },
+          {
+            "name": "Exmouth offshore",
+            "lat": -22.5,
+            "lon": 113.1,
+            "note": "Illustrative west-coast waypoint"
+          },
+          {
+            "name": "Carnarvon offshore",
+            "lat": -24.5,
+            "lon": 112.5,
+            "note": "Illustrative west-coast waypoint"
+          },
+          {
+            "name": "Shark Bay",
+            "lat": -25.7,
+            "lon": 113.4,
+            "note": "West coast"
+          },
+          {
+            "name": "Perth coast",
+            "lat": -31.97,
+            "lon": 115.7,
+            "note": "West coast"
+          },
+          {
+            "name": "Cape Leeuwin",
+            "lat": -34.38,
+            "lon": 115.13,
+            "note": "Southwest cape"
+          },
+          {
+            "name": "Albany coast",
+            "lat": -35.05,
+            "lon": 117.86,
+            "note": "South coast"
+          },
+          {
+            "name": "Esperance coast",
+            "lat": -33.86,
+            "lon": 121.9,
+            "note": "South coast"
+          },
+          {
+            "name": "Great Australian Bight",
+            "lat": -33.5,
+            "lon": 130,
+            "note": "Open-water coast parallel"
+          },
+          {
+            "name": "Ceduna",
+            "lat": -32.14,
+            "lon": 133.68,
+            "note": "Bight eastern edge"
+          },
+          {
+            "name": "Port Lincoln",
+            "lat": -34.73,
+            "lon": 135.87,
+            "note": "South Australian coast"
+          },
+          {
+            "name": "Cape Jervis",
+            "lat": -35.61,
+            "lon": 138.1,
+            "note": "South Australian cape"
+          },
+          {
+            "name": "South Australian offshore",
+            "lat": -36.5,
+            "lon": 139.0,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Robe offshore",
+            "lat": -37.5,
+            "lon": 139.5,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Port MacDonnell offshore",
+            "lat": -38.3,
+            "lon": 140.3,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Western Victoria offshore",
+            "lat": -38.7,
+            "lon": 141.8,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Cape Otway",
+            "lat": -38.86,
+            "lon": 143.51,
+            "note": "Victoria south coast"
+          },
+          {
+            "name": "Queenscliff",
+            "lat": -38.27,
+            "lon": 144.66,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-freya-hoffmeister-australia-2009",
+    "rank": 19,
+    "title": "Freya Hoffmeister kayaks around Australia",
+    "short_title": "Freya Hoffmeister",
+    "date": "2009",
+    "why_famous": "Hoffmeister became the first woman to sea-kayak around mainland Australia, completing an anticlockwise circuit.",
+    "route_summary": "Queenscliff–east coast–Cape York–Gulf of Carpentaria crossing–Broome–west coast–southern coast–Queenscliff.",
+    "source_title": "Freya Hoffmeister — Australia expedition",
+    "source_url": "https://www.freyahoffmeister.com/expeditions/australia-2009/plan-and-facts-aus/plan-and-facts-aus-english",
+    "geometry_confidence": "medium",
+    "geometry_note": "Major coastal points come from the expedition record. The Gulf of Carpentaria crossing is shown offshore; other stretches are simplified coastal corridors.",
+    "segments": [
+      {
+        "mode": "sea kayaking",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.freyahoffmeister.com/expeditions/australia-2009/plan-and-facts-aus/plan-and-facts-aus-english",
+        "anchors": [
+          {
+            "name": "Queenscliff",
+            "lat": -38.27,
+            "lon": 144.66,
+            "note": "Start"
+          },
+          {
+            "name": "Wilsons Promontory offshore",
+            "lat": -39.16,
+            "lon": 146.45,
+            "note": "Southeast cape"
+          },
+          {
+            "name": "Eden",
+            "lat": -37.07,
+            "lon": 149.91,
+            "note": "East coast"
+          },
+          {
+            "name": "Sydney coast",
+            "lat": -33.86,
+            "lon": 151.27,
+            "note": "East coast"
+          },
+          {
+            "name": "Newcastle offshore",
+            "lat": -32.9,
+            "lon": 152.0,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Port Macquarie offshore",
+            "lat": -31.4,
+            "lon": 153.0,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Coffs Harbour offshore",
+            "lat": -30.3,
+            "lon": 153.25,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Byron Bay offshore",
+            "lat": -28.65,
+            "lon": 153.65,
+            "note": "East coast"
+          },
+          {
+            "name": "Brisbane coast",
+            "lat": -27.45,
+            "lon": 153.19,
+            "note": "East coast"
+          },
+          {
+            "name": "Fraser Island offshore",
+            "lat": -25.4,
+            "lon": 153.4,
+            "note": "Island coast"
+          },
+          {
+            "name": "Rockhampton offshore",
+            "lat": -23.5,
+            "lon": 151.35,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Whitsunday offshore",
+            "lat": -21.3,
+            "lon": 150.1,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Bowen offshore",
+            "lat": -20.4,
+            "lon": 149.0,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Palm Islands offshore",
+            "lat": -19.0,
+            "lon": 147.2,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Townsville coast",
+            "lat": -19.25,
+            "lon": 146.9,
+            "note": "Queensland coast"
+          },
+          {
+            "name": "Cairns coast",
+            "lat": -16.92,
+            "lon": 145.79,
+            "note": "Queensland coast"
+          },
+          {
+            "name": "Lizard Island offshore",
+            "lat": -14.5,
+            "lon": 145.4,
+            "note": "Illustrative east-coast waypoint"
+          },
+          {
+            "name": "Lockhart coast offshore",
+            "lat": -13.0,
+            "lon": 144.5,
+            "note": "Illustrative east-coast waypoint"
+          },
+          {
+            "name": "Cape York east offshore",
+            "lat": -11.5,
+            "lon": 143.5,
+            "note": "Illustrative east-coast waypoint"
+          },
+          {
+            "name": "Cape York",
+            "lat": -10.69,
+            "lon": 142.53,
+            "note": "Northern cape"
+          },
+          {
+            "name": "Gulf crossing",
+            "lat": -11,
+            "lon": 137,
+            "note": "Open-water Gulf waypoint"
+          },
+          {
+            "name": "Nhulunbuy",
+            "lat": -12.18,
+            "lon": 136.78,
+            "note": "Arnhem Land landfall region"
+          },
+          {
+            "name": "Cape Wessel",
+            "lat": -11,
+            "lon": 136.75,
+            "note": "Northern coast"
+          },
+          {
+            "name": "Darwin",
+            "lat": -12.42,
+            "lon": 130.82,
+            "note": "Top End"
+          },
+          {
+            "name": "Kimberley northeast offshore",
+            "lat": -13.6,
+            "lon": 127.5,
+            "note": "Offshore waypoint"
+          },
+          {
+            "name": "Kimberley northwest offshore",
+            "lat": -14.1,
+            "lon": 125.2,
+            "note": "Offshore waypoint"
+          },
+          {
+            "name": "Dampier Peninsula offshore",
+            "lat": -16.5,
+            "lon": 122.2,
+            "note": "Offshore waypoint"
+          },
+          {
+            "name": "Broome",
+            "lat": -17.95,
+            "lon": 122.24,
+            "note": "Halfway region"
+          },
+          {
+            "name": "Karratha coast",
+            "lat": -20.7,
+            "lon": 116.8,
+            "note": "Pilbara coast"
+          },
+          {
+            "name": "North West Cape",
+            "lat": -21.8,
+            "lon": 114.15,
+            "note": "Western cape"
+          },
+          {
+            "name": "Exmouth offshore",
+            "lat": -22.5,
+            "lon": 113.1,
+            "note": "Illustrative west-coast waypoint"
+          },
+          {
+            "name": "Carnarvon offshore",
+            "lat": -24.5,
+            "lon": 112.5,
+            "note": "Illustrative west-coast waypoint"
+          },
+          {
+            "name": "Shark Bay",
+            "lat": -25.7,
+            "lon": 113.4,
+            "note": "West coast"
+          },
+          {
+            "name": "Perth coast",
+            "lat": -31.97,
+            "lon": 115.7,
+            "note": "West coast"
+          },
+          {
+            "name": "Cape Leeuwin",
+            "lat": -34.38,
+            "lon": 115.13,
+            "note": "Southwest cape"
+          },
+          {
+            "name": "Albany coast",
+            "lat": -35.05,
+            "lon": 117.86,
+            "note": "South coast"
+          },
+          {
+            "name": "Esperance coast",
+            "lat": -33.86,
+            "lon": 121.9,
+            "note": "South coast"
+          },
+          {
+            "name": "Great Australian Bight",
+            "lat": -33.5,
+            "lon": 130,
+            "note": "Open-water coast parallel"
+          },
+          {
+            "name": "Ceduna",
+            "lat": -32.14,
+            "lon": 133.68,
+            "note": "Bight eastern edge"
+          },
+          {
+            "name": "Port Lincoln",
+            "lat": -34.73,
+            "lon": 135.87,
+            "note": "South Australian coast"
+          },
+          {
+            "name": "Cape Jervis",
+            "lat": -35.61,
+            "lon": 138.1,
+            "note": "South Australian cape"
+          },
+          {
+            "name": "South Australian offshore",
+            "lat": -36.5,
+            "lon": 139.0,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Robe offshore",
+            "lat": -37.5,
+            "lon": 139.5,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Port MacDonnell offshore",
+            "lat": -38.3,
+            "lon": 140.3,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Western Victoria offshore",
+            "lat": -38.7,
+            "lon": 141.8,
+            "note": "Illustrative coastal waypoint"
+          },
+          {
+            "name": "Cape Otway",
+            "lat": -38.86,
+            "lon": 143.51,
+            "note": "Victoria south coast"
+          },
+          {
+            "name": "Queenscliff",
+            "lat": -38.27,
+            "lon": 144.66,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-doba-atlantic-kayak-2013",
+    "rank": 20,
+    "title": "Aleksander Doba kayaks across the Atlantic",
+    "short_title": "Aleksander Doba",
+    "date": "2013–2014",
+    "why_famous": "Doba made a solo human-propelled kayak crossing from Europe to mainland North America, stopping at Bermuda.",
+    "route_summary": "Lisbon–Bermuda–Cape Canaveral, Florida.",
+    "source_title": "Guinness World Records — Doba Atlantic kayak",
+    "source_url": "https://www.guinnessworldrecords.com/world-records/645474-first-to-kayak-across-the-atlantic-from-europe-to-north-america",
+    "geometry_confidence": "medium",
+    "geometry_note": "Lisbon, Bermuda, and Canaveral are documented; intermediate ocean waypoints are illustrative and not GPS fixes.",
+    "segments": [
+      {
+        "mode": "ocean kayaking",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.guinnessworldrecords.com/world-records/645474-first-to-kayak-across-the-atlantic-from-europe-to-north-america",
+        "anchors": [
+          {
+            "name": "Lisbon",
+            "lat": 38.69,
+            "lon": -9.22,
+            "note": "Departure"
+          },
+          {
+            "name": "Central North Atlantic",
+            "lat": 34,
+            "lon": -35,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Western North Atlantic",
+            "lat": 33,
+            "lon": -55,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Bermuda",
+            "lat": 32.31,
+            "lon": -64.75,
+            "note": "Documented stop"
+          },
+          {
+            "name": "Western Atlantic",
+            "lat": 30,
+            "lon": -73,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Cape Canaveral",
+            "lat": 28.4,
+            "lon": -80.59,
+            "note": "U.S. landfall"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-john-fairfax-atlantic-1969",
+    "rank": 21,
+    "title": "John Fairfax's solo Atlantic row",
+    "short_title": "John Fairfax",
+    "date": "1969",
+    "why_famous": "Fairfax became the first person to row any ocean solo, crossing the Atlantic from the Canaries to Florida.",
+    "route_summary": "San Agustín, Gran Canaria, to Hollywood Beach near Miami.",
+    "source_title": "Guinness World Records — first solo ocean row",
+    "source_url": "https://www.guinnessworldrecords.com/world-records/first-row-across-any-ocean-solo-male",
+    "geometry_confidence": "medium",
+    "geometry_note": "Departure and landfall are documented; ocean waypoints sketch a possible corridor and are not observed positions.",
+    "segments": [
+      {
+        "mode": "ocean rowing",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.guinnessworldrecords.com/world-records/first-row-across-any-ocean-solo-male",
+        "anchors": [
+          {
+            "name": "San Agustín, Gran Canaria",
+            "lat": 27.77,
+            "lon": -15.55,
+            "note": "Departure"
+          },
+          {
+            "name": "Central Atlantic",
+            "lat": 24,
+            "lon": -35,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Western Atlantic",
+            "lat": 23,
+            "lon": -60,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Bahamas passage",
+            "lat": 25,
+            "lon": -77,
+            "note": "Illustrative offshore waypoint"
+          },
+          {
+            "name": "Hollywood Beach, Florida",
+            "lat": 26.01,
+            "lon": -80.12,
+            "note": "Landfall"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-tori-murden-atlantic-1999",
+    "rank": 22,
+    "title": "Tori Murden's solo Atlantic row",
+    "short_title": "Tori Murden",
+    "date": "1999",
+    "why_famous": "Murden became the first woman to row an ocean solo, reaching Guadeloupe after departing Tenerife.",
+    "route_summary": "Tenerife, Canary Islands, to Guadeloupe.",
+    "source_title": "Guinness World Records — first solo ocean row by a woman",
+    "source_url": "https://www.guinnessworldrecords.com/world-records/461329-first-row-across-any-ocean-solo-female",
+    "geometry_confidence": "medium",
+    "geometry_note": "Endpoints are documented; ocean waypoints are illustrative, not a reconstruction of wind-driven drift.",
+    "segments": [
+      {
+        "mode": "ocean rowing",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.guinnessworldrecords.com/world-records/461329-first-row-across-any-ocean-solo-female",
+        "anchors": [
+          {
+            "name": "Tenerife",
+            "lat": 28.45,
+            "lon": -16.56,
+            "note": "Departure"
+          },
+          {
+            "name": "Central Atlantic",
+            "lat": 24,
+            "lon": -35,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Western Atlantic",
+            "lat": 19,
+            "lon": -52,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Guadeloupe",
+            "lat": 16.25,
+            "lon": -61.53,
+            "note": "Landfall"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-roz-savage-pacific-2008",
+    "rank": 23,
+    "title": "Roz Savage's solo Pacific row",
+    "short_title": "Roz Savage",
+    "date": "2008–2010",
+    "why_famous": "Savage became the first woman to row the Pacific solo, completing it in three stages.",
+    "route_summary": "San Francisco–Hawaii–Tarawa, Kiribati–Papua New Guinea.",
+    "source_title": "Guinness World Records — Savage Pacific row",
+    "source_url": "https://www.guinnessworldrecords.com/world-records/first-female-to-row-the-pacific-ocean-solo-three-stages",
+    "geometry_confidence": "medium",
+    "geometry_note": "Stage endpoints are supported by the record source; open-water points are illustrative and each stage is separate.",
+    "segments": [
+      {
+        "mode": "ocean rowing",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.guinnessworldrecords.com/world-records/first-female-to-row-the-pacific-ocean-solo-three-stages",
+        "anchors": [
+          {
+            "name": "San Francisco",
+            "lat": 37.81,
+            "lon": -122.47,
+            "note": "Stage one departure"
+          },
+          {
+            "name": "Northeast Pacific",
+            "lat": 28,
+            "lon": -140,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Hawaii",
+            "lat": 21.31,
+            "lon": -157.86,
+            "note": "Stage one arrival"
+          }
+        ]
+      },
+      {
+        "mode": "ocean rowing",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.guinnessworldrecords.com/world-records/first-female-to-row-the-pacific-ocean-solo-three-stages",
+        "anchors": [
+          {
+            "name": "Hawaii",
+            "lat": 21.31,
+            "lon": -157.86,
+            "note": "Stage two departure"
+          },
+          {
+            "name": "Equatorial Pacific",
+            "lat": 8,
+            "lon": -175,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Tarawa",
+            "lat": 1.36,
+            "lon": 173.16,
+            "note": "Stage two arrival"
+          }
+        ]
+      },
+      {
+        "mode": "ocean rowing",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.guinnessworldrecords.com/world-records/first-female-to-row-the-pacific-ocean-solo-three-stages",
+        "anchors": [
+          {
+            "name": "Tarawa",
+            "lat": 1.36,
+            "lon": 173.16,
+            "note": "Stage three departure"
+          },
+          {
+            "name": "Southwest Pacific",
+            "lat": -2,
+            "lon": 155,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "Papua New Guinea",
+            "lat": -6.6,
+            "lon": 147.85,
+            "note": "Stage three arrival region"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-sarah-outen-pacific-2013",
+    "rank": 24,
+    "title": "Sarah Outen's North Pacific row",
+    "short_title": "Sarah Outen",
+    "date": "2013",
+    "why_famous": "Outen became the first woman to row the Pacific west to east solo; hazardous conditions required a tow for final harbor entry.",
+    "route_summary": "Choshi, Japan, to waters off Adak, Alaska; assisted tow to harbor is not shown as rowing.",
+    "source_title": "Guinness World Records — Sarah Outen Pacific row",
+    "source_url": "https://www.guinnessworldrecords.com/world-records/115141-first-row-across-the-pacific-ocean-west-to-east-solo-female",
+    "geometry_confidence": "medium",
+    "geometry_note": "The source gives the exact end-of-row coordinate off Adak. Other ocean waypoints are illustrative; the final tow is a distinct segment.",
+    "segments": [
+      {
+        "mode": "ocean rowing",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://www.guinnessworldrecords.com/world-records/115141-first-row-across-the-pacific-ocean-west-to-east-solo-female",
+        "anchors": [
+          {
+            "name": "Choshi",
+            "lat": 35.74,
+            "lon": 140.83,
+            "note": "Departure"
+          },
+          {
+            "name": "North Pacific",
+            "lat": 43,
+            "lon": 165,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "North Pacific east of date line",
+            "lat": 47,
+            "lon": -170,
+            "note": "Illustrative open-water waypoint"
+          },
+          {
+            "name": "End of solo row off Adak",
+            "lat": 51.6811,
+            "lon": -176.5894,
+            "note": "Guinness tow coordinate"
+          }
+        ]
+      },
+      {
+        "mode": "assisted tow",
+        "track_type": "source-derived",
+        "source_url": "https://www.guinnessworldrecords.com/world-records/115141-first-row-across-the-pacific-ocean-west-to-east-solo-female",
+        "anchors": [
+          {
+            "name": "End of solo row off Adak",
+            "lat": 51.6811,
+            "lon": -176.5894,
+            "note": "Tow begins"
+          },
+          {
+            "name": "Adak harbor",
+            "lat": 51.87,
+            "lon": -176.63,
+            "note": "Assisted harbor entry"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human-felicity-aston-antarctica-2011",
+    "rank": 25,
+    "title": "Felicity Aston's solo Antarctic crossing",
+    "short_title": "Felicity Aston",
+    "date": "2011–2012",
+    "why_famous": "Aston became the first woman to ski solo across Antarctica, covering 1,744 km from the Ross side through the South Pole to Hercules Inlet.",
+    "route_summary": "Ross Ice Shelf–Leverett Glacier–South Pole–Hercules Inlet.",
+    "source_title": "Guinness World Records — Aston Antarctic crossing",
+    "source_url": "https://www.guinnessworldrecords.com/world-records/101115-first-female-to-ski-solo-across-antarctica",
+    "geometry_confidence": "medium",
+    "geometry_note": "The glacier, pole, and finish are known route features, but plateau waypoints are schematic. Expedition was resupplied and used a flagged route. The South Pole has no unique longitude; 90°W is used here for map continuity.",
+    "segments": [
+      {
+        "mode": "skiing",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.guinnessworldrecords.com/world-records/101115-first-female-to-ski-solo-across-antarctica",
+        "anchors": [
+          {
+            "name": "Ross Ice Shelf start",
+            "lat": -85.4,
+            "lon": -166,
+            "note": "Leverett Glacier approach region"
+          },
+          {
+            "name": "Leverett Glacier",
+            "lat": -85.65,
+            "lon": -147,
+            "note": "Transantarctic Mountains crossing"
+          },
+          {
+            "name": "Polar plateau",
+            "lat": -87.5,
+            "lon": -90,
+            "note": "Schematic waypoint"
+          },
+          {
+            "name": "South Pole",
+            "lat": -90,
+            "lon": -90,
+            "note": "Pole crossing; display longitude follows approach meridian"
+          },
+          {
+            "name": "Ronne Ice Shelf approach",
+            "lat": -83,
+            "lon": -70,
+            "note": "Schematic waypoint"
+          },
+          {
+            "name": "Hercules Inlet",
+            "lat": -80.05,
+            "lon": -78.5,
+            "note": "Finish"
+          }
+        ]
+      }
+    ]
+  }
+]

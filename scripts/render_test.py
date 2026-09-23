@@ -97,9 +97,12 @@ def assert_world_render(path: Path, dom: str, route_colors: list[tuple[int, int,
     assert 'data-atlas-ready="true"' in dom
     assert 'data-canvas-rendered="true"' in dom
     assert dom.count('class="route-item') == 25, "sidebar should contain all 25 flights"
-    assert "Landmark Flight Atlas" in dom and "Twenty-Five Flights" not in dom
+    assert "Landmark Journeys" in dom and "Routes that made History" in dom
+    assert dom.count('role="tab"') == 8
+    assert 'id="tab-flights" aria-controls="route-list" aria-selected="true"' in dom
+    assert 'class="summary"' not in dom and 'class="button-row"' not in dom
     assert 'id="site-info-open"' in dom and 'id="site-info"' in dom
-    assert "Routes and uncertainty" in dom and "Maps and photographs" in dom
+    assert "Route geometry and uncertainty" in dom and "Maps and photographs" in dom
 
 
 def assert_selected_render(path: Path, dom: str) -> None:
@@ -136,7 +139,7 @@ def assert_new_route_render(path: Path, dom: str) -> None:
     assert selected > 250, f"Graf Zeppelin route is not visibly highlighted: {selected} pixels"
     assert "Graf Zeppelin — first airship circumnavigation" in dom
     assert 'src="assets/aircraft/graf-zeppelin-world-flight.webp"' in dom
-    assert "21–25" in dom
+    assert 'data-domain="human-powered"' in dom
 
 
 def assert_phone_world(path: Path, dom: str, route_colors: list[tuple[int, int, int]]) -> None:
@@ -151,7 +154,7 @@ def assert_phone_world(path: Path, dom: str, route_colors: list[tuple[int, int, 
     assert land > pixels * 0.1, f"phone map lacks visible land: {land}/{pixels}"
     assert routes > 1_000, f"phone map lacks visible routes: {routes}"
     assert dom.count('class="route-item') == 25
-    assert "Find a flight, year or era" in dom
+    assert "Search flights, years, eras" in dom
 
 
 def assert_phone_selected(path: Path, dom: str) -> None:
@@ -182,7 +185,7 @@ def assert_phone_expanded(path: Path, dom: str) -> None:
     assert dark > sheet.width * sheet.height * 0.3, "expanded phone sheet does not fill the lower viewport"
     assert dark_at_top > sheet_top.width * sheet_top.height * 0.5, "expanded phone sheet begins too low"
     assert 'data-sheet-state="expanded"' in dom
-    assert 'aria-label="Collapse flight details"' in dom
+    assert 'aria-label="Collapse journey details"' in dom
     assert 'src="assets/aircraft/lindbergh-spirit-of-st-louis.webp"' in dom
     assert dom.index('class="why-famous"') < dom.index('class="aircraft-figure"'), "expanded phone card should lead with why-famous"
 
