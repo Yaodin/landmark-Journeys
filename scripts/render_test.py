@@ -153,12 +153,27 @@ def assert_phone_world(path: Path, dom: str, route_colors: list[tuple[int, int, 
 def assert_phone_selected(path: Path, dom: str) -> None:
     image = Image.open(path).convert("RGB")
     selected = near_count(image, [(255, 159, 67)], tolerance=12)
-    sheet = image.crop((0, 380, *PHONE_VIEWPORT))
+    sheet = image.crop((0, 700, *PHONE_VIEWPORT))
     dark = near_count(sheet, [(15, 18, 24), (17, 20, 26)], tolerance=12)
+    map_window = image.crop((0, 260, 390, 680))
+    map_pixels = near_count(map_window, [(207, 227, 227), (185, 215, 218), (241, 238, 228)])
     assert selected > 30, f"selected route is not visible above phone sheet: {selected} pixels"
-    assert dark > sheet.width * sheet.height * 0.5, "phone detail sheet does not span the viewport"
+    assert dark > sheet.width * sheet.height * 0.35, "compact phone sheet is not visible at the bottom"
+    assert map_pixels > map_window.width * map_window.height * 0.55, "compact sheet obscures too much of the map"
+    assert 'data-sheet-state="collapsed"' in dom
+    assert 'class="sheet-handle"' in dom
     assert "Spirit of St. Louis — solo Atlantic crossing" in dom
     assert "Why it was famous" in dom
+
+
+def assert_phone_expanded(path: Path, dom: str) -> None:
+    image = Image.open(path).convert("RGB")
+    sheet = image.crop((0, 380, *PHONE_VIEWPORT))
+    dark = near_count(sheet, [(15, 18, 24), (17, 20, 26)], tolerance=12)
+    assert dark > sheet.width * sheet.height * 0.5, "expanded phone sheet does not fill the lower viewport"
+    assert 'data-sheet-state="expanded"' in dom
+    assert 'aria-label="Collapse flight details"' in dom
+    assert 'src="assets/aircraft/lindbergh-spirit-of-st-louis.webp"' in dom
 
 
 def assert_phone_landscape(path: Path, dom: str, route_colors: list[tuple[int, int, int]]) -> None:
@@ -217,6 +232,7 @@ def main() -> int:
         new_route_path = output_dir / "selected-graf-zeppelin.png"
         phone_path = output_dir / "phone-world.png"
         phone_selected_path = output_dir / "phone-selected-lindbergh.png"
+        phone_expanded_path = output_dir / "phone-expanded-lindbergh.png"
         phone_landscape_path = output_dir / "phone-landscape.png"
         world_url = base_url + "?" + urlencode({"basemap": "atlas"})
         world_dom = render(chrome, world_url, world_path, profile)
@@ -228,6 +244,8 @@ def main() -> int:
         new_route_dom = render(chrome, new_route_url, new_route_path, profile)
         phone_dom = render(chrome, world_url, phone_path, profile, PHONE_VIEWPORT)
         phone_selected_dom = render(chrome, selected_url, phone_selected_path, profile, PHONE_VIEWPORT)
+        phone_expanded_url = base_url + "?" + urlencode({"basemap": "atlas", "flight": "lindbergh-spirit-of-st-louis", "sheet": "expanded"})
+        phone_expanded_dom = render(chrome, phone_expanded_url, phone_expanded_path, profile, PHONE_VIEWPORT)
         phone_landscape_dom = render(chrome, world_url, phone_landscape_path, profile, PHONE_LANDSCAPE_VIEWPORT)
 
         collection = json.loads((ROOT / "data/routes.geojson").read_text())
@@ -253,6 +271,7 @@ def main() -> int:
         assert_new_route_render(new_route_path, new_route_dom)
         assert_phone_world(phone_path, phone_dom, route_colors)
         assert_phone_selected(phone_selected_path, phone_selected_dom)
+        assert_phone_expanded(phone_expanded_path, phone_expanded_dom)
         assert_phone_landscape(phone_landscape_path, phone_landscape_dom, route_colors)
         print(
             "PASS: desktop atlas, satellite, selected-flight, and phone portrait/landscape renders "

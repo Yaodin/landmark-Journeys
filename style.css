@@ -256,6 +256,7 @@ button, select { color: inherit; }
   scrollbar-color: #3b3f48 transparent;
 }
 .detail-card.empty { width: 290px; padding: 14px 16px; }
+.sheet-handle { display: none; }
 .empty-state { display: flex; align-items: center; gap: 12px; color: var(--muted); }
 .empty-state strong { color: var(--ink); font-size: 12px; }
 .empty-state p { margin: 3px 0 0; font-size: 10px; }
@@ -415,13 +416,48 @@ button, select { color: inherit; }
     right: 0;
     bottom: 0;
     width: 100%;
-    max-height: min(55dvh, 500px);
-    padding: 16px 15px max(16px, env(safe-area-inset-bottom));
+    height: auto;
+    max-height: none;
+    overflow: hidden;
+    padding: 5px 15px max(11px, env(safe-area-inset-bottom));
     border-width: 1px 0 0;
     border-radius: 17px 17px 0 0;
     box-shadow: 0 -16px 45px rgba(0,0,0,.42);
+    transition: height .24s ease, border-radius .24s ease;
   }
   .detail-card.empty { display: none; }
+  .detail-card.sheet-expanded {
+    height: min(72dvh, 610px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+  }
+  .detail-card.sheet-dragging { transition: none; overflow: hidden; }
+  .detail-card:not(.sheet-expanded):not(.sheet-dragging) > :not(.sheet-handle):not(.detail-top) { display: none; }
+  .sheet-handle {
+    position: sticky;
+    z-index: 2;
+    top: -5px;
+    width: 100%;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 2px;
+    padding: 0;
+    border: 0;
+    background: linear-gradient(#0f1218 72%, rgba(15,18,24,0));
+    cursor: ns-resize;
+    touch-action: none;
+  }
+  .sheet-handle span {
+    width: 46px;
+    height: 4px;
+    border-radius: 999px;
+    background: #666c77;
+    box-shadow: 0 1px 0 rgba(255,255,255,.08);
+  }
+  .sheet-expanded .sheet-handle span { background: var(--accent); }
   .detail-card h2 { font-size: 20px; }
   .aircraft-figure { margin: 12px 0 10px; }
   .aircraft-figure img { aspect-ratio: 16 / 8; }
@@ -470,11 +506,14 @@ button, select { color: inherit; }
     right: auto;
     bottom: 10px;
     width: min(450px, calc(100% - 20px));
-    max-height: calc(100dvh - 20px);
-    padding: 13px 14px;
+    height: auto;
+    max-height: none;
+    overflow: hidden;
+    padding: 5px 14px 10px;
     border: 1px solid var(--edge);
     border-radius: 12px;
   }
+  .detail-card.sheet-expanded { height: calc(100dvh - 20px); overflow-y: auto; padding-bottom: 13px; }
   .detail-card h2 { font-size: 18px; }
   .overview, .why-famous, .geometry-note, .waypoints { display: none; }
 }

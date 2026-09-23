@@ -681,6 +681,61 @@ function clearSelection() {
   routeList.querySelectorAll(".route-item").forEach((item) => item.classList.remove("selected"));
   detailCard.className = "detail-card empty";
   detailCard.innerHTML = `<div class="empty-state"><span class="empty-mark">↗</span><div><strong>Select a flight</strong><p>Click a route in the sidebar or a line on the map.</p></div></div>`;
+  delete document.body.dataset.sheetState;
+}
+
+function setSheetExpanded(expanded) {
+  detailCard.classList.toggle("sheet-expanded", expanded);
+  const handle = detailCard.querySelector(".sheet-handle");
+  handle?.setAttribute("aria-expanded", String(expanded));
+  if (handle) handle.setAttribute("aria-label", expanded ? "Collapse flight details" : "Expand flight details");
+  document.body.dataset.sheetState = expanded ? "expanded" : "collapsed";
+}
+
+function bindSheetGesture() {
+  const handle = detailCard.querySelector(".sheet-handle");
+  if (!handle) return;
+  let drag = null;
+  let suppressClick = false;
+
+  handle.addEventListener("click", () => {
+    if (suppressClick) {
+      suppressClick = false;
+      return;
+    }
+    setSheetExpanded(!detailCard.classList.contains("sheet-expanded"));
+  });
+  handle.addEventListener("pointerdown", (event) => {
+    suppressClick = false;
+    handle.setPointerCapture(event.pointerId);
+    drag = {
+      startY: event.clientY,
+      startHeight: detailCard.getBoundingClientRect().height,
+      moved: false,
+    };
+    detailCard.classList.add("sheet-dragging");
+  });
+  handle.addEventListener("pointermove", (event) => {
+    if (!drag) return;
+    const delta = event.clientY - drag.startY;
+    if (Math.abs(delta) > 5) drag.moved = true;
+    const landscape = matchMedia("(orientation: landscape) and (max-height: 520px)").matches;
+    const maximum = landscape ? window.innerHeight - 20 : Math.min(window.innerHeight * 0.72, 610);
+    const nextHeight = clamp(drag.startHeight - delta, 82, maximum);
+    detailCard.style.height = `${nextHeight}px`;
+  });
+  const finish = (event) => {
+    if (!drag) return;
+    const delta = event.clientY - drag.startY;
+    const moved = drag.moved;
+    suppressClick = moved;
+    drag = null;
+    detailCard.classList.remove("sheet-dragging");
+    detailCard.style.removeProperty("height");
+    if (moved && Math.abs(delta) > 18) setSheetExpanded(delta < 0);
+  };
+  handle.addEventListener("pointerup", finish);
+  handle.addEventListener("pointercancel", finish);
 }
 
 function renderDetail(feature) {
@@ -693,6 +748,7 @@ function renderDetail(feature) {
       <figcaption><a class="image-credit" href="${p.image.source_url}" target="_blank" rel="noreferrer">${p.image.credit}</a><a href="${p.image.license_url}" target="_blank" rel="noreferrer">${p.image.license} ↗</a></figcaption>
     </figure>` : "";
   detailCard.innerHTML = `
+    <button class="sheet-handle" type="button" aria-expanded="false" aria-label="Expand flight details"><span></span></button>
     <div class="detail-top">
       <div><div class="detail-rank">Flight ${String(p.rank).padStart(2, "0")} · ${p.group}</div><h2>${p.title}</h2><div class="detail-date">${p.date} · ${p.era}</div></div>
       <button class="close-detail" type="button" aria-label="Close details">×</button>
@@ -718,6 +774,8 @@ function renderDetail(feature) {
     <details class="waypoints"><summary>${p.anchors.length} researched route anchors</summary><ol>${anchors}</ol></details>`;
 
   detailCard.querySelector(".close-detail").addEventListener("click", clearSelection);
+  setSheetExpanded(false);
+  bindSheetGesture();
   detailCard.querySelector(".aircraft-figure img")?.addEventListener("error", (event) => {
     event.currentTarget.closest("figure").hidden = true;
   });
@@ -796,6 +854,9 @@ async function init() {
     document.querySelector("#loading").classList.add("done");
     const requestedFlight = new URLSearchParams(window.location.search).get("flight");
     if (requestedFlight) selectRoute(requestedFlight, true);
+    if (requestedFlight && new URLSearchParams(window.location.search).get("sheet") === "expanded") {
+      setSheetExpanded(true);
+    }
     // Paint once synchronously after data and query-state are installed. This
     // avoids a blank first frame in background tabs and headless browsers that
     // may throttle requestAnimationFrame before the first screenshot.
