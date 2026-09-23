@@ -1075,11 +1075,11 @@ document.querySelector("#zoom-in").addEventListener("click", () => mapView.zoomB
 document.querySelector("#zoom-out").addEventListener("click", () => mapView.zoomBy(-BUTTON_ZOOM_STEP));
 document.querySelector("#reset-view").addEventListener("click", () => mapView.setView(5, 23, 2));
 
-document.querySelector("#method-toggle").addEventListener("click", (event) => {
-  const body = document.querySelector("#method-body");
-  body.hidden = !body.hidden;
-  event.currentTarget.setAttribute("aria-expanded", String(!body.hidden));
-  event.currentTarget.querySelector("span").textContent = body.hidden ? "＋" : "−";
+const siteInfo = document.querySelector("#site-info");
+document.querySelector("#site-info-open").addEventListener("click", () => siteInfo.showModal());
+document.querySelector("#site-info-close").addEventListener("click", () => siteInfo.close());
+siteInfo.addEventListener("click", (event) => {
+  if (event.target === siteInfo) siteInfo.close();
 });
 
 async function init() {

@@ -4,15 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <title>Twenty-Five Flights — Historic Aviation Route Atlas</title>
-  <link rel="stylesheet" href="style.css?v=why-famous-first-1">
+  <title>Landmark Flight Atlas — Historic Aviation Routes</title>
+  <link rel="stylesheet" href="style.css?v=site-info-1">
 </head>
 <body>
   <aside class="sidebar" aria-label="Flight selector">
     <header class="brand">
-      <div class="eyebrow">Historic aviation route atlas</div>
-      <h1>Twenty-Five Flights</h1>
-      <p>Research anchors, reconstructed tracks, and downloadable high-resolution WKT.</p>
+      <div class="eyebrow">Routes that changed aviation</div>
+      <div class="brand-title">
+        <h1>Landmark Flight Atlas</h1>
+        <button id="site-info-open" class="site-info-button" type="button" aria-label="About this atlas" aria-haspopup="dialog">i</button>
+      </div>
     </header>
 
     <section class="summary" aria-label="Dataset summary">
@@ -40,14 +42,46 @@
     </div>
     <section id="route-list" class="route-list" aria-live="polite"></section>
 
-    <footer class="method-note">
-      <button type="button" id="method-toggle" aria-expanded="false">How to read these lines <span>＋</span></button>
-      <div id="method-body" hidden>
-        <p>Most historic flights predate continuous position recording. Routes connect researched endpoints, stops, landfalls, or logged positions using spherical great-circle interpolation.</p>
-        <p><strong>Extra vertices improve rendering—not historical certainty.</strong> Open a flight to see its evidence class and source.</p>
-      </div>
-    </footer>
   </aside>
+
+  <dialog id="site-info" class="site-info" aria-labelledby="site-info-title">
+    <div class="site-info-shell">
+      <header class="site-info-header">
+        <div>
+          <div class="eyebrow">About this project</div>
+          <h2 id="site-info-title">Landmark Flight Atlas</h2>
+        </div>
+        <button id="site-info-close" class="site-info-close" type="button" aria-label="Close information">×</button>
+      </header>
+      <p class="site-info-intro">An interactive atlas of 25 aviation flights selected for their historical impact, technical achievement, or enduring public significance.</p>
+      <div class="site-info-grid">
+        <section>
+          <h3>Routes and uncertainty</h3>
+          <p>Most flights predate continuous position recording. The map connects researched endpoints, stops, landfalls, and logged positions. Two-point routes use great-circle arcs; multi-point routes use a spherical spline through every anchor.</p>
+          <p><strong>Dense vertices make the lines smooth—not more historically certain.</strong> Every flight card states its evidence class and the limits of its reconstruction.</p>
+        </section>
+        <section>
+          <h3>Research sources</h3>
+          <p>Flight cards link to their principal source and a specific Wikipedia article. Sources include NASA, the NPS, NTSB, Smithsonian museums, national archives, manufacturers, and other institutional histories.</p>
+          <p>Open <em>researched route anchors</em> in any card to see the named points used to construct its track.</p>
+        </section>
+        <section>
+          <h3>Maps and photographs</h3>
+          <p>Satellite imagery is served by Esri and contributors. Atlas, night, and minimal maps use bundled Natural Earth country data; live attribution appears at the lower-right of the map.</p>
+          <p>The 25 aircraft images comprise 11 public-domain, 7 CC0, 3 CC BY 2.0, 3 CC BY-SA 2.0, and 1 CC BY-SA 3.0 works. Each image carries its own credit and license link.</p>
+        </section>
+        <section>
+          <h3>Data and access</h3>
+          <p>Each flight can be downloaded as WKT or GeoJSON in CRS84. The atlas is a static, client-side site with no account or analytics; satellite mode requests map tiles from Esri.</p>
+          <p>No blanket license replaces the terms attached to third-party maps or images. Follow the linked source and license for reuse.</p>
+        </section>
+      </div>
+      <footer class="site-info-footer">
+        <span>56,243 generated route vertices · 25 researched flights</span>
+        <a href="https://github.com/Yaodin/vibe-flights" target="_blank" rel="noreferrer">View source on GitHub ↗</a>
+      </footer>
+    </div>
+  </dialog>
 
   <main class="map-shell">
     <div id="map" role="application" aria-label="Interactive map of historic aviation routes">
@@ -86,6 +120,6 @@
     <div id="loading" class="loading"><span></span>Loading 25 routes…</div>
   </main>
 
-  <script type="module" src="app.js?v=why-famous-first-1"></script>
+  <script type="module" src="app.js?v=site-info-1"></script>
 </body>
 </html>

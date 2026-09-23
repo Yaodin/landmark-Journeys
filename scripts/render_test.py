@@ -97,6 +97,9 @@ def assert_world_render(path: Path, dom: str, route_colors: list[tuple[int, int,
     assert 'data-atlas-ready="true"' in dom
     assert 'data-canvas-rendered="true"' in dom
     assert dom.count('class="route-item') == 25, "sidebar should contain all 25 flights"
+    assert "Landmark Flight Atlas" in dom and "Twenty-Five Flights" not in dom
+    assert 'id="site-info-open"' in dom and 'id="site-info"' in dom
+    assert "Routes and uncertainty" in dom and "Maps and photographs" in dom
 
 
 def assert_selected_render(path: Path, dom: str) -> None:

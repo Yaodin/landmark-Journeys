@@ -1,4 +1,4 @@
-# Twenty-Five Flights
+# Landmark Flight Atlas
 
 A local canvas slippy-map atlas of twenty-five famous historic aviation routes. Each
 flight is selectable in the sidebar and includes a short encyclopedia-style

@@ -161,6 +161,39 @@ async function inspectRoute(page, routeId) {
   fs.mkdirSync(outputDir, { recursive: true });
   const browser = await chromium.launch({ headless: true });
   try {
+    for (const infoCase of [
+      { name: "desktop-site-info", viewport: { width: 1440, height: 900 } },
+      { name: "phone-site-info", viewport: { width: 390, height: 844 } },
+    ]) {
+      const context = await browser.newContext({ viewport: infoCase.viewport, deviceScaleFactor: 1 });
+      const page = await context.newPage();
+      await page.goto(`${baseUrl}/?basemap=atlas`, { waitUntil: "networkidle" });
+      await page.locator("#site-info-open").click();
+      await page.locator("#site-info[open]").waitFor();
+      const info = await page.locator("#site-info").evaluate((dialog) => {
+        const rect = dialog.getBoundingClientRect();
+        return {
+          open: dialog.open,
+          rect: { left: rect.left, top: rect.top, right: rect.right, bottom: rect.bottom },
+          sectionCount: dialog.querySelectorAll("section").length,
+          text: dialog.textContent,
+          github: dialog.querySelector('.site-info-footer a')?.href,
+        };
+      });
+      assert(info.open, `${infoCase.name}: information dialog did not open`);
+      assert(info.rect.left >= 8 && info.rect.top >= 8 && info.rect.right <= infoCase.viewport.width - 8 && info.rect.bottom <= infoCase.viewport.height - 8, `${infoCase.name}: dialog escapes viewport: ${JSON.stringify(info.rect)}`);
+      assert(info.sectionCount === 4, `${infoCase.name}: expected four information sections`);
+      for (const phrase of ["Routes and uncertainty", "Research sources", "Maps and photographs", "Data and access", "CC BY-SA 3.0"]) {
+        assert(info.text.includes(phrase), `${infoCase.name}: missing information: ${phrase}`);
+      }
+      assert(info.github === "https://github.com/Yaodin/vibe-flights", `${infoCase.name}: repository link is missing or wrong`);
+      await page.screenshot({ path: path.join(outputDir, `${infoCase.name}.png`) });
+      await page.locator("#site-info-close").click();
+      assert(await page.locator("#site-info").evaluate((dialog) => !dialog.open), `${infoCase.name}: close button did not close dialog`);
+      console.log(`PASS ${infoCase.name}: info control opens four-section source and license panel inside viewport`);
+      await context.close();
+    }
+
     for (const testCase of cases) {
       const context = await browser.newContext({ viewport: testCase.viewport, deviceScaleFactor: 1 });
       const page = await context.newPage();
