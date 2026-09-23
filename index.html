@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Twenty Flights — Historic Aviation Route Atlas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar" aria-label="Flight selector">
+    <header class="brand">
+      <div class="eyebrow">Historic aviation route atlas</div>
+      <h1>Twenty Flights</h1>
+      <p>Research anchors, reconstructed tracks, and downloadable high-resolution WKT.</p>
+    </header>
+
+    <section class="summary" aria-label="Dataset summary">
+      <div><strong id="visible-count">20</strong><span>visible</span></div>
+      <div><strong>20</strong><span>routes</span></div>
+      <div><strong id="vertex-count">—</strong><span>vertices</span></div>
+    </section>
+
+    <section class="controls">
+      <label class="searchbox">
+        <span aria-hidden="true">⌕</span>
+        <input id="search" type="search" placeholder="Find a flight, year or era…" autocomplete="off">
+      </label>
+      <div class="button-row">
+        <button type="button" data-action="all">All</button>
+        <button type="button" data-action="top">Top 10</button>
+        <button type="button" data-action="backup">Backup 10</button>
+        <button type="button" data-action="none">None</button>
+      </div>
+    </section>
+
+    <div class="list-heading">
+      <span>Flights</span>
+      <span>click to inspect</span>
+    </div>
+    <section id="route-list" class="route-list" aria-live="polite"></section>
+
+    <footer class="method-note">
+      <button type="button" id="method-toggle" aria-expanded="false">How to read these lines <span>＋</span></button>
+      <div id="method-body" hidden>
+        <p>Most historic flights predate continuous position recording. Routes connect researched endpoints, stops, landfalls, or logged positions using spherical great-circle interpolation.</p>
+        <p><strong>Extra vertices improve rendering—not historical certainty.</strong> Open a flight to see its evidence class and source.</p>
+      </div>
+    </footer>
+  </aside>
+
+  <main class="map-shell">
+    <div id="map" role="application" aria-label="Interactive map of historic aviation routes">
+      <canvas id="map-canvas"></canvas>
+      <div id="map-readout" class="map-readout">0.0°, 0.0° · z2.0</div>
+      <a id="map-attribution" class="map-attribution" href="https://www.esri.com/" target="_blank" rel="noreferrer">Imagery © Esri and contributors</a>
+    </div>
+
+    <div class="map-toolbar" aria-label="Map controls">
+      <label>Basemap
+        <select id="basemap">
+          <option value="satellite" selected>Satellite</option>
+          <option value="atlas">Atlas</option>
+          <option value="night">Night</option>
+          <option value="minimal">Minimal</option>
+        </select>
+      </label>
+      <button id="zoom-out" type="button" aria-label="Zoom out">−</button>
+      <button id="zoom-in" type="button" aria-label="Zoom in">＋</button>
+      <button id="reset-view" type="button">World view</button>
+    </div>
+
+    <section id="detail-card" class="detail-card empty" aria-live="polite">
+      <div class="empty-state">
+        <span class="empty-mark">↗</span>
+        <div><strong>Select a flight</strong><p>Click a route in the sidebar or a line on the map.</p></div>
+      </div>
+    </section>
+
+    <div class="legend">
+      <span><i class="solid"></i>visible route</span>
+      <span><i class="dash"></i>illustrative corridor</span>
+      <span><i class="dot"></i>selected anchors</span>
+    </div>
+
+    <div id="loading" class="loading"><span></span>Loading 20 routes…</div>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
