@@ -8,6 +8,7 @@ const WHEEL_ZOOM_SENSITIVITY = 0.0015;
 const MAX_WHEEL_ZOOM_STEP = 0.2;
 const BUTTON_ZOOM_STEP = 0.25;
 const DOUBLE_CLICK_ZOOM_STEP = 0.5;
+const FIT_SAMPLE_LIMIT = 700;
 
 const THEMES = {
   satellite: {
@@ -61,6 +62,34 @@ function geometryLines(geometry) {
   return geometry.type === "LineString" ? [geometry.coordinates] : geometry.coordinates;
 }
 
+function pointInPolygon(x, y, polygon) {
+  let inside = false;
+  for (let index = 0, previous = polygon.length - 1; index < polygon.length; previous = index, index += 1) {
+    const a = polygon[index];
+    const b = polygon[previous];
+    const crosses = (a.y > y) !== (b.y > y)
+      && x < (b.x - a.x) * (y - a.y) / (b.y - a.y) + a.x;
+    if (crosses) inside = !inside;
+  }
+  return inside;
+}
+
+function distanceToPolygon(x, y, polygon) {
+  let closest = Infinity;
+  for (let index = 0; index < polygon.length; index += 1) {
+    const a = polygon[index];
+    const b = polygon[(index + 1) % polygon.length];
+    const dx = b.x - a.x;
+    const dy = b.y - a.y;
+    const lengthSquared = dx * dx + dy * dy;
+    const fraction = lengthSquared
+      ? clamp(((x - a.x) * dx + (y - a.y) * dy) / lengthSquared, 0, 1)
+      : 0;
+    closest = Math.min(closest, Math.hypot(x - (a.x + fraction * dx), y - (a.y + fraction * dy)));
+  }
+  return closest;
+}
+
 class CanvasSlippyMap {
   constructor(canvas, readout, attribution) {
     this.canvas = canvas;
@@ -69,7 +98,7 @@ class CanvasSlippyMap {
     this.attribution = attribution;
     this.center = { lon: 5, lat: 23 };
     this.zoom = 2;
-    this.minZoom = 1.2;
+    this.minZoom = 0;
     this.maxZoom = 18;
     this.themeName = "satellite";
     this.tileCache = new Map();
@@ -80,6 +109,12 @@ class CanvasSlippyMap {
     this.drag = null;
     this.renderPending = false;
     this.onRoutePick = () => {};
+    this.getFitPolygon = () => [
+      { x: 18, y: 72 },
+      { x: this.width - 18, y: 72 },
+      { x: this.width - 18, y: this.height - 28 },
+      { x: 18, y: this.height - 28 },
+    ];
     this.resizeObserver = new ResizeObserver(() => this.resize());
     this.resizeObserver.observe(canvas.parentElement);
     this.bindEvents();
@@ -177,30 +212,123 @@ class CanvasSlippyMap {
   }
 
   fitFeature(feature) {
-    const anchors = feature.properties.anchors;
-    if (!anchors?.length) return;
     const points = [];
     let previousLon = null;
     let shift = 0;
-    for (const anchor of anchors) {
-      let lon = anchor.lon + shift;
-      if (previousLon !== null) {
-        while (lon - previousLon > 180) { shift -= 360; lon -= 360; }
-        while (lon - previousLon < -180) { shift += 360; lon += 360; }
+    for (const line of geometryLines(feature.geometry)) {
+      for (const [rawLon, lat] of line) {
+        let lon = rawLon + shift;
+        if (previousLon !== null) {
+          while (lon - previousLon > 180) { shift -= 360; lon -= 360; }
+          while (lon - previousLon < -180) { shift += 360; lon += 360; }
+        }
+        previousLon = lon;
+        points.push(this.project(lon, lat, 0));
       }
-      previousLon = lon;
-      points.push(this.project(lon, anchor.lat, 0));
     }
-    const xs = points.map((point) => point.x);
-    const ys = points.map((point) => point.y);
-    const minX = Math.min(...xs), maxX = Math.max(...xs);
-    const minY = Math.min(...ys), maxY = Math.max(...ys);
+    if (points.length < 2) return;
+
+    const sampleEvery = Math.max(1, Math.ceil(points.length / FIT_SAMPLE_LIMIT));
+    const samples = points.filter((_, index) => index % sampleEvery === 0);
+    if (samples.at(-1) !== points.at(-1)) samples.push(points.at(-1));
+    const minX = Math.min(...points.map((point) => point.x));
+    const maxX = Math.max(...points.map((point) => point.x));
+    const minY = Math.min(...points.map((point) => point.y));
+    const maxY = Math.max(...points.map((point) => point.y));
     const extentX = Math.max(maxX - minX, 0.00001);
     const extentY = Math.max(maxY - minY, 0.00001);
-    const availableW = this.width * 0.72;
-    const availableH = this.height * 0.56;
-    const zoom = clamp(Math.min(Math.log2(availableW / extentX), Math.log2(availableH / extentY)), this.minZoom, this.maxZoom);
-    const center = this.unproject((minX + maxX) / 2 * 2 ** zoom, (minY + maxY) / 2 * 2 ** zoom, zoom);
+    const polygon = this.getFitPolygon();
+    const polygonMinX = Math.min(...polygon.map((point) => point.x));
+    const polygonMaxX = Math.max(...polygon.map((point) => point.x));
+    const polygonMinY = Math.min(...polygon.map((point) => point.y));
+    const polygonMaxY = Math.max(...polygon.map((point) => point.y));
+
+    const evaluate = (scale, translateX, translateY) => {
+      let outside = 0;
+      let outsideDistance = 0;
+      let clearance = Infinity;
+      for (const point of samples) {
+        const x = point.x * scale + translateX;
+        const y = point.y * scale + translateY;
+        const distance = distanceToPolygon(x, y, polygon);
+        if (pointInPolygon(x, y, polygon)) clearance = Math.min(clearance, distance);
+        else { outside += 1; outsideDistance += distance; }
+      }
+      return {
+        feasible: outside === 0,
+        score: outside === 0 ? 1_000_000 + clearance : -(outside * 10_000 + outsideDistance),
+        translateX,
+        translateY,
+      };
+    };
+
+    const findPlacement = (zoom) => {
+      const scale = 2 ** zoom;
+      const minTranslateX = polygonMinX - minX * scale;
+      const maxTranslateX = polygonMaxX - maxX * scale;
+      const minTranslateY = polygonMinY - minY * scale;
+      const maxTranslateY = polygonMaxY - maxY * scale;
+      if (minTranslateX > maxTranslateX || minTranslateY > maxTranslateY) return null;
+
+      let xLow = minTranslateX;
+      let xHigh = maxTranslateX;
+      let yLow = minTranslateY;
+      let yHigh = maxTranslateY;
+      let best = null;
+      const divisions = 10;
+      for (let refinement = 0; refinement < 4; refinement += 1) {
+        let roundBest = null;
+        const xStep = (xHigh - xLow) / divisions;
+        const yStep = (yHigh - yLow) / divisions;
+        for (let xIndex = 0; xIndex <= divisions; xIndex += 1) {
+          const translateX = xLow + xStep * xIndex;
+          for (let yIndex = 0; yIndex <= divisions; yIndex += 1) {
+            const candidate = evaluate(scale, translateX, yLow + yStep * yIndex);
+            if (!roundBest || candidate.score > roundBest.score) roundBest = candidate;
+          }
+        }
+        best = roundBest;
+        if (!best) break;
+        xLow = Math.max(minTranslateX, best.translateX - xStep);
+        xHigh = Math.min(maxTranslateX, best.translateX + xStep);
+        yLow = Math.max(minTranslateY, best.translateY - yStep);
+        yHigh = Math.min(maxTranslateY, best.translateY + yStep);
+      }
+      return best?.feasible ? best : null;
+    };
+
+    const polygonWidth = polygonMaxX - polygonMinX;
+    const polygonHeight = polygonMaxY - polygonMinY;
+    let lowerZoom = this.minZoom;
+    let upperZoom = clamp(
+      Math.min(Math.log2(polygonWidth / extentX), Math.log2(polygonHeight / extentY)),
+      this.minZoom,
+      this.maxZoom,
+    );
+    let placement = findPlacement(lowerZoom);
+    for (let iteration = 0; iteration < 16 && upperZoom - lowerZoom > 0.005; iteration += 1) {
+      const candidateZoom = (lowerZoom + upperZoom) / 2;
+      const candidatePlacement = findPlacement(candidateZoom);
+      if (candidatePlacement) {
+        lowerZoom = candidateZoom;
+        placement = candidatePlacement;
+      } else {
+        upperZoom = candidateZoom;
+      }
+    }
+    const zoom = Math.max(this.minZoom, lowerZoom - 0.06);
+    placement = findPlacement(zoom) || placement;
+    if (!placement) return;
+    const center = this.unproject(
+      this.width / 2 - placement.translateX,
+      this.height / 2 - placement.translateY,
+      zoom,
+    );
+    document.body.dataset.fitMode = "viewport-polygon";
+    document.body.dataset.fitRoute = feature.properties.id;
+    document.body.dataset.fitZoom = zoom.toFixed(3);
+    document.body.dataset.fitCenter = `${center.lon.toFixed(7)},${center.lat.toFixed(7)}`;
+    document.body.dataset.fitPolygon = polygon.map((point) => `${Math.round(point.x)},${Math.round(point.y)}`).join(" ");
     this.setView(center.lon, center.lat, zoom);
   }
 
@@ -624,6 +752,41 @@ const mapView = new CanvasSlippyMap(
   document.querySelector("#map-attribution"),
 );
 mapView.onRoutePick = (id) => selectRoute(id, false);
+mapView.getFitPolygon = () => {
+  const left = 18;
+  const top = 72;
+  const right = Math.max(left + 1, mapView.width - 18);
+  const bottom = Math.max(top + 1, mapView.height - 28);
+  const rectangle = [
+    { x: left, y: top },
+    { x: right, y: top },
+    { x: right, y: bottom },
+    { x: left, y: bottom },
+  ];
+  if (detailCard.classList.contains("empty")) return rectangle;
+
+  const canvasRect = mapView.canvas.getBoundingClientRect();
+  const cardRect = detailCard.getBoundingClientRect();
+  if (!cardRect.width || !cardRect.height) return rectangle;
+  const cardTop = clamp(cardRect.top - canvasRect.top - 16, top, bottom);
+  const cardRight = clamp(cardRect.right - canvasRect.left + 16, left, right);
+  if (cardRect.width >= canvasRect.width * 0.84) {
+    return [
+      { x: left, y: top },
+      { x: right, y: top },
+      { x: right, y: cardTop },
+      { x: left, y: cardTop },
+    ];
+  }
+  return [
+    { x: left, y: top },
+    { x: right, y: top },
+    { x: right, y: bottom },
+    { x: cardRight, y: bottom },
+    { x: cardRight, y: cardTop },
+    { x: left, y: cardTop },
+  ];
+};
 
 function formatDistance(km) {
   if (km < 1) return `${Math.round(km * 1000)} m`;
@@ -681,8 +844,8 @@ function selectRoute(id, fit = false) {
   if (!state.visible.has(id)) setVisibility(id, true);
   state.selected = id;
   routeList.querySelectorAll(".route-item").forEach((item) => item.classList.toggle("selected", item.dataset.id === id));
-  mapView.select(id, fit);
   renderDetail(feature);
+  mapView.select(id, fit);
 }
 
 function clearSelection() {

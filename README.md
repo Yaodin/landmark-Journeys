@@ -34,6 +34,19 @@ DOM:
 python scripts/render_test.py --output-dir /tmp/aviation-render-test
 ```
 
+The overlay-aware route fitter also has a true-device-viewport visual test. It
+clicks sidebar items in desktop, phone, and phone-landscape layouts, verifies
+every generated track point is inside the measured viewport polygon, and reads
+the canvas pixels to confirm the route was actually painted at those positions:
+
+```bash
+docker run --rm --network host \
+  -e NODE_PATH=/tmp/pw/node_modules \
+  -v "$PWD:/work:ro" \
+  mcr.microsoft.com/playwright:v1.63.0-noble \
+  sh -lc 'mkdir -p /tmp/pw && cd /tmp/pw && npm install --silent playwright@1.63.0 && node /work/scripts/viewport_fit_visual_test.cjs'
+```
+
 ## Geometry method
 
 Historic route records usually provide endpoints, named stops, landfalls, or a
