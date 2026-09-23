@@ -77,6 +77,31 @@ async function inspectRoute(page, routeId) {
       y: point.y - center.y + canvas.clientHeight / 2,
     }));
     const outside = screen.filter((point) => !inside(point.x, point.y));
+    function canShift(dx, dy) {
+      return screen.every((point) => inside(point.x + dx, point.y + dy));
+    }
+
+    function shiftAllowance(dx, dy) {
+      let low = 0;
+      let high = Math.max(canvas.clientWidth, canvas.clientHeight);
+      for (let iteration = 0; iteration < 14; iteration += 1) {
+        const distance = (low + high) / 2;
+        if (canShift(dx * distance, dy * distance)) low = distance;
+        else high = distance;
+      }
+      return low;
+    }
+
+    const shiftRoom = {
+      left: shiftAllowance(-1, 0),
+      right: shiftAllowance(1, 0),
+      up: shiftAllowance(0, -1),
+      down: shiftAllowance(0, 1),
+    };
+    const centerImbalance = Math.max(
+      Math.abs(shiftRoom.left - shiftRoom.right),
+      Math.abs(shiftRoom.up - shiftRoom.down),
+    );
 
     const expected = feature.properties.color.match(/[a-f0-9]{2}/gi).map((part) => parseInt(part, 16));
     const inspectEvery = Math.max(1, Math.floor(screen.length / 180));
@@ -113,11 +138,15 @@ async function inspectRoute(page, routeId) {
       innerHeight: window.innerHeight,
       polygon,
       outside: outside.length,
+      outsideSample: outside.slice(0, 3),
       totalPoints: screen.length,
       visualHits,
       inspected: inspected.length,
       fitMode: document.body.dataset.fitMode,
       fitRoute: document.body.dataset.fitRoute,
+      centerImbalance,
+      centerTolerance: Math.max(14, Math.min(canvas.clientWidth, canvas.clientHeight) * 0.045),
+      shiftRoom,
       cardOverlap: {
         left: cardRect.left - canvasRect.left,
         top: cardRect.top - canvasRect.top,
@@ -147,9 +176,10 @@ async function inspectRoute(page, routeId) {
       assert(result.fitMode === "viewport-polygon", `${testCase.name}: polygon fitter did not run`);
       assert(result.fitRoute === testCase.route, `${testCase.name}: wrong route was fitted`);
       assert(result.polygon.length === testCase.polygonPoints, `${testCase.name}: expected ${testCase.polygonPoints}-point viewport polygon, got ${result.polygon.length}`);
-      assert(result.outside === 0, `${testCase.name}: ${result.outside}/${result.totalPoints} track points fall outside the viewport polygon`);
+      assert(result.outside === 0, `${testCase.name}: ${result.outside}/${result.totalPoints} track points fall outside the viewport polygon: ${JSON.stringify(result.outsideSample)}`);
+      assert(result.centerImbalance <= result.centerTolerance, `${testCase.name}: opposing free-space imbalance is ${result.centerImbalance.toFixed(1)}px (limit ${result.centerTolerance.toFixed(1)}px): ${JSON.stringify(result.shiftRoom)}`);
       assert(result.visualHits >= result.inspected * 0.9, `${testCase.name}: only ${result.visualHits}/${result.inspected} sampled track locations contain route-colored pixels`);
-      console.log(`PASS ${testCase.name}: ${result.totalPoints} points inside ${result.polygon.length}-point polygon; ${result.visualHits}/${result.inspected} visual pixel hits`);
+      console.log(`PASS ${testCase.name}: ${result.totalPoints} points inside ${result.polygon.length}-point polygon; center imbalance ${result.centerImbalance.toFixed(1)}px; ${result.visualHits}/${result.inspected} visual pixel hits`);
       await context.close();
     }
 
@@ -169,6 +199,7 @@ async function inspectRoute(page, routeId) {
         assert(result.fitMode === "viewport-polygon", `${layout.name}/${routeId}: polygon fitter did not run`);
         assert(result.polygon.length === layout.polygonPoints, `${layout.name}/${routeId}: wrong viewport polygon`);
         assert(result.outside === 0, `${layout.name}/${routeId}: ${result.outside}/${result.totalPoints} track points fall outside the viewport polygon`);
+        assert(result.centerImbalance <= result.centerTolerance, `${layout.name}/${routeId}: opposing free-space imbalance is ${result.centerImbalance.toFixed(1)}px: ${JSON.stringify(result.shiftRoom)}`);
         assert(result.visualHits >= result.inspected * 0.75, `${layout.name}/${routeId}: only ${result.visualHits}/${result.inspected} sampled locations contain route-colored pixels`);
       }
       console.log(`PASS ${layout.name}: all ${routeIds.length} sidebar items fit geometrically and visually`);

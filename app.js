@@ -9,6 +9,8 @@ const MAX_WHEEL_ZOOM_STEP = 0.2;
 const BUTTON_ZOOM_STEP = 0.25;
 const DOUBLE_CLICK_ZOOM_STEP = 0.5;
 const FIT_SAMPLE_LIMIT = 700;
+const FIT_ZOOM_BREATHING_ROOM = 0.18;
+const FIT_EDGE_CLEARANCE = 4;
 
 const THEMES = {
   satellite: {
@@ -88,6 +90,30 @@ function distanceToPolygon(x, y, polygon) {
     closest = Math.min(closest, Math.hypot(x - (a.x + fraction * dx), y - (a.y + fraction * dy)));
   }
   return closest;
+}
+
+function polygonCentroid(polygon) {
+  let areaTwice = 0;
+  let weightedX = 0;
+  let weightedY = 0;
+  for (let index = 0; index < polygon.length; index += 1) {
+    const a = polygon[index];
+    const b = polygon[(index + 1) % polygon.length];
+    const cross = a.x * b.y - b.x * a.y;
+    areaTwice += cross;
+    weightedX += (a.x + b.x) * cross;
+    weightedY += (a.y + b.y) * cross;
+  }
+  if (Math.abs(areaTwice) < 0.001) {
+    return {
+      x: polygon.reduce((sum, point) => sum + point.x, 0) / polygon.length,
+      y: polygon.reduce((sum, point) => sum + point.y, 0) / polygon.length,
+    };
+  }
+  return {
+    x: weightedX / (3 * areaTwice),
+    y: weightedY / (3 * areaTwice),
+  };
 }
 
 class CanvasSlippyMap {
@@ -242,6 +268,8 @@ class CanvasSlippyMap {
     const polygonMaxX = Math.max(...polygon.map((point) => point.x));
     const polygonMinY = Math.min(...polygon.map((point) => point.y));
     const polygonMaxY = Math.max(...polygon.map((point) => point.y));
+    const polygonCenter = polygonCentroid(polygon);
+    const routeCenter = { x: (minX + maxX) / 2, y: (minY + maxY) / 2 };
 
     const evaluate = (scale, translateX, translateY) => {
       let outside = 0;
@@ -251,12 +279,23 @@ class CanvasSlippyMap {
         const x = point.x * scale + translateX;
         const y = point.y * scale + translateY;
         const distance = distanceToPolygon(x, y, polygon);
-        if (pointInPolygon(x, y, polygon)) clearance = Math.min(clearance, distance);
-        else { outside += 1; outsideDistance += distance; }
+        if (pointInPolygon(x, y, polygon) && distance >= FIT_EDGE_CLEARANCE) {
+          clearance = Math.min(clearance, distance);
+        } else {
+          outside += 1;
+          outsideDistance += Math.abs(FIT_EDGE_CLEARANCE - distance);
+        }
       }
+      const centerDistance = Math.hypot(
+        routeCenter.x * scale + translateX - polygonCenter.x,
+        routeCenter.y * scale + translateY - polygonCenter.y,
+      );
       return {
         feasible: outside === 0,
-        score: outside === 0 ? 1_000_000 + clearance : -(outside * 10_000 + outsideDistance),
+        score: outside === 0
+          ? 1_000_000 + clearance * 100 - centerDistance
+          : -(outside * 10_000 + outsideDistance + centerDistance),
+        centerDistance,
         translateX,
         translateY,
       };
@@ -277,7 +316,9 @@ class CanvasSlippyMap {
       let best = null;
       const divisions = 10;
       for (let refinement = 0; refinement < 4; refinement += 1) {
-        let roundBest = null;
+        const preferredX = clamp(polygonCenter.x - routeCenter.x * scale, xLow, xHigh);
+        const preferredY = clamp(polygonCenter.y - routeCenter.y * scale, yLow, yHigh);
+        let roundBest = evaluate(scale, preferredX, preferredY);
         const xStep = (xHigh - xLow) / divisions;
         const yStep = (yHigh - yLow) / divisions;
         for (let xIndex = 0; xIndex <= divisions; xIndex += 1) {
@@ -316,9 +357,50 @@ class CanvasSlippyMap {
         upperZoom = candidateZoom;
       }
     }
-    const zoom = Math.max(this.minZoom, lowerZoom - 0.06);
+    let zoom = Math.max(this.minZoom, lowerZoom - FIT_ZOOM_BREATHING_ROOM);
     placement = findPlacement(zoom) || placement;
-    if (!placement) return;
+    const outsideFullTrack = (candidateZoom, candidatePlacement) => {
+      if (!candidatePlacement) return points;
+      const scale = 2 ** candidateZoom;
+      return points.filter((point) => {
+        const x = point.x * scale + candidatePlacement.translateX;
+        const y = point.y * scale + candidatePlacement.translateY;
+        return !pointInPolygon(x, y, polygon) || distanceToPolygon(x, y, polygon) < FIT_EDGE_CLEARANCE;
+      });
+    };
+    for (let attempt = 0; attempt < 8; attempt += 1) {
+      const missed = outsideFullTrack(zoom, placement);
+      if (!missed.length) break;
+      samples.push(...missed);
+      zoom = Math.max(this.minZoom, zoom - 0.04);
+      placement = findPlacement(zoom) || placement;
+    }
+    if (!placement || outsideFullTrack(zoom, placement).length) return;
+    const scale = 2 ** zoom;
+    const translationFits = (translateX, translateY) => points.every((point) => {
+      const x = point.x * scale + translateX;
+      const y = point.y * scale + translateY;
+      return pointInPolygon(x, y, polygon) && distanceToPolygon(x, y, polygon) >= FIT_EDGE_CLEARANCE;
+    });
+    const shiftAllowance = (translateX, translateY, directionX, directionY) => {
+      let low = 0;
+      let high = Math.max(this.width, this.height);
+      for (let iteration = 0; iteration < 14; iteration += 1) {
+        const distance = (low + high) / 2;
+        if (translationFits(translateX + directionX * distance, translateY + directionY * distance)) low = distance;
+        else high = distance;
+      }
+      return low;
+    };
+    for (let iteration = 0; iteration < 3; iteration += 1) {
+      const leftRoom = shiftAllowance(placement.translateX, placement.translateY, -1, 0);
+      const rightRoom = shiftAllowance(placement.translateX, placement.translateY, 1, 0);
+      placement.translateX += (rightRoom - leftRoom) / 2;
+      const upRoom = shiftAllowance(placement.translateX, placement.translateY, 0, -1);
+      const downRoom = shiftAllowance(placement.translateX, placement.translateY, 0, 1);
+      placement.translateY += (downRoom - upRoom) / 2;
+    }
+    placement = evaluate(scale, placement.translateX, placement.translateY);
     const center = this.unproject(
       this.width / 2 - placement.translateX,
       this.height / 2 - placement.translateY,
@@ -328,7 +410,8 @@ class CanvasSlippyMap {
     document.body.dataset.fitRoute = feature.properties.id;
     document.body.dataset.fitZoom = zoom.toFixed(3);
     document.body.dataset.fitCenter = `${center.lon.toFixed(7)},${center.lat.toFixed(7)}`;
-    document.body.dataset.fitPolygon = polygon.map((point) => `${Math.round(point.x)},${Math.round(point.y)}`).join(" ");
+    document.body.dataset.fitCenterOffset = placement.centerDistance.toFixed(2);
+    document.body.dataset.fitPolygon = polygon.map((point) => `${point.x.toFixed(2)},${point.y.toFixed(2)}`).join(" ");
     this.setView(center.lon, center.lat, zoom);
   }
 
