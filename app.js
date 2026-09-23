@@ -1,4 +1,4 @@
-const ROUTES_URL = "data/routes.geojson";
+const ROUTES_URL = "data/routes.geojson?v=smooth-routes-1";
 const BASEMAP_URL = "data/ne_110m_admin_0_countries.geojson";
 const AIRCRAFT_IMAGES_URL = "data/aircraft-images.json";
 const IMAGERY_TILE_URL = "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}";
@@ -765,7 +765,7 @@ function renderDetail(feature) {
     <div class="quality"><span>Route evidence</span><strong>${p.quality_label}</strong></div>
     <p class="geometry-note">${p.description}</p>
     <div class="detail-actions">
-      <a href="${p.wkt_file}" download>Download WKT</a>
+      <a href="${p.wkt_file}?v=smooth-routes-1" download>Download WKT</a>
       <button type="button" class="copy-wkt">Copy WKT</button>
       <button type="button" class="download-geojson">Download GeoJSON</button>
       <a class="source" href="${p.source_url}" target="_blank" rel="noreferrer">Research source ↗</a>
@@ -780,7 +780,7 @@ function renderDetail(feature) {
     event.currentTarget.closest("figure").hidden = true;
   });
   detailCard.querySelector(".copy-wkt").addEventListener("click", async (event) => {
-    const text = await fetch(p.wkt_file).then((response) => response.text());
+    const text = await fetch(`${p.wkt_file}?v=smooth-routes-1`).then((response) => response.text());
     await navigator.clipboard.writeText(text.trim());
     event.currentTarget.textContent = "Copied";
     setTimeout(() => { event.currentTarget.textContent = "Copy WKT"; }, 1300);

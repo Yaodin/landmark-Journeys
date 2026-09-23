@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Build densified GeoJSON and WKT for the historic-flight map.
+"""Build smooth, densified GeoJSON and WKT for the historic-flight map.
 
 The source records usually preserve endpoints, stops, or selected waypoints—not
-continuous telemetry. Each segment is therefore rendered as a spherical
-great-circle interpolation between documented anchors. The output metadata
-keeps that distinction visible.
+continuous telemetry. Two-point routes use spherical great-circle interpolation;
+multi-point routes use a spherical cardinal spline that passes through every
+documented anchor while rounding visual joins. The output metadata keeps the
+distinction between generated geometry and observed positions visible.
 """
 
 from __future__ import annotations
@@ -17,6 +18,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 WKT_DIR = DATA_DIR / "wkt"
+MAX_INTERPOLATION_STEP_KM = 5.0
+CARDINAL_TANGENT_SCALE = 0.85
 
 
 def p(name: str, lat: float, lon: float, note: str = "") -> dict:
@@ -839,14 +842,77 @@ def slerp(a: dict, b: dict, fraction: float) -> tuple[float, float]:
     return lon, lat
 
 
+def unit_vector(point: dict) -> tuple[float, float, float]:
+    lat, lon = math.radians(point["lat"]), math.radians(point["lon"])
+    return math.cos(lat) * math.cos(lon), math.cos(lat) * math.sin(lon), math.sin(lat)
+
+
+def spherical_cardinal(
+    p0: dict,
+    p1: dict,
+    p2: dict,
+    p3: dict,
+    fraction: float,
+) -> tuple[float, float]:
+    """Interpolate p1→p2 with a normalized 3D cardinal spline.
+
+    Interpolating unit vectors avoids longitude discontinuities at the
+    antimeridian. Normalizing each result places the curve back on the globe.
+    A restrained tangent scale rounds waypoint joins without large overshoots.
+    """
+    v0, v1, v2, v3 = (unit_vector(point) for point in (p0, p1, p2, p3))
+    t = fraction
+    t2, t3 = t * t, t * t * t
+    h00 = 2 * t3 - 3 * t2 + 1
+    h10 = t3 - 2 * t2 + t
+    h01 = -2 * t3 + 3 * t2
+    h11 = t3 - t2
+    chord = [v2[axis] - v1[axis] for axis in range(3)]
+    chord_length = math.sqrt(sum(value * value for value in chord))
+
+    def limited_tangent(start: tuple[float, float, float], end: tuple[float, float, float]) -> list[float]:
+        direction = [end[axis] - start[axis] for axis in range(3)]
+        direction_length = math.sqrt(sum(value * value for value in direction))
+        if direction_length < 1e-12:
+            direction = chord
+            direction_length = chord_length
+        if direction_length < 1e-12:
+            return [0.0, 0.0, 0.0]
+        magnitude = CARDINAL_TANGENT_SCALE * chord_length
+        return [value / direction_length * magnitude for value in direction]
+
+    tangent1 = limited_tangent(v0, v2)
+    tangent2 = limited_tangent(v1, v3)
+    values = []
+    for axis in range(3):
+        values.append(h00 * v1[axis] + h10 * tangent1[axis] + h01 * v2[axis] + h11 * tangent2[axis])
+    length = math.sqrt(sum(value * value for value in values))
+    if length < 1e-12:
+        return slerp(p1, p2, fraction)
+    x, y, z = (value / length for value in values)
+    return math.degrees(math.atan2(y, x)), math.degrees(math.atan2(z, math.hypot(x, y)))
+
+
 def densify(anchors: list[dict], step_km: float) -> list[tuple[float, float]]:
+    step_km = min(step_km, MAX_INTERPOLATION_STEP_KM)
+    closed = (
+        len(anchors) > 2
+        and anchors[0]["lat"] == anchors[-1]["lat"]
+        and anchors[0]["lon"] == anchors[-1]["lon"]
+    )
     points: list[tuple[float, float]] = []
     for index, (a, b) in enumerate(zip(anchors, anchors[1:])):
         distance = haversine_km(a, b)
         segments = max(1, math.ceil(distance / step_km))
+        if len(anchors) == 2:
+            interpolate = lambda fraction: slerp(a, b, fraction)
+        else:
+            previous = anchors[index - 1] if index > 0 else (anchors[-2] if closed else a)
+            following = anchors[index + 2] if index + 2 < len(anchors) else (anchors[1] if closed else b)
+            interpolate = lambda fraction: spherical_cardinal(previous, a, b, following, fraction)
         start = 0 if index == 0 else 1
         for n in range(start, segments + 1):
-            points.append(slerp(a, b, n / segments))
+            points.append(interpolate(n / segments))
     return points
 
 
@@ -935,7 +1001,8 @@ def build() -> None:
         "crs": {"type": "name", "properties": {"name": "urn:ogc:def:crs:OGC:1.3:CRS84"}},
         "metadata": {
             "generated_by": "scripts/build_routes.py",
-            "method": "Spherical great-circle interpolation between researched anchors",
+            "method": "Great-circle interpolation for two-point routes; spherical cardinal interpolation through multi-point route anchors",
+            "target_interpolation_step_km": MAX_INTERPOLATION_STEP_KM,
             "warning": "Interpolated vertices are visualization geometry, not observed aircraft positions.",
             "route_count": len(features),
         },

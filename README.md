@@ -37,11 +37,13 @@ python scripts/render_test.py --output-dir /tmp/aviation-render-test
 ## Geometry method
 
 Historic route records usually provide endpoints, named stops, landfalls, or a
-small number of logged positions—not continuous GPS tracks. The builder uses
-spherical great-circle interpolation between those anchors. Long routes are
-densified to a maximum spacing of roughly 20–25 km; local routes use spacing as
-fine as 5–250 m. Antimeridian crossings are split into valid WKT
-`MULTILINESTRING` parts.
+small number of logged positions—not continuous GPS tracks. Two-anchor routes
+use spherical great-circle interpolation. Multi-anchor routes use a normalized
+3D cardinal spline that passes through every anchor while smoothly joining the
+segments. Long routes use a 5 km target interpolation interval, with spline
+samples remaining below 10 km through curved joins. Local routes retain
+spacing as fine as 5–250 m. Antimeridian crossings are
+split into valid WKT `MULTILINESTRING` parts.
 
 High vertex density improves rendering and interchange. It does **not** make an
 interpolated segment equivalent to observed telemetry. That limitation is

@@ -1,26 +1,26 @@
 rank	id	title	date	distance_km	vertices	geometry	quality	wkt_file
 1	wright-first-flight	Wright Flyer — first powered flight	1903-12-17	0.037	9	LineString	Documented endpoints	data/wkt/wright-first-flight.wkt
-2	lindbergh-spirit-of-st-louis	Spirit of St. Louis — solo Atlantic crossing	1927-05-20/21	5836	295	LineString	Documented landfalls + reconstructed ocean track	data/wkt/lindbergh-spirit-of-st-louis.wkt
-3	enola-gay-hiroshima	Enola Gay — Hiroshima mission	1945-08-06	5097.1	345	LineString	Navigator-log waypoints	data/wkt/enola-gay-hiroshima.wkt
-4	earhart-solo-atlantic	Amelia Earhart — solo Atlantic crossing	1932-05-20/21	3241.6	164	LineString	Documented endpoints + geodesic reconstruction	data/wkt/earhart-solo-atlantic.wkt
+2	lindbergh-spirit-of-st-louis	Spirit of St. Louis — solo Atlantic crossing	1927-05-20/21	5836	1171	LineString	Documented landfalls + reconstructed ocean track	data/wkt/lindbergh-spirit-of-st-louis.wkt
+3	enola-gay-hiroshima	Enola Gay — Hiroshima mission	1945-08-06	5097.1	1024	LineString	Navigator-log waypoints	data/wkt/enola-gay-hiroshima.wkt
+4	earhart-solo-atlantic	Amelia Earhart — solo Atlantic crossing	1932-05-20/21	3241.6	650	LineString	Documented endpoints + geodesic reconstruction	data/wkt/earhart-solo-atlantic.wkt
 5	bell-x1-sound-barrier	Bell X-1 — first supersonic flight	1947-10-14	34.5	175	LineString	Documented local profile; illustrative plan-view path	data/wkt/bell-x1-sound-barrier.wkt
 6	us-airways-1549	US Airways 1549 — Hudson River ditching	2009-01-15	29	295	LineString	NTSB flight-track reconstruction	data/wkt/us-airways-1549.wkt
-7	concorde-ba300	Concorde BA300 — inaugural commercial service	1976-01-21	5093.2	256	LineString	Documented endpoints + geodesic reconstruction	data/wkt/concorde-ba300.wkt
-8	rutan-voyager	Rutan Voyager — nonstop unrefueled circumnavigation	1986-12-14/23	41387.1	1667	MultiLineString	Published-map corridor approximation	data/wkt/rutan-voyager.wkt
-9	alcock-brown-atlantic	Alcock and Brown — first nonstop Atlantic crossing	1919-06-14/15	3041.7	154	LineString	Documented endpoints + geodesic reconstruction	data/wkt/alcock-brown-atlantic.wkt
+7	concorde-ba300	Concorde BA300 — inaugural commercial service	1976-01-21	5093.2	1020	LineString	Documented endpoints + geodesic reconstruction	data/wkt/concorde-ba300.wkt
+8	rutan-voyager	Rutan Voyager — nonstop unrefueled circumnavigation	1986-12-14/23	41387.1	8288	MultiLineString	Published-map corridor approximation	data/wkt/rutan-voyager.wkt
+9	alcock-brown-atlantic	Alcock and Brown — first nonstop Atlantic crossing	1919-06-14/15	3041.7	610	LineString	Documented endpoints + geodesic reconstruction	data/wkt/alcock-brown-atlantic.wkt
 10	bleriot-channel	Blériot XI — first airplane crossing of the Channel	1909-07-25	42.8	87	LineString	Documented takeoff, landfall and landing	data/wkt/bleriot-channel.wkt
-11	vin-fiz-transcontinental	Vin Fiz — first U.S. transcontinental flight	1911-09-17/11-05	5157.3	526	LineString	Documented corridor + major-stop reconstruction	data/wkt/vin-fiz-transcontinental.wkt
+11	vin-fiz-transcontinental	Vin Fiz — first U.S. transcontinental flight	1911-09-17/11-05	5157.3	1042	LineString	Documented corridor + major-stop reconstruction	data/wkt/vin-fiz-transcontinental.wkt
 12	jannus-first-airline	St. Petersburg–Tampa Airboat Line — inaugural flight	1914-01-01	25.9	105	LineString	Documented city endpoints + bay crossing	data/wkt/jannus-first-airline.wkt
-13	douglas-world-cruisers	Douglas World Cruisers — first aerial circumnavigation	1924-04-06/09-28	38437.5	1956	MultiLineString	Documented major stops	data/wkt/douglas-world-cruisers.wkt
-14	southern-cross-transpacific	Southern Cross — first U.S.–Australia trans-Pacific flight	1928-05-31/06-09	11941.1	602	MultiLineString	Documented stops	data/wkt/southern-cross-transpacific.wkt
-15	wiley-post-solo-world	Wiley Post — first solo circumnavigation	1933-07-15/22	24946.8	1255	MultiLineString	Documented stops	data/wkt/wiley-post-solo-world.wkt
-16	china-clipper-airmail	China Clipper — inaugural trans-Pacific airmail flight	1935-11-22/29	12855.5	648	MultiLineString	Documented stops	data/wkt/china-clipper-airmail.wkt
+13	douglas-world-cruisers	Douglas World Cruisers — first aerial circumnavigation	1924-04-06/09-28	38437.5	7719	MultiLineString	Documented major stops	data/wkt/douglas-world-cruisers.wkt
+14	southern-cross-transpacific	Southern Cross — first U.S.–Australia trans-Pacific flight	1928-05-31/06-09	11941.1	2394	MultiLineString	Documented stops	data/wkt/southern-cross-transpacific.wkt
+15	wiley-post-solo-world	Wiley Post — first solo circumnavigation	1933-07-15/22	24946.8	4998	MultiLineString	Documented stops	data/wkt/wiley-post-solo-world.wkt
+16	china-clipper-airmail	China Clipper — inaugural trans-Pacific airmail flight	1935-11-22/29	12855.5	2577	MultiLineString	Documented stops	data/wkt/china-clipper-airmail.wkt
 17	spruce-goose	Hughes H-4 Hercules — the Spruce Goose's only flight	1947-11-02	0.747	76	LineString	Documented harbor flight; approximate endpoints	data/wkt/spruce-goose.wkt
-18	first-commercial-747	Pan Am — first commercial Boeing 747 flight	1970-01-22	5540	279	LineString	Documented endpoints + geodesic reconstruction	data/wkt/first-commercial-747.wkt
+18	first-commercial-747	Pan Am — first commercial Boeing 747 flight	1970-01-22	5540	1110	LineString	Documented endpoints + geodesic reconstruction	data/wkt/first-commercial-747.wkt
 19	gossamer-albatross	Gossamer Albatross — human-powered Channel crossing	1979-06-12	35.2	142	LineString	Documented endpoints + geodesic reconstruction	data/wkt/gossamer-albatross.wkt
-20	solar-impulse-2	Solar Impulse 2 — first solar-powered circumnavigation	2015-03-09/2016-07-26	35067.1	1766	MultiLineString	Official 17-leg itinerary	data/wkt/solar-impulse-2.wkt
-21	nc4-first-atlantic-crossing	NC-4 — first aircraft across the Atlantic	1919-05-08/31	7089.2	289	LineString	Documented stop sequence	data/wkt/nc4-first-atlantic-crossing.wkt
-22	graf-zeppelin-world-flight	Graf Zeppelin — first airship circumnavigation	1929-08-07/29	30315.9	1225	MultiLineString	Documented stops + named corridor anchors	data/wkt/graf-zeppelin-world-flight.wkt
-23	lucky-lady-ii-world-flight	Lucky Lady II — first nonstop flight around the world	1949-02-26/03-02	35321.6	1418	MultiLineString	Documented refueling regions + reconstructed track	data/wkt/lucky-lady-ii-world-flight.wkt
-24	sr71-coast-to-coast-record	SR-71 Blackbird — coast-to-coast retirement record	1990-03-06	3865.5	197	LineString	Named record gates; illustrative corridor	data/wkt/sr71-coast-to-coast-record.wkt
-25	air-canada-143-gimli-glider	Air Canada 143 — the Gimli Glider	1983-07-23	1879.1	192	LineString	Official sequence + approximate event areas	data/wkt/air-canada-143-gimli-glider.wkt
+20	solar-impulse-2	Solar Impulse 2 — first solar-powered circumnavigation	2015-03-09/2016-07-26	35067.1	7026	MultiLineString	Official 17-leg itinerary	data/wkt/solar-impulse-2.wkt
+21	nc4-first-atlantic-crossing	NC-4 — first aircraft across the Atlantic	1919-05-08/31	7089.2	1424	LineString	Documented stop sequence	data/wkt/nc4-first-atlantic-crossing.wkt
+22	graf-zeppelin-world-flight	Graf Zeppelin — first airship circumnavigation	1929-08-07/29	30315.9	6075	MultiLineString	Documented stops + named corridor anchors	data/wkt/graf-zeppelin-world-flight.wkt
+23	lucky-lady-ii-world-flight	Lucky Lady II — first nonstop flight around the world	1949-02-26/03-02	35321.6	7070	MultiLineString	Documented refueling regions + reconstructed track	data/wkt/lucky-lady-ii-world-flight.wkt
+24	sr71-coast-to-coast-record	SR-71 Blackbird — coast-to-coast retirement record	1990-03-06	3865.5	777	LineString	Named record gates; illustrative corridor	data/wkt/sr71-coast-to-coast-record.wkt
+25	air-canada-143-gimli-glider	Air Canada 143 — the Gimli Glider	1983-07-23	1879.1	379	LineString	Official sequence + approximate event areas	data/wkt/air-canada-143-gimli-glider.wkt
