@@ -535,5 +535,5 @@ button, select { color: inherit; }
   }
   .detail-card.sheet-expanded { height: calc(100dvh - 20px); overflow-y: auto; padding-bottom: 13px; }
   .detail-card h2 { font-size: 18px; }
-  .overview, .why-famous, .geometry-note, .waypoints { display: none; }
+  .overview, .geometry-note, .waypoints { display: none; }
 }

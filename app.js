@@ -1009,10 +1009,10 @@ function renderDetail(feature) {
       <div><div class="detail-rank">Flight ${String(p.rank).padStart(2, "0")} · ${p.group}</div><h2>${p.title}</h2><div class="detail-date">${p.date} · ${p.era}</div></div>
       <button class="close-detail" type="button" aria-label="Close details">×</button>
     </div>
+    <div class="why-famous"><span>Why it was famous</span><p>${p.why_famous}</p></div>
     ${aircraftImage}
     <p class="route-summary">${p.route_summary}</p>
     <p class="overview">${p.overview}</p>
-    <div class="why-famous"><span>Why it was famous</span><p>${p.why_famous}</p></div>
     <div class="metrics">
       <div class="metric"><strong>${formatDistance(p.distance_km)}</strong><span>anchor path</span></div>
       <div class="metric"><strong>${p.vertex_count.toLocaleString()}</strong><span>WKT vertices</span></div>
