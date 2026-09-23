@@ -4,6 +4,10 @@ const AIRCRAFT_IMAGES_URL = "data/aircraft-images.json";
 const IMAGERY_TILE_URL = "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}";
 const TILE_SIZE = 256;
 const MAX_LAT = 85.05112878;
+const WHEEL_ZOOM_SENSITIVITY = 0.0015;
+const MAX_WHEEL_ZOOM_STEP = 0.2;
+const BUTTON_ZOOM_STEP = 0.25;
+const DOUBLE_CLICK_ZOOM_STEP = 0.5;
 
 const THEMES = {
   satellite: {
@@ -525,7 +529,7 @@ class CanvasSlippyMap {
   }
 
   updateReadout(point = this.center) {
-    this.readout.textContent = `${Math.abs(point.lat).toFixed(2)}°${point.lat >= 0 ? "N" : "S"}, ${Math.abs(point.lon).toFixed(2)}°${point.lon >= 0 ? "E" : "W"} · z${this.zoom.toFixed(1)}`;
+    this.readout.textContent = `${Math.abs(point.lat).toFixed(2)}°${point.lat >= 0 ? "N" : "S"}, ${Math.abs(point.lon).toFixed(2)}°${point.lon >= 0 ? "E" : "W"} · z${this.zoom.toFixed(2)}`;
   }
 
   pointSegmentDistance(px, py, a, b) {
@@ -588,12 +592,18 @@ class CanvasSlippyMap {
     this.canvas.addEventListener("wheel", (event) => {
       event.preventDefault();
       const rect = this.canvas.getBoundingClientRect();
-      this.zoomBy(event.deltaY < 0 ? 0.5 : -0.5, event.clientX - rect.left, event.clientY - rect.top);
+      const pixels = event.deltaMode === WheelEvent.DOM_DELTA_LINE
+        ? event.deltaY * 16
+        : event.deltaMode === WheelEvent.DOM_DELTA_PAGE
+          ? event.deltaY * window.innerHeight
+          : event.deltaY;
+      const delta = clamp(-pixels * WHEEL_ZOOM_SENSITIVITY, -MAX_WHEEL_ZOOM_STEP, MAX_WHEEL_ZOOM_STEP);
+      this.zoomBy(delta, event.clientX - rect.left, event.clientY - rect.top);
     }, { passive: false });
     this.canvas.addEventListener("dblclick", (event) => {
       event.preventDefault();
       const rect = this.canvas.getBoundingClientRect();
-      this.zoomBy(1, event.clientX - rect.left, event.clientY - rect.top);
+      this.zoomBy(DOUBLE_CLICK_ZOOM_STEP, event.clientX - rect.left, event.clientY - rect.top);
     });
   }
 }
@@ -815,8 +825,8 @@ document.querySelector("#search").addEventListener("input", (event) => {
 });
 
 document.querySelector("#basemap").addEventListener("change", (event) => mapView.setTheme(event.target.value));
-document.querySelector("#zoom-in").addEventListener("click", () => mapView.zoomBy(0.75));
-document.querySelector("#zoom-out").addEventListener("click", () => mapView.zoomBy(-0.75));
+document.querySelector("#zoom-in").addEventListener("click", () => mapView.zoomBy(BUTTON_ZOOM_STEP));
+document.querySelector("#zoom-out").addEventListener("click", () => mapView.zoomBy(-BUTTON_ZOOM_STEP));
 document.querySelector("#reset-view").addEventListener("click", () => mapView.setView(5, 23, 2));
 
 document.querySelector("#method-toggle").addEventListener("click", (event) => {
