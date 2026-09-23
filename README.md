@@ -1,11 +1,14 @@
-# Twenty Flights
+# Twenty-Five Flights
 
-A local canvas slippy-map atlas of twenty famous historic aviation routes. Each
+A local canvas slippy-map atlas of twenty-five famous historic aviation routes. Each
 flight is selectable in the sidebar and includes a short encyclopedia-style
 account, why the flight became famous, downloadable WKT, research anchors,
 source attribution, route length, and an evidence-quality label. Esri World
 Imagery is the default high-resolution satellite layer; three bundled Natural
 Earth styles remain available as fast, offline fallbacks.
+
+Every description links separately to its primary research source and its most
+specific verified English Wikipedia page.
 
 ## Run
 
@@ -22,9 +25,10 @@ The public GitHub Pages deployment is available at
 
 ## Render test
 
-The render test starts an ephemeral local server, opens the world and selected
-flight views in headless Chrome, and inspects the screenshots for basemap and
-route pixels as well as the rendered DOM:
+The render test starts an ephemeral local server, opens world, selected-flight,
+satellite, phone portrait, and phone landscape views in headless Chrome, and
+inspects the screenshots for basemap and route pixels as well as the rendered
+DOM:
 
 ```bash
 python scripts/render_test.py --output-dir /tmp/aviation-render-test
@@ -48,5 +52,9 @@ Generated outputs:
 - `data/routes.geojson` — all route geometry and metadata in CRS84
 - `data/wkt/*.wkt` — one WKT geometry per flight
 - `data/routes-index.tsv` — route/output inventory
+
+Aircraft photographs are stored under `assets/aircraft/`; their source, credit,
+and reuse license are recorded in `data/aircraft-images.json` and shown beside
+each image in the flight detail card.
 
 Run `python scripts/build_routes.py` after editing route anchors.

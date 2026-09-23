@@ -28,7 +28,7 @@ def main() -> None:
     handler = lambda *a, **kw: Handler(*a, directory=root, **kw)  # noqa: E731
     server = http.server.ThreadingHTTPServer(("127.0.0.1", args.port), handler)
     bound_port = server.server_address[1]
-    print(f"Serving Twenty Flights at http://127.0.0.1:{bound_port}", flush=True)
+    print(f"Serving Twenty-Five Flights at http://127.0.0.1:{bound_port}", flush=True)
     server.serve_forever()
 
 

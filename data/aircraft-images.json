@@ -1,0 +1,227 @@
+{
+  "wright-first-flight": {
+    "path": "assets/aircraft/wright-first-flight.webp",
+    "commons_file": "File:1903 Wright Flyer front view.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:1903_Wright_Flyer_front_view.jpg",
+    "alt": "Front view of the 1903 Wright Flyer resting on the sands at Kitty Hawk.",
+    "credit": "Wilbur and/or Orville Wright · Library of Congress",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "lindbergh-spirit-of-st-louis": {
+    "path": "assets/aircraft/lindbergh-spirit-of-st-louis.webp",
+    "commons_file": "File:Spirit of St. Louis, Charles Lindbergh, First Solo Trans-Atlantic Flight, 1927 (10437179716).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Spirit_of_St._Louis,_Charles_Lindbergh,_First_Solo_Trans-Atlantic_Flight,_1927_(10437179716).jpg",
+    "alt": "Silver Spirit of St. Louis monoplane displayed at the Smithsonian.",
+    "credit": "Gary Lee Todd",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "enola-gay-hiroshima": {
+    "path": "assets/aircraft/enola-gay-hiroshima.webp",
+    "commons_file": "File:B-29 Superfortress Enola Gay.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B-29_Superfortress_Enola_Gay.jpg",
+    "alt": "The Enola Gay B-29 Superfortress on the ground in 1945.",
+    "credit": "United States Air Force",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "earhart-solo-atlantic": {
+    "path": "assets/aircraft/earhart-solo-atlantic.webp",
+    "commons_file": "File:Lockheed Vega 5B of Amelia Earhart c1932.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lockheed_Vega_5B_of_Amelia_Earhart_c1932.jpg",
+    "alt": "Amelia Earhart's red Lockheed Vega 5B, registration NC7952.",
+    "credit": "U.S. Navy · Robert S. Quackenbush collection",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "bell-x1-sound-barrier": {
+    "path": "assets/aircraft/bell-x1-sound-barrier.webp",
+    "commons_file": "File:Bell X-1 \"Glamorous Glennis\" (10437351945).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bell_X-1_%22Glamorous_Glennis%22_(10437351945).jpg",
+    "alt": "Orange Bell X-1 Glamorous Glennis suspended in the Smithsonian.",
+    "credit": "Gary Todd",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "us-airways-1549": {
+    "path": "assets/aircraft/us-airways-1549.webp",
+    "commons_file": "File:US Airways Flight 1549 (N106US) after crashing into the Hudson River (crop 2).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:US_Airways_Flight_1549_(N106US)_after_crashing_into_the_Hudson_River_(crop_2).jpg",
+    "alt": "Airbus A320 N106US floating in the Hudson as passengers evacuate.",
+    "credit": "Greg L.",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "concorde-ba300": {
+    "path": "assets/aircraft/concorde-ba300.webp",
+    "commons_file": "File:BAC Aerospatiale Concorde 102 ‘G-BOAA’ (25027616897).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:BAC_Aerospatiale_Concorde_102_%E2%80%98G-BOAA%E2%80%99_(25027616897).jpg",
+    "alt": "British Airways Concorde G-BOAA displayed at the National Museum of Flight.",
+    "credit": "Alan Wilson",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  "rutan-voyager": {
+    "path": "assets/aircraft/rutan-voyager.webp",
+    "commons_file": "File:Rutan Voyager - DPLA - 6bead3e2c523468636761cd6f029a5cc (page 1).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Rutan_Voyager_-_DPLA_-_6bead3e2c523468636761cd6f029a5cc_(page_1).jpg",
+    "alt": "Rutan Voyager displayed in the Smithsonian's Milestones of Flight hall.",
+    "credit": "Eric Long · Smithsonian NASM",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "alcock-brown-atlantic": {
+    "path": "assets/aircraft/alcock-brown-atlantic.webp",
+    "commons_file": "File:Vickers Vimy IV (BAPC-51) (19072826336).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Vickers_Vimy_IV_(BAPC-51)_(19072826336).jpg",
+    "alt": "Alcock and Brown's original Vickers Vimy displayed in London's Science Museum.",
+    "credit": "Alan Wilson",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  "bleriot-channel": {
+    "path": "assets/aircraft/bleriot-channel.webp",
+    "commons_file": "File:3b40729r.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:3b40729r.jpg",
+    "alt": "Louis Blériot flying his Blériot XI over the Dover cliffs in 1909.",
+    "credit": "Bain News Service · Library of Congress",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "vin-fiz-transcontinental": {
+    "path": "assets/aircraft/vin-fiz-transcontinental.webp",
+    "commons_file": "File:Wright EX Vin Fiz - DPLA - 3f6b472789fc10ab9fad6e3e23f98190 (page 1).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Wright_EX_Vin_Fiz_-_DPLA_-_3f6b472789fc10ab9fad6e3e23f98190_(page_1).jpg",
+    "alt": "Wright EX Vin Fiz displayed at the Smithsonian.",
+    "credit": "Eric Long · Smithsonian NASM",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "jannus-first-airline": {
+    "path": "assets/aircraft/jannus-first-airline.webp",
+    "commons_file": "File:First flight by St. Petersburg-Tampa Airboat Line.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:First_flight_by_St._Petersburg-Tampa_Airboat_Line.jpg",
+    "alt": "Benoist XIV beginning its takeoff run on Tampa Bay on 1 January 1914.",
+    "credit": "Photographer unknown · Smithsonian source",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "douglas-world-cruisers": {
+    "path": "assets/aircraft/douglas-world-cruisers.webp",
+    "commons_file": "File:Douglas World Cruiser \"Chicago\" (10437330333).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Douglas_World_Cruiser_%22Chicago%22_(10437330333).jpg",
+    "alt": "Douglas World Cruiser Chicago displayed at the Smithsonian.",
+    "credit": "Gary Todd",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "southern-cross-transpacific": {
+    "path": "assets/aircraft/southern-cross-transpacific.webp",
+    "commons_file": "File:StateLibQld 1 107640 Southern Cross, a Fokker F.VII 3m aeroplane, on display in an enclosure at the airfield, June 1928.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:StateLibQld_1_107640_Southern_Cross,_a_Fokker_F.VII_3m_aeroplane,_on_display_in_an_enclosure_at_the_airfield,_June_1928.jpg",
+    "alt": "Fokker F.VII/3m Southern Cross at an airfield after its 1928 Pacific crossing.",
+    "credit": "Photographer unknown · State Library of Queensland",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "wiley-post-solo-world": {
+    "path": "assets/aircraft/wiley-post-solo-world.webp",
+    "commons_file": "File:Lockheed Vega \"Winnie Mae\" - DPLA - cd0882cbeb9fea3096c6be9e3a1a1f58 (page 4).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lockheed_Vega_%22Winnie_Mae%22_-_DPLA_-_cd0882cbeb9fea3096c6be9e3a1a1f58_(page_4).jpg",
+    "alt": "Wiley Post's white-and-blue Lockheed Vega Winnie Mae viewed from above.",
+    "credit": "Smithsonian NASM",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "china-clipper-airmail": {
+    "path": "assets/aircraft/china-clipper-airmail.webp",
+    "commons_file": "File:Martin 130 China Clipper at Pearl Harbor 1930s.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Martin_130_China_Clipper_at_Pearl_Harbor_1930s.jpg",
+    "alt": "Pan Am Martin M-130 China Clipper floating at Pearl Harbor.",
+    "credit": "Unknown photographer · U.S. National Park Service",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "spruce-goose": {
+    "path": "assets/aircraft/spruce-goose.webp",
+    "commons_file": "File:H4-Hercules-DN-SN-82-05646.JPEG",
+    "source_url": "https://commons.wikimedia.org/wiki/File:H4-Hercules-DN-SN-82-05646.JPEG",
+    "alt": "Aerial view of the Hughes H-4 Hercules flying boat.",
+    "credit": "PH1 Robert G. Swan · U.S. Department of Defense",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "first-commercial-747": {
+    "path": "assets/aircraft/first-commercial-747.webp",
+    "commons_file": "File:Pan Am Boeing 747-121 N736PA at Sydney.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pan_Am_Boeing_747-121_N736PA_at_Sydney.jpg",
+    "alt": "Pan Am Boeing 747-121 N736PA, Clipper Victor, parked at Sydney.",
+    "credit": "Rob Russell",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "gossamer-albatross": {
+    "path": "assets/aircraft/gossamer-albatross.webp",
+    "commons_file": "File:MacCready \"Gossamer Albatross\" - DPLA - 23efa3a7f795fb37e51372d1abb39696 (page 1).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:MacCready_%22Gossamer_Albatross%22_-_DPLA_-_23efa3a7f795fb37e51372d1abb39696_(page_1).jpg",
+    "alt": "Gossamer Albatross human-powered aircraft displayed at the Smithsonian.",
+    "credit": "Eric Long · Smithsonian NASM",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "solar-impulse-2": {
+    "path": "assets/aircraft/solar-impulse-2.webp",
+    "commons_file": "File:Solar Impulse 2 Oahu Hawaii April 2016.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Solar_Impulse_2_Oahu_Hawaii_April_2016.jpg",
+    "alt": "Solar Impulse 2 HB-SIB in its mobile hangar during the Hawaii stop.",
+    "credit": "Anthony Quintano",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "nc4-first-atlantic-crossing": {
+    "path": "assets/aircraft/nc4-first-atlantic-crossing.webp",
+    "commons_file": "File:The first aircraft to fly the Atlantic. There were three of these NC-4's which started across the Atlantic in May... - NARA - 295607.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_first_aircraft_to_fly_the_Atlantic._There_were_three_of_these_NC-4%27s_which_started_across_the_Atlantic_in_May..._-_NARA_-_295607.jpg",
+    "alt": "U.S. Navy Curtiss NC-4 flying boat, the first aircraft to cross the Atlantic.",
+    "credit": "Photographer unknown · U.S. Navy / National Archives",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "graf-zeppelin-world-flight": {
+    "path": "assets/aircraft/graf-zeppelin-world-flight.webp",
+    "commons_file": "File:LZ 127 Graf Zeppelin on Tokyo.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:LZ_127_Graf_Zeppelin_on_Tokyo.jpg",
+    "alt": "LZ 127 Graf Zeppelin flying over Tokyo during its 1929 world flight.",
+    "credit": "Unknown photographer · Asahi Graph",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "lucky-lady-ii-world-flight": {
+    "path": "assets/aircraft/lucky-lady-ii-world-flight.webp",
+    "commons_file": "File:02 Boeing B-50A Superfortress Lucky Lady II.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:02_Boeing_B-50A_Superfortress_Lucky_Lady_II.jpg",
+    "alt": "Preserved fuselage of B-50A Lucky Lady II at the Planes of Fame museum.",
+    "credit": "Stefan Semerdjiev",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "sr71-coast-to-coast-record": {
+    "path": "assets/aircraft/sr71-coast-to-coast-record.webp",
+    "commons_file": "File:Lockheed SR-71A Blackbird ‘17972’ (61-7972).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lockheed_SR-71A_Blackbird_%E2%80%9817972%E2%80%99_(61-7972).jpg",
+    "alt": "SR-71A 61-7972 displayed at the Smithsonian Udvar-Hazy Center.",
+    "credit": "Alan Wilson",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  "air-canada-143-gimli-glider": {
+    "path": "assets/aircraft/air-canada-143-gimli-glider.webp",
+    "commons_file": "File:Air Canada 767 C-GAUN Gimli Glider.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Air_Canada_767_C-GAUN_Gimli_Glider.jpg",
+    "alt": "Retired Air Canada Boeing 767 C-GAUN, the Gimli Glider, at Mojave.",
+    "credit": "Akradecki · crop by Altair78",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  }
+}

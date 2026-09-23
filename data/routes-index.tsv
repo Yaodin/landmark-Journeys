@@ -19,3 +19,8 @@ rank	id	title	date	distance_km	vertices	geometry	quality	wkt_file
 18	first-commercial-747	Pan Am — first commercial Boeing 747 flight	1970-01-22	5540	279	LineString	Documented endpoints + geodesic reconstruction	data/wkt/first-commercial-747.wkt
 19	gossamer-albatross	Gossamer Albatross — human-powered Channel crossing	1979-06-12	35.2	142	LineString	Documented endpoints + geodesic reconstruction	data/wkt/gossamer-albatross.wkt
 20	solar-impulse-2	Solar Impulse 2 — first solar-powered circumnavigation	2015-03-09/2016-07-26	35067.1	1766	MultiLineString	Official 17-leg itinerary	data/wkt/solar-impulse-2.wkt
+21	nc4-first-atlantic-crossing	NC-4 — first aircraft across the Atlantic	1919-05-08/31	7089.2	289	LineString	Documented stop sequence	data/wkt/nc4-first-atlantic-crossing.wkt
+22	graf-zeppelin-world-flight	Graf Zeppelin — first airship circumnavigation	1929-08-07/29	30315.9	1225	MultiLineString	Documented stops + named corridor anchors	data/wkt/graf-zeppelin-world-flight.wkt
+23	lucky-lady-ii-world-flight	Lucky Lady II — first nonstop flight around the world	1949-02-26/03-02	35321.6	1418	MultiLineString	Documented refueling regions + reconstructed track	data/wkt/lucky-lady-ii-world-flight.wkt
+24	sr71-coast-to-coast-record	SR-71 Blackbird — coast-to-coast retirement record	1990-03-06	3865.5	197	LineString	Named record gates; illustrative corridor	data/wkt/sr71-coast-to-coast-record.wkt
+25	air-canada-143-gimli-glider	Air Canada 143 — the Gimli Glider	1983-07-23	1879.1	192	LineString	Official sequence + approximate event areas	data/wkt/air-canada-143-gimli-glider.wkt

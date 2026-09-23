@@ -1,5 +1,6 @@
 const ROUTES_URL = "data/routes.geojson";
 const BASEMAP_URL = "data/ne_110m_admin_0_countries.geojson";
+const AIRCRAFT_IMAGES_URL = "data/aircraft-images.json";
 const IMAGERY_TILE_URL = "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}";
 const TILE_SIZE = 256;
 const MAX_LAT = 85.05112878;
@@ -109,8 +110,13 @@ class CanvasSlippyMap {
     const refitAfterInitialLayout = (this.width || 0) < 50 && rect.width >= 50 && this.selected;
     this.width = Math.max(1, rect.width);
     this.height = Math.max(1, rect.height);
-    this.canvas.width = Math.round(this.width * dpr);
-    this.canvas.height = Math.round(this.height * dpr);
+    const pixelWidth = Math.round(this.width * dpr);
+    const pixelHeight = Math.round(this.height * dpr);
+    const sizeChanged = this.canvas.width !== pixelWidth || this.canvas.height !== pixelHeight;
+    if (sizeChanged) {
+      this.canvas.width = pixelWidth;
+      this.canvas.height = pixelHeight;
+    }
     this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     if (refitAfterInitialLayout && this.routes) {
       const feature = this.routes.features.find((candidate) => candidate.properties.id === this.selected);
@@ -119,7 +125,12 @@ class CanvasSlippyMap {
         return;
       }
     }
-    this.requestRender();
+    if (sizeChanged && this.routes) {
+      this.renderPending = false;
+      this.render();
+    } else {
+      this.requestRender();
+    }
   }
 
   setData(countries, routes, visible) {
@@ -676,11 +687,17 @@ function renderDetail(feature) {
   const p = feature.properties;
   detailCard.className = "detail-card";
   const anchors = p.anchors.map((anchor) => `<li><b>${anchor.name}</b>${anchor.note ? ` — ${anchor.note}` : ""}</li>`).join("");
+  const aircraftImage = p.image ? `
+    <figure class="aircraft-figure">
+      <img src="${p.image.path}" alt="${p.image.alt}" decoding="async" style="object-position:${p.image.position || "center"}">
+      <figcaption><a class="image-credit" href="${p.image.source_url}" target="_blank" rel="noreferrer">${p.image.credit}</a><a href="${p.image.license_url}" target="_blank" rel="noreferrer">${p.image.license} ↗</a></figcaption>
+    </figure>` : "";
   detailCard.innerHTML = `
     <div class="detail-top">
       <div><div class="detail-rank">Flight ${String(p.rank).padStart(2, "0")} · ${p.group}</div><h2>${p.title}</h2><div class="detail-date">${p.date} · ${p.era}</div></div>
       <button class="close-detail" type="button" aria-label="Close details">×</button>
     </div>
+    ${aircraftImage}
     <p class="route-summary">${p.route_summary}</p>
     <p class="overview">${p.overview}</p>
     <div class="why-famous"><span>Why it was famous</span><p>${p.why_famous}</p></div>
@@ -696,10 +713,14 @@ function renderDetail(feature) {
       <button type="button" class="copy-wkt">Copy WKT</button>
       <button type="button" class="download-geojson">Download GeoJSON</button>
       <a class="source" href="${p.source_url}" target="_blank" rel="noreferrer">Research source ↗</a>
+      <a class="wiki" href="${p.wiki_url}" target="_blank" rel="noreferrer" title="${p.wiki_title}">Wikipedia ↗</a>
     </div>
     <details class="waypoints"><summary>${p.anchors.length} researched route anchors</summary><ol>${anchors}</ol></details>`;
 
   detailCard.querySelector(".close-detail").addEventListener("click", clearSelection);
+  detailCard.querySelector(".aircraft-figure img")?.addEventListener("error", (event) => {
+    event.currentTarget.closest("figure").hidden = true;
+  });
   detailCard.querySelector(".copy-wkt").addEventListener("click", async (event) => {
     const text = await fetch(p.wkt_file).then((response) => response.text());
     await navigator.clipboard.writeText(text.trim());
@@ -720,9 +741,9 @@ document.querySelectorAll("[data-action]").forEach((button) => {
   button.addEventListener("click", () => {
     const action = button.dataset.action;
     if (action === "all") bulkVisibility(() => true);
-    if (action === "top") bulkVisibility((p) => p.group === "Top 10");
-    if (action === "backup") bulkVisibility((p) => p.group === "Backup 10");
-    if (action === "none") bulkVisibility(() => false);
+    if (action === "top") bulkVisibility((p) => p.rank <= 10);
+    if (action === "middle") bulkVisibility((p) => p.rank >= 11 && p.rank <= 20);
+    if (action === "new") bulkVisibility((p) => p.rank >= 21);
   });
 });
 
@@ -749,10 +770,20 @@ document.querySelector("#method-toggle").addEventListener("click", (event) => {
 
 async function init() {
   try {
-    const [routesResponse, basemapResponse] = await Promise.all([fetch(ROUTES_URL), fetch(BASEMAP_URL)]);
-    if (!routesResponse.ok || !basemapResponse.ok) throw new Error(`route HTTP ${routesResponse.status}; basemap HTTP ${basemapResponse.status}`);
+    const [routesResponse, basemapResponse, imagesResponse] = await Promise.all([
+      fetch(ROUTES_URL),
+      fetch(BASEMAP_URL),
+      fetch(AIRCRAFT_IMAGES_URL),
+    ]);
+    if (!routesResponse.ok || !basemapResponse.ok || !imagesResponse.ok) {
+      throw new Error(`route HTTP ${routesResponse.status}; basemap HTTP ${basemapResponse.status}; images HTTP ${imagesResponse.status}`);
+    }
     state.collection = await routesResponse.json();
     const countries = await basemapResponse.json();
+    const aircraftImages = await imagesResponse.json();
+    state.collection.features.forEach((feature) => {
+      feature.properties.image = aircraftImages[feature.properties.id] || null;
+    });
     state.collection.features.sort((a, b) => a.properties.rank - b.properties.rank);
     state.collection.features.forEach((feature) => state.visible.add(feature.properties.id));
     renderList();
@@ -765,6 +796,11 @@ async function init() {
     document.querySelector("#loading").classList.add("done");
     const requestedFlight = new URLSearchParams(window.location.search).get("flight");
     if (requestedFlight) selectRoute(requestedFlight, true);
+    // Paint once synchronously after data and query-state are installed. This
+    // avoids a blank first frame in background tabs and headless browsers that
+    // may throttle requestAnimationFrame before the first screenshot.
+    mapView.renderPending = false;
+    mapView.render();
     document.body.dataset.atlasReady = "true";
     window.__atlasReady = true;
   } catch (error) {
@@ -774,4 +810,4 @@ async function init() {
   }
 }
 
-init();
+await init();
