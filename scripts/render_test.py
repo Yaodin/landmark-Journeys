@@ -157,9 +157,12 @@ def assert_phone_selected(path: Path, dom: str) -> None:
     dark = near_count(sheet, [(15, 18, 24), (17, 20, 26)], tolerance=12)
     map_window = image.crop((0, 260, 390, 680))
     map_pixels = near_count(map_window, [(207, 227, 227), (185, 215, 218), (241, 238, 228)])
+    space_above_strip = image.crop((0, 700, 390, 755))
+    dark_above_strip = near_count(space_above_strip, [(15, 18, 24), (17, 20, 26)], tolerance=12)
     assert selected > 30, f"selected route is not visible above phone sheet: {selected} pixels"
     assert dark > sheet.width * sheet.height * 0.35, "compact phone sheet is not visible at the bottom"
     assert map_pixels > map_window.width * map_window.height * 0.55, "compact sheet obscures too much of the map"
+    assert dark_above_strip < space_above_strip.width * space_above_strip.height * 0.25, "collapsed sheet is still too tall"
     assert 'data-sheet-state="collapsed"' in dom
     assert 'class="sheet-handle"' in dom
     assert "Spirit of St. Louis — solo Atlantic crossing" in dom
@@ -170,7 +173,10 @@ def assert_phone_expanded(path: Path, dom: str) -> None:
     image = Image.open(path).convert("RGB")
     sheet = image.crop((0, 380, *PHONE_VIEWPORT))
     dark = near_count(sheet, [(15, 18, 24), (17, 20, 26)], tolerance=12)
-    assert dark > sheet.width * sheet.height * 0.5, "expanded phone sheet does not fill the lower viewport"
+    sheet_top = image.crop((0, 300, 390, 370))
+    dark_at_top = near_count(sheet_top, [(15, 18, 24), (17, 20, 26)], tolerance=12)
+    assert dark > sheet.width * sheet.height * 0.3, "expanded phone sheet does not fill the lower viewport"
+    assert dark_at_top > sheet_top.width * sheet_top.height * 0.5, "expanded phone sheet begins too low"
     assert 'data-sheet-state="expanded"' in dom
     assert 'aria-label="Collapse flight details"' in dom
     assert 'src="assets/aircraft/lindbergh-spirit-of-st-louis.webp"' in dom
