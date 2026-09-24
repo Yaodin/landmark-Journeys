@@ -1155,16 +1155,58 @@
             "note": "Coastal control for the northbound New Spain shoreline leg; not a documented landing."
           },
           {
+            "name": "Pacific offshore Guerrero (illustrative control)",
+            "lat": 17.0,
+            "lon": -102.5,
+            "note": "Illustrative sea-corridor control to avoid a land-cutting chord; not a recorded ship position."
+          },
+          {
+            "name": "Pacific offshore Michoacán (illustrative control)",
+            "lat": 18.5,
+            "lon": -106.0,
+            "note": "Illustrative sea-corridor control; not a recorded ship position."
+          },
+          {
+            "name": "Pacific southeast of Baja California (illustrative control)",
+            "lat": 21.0,
+            "lon": -109.5,
+            "note": "Illustrative sea-corridor control; not a recorded ship position."
+          },
+          {
             "name": "Cabo San Lucas (approximate passage control)",
             "lat": 22.88,
             "lon": -109.91,
             "note": "Coastal control for the northbound shoreline leg; not a documented landing or exact track position."
           },
           {
+            "name": "Pacific west of southern Baja California (illustrative control)",
+            "lat": 24.0,
+            "lon": -112.5,
+            "note": "Illustrative offshore control around Baja California; not a recorded ship position."
+          },
+          {
+            "name": "Pacific west of central Baja California (illustrative control)",
+            "lat": 27.0,
+            "lon": -115.5,
+            "note": "Illustrative offshore control around Baja California; not a recorded ship position."
+          },
+          {
+            "name": "Pacific west of northern Baja California (illustrative control)",
+            "lat": 30.0,
+            "lon": -118.5,
+            "note": "Illustrative offshore control around Baja California; not a recorded ship position."
+          },
+          {
             "name": "Offshore southern California (approximate passage control)",
             "lat": 32.5,
-            "lon": -118.0,
+            "lon": -120.5,
             "note": "Offshore control on the northbound California approach; interpolated, not a logged fix."
+          },
+          {
+            "name": "Pacific west of central California (illustrative control)",
+            "lat": 35.5,
+            "lon": -124.0,
+            "note": "Illustrative offshore control approaching New Albion; not a recorded ship position."
           },
           {
             "name": "New Albion coast, Point Reyes vicinity (harbor disputed)",
@@ -1474,6 +1516,36 @@
             "lat": -34.91,
             "lon": -56.16,
             "note": "South America stop."
+          },
+          {
+            "name": "South Atlantic east of Río de la Plata (illustrative control)",
+            "lat": -35.3,
+            "lon": -55.0,
+            "note": "Illustrative offshore departure control; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic off northern Patagonia (illustrative control)",
+            "lat": -40.0,
+            "lon": -58.0,
+            "note": "Illustrative offshore corridor toward Cape Virgins; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic off central Patagonia (illustrative control)",
+            "lat": -45.0,
+            "lon": -63.0,
+            "note": "Illustrative offshore corridor; not a recorded ship position."
+          },
+          {
+            "name": "South Atlantic off southern Patagonia (illustrative control)",
+            "lat": -50.0,
+            "lon": -67.0,
+            "note": "Illustrative offshore corridor; not a recorded ship position."
+          },
+          {
+            "name": "Cape Virgins",
+            "lat": -52.35,
+            "lon": -68.4,
+            "note": "Slocum's own account describes rounding Cape Virgins before entering the Strait; coordinates mark the cape region, not an exact fix."
           },
           {
             "name": "Strait of Magellan",
@@ -2675,6 +2747,42 @@
             "note": "Southwest Australian corner."
           },
           {
+            "name": "King George Sound",
+            "lat": -35.03,
+            "lon": 117.89,
+            "note": "Documented Investigator anchorage, December 1801–January 1802; regional coordinate, not a logged fix."
+          },
+          {
+            "name": "Southern Ocean off Esperance (illustrative control)",
+            "lat": -35.0,
+            "lon": 122.0,
+            "note": "Illustrative offshore corridor; not a logged fix."
+          },
+          {
+            "name": "Great Australian Bight west (illustrative control)",
+            "lat": -35.0,
+            "lon": 127.0,
+            "note": "Illustrative offshore corridor; not a logged fix."
+          },
+          {
+            "name": "Great Australian Bight east (illustrative control)",
+            "lat": -35.0,
+            "lon": 132.0,
+            "note": "Illustrative offshore corridor; not a logged fix."
+          },
+          {
+            "name": "Southern Ocean off Eyre Peninsula (illustrative control)",
+            "lat": -36.0,
+            "lon": 135.0,
+            "note": "Illustrative offshore corridor around Eyre Peninsula; not a logged fix."
+          },
+          {
+            "name": "Spencer Gulf mouth (illustrative control)",
+            "lat": -35.7,
+            "lon": 136.9,
+            "note": "Illustrative control for the gulf approach; not a logged fix."
+          },
+          {
             "name": "Spencer Gulf",
             "lat": -34.0,
             "lon": 136.0,
@@ -3220,6 +3328,24 @@
             "lat": -36.85,
             "lon": 174.76,
             "note": "Stopover 3."
+          },
+          {
+            "name": "Hauraki Gulf exit (illustrative control)",
+            "lat": -36.3,
+            "lon": 176.0,
+            "note": "Illustrative sea-corridor departure control; not a race fix."
+          },
+          {
+            "name": "Pacific east of North Island (illustrative control)",
+            "lat": -37.0,
+            "lon": 179.0,
+            "note": "Illustrative offshore race corridor; not a logged position."
+          },
+          {
+            "name": "South Pacific east of New Zealand (illustrative control)",
+            "lat": -42.0,
+            "lon": -178.0,
+            "note": "Illustrative offshore race corridor; not a logged position."
           },
           {
             "name": "Southern Pacific west sector",

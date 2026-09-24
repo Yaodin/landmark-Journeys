@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <title>Landmark Journeys — Historic Routes</title>
-  <link rel="stylesheet" href="style.css?v=backfill-200-1">
+  <link rel="stylesheet" href="style.css?v=alignment-20260924-1">
 </head>
 <body>
   <aside class="sidebar" aria-label="Journey selector">
@@ -31,6 +31,7 @@
         <button type="button" role="tab" id="tab-ocean-liners" aria-controls="route-list" aria-selected="false" tabindex="-1" data-domain="ocean-liners">Ocean Liners</button>
         <button type="button" role="tab" id="tab-river" aria-controls="route-list" aria-selected="false" tabindex="-1" data-domain="river">River</button>
         <button type="button" role="tab" id="tab-human-powered" aria-controls="route-list" aria-selected="false" tabindex="-1" data-domain="human-powered">Human Powered</button>
+        <button type="button" role="tab" id="tab-space" aria-selected="false" tabindex="-1" data-domain="space" title="Explore 3D space trajectories on the globe">Space ↗</button>
         <button type="button" role="tab" id="tab-all" aria-controls="route-list" aria-selected="false" tabindex="-1" data-domain="all">Show all</button>
       </div>
     </section>
@@ -52,16 +53,21 @@
         </div>
         <button id="site-info-close" class="site-info-close" type="button" aria-label="Close information">×</button>
       </header>
-      <p class="site-info-intro">An interactive atlas of sourced routes that shaped history across eight domains.</p>
+      <p class="site-info-intro">An interactive atlas of journeys that shaped history across eight Earth domains, with spaceflight trajectories on the 3D globe.</p>
+      <div class="site-info-warning" role="note">
+        <strong>AI-generated project · not a historical source</strong>
+        <p>Most of this site—including its descriptions and route reconstructions—was created with AI assistance. The paths are approximate interpretations of available information, not recorded tracks. Details, coordinates, and even source interpretations may be incomplete or wrong. Do not cite this site as a source; check the linked original sources and independent references for research or publication. Do not use these routes for navigation.</p>
+      </div>
       <div class="site-info-grid">
         <section>
           <h3>Route geometry and uncertainty</h3>
           <p>Most flights predate continuous position recording. The map connects researched endpoints, stops, landfalls, and logged positions. Two-point routes use great-circle arcs; multi-point routes use a spherical spline through every anchor.</p>
           <p><strong>Dense vertices make the lines smooth—not more historically certain.</strong> All domains interpolate between researched anchors. Solid strokes mark better-anchored courses; dashes mark inferred connections or low-confidence routes. Neither means an observed track. Each card states its evidence and limits.</p>
+          <p>Ocean-liner curves follow illustrative sea corridors and are checked against a coarse land mask. Generalized harbors, estuaries, small islands, and historical course changes remain unresolved; the lines are not navigational routes.</p>
         </section>
         <section>
           <h3>Research sources</h3>
-          <p>Cards link to their principal and segment sources. Where a matching English Wikipedia article has been verified, its icon appears at the top right of the card. Sources include NASA, the NPS, NTSB, Smithsonian museums, national archives, manufacturers, and other institutional histories.</p>
+          <p>Cards link to their principal and segment sources. A link does not establish that every claim or point on the drawn line is verified. Where a matching English Wikipedia article has been verified, its icon appears at the top right of the card. Sources include NASA, the NPS, NTSB, Smithsonian museums, national archives, manufacturers, and other institutional histories.</p>
           <p>Open <em>researched route anchors</em> in any card to see the named points used to construct its track.</p>
         </section>
         <section>
@@ -77,7 +83,7 @@
         </section>
       </div>
       <footer class="site-info-footer">
-        <span>Verified route corridors · 8 domains</span>
+        <span>Approximate route reconstructions · 8 Earth domains + Space</span>
         <a href="https://github.com/Yaodin/landmark-Journeys" target="_blank" rel="noreferrer">View source on GitHub ↗</a>
       </footer>
     </div>
@@ -92,6 +98,10 @@
     <div id="collection-status" class="collection-status" hidden aria-live="polite"></div>
 
     <div class="map-toolbar" aria-label="Map controls">
+      <nav class="map-mode-switch" aria-label="Map view">
+        <span aria-current="page">2D</span>
+        <a id="open-globe" href="globe.html" aria-label="Switch to 3D globe">3D</a>
+      </nav>
       <label>Basemap
         <select id="basemap">
           <option value="satellite" selected>Satellite</option>
@@ -121,7 +131,7 @@
     <div id="loading" class="loading"><span></span>Loading routes…</div>
   </main>
 
-  <script type="module" src="app.js?v=backfill-200-1"></script>
+  <script type="module" src="app.js?v=alignment-20260924-1"></script>
   <!-- Cloudflare Web Analytics -->
   <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"a531a20e2b934b0b8e5e5cb0eb596ca2"}'></script>
   <!-- End Cloudflare Web Analytics -->

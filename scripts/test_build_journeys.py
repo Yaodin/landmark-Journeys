@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import math
 import tempfile
 import unittest
 from pathlib import Path
@@ -39,6 +40,59 @@ def record(rank: int) -> dict:
 
 
 class JourneyBuildTests(unittest.TestCase):
+    def test_sailing_smoothing_is_conservative_and_traceable(self) -> None:
+        collection = json.loads((build_journeys.SOURCE_DIR / "sailing.geojson").read_text(encoding="utf-8"))
+        stats = [feature["properties"]["smoothing_stats"] for feature in collection["features"]]
+        self.assertEqual(len(stats), 25)
+        self.assertGreater(sum(item["smoothed_legs"] for item in stats), 0)
+        self.assertTrue(all(0 <= item["smoothed_legs"] <= item["eligible_legs"] for item in stats))
+        self.assertTrue(all("offshore spherical cardinal" in feature["properties"]["interpolation_method"]
+                            for feature in collection["features"]))
+
+        anchors = [
+            {"name": "A", "lat": 40, "lon": -55},
+            {"name": "B", "lat": 45, "lon": -40},
+            {"name": "C", "lat": 42, "lon": -25},
+            {"name": "D", "lat": 50, "lon": -10},
+        ]
+        curved = build_journeys.draw_segment(anchors, sailing=True)[0]
+        steps = math.ceil(build_journeys.haversine_km(anchors[0], anchors[1]) /
+                          build_journeys.segment_step_km(anchors))
+        midpoint = curved[steps // 2]
+        direct = build_journeys.slerp(anchors[0], anchors[1], (steps // 2) / steps)
+        self.assertGreater(build_journeys.haversine_km(
+            {"lon": midpoint[0], "lat": midpoint[1]},
+            {"lon": direct[0], "lat": direct[1]}), 1.0)
+
+        with patch.object(build_journeys, "offshore_land_run_km", return_value=11.0):
+            fallback = build_journeys.draw_segment(anchors, sailing=True)[0]
+        self.assertAlmostEqual(fallback[steps // 2][0], direct[0], places=5)
+        self.assertAlmostEqual(fallback[steps // 2][1], direct[1], places=5)
+
+    def test_ocean_liners_use_smooth_land_checked_corridors(self) -> None:
+        records = json.loads((build_journeys.SOURCE_DIR / "ocean-liners.json").read_text(encoding="utf-8"))
+        collection = json.loads((build_journeys.SOURCE_DIR / "ocean-liners.geojson").read_text(encoding="utf-8"))
+        self.assertEqual(len(records), 25)
+        self.assertTrue(all("land-checked spherical cardinal" in feature["properties"]["interpolation_method"]
+                            for feature in collection["features"]))
+        for record in records:
+            for segment in record["segments"]:
+                with self.subTest(route=record["id"]):
+                    self.assertTrue(build_journeys.draw_segment(segment["anchors"], ocean_liner=True))
+
+        anchors = [
+            {"name": "A", "lat": 40, "lon": -55},
+            {"name": "B", "lat": 45, "lon": -40},
+            {"name": "C", "lat": 42, "lon": -25},
+            {"name": "D", "lat": 50, "lon": -10},
+        ]
+        line = build_journeys.draw_segment(anchors, ocean_liner=True)[0]
+        first_steps = math.ceil(build_journeys.haversine_km(anchors[0], anchors[1]) / build_journeys.segment_step_km(anchors))
+        second_steps = math.ceil(build_journeys.haversine_km(anchors[1], anchors[2]) / build_journeys.segment_step_km(anchors))
+        midpoint = line[first_steps + second_steps // 2]
+        great_circle = build_journeys.slerp(anchors[1], anchors[2], (second_steps // 2) / second_steps)
+        self.assertGreater(abs(midpoint[1] - great_circle[1]), 0.01)
+
     def test_1897_bicycle_corps_does_not_reuse_1896_yellowstone_route(self) -> None:
         records = json.loads((build_journeys.SOURCE_DIR / "human-powered.json").read_text(encoding="utf-8"))
         route = next(route for route in records if route["id"] == "human-25th-infantry-bicycle-1897")

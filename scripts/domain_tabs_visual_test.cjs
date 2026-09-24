@@ -35,7 +35,7 @@ async function runCase(browser, name, viewport) {
   assert(await analyticsBeacon.count() === 1, `${name}: Cloudflare analytics beacon is missing`);
   assert((await analyticsBeacon.getAttribute("data-cf-beacon")).includes("a531a20e2b934b0b8e5e5cb0eb596ca2"), `${name}: Cloudflare analytics token is incorrect`);
   const tabs = page.locator('.domain-tabs [role="tab"]');
-  assert(await tabs.count() === domains.length + 1, `${name}: expected eight domains and Show all`);
+  assert(await tabs.count() === domains.length + 2, `${name}: expected eight Earth domains, Space, and Show all`);
   const tabLayout = await page.locator(".domain-tabs").evaluate((container) => {
     const bounds = container.getBoundingClientRect();
     const buttons = [...container.querySelectorAll("button")].map((button) => button.getBoundingClientRect());
@@ -156,7 +156,7 @@ async function runCase(browser, name, viewport) {
       tabCount: container.querySelectorAll('button[role="tab"]').length,
       rows: new Set([...container.querySelectorAll('button[role="tab"]')].map((button) => Math.round(button.getBoundingClientRect().top))).size,
     }));
-    assert(narrowTabs.tabCount === 9 && narrowTabs.rows > 1 && narrowTabs.scrollWidth <= narrowTabs.clientWidth + 1, `narrow phone: tabs overflow or do not wrap: ${JSON.stringify(narrowTabs)}`);
+    assert(narrowTabs.tabCount === 10 && narrowTabs.rows > 1 && narrowTabs.scrollWidth <= narrowTabs.clientWidth + 1, `narrow phone: tabs overflow or do not wrap: ${JSON.stringify(narrowTabs)}`);
     await narrow.screenshot({ path: `${outputDir}/narrow-phone-tabs.png` });
     await narrow.close();
     const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
@@ -172,7 +172,7 @@ async function runCase(browser, name, viewport) {
     assert(await allLink.locator("#tab-all").getAttribute("aria-selected") === "true", "deep link did not select Show all");
     assert(await allLink.locator("body").getAttribute("data-full-geometry-route") === "rail-tokaido-1964", "deep link did not load full selected geometry");
     await allLink.close();
-    process.stdout.write(`PASS: eight domains plus Show all, rendered map state, desktop and phone screenshots (${outputDir})\n`);
+    process.stdout.write(`PASS: eight Earth domains, Space link, Show all, desktop and phone screenshots (${outputDir})\n`);
   } finally {
     await browser.close();
   }

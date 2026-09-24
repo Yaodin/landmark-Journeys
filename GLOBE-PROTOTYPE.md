@@ -1,0 +1,28 @@
+# Cesium globe beta
+
+Open `http://127.0.0.1:8765/globe.html` after running `python server.py` from this repository, or use the public `/globe.html` page. This is a separate, experimental 3D view; `index.html` remains the default 2D atlas. Routes are educational reconstructions, not navigation or scientific products.
+
+The page uses pinned CesiumJS 1.145.0 from jsDelivr, Esri World Imagery with Cesium's tile attribution, and Cesium's ellipsoid terrain. It does not request Cesium Ion imagery or terrain and needs no Ion token. An internet connection is still needed for the Cesium library and map tiles.
+
+Non-flight lines follow surface-hugging geodesics with a small 150-metre rendering clearance to avoid globe-depth artifacts. Flights use separate, estimated 3D heights at every source vertex; the first and last points of a flight return to the mapped surface. To prevent clipping at the ellipsoid, displayed flight heights have a 5-metre floor, but exported 3D GeoJSON retains the unexaggerated estimates. Globe depth testing hides tracks on the far side of Earth.
+
+The globe initially loads `data/all-overview.geojson` (200 simplified Earth routes), `data/flights-3d.geojson` (all 25 full 3D flight tracks), and `spaceflight/index.json` (25 mission descriptions). Flight previews and selected flights use identical 3D positions; selection changes emphasis and camera framing. Selected lines have a thicker dark-outlined stroke, are drawn above previews, and dim the other routes. Other Earth domains use overview previews and load their full GeoJSON on selection. Space trajectories load one mission JSON on selection. Show all loads and caches the 25 space paths as subdued previews alongside all 200 Earth routes; no launch-site markers are added to previews. The information card shows evidence and uncertainty, with space data downloadable in its original time-tagged Earth-centered ICRF Cartesian kilometres. The globe reuses the 2D sidebar and detail-card styling, including the compact phone peek. The 2D Space tab links to the globe because these paths cannot be truthfully flattened onto a surface map. The 3D-to-2D switch returns to the default Earth map from Space.
+
+Space paths are static three-dimensional inertial trajectories rotated into the Earth-fixed globe at the first sample's epoch. Cesium's ICRF transform is used when available; older epochs use a disclosed approximate USNO sidereal-time orientation (without full precession/nutation). Earth orbit and lunar distances up to 500,000 km remain linear; farther distances use a continuous logarithmic radial compression so interplanetary and Voyager paths remain viewable. This display transform never alters the downloadable data. The catalog contains nine JPL Horizons ephemerides and 16 labelled mission-event reconstructions. See `spaceflight/README.md` and each path's provenance before interpreting a path quantitatively.
+
+Selecting a space mission resets to the same fixed Whole Earth camera preset as the toolbar button; it never calculates a route bounding sphere. The globe also has relative zoom-in/out controls. The single Earth / named launch site dot is clamped to WGS84, while its text is anchored 30 km above the ellipsoid and offset upward on screen so depth testing does not bury it in the surface. Both are removed when another mission is selected. Cesium's logarithmic depth buffer is enabled; the measured 10-billion-metre far plane exceeds the display-compressed Voyager routes, so their apparent breaks at Whole Earth scale are due to viewport framing or Earth occlusion, not a short far clipping plane. Rotating or zooming out reveals other sections.
+
+`data/flight-altitude-profiles.json` records one source-backed or explicitly inferred height model for each flight. `scripts/build_flight_altitudes.py` maps those models onto every original 2D vertex, using researched geographic anchors to shape climbs, cruise, event heights, descents, and multi-stop landings. It deterministically generates both 3D GeoJSON files. Run `python scripts/build_flight_altitudes.py` to regenerate and `python scripts/build_flight_altitudes.py --check` plus `python -m unittest scripts.test_build_flight_altitudes` to validate. Most historic flights lack a recoverable continuous altimeter log; the point heights are illustrative estimates, not telemetry. The prototype uses ellipsoid terrain, so published MSL/AGL figures are only approximate local heights above the mapped globe.
+
+For a local browser check, run:
+
+```sh
+docker run --rm --network host -e NODE_PATH=/tmp/pw/node_modules \
+  -v "$PWD":/work:ro -v /tmp:/host-tmp \
+  mcr.microsoft.com/playwright:v1.63.0-noble \
+  sh -lc 'mkdir -p /tmp/pw && cd /tmp/pw && npm install --silent playwright@1.63.0 && node /work/scripts/globe_visual_test.cjs http://127.0.0.1:8765 /host-tmp/landmark-globe-test'
+```
+
+The test captures desktop and phone screenshots in `/tmp/landmark-globe-test`. It checks Cesium rendering, domain counts, search, sourced images, Show all, the mobile detail peek/expansion, layout overflow, round-trip 2D/3D navigation, computed-style parity, Bell X-1 preview/selection vertex equality, space mission trajectories, globe depth occlusion, and high-/low-altitude flights. A surface route spanning more than one visible hemisphere cannot all be seen on a globe at once; the camera returns to a whole-Earth view and asks the viewer to rotate it.
+
+The route data and much of the site were AI-generated. Lines are approximate interpretations of available source material, not recorded tracks or authoritative historical data. Follow each journey's linked sources before citing any claim.

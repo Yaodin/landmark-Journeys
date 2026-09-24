@@ -1,4 +1,4 @@
-const GEOMETRY_VERSION = "backfill-200-1";
+const GEOMETRY_VERSION = "alignment-20260924-1";
 const ROUTES_URL = `data/routes.geojson?v=${GEOMETRY_VERSION}`;
 const ALL_OVERVIEW_URL = `data/all-overview.geojson?v=${GEOMETRY_VERSION}`;
 const BASEMAP_URL = "data/ne_110m_admin_0_countries.geojson";
@@ -816,7 +816,7 @@ class CanvasSlippyMap {
     const ctx = this.ctx;
     ctx.save();
     ctx.strokeStyle = p.color;
-    ctx.lineWidth = selected ? 5 : (p.domain ? 1.9 : 2.35);
+    ctx.lineWidth = selected ? 6.5 : (p.domain ? 1.9 : 2.35);
     ctx.globalAlpha = selected ? 1 : (p.domain ? 0.42 : 0.82);
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
@@ -838,7 +838,7 @@ class CanvasSlippyMap {
         if (THEMES[this.themeName].imagery) {
           ctx.save();
           ctx.strokeStyle = "rgba(0, 0, 0, .72)";
-          ctx.lineWidth = selected ? 8.5 : 4.8;
+          ctx.lineWidth = selected ? 10 : 4.8;
           ctx.shadowBlur = 0;
           ctx.stroke();
           ctx.restore();
@@ -1433,7 +1433,14 @@ async function setDomain(domain, updateUrl = true) {
 
 const domainTabs = [...document.querySelectorAll(".domain-tabs [role=tab]")];
 domainTabs.forEach((tab, index) => {
-  tab.addEventListener("click", () => { void setDomain(tab.dataset.domain); });
+  const activate = (domain) => {
+    if (domain === "space") {
+      window.location.assign(new URL("globe.html?domain=space", window.location.href));
+      return;
+    }
+    void setDomain(domain);
+  };
+  tab.addEventListener("click", () => { activate(tab.dataset.domain); });
   tab.addEventListener("keydown", (event) => {
     let next = index;
     if (event.key === "ArrowRight") next = (index + 1) % domainTabs.length;
@@ -1444,7 +1451,7 @@ domainTabs.forEach((tab, index) => {
     event.preventDefault();
     domainTabs[next].focus();
     domainTabs[next].scrollIntoView({ block: "nearest", inline: "nearest" });
-    void setDomain(domainTabs[next].dataset.domain);
+    activate(domainTabs[next].dataset.domain);
   });
 });
 
@@ -1467,6 +1474,13 @@ document.querySelector("#basemap").addEventListener("change", (event) => mapView
 document.querySelector("#zoom-in").addEventListener("click", () => mapView.zoomBy(BUTTON_ZOOM_STEP));
 document.querySelector("#zoom-out").addEventListener("click", () => mapView.zoomBy(-BUTTON_ZOOM_STEP));
 document.querySelector("#reset-view").addEventListener("click", () => mapView.setView(5, 23, 2));
+document.querySelector("#open-globe").addEventListener("click", (event) => {
+  event.preventDefault();
+  const url = new URL("globe.html", window.location.href);
+  url.searchParams.set("domain", state.activeDomain);
+  if (state.selected) url.searchParams.set("journey", state.selected);
+  window.location.assign(url);
+});
 
 const siteInfo = document.querySelector("#site-info");
 document.querySelector("#site-info-open").addEventListener("click", () => siteInfo.showModal());

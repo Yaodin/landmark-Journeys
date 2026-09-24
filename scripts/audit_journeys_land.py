@@ -13,7 +13,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-STEP_KM = 40
+STEP_KM = 5
 PORT_EXCLUSION_KM = 80
 SEVERE_LAND_KM = 250
 
@@ -100,6 +100,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("domains", nargs="*", default=["sailing", "ocean-liners"])
     parser.add_argument("--fail", action="store_true", help="exit nonzero if severe crossings are found")
+    parser.add_argument("--threshold-km", type=float, default=SEVERE_LAND_KM, help="minimum inland crossing length to report")
     args = parser.parse_args()
     mask = list(polygons())
     findings = []
@@ -121,11 +122,11 @@ def main():
                 anchors = segment["anchors"]
                 for anchor_index, (a, b) in enumerate(zip(anchors, anchors[1:])):
                     length, start, end, country = severe_land_run(a, b, mask)
-                    if length >= SEVERE_LAND_KM:
+                    if length >= args.threshold_km:
                         findings.append((round(length), domain, record["id"], segment_index, anchor_index, a["name"], b["name"], country, round(start), round(end)))
     for length, domain, route, segment, anchor, first, last, country, start, end in sorted(findings, reverse=True):
         print(f"{length:5} km  {domain}/{route} segment {segment} anchors {anchor}->{anchor + 1}: {first} -> {last} ({country}, {start}-{end} km from leg start)")
-    print(f"{len(findings)} severe sea-leg crossings (Natural Earth 110m; >= {SEVERE_LAND_KM} km inland beyond port buffers)")
+    print(f"{len(findings)} sea-leg crossings (Natural Earth 110m; >= {args.threshold_km:g} km inland beyond port buffers)")
     return bool(findings) if args.fail else False
 
 

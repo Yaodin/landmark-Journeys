@@ -1390,22 +1390,29 @@
     "short_title": "Earl Shaffer",
     "date": "1948",
     "why_famous": "Shaffer completed the first reported end-to-end Appalachian Trail thru-hike in a single season.",
-    "route_summary": "Springer Mountain, Georgia, to Mount Katahdin, Maine, by the Appalachian Trail.",
+    "route_summary": "Mount Oglethorpe, Georgia, to Mount Katahdin, Maine, by the Appalachian Trail.",
     "source_title": "Appalachian Trail Conservancy — The Long Cruise",
     "source_url": "https://appalachiantrail.org/news-stories/the-long-cruise-earl-shaffer-at-thru-hike/",
     "geometry_confidence": "medium",
-    "geometry_note": "Named trail regions reconstruct the trail corridor; the exact 1948 alignment changed in many places afterward.",
+    "geometry_note": "Shaffer started at Mount Oglethorpe, the 1948 southern terminus; Springer Mountain did not become the terminus until 1958. Named trail regions reconstruct a corridor, not the exact 1948 alignment.",
+    "additional_sources": [
+      {
+        "title": "Smithsonian National Museum of American History — Earl Shaffer and the Appalachian Trail",
+        "url": "https://amhistory.si.edu/documentsgallery/exhibitions/appalachian_trail_2.html",
+        "note": "Confirms Shaffer began at Mount Oglethorpe in April 1948."
+      }
+    ],
     "segments": [
       {
         "mode": "walking",
         "track_type": "historical-corridor",
-        "source_url": "https://appalachiantrail.org/news-stories/the-long-cruise-earl-shaffer-at-thru-hike/",
+        "source_url": "https://amhistory.si.edu/documentsgallery/exhibitions/appalachian_trail_2.html",
         "anchors": [
           {
-            "name": "Springer Mountain",
-            "lat": 34.627,
-            "lon": -84.193,
-            "note": "Georgia terminus"
+            "name": "Mount Oglethorpe",
+            "lat": 34.4862,
+            "lon": -84.3302,
+            "note": "1948 Georgia terminus; summit position approximately 34.4862°N, 84.3302°W"
           },
           {
             "name": "Great Smoky Mountains",
@@ -1486,22 +1493,29 @@
     "short_title": "Grandma Gatewood",
     "date": "1955",
     "why_famous": "Emma Gatewood became the first woman to complete the Appalachian Trail alone, challenging ideas about who belonged outdoors.",
-    "route_summary": "Springer Mountain to Mount Katahdin along the Appalachian Trail.",
+    "route_summary": "Mount Oglethorpe to Mount Katahdin along the Appalachian Trail.",
     "source_title": "Appalachian Trail Conservancy — Trail Tested",
     "source_url": "https://journeys.appalachiantrail.org/issue/fall-2025/trail-tested/",
     "geometry_confidence": "medium",
-    "geometry_note": "Trail-region anchors show the general 1955 corridor, not Gatewood's observed path or the exact historic trail alignment.",
+    "geometry_note": "Gatewood started at Mount Oglethorpe, the 1955 southern terminus; Springer Mountain did not become the terminus until 1958. Trail-region anchors show a corridor, not her observed path or the exact historic alignment.",
+    "additional_sources": [
+      {
+        "title": "Appalachian Trailway News, September 1955, reproduced by the Appalachian Trail Conservancy",
+        "url": "https://appalachiantrail.org/wp-content/uploads/2020/02/Trail_Years.pdf",
+        "note": "Contemporary report names Mount Oglethorpe as Gatewood's May 3 starting point."
+      }
+    ],
     "segments": [
       {
         "mode": "walking",
         "track_type": "historical-corridor",
-        "source_url": "https://journeys.appalachiantrail.org/issue/fall-2025/trail-tested/",
+        "source_url": "https://appalachiantrail.org/wp-content/uploads/2020/02/Trail_Years.pdf",
         "anchors": [
           {
-            "name": "Springer Mountain",
-            "lat": 34.627,
-            "lon": -84.193,
-            "note": "Georgia terminus"
+            "name": "Mount Oglethorpe",
+            "lat": 34.4862,
+            "lon": -84.3302,
+            "note": "1955 Georgia terminus; summit position approximately 34.4862°N, 84.3302°W"
           },
           {
             "name": "Great Smoky Mountains",

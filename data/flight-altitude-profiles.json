@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "units": "metres",
+  "vertical_interpretation": "Illustrative height above the mapped ellipsoid. Published MSL or AGL altitudes are used as approximate local height because this prototype has no detailed terrain model.",
+  "warning": "These are not observed altitude traces. Only a few event heights are documented; all other point heights are interpolated estimates from aircraft performance and flight context.",
+  "profiles": {
+    "wright-first-flight": {
+      "cruise_m": 2.4, "climb_km": 0.01, "descent_km": 0.01,
+      "altitude_source_url": "https://www.nps.gov/articles/wrightflyer.htm",
+      "basis": "NPS reports the first hop about 8 feet above the ground; a low smooth arc connects takeoff and landing.", "confidence": "medium"
+    },
+    "lindbergh-spirit-of-st-louis": {
+      "cruise_m": 1800, "climb_km": 90, "descent_km": 90,
+      "controls_m": {"1": 1500, "2": 2200, "3": 900, "4": 1200, "5": 900},
+      "altitude_source_url": "https://airandspace.si.edu/collection-objects/barograph-spirit-st-louis-charles-lindbergh-ny-paris-flight-may-1927/nasm_A19310028000",
+      "basis": "The Smithsonian describes a surviving barograph with climbs for weather, turbulence-induced drops, and descent near Ireland, but not digitized point heights. Control heights are illustrative.", "confidence": "low"
+    },
+    "enola-gay-hiroshima": {
+      "cruise_m": 9000, "climb_km": 260, "descent_km": 260,
+      "controls_m": {"1": 4500, "2": 8000, "3": 8800, "4": 9468, "5": 9000, "6": 7500},
+      "altitude_source_url": "https://airandspace.si.edu/stories/editorial/75-years-ago-flight-enola-gay",
+      "basis": "The Smithsonian documents a 31,000-foot bomb release over Hiroshima. Other heights are smooth B-29 climb, cruise, and return estimates.", "confidence": "medium"
+    },
+    "earhart-solo-atlantic": {
+      "cruise_m": 2400, "climb_km": 100, "descent_km": 100,
+      "altitude_source_url": "https://airandspace.si.edu/collection-objects/amelia-earhart/nasm_A19500108000",
+      "basis": "Lockheed Vega-era cruise-height reconstruction; no continuous altimeter record has been incorporated.", "confidence": "low"
+    },
+    "bell-x1-sound-barrier": {
+      "cruise_m": 10000, "climb_km": 4, "descent_km": 10,
+      "controls_m": {"1": 6096, "2": 13106},
+      "altitude_source_url": "https://www.nasa.gov/history/SP-4219/Chapter3.html",
+      "basis": "NASA reports the B-29 carrier at about 20,000 feet; NASA's X-1 account gives an approximately 43,000-foot test height. The carrier segment and rocket climb are generalized.", "confidence": "medium"
+    },
+    "us-airways-1549": {
+      "cruise_m": 859, "climb_km": 3, "descent_km": 3,
+      "controls_m": {"1": 35, "2": 240, "3": 560, "4": 859, "5": 780, "6": 650, "7": 420, "8": 230},
+      "altitude_source_url": "https://www.ntsb.gov/investigations/AccidentReports/Reports/AAR1003.pdf",
+      "basis": "The NTSB gives 2,818 feet AGL at the bird encounter. Other event heights are smoothed estimates along the reported radar track, not FDR samples.", "confidence": "medium"
+    },
+    "concorde-ba300": {
+      "cruise_m": 16764, "climb_km": 550, "descent_km": 480,
+      "altitude_source_url": "https://www.britishairways.com/content/information/about-ba/history-and-heritage/celebrating-concorde",
+      "basis": "British Airways gives Concorde a cruise capability up to 60,000 feet; this first London-Bahrain service is illustrated with a 55,000-foot cruise estimate.", "confidence": "low"
+    },
+    "rutan-voyager": {
+      "cruise_m": 2438, "climb_km": 180, "descent_km": 180,
+      "controls_m": {"8": 5000, "9": 6248, "10": 4500, "15": 1067},
+      "altitude_source_url": "https://airandspace.si.edu/collection-objects/rutan-voyager/nasm_A19880548000",
+      "basis": "Smithsonian reports an 8,000-foot economical height, 20,500 feet over Africa to avoid storms, and 3,500 feet after a late engine emergency. The intervening heights are inferred.", "confidence": "medium"
+    },
+    "alcock-brown-atlantic": {
+      "cruise_m": 2100, "climb_km": 100, "descent_km": 100,
+      "altitude_source_url": "https://www.raf.mod.uk/what-we-do/our-history/first-non-stop-flight/",
+      "basis": "Illustrative low-thousands-of-feet cruise for the modified Vickers Vimy; the RAF source confirms the flight, not a continuous height trace.", "confidence": "low"
+    },
+    "bleriot-channel": {
+      "cruise_m": 75, "climb_km": 3, "descent_km": 3,
+      "controls_m": {"1": 60},
+      "altitude_source_url": "https://airandspace.si.edu/stories/editorial/bleriots-cross-channel-flight",
+      "basis": "A low-level Channel crossing is inferred from the early monoplane and the documented short route; no point altitudes are claimed.", "confidence": "low"
+    },
+    "vin-fiz-transcontinental": {
+      "cruise_m": 650, "climb_km": 12, "descent_km": 12, "stops": "all",
+      "segment_peaks_m": {"14": 1100, "15": 1200},
+      "altitude_source_url": "https://airandspace.si.edu/collection-objects/wright-ex-vin-fiz/nasm_A19340060000",
+      "basis": "Smithsonian records a 4,000-foot height near Imperial Junction; elsewhere short low-level legs are inferred. Named stops are treated as landings for illustration.", "confidence": "low"
+    },
+    "jannus-first-airline": {
+      "cruise_m": 90, "climb_km": 2, "descent_km": 2,
+      "altitude_source_url": "https://airandspace.si.edu/stories/editorial/early-airlines-you-might-not-have-heard",
+      "basis": "Illustrative low-height Benoist flying-boat crossing of Tampa Bay; the source gives duration and route but no altimeter trace.", "confidence": "low"
+    },
+    "douglas-world-cruisers": {
+      "cruise_m": 1800, "climb_km": 30, "descent_km": 30, "stops": "all",
+      "segment_peaks_m": {"37": 2400, "38": 2200},
+      "altitude_source_url": "https://airandspace.si.edu/learn/programs/soar-together/firsts-flight",
+      "basis": "Illustrative 1924 biplane cruise heights between named stations. Some anchors were overflights rather than stops, so local descents should not be read as a flight log.", "confidence": "low"
+    },
+    "southern-cross-transpacific": {
+      "cruise_m": 2100, "climb_km": 80, "descent_km": 80, "stops": "all",
+      "altitude_source_url": "https://airandspace.si.edu/collection-archive/fokker-fviib-3m-southern-cross-kingsford-smith-route-map/sova-nasm-xxxx-0908",
+      "basis": "Illustrative Fokker trimotor cruise and landing transitions on documented legs; no recorded heights were recovered.", "confidence": "low"
+    },
+    "wiley-post-solo-world": {
+      "cruise_m": 2800, "climb_km": 80, "descent_km": 80, "stops": "all",
+      "altitude_source_url": "https://airandspace.si.edu/collection-objects/lockheed-vega-winnie-mae/nasm_A19360030000",
+      "basis": "The 1933 flight predated Post's 1935 pressure-suit stratospheric experiments. Heights are conservative Vega cruise estimates between stops, not the later 30,000-foot research profile.", "confidence": "low"
+    },
+    "china-clipper-airmail": {
+      "cruise_m": 2400, "climb_km": 110, "descent_km": 110, "stops": "all",
+      "altitude_source_url": "https://airandspace.si.edu/explore/stories/pan-american-airways-international-commercial-aviation",
+      "basis": "Illustrative Martin M-130 cruise between documented Pacific refueling stops; no altitude log is asserted.", "confidence": "low"
+    },
+    "spruce-goose": {
+      "cruise_m": 7.6, "climb_km": 0.08, "descent_km": 0.08,
+      "altitude_source_url": "https://www.evergreenmuseum.org/exhibit/the-spruce-goose/",
+      "basis": "The aircraft's museum reports about 25 feet over the harbor during its brief hop.", "confidence": "medium"
+    },
+    "first-commercial-747": {
+      "cruise_m": 10668, "climb_km": 260, "descent_km": 240,
+      "altitude_source_url": "https://www.boeing.com/content/dam/boeing/boeingdotcom/company/about_bca/startup/pdf/historical/747-100_-200_-300_-SP_passenger.pdf",
+      "basis": "A 35,000-foot long-haul 747-100 cruise is estimated from type performance; the inaugural flight's actual cleared levels are not known.", "confidence": "low"
+    },
+    "gossamer-albatross": {
+      "cruise_m": 5, "climb_km": 1, "descent_km": 1,
+      "altitude_source_url": "https://www.si.edu/object/nasm_A19810428000",
+      "basis": "The human-powered Channel flight is shown only a few metres over water; Smithsonian confirms the route but does not provide an altitude trace.", "confidence": "low"
+    },
+    "solar-impulse-2": {
+      "cruise_m": 8500, "climb_km": 130, "descent_km": 130, "stops": "all", "pattern": "illustrative-day-night",
+      "altitude_source_url": "https://aroundtheworld.solarimpulse.com/img/pdf/06_NIGHT_BIRD.pdf",
+      "basis": "The mission gives 8,500 metres maximum cruising altitude and a day-climb/night-descent strategy. Cycles are schematic because point timestamps are unavailable.", "confidence": "low"
+    },
+    "nc4-first-atlantic-crossing": {
+      "cruise_m": 650, "climb_km": 25, "descent_km": 25, "stops": [0, 1, 2, 3, 4, 5, 6, 8, 9, 10],
+      "altitude_source_url": "https://www.history.navy.mil/content/history/museums/nnam/explore/collections/aircraft/n/nc-4.html",
+      "basis": "The Navy lists a 4,500-foot ceiling; lower typical flying-boat cruise is inferred between documented harbor landings.", "confidence": "low"
+    },
+    "graf-zeppelin-world-flight": {
+      "cruise_m": 650, "climb_km": 40, "descent_km": 40, "stops": [0, 2, 8, 11, 17],
+      "controls_m": {"5": 1829},
+      "altitude_source_url": "https://www.airships.net/lz127-graf-zeppelin/history/",
+      "basis": "The Stanovoy crossing is reported near 6,000 feet; ordinary airship heights are illustrative. Only documented landing stations are treated as stops.", "confidence": "low"
+    },
+    "lucky-lady-ii-world-flight": {
+      "cruise_m": 6100, "climb_km": 260, "descent_km": 260,
+      "controls_m": {"1": 5200, "2": 5500, "3": 5500, "4": 5200},
+      "altitude_source_url": "https://www.afhistory.af.mil/FAQs/Fact-Sheets/Article/458978/lucky-ladies-i-ii-and-iii/",
+      "basis": "B-50 cruise and four aerial-refueling regions are documented, but refueling altitudes are not. A roughly 20,000-foot cruise with shallow refueling descents is illustrative.", "confidence": "low"
+    },
+    "sr71-coast-to-coast-record": {
+      "cruise_m": 24384, "climb_km": 250, "descent_km": 190,
+      "controls_m": {"1": 18000, "2": 24384, "3": 24384, "4": 24384, "5": 24384},
+      "altitude_source_url": "https://www.beale.af.mil/News/Article-Display/Article/280008/cold-war-relics-sr-71-blackbird/",
+      "basis": "The Air Force documents SR-71 high-altitude capability; 80,000 feet is a representative record-run height, not a published altimeter trace for 6 March 1990.", "confidence": "low"
+    },
+    "air-canada-143-gimli-glider": {
+      "cruise_m": 12497, "climb_km": 180, "descent_km": 35, "stops": [0, 1, 5],
+      "controls_m": {"2": 12497, "3": 10668, "4": 2500},
+      "altitude_source_url": "https://www.faa.gov/lessons_learned/transport_airplane/accidents/C-GITS",
+      "basis": "FAA reports a 41,000-foot cruise, first engine loss during descent, and second engine loss at 35,000 feet. The final powerless glide is estimated to the Gimli landing.", "confidence": "medium"
+    }
+  }
+}

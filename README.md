@@ -10,6 +10,14 @@ All routes are reconstructed between anchors, not observed GPS tracks. Esri Worl
 Imagery is the default high-resolution satellite layer; three bundled Natural
 Earth styles remain available as fast, offline fallbacks.
 
+The [Cesium globe beta](GLOBE-PROTOTYPE.md) adds a ninth
+Space tab with 25 time-tagged 3D spaceflight paths. The 2D Space tab opens that
+globe rather than flattening space trajectories onto Earth. Flight previews on
+the globe use the same full interpolated 3D tracks shown after selection.
+Ocean-liner corridors use land-checked spherical smoothing through sourced
+ports and explicitly illustrative sea controls; the bundled coastline mask is
+coarse and these paths are not safe for navigation.
+
 Flight descriptions link separately to a principal research source and their
 most specific verified English Wikipedia page. Other journeys link to route
 and segment sources.
@@ -27,6 +35,7 @@ Open <http://127.0.0.1:8765>.
 The public GitHub Pages deployment is available at
 <https://yaodin.github.io/landmark-Journeys/>. Pushes to `main` deploy through
 `.github/workflows/pages.yml`.
+The 3D globe is at <https://yaodin.github.io/landmark-Journeys/globe.html>.
 
 ## Render test
 

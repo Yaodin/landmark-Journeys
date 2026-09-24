@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#101820" />
+    <title>Landmark Journeys — 3D Globe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/cesium@1.145.0/Build/Cesium/Widgets/widgets.css"
+    />
+    <link rel="stylesheet" href="style.css?v=alignment-20260924-1" />
+    <link rel="stylesheet" href="globe.css?v=alignment-20260924-1" />
+    <script>
+      window.CESIUM_BASE_URL =
+        "https://cdn.jsdelivr.net/npm/cesium@1.145.0/Build/Cesium/";
+    </script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/cesium@1.145.0/Build/Cesium/Cesium.js"
+    ></script>
+    <script defer src="globe.js?v=alignment-20260924-1"></script>
+  </head>
+  <body class="globe-page">
+    <div class="app">
+      <aside class="sidebar" aria-label="Journey selector">
+        <header class="brand">
+          <div class="eyebrow">Routes that made History</div>
+          <div class="brand-title">
+            <h1>Landmark Journeys</h1>
+            <button id="site-info-open" class="site-info-button" type="button" aria-label="About this atlas" aria-haspopup="dialog">i</button>
+          </div>
+        </header>
+        <section class="controls">
+          <label class="searchbox">
+            <span aria-hidden="true">⌕</span>
+            <input id="journey-search" type="search" placeholder="Search flights, years, eras…" autocomplete="off" />
+          </label>
+          <div id="categories" class="domain-tabs" role="tablist" aria-label="Journey domains"></div>
+        </section>
+        <div class="list-heading">
+          <span id="list-heading">Flights</span><span id="route-count">click to inspect</span>
+        </div>
+        <section id="journey-list" class="route-list" role="tabpanel" aria-live="polite"></section>
+      </aside>
+      <main
+        class="globe-stage"
+        aria-label="Interactive three-dimensional route globe"
+      >
+        <div id="cesium-container"></div>
+        <div id="status" class="status" role="status">Loading globe…</div>
+        <div class="map-tools">
+          <nav class="map-mode-switch" aria-label="Map view">
+            <a id="open-map" href="index.html" aria-label="Switch to 2D map">2D</a>
+            <span aria-current="page">3D</span>
+          </nav>
+          <button id="home-button" type="button" title="View the whole Earth">
+            Whole Earth</button
+          ><button id="zoom-in-button" type="button" title="Zoom in" aria-label="Zoom in">+</button
+          ><button id="zoom-out-button" type="button" title="Zoom out" aria-label="Zoom out">−</button
+          ><button
+            id="fit-button"
+            type="button"
+            title="Fit selected route"
+            disabled
+          >
+            Fit route
+          </button>
+        </div>
+        <div class="globe-note">
+          Drag to rotate · Scroll or pinch to zoom
+          <span>· Flight previews use the full 3D tracks</span>
+        </div>
+        <section id="detail" class="detail-card empty" aria-live="polite">
+          <div class="empty-state"><span class="empty-mark">↗</span><div><strong>Select a journey</strong><p>Click a route in the sidebar or a line on the globe.</p></div></div>
+        </section>
+      </main>
+    </div>
+    <dialog id="site-info" class="site-info" aria-labelledby="site-info-title">
+      <div class="site-info-shell">
+        <header class="site-info-header">
+          <div><div class="eyebrow">About this project</div><h2 id="site-info-title">Landmark Journeys</h2></div>
+          <button id="site-info-close" class="site-info-close" type="button" aria-label="Close information">×</button>
+        </header>
+        <p class="site-info-intro">An interactive atlas of journeys that shaped history across nine domains, including three-dimensional spaceflight trajectories.</p>
+        <div class="site-info-warning" role="note"><strong>AI-generated project · not a historical source</strong><p>Most of this site—including its descriptions and route reconstructions—was created with AI assistance. The paths are approximate interpretations of available information, not recorded tracks. Details, coordinates, and even source interpretations may be incomplete or wrong. Do not cite this site as a source; check the linked original sources and independent references for research or publication. Do not use these routes for navigation.</p></div>
+        <div class="site-info-grid">
+          <section><h3>Route geometry and uncertainty</h3><p>Earth routes connect researched endpoints, stops, landfalls, and logged positions. Flight previews use their full interpolated 3D geometry. Ocean-liner curves follow illustrative sea corridors checked against a coarse land mask; harbors, estuaries, and small islands remain unresolved. Dense vertices make lines smooth, not more historically certain.</p><p>Space missions use Earth-centered inertial coordinates rotated at the mission start for a static globe. Deep-space distances are visually compressed beyond 500,000 km; original data is available for download. Some trajectories are sampled ephemerides, others educational reconstructions. No route is suitable for navigation.</p></section>
+          <section><h3>Research sources</h3><p>Cards link to principal and segment sources. A link does not establish that every claim or point on the drawn line is verified. Where available, the Wikipedia icon leads to a matching English article.</p><p>Open the researched route anchors in a card to see the named points used to construct its track.</p></section>
+          <section><h3>Maps and photographs</h3><p>Satellite imagery is served by Esri and contributors; CesiumJS provides the globe. Credits appear on the map.</p><p>Each journey image links to its source and reuse terms. Later depictions, replicas, museum displays, and representative scenes are identified in the image catalog.</p></section>
+          <section><h3>Data and access</h3><p>Earth routes can be downloaded as WKT or GeoJSON in CRS84. Space paths can be downloaded as time-tagged Earth-centered ICRF Cartesian JSON. This prototype is a static, client-side site; it requires an internet connection for CesiumJS and map imagery.</p><p>No blanket license replaces the terms attached to third-party maps or images. Follow the linked source and license for reuse.</p></section>
+        </div>
+        <footer class="site-info-footer"><span>Approximate route reconstructions · 9 domains</span><a href="https://github.com/Yaodin/landmark-Journeys" target="_blank" rel="noreferrer">View source on GitHub ↗</a></footer>
+      </div>
+    </dialog>
+  </body>
+</html>

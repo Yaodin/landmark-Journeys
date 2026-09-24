@@ -11,13 +11,16 @@ import argparse
 import json
 import math
 import re
+from functools import lru_cache
 from pathlib import Path
 from urllib.parse import urlparse
 
 try:
-    from .build_routes import as_wkt, haversine_km, slerp, split_dateline
+    from .build_routes import as_wkt, haversine_km, slerp, spherical_cardinal, split_dateline
+    from .audit_journeys_land import land_at, polygons
 except ImportError:  # Direct execution: python scripts/build_journeys.py
-    from build_routes import as_wkt, haversine_km, slerp, split_dateline
+    from build_routes import as_wkt, haversine_km, slerp, spherical_cardinal, split_dateline
+    from audit_journeys_land import land_at, polygons
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -65,13 +68,67 @@ def segment_step_km(anchors: list[dict]) -> float:
     return min(5.0, max(0.1, total / 3500.0))
 
 
-def draw_segment(anchors: list[dict]) -> list[list[list[float]]]:
+@lru_cache(maxsize=1)
+def ocean_land_mask():
+    return tuple(polygons())
+
+
+def offshore_land_run_km(points: list[tuple[float, float]], leg_km: float) -> float:
+    # The 110m mask generalizes harbors and narrow estuaries as land. Ignore
+    # the first/last 80 km of each anchored leg, then inspect every vertex.
+    mask = ocean_land_mask()
+    last = len(points) - 1
+    current = longest = 0
+    for index, (lon, lat) in enumerate(points):
+        interior = index * leg_km / last >= 80 and (last - index) * leg_km / last >= 80
+        current = current + 1 if interior and land_at(lon, lat, mask) else 0
+        longest = max(longest, current)
+    return longest * leg_km / last
+
+
+def spline_stays_near_corridor(
+    curved: list[tuple[float, float]], a: dict, b: dict, distance_km: float
+) -> bool:
+    """Reject sailing splines that wander far from a sparsely anchored leg.
+
+    This is a display safeguard, not a claim that the great circle was sailed.
+    The cap prevents a neighboring cape/port from bending a long ocean leg
+    hundreds of kilometres away from its stated endpoints.
+    """
+    allowance_km = min(250.0, distance_km * 0.2)
+    last = len(curved) - 1
+    for index, (lon, lat) in enumerate(curved):
+        reference = slerp(a, b, index / last)
+        if haversine_km({"lon": lon, "lat": lat}, {"lon": reference[0], "lat": reference[1]}) > allowance_km:
+            return False
+    return True
+
+
+def draw_segment(
+    anchors: list[dict], ocean_liner: bool = False, sailing: bool = False,
+    smoothing_stats: dict[str, int] | None = None,
+) -> list[list[list[float]]]:
     step = segment_step_km(anchors)
     points: list[tuple[float, float]] = []
     for index, (a, b) in enumerate(zip(anchors, anchors[1:])):
-        steps = max(1, math.ceil(haversine_km(a, b) / step))
-        for n in range(0 if index == 0 else 1, steps + 1):
-            points.append(slerp(a, b, n / steps))
+        distance = haversine_km(a, b)
+        steps = max(1, math.ceil(distance / step))
+        if (ocean_liner or sailing) and len(anchors) > 2:
+            previous = anchors[index - 1] if index else a
+            following = anchors[index + 2] if index + 2 < len(anchors) else b
+            leg = [spherical_cardinal(previous, a, b, following, n / steps) for n in range(steps + 1)]
+            safe = offshore_land_run_km(leg, distance) < 10
+            if sailing:
+                safe = safe and spline_stays_near_corridor(leg, a, b, distance)
+            if not safe:
+                leg = [slerp(a, b, n / steps) for n in range(steps + 1)]
+            elif smoothing_stats is not None:
+                smoothing_stats["smoothed_legs"] = smoothing_stats.get("smoothed_legs", 0) + 1
+            if ocean_liner and offshore_land_run_km(leg, distance) >= 10:
+                raise ValueError(f"Ocean liner leg crosses mapped land: {a['name']} → {b['name']}")
+        else:
+            leg = [slerp(a, b, n / steps) for n in range(steps + 1)]
+        points.extend(leg if index == 0 else leg[1:])
     return split_dateline(points)
 
 
@@ -151,9 +208,17 @@ def build_domain(domain: str) -> tuple[int, int]:
         line_styles = []
         anchors = []
         distance = 0.0
+        smoothing_stats: dict[str, int] = {"smoothed_legs": 0, "eligible_legs": 0}
         for segment_index, segment in enumerate(record["segments"]):
             segment_anchors = segment["anchors"]
-            drawn = draw_segment(segment_anchors)
+            if domain == "sailing" and len(segment_anchors) > 2:
+                smoothing_stats["eligible_legs"] += len(segment_anchors) - 1
+            drawn = draw_segment(
+                segment_anchors,
+                ocean_liner=domain == "ocean-liners",
+                sailing=domain == "sailing",
+                smoothing_stats=smoothing_stats if domain == "sailing" else None,
+            )
             lines.extend(drawn)
             line_styles.extend({
                 "segment_index": segment_index,
@@ -185,8 +250,15 @@ def build_domain(domain: str) -> tuple[int, int]:
             "distance_km": round(distance, 1),
             "vertex_count": sum(len(line) for line in lines),
             "geometry_type": "MultiLineString" if len(lines) > 1 else "LineString",
+            "interpolation_method": (
+                "land-checked spherical cardinal through historical shipping corridors" if domain == "ocean-liners"
+                else "conservative offshore spherical cardinal where safe; great-circle fallback between anchors" if domain == "sailing"
+                else "great-circle between anchors"
+            ),
             "wkt_file": f"data/wkt/{domain}/{record['id']}.wkt",
         })
+        if domain == "sailing":
+            properties["smoothing_stats"] = smoothing_stats
         geometry = {
             "type": properties["geometry_type"],
             "coordinates": lines if len(lines) > 1 else lines[0],
@@ -200,7 +272,11 @@ def build_domain(domain: str) -> tuple[int, int]:
         "metadata": {
             "generated_by": "scripts/build_journeys.py",
             "source_file": f"data/journeys/{domain}.json",
-            "method": "Great-circle rendering samples between sourced place anchors; independent route segments remain separate",
+            "method": (
+                "Land-checked spherical cardinal interpolation through sourced ports and illustrative shipping corridors; independent route segments remain separate" if domain == "ocean-liners"
+                else "Conservative offshore spherical-cardinal smoothing between sailing anchors where safe, otherwise great-circle samples; independent route segments remain separate" if domain == "sailing"
+                else "Great-circle rendering samples between sourced place anchors; independent route segments remain separate"
+            ),
             "warning": "Dense interpolated vertices are not observed historic positions. Read feature and segment evidence labels.",
             "route_count": len(features),
         },

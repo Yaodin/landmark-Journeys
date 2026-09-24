@@ -102,6 +102,7 @@ def build_manifest() -> dict:
         "shared_geometry_functions": [
             "scripts/build_routes.py:haversine_km",
             "scripts/build_routes.py:slerp",
+            "scripts/build_routes.py:spherical_cardinal",
             "scripts/build_routes.py:split_dateline",
             "scripts/build_routes.py:as_wkt",
         ],

@@ -168,11 +168,30 @@
             "lon": 8.93,
             "note": "Departure port."
           },
+          { "name": "Ligurian Sea offshore", "lat": 43.7, "lon": 8.5, "note": "Illustrative sea corridor, not a logged fix." },
           {
             "name": "Cannes",
             "lat": 43.55,
             "lon": 7.02,
             "note": "Passenger-list catalog confirms this port call; approximate harbor locator."
+          },
+          {
+            "name": "North of Corsica",
+            "lat": 43.6,
+            "lon": 9.9,
+            "note": "Illustrative offshore corridor around Corsica; not a logged position."
+          },
+          {
+            "name": "East of Corsica",
+            "lat": 42.2,
+            "lon": 10.1,
+            "note": "Illustrative sea control east of Corsica; not a logged position."
+          },
+          {
+            "name": "Tyrrhenian approach to Naples",
+            "lat": 40.4,
+            "lon": 12.5,
+            "note": "Illustrative open-water approach; not a logged position."
           },
           {
             "name": "Naples",
@@ -181,16 +200,10 @@
             "note": "Passenger-list catalog confirms this port call; approximate harbor locator."
           },
           {
-            "name": "Ligurian Sea",
-            "lat": 43.7,
-            "lon": 8.35,
-            "note": "Cartographic sea control, not a logged fix."
-          },
-          {
             "name": "Western Tyrrhenian Sea",
-            "lat": 42,
-            "lon": 7.45,
-            "note": "Sea corridor west of Corsica, not a logged fix."
+            "lat": 39.8,
+            "lon": 11.8,
+            "note": "Illustrative open-water westbound corridor; not a logged fix."
           },
           {
             "name": "South of Sardinia",
@@ -403,6 +416,7 @@
             "lon": -3.5,
             "note": "Cartographic sea control, not a logged fix."
           },
+          { "name": "North of Anglesey", "lat": 53.65, "lon": -4.7, "note": "Illustrative coastal clearance, not a logged fix." },
           {
             "name": "Irish Sea",
             "lat": 52.6,
@@ -699,6 +713,18 @@
             "note": "Cartographic sea control, not a logged fix."
           },
           {
+            "name": "Mid-English Channel",
+            "lat": 49.9,
+            "lon": -2.5,
+            "note": "Illustrative channel control to avoid the Normandy peninsula; not a logged fix."
+          },
+          {
+            "name": "Seine Bay offshore",
+            "lat": 49.85,
+            "lon": -0.5,
+            "note": "Illustrative Le Havre approach; not a logged fix."
+          },
+          {
             "name": "Le Havre",
             "lat": 49.49,
             "lon": 0.1,
@@ -746,6 +772,7 @@
             "lon": -3.5,
             "note": "Cartographic sea control, not a logged fix."
           },
+          { "name": "North of Anglesey", "lat": 53.65, "lon": -4.7, "note": "Illustrative coastal clearance, not a logged fix." },
           {
             "name": "Irish Sea",
             "lat": 52.6,
@@ -890,6 +917,7 @@
             "lon": -3.5,
             "note": "Cartographic sea control, not a logged fix."
           },
+          { "name": "North of Anglesey", "lat": 53.65, "lon": -4.7, "note": "Illustrative coastal clearance, not a logged fix." },
           {
             "name": "Irish Sea",
             "lat": 52.6,
@@ -1118,12 +1146,14 @@
             "lon": -11,
             "note": "Cartographic sea control, not a logged fix."
           },
+          { "name": "West of Lisbon", "lat": 38.5, "lon": -10.4, "note": "Illustrative offshore approach, not a logged fix." },
           {
             "name": "Lisbon",
             "lat": 38.72,
             "lon": -9.14,
             "note": "Documented call."
           },
+          { "name": "West of Lisbon exit", "lat": 38.5, "lon": -10.4, "note": "Illustrative offshore departure from the Tagus; not a logged fix." },
           {
             "name": "Las Palmas",
             "lat": 28.14,
@@ -1144,10 +1174,11 @@
           },
           {
             "name": "Atlantic off Rio",
-            "lat": -23.0,
-            "lon": -41.5,
+            "lat": -23.7,
+            "lon": -42.5,
             "note": "Interpolated offshore control; not a logged ship position."
           },
+          { "name": "Guanabara Bay approach", "lat": -23.2, "lon": -43.1, "note": "Illustrative approach from seaward, not a logged fix." },
           {
             "name": "Rio de Janeiro",
             "lat": -22.9,
@@ -1156,14 +1187,14 @@
           },
           {
             "name": "Southwest Atlantic",
-            "lat": -48,
-            "lon": -58,
+            "lat": -51,
+            "lon": -61,
             "note": "Sea control east of Patagonia, not a logged fix."
           },
           {
-            "name": "Cape Horn",
-            "lat": -55.98,
-            "lon": -67.29,
+            "name": "South of Cape Horn",
+            "lat": -57,
+            "lon": -67.3,
             "note": "Documented rounding region, not a precise fix."
           },
           {
@@ -1215,11 +1246,30 @@
             "note": "Offshore Pacific control, not a logged fix."
           },
           {
+            "name": "Off western Colombia",
+            "lat": 4,
+            "lon": -82,
+            "note": "Illustrative Pacific offshore corridor, not a logged fix."
+          },
+          {
+            "name": "Southwest of Panama",
+            "lat": 6.7,
+            "lon": -81,
+            "note": "Illustrative Pacific offshore corridor, not a logged fix."
+          },
+          {
+            "name": "Gulf of Panama",
+            "lat": 6.9,
+            "lon": -79.65,
+            "note": "Illustrative approach south of the Azuero Peninsula; not a logged fix."
+          },
+          {
             "name": "Balboa",
             "lat": 8.96,
             "lon": -79.56,
             "note": "Documented Panama call on Pacific side."
           },
+          { "name": "Gulf of Panama exit", "lat": 7.5, "lon": -79.6, "note": "Illustrative seaward departure; not a logged fix." },
           {
             "name": "South of Panama",
             "lat": 7,
@@ -1244,6 +1294,7 @@
             "lon": -93,
             "note": "Pacific coastal sea control, not a logged fix."
           },
+          { "name": "South of Acapulco", "lat": 16.2, "lon": -99.8, "note": "Illustrative offshore port approach, not a logged fix." },
           {
             "name": "Acapulco",
             "lat": 16.86,
@@ -1454,6 +1505,7 @@
             "lon": -3.5,
             "note": "Cartographic sea control, not a logged fix."
           },
+          { "name": "North of Anglesey", "lat": 53.65, "lon": -4.7, "note": "Illustrative coastal clearance, not a logged fix." },
           {
             "name": "Irish Sea",
             "lat": 52.6,
@@ -1646,6 +1698,7 @@
             "lon": 1.2,
             "note": "Passage control, not a logged fix."
           },
+          { "name": "Mid-Channel south of Sussex", "lat": 50.4, "lon": 0.3, "note": "Illustrative English Channel sea control, not a logged fix." },
           {
             "name": "Eastern Solent",
             "lat": 50.73,
@@ -1765,6 +1818,8 @@
             "lon": 1.2,
             "note": "Channel passage control, not a logged fix."
           },
+          { "name": "Mid-Channel south of Sussex", "lat": 50.4, "lon": 0.3, "note": "Illustrative English Channel sea control, not a logged fix." },
+          { "name": "Eastern Solent", "lat": 50.73, "lon": -1.06, "note": "Illustrative approach to Southampton; not a logged fix." },
           {
             "name": "Southampton",
             "lat": 50.9097,
@@ -1910,6 +1965,8 @@
             "lon": 139.65,
             "note": "Chaplin's documented boarding port."
           },
+          { "name": "East of Honshu", "lat": 35.4, "lon": 142, "note": "Illustrative Pacific exit corridor; not a logged fix." },
+          { "name": "Northwest Pacific south of Hokkaido", "lat": 39, "lon": 146, "note": "Illustrative offshore control; not a logged fix." },
           {
             "name": "Northwest Pacific",
             "lat": 43,
@@ -1988,6 +2045,7 @@
             "lon": -3.5,
             "note": "Cartographic sea control, not a logged fix."
           },
+          { "name": "North of Anglesey", "lat": 53.65, "lon": -4.7, "note": "Illustrative coastal clearance, not a logged fix." },
           {
             "name": "Irish Sea",
             "lat": 52.6,
@@ -2052,6 +2110,8 @@
           { "name": "Elbe estuary", "lat": 53.87, "lon": 8.7, "note": "Cartographic sea control, not a logged fix." },
           { "name": "North Sea", "lat": 53.5, "lon": 3.2, "note": "Cartographic sea control, not a logged fix." },
           { "name": "Dover Strait", "lat": 51.05, "lon": 1.55, "note": "Illustrative channel passage, not a logged fix." },
+          { "name": "Mid-English Channel", "lat": 50.3, "lon": -2.2, "note": "Illustrative channel corridor; not a logged fix." },
+          { "name": "South of Cornwall", "lat": 49.65, "lon": -4.7, "note": "Illustrative sea corridor; not a logged fix." },
           { "name": "Western Approaches", "lat": 48.7, "lon": -10.5, "note": "Cartographic sea control, not a logged fix." },
           { "name": "Central Atlantic", "lat": 38, "lon": -40, "note": "Broad ocean control, not a logged fix." },
           { "name": "Havana", "lat": 23.15, "lon": -82.39, "note": "Documented Cuban destination; most passengers were denied permission to land." }
@@ -2072,9 +2132,13 @@
         "source_url": "https://encyclopedia.ushmm.org/content/en/animated-map/the-voyage-of-the-st-louis",
         "anchors": [
           { "name": "Offshore toward Miami", "lat": 25.74, "lon": -80.0, "note": "Turned back to Europe after U.S. entry was denied; approximate offshore point." },
+          { "name": "East of Florida", "lat": 26.1, "lon": -79.8, "note": "Illustrative exit corridor clear of Bahamian islands; not a logged fix." },
+          { "name": "Northwest of Grand Bahama", "lat": 27.3, "lon": -79.7, "note": "Illustrative offshore corridor; not a logged fix." },
+          { "name": "North of the Bahamas", "lat": 28.0, "lon": -75, "note": "Illustrative offshore corridor; not a logged fix." },
           { "name": "Return Atlantic crossing", "lat": 38, "lon": -50, "note": "Broad ocean control, not a logged fix." },
           { "name": "Western Approaches", "lat": 49, "lon": -10.5, "note": "Cartographic sea control, not a logged fix." },
           { "name": "English Channel", "lat": 50.4, "lon": -0.5, "note": "Illustrative channel passage, not a logged fix." },
+          { "name": "Dover Strait", "lat": 51.05, "lon": 1.55, "note": "Channel-to-North-Sea corridor control; not a logged fix." },
           { "name": "North Sea", "lat": 52.45, "lon": 3.1, "note": "Cartographic sea control, not a logged fix." },
           { "name": "Scheldt estuary", "lat": 51.38, "lon": 3.3, "note": "Cartographic waterway control, not a logged fix." },
           { "name": "Antwerp", "lat": 51.23, "lon": 4.4, "note": "Documented disembarkation on 17 June 1939." }
