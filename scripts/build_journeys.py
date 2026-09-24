@@ -12,6 +12,7 @@ import json
 import math
 import re
 from pathlib import Path
+from urllib.parse import urlparse
 
 try:
     from .build_routes import as_wkt, haversine_km, slerp, split_dateline
@@ -90,6 +91,28 @@ def validate_record(record: dict, domain: str, rank: int) -> None:
         require(isinstance(record[field], str) and record[field].strip(),
                 f"{domain} rank {rank}: empty {field}")
     require(str(record["source_url"]).startswith("https://"), f"{domain} rank {rank}: source URL must be HTTPS")
+    wiki_url = record.get("wiki_url")
+    wiki = urlparse(str(wiki_url or ""))
+    require(wiki.scheme == "https" and wiki.hostname == "en.wikipedia.org"
+            and wiki.path.startswith("/wiki/") and len(wiki.path) > len("/wiki/"),
+            f"{domain} rank {rank}: wiki_url must target an English Wikipedia article")
+    require(isinstance(record.get("wiki_title"), str) and record["wiki_title"].strip(),
+            f"{domain} rank {rank}: missing wiki_title")
+    require(record.get("wiki_relation", "exact") in {"exact", "related"},
+            f"{domain} rank {rank}: wiki_relation must be exact or related")
+    additional_sources = record.get("additional_sources", [])
+    require(isinstance(additional_sources, list),
+            f"{domain} rank {rank}: additional_sources must be a list")
+    for source_index, source in enumerate(additional_sources, 1):
+        source_prefix = f"{domain} rank {rank} additional source {source_index}"
+        require(isinstance(source, dict), f"{source_prefix}: must be an object")
+        require(isinstance(source.get("title"), str) and source["title"].strip(),
+                f"{source_prefix}: title is required")
+        parsed = urlparse(str(source.get("url", "")))
+        require(parsed.scheme == "https" and parsed.hostname and not parsed.username and not parsed.password,
+                f"{source_prefix}: URL must be a safe HTTPS URL")
+        require("note" not in source or isinstance(source["note"], str),
+                f"{source_prefix}: note must be a string when present")
     require(record["geometry_confidence"].lower() in {"high", "medium", "low", "h", "m", "l"},
             f"{domain} rank {rank}: invalid confidence")
     require(isinstance(record["segments"], list) and record["segments"],
@@ -113,8 +136,8 @@ def validate_record(record: dict, domain: str, rank: int) -> None:
 def build_domain(domain: str) -> tuple[int, int]:
     source_path = SOURCE_DIR / f"{domain}.json"
     records = json.loads(source_path.read_text(encoding="utf-8"))
-    require(isinstance(records, list) and len(records) == 25,
-            f"{domain}: expected a list of exactly 25 records")
+    require(isinstance(records, list) and records,
+            f"{domain}: expected a nonempty list of records")
     ids: set[str] = set()
     for rank, record in enumerate(records, 1):
         validate_record(record, domain, rank)
@@ -147,7 +170,7 @@ def build_domain(domain: str) -> tuple[int, int]:
         properties.update({
             "domain": domain,
             "era": record.get("era", DOMAIN_LABELS[domain]),
-            "group": f"{(rank - 1) // 10 * 10 + 1}–{min((rank - 1) // 10 * 10 + 10, 25)}",
+            "group": f"{(rank - 1) // 10 * 10 + 1}–{min((rank - 1) // 10 * 10 + 10, len(records))}",
             "color": COLORS[(rank - 1) % len(COLORS)],
             "quality": "illustrative_corridor" if any(
                 segment["track_type"] in {"waypoint-interpolation", "historical-corridor"}

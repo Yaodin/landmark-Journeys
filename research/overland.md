@@ -2,6 +2,8 @@
 
 Research shortlist, ranked for recognition, geographic range, and route evidence. These are **candidates**, not ready-to-publish tracks. “High” means a mapped historical alignment or documented itinerary; it does not mean meter-level GPS accuracy. “Medium” means substantial named waypoints; “Low” means the precise path or even some claimed legs remain disputed. Some entries are collective migrations or route networks, as noted.
 
+De Soto, Cabeza de Vaca, and Coronado remain historical research candidates, but were removed from the atlas because their illustrated inland waypoint chains could not be verified. The active 25 instead include the [Donner Party itinerary](https://www.pbs.org/wgbh/americanexperience/features/donner-map/), [Klondike Chilkoot route](https://home.nps.gov/klgo/learn/historyculture/historic-chilkoot-trail.htm), and [Fuchs–Hillary Antarctic traverse](https://alp.lib.sun.ac.za/bitstream/handle/123456789/7474/the_beginning_1_taking_part_in_the_trans_antarctic_expedition.pdf?isAllowed=y&sequence=1). This table preserves the original candidate shortlist; the canonical active selections are in `data/journeys/overland.json` and the [geometry audit](geometry-audit.md).
+
 | # | Journey / date | Route and why it matters | Geometry | Source |
 |---:|---|---|:---:|---|
 | 1 | Lewis and Clark expedition, 1804–06 | St. Louis → Missouri River → Rockies → Columbia River → Pacific and return. Foundational U.S. survey, dependent on Indigenous knowledge and guidance; includes water travel, so segment by mode. | High | [NPS historic route map](https://home.nps.gov/lecl/planyourvisit/maps.htm) |

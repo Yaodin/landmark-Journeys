@@ -53,24 +53,26 @@ async function inspectImage(page, id, metadata, context) {
   const browser = await chromium.launch({ headless: true });
   try {
     const desktop = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+    await desktop.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
     await desktop.goto(`${baseUrl}/?basemap=atlas`);
     await desktop.waitForFunction(() => window.__atlasReady === true);
     for (const domain of domains) {
       await desktop.locator(`#tab-${domain}`).click();
-      await desktop.waitForFunction(() => document.querySelectorAll(".route-item").length === 25);
+      await desktop.waitForFunction((count) => document.querySelectorAll(".route-item").length === count, domainIds.get(domain).size);
       const entries = Object.entries(catalog).filter(([id]) => domainIds.get(domain).has(id));
-      assert(entries.length === 25, `not all ${domain} journeys have images`);
+      assert(entries.length === domainIds.get(domain).size, `not all ${domain} journeys have images`);
       for (const [id, metadata] of entries) await inspectImage(desktop, id, metadata, `desktop ${domain}`);
       await desktop.screenshot({ path: path.join(outputDir, `desktop-${domain}.png`) });
     }
     await desktop.close();
 
     const phone = await browser.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1 });
+    await phone.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
     await phone.goto(`${baseUrl}/?basemap=atlas`);
     await phone.waitForFunction(() => window.__atlasReady === true);
     for (const domain of domains) {
       await phone.locator(`#tab-${domain}`).click();
-      await phone.waitForFunction(() => document.querySelectorAll(".route-item").length === 25);
+      await phone.waitForFunction((count) => document.querySelectorAll(".route-item").length === count, domainIds.get(domain).size);
       const [id, metadata] = Object.entries(catalog).find(([routeId]) => domainIds.get(domain).has(routeId));
       await inspectImage(phone, id, metadata, `phone ${domain}`);
       await phone.locator(".sheet-handle").click();

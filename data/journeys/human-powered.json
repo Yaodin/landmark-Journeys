@@ -617,7 +617,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Jason Lewis (adventurer)",
+    "wiki_url": "https://en.wikipedia.org/wiki/Jason_Lewis_(adventurer)"
   },
   {
     "id": "human-erden-eruc-2007",
@@ -1021,7 +1023,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Erden Eruç",
+    "wiki_url": "https://en.wikipedia.org/wiki/Erden_Eru%C3%A7"
   },
   {
     "id": "human-nansen-greenland-1888",
@@ -1092,7 +1096,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Fridtjof Nansen",
+    "wiki_url": "https://en.wikipedia.org/wiki/Fridtjof_Nansen"
   },
   {
     "id": "human-scott-south-pole-1911",
@@ -1187,7 +1193,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Terra Nova Expedition",
+    "wiki_url": "https://en.wikipedia.org/wiki/Terra_Nova_Expedition"
   },
   {
     "id": "human-everest-hillary-tenzing-1953",
@@ -1251,7 +1259,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "1953 British Mount Everest expedition",
+    "wiki_url": "https://en.wikipedia.org/wiki/1953_British_Mount_Everest_expedition"
   },
   {
     "id": "human-everest-messner-habeler-1978",
@@ -1309,7 +1319,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Peter Habeler",
+    "wiki_url": "https://en.wikipedia.org/wiki/Peter_Habeler"
   },
   {
     "id": "human-everest-messner-solo-1980",
@@ -1367,7 +1379,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Reinhold Messner",
+    "wiki_url": "https://en.wikipedia.org/wiki/Reinhold_Messner"
   },
   {
     "id": "human-shaffer-appalachian-1948",
@@ -1461,7 +1475,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Earl Shaffer",
+    "wiki_url": "https://en.wikipedia.org/wiki/Earl_Shaffer"
   },
   {
     "id": "human-gatewood-appalachian-1955",
@@ -1543,7 +1559,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Grandma Gatewood",
+    "wiki_url": "https://en.wikipedia.org/wiki/Grandma_Gatewood"
   },
   {
     "id": "human-strayed-pct-1995",
@@ -1631,7 +1649,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Cheryl Strayed",
+    "wiki_url": "https://en.wikipedia.org/wiki/Cheryl_Strayed"
   },
   {
     "id": "human-stafford-amazon-2008",
@@ -1707,7 +1727,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Ed Stafford",
+    "wiki_url": "https://en.wikipedia.org/wiki/Ed_Stafford"
   },
   {
     "id": "human-beaumont-world-cycle-2017",
@@ -1962,7 +1984,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Mark Beaumont (cyclist)",
+    "wiki_url": "https://en.wikipedia.org/wiki/Mark_Beaumont_(cyclist)"
   },
   {
     "id": "human-jenny-graham-world-cycle-2018",
@@ -2253,7 +2277,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Jenny Graham",
+    "wiki_url": "https://en.wikipedia.org/wiki/Jenny_Graham"
   },
   {
     "id": "human-annie-londonderry-1894",
@@ -2367,7 +2393,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Annie Londonderry",
+    "wiki_url": "https://en.wikipedia.org/wiki/Annie_Londonderry"
   },
   {
     "id": "human-thomas-stevens-1884",
@@ -2591,25 +2619,27 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Thomas Stevens (cyclist)",
+    "wiki_url": "https://en.wikipedia.org/wiki/Thomas_Stevens_(cyclist)"
   },
   {
     "id": "human-25th-infantry-bicycle-1897",
     "rank": 16,
     "title": "25th Infantry Bicycle Corps ride",
     "short_title": "Iron Riders",
-    "date": "1897",
+    "date": "1897-06-14/1897-07-24",
     "why_famous": "Black U.S. soldiers rode roughly 1,900 miles from Montana to Missouri in a major military test of bicycle transport.",
-    "route_summary": "Fort Missoula–Yellowstone region–Wyoming–Nebraska–Kansas–St. Louis.",
-    "source_title": "U.S. Army Transportation Corps — Iron Riders",
-    "source_url": "https://transportation.army.mil/New_Resources/ironriders.html",
+    "route_summary": "Fort Missoula → Helena → Fort Custer → Little Bighorn → Moorcroft → Crawford → Alliance → Broken Bow → St. Joseph → Laclede → St. Louis.",
+    "source_title": "National Park Service — The Twenty-Fifth Infantry Bicycle Corps",
+    "source_url": "https://home.nps.gov/articles/000/the-twenty-fifth-infantry-bicycle-corps.htm",
     "geometry_confidence": "medium",
-    "geometry_note": "Military itinerary and settlements define the corridor; individual 1897 tracks and road surfaces are not fully recovered.",
+    "geometry_note": "NPS's chronology distinguishes the 1896 Yellowstone excursion from the 1897 Fort Missoula–St. Louis journey and documents named stops. Between-town bicycle roads are inferred; precise 1897 road alignments are not recovered.",
     "segments": [
       {
         "mode": "cycling",
         "track_type": "historical-corridor",
-        "source_url": "https://transportation.army.mil/New_Resources/ironriders.html",
+        "source_url": "https://home.nps.gov/articles/000/the-twenty-fifth-infantry-bicycle-corps.htm",
         "anchors": [
           {
             "name": "Fort Missoula",
@@ -2618,58 +2648,64 @@
             "note": "Start"
           },
           {
-            "name": "Helena",
+            "name": "Fort William Henry Harrison, Helena area",
             "lat": 46.59,
-            "lon": -112.04,
-            "note": "Montana corridor"
+            "lon": -112.10,
+            "note": "NPS records the corps slowed by snow on the way here; coordinate is a settlement/fort locator, not the exact camp."
           },
           {
-            "name": "Livingston",
-            "lat": 45.66,
-            "lon": -110.56,
-            "note": "Yellowstone approach"
+            "name": "Fort Custer, Montana",
+            "lat": 45.60,
+            "lon": -107.55,
+            "note": "Documented 24 June stop; approximate fort locator."
           },
           {
-            "name": "Yellowstone region",
-            "lat": 44.98,
-            "lon": -110.7,
-            "note": "Park region"
+            "name": "Custer National Cemetery / Little Bighorn",
+            "lat": 45.57,
+            "lon": -107.43,
+            "note": "Documented 25 June visit and camp near battlefield; the corps then crossed the Little Bighorn River into Wyoming."
           },
           {
-            "name": "Cody",
-            "lat": 44.53,
-            "lon": -109.06,
-            "note": "Wyoming corridor"
+            "name": "Moorcroft, Wyoming",
+            "lat": 44.26,
+            "lon": -104.95,
+            "note": "NPS documents the resupply stop after the axle failure; approximate town-centre coordinate."
           },
           {
-            "name": "Casper",
-            "lat": 42.85,
-            "lon": -106.31,
-            "note": "Wyoming corridor"
+            "name": "Crawford, Nebraska",
+            "lat": 42.68,
+            "lon": -103.41,
+            "note": "Documented 3 July arrival."
           },
           {
-            "name": "Cheyenne",
-            "lat": 41.14,
-            "lon": -104.82,
-            "note": "Wyoming corridor"
+            "name": "Alliance, Nebraska",
+            "lat": 42.10,
+            "lon": -102.87,
+            "note": "Documented 4 July stop; the group then crossed the Sand Hills."
           },
           {
-            "name": "North Platte",
-            "lat": 41.14,
-            "lon": -100.76,
-            "note": "Nebraska corridor"
+            "name": "Broken Bow, Nebraska",
+            "lat": 41.40,
+            "lon": -99.64,
+            "note": "Documented reunion with Lt. Moss after the Sand Hills crossing."
           },
           {
-            "name": "Omaha",
-            "lat": 41.26,
-            "lon": -95.94,
-            "note": "Nebraska corridor"
+            "name": "Missouri River crossing at Napier",
+            "lat": 40.07,
+            "lon": -95.52,
+            "note": "NPS records the 16 July river crossing and camp at Napier, Missouri; approximate locality."
           },
           {
-            "name": "Kansas City",
-            "lat": 39.1,
-            "lon": -94.58,
-            "note": "Missouri corridor"
+            "name": "St. Joseph, Missouri",
+            "lat": 39.77,
+            "lon": -94.85,
+            "note": "NPS notes a soldier was sent back from St. Joe; approximate city coordinate."
+          },
+          {
+            "name": "Laclede, Missouri",
+            "lat": 39.78,
+            "lon": -93.17,
+            "note": "Documented 19 July stop."
           },
           {
             "name": "St. Louis",
@@ -2679,7 +2715,10 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "25th Infantry Regiment (United States)",
+    "wiki_url": "https://en.wikipedia.org/wiki/25th_Infantry_Regiment_(United_States)",
+    "wiki_relation": "related"
   },
   {
     "id": "human-oskar-speck-1932",
@@ -3100,7 +3139,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Oskar Speck",
+    "wiki_url": "https://en.wikipedia.org/wiki/Oskar_Speck"
   },
   {
     "id": "human-paul-caffyn-australia-1981",
@@ -3440,7 +3481,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Paul Caffyn",
+    "wiki_url": "https://en.wikipedia.org/wiki/Paul_Caffyn"
   },
   {
     "id": "human-freya-hoffmeister-australia-2009",
@@ -3744,7 +3787,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Freya Hoffmeister",
+    "wiki_url": "https://en.wikipedia.org/wiki/Freya_Hoffmeister"
   },
   {
     "id": "human-doba-atlantic-kayak-2013",
@@ -3802,7 +3847,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Aleksander Doba",
+    "wiki_url": "https://en.wikipedia.org/wiki/Aleksander_Doba"
   },
   {
     "id": "human-john-fairfax-atlantic-1969",
@@ -3854,7 +3901,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "John Fairfax (rower)",
+    "wiki_url": "https://en.wikipedia.org/wiki/John_Fairfax_(rower)"
   },
   {
     "id": "human-tori-murden-atlantic-1999",
@@ -3900,7 +3949,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Tori Murden",
+    "wiki_url": "https://en.wikipedia.org/wiki/Tori_Murden"
   },
   {
     "id": "human-roz-savage-pacific-2008",
@@ -3990,7 +4041,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Roz Savage",
+    "wiki_url": "https://en.wikipedia.org/wiki/Roz_Savage"
   },
   {
     "id": "human-sarah-outen-pacific-2013",
@@ -4055,7 +4108,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Sarah Outen",
+    "wiki_url": "https://en.wikipedia.org/wiki/Sarah_Outen"
   },
   {
     "id": "human-felicity-aston-antarctica-2011",
@@ -4113,6 +4168,8 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Felicity Aston",
+    "wiki_url": "https://en.wikipedia.org/wiki/Felicity_Aston"
   }
 ]

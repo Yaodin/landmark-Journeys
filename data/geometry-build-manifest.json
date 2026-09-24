@@ -1,0 +1,1315 @@
+{
+  "schema_version": 1,
+  "purpose": "Reproducible source, interpolation, GeoJSON and full-resolution WKT inventory; map simplification is display-only.",
+  "shared_geometry_functions": [
+    "scripts/build_routes.py:haversine_km",
+    "scripts/build_routes.py:slerp",
+    "scripts/build_routes.py:split_dateline",
+    "scripts/build_routes.py:as_wkt"
+  ],
+  "shared_geometry_sha256": "e6e042675be86827c982e59bb82cbd4c6f45620b493dfa507485fcbbdea268aa",
+  "display_preview": {
+    "path": "data/all-overview.geojson",
+    "sha256": "3450d0274d0df85f22ff0e7384714d57fc814a173fc1ca630a8bec2b361d2032",
+    "builder": "scripts/build_overview.py",
+    "builder_sha256": "089e7b4d7ef539c6211b3e173f96bd8005f3b999cc20131ce254d7a893bd382b"
+  },
+  "collections": [
+    {
+      "domain": "flights",
+      "source": "scripts/build_routes.py",
+      "source_sha256": "e6e042675be86827c982e59bb82cbd4c6f45620b493dfa507485fcbbdea268aa",
+      "builder": "scripts/build_routes.py",
+      "builder_sha256": "e6e042675be86827c982e59bb82cbd4c6f45620b493dfa507485fcbbdea268aa",
+      "geometry": "data/routes.geojson",
+      "geometry_sha256": "7cdb2a8e35313b8c37506cdb41cb475cec0db18a8cab9d0e7e4ba253a8bf14f4",
+      "method": "Great-circle interpolation for two-point routes; spherical cardinal interpolation through multi-point route anchors",
+      "routes": [
+        {
+          "id": "wright-first-flight",
+          "vertices": 9,
+          "wkt": "data/wkt/wright-first-flight.wkt",
+          "wkt_sha256": "0d3b0ae134ecb4ec7d34c456cdc7d2dc0488990d6fa580982c76814a3c9d1dcd"
+        },
+        {
+          "id": "lindbergh-spirit-of-st-louis",
+          "vertices": 1171,
+          "wkt": "data/wkt/lindbergh-spirit-of-st-louis.wkt",
+          "wkt_sha256": "2851ac2e43e4ae91e4be8cb93f56692ef4c0e61d85f9c6a4ab1ffe771ba94b92"
+        },
+        {
+          "id": "enola-gay-hiroshima",
+          "vertices": 1024,
+          "wkt": "data/wkt/enola-gay-hiroshima.wkt",
+          "wkt_sha256": "cfdebf963349e4aa1387da0293f305d2642c652fe2a63a34f4bfd43821817011"
+        },
+        {
+          "id": "earhart-solo-atlantic",
+          "vertices": 650,
+          "wkt": "data/wkt/earhart-solo-atlantic.wkt",
+          "wkt_sha256": "223e94f96737b86dd3899a6529d8b5d3d431766a6dae201dc6f66b8383c2e3a7"
+        },
+        {
+          "id": "bell-x1-sound-barrier",
+          "vertices": 175,
+          "wkt": "data/wkt/bell-x1-sound-barrier.wkt",
+          "wkt_sha256": "cf0db23e5bd25807c9476b6a005e1d0ed357153b42e73f5c537ba5264aeab8c9"
+        },
+        {
+          "id": "us-airways-1549",
+          "vertices": 291,
+          "wkt": "data/wkt/us-airways-1549.wkt",
+          "wkt_sha256": "23c38be467f5ffc2611141e4396b22a96eca337896f786c731096c7d7c83dd48"
+        },
+        {
+          "id": "concorde-ba300",
+          "vertices": 1020,
+          "wkt": "data/wkt/concorde-ba300.wkt",
+          "wkt_sha256": "2a188428debbc4113c1e7ec081dbce5b1da809c2de7c38c18ab93fb9e5e363f6"
+        },
+        {
+          "id": "rutan-voyager",
+          "vertices": 8288,
+          "wkt": "data/wkt/rutan-voyager.wkt",
+          "wkt_sha256": "e531df28a30e39c780096d8dff31150b853950bed0a07e8e8fc4fe26db9ef3fd"
+        },
+        {
+          "id": "alcock-brown-atlantic",
+          "vertices": 610,
+          "wkt": "data/wkt/alcock-brown-atlantic.wkt",
+          "wkt_sha256": "9538d7ba7c2dac14afca1b7e32c10b14c2cc11dad4dff9091a9826383b147da3"
+        },
+        {
+          "id": "bleriot-channel",
+          "vertices": 87,
+          "wkt": "data/wkt/bleriot-channel.wkt",
+          "wkt_sha256": "b4f7eb7b94e8f96be7aec66aea1e9c36437303f4d8ef7d99bd6d01134e59551d"
+        },
+        {
+          "id": "vin-fiz-transcontinental",
+          "vertices": 1042,
+          "wkt": "data/wkt/vin-fiz-transcontinental.wkt",
+          "wkt_sha256": "71f473c912358631a18f3a3c5b7e254b572e3f6da65649c2dd7c40926c73e5ca"
+        },
+        {
+          "id": "jannus-first-airline",
+          "vertices": 105,
+          "wkt": "data/wkt/jannus-first-airline.wkt",
+          "wkt_sha256": "3521e61299fd268696541a147c52b110db666666798abc7e9182ea77ad6440d7"
+        },
+        {
+          "id": "douglas-world-cruisers",
+          "vertices": 7719,
+          "wkt": "data/wkt/douglas-world-cruisers.wkt",
+          "wkt_sha256": "1149e53840934c52b64f0684fbf7087df0369f49eecbda7d55f980bce1118c2f"
+        },
+        {
+          "id": "southern-cross-transpacific",
+          "vertices": 2394,
+          "wkt": "data/wkt/southern-cross-transpacific.wkt",
+          "wkt_sha256": "df2534aa83a7c970725bfd5ee8cfadb29844a1136af0a2211a8fa49861c5b1c4"
+        },
+        {
+          "id": "wiley-post-solo-world",
+          "vertices": 4995,
+          "wkt": "data/wkt/wiley-post-solo-world.wkt",
+          "wkt_sha256": "3c443d8e11fc1e92f02524f900a0954661661f256b032a3db80dccd560a116b5"
+        },
+        {
+          "id": "china-clipper-airmail",
+          "vertices": 2577,
+          "wkt": "data/wkt/china-clipper-airmail.wkt",
+          "wkt_sha256": "576b5655bc16ffe7db4fb9fbf5e81c0126620fe0eb1560da798f33ed672be776"
+        },
+        {
+          "id": "spruce-goose",
+          "vertices": 76,
+          "wkt": "data/wkt/spruce-goose.wkt",
+          "wkt_sha256": "ce9b6a669fd6487552a6a61ef9d9bd85be06cf7311663f1e7aacb1da16af1416"
+        },
+        {
+          "id": "first-commercial-747",
+          "vertices": 1110,
+          "wkt": "data/wkt/first-commercial-747.wkt",
+          "wkt_sha256": "1752253594a85892236771fc924d952c2caab053777a171495ce03280e569207"
+        },
+        {
+          "id": "gossamer-albatross",
+          "vertices": 142,
+          "wkt": "data/wkt/gossamer-albatross.wkt",
+          "wkt_sha256": "48479f261e5dd7758b83bb107f1236cd7304a9dc22d54a902f058376400890c8"
+        },
+        {
+          "id": "solar-impulse-2",
+          "vertices": 7025,
+          "wkt": "data/wkt/solar-impulse-2.wkt",
+          "wkt_sha256": "bbb3c1e025e3667625f4de4a3919bcd7e543968f63db3681f008bd6f490aa8e0"
+        },
+        {
+          "id": "nc4-first-atlantic-crossing",
+          "vertices": 1424,
+          "wkt": "data/wkt/nc4-first-atlantic-crossing.wkt",
+          "wkt_sha256": "927bec718e6c374a03408909fe04437f30870b7a9d954634ff7c773c2c29994c"
+        },
+        {
+          "id": "graf-zeppelin-world-flight",
+          "vertices": 6075,
+          "wkt": "data/wkt/graf-zeppelin-world-flight.wkt",
+          "wkt_sha256": "1a25a6c593ab49bb48c2d2278d989684708bc8a1aff5ac9b1595ad7dc93d8cb9"
+        },
+        {
+          "id": "lucky-lady-ii-world-flight",
+          "vertices": 7070,
+          "wkt": "data/wkt/lucky-lady-ii-world-flight.wkt",
+          "wkt_sha256": "7163cdb8ef4fe2bbcdf0ce7a715834b5eaa443d031db3975f2ecc34d34c0a44e"
+        },
+        {
+          "id": "sr71-coast-to-coast-record",
+          "vertices": 777,
+          "wkt": "data/wkt/sr71-coast-to-coast-record.wkt",
+          "wkt_sha256": "c4549ab8884ee7c347fa145664fc3b84f218eafae0f19630b3a3b831669789b2"
+        },
+        {
+          "id": "air-canada-143-gimli-glider",
+          "vertices": 379,
+          "wkt": "data/wkt/air-canada-143-gimli-glider.wkt",
+          "wkt_sha256": "3a3f02c0039d035940ec1f9a0455cc01bd6f634fe8c7c55a966f8005d9c56202"
+        }
+      ]
+    },
+    {
+      "domain": "sailing",
+      "source": "data/journeys/sailing.json",
+      "source_sha256": "4bb08b0531bce67ddcc50eeef3bcab83b05299e697905a9c1cf7f38e5fc5a671",
+      "builder": "scripts/build_journeys.py",
+      "builder_sha256": "451b867e7ef90b858edb6068e4c3ea53b7e764232d8b097582ddee138893c883",
+      "geometry": "data/journeys/sailing.geojson",
+      "geometry_sha256": "42b1747cdccc7197cd69a382fb21b39a6740f6be494e87ab6972db12554276a2",
+      "method": "Great-circle rendering samples between sourced place anchors; independent route segments remain separate",
+      "routes": [
+        {
+          "id": "magellan-elcano",
+          "vertices": 11564,
+          "wkt": "data/wkt/sailing/magellan-elcano.wkt",
+          "wkt_sha256": "eb6c8d3f12a626a3262fb57e323bdefef5b16b3591d2971c19dfbd07e8c444a3"
+        },
+        {
+          "id": "columbus-first-voyage",
+          "vertices": 7005,
+          "wkt": "data/wkt/sailing/columbus-first-voyage.wkt",
+          "wkt_sha256": "55a1d183a687b9e9f813ca92da6d03afbffd40b01791cc4cb2cb8b00fa763489"
+        },
+        {
+          "id": "cook-endeavour",
+          "vertices": 12081,
+          "wkt": "data/wkt/sailing/cook-endeavour.wkt",
+          "wkt_sha256": "4b8f893481677c17fac13beb42e3ba139de5bf683fa4a7f837a4d70f598ea5c9"
+        },
+        {
+          "id": "beagle-second-voyage",
+          "vertices": 11648,
+          "wkt": "data/wkt/sailing/beagle-second-voyage.wkt",
+          "wkt_sha256": "29d9b33f6f0a23d8e1ab0d482724cc8bf4a5f137ec72281f51648d5dc98d8cc1"
+        },
+        {
+          "id": "mayflower",
+          "vertices": 3503,
+          "wkt": "data/wkt/sailing/mayflower.wkt",
+          "wkt_sha256": "49aa4dfe6e3528ea4572337e8818ed4ccd471533de4e693af285de9c3010f4d5"
+        },
+        {
+          "id": "vasco-da-gama-india",
+          "vertices": 8106,
+          "wkt": "data/wkt/sailing/vasco-da-gama-india.wkt",
+          "wkt_sha256": "3a6f38e5f2ef059ecf3712563323c2b3bb3ea2e92fcfd5c0418baaebd0cca2c3"
+        },
+        {
+          "id": "drake-circumnavigation",
+          "vertices": 12513,
+          "wkt": "data/wkt/sailing/drake-circumnavigation.wkt",
+          "wkt_sha256": "6fb03e575234644c43ad990179a27e93b01c43ecf0667dfeb00cc39273b577fa"
+        },
+        {
+          "id": "endurance-james-caird",
+          "vertices": 12345,
+          "wkt": "data/wkt/sailing/endurance-james-caird.wkt",
+          "wkt_sha256": "dacedbda210fa1292abc79a4ea46704a62247e7cb5b20c11d00492c89d9b8368"
+        },
+        {
+          "id": "bligh-bounty-launch",
+          "vertices": 3505,
+          "wkt": "data/wkt/sailing/bligh-bounty-launch.wkt",
+          "wkt_sha256": "1992a26cb1f5ed07acf48b051e513a9eb59165f7306d499f50734755a20762a6"
+        },
+        {
+          "id": "slocum-spray",
+          "vertices": 12412,
+          "wkt": "data/wkt/sailing/slocum-spray.wkt",
+          "wkt_sha256": "d0169ac464cfaa24d93f9a3dc9115a13c58d3ba493920d97a876fc115876dfba"
+        },
+        {
+          "id": "franklin-final-expedition",
+          "vertices": 7007,
+          "wkt": "data/wkt/sailing/franklin-final-expedition.wkt",
+          "wkt_sha256": "0d3507474bdd765c70699d845a76b454d17fd27825c1ed3555c9ae89b3117edd"
+        },
+        {
+          "id": "kon-tiki",
+          "vertices": 3501,
+          "wkt": "data/wkt/sailing/kon-tiki.wkt",
+          "wkt_sha256": "36fd9b27062cde3716c2c0d002dedf164dc2ff74b0ea8de0275d3d682f4a56b2"
+        },
+        {
+          "id": "amundsen-gjoa",
+          "vertices": 3512,
+          "wkt": "data/wkt/sailing/amundsen-gjoa.wkt",
+          "wkt_sha256": "65e7f4e48872dcf646b3541e218ccff10a431d0369b1a1e77b79264514c39885"
+        },
+        {
+          "id": "zheng-he-first-voyage",
+          "vertices": 7016,
+          "wkt": "data/wkt/sailing/zheng-he-first-voyage.wkt",
+          "wkt_sha256": "90344f8a56409a554f54a50d3f56d57d435bcf2385d28b4dfa987bc3d19d73d2"
+        },
+        {
+          "id": "hokulea-tahiti",
+          "vertices": 7002,
+          "wkt": "data/wkt/sailing/hokulea-tahiti.wkt",
+          "wkt_sha256": "04c05b4d3dc3377309ee925247ceb207e67fbee9e635850a1a646bc966fea10d"
+        },
+        {
+          "id": "first-fleet",
+          "vertices": 5553,
+          "wkt": "data/wkt/sailing/first-fleet.wkt",
+          "wkt_sha256": "1ff722dbef08814f5b56913039f7eeff39b3c655a484d155f3013c98f9afa03a"
+        },
+        {
+          "id": "nansen-fram",
+          "vertices": 10509,
+          "wkt": "data/wkt/sailing/nansen-fram.wkt",
+          "wkt_sha256": "e6adf302adb050da3b62262a98d6461f433f4ac5e7b04082d83edd998b3e4700"
+        },
+        {
+          "id": "taeping-tea-race",
+          "vertices": 5209,
+          "wkt": "data/wkt/sailing/taeping-tea-race.wkt",
+          "wkt_sha256": "fa08b0110bddcd718c491c63822aa4d6c2ac6255547313290c7a8ccf56f3d7db"
+        },
+        {
+          "id": "tasman-first-voyage",
+          "vertices": 5801,
+          "wkt": "data/wkt/sailing/tasman-first-voyage.wkt",
+          "wkt_sha256": "9aea4e69e3ed0992d7743550eca74526115e8dc7f96660a90a15202350359877"
+        },
+        {
+          "id": "flinders-investigator",
+          "vertices": 7711,
+          "wkt": "data/wkt/sailing/flinders-investigator.wkt",
+          "wkt_sha256": "0e4dc74ee5be6e23c4ad85522cefe428001bc4b8908a25dd261953901df3f7f1"
+        },
+        {
+          "id": "chichester-gipsy-moth",
+          "vertices": 9569,
+          "wkt": "data/wkt/sailing/chichester-gipsy-moth.wkt",
+          "wkt_sha256": "abd78c3556580bfd29c57072731dcaf93274a9fe87118a5d2160b0a66ac13519"
+        },
+        {
+          "id": "knox-johnston-suhaili",
+          "vertices": 9360,
+          "wkt": "data/wkt/sailing/knox-johnston-suhaili.wkt",
+          "wkt_sha256": "38b204b41fcdf893c26b2396795a1cb3aaed85fd674da05e8882edd885270f2e"
+        },
+        {
+          "id": "maiden-whitbread",
+          "vertices": 12150,
+          "wkt": "data/wkt/sailing/maiden-whitbread.wkt",
+          "wkt_sha256": "9621b8ff226e9dcaf4aee98ef6fdaaa2b8d7d1d5e8b92cf0a1c17075e4d2c707"
+        },
+        {
+          "id": "america-isle-of-wight",
+          "vertices": 938,
+          "wkt": "data/wkt/sailing/america-isle-of-wight.wkt",
+          "wkt_sha256": "01a6a959e22e062b545d1a6b1cfda8dcf6f9a362ea8b7e0d147dd1b442547d5c"
+        },
+        {
+          "id": "ellen-macarthur-record",
+          "vertices": 9260,
+          "wkt": "data/wkt/sailing/ellen-macarthur-record.wkt",
+          "wkt_sha256": "b998c210b135696c71db782f37eb63f749f7b37064cf467e6d479321e056c02e"
+        }
+      ]
+    },
+    {
+      "domain": "rail",
+      "source": "data/journeys/rail.json",
+      "source_sha256": "476f0e762456dcd118ef490bdde9760461d053d44ad8ce051c5991819d2b0ef3",
+      "builder": "scripts/build_journeys.py",
+      "builder_sha256": "451b867e7ef90b858edb6068e4c3ea53b7e764232d8b097582ddee138893c883",
+      "geometry": "data/journeys/rail.geojson",
+      "geometry_sha256": "b877406be8bbe4b15b4d98907343d1dd718ca9e27b182994318f633a4e97f816",
+      "method": "Great-circle rendering samples between sourced place anchors; independent route segments remain separate",
+      "routes": [
+        {
+          "id": "rail-transcontinental-1869",
+          "vertices": 7012,
+          "wkt": "data/wkt/rail/rail-transcontinental-1869.wkt",
+          "wkt_sha256": "4d2758c356042cb7686f042f2d5c2621c385644f6b00608abda3f7a77a12d011"
+        },
+        {
+          "id": "rail-trans-siberian-1916",
+          "vertices": 3509,
+          "wkt": "data/wkt/rail/rail-trans-siberian-1916.wkt",
+          "wkt_sha256": "8cfd07d5cdb7df24869386ab1f4a80aed3fb15aca253c8c7401886863a96a835"
+        },
+        {
+          "id": "rail-express-dorient-1883",
+          "vertices": 8063,
+          "wkt": "data/wkt/rail/rail-express-dorient-1883.wkt",
+          "wkt_sha256": "77c08ba652b695dde7b15356d2128023ee4b44252ad4e6503ca7b8c99071b4e1"
+        },
+        {
+          "id": "rail-tokaido-1964",
+          "vertices": 3506,
+          "wkt": "data/wkt/rail/rail-tokaido-1964.wkt",
+          "wkt_sha256": "eb9b13307ad0497b48c9b7f8de03e992a596f17b07a90aa6812f7d37b1673ff2"
+        },
+        {
+          "id": "rail-stockton-darlington-1825",
+          "vertices": 311,
+          "wkt": "data/wkt/rail/rail-stockton-darlington-1825.wkt",
+          "wkt_sha256": "3eb5f4ed450519f48324962ea57d8b4714a54c5831f03cd2e9b90e2c4fe5a963"
+        },
+        {
+          "id": "rail-liverpool-manchester-1830",
+          "vertices": 514,
+          "wkt": "data/wkt/rail/rail-liverpool-manchester-1830.wkt",
+          "wkt_sha256": "0a2e99fbd26869ab69dd4466d5b50ff7beefeeb6663ca8da0f37c182256aefbd"
+        },
+        {
+          "id": "rail-canadian-pacific-1886",
+          "vertices": 3512,
+          "wkt": "data/wkt/rail/rail-canadian-pacific-1886.wkt",
+          "wkt_sha256": "2038261713335f868c85d7961ca0565c80e6669992ed5f4a23f8193ec956d184"
+        },
+        {
+          "id": "rail-flying-scotsman-1928",
+          "vertices": 3505,
+          "wkt": "data/wkt/rail/rail-flying-scotsman-1928.wkt",
+          "wkt_sha256": "c597f050b91c05275d97dc68d1027cb611073e5be134d7b1af6f3ecc3faa5383"
+        },
+        {
+          "id": "rail-lincoln-funeral-1865",
+          "vertices": 7076,
+          "wkt": "data/wkt/rail/rail-lincoln-funeral-1865.wkt",
+          "wkt_sha256": "ea861047e3c5f385b603cb29afe7c12e77b8a564b662702569780a2637b27edc"
+        },
+        {
+          "id": "rail-metropolitan-1863",
+          "vertices": 59,
+          "wkt": "data/wkt/rail/rail-metropolitan-1863.wkt",
+          "wkt_sha256": "5703c8f6da57ada65a062a1194e4bee85055858d08f1a2264c2ef0e18440c3bf"
+        },
+        {
+          "id": "rail-india-first-1853",
+          "vertices": 325,
+          "wkt": "data/wkt/rail/rail-india-first-1853.wkt",
+          "wkt_sha256": "d8afdedf04855e06919eb9be2a017ec4db1a5394f88c71170185c9a1a8144d09"
+        },
+        {
+          "id": "rail-japan-first-1872",
+          "vertices": 266,
+          "wkt": "data/wkt/rail/rail-japan-first-1872.wkt",
+          "wkt_sha256": "630ee7874f697b7ece034fbef4481c5ba4157a14f8823fc76ea8b5a2c185433b"
+        },
+        {
+          "id": "rail-darjeeling-1881",
+          "vertices": 497,
+          "wkt": "data/wkt/rail/rail-darjeeling-1881.wkt",
+          "wkt_sha256": "821987ea0fb8753e351576c91378be2566fc1e88fe8d984a4a834ce75b525617"
+        },
+        {
+          "id": "rail-overseas-1912",
+          "vertices": 2432,
+          "wkt": "data/wkt/rail/rail-overseas-1912.wkt",
+          "wkt_sha256": "505856896a76a3f3d6d586339880268cbe0fa627fb191c911aa37514807dca98"
+        },
+        {
+          "id": "rail-suffrage-special-1916",
+          "vertices": 4060,
+          "wkt": "data/wkt/rail/rail-suffrage-special-1916.wkt",
+          "wkt_sha256": "edaa881008c959a7223d1ada963a7ceeb8bf51d8fa43065630bc561095b50446"
+        },
+        {
+          "id": "rail-glacier-express-1930",
+          "vertices": 2399,
+          "wkt": "data/wkt/rail/rail-glacier-express-1930.wkt",
+          "wkt_sha256": "f27a6bd2965d746a71c4f03285d6d6d1578b07d509b9568f9db2396056ad399e"
+        },
+        {
+          "id": "rail-ghan-1929",
+          "vertices": 3507,
+          "wkt": "data/wkt/rail/rail-ghan-1929.wkt",
+          "wkt_sha256": "f053566a987746126cf106d7b4b73e28fa6ccc58f5a5e1b514dd3a5c979e25e7"
+        },
+        {
+          "id": "rail-mallard-1938",
+          "vertices": 591,
+          "wkt": "data/wkt/rail/rail-mallard-1938.wkt",
+          "wkt_sha256": "2d20a3fb41fac6c98575be4266c3e4a0306d6d07b205efa74176311660b99c72"
+        },
+        {
+          "id": "rail-california-zephyr-1949",
+          "vertices": 3510,
+          "wkt": "data/wkt/rail/rail-california-zephyr-1949.wkt",
+          "wkt_sha256": "642565c842a088ca43425991904d0c168a3d5cfa6af90bb7be5d031e1cbc7d11"
+        },
+        {
+          "id": "rail-canadian-1955",
+          "vertices": 10515,
+          "wkt": "data/wkt/rail/rail-canadian-1955.wkt",
+          "wkt_sha256": "f988410080f492888e023760c0121f311b1ecbc38979837017f62a9471340d25"
+        },
+        {
+          "id": "rail-indian-pacific-1970",
+          "vertices": 3507,
+          "wkt": "data/wkt/rail/rail-indian-pacific-1970.wkt",
+          "wkt_sha256": "7be3a07dc4e2f34d75ff44dd1ea34c00b7e4a858d18d3bf7a822926f786b220e"
+        },
+        {
+          "id": "rail-tgv-1981",
+          "vertices": 3506,
+          "wkt": "data/wkt/rail/rail-tgv-1981.wkt",
+          "wkt_sha256": "ac67212ee3a4c3f888894a98d74871dff51d02060a7c29dcd99cb1e33d7664c8"
+        },
+        {
+          "id": "rail-eurostar-1994",
+          "vertices": 3506,
+          "wkt": "data/wkt/rail/rail-eurostar-1994.wkt",
+          "wkt_sha256": "28b46147698e0745ee517fd7e8bbb3964367e64c045d5b8d646b3ab2dcd15917"
+        },
+        {
+          "id": "rail-qinghai-tibet-2006",
+          "vertices": 3505,
+          "wkt": "data/wkt/rail/rail-qinghai-tibet-2006.wkt",
+          "wkt_sha256": "4ed5fda6385ba70d9b61afc1bc26dd485276380888e18f048fed6b350b46c575"
+        },
+        {
+          "id": "rail-bernina-1910",
+          "vertices": 455,
+          "wkt": "data/wkt/rail/rail-bernina-1910.wkt",
+          "wkt_sha256": "dbff36cadd3fa907ecd705c6be886706014a14422c42ac3c4e44a9be09938ada"
+        }
+      ]
+    },
+    {
+      "domain": "road-races",
+      "source": "data/journeys/road-races.json",
+      "source_sha256": "212ff3e825b25f598f0a1416fe482c237f3fb1fd6d5641523c32a51c7c899eba",
+      "builder": "scripts/build_journeys.py",
+      "builder_sha256": "451b867e7ef90b858edb6068e4c3ea53b7e764232d8b097582ddee138893c883",
+      "geometry": "data/journeys/road-races.geojson",
+      "geometry_sha256": "897452d5986855ed337f6820a1f404cd92e7df5f8cb2a508785360dba8d92a4e",
+      "method": "Great-circle rendering samples between sourced place anchors; independent route segments remain separate",
+      "routes": [
+        {
+          "id": "bertha-benz-1888",
+          "vertices": 1468,
+          "wkt": "data/wkt/road-races/bertha-benz-1888.wkt",
+          "wkt_sha256": "6c5220e44f518ec7ab1d6fda72490b416a4c17121878bf9b485290f508ac3058"
+        },
+        {
+          "id": "jackson-1903",
+          "vertices": 3507,
+          "wkt": "data/wkt/road-races/jackson-1903.wkt",
+          "wkt_sha256": "e4186ca22f20c7ca82daca087b378a97888b3a815b6007db636bdb8e18bca654"
+        },
+        {
+          "id": "peking-paris-1907",
+          "vertices": 3507,
+          "wkt": "data/wkt/road-races/peking-paris-1907.wkt",
+          "wkt_sha256": "c830a3b533f9ab6750c7733dbd01a48417a9ca10b2ce52f9cf8638131b7c5208"
+        },
+        {
+          "id": "new-york-paris-1908",
+          "vertices": 10518,
+          "wkt": "data/wkt/road-races/new-york-paris-1908.wkt",
+          "wkt_sha256": "4d144d216e6364dae5d51f62902851586fb22d11ebfa418fb1454c632a872022"
+        },
+        {
+          "id": "moss-mille-miglia-1955",
+          "vertices": 3513,
+          "wkt": "data/wkt/road-races/moss-mille-miglia-1955.wkt",
+          "wkt_sha256": "8686d4ba63a01bc023e0871fff6ea8a15b08ca4980093246fed1b90cd22491a7"
+        },
+        {
+          "id": "paris-dakar-1979",
+          "vertices": 10509,
+          "wkt": "data/wkt/road-races/paris-dakar-1979.wkt",
+          "wkt_sha256": "1a82e9be05410850e1859578edd5ead93ca011125a7da4493a8529beb8ad2968"
+        },
+        {
+          "id": "baja-1000-1967",
+          "vertices": 3506,
+          "wkt": "data/wkt/road-races/baja-1000-1967.wkt",
+          "wkt_sha256": "474a7e9b8305b7ff68fe841c6173b0d7096503da165be7e3380af1759315f2bd"
+        },
+        {
+          "id": "carrera-panamericana-1950",
+          "vertices": 3506,
+          "wkt": "data/wkt/road-races/carrera-panamericana-1950.wkt",
+          "wkt_sha256": "4f898f207fcfbb6b371f8d9b22af8c0fb8aa8c0e6aa6e3744d4bb6e398c31ded"
+        },
+        {
+          "id": "alice-ramsey-1909",
+          "vertices": 3506,
+          "wkt": "data/wkt/road-races/alice-ramsey-1909.wkt",
+          "wkt_sha256": "4db1ca0c61603c9fba8dadfd235eda074f831b04bdefa4889e5ee5b965d1c811"
+        },
+        {
+          "id": "london-brighton-1896",
+          "vertices": 782,
+          "wkt": "data/wkt/road-races/london-brighton-1896.wkt",
+          "wkt_sha256": "a1ebed900140ec13908f4f7447251be51f351568aa41a30e888765cd2fa1f6bc"
+        },
+        {
+          "id": "paris-rouen-1894",
+          "vertices": 1177,
+          "wkt": "data/wkt/road-races/paris-rouen-1894.wkt",
+          "wkt_sha256": "5e2cee8cb68f28cf6c813b33fe77a065cd4d5d346f9ea95b9575c35a6368c38a"
+        },
+        {
+          "id": "paris-bordeaux-paris-1895",
+          "vertices": 7010,
+          "wkt": "data/wkt/road-races/paris-bordeaux-paris-1895.wkt",
+          "wkt_sha256": "65eb9a7533e2b806b68390f5ad477e9eacc5236e4b3baae4d7809ce3b801d4ab"
+        },
+        {
+          "id": "french-grand-prix-1906",
+          "vertices": 1050,
+          "wkt": "data/wkt/road-races/french-grand-prix-1906.wkt",
+          "wkt_sha256": "1b5aa68fad4512c03aba72e1b8452e7282d2a07273ef7d8fcba6d23bd09dbf85"
+        },
+        {
+          "id": "targa-florio-1906",
+          "vertices": 856,
+          "wkt": "data/wkt/road-races/targa-florio-1906.wkt",
+          "wkt_sha256": "5f0be635b4fc78cbe2cc3c0f7d7ba2dac59ed03261d9ffb6063482d0e9e5b708"
+        },
+        {
+          "id": "indianapolis-500-1911",
+          "vertices": 39,
+          "wkt": "data/wkt/road-races/indianapolis-500-1911.wkt",
+          "wkt_sha256": "b5da8e8f34d6aa00c9c7ed0c9940f486892c23a20f5ccda0bd22e08f20126564"
+        },
+        {
+          "id": "golden-flier-1916",
+          "vertices": 3506,
+          "wkt": "data/wkt/road-races/golden-flier-1916.wkt",
+          "wkt_sha256": "21c03c59136222f339ebfa289d82de9c0a820b4e09e98b6cd95ae1727d094e37"
+        },
+        {
+          "id": "pikes-peak-1916",
+          "vertices": 138,
+          "wkt": "data/wkt/road-races/pikes-peak-1916.wkt",
+          "wkt_sha256": "853e0a01976e3fb00c8e70e996514be472fe82989ffef30f67591d12a1a5633e"
+        },
+        {
+          "id": "le-mans-1923",
+          "vertices": 171,
+          "wkt": "data/wkt/road-races/le-mans-1923.wkt",
+          "wkt_sha256": "c856b9a3618e89248c73421a616fefbcecfa19b92e285ee12ec7ad6f8d326834"
+        },
+        {
+          "id": "mille-miglia-1927",
+          "vertices": 3517,
+          "wkt": "data/wkt/road-races/mille-miglia-1927.wkt",
+          "wkt_sha256": "cf78bebab70184fff4b61c3a60899a2553c84c82a8a9740e29beacc21452c58f"
+        },
+        {
+          "id": "monaco-grand-prix-1929",
+          "vertices": 37,
+          "wkt": "data/wkt/road-races/monaco-grand-prix-1929.wkt",
+          "wkt_sha256": "f1d0008e8007d5f6ec9f83fcd1760d48d2de7def141cde520efd5b710193554f"
+        },
+        {
+          "id": "ford-le-mans-1966",
+          "vertices": 154,
+          "wkt": "data/wkt/road-races/ford-le-mans-1966.wkt",
+          "wkt_sha256": "84e6f15c460504e0e316fd4baaa4f655d6031dd868acb86185b9485fab0f553e"
+        },
+        {
+          "id": "london-sydney-1968",
+          "vertices": 11966,
+          "wkt": "data/wkt/road-races/london-sydney-1968.wkt",
+          "wkt_sha256": "d10d197cf0a46bd26998296ee7fe11ba257c075000ff39501c80be3fdcb03947"
+        },
+        {
+          "id": "london-mexico-1970",
+          "vertices": 23237,
+          "wkt": "data/wkt/road-races/london-mexico-1970.wkt",
+          "wkt_sha256": "6054582a746144fe837d4b7ffb6b5be84578b1ed887a569ee95b6eb6cdaa6344"
+        },
+        {
+          "id": "army-motor-convoy-1919",
+          "vertices": 3725,
+          "wkt": "data/wkt/road-races/army-motor-convoy-1919.wkt",
+          "wkt_sha256": "ac40ec1b1717bb6db2830a6e2d1b4058b919a424aecfa6b3ed437c0385b28fec"
+        },
+        {
+          "id": "gordon-bennett-1903",
+          "vertices": 1577,
+          "wkt": "data/wkt/road-races/gordon-bennett-1903.wkt",
+          "wkt_sha256": "797a928dbc15731f14d9f2f6fc53fd00846066f76c1d52f68010ef66ebef495a"
+        }
+      ]
+    },
+    {
+      "domain": "overland",
+      "source": "data/journeys/overland.json",
+      "source_sha256": "e91e15be1e7b1696f6bec19c3bf7a538097a0a49740c732ca5320a8a475f6ca9",
+      "builder": "scripts/build_journeys.py",
+      "builder_sha256": "451b867e7ef90b858edb6068e4c3ea53b7e764232d8b097582ddee138893c883",
+      "geometry": "data/journeys/overland.geojson",
+      "geometry_sha256": "8dcefbd99093419196804cff8e5837d252db1caab0086396a6c5b02f2e5497bf",
+      "method": "Great-circle rendering samples between sourced place anchors; independent route segments remain separate",
+      "routes": [
+        {
+          "id": "lewis-clark-expedition",
+          "vertices": 10508,
+          "wkt": "data/wkt/overland/lewis-clark-expedition.wkt",
+          "wkt_sha256": "cb1eba7449461b0d9a2072de7102ba674fd8e9abe0f64807ecc322c6d38df857"
+        },
+        {
+          "id": "xuanzang-pilgrimage",
+          "vertices": 7006,
+          "wkt": "data/wkt/overland/xuanzang-pilgrimage.wkt",
+          "wkt_sha256": "0e71029cb37c85e024f082e764fb71b1931cb89253d775db1330fae6aa779533"
+        },
+        {
+          "id": "ibn-battuta-travels",
+          "vertices": 14013,
+          "wkt": "data/wkt/overland/ibn-battuta-travels.wkt",
+          "wkt_sha256": "4eb6a0e1a468e6d443ee18e3beeeab810729adb9f8b3f4b94462c6026cbbfd9f"
+        },
+        {
+          "id": "marco-polo-travels",
+          "vertices": 14016,
+          "wkt": "data/wkt/overland/marco-polo-travels.wkt",
+          "wkt_sha256": "0051afd958a0d51ed15957138ee6ef20166b5ee558a160bbd0497a3ba342b985"
+        },
+        {
+          "id": "cherokee-removal-northern-route",
+          "vertices": 3504,
+          "wkt": "data/wkt/overland/cherokee-removal-northern-route.wkt",
+          "wkt_sha256": "337f77888730ef0eca486f5e52c2670488cd77d6b27fe99147514cce4ae9d358"
+        },
+        {
+          "id": "oregon-trail-migrations",
+          "vertices": 6226,
+          "wkt": "data/wkt/overland/oregon-trail-migrations.wkt",
+          "wkt_sha256": "18f23425fabb483c1c583ba78caeee015de94b815517013ba13915dc209be8c5"
+        },
+        {
+          "id": "gandhi-salt-march",
+          "vertices": 2684,
+          "wkt": "data/wkt/overland/gandhi-salt-march.wkt",
+          "wkt_sha256": "ec0bb21e54c9b5963c2ea0c2f8867d788de12195f58812afb571ad40c2896ef1"
+        },
+        {
+          "id": "burke-wills-expedition",
+          "vertices": 7004,
+          "wkt": "data/wkt/overland/burke-wills-expedition.wkt",
+          "wkt_sha256": "0e630768c026d19e06162e69f59f121e74ea2ec820c2f745a1c1d51e0c767353"
+        },
+        {
+          "id": "california-trail-migrations",
+          "vertices": 3507,
+          "wkt": "data/wkt/overland/california-trail-migrations.wkt",
+          "wkt_sha256": "b8dc738d1f176f81cf35f2075e6ddd9f51fb04b77dc3d4c5d4ddeb3a9ac2a328"
+        },
+        {
+          "id": "anza-colonizing-expedition",
+          "vertices": 5218,
+          "wkt": "data/wkt/overland/anza-colonizing-expedition.wkt",
+          "wkt_sha256": "32e4c73420aac02dce6ddcee4006911643b444f603905096583dfc3110950961"
+        },
+        {
+          "id": "pony-express-service",
+          "vertices": 3508,
+          "wkt": "data/wkt/overland/pony-express-service.wkt",
+          "wkt_sha256": "9688f20c3ebd12fb156a984087895e10502b4eb12c4d51cc88cdba33a5a71bcf"
+        },
+        {
+          "id": "mormon-pioneer-vanguard",
+          "vertices": 7006,
+          "wkt": "data/wkt/overland/mormon-pioneer-vanguard.wkt",
+          "wkt_sha256": "4bdc72dd2616437a502a4833de518671b69bcfc1d22e7be17deffddd37d9021b"
+        },
+        {
+          "id": "becknell-santa-fe-journey",
+          "vertices": 3505,
+          "wkt": "data/wkt/overland/becknell-santa-fe-journey.wkt",
+          "wkt_sha256": "04294c90f8aa9776e553bde108a37b8723feedc30fc801f113d22f7d86186420"
+        },
+        {
+          "id": "livingstone-crossing",
+          "vertices": 10506,
+          "wkt": "data/wkt/overland/livingstone-crossing.wkt",
+          "wkt_sha256": "9d1db7d707d849a8d2b4121fa6313f0c1a22cd27c5a81a3738da94f79d18affd"
+        },
+        {
+          "id": "heinrich-barth-expedition",
+          "vertices": 7007,
+          "wkt": "data/wkt/overland/heinrich-barth-expedition.wkt",
+          "wkt_sha256": "69547a433b8cc2da137d39e664283944e4d9dddce5ed201fd5d2997e44a74136"
+        },
+        {
+          "id": "stuart-crossing",
+          "vertices": 7007,
+          "wkt": "data/wkt/overland/stuart-crossing.wkt",
+          "wkt_sha256": "cf9803657416025356f570c60f3884f0759ff65e51d47f29d9ebe1298f75a315"
+        },
+        {
+          "id": "leichhardt-first-expedition",
+          "vertices": 3504,
+          "wkt": "data/wkt/overland/leichhardt-first-expedition.wkt",
+          "wkt_sha256": "6ccdc10cf618a4354e6b16ef90c9c3ed6c5097bd03ebac4d54e25fc090052672"
+        },
+        {
+          "id": "gertrude-bell-euphrates",
+          "vertices": 6007,
+          "wkt": "data/wkt/overland/gertrude-bell-euphrates.wkt",
+          "wkt_sha256": "e8419474e1efae9edcfb5851a474ee20b2fdb5b6acb4edfae89d0b352e090168"
+        },
+        {
+          "id": "aurel-stein-first-expedition",
+          "vertices": 3502,
+          "wkt": "data/wkt/overland/aurel-stein-first-expedition.wkt",
+          "wkt_sha256": "b6df8d98b826d38201ad66ac3074632b4452abbc3c3031a2804305f00b16203b"
+        },
+        {
+          "id": "lady-anne-blunt-arabian-journeys",
+          "vertices": 10424,
+          "wkt": "data/wkt/overland/lady-anne-blunt-arabian-journeys.wkt",
+          "wkt_sha256": "e617979f7de9cf14917a3931fc802d1eb4e8bc619765d3948ba5cad4b20412ca"
+        },
+        {
+          "id": "faxian-pilgrimage",
+          "vertices": 7012,
+          "wkt": "data/wkt/overland/faxian-pilgrimage.wkt",
+          "wkt_sha256": "ed1f6f61a709dd79f6660ccf8932637d71a0754b71de6c84690cad2423da1e3f"
+        },
+        {
+          "id": "camino-real-tierra-adentro",
+          "vertices": 3505,
+          "wkt": "data/wkt/overland/camino-real-tierra-adentro.wkt",
+          "wkt_sha256": "b1dbfca9ebba9f05b81c53bc3e5133395788a2bc3843c2cc22037740abc37a1a"
+        },
+        {
+          "id": "donner-party-1846",
+          "vertices": 3507,
+          "wkt": "data/wkt/overland/donner-party-1846.wkt",
+          "wkt_sha256": "3a0320f05dba794c0a790fd7055560b8acfbb2adbde8fbfe46cf21640fd0dfc8"
+        },
+        {
+          "id": "klondike-chilkoot-1898",
+          "vertices": 3851,
+          "wkt": "data/wkt/overland/klondike-chilkoot-1898.wkt",
+          "wkt_sha256": "841134df09573c631eca9fd0ccc965c9dee75d75fef1e85878f0359b8cf1bd8c"
+        },
+        {
+          "id": "trans-antarctic-crossing-1958",
+          "vertices": 3504,
+          "wkt": "data/wkt/overland/trans-antarctic-crossing-1958.wkt",
+          "wkt_sha256": "2d5f2d4bf55b82e1e7ccea51c66ddeb2a4206d38c46ec2ffaeb1a5858faa5618"
+        }
+      ]
+    },
+    {
+      "domain": "ocean-liners",
+      "source": "data/journeys/ocean-liners.json",
+      "source_sha256": "11ad7f2650f3568fba6a3afc01b271a9f297e3a4c62b636878b97d500d274a55",
+      "builder": "scripts/build_journeys.py",
+      "builder_sha256": "451b867e7ef90b858edb6068e4c3ea53b7e764232d8b097582ddee138893c883",
+      "geometry": "data/journeys/ocean-liners.geojson",
+      "geometry_sha256": "924bce479d05d4a50c8556fa26d59030169ee49dd4797a090ddddcf7e9c00863",
+      "method": "Great-circle rendering samples between sourced place anchors; independent route segments remain separate",
+      "routes": [
+        {
+          "id": "titanic-maiden-1912",
+          "vertices": 3506,
+          "wkt": "data/wkt/ocean-liners/titanic-maiden-1912.wkt",
+          "wkt_sha256": "2376e715d24c9ddc9146167d554a027a4c3159ffca864746966f18330874bf97"
+        },
+        {
+          "id": "lusitania-final-1915",
+          "vertices": 3504,
+          "wkt": "data/wkt/ocean-liners/lusitania-final-1915.wkt",
+          "wkt_sha256": "9645e52fdd2e989c941809ec6c157772593ec461159b9c25bdf81f3a12d4e452"
+        },
+        {
+          "id": "andrea-doria-final-1956",
+          "vertices": 3505,
+          "wkt": "data/wkt/ocean-liners/andrea-doria-final-1956.wkt",
+          "wkt_sha256": "3a6201493ef08f7a15225f6460dbb42857841734ef22b430d1fdec72e604e8c7"
+        },
+        {
+          "id": "great-western-1838",
+          "vertices": 3503,
+          "wkt": "data/wkt/ocean-liners/great-western-1838.wkt",
+          "wkt_sha256": "db498fd3a82739dbcd5f320443ae7b2923d6aab2ff8d0e9b78eeb29acb7f3578"
+        },
+        {
+          "id": "carpathia-titanic-rescue-1912",
+          "vertices": 7006,
+          "wkt": "data/wkt/ocean-liners/carpathia-titanic-rescue-1912.wkt",
+          "wkt_sha256": "da9b845aec6f41fb10cf20e2079bd0b8e3dda36019d2ef27288306256e13899e"
+        },
+        {
+          "id": "mauretania-1909-record",
+          "vertices": 3507,
+          "wkt": "data/wkt/ocean-liners/mauretania-1909-record.wkt",
+          "wkt_sha256": "c30d95e794e6a4803a981884ded4ac32602a79a2f61e1110ee5a2a840dcabdc1"
+        },
+        {
+          "id": "normandie-1935-maiden",
+          "vertices": 5723,
+          "wkt": "data/wkt/ocean-liners/normandie-1935-maiden.wkt",
+          "wkt_sha256": "7fb5cd0aa46a5cb18ba09afe868180723375b17128b4eedcf5271570b3a8d6b4"
+        },
+        {
+          "id": "queen-mary-1938-record",
+          "vertices": 3506,
+          "wkt": "data/wkt/ocean-liners/queen-mary-1938-record.wkt",
+          "wkt_sha256": "f8fa0164d57db5b9ba21db1cac4b88fce7e4e0d057201f162393939a0a73ce51"
+        },
+        {
+          "id": "united-states-1952-record",
+          "vertices": 3503,
+          "wkt": "data/wkt/ocean-liners/united-states-1952-record.wkt",
+          "wkt_sha256": "87805865d0bf8b3de0f27ba69ac7435e43f2ad5beb7ab2096d765d7ebe5c6752"
+        },
+        {
+          "id": "great-britain-1845",
+          "vertices": 3505,
+          "wkt": "data/wkt/ocean-liners/great-britain-1845.wkt",
+          "wkt_sha256": "b070831ab9d8e82e2272699cacb0e5daf457a12bfafff2e4fadec8b2a6758506"
+        },
+        {
+          "id": "empress-ireland-1914",
+          "vertices": 2916,
+          "wkt": "data/wkt/ocean-liners/empress-ireland-1914.wkt",
+          "wkt_sha256": "ec6ae3da9fe24380de404a39198e8b8ef19cd6d6609ef433d61454db59273ede"
+        },
+        {
+          "id": "britannia-1840",
+          "vertices": 3506,
+          "wkt": "data/wkt/ocean-liners/britannia-1840.wkt",
+          "wkt_sha256": "234e3ae55576a28b60847648d23e655d78dc40fbb206442ed61e97ae1dafddcd"
+        },
+        {
+          "id": "great-eastern-1860",
+          "vertices": 3504,
+          "wkt": "data/wkt/ocean-liners/great-eastern-1860.wkt",
+          "wkt_sha256": "8eb4054b138def8122b9311a0f7c58522820ebe0b1d1fd3dec071962ffe98589"
+        },
+        {
+          "id": "republic-wireless-1909",
+          "vertices": 3503,
+          "wkt": "data/wkt/ocean-liners/republic-wireless-1909.wkt",
+          "wkt_sha256": "13164644b53d274320ff3e812d77a74bd15664eafa832c8e88e178f730408ced"
+        },
+        {
+          "id": "queen-mary-final-1967",
+          "vertices": 5556,
+          "wkt": "data/wkt/ocean-liners/queen-mary-final-1967.wkt",
+          "wkt_sha256": "328c2d51abcae350624e19882f02f02ec71291d574de1077f6e4696e1cb6205b"
+        },
+        {
+          "id": "qe2-maiden-1969",
+          "vertices": 3505,
+          "wkt": "data/wkt/ocean-liners/qe2-maiden-1969.wkt",
+          "wkt_sha256": "59492fcec2e7f912dd6508e5d89ba0f4d3ff38081cbecdc7c84d3fceb5b8d4d8"
+        },
+        {
+          "id": "qm2-first-atlantic-2004",
+          "vertices": 3505,
+          "wkt": "data/wkt/ocean-liners/qm2-first-atlantic-2004.wkt",
+          "wkt_sha256": "59492fcec2e7f912dd6508e5d89ba0f4d3ff38081cbecdc7c84d3fceb5b8d4d8"
+        },
+        {
+          "id": "aquitania-maiden-1914",
+          "vertices": 3504,
+          "wkt": "data/wkt/ocean-liners/aquitania-maiden-1914.wkt",
+          "wkt_sha256": "5e77ab162ad90c890d1015ba9392f58076a6ea93e42ec284428e0db92c2468b5"
+        },
+        {
+          "id": "olympic-maiden-1911",
+          "vertices": 3505,
+          "wkt": "data/wkt/ocean-liners/olympic-maiden-1911.wkt",
+          "wkt_sha256": "429bf0e3ae5226e2ba4c97b04b54fe167a81518f58aad0f4961bef0383425ea4"
+        },
+        {
+          "id": "bremen-1929-maiden",
+          "vertices": 3506,
+          "wkt": "data/wkt/ocean-liners/bremen-1929-maiden.wkt",
+          "wkt_sha256": "cc250ceed4099bd27999c589d9876fe852234d011f093c1eaaafab23d81a680b"
+        },
+        {
+          "id": "europa-1930-maiden",
+          "vertices": 3506,
+          "wkt": "data/wkt/ocean-liners/europa-1930-maiden.wkt",
+          "wkt_sha256": "3c88404867acb7f8dab898ac1162ce11930c77ecaaf01cf7908214f5342e0b51"
+        },
+        {
+          "id": "ile-de-france-rescue-1956",
+          "vertices": 7003,
+          "wkt": "data/wkt/ocean-liners/ile-de-france-rescue-1956.wkt",
+          "wkt_sha256": "fa11445ef76bd0d04506392e62daa7d80900571e9d89667d8a3bac7cef4d7e27"
+        },
+        {
+          "id": "hikawa-maru-chaplin-1932",
+          "vertices": 3506,
+          "wkt": "data/wkt/ocean-liners/hikawa-maru-chaplin-1932.wkt",
+          "wkt_sha256": "1de93e533a7a62e951f8c69ae4d375d3c313b58b39660db4c1617ca1d1e0e110"
+        },
+        {
+          "id": "arctic-final-1854",
+          "vertices": 3504,
+          "wkt": "data/wkt/ocean-liners/arctic-final-1854.wkt",
+          "wkt_sha256": "11461ca7b7e7a56b5de148619a50d274ace09025df28e97f6385f3ca6f6b6c06"
+        },
+        {
+          "id": "st-louis-refugee-voyage-1939",
+          "vertices": 10508,
+          "wkt": "data/wkt/ocean-liners/st-louis-refugee-voyage-1939.wkt",
+          "wkt_sha256": "4f28ce52d1908a3a3aa31d80f37f52644b67cf745c1db647482b998f290f7745"
+        }
+      ]
+    },
+    {
+      "domain": "river",
+      "source": "data/journeys/river.json",
+      "source_sha256": "20a337ee2ffac9f968d8e7c7d9036e0627a5ffcd720f9af5562c72ffea2a4626",
+      "builder": "scripts/build_journeys.py",
+      "builder_sha256": "451b867e7ef90b858edb6068e4c3ea53b7e764232d8b097582ddee138893c883",
+      "geometry": "data/journeys/river.geojson",
+      "geometry_sha256": "b445507cc4be946d5bfa38f30d7934dfb62f9e0400fb1cf1f962d905ac596570",
+      "method": "Great-circle rendering samples between sourced place anchors; independent route segments remain separate",
+      "routes": [
+        {
+          "id": "river-powell-1869",
+          "vertices": 3508,
+          "wkt": "data/wkt/river/river-powell-1869.wkt",
+          "wkt_sha256": "575a1fb4ccfca4733560be23d398372004829b25363a87ae5a87e2f19e319401"
+        },
+        {
+          "id": "river-orellana-amazon-1542",
+          "vertices": 5815,
+          "wkt": "data/wkt/river/river-orellana-amazon-1542.wkt",
+          "wkt_sha256": "8dc223907e00cc617b85c9d8fce13ebedddd0864fdf2ef16df31777180796027"
+        },
+        {
+          "id": "river-marquette-jolliet-1673",
+          "vertices": 12270,
+          "wkt": "data/wkt/river/river-marquette-jolliet-1673.wkt",
+          "wkt_sha256": "753b064bb0f22f651e008b00b71ab7ea760a96baa5f6175aab38f7441a7633c5"
+        },
+        {
+          "id": "river-lasalle-mississippi-1682",
+          "vertices": 3506,
+          "wkt": "data/wkt/river/river-lasalle-mississippi-1682.wkt",
+          "wkt_sha256": "71fdbd580e36f1715972d76253418c9f5c40ae58bb934f5550293b3679f427a9"
+        },
+        {
+          "id": "river-fulton-clermont-1807",
+          "vertices": 4413,
+          "wkt": "data/wkt/river/river-fulton-clermont-1807.wkt",
+          "wkt_sha256": "181df64006180c931f35bfcf3c20564a5ed713b327c81e70529075ba8b320114"
+        },
+        {
+          "id": "river-lewis-clark-1804",
+          "vertices": 10516,
+          "wkt": "data/wkt/river/river-lewis-clark-1804.wkt",
+          "wkt_sha256": "336fade10a0d8f3424fe6dec50e7961f93e7243cb3cb9e0cf86f41edd21db012"
+        },
+        {
+          "id": "river-stanley-congo-1877",
+          "vertices": 7010,
+          "wkt": "data/wkt/river/river-stanley-congo-1877.wkt",
+          "wkt_sha256": "af80963b7abce6441025430b99f4c9caf3fbbfd4440f9ae9fcc39aa773015bff"
+        },
+        {
+          "id": "river-roosevelt-rondon-1914",
+          "vertices": 3503,
+          "wkt": "data/wkt/river/river-roosevelt-rondon-1914.wkt",
+          "wkt_sha256": "64cb8be1995d02c19263d4c35deb7318bf004c1b576cce1d6c9a6a2b762c4687"
+        },
+        {
+          "id": "river-humboldt-casiquiare-1800",
+          "vertices": 8246,
+          "wkt": "data/wkt/river/river-humboldt-casiquiare-1800.wkt",
+          "wkt_sha256": "34b45535f2b9fe9487e17f65e2bdfe70f80b54008c560341cf315076bba41e94"
+        },
+        {
+          "id": "river-la-condamine-amazon-1744",
+          "vertices": 8956,
+          "wkt": "data/wkt/river/river-la-condamine-amazon-1744.wkt",
+          "wkt_sha256": "c2ada1af48de82c3a4dbb3da500b7a8eb9e67477a8b031f71526c3e5a46639ca"
+        },
+        {
+          "id": "river-teixeira-amazon-1639",
+          "vertices": 10378,
+          "wkt": "data/wkt/river/river-teixeira-amazon-1639.wkt",
+          "wkt_sha256": "6fdf451e261c22a407fe8049b5e6714c1f32173720935e91d0b217381fdd3ca1"
+        },
+        {
+          "id": "river-mackenzie-arctic-1789",
+          "vertices": 16476,
+          "wkt": "data/wkt/river/river-mackenzie-arctic-1789.wkt",
+          "wkt_sha256": "ec1df38f38cdafdd42b080fe5fdf52a00146cd91fcf04e33ce64af07f3b1cb50"
+        },
+        {
+          "id": "river-thompson-columbia-1811",
+          "vertices": 17358,
+          "wkt": "data/wkt/river/river-thompson-columbia-1811.wkt",
+          "wkt_sha256": "f29c9a3ff94a9cbad1cbd47932f30ad41f6dc2e7628fa19cc69c351e66a94b2c"
+        },
+        {
+          "id": "river-fraser-1808",
+          "vertices": 7014,
+          "wkt": "data/wkt/river/river-fraser-1808.wkt",
+          "wkt_sha256": "1bbac276cec5443ba0649330657fc44a62c8f1bb5f2d571d479e432dcd5efe25"
+        },
+        {
+          "id": "river-mekong-commission-1866",
+          "vertices": 15044,
+          "wkt": "data/wkt/river/river-mekong-commission-1866.wkt",
+          "wkt_sha256": "b4b3710a11e3b5dc5bbb39815ce2c9b141a49e0f81d1322cf22c85f444a8e209"
+        },
+        {
+          "id": "river-livingstone-zambezi-1858",
+          "vertices": 5751,
+          "wkt": "data/wkt/river/river-livingstone-zambezi-1858.wkt",
+          "wkt_sha256": "c453abc474f3cecc9a6324b4b705ce4bd0beba40a6ad73d9270ececed83e4b89"
+        },
+        {
+          "id": "river-mungo-park-niger-1805",
+          "vertices": 3508,
+          "wkt": "data/wkt/river/river-mungo-park-niger-1805.wkt",
+          "wkt_sha256": "15322cde3c1c477e15b444f02dd6f223ff2bd34d195c624f69dce61412c3eb06"
+        },
+        {
+          "id": "river-lander-niger-1830",
+          "vertices": 3504,
+          "wkt": "data/wkt/river/river-lander-niger-1830.wkt",
+          "wkt_sha256": "6fbb316f41361023f761a5cc6a2129c2bf10c275daaa1b197101aa7b2fb7edd6"
+        },
+        {
+          "id": "river-pike-mississippi-1805",
+          "vertices": 7014,
+          "wkt": "data/wkt/river/river-pike-mississippi-1805.wkt",
+          "wkt_sha256": "bfaf8dec6f6c3e657f4c1c1df9d9fb7ec1b205521830484bb1247f5d90dc7918"
+        },
+        {
+          "id": "river-ives-colorado-1857",
+          "vertices": 6727,
+          "wkt": "data/wkt/river/river-ives-colorado-1857.wkt",
+          "wkt_sha256": "6c076beb4e1c3acd5a57bcacf32af667ee8a0947a9eee43c3ffdaf0c7c01a260"
+        },
+        {
+          "id": "river-hudson-half-moon-1609",
+          "vertices": 4477,
+          "wkt": "data/wkt/river/river-hudson-half-moon-1609.wkt",
+          "wkt_sha256": "fa1d9027f83294497bb4ed7c9af01d149bc8ef957c9e5285570b18120726c09b"
+        },
+        {
+          "id": "river-champlain-ottawa-1613",
+          "vertices": 2742,
+          "wkt": "data/wkt/river/river-champlain-ottawa-1613.wkt",
+          "wkt_sha256": "381b16adc5037db3f2eb404ed0070314e2dda8149de6e1dddd5aef42a82d3ee3"
+        },
+        {
+          "id": "river-sultana-1865",
+          "vertices": 3426,
+          "wkt": "data/wkt/river/river-sultana-1865.wkt",
+          "wkt_sha256": "642318246619f814bc8fa8e2b14e82498c614b01fb0b43ca5e044536e18b4bb2"
+        },
+        {
+          "id": "river-steamboat-race-1870",
+          "vertices": 3504,
+          "wkt": "data/wkt/river/river-steamboat-race-1870.wkt",
+          "wkt_sha256": "fb04c8474e34bbcea7ddc2e2ba670f84746c6dfa6f35a078bd638ab9cae40a0c"
+        },
+        {
+          "id": "river-franklin-coppermine-1821",
+          "vertices": 10888,
+          "wkt": "data/wkt/river/river-franklin-coppermine-1821.wkt",
+          "wkt_sha256": "bdbebb4efb3d41cfd0c8b7f995cf6e31e6f8a81cc501cfcb76fcf06277ecdc6a"
+        }
+      ]
+    },
+    {
+      "domain": "human-powered",
+      "source": "data/journeys/human-powered.json",
+      "source_sha256": "998c4727945155ce3caa56668427f889e36b92284a695da44cfe17a334121fac",
+      "builder": "scripts/build_journeys.py",
+      "builder_sha256": "451b867e7ef90b858edb6068e4c3ea53b7e764232d8b097582ddee138893c883",
+      "geometry": "data/journeys/human-powered.geojson",
+      "geometry_sha256": "415ea929f37bbf70e9babc58a1cf12bc05dfab18290daf0a807e7bdecef2326f",
+      "method": "Great-circle rendering samples between sourced place anchors; independent route segments remain separate",
+      "routes": [
+        {
+          "id": "human-jason-lewis-1994",
+          "vertices": 48196,
+          "wkt": "data/wkt/human-powered/human-jason-lewis-1994.wkt",
+          "wkt_sha256": "8c1d138e2ce04bc867b36baa1293b4275298bf54fbfa9f12621037cf1e2b6b95"
+        },
+        {
+          "id": "human-erden-eruc-2007",
+          "vertices": 36086,
+          "wkt": "data/wkt/human-powered/human-erden-eruc-2007.wkt",
+          "wkt_sha256": "494f91c9e21c0b2c06fa1fa658e0aabe851f320faa096edded16a6d32ea9e052"
+        },
+        {
+          "id": "human-nansen-greenland-1888",
+          "vertices": 3815,
+          "wkt": "data/wkt/human-powered/human-nansen-greenland-1888.wkt",
+          "wkt_sha256": "ca4373bac9f64af04ecaeea7b174b8b3ff10408d892e5f14ec1e1e45f8e88442"
+        },
+        {
+          "id": "human-scott-south-pole-1911",
+          "vertices": 7008,
+          "wkt": "data/wkt/human-powered/human-scott-south-pole-1911.wkt",
+          "wkt_sha256": "cc9aa1232f74a43304d6e28ff822392aeb9995d851a54c57c9bd88bbc471c58d"
+        },
+        {
+          "id": "human-everest-hillary-tenzing-1953",
+          "vertices": 102,
+          "wkt": "data/wkt/human-powered/human-everest-hillary-tenzing-1953.wkt",
+          "wkt_sha256": "b9fbe60a486243724b2aa45388a8d74bbca520f3857003dc71f947cdec92538b"
+        },
+        {
+          "id": "human-everest-messner-habeler-1978",
+          "vertices": 102,
+          "wkt": "data/wkt/human-powered/human-everest-messner-habeler-1978.wkt",
+          "wkt_sha256": "57338ef518a123c7de19873681fa1aff6ac64d4d94d7eb88db3f74f73bb8e44d"
+        },
+        {
+          "id": "human-everest-messner-solo-1980",
+          "vertices": 190,
+          "wkt": "data/wkt/human-powered/human-everest-messner-solo-1980.wkt",
+          "wkt_sha256": "f76ae10c81268fb6f0defab5743476056b68948f67160f4ff8812dd89f94da35"
+        },
+        {
+          "id": "human-shaffer-appalachian-1948",
+          "vertices": 3507,
+          "wkt": "data/wkt/human-powered/human-shaffer-appalachian-1948.wkt",
+          "wkt_sha256": "63c2c2170662304db180cce6dcf2d6aca50a03f2fd9bb8d048c918372d459de6"
+        },
+        {
+          "id": "human-gatewood-appalachian-1955",
+          "vertices": 3505,
+          "wkt": "data/wkt/human-powered/human-gatewood-appalachian-1955.wkt",
+          "wkt_sha256": "0ce84d861670774292f6f453aa6ad7c77f8baec0d185c839a5c2166ad38e5b6f"
+        },
+        {
+          "id": "human-strayed-pct-1995",
+          "vertices": 3506,
+          "wkt": "data/wkt/human-powered/human-strayed-pct-1995.wkt",
+          "wkt_sha256": "bf1827e5bb04d47b684802c55b2b634fbffc9348df1318c1ed9bccbd94120c89"
+        },
+        {
+          "id": "human-stafford-amazon-2008",
+          "vertices": 3503,
+          "wkt": "data/wkt/human-powered/human-stafford-amazon-2008.wkt",
+          "wkt_sha256": "6d5a870de450050abf01230b34476538d36331dbc249b7c98c8ee6bb28152387"
+        },
+        {
+          "id": "human-beaumont-world-cycle-2017",
+          "vertices": 21019,
+          "wkt": "data/wkt/human-powered/human-beaumont-world-cycle-2017.wkt",
+          "wkt_sha256": "092e3673b45d87f31a7a1c5191288d663dcb67e58893d36e15f822678e6aac91"
+        },
+        {
+          "id": "human-jenny-graham-world-cycle-2018",
+          "vertices": 21024,
+          "wkt": "data/wkt/human-powered/human-jenny-graham-world-cycle-2018.wkt",
+          "wkt_sha256": "e38aba0fc1064213022288c4ca52e4459a8c2aa317877679d7fc7134ac520ca6"
+        },
+        {
+          "id": "human-annie-londonderry-1894",
+          "vertices": 10507,
+          "wkt": "data/wkt/human-powered/human-annie-londonderry-1894.wkt",
+          "wkt_sha256": "7e0697b9cf7e874978d7a3ec86e2b2a0e543e5d9e130c460c9ca972edfa5ad91"
+        },
+        {
+          "id": "human-thomas-stevens-1884",
+          "vertices": 17516,
+          "wkt": "data/wkt/human-powered/human-thomas-stevens-1884.wkt",
+          "wkt_sha256": "d1dd22cfbf0469ca057b7f4f4c3c6fdc8cbf5cff654f0383db53d5631c140e7d"
+        },
+        {
+          "id": "human-25th-infantry-bicycle-1897",
+          "vertices": 3507,
+          "wkt": "data/wkt/human-powered/human-25th-infantry-bicycle-1897.wkt",
+          "wkt_sha256": "9da50706c6fbca9d902403182eaf60d48323eba7d9ae2bd3dcbfd8957edd7c7e"
+        },
+        {
+          "id": "human-oskar-speck-1932",
+          "vertices": 14028,
+          "wkt": "data/wkt/human-powered/human-oskar-speck-1932.wkt",
+          "wkt_sha256": "e7e9c5d826b44d581830ba4ca8dbdc53f7de01182818fa5414d8c9de9663f2dd"
+        },
+        {
+          "id": "human-paul-caffyn-australia-1981",
+          "vertices": 3528,
+          "wkt": "data/wkt/human-powered/human-paul-caffyn-australia-1981.wkt",
+          "wkt_sha256": "f601ce9613ffefa3d80448e3702da17bfb7b471d3e5c3a51def3e0ed6551276f"
+        },
+        {
+          "id": "human-freya-hoffmeister-australia-2009",
+          "vertices": 3523,
+          "wkt": "data/wkt/human-powered/human-freya-hoffmeister-australia-2009.wkt",
+          "wkt_sha256": "4f98cc755cc2d920b3a33cf9aa322de2df96bbc9901923af6c33e811c405de3d"
+        },
+        {
+          "id": "human-doba-atlantic-kayak-2013",
+          "vertices": 3504,
+          "wkt": "data/wkt/human-powered/human-doba-atlantic-kayak-2013.wkt",
+          "wkt_sha256": "37b6d137a6886022da0ab11435b219597729b5cec6ec4de8309fb09d5c075efb"
+        },
+        {
+          "id": "human-john-fairfax-atlantic-1969",
+          "vertices": 3503,
+          "wkt": "data/wkt/human-powered/human-john-fairfax-atlantic-1969.wkt",
+          "wkt_sha256": "7ba6cf079304240e8d647009422498c0d32a4d37d46583175c4f920835c67169"
+        },
+        {
+          "id": "human-tori-murden-atlantic-1999",
+          "vertices": 3503,
+          "wkt": "data/wkt/human-powered/human-tori-murden-atlantic-1999.wkt",
+          "wkt_sha256": "f5ff9b8927f2111ec2f907bf3f952bd071df7f7adddbb113e0543c6bb6cc4456"
+        },
+        {
+          "id": "human-roz-savage-pacific-2008",
+          "vertices": 10508,
+          "wkt": "data/wkt/human-powered/human-roz-savage-pacific-2008.wkt",
+          "wkt_sha256": "4bec42e07952d54bbfaeab9ce7b0f52d26c8418f2c2dd7cb594603a262c96dfc"
+        },
+        {
+          "id": "human-sarah-outen-pacific-2013",
+          "vertices": 3717,
+          "wkt": "data/wkt/human-powered/human-sarah-outen-pacific-2013.wkt",
+          "wkt_sha256": "9337b8f76a197971a7aa189679e3a1cfa2b23215be42ad3d2baa6543a84fb9e0"
+        },
+        {
+          "id": "human-felicity-aston-antarctica-2011",
+          "vertices": 3504,
+          "wkt": "data/wkt/human-powered/human-felicity-aston-antarctica-2011.wkt",
+          "wkt_sha256": "e8fde3c0006e5d43532c8f4690e5a40f1504fb25cdbf7134efad6777670e43cf"
+        }
+      ]
+    }
+  ]
+}

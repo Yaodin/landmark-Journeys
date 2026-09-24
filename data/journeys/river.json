@@ -127,7 +127,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Powell Geographic Expedition of 1869",
+    "wiki_url": "https://en.wikipedia.org/wiki/Powell_Geographic_Expedition_of_1869"
   },
   {
     "id": "river-orellana-amazon-1542",
@@ -264,7 +266,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Francisco de Orellana",
+    "wiki_url": "https://en.wikipedia.org/wiki/Francisco_de_Orellana"
   },
   {
     "id": "river-marquette-jolliet-1673",
@@ -519,7 +523,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Louis Jolliet",
+    "wiki_url": "https://en.wikipedia.org/wiki/Louis_Jolliet"
   },
   {
     "id": "river-lasalle-mississippi-1682",
@@ -613,7 +619,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "René-Robert Cavelier, Sieur de La Salle",
+    "wiki_url": "https://en.wikipedia.org/wiki/Ren%C3%A9-Robert_Cavelier,_Sieur_de_La_Salle"
   },
   {
     "id": "river-fulton-clermont-1807",
@@ -732,7 +740,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "North River Steamboat",
+    "wiki_url": "https://en.wikipedia.org/wiki/North_River_Steamboat"
   },
   {
     "id": "river-lewis-clark-1804",
@@ -966,7 +976,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Lewis and Clark Expedition",
+    "wiki_url": "https://en.wikipedia.org/wiki/Lewis_and_Clark_Expedition"
   },
   {
     "id": "river-stanley-congo-1877",
@@ -1097,7 +1109,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Henry Morton Stanley",
+    "wiki_url": "https://en.wikipedia.org/wiki/Henry_Morton_Stanley"
   },
   {
     "id": "river-roosevelt-rondon-1914",
@@ -1155,7 +1169,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Theodore Roosevelt",
+    "wiki_url": "https://en.wikipedia.org/wiki/Theodore_Roosevelt"
   },
   {
     "id": "river-humboldt-casiquiare-1800",
@@ -1306,7 +1322,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Alexander von Humboldt",
+    "wiki_url": "https://en.wikipedia.org/wiki/Alexander_von_Humboldt"
   },
   {
     "id": "river-la-condamine-amazon-1744",
@@ -1450,7 +1468,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Charles Marie de La Condamine",
+    "wiki_url": "https://en.wikipedia.org/wiki/Charles_Marie_de_La_Condamine"
   },
   {
     "id": "river-teixeira-amazon-1639",
@@ -1637,7 +1657,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Pedro Teixeira",
+    "wiki_url": "https://en.wikipedia.org/wiki/Pedro_Teixeira"
   },
   {
     "id": "river-mackenzie-arctic-1789",
@@ -1862,7 +1884,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Alexander Mackenzie (explorer)",
+    "wiki_url": "https://en.wikipedia.org/wiki/Alexander_Mackenzie_(explorer)"
   },
   {
     "id": "river-thompson-columbia-1811",
@@ -1871,16 +1895,23 @@
     "short_title": "Thompson's Columbia",
     "date": "1811",
     "why_famous": "Thompson followed the Columbia to its Pacific mouth and mapped a major transcontinental trade waterway.",
-    "route_summary": "Kootenae House → overland to Kettle Falls → Columbia to Fort Astoria → river return to Boat Encampment.",
-    "source_title": "Parks Canada — David Thompson route guide",
-    "source_url": "https://parks.canada.ca/pn-np/bc/revelstoke/activ/~/media/pn-np/bc/revelstoke/visit/visit11/kookoosint-en.ashx",
+    "route_summary": "Kootenae House → Columbia → Fort Astoria; return upriver to The Dalles, then Snake/Palouse and overland via Spokane House to Kettle Falls, continuing up the Columbia.",
+    "source_title": "Dictionary of Canadian Biography — David Thompson; Parks Canada route guide",
+    "source_url": "https://www.biographi.ca/en/bio.php?BioId=38340",
     "geometry_confidence": "medium",
-    "geometry_note": "Parks Canada identifies an overland approach from Kootenae House to the Columbia in present Washington. Approximate land waypoints and named river towns mark the corridor; reservoirs have submerged historical reaches.",
+    "geometry_note": "The DCB biography describes the return route via The Dalles, up the Snake to the Palouse mouth, then by horses to Spokane House and overland to Kettle Falls before continuing upriver. The return is split by mode accordingly. House, river junction, and portage coordinates are approximate locators, not recovered 1811 survey positions; reservoirs have submerged historical reaches.",
+    "additional_sources": [
+      {
+        "title": "Parks Canada — David Thompson route guide",
+        "url": "https://parks.canada.ca/pn-np/bc/revelstoke/activ/~/media/pn-np/bc/revelstoke/visit/visit11/kookoosint-en.ashx",
+        "note": "Provides regional Columbia route context; this display keeps the return's Snake/Palouse and horse-portage sequence distinct."
+      }
+    ],
     "segments": [
       {
         "mode": "overland",
         "track_type": "historical-corridor",
-        "source_url": "https://parks.canada.ca/pn-np/bc/revelstoke/activ/~/media/pn-np/bc/revelstoke/visit/visit11/kookoosint-en.ashx",
+        "source_url": "https://www.biographi.ca/en/bio.php?BioId=38340",
         "anchors": [
           {
             "name": "Kootenae House near Invermere",
@@ -1911,7 +1942,7 @@
       {
         "mode": "river",
         "track_type": "historical-corridor",
-        "source_url": "https://parks.canada.ca/pn-np/bc/revelstoke/activ/~/media/pn-np/bc/revelstoke/visit/visit11/kookoosint-en.ashx",
+        "source_url": "https://www.biographi.ca/en/bio.php?BioId=38340",
         "anchors": [
           {
             "name": "Kettle Falls",
@@ -2003,18 +2034,63 @@
             "lat": 46.22,
             "lon": -119.1,
             "note": "Approximate named route waypoint"
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.biographi.ca/en/bio.php?BioId=38340",
+        "anchors": [
+          {
+            "name": "Snake–Columbia confluence near Pasco",
+            "lat": 46.25,
+            "lon": -119.2,
+            "note": "Approximate junction locator for the upstream Snake River branch."
           },
           {
-            "name": "Wenatchee",
-            "lat": 47.42,
-            "lon": -120.31,
-            "note": "Approximate named route waypoint"
+            "name": "Palouse River mouth",
+            "lat": 46.6,
+            "lon": -118.1,
+            "note": "Approximate mouth of the Palouse; no uncorrected historical astronomical fix is reused."
+          }
+        ]
+      },
+      {
+        "mode": "overland by horse",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.biographi.ca/en/bio.php?BioId=38340",
+        "anchors": [
+          {
+            "name": "Palouse River mouth",
+            "lat": 46.6,
+            "lon": -118.1,
+            "note": "Approximate start area for the horse journey from the Snake/Palouse confluence."
+          },
+          {
+            "name": "Spokane House site area",
+            "lat": 47.75,
+            "lon": -117.47,
+            "note": "Approximate historic trading-post site locator; coordinates do not imply a recorded route fix."
           },
           {
             "name": "Kettle Falls",
             "lat": 48.6,
             "lon": -118.08,
-            "note": "Approximate named route waypoint"
+            "note": "Return to the Columbia; approximate named location."
+          }
+        ]
+      },
+      {
+        "mode": "river",
+        "track_type": "historical-corridor",
+        "source_url": "https://parks.canada.ca/pn-np/bc/revelstoke/activ/~/media/pn-np/bc/revelstoke/visit/visit11/kookoosint-en.ashx",
+        "anchors": [
+          {
+            "name": "Kettle Falls",
+            "lat": 48.6,
+            "lon": -118.08,
+            "note": "Resume upstream Columbia travel after the overland leg."
           },
           {
             "name": "Castlegar",
@@ -2042,7 +2118,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "David Thompson (explorer)",
+    "wiki_url": "https://en.wikipedia.org/wiki/David_Thompson_(explorer)"
   },
   {
     "id": "river-fraser-1808",
@@ -2209,7 +2287,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Simon Fraser (explorer)",
+    "wiki_url": "https://en.wikipedia.org/wiki/Simon_Fraser_(explorer)"
   },
   {
     "id": "river-mekong-commission-1866",
@@ -2457,7 +2537,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Francis Garnier",
+    "wiki_url": "https://en.wikipedia.org/wiki/Francis_Garnier"
   },
   {
     "id": "river-livingstone-zambezi-1858",
@@ -2466,16 +2548,28 @@
     "short_title": "Livingstone's Zambezi",
     "date": "1858–1864",
     "why_famous": "The expedition surveyed the Zambezi and Shire river systems as possible routes into inland southeast Africa.",
-    "route_summary": "Zambezi delta → lower Zambezi → Shire River → Lake Nyasa, with multiple excursions.",
-    "source_title": "Library of Congress — Narrative of an Expedition to the Zambesi",
-    "source_url": "https://www.loc.gov/resource/gdc.05015249/",
+    "route_summary": "Zambezi delta → lower Zambezi to Tete; separate Zambezi/Shire excursions and a 1859 overland walk toward Lake Nyasa (not fully geolocated).",
+    "source_title": "David Livingstone — Narrative of an Expedition to the Zambesi and Its Tributaries",
+    "source_url": "https://www.gutenberg.org/files/2519/2519-h/2519-h.htm",
     "geometry_confidence": "medium",
-    "geometry_note": "The expedition made repeated trips; this is a representative connected river and lake itinerary, not a single continuous voyage. Delta and Shire channels are approximate.",
+    "geometry_note": "Representative partial itinerary, not one continuous vessel track. Livingstone's narrative says steamer navigation ended at Panda Mokua below Kebrabasa; the foot reconnaissance and 1859 walk toward Lake Nyasa are not geolocated here. The cataract landing (Mamvira, approx. 15°55′S) has no verified longitude, so no guessed portage or through-cataract line is drawn. Delta and lower Shire channels remain approximate.",
+    "additional_sources": [
+      {
+        "title": "Livingstone's 1 November 1859 letter on the Shire walk and cataracts",
+        "url": "https://www.scottishcorpus.ac.uk/cmsw/document/?documentid=701",
+        "note": "Contemporary letter describes the long walk and cataract reach; it does not give a mappable landing longitude."
+      },
+      {
+        "title": "Library of Congress — narrative map and expedition record",
+        "url": "https://www.loc.gov/resource/gdc.05015249/",
+        "note": "Institutional digitization of the expedition narrative; other Zambezi/Shire phases are not one continuous track."
+      }
+    ],
     "segments": [
       {
         "mode": "river",
         "track_type": "historical-corridor",
-        "source_url": "https://www.loc.gov/resource/gdc.05015249/",
+        "source_url": "https://www.gutenberg.org/files/2519/2519-h/2519-h.htm",
         "anchors": [
           {
             "name": "Zambezi delta / Chinde",
@@ -2505,20 +2599,14 @@
             "name": "Tete",
             "lat": -16.16,
             "lon": 33.59,
-            "note": "Approximate named route waypoint"
-          },
-          {
-            "name": "Cahora Bassa reach",
-            "lat": -15.62,
-            "lon": 32.76,
-            "note": "Approximate named route waypoint"
+            "note": "Approximate named location; displayed river segment stops here rather than asserting steamer navigation to modern Cahora Bassa."
           }
         ]
       },
       {
         "mode": "river",
         "track_type": "historical-corridor",
-        "source_url": "https://www.loc.gov/resource/gdc.05015249/",
+        "source_url": "https://www.scottishcorpus.ac.uk/cmsw/document/?documentid=701",
         "anchors": [
           {
             "name": "Shire–Zambezi confluence",
@@ -2536,35 +2624,13 @@
             "name": "Matope",
             "lat": -15.96,
             "lon": 35.03,
-            "note": "Approximate named route waypoint"
-          },
-          {
-            "name": "Murchison Cataracts / Shire",
-            "lat": -15.53,
-            "lon": 35.28,
-            "note": "Approximate named route waypoint"
-          },
-          {
-            "name": "Liwonde",
-            "lat": -15.06,
-            "lon": 35.23,
-            "note": "Approximate named route waypoint"
-          },
-          {
-            "name": "Mangochi",
-            "lat": -14.48,
-            "lon": 35.27,
-            "note": "Approximate named route waypoint"
-          },
-          {
-            "name": "Lake Nyasa south end",
-            "lat": -14.4,
-            "lon": 35.2,
-            "note": "Approximate named route waypoint"
+            "note": "Approximate lower-Shire locator; the plotted segment is schematic and not a claim of vessel passage into the cataract chain."
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "David Livingstone",
+    "wiki_url": "https://en.wikipedia.org/wiki/David_Livingstone"
   },
   {
     "id": "river-mungo-park-niger-1805",
@@ -2664,7 +2730,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Mungo Park (explorer)",
+    "wiki_url": "https://en.wikipedia.org/wiki/Mungo_Park_(explorer)"
   },
   {
     "id": "river-lander-niger-1830",
@@ -2740,7 +2808,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Richard Lander",
+    "wiki_url": "https://en.wikipedia.org/wiki/Richard_Lander"
   },
   {
     "id": "river-pike-mississippi-1805",
@@ -2749,16 +2819,23 @@
     "short_title": "Pike's Mississippi",
     "date": "1805–1806",
     "why_famous": "Pike led an early U.S. military survey up the upper Mississippi after the Louisiana Purchase.",
-    "route_summary": "St. Louis → upper Mississippi → Little Falls vicinity → return.",
-    "source_title": "National Park Service — Pike expedition history",
-    "source_url": "https://www.nps.gov/articles/what-happened-while-lewis-and-clark-were-gone.htm",
+    "route_summary": "St. Louis by boat → Little Falls stockade → winter sled/foot and frozen-waterway trip via Sandy, Leech and Cass Lakes → return to stockade → Mississippi by boat after thaw.",
+    "source_title": "Zebulon Pike, An Account of Expeditions to the Sources of the Mississippi (1810)",
+    "source_url": "https://www.gutenberg.org/files/43774/43774-h/43774-h.htm",
     "geometry_confidence": "medium",
-    "geometry_note": "Upper river itinerary follows known settlements; 1805 side channels and the expedition's farthest northern boat point are approximate.",
+    "geometry_note": "The boats stopped near Little Falls for winter; Pike's northern journey continued by sled, foot, and frozen waterways via Lower Red Cedar, Sandy, Leech, and Upper Red Cedar (Cass) Lakes, then back by a direct cross-country route to the stockade. The party descended by boat after breakup. Lake/settlement points are modern locators; the line is not a recovered winter trail or continuous navigable river route.",
+    "additional_sources": [
+      {
+        "title": "Collections of the Minnesota Historical Society, vol. 7 — Pike's upper Mississippi chart",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Collections_of_the_Minnesota_Historical_Society_%28IA_aag6321.0007.001.umich.edu%29.pdf",
+        "note": "Explains Pike's Upper Red Cedar as modern Cass Lake and distinguishes Lower Red Cedar."
+      }
+    ],
     "segments": [
       {
         "mode": "river",
         "track_type": "historical-corridor",
-        "source_url": "https://www.nps.gov/articles/what-happened-while-lewis-and-clark-were-gone.htm",
+        "source_url": "https://www.gutenberg.org/files/43774/43774-h/43774-h.htm",
         "anchors": [
           {
             "name": "St. Louis",
@@ -2842,60 +2919,74 @@
             "name": "Little Falls",
             "lat": 45.98,
             "lon": -94.37,
-            "note": "Approximate named route waypoint"
+            "note": "Approximate stockade/boat endpoint area; winter route continued overland and on frozen waterways, not by open-water boat."
           }
         ]
       },
       {
-        "mode": "river",
+        "mode": "overland / frozen waterways (sled and foot)",
         "track_type": "historical-corridor",
-        "source_url": "https://www.nps.gov/articles/what-happened-while-lewis-and-clark-were-gone.htm",
+        "source_url": "https://www.gutenberg.org/files/43774/43774-h/43774-h.htm",
         "anchors": [
           {
             "name": "Little Falls",
             "lat": 45.98,
             "lon": -94.37,
-            "note": "Approximate named route waypoint"
+            "note": "Stockade area from which Pike left his men for winter quarters."
           },
           {
-            "name": "St. Cloud",
-            "lat": 45.56,
-            "lon": -94.15,
-            "note": "Approximate named route waypoint"
+            "name": "Lower Red Cedar Lake (modern Cedar Lake, Aitkin County)",
+            "lat": 46.5208,
+            "lon": -93.7891,
+            "note": "Pike's named Lower Red Cedar Lake; coordinate is a modern USGS lake-site locator, not an exact camp."
           },
           {
-            "name": "St. Anthony Falls",
-            "lat": 44.98,
-            "lon": -93.26,
-            "note": "Approximate named route waypoint"
+            "name": "Sandy Lake",
+            "lat": 46.7605,
+            "lon": -93.2872,
+            "note": "Named winter itinerary stop; approximate modern lake locator."
           },
           {
-            "name": "St. Paul",
-            "lat": 44.95,
-            "lon": -93.09,
-            "note": "Approximate named route waypoint"
+            "name": "Grand Rapids / Pokegama Falls",
+            "lat": 47.2511,
+            "lon": -93.5862,
+            "note": "Pike's itinerary names the Grand Rapids and Pokegama falls; approximate modern locator."
           },
           {
-            "name": "Prairie du Chien",
-            "lat": 43.05,
-            "lon": -91.15,
-            "note": "Approximate named route waypoint"
+            "name": "Leech Lake",
+            "lat": 47.2483,
+            "lon": -94.2219,
+            "note": "Pike reached the North West Company post at Leech Lake on 1 February; approximate lake locator."
           },
           {
-            "name": "Quad Cities",
-            "lat": 41.52,
-            "lon": -90.57,
-            "note": "Approximate named route waypoint"
+            "name": "Upper Red Cedar Lake (modern Cass Lake)",
+            "lat": 47.407,
+            "lon": -94.553,
+            "note": "Pike's farthest north winter stop; historic chart coordinate is not copied as a modern fix."
           },
           {
-            "name": "St. Louis",
-            "lat": 38.63,
-            "lon": -90.19,
-            "note": "Approximate named route waypoint"
+            "name": "Leech Lake",
+            "lat": 47.2483,
+            "lon": -94.2219,
+            "note": "Return west from Cass before the direct cross-country leg; route detail not recovered."
+          },
+          {
+            "name": "Lower Red Cedar Lake / Mississippi vicinity",
+            "lat": 46.5208,
+            "lon": -93.7891,
+            "note": "Approximate area where Pike rejoined the Mississippi; no precise return trail claimed."
+          },
+          {
+            "name": "Little Falls stockade area",
+            "lat": 45.98,
+            "lon": -94.37,
+            "note": "Pike rejoined the men left at winter quarters; approximate site area."
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Zebulon Pike",
+    "wiki_url": "https://en.wikipedia.org/wiki/Zebulon_Pike"
   },
   {
     "id": "river-ives-colorado-1857",
@@ -3003,7 +3094,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Joseph Christmas Ives",
+    "wiki_url": "https://en.wikipedia.org/wiki/Joseph_Christmas_Ives"
   },
   {
     "id": "river-hudson-half-moon-1609",
@@ -3128,7 +3221,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Henry Hudson",
+    "wiki_url": "https://en.wikipedia.org/wiki/Henry_Hudson"
   },
   {
     "id": "river-champlain-ottawa-1613",
@@ -3223,7 +3318,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Samuel de Champlain",
+    "wiki_url": "https://en.wikipedia.org/wiki/Samuel_de_Champlain"
   },
   {
     "id": "river-sultana-1865",
@@ -3275,7 +3372,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Sultana (steamboat)",
+    "wiki_url": "https://en.wikipedia.org/wiki/Sultana_(steamboat)"
   },
   {
     "id": "river-steamboat-race-1870",
@@ -3345,7 +3444,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Robert E. Lee (steamboat)",
+    "wiki_url": "https://en.wikipedia.org/wiki/Robert_E._Lee_(steamboat)"
   },
   {
     "id": "river-franklin-coppermine-1821",
@@ -3504,6 +3605,8 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Coppermine expedition",
+    "wiki_url": "https://en.wikipedia.org/wiki/Coppermine_expedition"
   }
 ]

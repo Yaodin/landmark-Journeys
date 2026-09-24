@@ -79,7 +79,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Titanic",
+    "wiki_url": "https://en.wikipedia.org/wiki/Titanic"
   },
   {
     "id": "lusitania-final-1915",
@@ -131,7 +133,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "RMS Lusitania",
+    "wiki_url": "https://en.wikipedia.org/wiki/RMS_Lusitania"
   },
   {
     "id": "andrea-doria-final-1956",
@@ -140,22 +144,41 @@
     "short_title": "Andrea Doria",
     "date": "1956-07-17–26",
     "why_famous": "Its collision with Stockholm became a defining radar-age maritime disaster and rescue.",
-    "route_summary": "Genoa–western Mediterranean–Strait of Gibraltar–Atlantic–collision southeast of Nantucket; New York was the intended destination.",
-    "source_title": "United States Coast Guard: Andrea Doria collision history",
+    "route_summary": "Genoa → Cannes → Naples → Gibraltar → Atlantic → collision southeast of Nantucket; New York was the intended destination.",
+    "source_title": "The Mariners' Museum — Andrea Doria passenger list; U.S. Coast Guard collision history",
     "source_url": "https://www.dco.uscg.mil/Portals/9/DCO%20Documents/Proceedings%20Magazine/Archive/2001/Vol58_No1_Jan-Mar2001.pdf",
     "geometry_confidence": "medium",
-    "geometry_note": "The collision area is approximate and the offshore corridor is inferred. Other Mediterranean port calls on this particular sailing require a passenger manifest or log before insertion. New York is not joined to the final voyage line.",
+    "geometry_note": "The Mariners' Museum catalog identifies the final sailing's passenger-list itinerary via Cannes, Naples, and Gibraltar. The collision area and offshore corridor are approximate; New York was intended but is not joined to the completed voyage line.",
+    "additional_sources": [
+      {
+        "title": "The Mariners' Museum — Andrea Doria passenger list, 17–26 July 1956",
+        "url": "https://catalogs.marinersmuseum.org/object/ARI18267",
+        "note": "Cataloged itinerary: Genoa, Cannes, Naples, Gibraltar, New York. The ship collided before reaching its destination."
+      }
+    ],
     "segments": [
       {
         "mode": "ocean liner",
         "track_type": "historical-corridor",
-        "source_url": "https://www.dco.uscg.mil/Portals/9/DCO%20Documents/Proceedings%20Magazine/Archive/2001/Vol58_No1_Jan-Mar2001.pdf",
+        "source_url": "https://catalogs.marinersmuseum.org/object/ARI18267",
         "anchors": [
           {
             "name": "Genoa",
             "lat": 44.4,
             "lon": 8.93,
             "note": "Departure port."
+          },
+          {
+            "name": "Cannes",
+            "lat": 43.55,
+            "lon": 7.02,
+            "note": "Passenger-list catalog confirms this port call; approximate harbor locator."
+          },
+          {
+            "name": "Naples",
+            "lat": 40.84,
+            "lon": 14.25,
+            "note": "Passenger-list catalog confirms this port call; approximate harbor locator."
           },
           {
             "name": "Ligurian Sea",
@@ -201,7 +224,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "SS Andrea Doria",
+    "wiki_url": "https://en.wikipedia.org/wiki/SS_Andrea_Doria"
   },
   {
     "id": "great-western-1838",
@@ -265,7 +290,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "SS Great Western",
+    "wiki_url": "https://en.wikipedia.org/wiki/SS_Great_Western"
   },
   {
     "id": "carpathia-titanic-rescue-1912",
@@ -342,7 +369,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "RMS Carpathia",
+    "wiki_url": "https://en.wikipedia.org/wiki/RMS_Carpathia"
   },
   {
     "id": "mauretania-1909-record",
@@ -436,7 +465,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "RMS Mauretania (1906)",
+    "wiki_url": "https://en.wikipedia.org/wiki/RMS_Mauretania_(1906)"
   },
   {
     "id": "normandie-1935-maiden",
@@ -531,7 +562,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "SS Normandie",
+    "wiki_url": "https://en.wikipedia.org/wiki/SS_Normandie"
   },
   {
     "id": "queen-mary-1938-record",
@@ -607,7 +640,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "RMS Queen Mary",
+    "wiki_url": "https://en.wikipedia.org/wiki/RMS_Queen_Mary"
   },
   {
     "id": "united-states-1952-record",
@@ -677,7 +712,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "SS United States",
+    "wiki_url": "https://en.wikipedia.org/wiki/SS_United_States"
   },
   {
     "id": "great-britain-1845",
@@ -759,7 +796,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "SS Great Britain",
+    "wiki_url": "https://en.wikipedia.org/wiki/SS_Great_Britain"
   },
   {
     "id": "empress-ireland-1914",
@@ -817,7 +856,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "RMS Empress of Ireland",
+    "wiki_url": "https://en.wikipedia.org/wiki/RMS_Empress_of_Ireland"
   },
   {
     "id": "britannia-1840",
@@ -905,7 +946,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "RMS Britannia",
+    "wiki_url": "https://en.wikipedia.org/wiki/RMS_Britannia"
   },
   {
     "id": "great-eastern-1860",
@@ -975,7 +1018,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "SS Great Eastern",
+    "wiki_url": "https://en.wikipedia.org/wiki/SS_Great_Eastern"
   },
   {
     "id": "republic-wireless-1909",
@@ -1027,93 +1072,13 @@
           }
         ]
       }
-    ]
-  },
-  {
-    "id": "queen-elizabeth-1940",
-    "rank": 15,
-    "title": "Queen Elizabeth secret wartime first crossing",
-    "short_title": "Queen Elizabeth",
-    "date": "1940-03",
-    "why_famous": "The unfinished giant liner slipped out of wartime Britain and reached New York safely.",
-    "route_summary": "Clydebank/Clyde estuary–Atlantic–New York.",
-    "source_title": "West Dunbartonshire: The Three Queens",
-    "source_url": "https://www.west-dunbarton.gov.uk/leisure-parks-events/museums-and-galleries/collections/shipbuilding/shipbuilding-clydebank/the-three-queens",
-    "geometry_confidence": "low",
-    "geometry_note": "Departure and arrival are supported, but wartime secrecy makes the actual route and timing of any zigzags uncertain. The offshore line is an illustrative corridor only.",
-    "segments": [
-      {
-        "mode": "ocean liner",
-        "track_type": "historical-corridor",
-        "source_url": "https://www.west-dunbarton.gov.uk/leisure-parks-events/museums-and-galleries/collections/shipbuilding/shipbuilding-clydebank/the-three-queens",
-        "anchors": [
-          {
-            "name": "Clydebank",
-            "lat": 55.91,
-            "lon": -4.4,
-            "note": "Builder's yard and departure region."
-          },
-          {
-            "name": "Firth of Clyde",
-            "lat": 55.72,
-            "lon": -5.1,
-            "note": "Sea exit control, not a logged fix."
-          },
-          {
-            "name": "West of Kintyre",
-            "lat": 55.4,
-            "lon": -6.3,
-            "note": "Cartographic sea control, not a logged fix."
-          },
-          {
-            "name": "Northwest of Ireland",
-            "lat": 55.3,
-            "lon": -9,
-            "note": "Cartographic sea control, not a logged fix."
-          },
-          {
-            "name": "West of Ireland",
-            "lat": 52.5,
-            "lon": -12,
-            "note": "Cartographic sea control, not a logged fix."
-          },
-          {
-            "name": "Southwest of Ireland",
-            "lat": 50.5,
-            "lon": -12,
-            "note": "Broad Atlantic departure corridor, not an asserted wartime position."
-          },
-          {
-            "name": "North Atlantic",
-            "lat": 46,
-            "lon": -38,
-            "note": "Illustrative corridor control, not a wartime log position."
-          },
-          {
-            "name": "South of Long Island",
-            "lat": 40.3,
-            "lon": -71.5,
-            "note": "Cartographic sea control, not a logged fix."
-          },
-          {
-            "name": "Ambrose approach",
-            "lat": 40.46,
-            "lon": -73.83,
-            "note": "Cartographic sea control, not a logged fix."
-          },
-          {
-            "name": "New York",
-            "lat": 40.7,
-            "lon": -74.01,
-            "note": "Arrival port."
-          }
-        ]
-      }
-    ]
+    ],
+    "wiki_title": "RMS Republic",
+    "wiki_url": "https://en.wikipedia.org/wiki/RMS_Republic"
   },
   {
     "id": "queen-mary-final-1967",
-    "rank": 16,
+    "rank": 15,
     "title": "Queen Mary final ocean voyage",
     "short_title": "Queen Mary 1967",
     "date": "1967-10-31–12-09",
@@ -1311,11 +1276,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "RMS Queen Mary",
+    "wiki_url": "https://en.wikipedia.org/wiki/RMS_Queen_Mary"
   },
   {
     "id": "qe2-maiden-1969",
-    "rank": 17,
+    "rank": 16,
     "title": "Queen Elizabeth 2 maiden transatlantic voyage",
     "short_title": "QE2",
     "date": "1969-05-02–07",
@@ -1381,11 +1348,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Queen Elizabeth 2",
+    "wiki_url": "https://en.wikipedia.org/wiki/Queen_Elizabeth_2"
   },
   {
     "id": "qm2-first-atlantic-2004",
-    "rank": 18,
+    "rank": 17,
     "title": "Queen Mary 2 first scheduled Atlantic crossing",
     "short_title": "Queen Mary 2",
     "date": "2004-04-16–22",
@@ -1451,11 +1420,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Queen Mary 2",
+    "wiki_url": "https://en.wikipedia.org/wiki/Queen_Mary_2"
   },
   {
     "id": "aquitania-maiden-1914",
-    "rank": 19,
+    "rank": 18,
     "title": "Aquitania maiden Atlantic crossing",
     "short_title": "Aquitania",
     "date": "1914-05-30–06-05",
@@ -1533,25 +1504,27 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "RMS Aquitania",
+    "wiki_url": "https://en.wikipedia.org/wiki/RMS_Aquitania"
   },
   {
     "id": "olympic-maiden-1911",
-    "rank": 20,
+    "rank": 19,
     "title": "Olympic inaugural Atlantic service",
     "short_title": "Olympic",
-    "date": "1911-06",
+    "date": "1911-06-14/1911-06-21",
     "why_famous": "The first Olympic-class liner inaugurated White Star's giant-ship Atlantic service.",
     "route_summary": "Southampton–Cherbourg–Queenstown (Cobh)–New York.",
-    "source_title": "Royal Museums Greenwich: Olympic model",
-    "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-101101",
+    "source_title": "Missouri History Museum — Olympic maiden-voyage log card",
+    "source_url": "https://mohistory.mobiusconsortium.org/repositories/2/digital_objects/2313",
     "geometry_confidence": "medium",
-    "geometry_note": "The class's scheduled ports are represented; this specific maiden voyage's complete call sequence should be checked against passenger lists before treating every intermediate stop as voyage-observed. Offshore line is inferred.",
+    "geometry_note": "The Missouri History Museum's archival log card identifies the maiden crossing from Southampton to New York; the route's named calls are supported, but open-water positions between them are schematic and are not telemetry.",
     "segments": [
       {
         "mode": "ocean liner",
         "track_type": "historical-corridor",
-        "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-101101",
+        "source_url": "https://mohistory.mobiusconsortium.org/repositories/2/digital_objects/2313",
         "anchors": [
           {
             "name": "Southampton",
@@ -1569,7 +1542,7 @@
             "name": "Cherbourg",
             "lat": 49.64,
             "lon": -1.62,
-            "note": "Scheduled French stop; verify inaugural manifest."
+            "note": "Maiden-voyage call; historic port point approximate."
           },
           {
             "name": "Channel south of Cornwall",
@@ -1587,7 +1560,7 @@
             "name": "Queenstown (Cobh)",
             "lat": 51.85,
             "lon": -8.3,
-            "note": "Scheduled Irish stop; verify inaugural manifest."
+            "note": "Maiden-voyage call; historic port point approximate."
           },
           {
             "name": "South of Cork",
@@ -1627,11 +1600,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "RMS Olympic",
+    "wiki_url": "https://en.wikipedia.org/wiki/RMS_Olympic"
   },
   {
     "id": "bremen-1929-maiden",
-    "rank": 21,
+    "rank": 20,
     "title": "Bremen Blue Riband maiden voyage",
     "short_title": "Bremen",
     "date": "1929-07-16–22",
@@ -1727,25 +1702,44 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "SS Bremen (1928)",
+    "wiki_url": "https://en.wikipedia.org/wiki/SS_Bremen_(1928)"
   },
   {
     "id": "europa-1930-maiden",
-    "rank": 22,
+    "rank": 21,
     "title": "Europa Blue Riband maiden voyage",
     "short_title": "Europa",
     "date": "1930-03-19–25",
     "why_famous": "Improved the westbound Atlantic speed record on its first voyage.",
-    "route_summary": "Bremerhaven–Channel passage–New York; a Cherbourg call is plausible but requires the exact 1930 sailing record.",
+    "route_summary": "Bremerhaven → Southampton → Cherbourg → New York.",
     "source_title": "Royal Museums Greenwich: Bremen and Europa",
     "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-68739",
     "geometry_confidence": "medium",
-    "geometry_note": "Bremerhaven and New York endpoints and record are supported; this file avoids asserting unverified maiden passenger calls. The English Channel and Atlantic route are broad inferred corridors.",
+    "geometry_note": "Contemporary 19 and 25 March 1930 newspapers confirm Southampton and Cherbourg calls. Intermediate North Atlantic points are schematic sea corridors, not logged positions; New York approach is approximate.",
+    "additional_sources": [
+      {
+        "title": "The Capital Journal, 19 March 1930, p. 1",
+        "url": "https://oregonnews.uoregon.edu/lccn/sn90066132/1930-03-19/ed-1/seq-1/",
+        "note": "Contemporary report on the maiden sailing; reports Southampton and Cherbourg calls."
+      },
+      {
+        "title": "The Brownsville Herald, 25 March 1930, p. 1",
+        "url": "https://texashistory.unt.edu/ark:/67531/metapth1392743/m1/1/",
+        "note": "Contemporary westbound crossing report from Cherbourg toward Ambrose."
+      },
+      {
+        "title": "National Archives microfilm guide for Europa deck logs",
+        "url": "https://www.archives.gov/files/research/microfilm/t70-2.pdf",
+        "note": "NARA guide dates the available daily logs from 24 June 1930, so it does not document the March maiden voyage."
+      }
+    ],
     "segments": [
       {
         "mode": "express liner",
         "track_type": "historical-corridor",
-        "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-68739",
+        "source_url": "https://oregonnews.uoregon.edu/lccn/sn90066132/1930-03-19/ed-1/seq-1/",
         "anchors": [
           {
             "name": "Bremerhaven",
@@ -1772,10 +1766,16 @@
             "note": "Channel passage control, not a logged fix."
           },
           {
-            "name": "Central English Channel",
-            "lat": 50,
-            "lon": -1,
-            "note": "Cartographic sea control, not a logged fix."
+            "name": "Southampton",
+            "lat": 50.9097,
+            "lon": -1.4044,
+            "note": "Contemporary newspaper reports this maiden-voyage call; approximate port coordinate."
+          },
+          {
+            "name": "Cherbourg",
+            "lat": 49.64,
+            "lon": -1.62,
+            "note": "Contemporary newspaper reports this maiden-voyage call; approximate port coordinate."
           },
           {
             "name": "Western Channel",
@@ -1815,11 +1815,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "SS Europa (1928)",
+    "wiki_url": "https://en.wikipedia.org/wiki/SS_Europa_(1928)"
   },
   {
     "id": "ile-de-france-rescue-1956",
-    "rank": 23,
+    "rank": 22,
     "title": "Île de France Andrea Doria rescue diversion",
     "short_title": "Île de France",
     "date": "1956-07-25–26",
@@ -1880,11 +1882,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "SS Île de France",
+    "wiki_url": "https://en.wikipedia.org/wiki/SS_%C3%8Ele_de_France"
   },
   {
     "id": "hikawa-maru-chaplin-1932",
-    "rank": 24,
+    "rank": 23,
     "title": "Hikawa Maru voyage with Charlie Chaplin",
     "short_title": "Hikawa Maru",
     "date": "1932-06",
@@ -1950,11 +1954,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Hikawa Maru",
+    "wiki_url": "https://en.wikipedia.org/wiki/Hikawa_Maru"
   },
   {
     "id": "arctic-final-1854",
-    "rank": 25,
+    "rank": 24,
     "title": "Arctic final Atlantic crossing",
     "short_title": "Arctic",
     "date": "1854-09-20–27",
@@ -2020,6 +2026,62 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "SS Arctic",
+    "wiki_url": "https://en.wikipedia.org/wiki/SS_Arctic"
+  },
+  {
+    "id": "st-louis-refugee-voyage-1939",
+    "rank": 25,
+    "title": "MS St. Louis refugee voyage",
+    "short_title": "St. Louis 1939",
+    "date": "1939-05-13–1939-06-17",
+    "why_famous": "The liner carried 937 mostly Jewish refugees fleeing Nazi Germany. Cuba and the United States refused entry to most, and the ship returned to Europe, exposing the consequences of closed refugee policies.",
+    "route_summary": "Hamburg to Havana; an offshore approach toward Miami; then back across the Atlantic to Antwerp, where the passengers disembarked.",
+    "source_title": "United States Holocaust Memorial Museum — The Voyage of the St. Louis",
+    "source_url": "https://encyclopedia.ushmm.org/content/en/animated-map/the-voyage-of-the-st-louis",
+    "geometry_confidence": "medium",
+    "geometry_note": "The museum confirms the ports and sequence, including the slow sail toward Miami and disembarkation at Antwerp. Open-sea controls are illustrative, not logged positions; the ship did not dock in Miami. The line represents the documented voyage corridor, not a precise ship track.",
+    "segments": [
+      {
+        "mode": "ocean liner",
+        "track_type": "historical-corridor",
+        "source_url": "https://encyclopedia.ushmm.org/content/en/animated-map/the-voyage-of-the-st-louis",
+        "anchors": [
+          { "name": "Hamburg", "lat": 53.546, "lon": 9.967, "note": "Documented departure on 13 May 1939." },
+          { "name": "Elbe estuary", "lat": 53.87, "lon": 8.7, "note": "Cartographic sea control, not a logged fix." },
+          { "name": "North Sea", "lat": 53.5, "lon": 3.2, "note": "Cartographic sea control, not a logged fix." },
+          { "name": "Dover Strait", "lat": 51.05, "lon": 1.55, "note": "Illustrative channel passage, not a logged fix." },
+          { "name": "Western Approaches", "lat": 48.7, "lon": -10.5, "note": "Cartographic sea control, not a logged fix." },
+          { "name": "Central Atlantic", "lat": 38, "lon": -40, "note": "Broad ocean control, not a logged fix." },
+          { "name": "Havana", "lat": 23.15, "lon": -82.39, "note": "Documented Cuban destination; most passengers were denied permission to land." }
+        ]
+      },
+      {
+        "mode": "ocean liner",
+        "track_type": "historical-corridor",
+        "source_url": "https://encyclopedia.ushmm.org/content/en/animated-map/the-voyage-of-the-st-louis",
+        "anchors": [
+          { "name": "Havana", "lat": 23.15, "lon": -82.39, "note": "Departed Cuban waters after negotiations failed." },
+          { "name": "Offshore toward Miami", "lat": 25.74, "lon": -80.0, "note": "Approximate offshore direction, not a dock or logged ship position." }
+        ]
+      },
+      {
+        "mode": "ocean liner",
+        "track_type": "historical-corridor",
+        "source_url": "https://encyclopedia.ushmm.org/content/en/animated-map/the-voyage-of-the-st-louis",
+        "anchors": [
+          { "name": "Offshore toward Miami", "lat": 25.74, "lon": -80.0, "note": "Turned back to Europe after U.S. entry was denied; approximate offshore point." },
+          { "name": "Return Atlantic crossing", "lat": 38, "lon": -50, "note": "Broad ocean control, not a logged fix." },
+          { "name": "Western Approaches", "lat": 49, "lon": -10.5, "note": "Cartographic sea control, not a logged fix." },
+          { "name": "English Channel", "lat": 50.4, "lon": -0.5, "note": "Illustrative channel passage, not a logged fix." },
+          { "name": "North Sea", "lat": 52.45, "lon": 3.1, "note": "Cartographic sea control, not a logged fix." },
+          { "name": "Scheldt estuary", "lat": 51.38, "lon": 3.3, "note": "Cartographic waterway control, not a logged fix." },
+          { "name": "Antwerp", "lat": 51.23, "lon": 4.4, "note": "Documented disembarkation on 17 June 1939." }
+        ]
+      }
+    ],
+    "wiki_title": "MS St. Louis",
+    "wiki_url": "https://en.wikipedia.org/wiki/MS_St._Louis"
   }
 ]

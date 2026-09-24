@@ -299,6 +299,10 @@ button, select { color: inherit; }
 .empty-state p { margin: 3px 0 0; font-size: 10px; }
 .empty-mark { display: grid; place-items: center; width: 32px; height: 32px; border: 1px solid var(--edge); border-radius: 50%; color: var(--accent); }
 .detail-top { display: flex; justify-content: space-between; gap: 12px; align-items: start; }
+.detail-top-actions { display: flex; flex: 0 0 auto; align-items: center; gap: 6px; }
+.wiki-logo-link { display: grid; place-items: center; width: 27px; height: 27px; border: 1px solid var(--edge); border-radius: 50%; background: #f4f3ef; }
+.wiki-logo-link img { display: block; width: 22px; height: 22px; }
+.wiki-logo-link:hover, .wiki-logo-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .detail-rank { color: var(--accent); font: 10px/1 ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; }
 .detail-card h2 { margin: 5px 0 3px; font: 500 22px/1.1 Georgia, serif; letter-spacing: -.02em; }
 .detail-date { color: var(--muted); font-size: 11px; }
@@ -334,11 +338,15 @@ button, select { color: inherit; }
   font-size: 10px;
 }
 .detail-actions a.source { color: var(--accent); }
-.detail-actions a.wiki { color: #aebcff; }
 .waypoints { margin-top: 12px; }
 .waypoints summary { color: #aaaeb8; cursor: pointer; font-size: 10px; }
 .waypoints ol { max-height: 130px; overflow: auto; margin: 8px 0 0; padding: 0 0 0 24px; color: #8e929c; font-size: 9px; line-height: 1.65; }
 .waypoints b { color: #c8cad0; font-weight: 600; }
+.more-sources ul { margin: 8px 0 0; padding: 0 0 0 18px; color: #9ea2ab; font-size: 10px; line-height: 1.5; }
+.more-sources li + li { margin-top: 7px; }
+.more-sources a { color: #c6d2ff; text-decoration: none; }
+.more-sources a:hover { text-decoration: underline; }
+.more-sources li span { display: block; color: #858995; }
 
 .legend {
   position: absolute;
@@ -346,19 +354,19 @@ button, select { color: inherit; }
   right: 15px;
   bottom: 22px;
   display: flex;
-  gap: 13px;
-  padding: 8px 10px;
+  gap: 17px;
+  padding: 10px 13px;
   color: #9296a0;
   background: rgba(17,20,26,.91);
   border: 1px solid var(--edge);
-  border-radius: 7px;
-  font-size: 9px;
+  border-radius: 9px;
+  font-size: 12px;
   backdrop-filter: blur(8px);
 }
-.legend span { display: flex; align-items: center; gap: 5px; }
-.legend i { display: inline-block; width: 18px; height: 2px; background: #dedede; }
-.legend .dash { background: repeating-linear-gradient(90deg, #dedede 0 4px, transparent 4px 7px); }
-.legend .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+.legend span { display: flex; align-items: center; gap: 7px; }
+.legend i { display: inline-block; width: 23px; height: 3px; background: #dedede; }
+.legend .dash { background: repeating-linear-gradient(90deg, #dedede 0 5px, transparent 5px 9px); }
+.legend .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
 
 .loading {
   position: absolute;

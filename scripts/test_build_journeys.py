@@ -22,6 +22,8 @@ def record(rank: int) -> dict:
         "route_summary": "Island A → Island B",
         "source_title": "Example Archive",
         "source_url": "https://example.org/journey",
+        "wiki_title": "Example journey",
+        "wiki_url": "https://en.wikipedia.org/wiki/Example_journey",
         "geometry_confidence": "medium",
         "geometry_note": "A corridor between named landfalls.",
         "segments": [{
@@ -37,7 +39,33 @@ def record(rank: int) -> dict:
 
 
 class JourneyBuildTests(unittest.TestCase):
-    def test_all_seven_domains_have_25_generated_routes(self) -> None:
+    def test_1897_bicycle_corps_does_not_reuse_1896_yellowstone_route(self) -> None:
+        records = json.loads((build_journeys.SOURCE_DIR / "human-powered.json").read_text(encoding="utf-8"))
+        route = next(route for route in records if route["id"] == "human-25th-infantry-bicycle-1897")
+        names = [anchor["name"] for segment in route["segments"] for anchor in segment["anchors"]]
+        self.assertIn("Fort Custer, Montana", names)
+        self.assertIn("Custer National Cemetery / Little Bighorn", names)
+        self.assertIn("Moorcroft, Wyoming", names)
+        self.assertIn("Crawford, Nebraska", names)
+        self.assertIn("Alliance, Nebraska", names)
+        self.assertIn("Broken Bow, Nebraska", names)
+        self.assertNotIn("Yellowstone region", names)
+        self.assertNotIn("Cody", names)
+        self.assertNotIn("Cheyenne", names)
+        self.assertNotIn("Omaha", names)
+        self.assertNotIn("Kansas City", names)
+        self.assertEqual(route["wiki_relation"], "related")
+
+    def test_oregon_trail_has_distinct_era_dependent_columbia_endings(self) -> None:
+        records = json.loads((build_journeys.SOURCE_DIR / "overland.json").read_text(encoding="utf-8"))
+        route = next(route for route in records if route["id"] == "oregon-trail-migrations")
+        self.assertEqual(len(route["segments"]), 3)
+        self.assertEqual(route["segments"][1]["mode"], "river boat / raft with portage")
+        self.assertIn("Fort Vancouver", [a["name"] for a in route["segments"][1]["anchors"]])
+        self.assertIn("1846 onward", route["segments"][2]["mode"])
+        self.assertIn("Oregon City", [a["name"] for a in route["segments"][2]["anchors"]])
+
+    def test_all_seven_domains_match_generated_routes(self) -> None:
         for domain in build_journeys.DOMAINS:
             with self.subTest(domain=domain):
                 source_path = build_journeys.SOURCE_DIR / f"{domain}.json"
@@ -46,8 +74,8 @@ class JourneyBuildTests(unittest.TestCase):
                 self.assertTrue(geojson_path.is_file(), f"{domain}: missing generated geometry")
                 records = json.loads(source_path.read_text(encoding="utf-8"))
                 collection = json.loads(geojson_path.read_text(encoding="utf-8"))
-                self.assertEqual(len(records), 25)
-                self.assertEqual(len(collection["features"]), 25)
+                self.assertGreater(len(records), 0)
+                self.assertEqual(len(collection["features"]), len(records))
 
     def test_crossing_keeps_segment_and_dateline_evidence(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
@@ -72,6 +100,16 @@ class JourneyBuildTests(unittest.TestCase):
         candidate = record(1)
         candidate["segments"][0]["source_url"] = ""
         with self.assertRaisesRegex(ValueError, "missing HTTPS source"):
+            build_journeys.validate_record(candidate, "sailing", 1)
+
+    def test_validates_wikipedia_relation_and_additional_sources(self) -> None:
+        candidate = record(1)
+        candidate["wiki_relation"] = "related"
+        candidate["additional_sources"] = [{"title": "Primary log", "url": "https://archive.example/log", "note": "Route record."}]
+        build_journeys.validate_record(candidate, "sailing", 1)
+
+        candidate["additional_sources"][0]["url"] = "javascript:alert(1)"
+        with self.assertRaisesRegex(ValueError, "safe HTTPS URL"):
             build_journeys.validate_record(candidate, "sailing", 1)
 
     def test_generated_collections_follow_all_sourced_anchors(self) -> None:

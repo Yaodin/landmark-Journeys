@@ -1,4 +1,6 @@
-const ROUTES_URL = "data/routes.geojson?v=smooth-routes-1";
+const GEOMETRY_VERSION = "backfill-200-1";
+const ROUTES_URL = `data/routes.geojson?v=${GEOMETRY_VERSION}`;
+const ALL_OVERVIEW_URL = `data/all-overview.geojson?v=${GEOMETRY_VERSION}`;
 const BASEMAP_URL = "data/ne_110m_admin_0_countries.geojson";
 const AIRCRAFT_IMAGES_URL = "data/aircraft-images.json";
 const JOURNEY_IMAGES_URL = "data/journey-images.json?v=journey-images-2";
@@ -22,6 +24,7 @@ const DOMAINS = {
   "ocean-liners": { label: "Ocean Liners", singular: "Ocean voyage" },
   river: { label: "River", singular: "River journey" },
   "human-powered": { label: "Human Powered", singular: "Human-powered journey" },
+  all: { label: "All journeys", singular: "Journey" },
 };
 
 function inferredLine(properties, trackType) {
@@ -88,6 +91,50 @@ function normalizeLon(lon) {
 
 function geometryLines(geometry) {
   return geometry.type === "LineString" ? [geometry.coordinates] : geometry.coordinates;
+}
+
+// Map-only level of detail. The sourced GeoJSON and downloadable WKT are never
+// altered; this removes vertices that change the current on-screen line by less
+// than a pixel. Each dateline-split line is simplified independently.
+function simplifyScreenLine(coordinates, zoom, tolerance = 1.2) {
+  if (coordinates.length <= 2) return coordinates;
+  const size = TILE_SIZE * 2 ** zoom;
+  const xs = new Float64Array(coordinates.length);
+  const ys = new Float64Array(coordinates.length);
+  coordinates.forEach(([lon, lat], index) => {
+    const safeLat = clamp(lat, -MAX_LAT, MAX_LAT);
+    const sin = Math.sin(safeLat * Math.PI / 180);
+    xs[index] = (lon + 180) / 360 * size;
+    ys[index] = (0.5 - Math.log((1 + sin) / (1 - sin)) / (4 * Math.PI)) * size;
+  });
+  const keep = new Uint8Array(coordinates.length);
+  keep[0] = 1;
+  keep[coordinates.length - 1] = 1;
+  const ranges = [[0, coordinates.length - 1]];
+  const toleranceSquared = tolerance * tolerance;
+  while (ranges.length) {
+    const [start, end] = ranges.pop();
+    const dx = xs[end] - xs[start];
+    const dy = ys[end] - ys[start];
+    const lengthSquared = dx * dx + dy * dy;
+    let farthest = -1;
+    let farthestDistance = toleranceSquared;
+    for (let index = start + 1; index < end; index += 1) {
+      const fraction = lengthSquared ? clamp(((xs[index] - xs[start]) * dx + (ys[index] - ys[start]) * dy) / lengthSquared, 0, 1) : 0;
+      const offsetX = xs[index] - xs[start] - fraction * dx;
+      const offsetY = ys[index] - ys[start] - fraction * dy;
+      const distance = offsetX * offsetX + offsetY * offsetY;
+      if (distance > farthestDistance) {
+        farthest = index;
+        farthestDistance = distance;
+      }
+    }
+    if (farthest >= 0) {
+      keep[farthest] = 1;
+      ranges.push([start, farthest], [farthest, end]);
+    }
+  }
+  return coordinates.filter((_, index) => keep[index]);
 }
 
 function pointInPolygon(x, y, polygon) {
@@ -158,6 +205,8 @@ class CanvasSlippyMap {
     this.routes = null;
     this.visible = new Set();
     this.selected = null;
+    this.overviewMode = false;
+    this.displayLineCache = new WeakMap();
     this.drag = null;
     this.renderPending = false;
     this.onRoutePick = () => {};
@@ -224,11 +273,27 @@ class CanvasSlippyMap {
     }
   }
 
-  setData(countries, routes, visible) {
+  setData(countries, routes, visible, overviewMode = false) {
     this.countries = countries;
     this.routes = routes;
     this.visible = visible;
+    this.overviewMode = overviewMode;
     this.requestRender();
+  }
+
+  displayLines(feature, selected = false) {
+    const lines = geometryLines(feature.geometry);
+    if (!this.overviewMode || selected) return lines;
+    const zoomBucket = Math.max(0, Math.floor(this.zoom));
+    let cache = this.displayLineCache.get(feature.geometry);
+    if (!cache) {
+      cache = new Map();
+      this.displayLineCache.set(feature.geometry, cache);
+    }
+    if (!cache.has(zoomBucket)) {
+      cache.set(zoomBucket, lines.map((line) => simplifyScreenLine(line, zoomBucket)));
+    }
+    return cache.get(zoomBucket);
   }
 
   setTheme(name) {
@@ -552,13 +617,15 @@ class CanvasSlippyMap {
     const nearestShift = Math.round((center.x - meanX) / size) * size;
     const copies = [];
     for (const extra of [-size, 0, size]) {
-      const screen = world.map((point) => ({
-        x: point.x + nearestShift + extra - center.x + this.width / 2,
-        y: point.y - center.y + this.height / 2,
-      }));
-      const xs = screen.map((point) => point.x);
-      const ys = screen.map((point) => point.y);
-      if (Math.max(...xs) >= -40 && Math.min(...xs) <= this.width + 40 && Math.max(...ys) >= -40 && Math.min(...ys) <= this.height + 40) {
+      let minX = Infinity; let maxX = -Infinity; let minY = Infinity; let maxY = -Infinity;
+      const screen = world.map((point) => {
+        const x = point.x + nearestShift + extra - center.x + this.width / 2;
+        const y = point.y - center.y + this.height / 2;
+        minX = Math.min(minX, x); maxX = Math.max(maxX, x);
+        minY = Math.min(minY, y); maxY = Math.max(maxY, y);
+        return { x, y };
+      });
+      if (maxX >= -40 && minX <= this.width + 40 && maxY >= -40 && minY <= this.height + 40) {
         copies.push(screen);
       }
     }
@@ -757,7 +824,8 @@ class CanvasSlippyMap {
       ctx.shadowColor = p.color;
       ctx.shadowBlur = 10;
     }
-    for (const [index, coordinates] of geometryLines(feature.geometry).entries()) {
+    const lines = this.displayLines(feature, selected);
+    for (const [index, coordinates] of lines.entries()) {
       const trackType = p.line_styles?.[index]?.track_type;
       // All journeys interpolate between anchors. The stroke distinguishes
       // comparatively well-anchored corridors from inferred/low-confidence
@@ -779,6 +847,7 @@ class CanvasSlippyMap {
       }
     }
     ctx.restore();
+    return lines.reduce((total, line) => total + line.length, 0);
   }
 
   drawAnchors(feature) {
@@ -809,6 +878,7 @@ class CanvasSlippyMap {
 
   render() {
     if (!this.width || !this.height) return;
+    const startedAt = performance.now();
     const ctx = this.ctx;
     const theme = THEMES[this.themeName];
     const gradient = ctx.createLinearGradient(0, 0, 0, this.height);
@@ -822,14 +892,18 @@ class CanvasSlippyMap {
     this.drawLabels(theme);
     if (this.routes) {
       const ordinary = this.routes.features.filter((feature) => this.visible.has(feature.properties.id) && feature.properties.id !== this.selected);
-      ordinary.forEach((feature) => this.drawRoute(feature));
+      let displayedVertices = 0;
+      ordinary.forEach((feature) => { displayedVertices += this.drawRoute(feature); });
       const selected = this.routes.features.find((feature) => feature.properties.id === this.selected && this.visible.has(feature.properties.id));
       if (selected) {
-        this.drawRoute(selected, true);
+        displayedVertices += this.drawRoute(selected, true);
         this.drawAnchors(selected);
       }
+      document.body.dataset.mapRouteCount = String(this.routes.features.length);
+      document.body.dataset.mapDisplayVertices = String(displayedVertices);
     }
     document.body.dataset.canvasRendered = "true";
+    document.body.dataset.mapRenderMs = (performance.now() - startedAt).toFixed(1);
   }
 
   updateReadout(point = this.center) {
@@ -849,7 +923,7 @@ class CanvasSlippyMap {
     for (const feature of this.routes.features) {
       const id = feature.properties.id;
       if (!this.visible.has(id)) continue;
-      for (const coordinates of geometryLines(feature.geometry)) {
+      for (const coordinates of this.displayLines(feature, id === this.selected)) {
         for (const line of this.screenCopies(coordinates)) {
           for (let i = 1; i < line.length; i += 1) {
             const distance = this.pointSegmentDistance(x, y, line[i - 1], line[i]);
@@ -915,12 +989,14 @@ class CanvasSlippyMap {
 const state = {
   collection: null,
   collections: new Map(),
+  collectionRequests: new Map(),
   visibilityByDomain: new Map(),
   countries: null,
   activeDomain: "flights",
   domainRequest: 0,
   visible: new Set(),
   selected: null,
+  aircraftImages: {},
   journeyImages: {},
 };
 
@@ -976,15 +1052,16 @@ function formatDistance(km) {
 }
 
 function renderList() {
-  routeList.innerHTML = state.collection.features.map((feature) => {
+  routeList.innerHTML = state.collection.features.map((feature, index) => {
     const p = feature.properties;
     const visible = state.visible.has(p.id);
+    const domainLabel = state.activeDomain === "all" ? `<span>${DOMAINS[p.domain || "flights"].label}</span>` : "";
     return `
       <article class="route-item${visible ? "" : " off"}" data-id="${p.id}" tabindex="0" role="button" aria-label="Inspect ${p.title}">
-        <span class="rank">${String(p.rank).padStart(2, "0")}</span>
+        <span class="rank">${String(state.activeDomain === "all" ? index + 1 : p.rank).padStart(2, "0")}</span>
         <div class="route-copy">
           <strong>${p.short_title}</strong>
-          <div class="route-meta"><i class="color-key" style="background:${p.color};color:${p.color}"></i><span>${p.date.slice(0, 4)}</span><span>${p.era}</span></div>
+          <div class="route-meta"><i class="color-key" style="background:${p.color};color:${p.color}"></i>${domainLabel}<span>${p.date.slice(0, 4)}</span>${state.activeDomain === "all" ? "" : `<span>${p.era}</span>`}</div>
         </div>
         <input class="route-toggle" style="--route-color:${p.color}" type="checkbox" ${visible ? "checked" : ""} aria-label="Show ${p.short_title}">
       </article>`;
@@ -1021,14 +1098,14 @@ async function renderResearchList(domain) {
           sourceUrl: source?.[1] || null,
         };
       });
-      if (candidates.length !== 25) throw new Error(`Expected 25 candidates, found ${candidates.length}`);
+      if (!candidates.length) throw new Error(`No research candidates found for ${domain}`);
       researchCache.set(domain, candidates);
     }
     if (state.activeDomain !== domain) return;
     routeList.replaceChildren();
     const note = document.createElement("p");
     note.className = "research-note";
-    note.innerHTML = `<strong>25 researched journeys</strong>Candidate routes and sources are ready for review. Map geometry is still being prepared. <a href="research/${domain}.md" target="_blank" rel="noreferrer">Read the full brief ↗</a>`;
+    note.innerHTML = `<strong>${candidates.length} researched journeys</strong>Candidate routes and sources are ready for review. Map geometry is still being prepared. <a href="research/${domain}.md" target="_blank" rel="noreferrer">Read the full brief ↗</a>`;
     routeList.append(note);
     for (const candidate of candidates) {
       const item = document.createElement(candidate.sourceUrl ? "a" : "div");
@@ -1060,6 +1137,11 @@ async function renderResearchList(domain) {
 
 function setVisibility(id, show) {
   if (show) state.visible.add(id); else state.visible.delete(id);
+  if (state.activeDomain === "all") {
+    const feature = state.collection.features.find((candidate) => candidate.properties.id === id);
+    const domainVisible = state.visibilityByDomain.get(feature.properties.domain || "flights");
+    if (show) domainVisible.add(id); else domainVisible.delete(id);
+  }
   const item = routeList.querySelector(`[data-id="${id}"]`);
   item?.classList.toggle("off", !show);
   const toggle = item?.querySelector(".route-toggle");
@@ -1069,7 +1151,7 @@ function setVisibility(id, show) {
   mapView.requestRender();
 }
 
-function selectRoute(id, fit = false) {
+async function selectRoute(id, fit = false) {
   const feature = state.collection.features.find((candidate) => candidate.properties.id === id);
   if (!feature) return;
   if (!state.visible.has(id)) setVisibility(id, true);
@@ -1077,10 +1159,26 @@ function selectRoute(id, fit = false) {
   routeList.querySelectorAll(".route-item").forEach((item) => item.classList.toggle("selected", item.dataset.id === id));
   renderDetail(feature);
   mapView.select(id, fit);
+  if (state.activeDomain === "all" && state.collection.metadata?.display_only) {
+    try {
+      const domain = feature.properties.domain || "flights";
+      const complete = await loadDomainCollection(domain);
+      if (state.activeDomain !== "all" || state.selected !== id) return;
+      const fullFeature = complete.features.find((candidate) => candidate.properties.id === id);
+      const index = state.collection.features.findIndex((candidate) => candidate.properties.id === id);
+      if (!fullFeature || index < 0) throw new Error(`Full geometry missing for ${id}`);
+      state.collection.features[index] = fullFeature;
+      mapView.select(id, fit);
+      document.body.dataset.fullGeometryRoute = id;
+    } catch (error) {
+      console.error(`Could not load full geometry for ${id}:`, error);
+    }
+  }
 }
 
 function clearSelection() {
   state.selected = null;
+  delete document.body.dataset.fullGeometryRoute;
   mapView.select(null, false);
   routeList.querySelectorAll(".route-item").forEach((item) => item.classList.remove("selected"));
   detailCard.className = "detail-card empty";
@@ -1144,7 +1242,7 @@ function bindSheetGesture() {
 
 function renderDetail(feature) {
   const p = feature.properties;
-  const journeyLabel = DOMAINS[state.activeDomain].singular;
+  const journeyLabel = DOMAINS[p.domain || "flights"].singular;
   detailCard.className = "detail-card";
   const anchors = p.anchors.map((anchor) => `<li><b>${anchor.name}</b>${anchor.note ? ` — ${anchor.note}` : ""}</li>`).join("");
   const overview = p.overview && p.overview !== p.why_famous && p.overview !== p.route_summary
@@ -1153,16 +1251,23 @@ function renderDetail(feature) {
     const lineStyle = inferredLine(p, segment.track_type) ? "inferred" : "anchored";
     return `<li data-line-style="${lineStyle}"><b>${segment.mode}</b> · ${segment.track_type.replaceAll("-", " ")} · ${lineStyle === "inferred" ? "dashed" : "solid"} · <a href="${segment.source_url}" target="_blank" rel="noreferrer">source ↗</a></li>`;
   }).join("")}</ol></details>` : "";
+  const additionalSources = Array.isArray(p.additional_sources) && p.additional_sources.length ? `
+    <details class="waypoints more-sources"><summary>${p.additional_sources.length} additional source${p.additional_sources.length === 1 ? "" : "s"}</summary><ul>${p.additional_sources.map((source) => `
+      <li><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.title)} ↗</a>${source.note ? `<span>${escapeHtml(source.note)}</span>` : ""}</li>`).join("")}</ul></details>` : "";
   const journeyImage = p.image ? `
     <figure class="journey-figure">
       <img src="${escapeHtml(p.image.path)}" alt="${escapeHtml(p.image.alt)}" decoding="async" style="object-position:${escapeHtml(p.image.position || "center")}">
       <figcaption><a class="image-credit" href="${escapeHtml(p.image.source_url)}" target="_blank" rel="noreferrer" title="${escapeHtml(p.image.credit)} · resized and padded to WebP">${escapeHtml(p.image.credit)} · resized for display</a><a href="${escapeHtml(p.image.license_url)}" target="_blank" rel="noreferrer">${escapeHtml(p.image.license)} ↗</a></figcaption>
     </figure>` : "";
+  const wikiLabel = `${p.wiki_relation === "related" ? "Related English Wikipedia article" : "English Wikipedia"}: ${p.wiki_title || p.title}`;
   detailCard.innerHTML = `
     <button class="sheet-handle" type="button" aria-expanded="false" aria-label="Expand journey details"><span></span></button>
     <div class="detail-top">
       <div><div class="detail-rank">${journeyLabel} ${String(p.rank).padStart(2, "0")} · ${p.group}</div><h2>${p.title}</h2><div class="detail-date">${p.date} · ${p.era}</div></div>
-      <button class="close-detail" type="button" aria-label="Close details">×</button>
+      <div class="detail-top-actions">
+        ${p.wiki_url ? `<a class="wiki-logo-link" href="${escapeHtml(p.wiki_url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(wikiLabel)}" title="${escapeHtml(wikiLabel)}"><img src="assets/wikipedia-w.svg" alt=""></a>` : ""}
+        <button class="close-detail" type="button" aria-label="Close details">×</button>
+      </div>
     </div>
     <div class="why-famous"><span>Why it was famous</span><p>${p.why_famous}</p></div>
     ${journeyImage}
@@ -1176,12 +1281,12 @@ function renderDetail(feature) {
     <div class="quality"><span>Route evidence</span><strong>${p.quality_label}</strong></div>
     <p class="geometry-note">${p.description}</p>
     <div class="detail-actions">
-      <a href="${p.wkt_file}?v=smooth-routes-1" download>Download WKT</a>
+      <a href="${p.wkt_file}?v=${GEOMETRY_VERSION}" download>Download WKT</a>
       <button type="button" class="copy-wkt">Copy WKT</button>
       <button type="button" class="download-geojson">Download GeoJSON</button>
       <a class="source" href="${p.source_url}" target="_blank" rel="noreferrer">Research source ↗</a>
-      ${p.wiki_url ? `<a class="wiki" href="${p.wiki_url}" target="_blank" rel="noreferrer" title="${p.wiki_title}">Wikipedia ↗</a>` : ""}
     </div>
+    ${additionalSources}
     ${segmentDetails}
     <details class="waypoints"><summary>${p.anchors.length} researched route anchors</summary><ol>${anchors}</ol></details>`;
 
@@ -1192,19 +1297,47 @@ function renderDetail(feature) {
     event.currentTarget.closest("figure").hidden = true;
   });
   detailCard.querySelector(".copy-wkt").addEventListener("click", async (event) => {
-    const text = await fetch(`${p.wkt_file}?v=smooth-routes-1`).then((response) => response.text());
+    const text = await fetch(`${p.wkt_file}?v=${GEOMETRY_VERSION}`).then((response) => response.text());
     await navigator.clipboard.writeText(text.trim());
     event.currentTarget.textContent = "Copied";
     setTimeout(() => { event.currentTarget.textContent = "Copy WKT"; }, 1300);
   });
-  detailCard.querySelector(".download-geojson").addEventListener("click", () => {
-    const blob = new Blob([JSON.stringify(feature, null, 2)], { type: "application/geo+json" });
+  detailCard.querySelector(".download-geojson").addEventListener("click", async () => {
+    const domain = p.domain || "flights";
+    const complete = await loadDomainCollection(domain);
+    const fullFeature = complete.features.find((candidate) => candidate.properties.id === p.id);
+    if (!fullFeature) throw new Error(`Full geometry missing for ${p.id}`);
+    const blob = new Blob([JSON.stringify(fullFeature, null, 2)], { type: "application/geo+json" });
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
     link.download = `${p.id}.geojson`;
     link.click();
     URL.revokeObjectURL(link.href);
   });
+}
+
+async function loadDomainCollection(domain) {
+  if (state.collections.has(domain)) return state.collections.get(domain);
+  if (state.collectionRequests.has(domain)) return state.collectionRequests.get(domain);
+  const request = (async () => {
+    const response = await fetch(`data/journeys/${domain}.geojson?v=${GEOMETRY_VERSION}`);
+    if (!response.ok) throw new Error(`HTTP ${response.status} loading ${domain}`);
+    const collection = await response.json();
+    if (!collection.features?.length || collection.features.length !== collection.metadata?.route_count) {
+      throw new Error(`Invalid mapped journey count in ${domain}`);
+    }
+    collection.features.forEach((feature) => {
+      feature.properties.image = state.journeyImages[feature.properties.id] || null;
+    });
+    collection.features.sort((a, b) => a.properties.rank - b.properties.rank);
+    state.collections.set(domain, collection);
+    if (!state.visibilityByDomain.has(domain)) {
+      state.visibilityByDomain.set(domain, new Set(collection.features.map((feature) => feature.properties.id)));
+    }
+    return collection;
+  })();
+  state.collectionRequests.set(domain, request);
+  try { return await request; } finally { state.collectionRequests.delete(domain); }
 }
 
 async function setDomain(domain, updateUrl = true) {
@@ -1224,7 +1357,7 @@ async function setDomain(domain, updateUrl = true) {
   document.querySelector("#collection-hint").textContent = "loading";
   searchInput.disabled = false;
   searchInput.value = "";
-  searchInput.placeholder = domain === "flights"
+  searchInput.placeholder = domain === "all" ? "Search all journeys or categories…" : domain === "flights"
     ? "Search flights, years, eras…"
     : `Search ${DOMAINS[domain].label.toLowerCase()} journeys…`;
   routeList.classList.add("researching");
@@ -1242,18 +1375,33 @@ async function setDomain(domain, updateUrl = true) {
     history.replaceState(null, "", url);
   }
   let collection = state.collections.get(domain);
-  if (!collection && domain !== "flights") {
+  if (domain === "all") {
     try {
-      const response = await fetch(`data/journeys/${domain}.geojson?v=journey-1`);
-      if (response.ok) {
+      const domains = Object.keys(DOMAINS).filter((key) => key !== "all");
+      if (!collection) {
+        const response = await fetch(ALL_OVERVIEW_URL);
+        if (!response.ok) throw new Error(`HTTP ${response.status} loading Show all preview`);
         collection = await response.json();
-        if (collection.features?.length !== 25) throw new Error(`Expected 25 mapped journeys in ${domain}`);
+        if (!collection.features?.length || !collection.metadata?.display_only || collection.features.length !== collection.metadata?.route_count) {
+          throw new Error("Invalid display-only Show all collection");
+        }
         collection.features.forEach((feature) => {
-          feature.properties.image = state.journeyImages[feature.properties.id] || null;
+          feature.properties.image = (feature.properties.domain ? state.journeyImages : state.aircraftImages)[feature.properties.id] || null;
         });
-        collection.features.sort((a, b) => a.properties.rank - b.properties.rank);
-        state.collections.set(domain, collection);
+        state.collections.set("all", collection);
       }
+      for (const key of domains) {
+        if (!state.visibilityByDomain.has(key)) {
+          state.visibilityByDomain.set(key, new Set(collection.features.filter((feature) => (feature.properties.domain || "flights") === key).map((feature) => feature.properties.id)));
+        }
+      }
+      state.visibilityByDomain.set("all", new Set(domains.flatMap((key) => [...state.visibilityByDomain.get(key)])));
+    } catch (error) {
+      console.error("Could not load all journeys:", error);
+    }
+  } else if (!collection && domain !== "flights") {
+    try {
+      collection = await loadDomainCollection(domain);
     } catch (error) {
       console.error(`Could not load ${domain} route geometry:`, error);
     }
@@ -1265,19 +1413,21 @@ async function setDomain(domain, updateUrl = true) {
     state.visibilityByDomain.set(domain, state.visible);
     routeList.classList.remove("researching");
     renderList();
-    document.querySelector("#collection-hint").textContent = "click to inspect";
+    document.querySelector("#collection-hint").textContent = domain === "all" ? `${collection.features.length} routes · click to inspect` : "click to inspect";
     document.querySelector(".map-shell").classList.remove("research-mode");
     collectionStatus.hidden = true;
-    mapView.setData(state.countries, collection, state.visible);
+    mapView.setData(state.countries, collection, state.visible, domain === "all");
     mapView.setView(5, 23, 2);
   } else {
     state.collection = EMPTY_COLLECTION;
     state.visible = new Set();
-    document.querySelector("#collection-hint").textContent = "25 candidates";
+    document.querySelector("#collection-hint").textContent = domain === "all" ? "unavailable" : "research candidates";
     routeList.innerHTML = `<p class="research-note"><strong>Loading ${DOMAINS[domain].label} research…</strong></p>`;
-    collectionStatus.innerHTML = `<strong>${DOMAINS[domain].label}</strong>25 journeys researched. Map routes will appear as their geometry is verified.`;
+    collectionStatus.innerHTML = domain === "all"
+      ? `<strong>All journeys unavailable</strong>One or more collections could not be loaded. Choose a category to continue.`
+      : `<strong>${DOMAINS[domain].label}</strong>Journeys researched. Map routes will appear as their geometry is verified.`;
     mapView.setView(5, 23, 2);
-    void renderResearchList(domain);
+    if (domain !== "all") void renderResearchList(domain);
   }
 }
 
@@ -1308,7 +1458,7 @@ searchInput.addEventListener("input", (event) => {
   }
   routeList.querySelectorAll(".route-item").forEach((item) => {
     const p = state.collection.features.find((feature) => feature.properties.id === item.dataset.id).properties;
-    const haystack = `${p.title} ${p.date} ${p.era} ${p.route_summary}`.toLowerCase();
+    const haystack = `${p.title} ${p.date} ${p.era} ${p.route_summary} ${DOMAINS[p.domain || "flights"].label}`.toLowerCase();
     item.classList.toggle("hidden-filter", query && !haystack.includes(query));
   });
 });
@@ -1339,6 +1489,7 @@ async function init() {
     state.collection = await routesResponse.json();
     state.countries = await basemapResponse.json();
     const aircraftImages = await imagesResponse.json();
+    state.aircraftImages = aircraftImages;
     state.journeyImages = await journeyImagesResponse.json();
     state.collection.features.forEach((feature) => {
       feature.properties.image = aircraftImages[feature.properties.id] || null;
@@ -1357,7 +1508,7 @@ async function init() {
     const requestedDomain = query.get("domain");
     await setDomain(DOMAINS[requestedDomain] ? requestedDomain : "flights", false);
     const requestedJourney = query.get("journey") || query.get("flight");
-    if (requestedJourney && state.collection.features.length) selectRoute(requestedJourney, true);
+    if (requestedJourney && state.collection.features.length) await selectRoute(requestedJourney, true);
     if (requestedJourney && state.collection.features.length && query.get("sheet") === "expanded") {
       setSheetExpanded(true);
     }

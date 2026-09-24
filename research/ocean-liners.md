@@ -1,5 +1,7 @@
 # Ocean-liner journeys: 25 atlas candidates
 
+Queen Elizabeth's secret 1940 crossing remains a historical research candidate, but was removed from the atlas because the depicted offshore track could not be verified. The active 25 instead include the *St. Louis* refugee voyage, whose Hamburg–Havana–offshore Miami–Antwerp itinerary is [mapped and described by the United States Holocaust Memorial Museum](https://encyclopedia.ushmm.org/content/en/animated-map/the-voyage-of-the-st-louis). This table preserves the original candidate shortlist; the canonical active selections are in `data/journeys/ocean-liners.json` and the [geometry audit](geometry-audit.md).
+
 Rank is editorial. This collection covers scheduled, powered, deep-sea passenger liners and notable voyages by those ships; it excludes cruise-only vessels. **Geometry confidence**: H = precise ports plus a contemporary log/chart or casualty/rescue position; M = ports and event location reliable but offshore path inferred; L = endpoint or passage uncertain. Even H rarely means a complete observed track. A vessel may appear twice only when the separate voyages have distinct historical significance.
 
 | # | Journey / ship | Date | Why famous | Route anchors for atlas | Geometry | Institutional or primary source |

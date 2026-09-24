@@ -111,7 +111,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Lewis and Clark Expedition",
+    "wiki_url": "https://en.wikipedia.org/wiki/Lewis_and_Clark_Expedition"
   },
   {
     "id": "xuanzang-pilgrimage",
@@ -206,7 +208,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Xuanzang",
+    "wiki_url": "https://en.wikipedia.org/wiki/Xuanzang"
   },
   {
     "id": "ibn-battuta-travels",
@@ -369,7 +373,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Ibn Battuta",
+    "wiki_url": "https://en.wikipedia.org/wiki/Ibn_Battuta"
   },
   {
     "id": "marco-polo-travels",
@@ -604,7 +610,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Marco Polo",
+    "wiki_url": "https://en.wikipedia.org/wiki/Marco_Polo"
   },
   {
     "id": "cherokee-removal-northern-route",
@@ -668,20 +676,22 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Trail of Tears",
+    "wiki_url": "https://en.wikipedia.org/wiki/Trail_of_Tears"
   },
   {
     "id": "oregon-trail-migrations",
     "rank": 6,
     "title": "Oregon Trail migrations",
     "short_title": "Oregon Trail",
-    "date": "1840s–1860s",
+    "date": "1840s–1860s (terminal options vary by year)",
     "why_famous": "A major settler wagon corridor to the Pacific Northwest with profound effects on Native nations.",
-    "route_summary": "Representative main corridor from Independence along the Platte through South Pass, the Snake and Columbia basins to Oregon City.",
+    "route_summary": "Representative main corridor from Independence to The Dalles; before 1846 emigrants had to descend the Columbia by water toward Fort Vancouver, and afterward river travel remained an alternative to the Barlow wagon road to Oregon City.",
     "source_title": "National Park Service: historic trail GIS",
     "source_url": "https://www.nps.gov/orgs/1453/gis-data.htm",
     "geometry_confidence": "medium",
-    "geometry_note": "Collective migration over decades. This is a main-corridor place sequence; cutoffs and alternate river and wagon endings are omitted.",
+    "geometry_note": "Collective migration over decades, not one itinerary. Before 1846 emigrants had to float the Columbia from The Dalles; after the Barlow Road opened in 1846, it became a wagon alternative while water transport remained available. The branches are schematic, and individual migrant routes varied.",
     "segments": [
       {
         "mode": "wagon and foot",
@@ -741,16 +751,92 @@
             "lat": 45.6,
             "lon": -121.18,
             "note": "Columbia River decision point."
+          }
+        ]
+      },
+      {
+        "mode": "river boat / raft with portage",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/articles/000/overlanders-in-the-columbia-river-gorge-1840-1870-a-narrative-history.htm",
+        "anchors": [
+          {
+            "name": "The Dalles",
+            "lat": 45.6,
+            "lon": -121.18,
+            "note": "Pre-1846 water-route branch begins; no wagon road through the Gorge before Barlow Road opened."
+          },
+          {
+            "name": "Upper Cascades Landing / Cascade Locks",
+            "lat": 45.67,
+            "lon": -121.89,
+            "note": "Documented upper portage rendezvous area; approximate locator, not a specific landing point."
+          },
+          {
+            "name": "Cascades portage (approximate)",
+            "lat": 45.65,
+            "lon": -121.94,
+            "note": "Schematic overland portage around the rapids; Indigenous people provided this service to emigrants."
+          },
+          {
+            "name": "Lower Cascades Landing",
+            "lat": 45.64,
+            "lon": -121.98,
+            "note": "Approximate lower portage landing before water travel resumed."
+          },
+          {
+            "name": "Fort Vancouver",
+            "lat": 45.625,
+            "lon": -122.66,
+            "note": "Representative water-route destination area; historical migrants' final destinations differed."
+          }
+        ]
+      },
+      {
+        "mode": "wagon via Barlow Road (1846 onward)",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.nps.gov/articles/000/the-barlow-road.htm",
+        "anchors": [
+          {
+            "name": "The Dalles",
+            "lat": 45.6,
+            "lon": -121.18,
+            "note": "Eastern approach to the Barlow Road branch."
+          },
+          {
+            "name": "Tygh Valley",
+            "lat": 45.25,
+            "lon": -121.17,
+            "note": "NPS identifies the early Barlow Road route via Tygh Valley; approximate locality."
+          },
+          {
+            "name": "Barlow Pass, south flank of Mount Hood",
+            "lat": 45.29,
+            "lon": -121.75,
+            "note": "Approximate pass-area locator on the Barlow Road; not an exact wagon position."
+          },
+          {
+            "name": "Laurel Hill",
+            "lat": 45.28,
+            "lon": -121.74,
+            "note": "Documented steep descent on the Barlow Road; approximate landmark coordinate."
+          },
+          {
+            "name": "Eagle Creek / Philip Foster farm area",
+            "lat": 45.36,
+            "lon": -122.24,
+            "note": "NPS records the Barlow-Palmer party reached Foster's farm near Eagle Creek; approximate area."
           },
           {
             "name": "Oregon City",
             "lat": 45.36,
             "lon": -122.61,
-            "note": "Oregon terminal."
+            "note": "Representative Oregon terminal for the post-1846 overland branch."
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Oregon Trail",
+    "wiki_url": "https://en.wikipedia.org/wiki/Oregon_Trail"
   },
   {
     "id": "gandhi-salt-march",
@@ -826,7 +912,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Salt March",
+    "wiki_url": "https://en.wikipedia.org/wiki/Salt_March"
   },
   {
     "id": "burke-wills-expedition",
@@ -903,7 +991,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Burke and Wills expedition",
+    "wiki_url": "https://en.wikipedia.org/wiki/Burke_and_Wills_expedition"
   },
   {
     "id": "california-trail-migrations",
@@ -991,7 +1081,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "California Trail",
+    "wiki_url": "https://en.wikipedia.org/wiki/California_Trail"
   },
   {
     "id": "anza-colonizing-expedition",
@@ -1098,7 +1190,10 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Juan Bautista de Anza",
+    "wiki_url": "https://en.wikipedia.org/wiki/Juan_Bautista_de_Anza",
+    "wiki_relation": "related"
   },
   {
     "id": "pony-express-service",
@@ -1192,7 +1287,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Pony Express",
+    "wiki_url": "https://en.wikipedia.org/wiki/Pony_Express"
   },
   {
     "id": "mormon-pioneer-vanguard",
@@ -1281,7 +1378,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Mormon pioneers",
+    "wiki_url": "https://en.wikipedia.org/wiki/Mormon_pioneers"
   },
   {
     "id": "becknell-santa-fe-journey",
@@ -1339,165 +1438,13 @@
           }
         ]
       }
-    ]
-  },
-  {
-    "id": "coronado-expedition",
-    "rank": 14,
-    "title": "Coronado expedition",
-    "short_title": "Coronado",
-    "date": "1540–1542",
-    "why_famous": "A Spanish colonial expedition crossed the Southwest and Great Plains in a search for wealthy cities.",
-    "route_summary": "Compostela region through Culiacán and the Southwest toward Hawikuh and the Rio Grande; later journey toward Quivira in the central plains.",
-    "source_title": "National Park Service: Coronado route uncertainty",
-    "source_url": "https://www.nps.gov/coro/learn/historyculture/what-route-did-the-expedition-take.htm",
-    "geometry_confidence": "low",
-    "geometry_note": "NPS states the entire route is unknown and Arizona evidence may redraw it. This schematic only joins broad regions; Hawikuh and Quivira identifications require caution.",
-    "segments": [
-      {
-        "mode": "horse and foot",
-        "track_type": "historical-corridor",
-        "source_url": "https://www.nps.gov/coro/learn/historyculture/what-route-did-the-expedition-take.htm",
-        "anchors": [
-          {
-            "name": "Compostela region",
-            "lat": 21.24,
-            "lon": -104.9,
-            "note": "New Galicia starting region."
-          },
-          {
-            "name": "Culiacán",
-            "lat": 24.81,
-            "lon": -107.39,
-            "note": "Northbound staging region."
-          },
-          {
-            "name": "Sonora corridor",
-            "lat": 29.0,
-            "lon": -110.9,
-            "note": "Schematic desert control, not a documented camp."
-          },
-          {
-            "name": "Hawikuh region",
-            "lat": 35.07,
-            "lon": -108.91,
-            "note": "Zuni Pueblo region."
-          },
-          {
-            "name": "Rio Grande pueblos",
-            "lat": 35.14,
-            "lon": -106.57,
-            "note": "Tiguex province broadly located near Albuquerque."
-          }
-        ]
-      },
-      {
-        "mode": "horse and foot",
-        "track_type": "historical-corridor",
-        "source_url": "https://www.nps.gov/coro/learn/historyculture/what-route-did-the-expedition-take.htm",
-        "anchors": [
-          {
-            "name": "Rio Grande pueblos",
-            "lat": 35.14,
-            "lon": -106.57,
-            "note": "Eastward expedition stage."
-          },
-          {
-            "name": "Texas Panhandle",
-            "lat": 35.2,
-            "lon": -101.8,
-            "note": "Broad plains corridor only."
-          },
-          {
-            "name": "Central Kansas region",
-            "lat": 38.0,
-            "lon": -98.0,
-            "note": "Proposed Quivira region, not a fixed endpoint."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "de-soto-expedition",
-    "rank": 15,
-    "title": "De Soto expedition",
-    "short_title": "De Soto",
-    "date": "1539–1542",
-    "why_famous": "A violent Spanish colonial incursion into southeastern Native homelands, followed by the first documented European encounter with the Mississippi River.",
-    "route_summary": "Florida landing through the Southeast and across the Mississippi; the surviving party departed by river after de Soto's death.",
-    "source_title": "National Park Service: de Soto expedition",
-    "source_url": "https://www.nps.gov/liri/learn/historyculture/de-soto-expedition-1539-1542.htm",
-    "geometry_confidence": "low",
-    "geometry_note": "The expedition alignment is contested. Region anchors are a schematic of scholarly proposals, not asserted town or village identifications.",
-    "segments": [
-      {
-        "mode": "horse and foot",
-        "track_type": "historical-corridor",
-        "source_url": "https://www.nps.gov/liri/learn/historyculture/de-soto-expedition-1539-1542.htm",
-        "anchors": [
-          {
-            "name": "Tampa Bay region",
-            "lat": 27.75,
-            "lon": -82.55,
-            "note": "Florida landing region."
-          },
-          {
-            "name": "Northern Florida region",
-            "lat": 30.4,
-            "lon": -84.3,
-            "note": "Broad interior corridor."
-          },
-          {
-            "name": "Central Georgia region",
-            "lat": 32.7,
-            "lon": -83.5,
-            "note": "Broad corridor only."
-          },
-          {
-            "name": "Alabama interior",
-            "lat": 33.2,
-            "lon": -87.2,
-            "note": "Broad corridor only."
-          },
-          {
-            "name": "Mississippi River near Memphis",
-            "lat": 35.15,
-            "lon": -90.05,
-            "note": "One proposed river-crossing region; exact point unknown."
-          },
-          {
-            "name": "Arkansas interior",
-            "lat": 34.8,
-            "lon": -92.4,
-            "note": "Broad westward stage."
-          }
-        ]
-      },
-      {
-        "mode": "river boat",
-        "track_type": "historical-corridor",
-        "source_url": "https://www.nps.gov/liri/learn/historyculture/de-soto-expedition-1539-1542.htm",
-        "anchors": [
-          {
-            "name": "Lower Mississippi region",
-            "lat": 32.5,
-            "lon": -91.0,
-            "note": "Survivors' downstream escape; embarkation uncertain."
-          },
-          {
-            "name": "Mississippi delta",
-            "lat": 29.3,
-            "lon": -89.4,
-            "note": "Gulf exit corridor."
-          }
-        ]
-      }
-    ]
+    ],
+    "wiki_title": "Santa Fe Trail",
+    "wiki_url": "https://en.wikipedia.org/wiki/Santa_Fe_Trail"
   },
   {
     "id": "livingstone-crossing",
-    "rank": 16,
+    "rank": 14,
     "title": "David Livingstone's African crossing",
     "short_title": "Livingstone",
     "date": "1853–1856",
@@ -1589,11 +1536,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "David Livingstone",
+    "wiki_url": "https://en.wikipedia.org/wiki/David_Livingstone"
   },
   {
     "id": "heinrich-barth-expedition",
-    "rank": 17,
+    "rank": 15,
     "title": "Heinrich Barth expedition",
     "short_title": "Heinrich Barth",
     "date": "1850–1855",
@@ -1684,11 +1633,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Heinrich Barth",
+    "wiki_url": "https://en.wikipedia.org/wiki/Heinrich_Barth"
   },
   {
     "id": "stuart-crossing",
-    "rank": 18,
+    "rank": 16,
     "title": "John McDouall Stuart crossing",
     "short_title": "Stuart crossing",
     "date": "1861–1862",
@@ -1773,11 +1724,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "John McDouall Stuart",
+    "wiki_url": "https://en.wikipedia.org/wiki/John_McDouall_Stuart"
   },
   {
     "id": "leichhardt-first-expedition",
-    "rank": 19,
+    "rank": 17,
     "title": "Ludwig Leichhardt's first expedition",
     "short_title": "Leichhardt",
     "date": "1844–1845",
@@ -1831,11 +1784,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Ludwig Leichhardt",
+    "wiki_url": "https://en.wikipedia.org/wiki/Ludwig_Leichhardt"
   },
   {
     "id": "gertrude-bell-euphrates",
-    "rank": 20,
+    "rank": 18,
     "title": "Gertrude Bell's Euphrates survey",
     "short_title": "Gertrude Bell",
     "date": "1909",
@@ -1927,11 +1882,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Gertrude Bell",
+    "wiki_url": "https://en.wikipedia.org/wiki/Gertrude_Bell"
   },
   {
     "id": "aurel-stein-first-expedition",
-    "rank": 21,
+    "rank": 19,
     "title": "Aurel Stein's first Central Asian expedition",
     "short_title": "Aurel Stein",
     "date": "1900–1901",
@@ -1979,11 +1936,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Aurel Stein",
+    "wiki_url": "https://en.wikipedia.org/wiki/Aurel_Stein"
   },
   {
     "id": "lady-anne-blunt-arabian-journeys",
-    "rank": 22,
+    "rank": 20,
     "title": "Lady Anne Blunt's Arabian journeys",
     "short_title": "Lady Anne Blunt",
     "date": "1878–1879",
@@ -2111,11 +2070,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Anne Blunt, 15th Baroness Wentworth",
+    "wiki_url": "https://en.wikipedia.org/wiki/Anne_Blunt,_15th_Baroness_Wentworth"
   },
   {
     "id": "faxian-pilgrimage",
-    "rank": 23,
+    "rank": 21,
     "title": "Faxian pilgrimage",
     "short_title": "Faxian",
     "date": "c. 399–414",
@@ -2248,57 +2209,13 @@
           }
         ]
       }
-    ]
-  },
-  {
-    "id": "cabeza-de-vaca-traverse",
-    "rank": 24,
-    "title": "Cabeza de Vaca traverse",
-    "short_title": "Cabeza de Vaca",
-    "date": "c. 1528–1536",
-    "why_famous": "A survival account after the Narváez expedition shipwreck, involving years among Indigenous communities of the southern North American interior.",
-    "route_summary": "Gulf shipwreck near Galveston Island followed by a disputed inland traverse toward northern Mexico and Culiacán.",
-    "source_title": "Library of Congress: Cabeza de Vaca historical background",
-    "source_url": "https://blogs.loc.gov/international-collections/2019/10/pas-por-aqui-the-hispanic-heritage-in-the-united-states/",
-    "geometry_confidence": "low",
-    "geometry_note": "Proposed paths differ widely across Texas and northern Mexico. These few regional anchors are a corridor schematic, not a claim that each city was visited.",
-    "segments": [
-      {
-        "mode": "foot",
-        "track_type": "historical-corridor",
-        "source_url": "https://blogs.loc.gov/international-collections/2019/10/pas-por-aqui-the-hispanic-heritage-in-the-united-states/",
-        "anchors": [
-          {
-            "name": "Galveston Island region",
-            "lat": 29.29,
-            "lon": -94.79,
-            "note": "Approximate shipwreck and early captivity region."
-          },
-          {
-            "name": "South Texas interior",
-            "lat": 28.0,
-            "lon": -99.0,
-            "note": "Broad regional control, not an identified campsite."
-          },
-          {
-            "name": "Northern Mexico interior",
-            "lat": 27.0,
-            "lon": -105.0,
-            "note": "Broad corridor; route disputed."
-          },
-          {
-            "name": "Culiacán",
-            "lat": 24.81,
-            "lon": -107.39,
-            "note": "Spanish settlement reached in 1536."
-          }
-        ]
-      }
-    ]
+    ],
+    "wiki_title": "Faxian",
+    "wiki_url": "https://en.wikipedia.org/wiki/Faxian"
   },
   {
     "id": "camino-real-tierra-adentro",
-    "rank": 25,
+    "rank": 22,
     "title": "El Camino Real de Tierra Adentro",
     "short_title": "Camino Real",
     "date": "1598 onward",
@@ -2376,6 +2293,123 @@
           }
         ]
       }
+    ],
+    "wiki_title": "Camino Real de Tierra Adentro",
+    "wiki_url": "https://en.wikipedia.org/wiki/Camino_Real_de_Tierra_Adentro"
+  },
+  {
+    "id": "donner-party-1846",
+    "rank": 23,
+    "title": "Donner–Reed Party's 1846 journey",
+    "short_title": "Donner Party",
+    "date": "1846-04/1847-04",
+    "why_famous": "The wagon party's delay on Hastings Cutoff and winter entrapment in the Sierra Nevada made it one of the most studied tragedies of westward migration.",
+    "route_summary": "Springfield and Independence to Fort Laramie, Fort Bridger, the Wasatch and Great Salt Lake Desert, the Humboldt River, Truckee Meadows, and the main winter camp at Truckee Lake.",
+    "source_title": "PBS American Experience — mapped Donner Party itinerary",
+    "source_url": "https://www.pbs.org/wgbh/americanexperience/features/donner-map/",
+    "wiki_title": "Donner Party",
+    "wiki_url": "https://en.wikipedia.org/wiki/Donner_Party",
+    "geometry_confidence": "medium",
+    "geometry_note": "PBS supplies the dated principal stops and NPS documents Hastings Cutoff. Town centers and regional landmarks are approximate, and straight connectors do not trace wagon ruts. The line ends at the principal Truckee Lake camp; Donner-family members wintered separately at Alder Creek, and rescuers later traveled onward to Sutter's Fort.",
+    "additional_sources": [{"title":"NPS — Donner and Reed wagon train incident","url":"https://www.nps.gov/cali/learn/historyculture/donner-reed-party.htm","note":"Identifies the Hastings Cutoff and its Great Salt Lake Desert delay."},{"title":"NPS — Hastings Cutoff endpoints","url":"https://home.nps.gov/places/hastings-cutoff.htm","note":"Gives the Fort Bridger and Humboldt River corridor limits."}],
+    "segments": [{
+      "mode": "wagon and foot",
+      "track_type": "historical-corridor",
+      "source_url": "https://www.pbs.org/wgbh/americanexperience/features/donner-map/",
+      "anchors": [
+        {"name":"Springfield, Illinois","lat":39.7817,"lon":-89.6501,"note":"April 1846 departure region"},
+        {"name":"Independence, Missouri","lat":39.0911,"lon":-94.4155,"note":"May 1846 outfitting stop"},
+        {"name":"Fort Laramie","lat":42.2120,"lon":-104.5610,"note":"July 1846 documented stop"},
+        {"name":"Little Sandy River region","lat":42.4100,"lon":-109.4400,"note":"Approximate July 18 parting-of-ways region"},
+        {"name":"Fort Bridger","lat":41.3178,"lon":-110.3927,"note":"Entry to Hastings Cutoff; NPS mapped location"},
+        {"name":"Echo Canyon","lat":41.0240,"lon":-111.4400,"note":"Wasatch route region"},
+        {"name":"Big Mountain Pass","lat":40.8320,"lon":-111.6550,"note":"Approximate ascent on the party's improvised Wasatch route"},
+        {"name":"Salt Lake Valley","lat":40.7550,"lon":-111.9000,"note":"Regional anchor, not a city existing in 1846"},
+        {"name":"Great Salt Lake Desert","lat":40.6600,"lon":-113.1500,"note":"Approximate crossing region, not a fixed camp"},
+        {"name":"Pilot Peak vicinity","lat":40.5900,"lon":-114.0700,"note":"Western edge of desert crossing"},
+        {"name":"Humboldt River rejoining region","lat":40.7493,"lon":-115.9377,"note":"NPS approximate western cutoff endpoint"},
+        {"name":"Humboldt River / central Nevada","lat":40.6500,"lon":-117.2000,"note":"Broad river corridor, not an exact camp"},
+        {"name":"Truckee Meadows","lat":39.5296,"lon":-119.8138,"note":"Reno-area rest stop"},
+        {"name":"Truckee Lake winter camp","lat":39.3238,"lon":-120.2311,"note":"Main camp area near modern Donner Lake; not Sutter's Fort"}
+      ]
+    }]
+  },
+  {
+    "id": "klondike-chilkoot-1898",
+    "rank": 24,
+    "title": "Klondike Gold Rush via the Chilkoot Trail",
+    "short_title": "Chilkoot Stampede",
+    "date": "1897-1898",
+    "why_famous": "The steep Chilkoot Pass became an enduring image of the Klondike stampede; thousands then built boats on the headwater lakes and floated to Dawson City.",
+    "route_summary": "One documented stampeder corridor from Dyea over Chilkoot Pass to Lindeman and Bennett, then by lake and Yukon River boat to Dawson City.",
+    "source_title": "National Park Service — historic Chilkoot Trail",
+    "source_url": "https://home.nps.gov/klgo/learn/historyculture/historic-chilkoot-trail.htm",
+    "wiki_title": "Klondike Gold Rush",
+    "wiki_url": "https://en.wikipedia.org/wiki/Klondike_Gold_Rush",
+    "wiki_relation": "related",
+    "geometry_confidence": "medium",
+    "geometry_note": "This shows the Chilkoot variant of a collective 1897–98 migration, not one person's GPS track. The foot trail is separated from the boat journey; lake and river anchors describe navigable regions, while water channels, portages, and individual deviations are schematic.",
+    "additional_sources": [{"title":"NPS Seattle unit — route map","url":"https://home.nps.gov/klse/learn/publications.htm","note":"Maps Seattle/Dyea/Bennett/Dawson alternatives and distinguishes this route from White Pass and all-water routes."},{"title":"Parks Canada — boat building and Yukon journey","url":"https://parks.canada.ca/lhn-nhs/yt/chilkoot/culture/bateau-boat","note":"Documents the Bennett-to-Dawson boat leg."}],
+    "segments": [
+      {
+        "mode": "foot and pack trail",
+        "track_type": "historical-corridor",
+        "source_url": "https://home.nps.gov/klgo/learn/historyculture/historic-chilkoot-trail.htm",
+        "anchors": [
+          {"name":"Dyea","lat":59.5030,"lon":-135.3580,"note":"Historic port and trailhead"},
+          {"name":"Canyon City","lat":59.5580,"lon":-135.3400,"note":"Historic trail settlement; approximate location"},
+          {"name":"Sheep Camp","lat":59.6170,"lon":-135.2880,"note":"Historic ascent camp region"},
+          {"name":"Chilkoot Pass","lat":59.6870,"lon":-135.2450,"note":"International border summit"},
+          {"name":"Lindeman City / Lake Lindeman","lat":59.7850,"lon":-135.1250,"note":"Boat-building region beyond the pass"}
+        ]
+      },
+      {
+        "mode": "lake and river boat",
+        "track_type": "historical-corridor",
+        "source_url": "https://parks.canada.ca/lhn-nhs/yt/chilkoot/culture/bateau-boat",
+        "anchors": [
+          {"name":"Lake Lindeman","lat":59.7850,"lon":-135.1250,"note":"Headwater lake departure region"},
+          {"name":"Bennett Lake","lat":59.8480,"lon":-134.9980,"note":"Boat assembly and lake passage"},
+          {"name":"Tagish Lake","lat":60.3200,"lon":-134.6500,"note":"Lake corridor, not a logged position"},
+          {"name":"Marsh Lake","lat":60.5300,"lon":-134.8500,"note":"Lake corridor, not a logged position"},
+          {"name":"Whitehorse / Miles Canyon","lat":60.7200,"lon":-135.0550,"note":"Upper Yukon rapids and portage area"},
+          {"name":"Lake Laberge","lat":61.1500,"lon":-135.0900,"note":"Upper Yukon lake corridor"},
+          {"name":"Carmacks","lat":62.0900,"lon":-136.2900,"note":"Upper Yukon river settlement"},
+          {"name":"Five Finger Rapids","lat":62.2800,"lon":-136.4500,"note":"Notable river obstacle"},
+          {"name":"Fort Selkirk","lat":62.7800,"lon":-137.3700,"note":"Yukon River confluence settlement"},
+          {"name":"Dawson City","lat":64.0600,"lon":-139.4300,"note":"Klondike arrival"}
+        ]
+      }
     ]
+  },
+  {
+    "id": "trans-antarctic-crossing-1958",
+    "rank": 25,
+    "title": "First overland crossing of Antarctica",
+    "short_title": "Fuchs–Hillary Crossing",
+    "date": "1957-11-24/1958-03-02",
+    "why_famous": "Vivian Fuchs's vehicle-supported team made the first overland crossing of Antarctica via the South Pole, using depots placed by Edmund Hillary's supporting party.",
+    "route_summary": "Shackleton Base to South Ice and the South Pole, then Depot 700, Plateau Depot, Skelton Glacier and Scott Base on the Ross Sea.",
+    "source_title": "J. J. La Grange — participant account with traverse positions",
+    "source_url": "https://alp.lib.sun.ac.za/bitstream/handle/123456789/7474/the_beginning_1_taking_part_in_the_trans_antarctic_expedition.pdf?isAllowed=y&sequence=1",
+    "wiki_title": "Commonwealth Trans-Antarctic Expedition",
+    "wiki_url": "https://en.wikipedia.org/wiki/Commonwealth_Trans-Antarctic_Expedition",
+    "geometry_confidence": "high",
+    "geometry_note": "South Ice, Depot 700, Plateau Depot, Skelton Depot, and Scott Base coordinates are printed in a participant's account. Shackleton Base is a published station location; the South Pole is fixed. Lines between those sites are ice-traverse corridors, not the expedition's recorded daily stations; polar Web Mercator distorts their shape.",
+    "additional_sources": [{"title":"Australian Antarctic Data Centre — 1963 traverse map catalogue","url":"https://data.aad.gov.au/aadc/mapcat/display_map.cfm?map_id=5635","note":"Catalogues an expedition-era map of the main crossing route; hard copy only."},{"title":"Mount Everest Foundation — expedition overview","url":"https://www.mef.org.uk/expeditions/trans-antarctic","note":"Confirms the vehicle crossing, dates and Hillary's depot support."}],
+    "segments": [{
+      "mode": "tracked vehicles and sledges",
+      "track_type": "source-derived",
+      "source_url": "https://alp.lib.sun.ac.za/bitstream/handle/123456789/7474/the_beginning_1_taking_part_in_the_trans_antarctic_expedition.pdf?isAllowed=y&sequence=1",
+      "anchors": [
+        {"name":"Shackleton Base","lat":-78.0000,"lon":-37.2000,"note":"Weddell Sea departure; BAS station coordinate"},
+        {"name":"South Ice","lat":-81.9500,"lon":-28.8667,"note":"Participant account: 81°57′S, 28°52′W"},
+        {"name":"South Pole","lat":-90.0000,"lon":0.0000,"note":"Reached 19 January 1958; longitude at pole is arbitrary"},
+        {"name":"Depot 700","lat":-82.9667,"lon":146.0333,"note":"Participant account: 82°58′S, 146°02′E"},
+        {"name":"Plateau Depot","lat":-78.0333,"lon":158.4333,"note":"Participant account: 78°02′S, 158°26′E"},
+        {"name":"Skelton Depot","lat":-79.0333,"lon":162.2667,"note":"Participant account: 79°02′S, 162°16′E"},
+        {"name":"Scott Base","lat":-77.8500,"lon":166.8000,"note":"Reached 2 March 1958; participant account 77°51′S, 166°48′E"}
+      ]
+    }]
   }
 ]

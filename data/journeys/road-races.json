@@ -74,7 +74,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Bertha Benz",
+    "wiki_url": "https://en.wikipedia.org/wiki/Bertha_Benz"
   },
   {
     "id": "jackson-1903",
@@ -162,7 +164,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Horatio Nelson Jackson",
+    "wiki_url": "https://en.wikipedia.org/wiki/Horatio_Nelson_Jackson"
   },
   {
     "id": "peking-paris-1907",
@@ -250,7 +254,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Peking to Paris",
+    "wiki_url": "https://en.wikipedia.org/wiki/Peking_to_Paris"
   },
   {
     "id": "new-york-paris-1908",
@@ -442,7 +448,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "1908 New York to Paris Race",
+    "wiki_url": "https://en.wikipedia.org/wiki/1908_New_York_to_Paris_Race"
   },
   {
     "id": "moss-mille-miglia-1955",
@@ -626,7 +634,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "1955 Mille Miglia",
+    "wiki_url": "https://en.wikipedia.org/wiki/1955_Mille_Miglia"
   },
   {
     "id": "paris-dakar-1979",
@@ -669,7 +679,7 @@
             "name": "Marseille",
             "lat": 43.2965,
             "lon": 5.3698,
-            "note": "Ferry embarkation region; exact port unverified"
+            "note": "Ferry embarkation at Marseille; dock position approximated"
           },
           {
             "name": "Algiers",
@@ -782,7 +792,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "1979 Paris–Dakar Rally",
+    "wiki_url": "https://en.wikipedia.org/wiki/1979_Paris%E2%80%93Dakar_Rally"
   },
   {
     "id": "baja-1000-1967",
@@ -864,7 +876,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Baja 1000",
+    "wiki_url": "https://en.wikipedia.org/wiki/Baja_1000"
   },
   {
     "id": "carrera-panamericana-1950",
@@ -958,7 +972,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Carrera Panamericana",
+    "wiki_url": "https://en.wikipedia.org/wiki/Carrera_Panamericana"
   },
   {
     "id": "alice-ramsey-1909",
@@ -1028,7 +1044,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Alice Huyler Ramsey",
+    "wiki_url": "https://en.wikipedia.org/wiki/Alice_Huyler_Ramsey"
   },
   {
     "id": "london-brighton-1896",
@@ -1038,15 +1056,15 @@
     "date": "1896-11-14",
     "why_famous": "The celebratory motor run marked the relaxation of Britain's restrictive motoring rules.",
     "route_summary": "London to Brighton through Surrey and Sussex, including Reigate and Crawley corridors.",
-    "source_title": "Royal Automobile Club: Veteran Car Run history",
-    "source_url": "https://www.rac.co.uk/drive/news/motoring-news/rm-sothebys-veteran-car-run-goes-virtual-for-2020/",
-    "geometry_confidence": "low",
-    "geometry_note": "1896 endpoint corridor with intermediate regional anchors. Modern Veteran Car Run routing is not projected backward onto the original event.",
+    "source_title": "Motor Car Club's original 1896 route instructions (Royal Automobile Club archive)",
+    "source_url": "https://www.veterancarrun.com/news/emancipation-run-archive-the-original-itinerary-and-instructions",
+    "geometry_confidence": "medium",
+    "geometry_note": "The original 1896 instructions name Croydon, Reigate, Crawley and other intermediate places. These anchors follow that itinerary; individual road curves and vehicle positions remain approximate.",
     "segments": [
       {
         "mode": "road",
         "track_type": "historical-corridor",
-        "source_url": "https://www.rac.co.uk/drive/news/motoring-news/rm-sothebys-veteran-car-run-goes-virtual-for-2020/",
+        "source_url": "https://www.veterancarrun.com/news/emancipation-run-archive-the-original-itinerary-and-instructions",
         "anchors": [
           {
             "name": "London",
@@ -1080,7 +1098,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "London to Brighton Veteran Car Run",
+    "wiki_url": "https://en.wikipedia.org/wiki/London_to_Brighton_Veteran_Car_Run"
   },
   {
     "id": "paris-rouen-1894",
@@ -1089,44 +1109,76 @@
     "short_title": "Paris–Rouen",
     "date": "1894-07-22",
     "why_famous": "The Paris–Rouen trial is widely considered the first organized automobile contest.",
-    "route_summary": "Paris northwest to Rouen, with period roads unresolved.",
-    "source_title": "FIA: History of the first motoring competitions",
-    "source_url": "https://www.fia.com/news/blink-eye-40-years-disappeared-0",
-    "geometry_confidence": "low",
-    "geometry_note": "Endpoints and broad Seine valley corridor only; a contemporary route sheet is needed for road-level geometry.",
+    "route_summary": "Porte Maillot through Saint-Germain-en-Laye, Triel, Meulan, Mantes, Vernon, Gaillon and Pont-de-l'Arche to Rouen.",
+    "source_title": "Pierre Giffard's account of the 1894 Paris–Rouen contest (1907)",
+    "source_url": "https://motorracinghistory.com/le-concours-de-paris-rouen-1894-histoire-de-lautomobile-1907/",
+    "geometry_confidence": "medium",
+    "geometry_note": "The event organizer's published course identifies the mapped towns in order. City points approximate the historic road corridor; the individual road alignment and vehicle positions are not traced.",
     "segments": [
       {
         "mode": "road",
-        "track_type": "historical-corridor",
-        "source_url": "https://www.fia.com/news/blink-eye-40-years-disappeared-0",
+        "track_type": "source-derived",
+        "source_url": "https://motorracinghistory.com/le-concours-de-paris-rouen-1894-histoire-de-lautomobile-1907/",
         "anchors": [
           {
-            "name": "Paris",
-            "lat": 48.8566,
-            "lon": 2.3522,
-            "note": "Competition start"
+            "name": "Porte Maillot, Paris",
+            "lat": 48.8787,
+            "lon": 2.2856,
+            "note": "Documented departure region"
           },
           {
             "name": "Saint-Germain-en-Laye",
             "lat": 48.8989,
             "lon": 2.0938,
-            "note": "Northwest corridor"
+            "note": "Named in the event organizer's published course"
+          },
+          {
+            "name": "Triel-sur-Seine",
+            "lat": 48.979,
+            "lon": 2.006,
+            "note": "Named in the event organizer's published course"
+          },
+          {
+            "name": "Meulan-en-Yvelines",
+            "lat": 49.004,
+            "lon": 1.908,
+            "note": "Named in the event organizer's published course"
           },
           {
             "name": "Mantes-la-Jolie",
             "lat": 48.9903,
             "lon": 1.7206,
-            "note": "Seine valley corridor"
+            "note": "Named in the event organizer's published course"
+          },
+          {
+            "name": "Vernon",
+            "lat": 49.092,
+            "lon": 1.486,
+            "note": "Named in the event organizer's published course"
+          },
+          {
+            "name": "Gaillon",
+            "lat": 49.161,
+            "lon": 1.333,
+            "note": "Named in the event organizer's published course"
+          },
+          {
+            "name": "Pont-de-l'Arche",
+            "lat": 49.303,
+            "lon": 1.154,
+            "note": "Named in the event organizer's published course"
           },
           {
             "name": "Rouen",
             "lat": 49.4432,
             "lon": 1.0993,
-            "note": "Finish"
+            "note": "Finish at Rouen"
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Paris–Rouen (motor race)",
+    "wiki_url": "https://en.wikipedia.org/wiki/Paris%E2%80%93Rouen_(motor_race)"
   },
   {
     "id": "paris-bordeaux-paris-1895",
@@ -1135,99 +1187,161 @@
     "short_title": "Paris–Bordeaux–Paris",
     "date": "1895-06",
     "why_famous": "The endurance event helped establish long-distance motor racing and the Automobile Club de France.",
-    "route_summary": "Paris to Bordeaux and back along western French roads.",
-    "source_title": "Automobile Club de France: Foundation",
-    "source_url": "https://automobileclubdefrance.fr/histoire/fondation/",
-    "geometry_confidence": "low",
-    "geometry_note": "Directional town corridors inferred from endpoints and geography; period control list and road alignment need archival verification.",
+    "route_summary": "Paris via Versailles, Étampes, Orléans, Blois, Tours, Poitiers and Angoulême to Bordeaux; return represented along the reciprocal official course.",
+    "source_title": "La Locomotion Automobile: official Paris–Bordeaux–Paris course charts (1895)",
+    "source_url": "https://motorracinghistory.com/itineraire-officiel-de-la-course-la-locomotion-automobile-february-may-1895/",
+    "geometry_confidence": "medium",
+    "geometry_note": "The outbound anchors are named on the four contemporary official course plates. The return is drawn along that course in reverse; no individual competitor's wheel tracks are asserted, and modern street alignments are not reconstructed.",
     "segments": [
       {
         "mode": "road",
-        "track_type": "historical-corridor",
-        "source_url": "https://automobileclubdefrance.fr/histoire/fondation/",
+        "track_type": "source-derived",
+        "source_url": "https://motorracinghistory.com/itineraire-officiel-de-la-course-la-locomotion-automobile-february-may-1895/",
         "anchors": [
           {
             "name": "Paris",
             "lat": 48.8566,
             "lon": 2.3522,
-            "note": "Start"
+            "note": "Paris departure; city point represents the start region"
           },
           {
-            "name": "Chartres",
-            "lat": 48.4469,
-            "lon": 1.489,
-            "note": "Southwest corridor"
+            "name": "Versailles",
+            "lat": 48.8049,
+            "lon": 2.1204,
+            "note": "Named on the official 1895 course charts"
+          },
+          {
+            "name": "Étampes",
+            "lat": 48.4344,
+            "lon": 2.161,
+            "note": "Named on the official 1895 course charts"
+          },
+          {
+            "name": "Orléans",
+            "lat": 47.9029,
+            "lon": 1.9093,
+            "note": "Named on the official 1895 course charts"
+          },
+          {
+            "name": "Meung-sur-Loire",
+            "lat": 47.8278,
+            "lon": 1.6959,
+            "note": "Named on the official 1895 course charts"
+          },
+          {
+            "name": "Blois",
+            "lat": 47.5861,
+            "lon": 1.3359,
+            "note": "Named on the official 1895 course charts"
           },
           {
             "name": "Tours",
             "lat": 47.3941,
             "lon": 0.6848,
-            "note": "Loire corridor"
+            "note": "Named on the official 1895 course charts"
+          },
+          {
+            "name": "Les Ormes",
+            "lat": 46.97,
+            "lon": 0.606,
+            "note": "Named on the official 1895 course charts"
           },
           {
             "name": "Poitiers",
             "lat": 46.5802,
             "lon": 0.3404,
-            "note": "Southwest corridor"
+            "note": "Named on the official 1895 course charts"
           },
           {
             "name": "Angoulême",
             "lat": 45.6484,
             "lon": 0.1562,
-            "note": "Southwest corridor"
+            "note": "Named on the official 1895 course charts"
           },
           {
             "name": "Bordeaux",
             "lat": 44.8378,
             "lon": -0.5792,
-            "note": "Turnaround"
+            "note": "Documented turnaround city"
           }
         ]
       },
       {
         "mode": "road",
-        "track_type": "historical-corridor",
-        "source_url": "https://automobileclubdefrance.fr/histoire/fondation/",
+        "track_type": "waypoint-interpolation",
+        "source_url": "https://motorracinghistory.com/itineraire-officiel-de-la-course-la-locomotion-automobile-february-may-1895/",
         "anchors": [
           {
             "name": "Bordeaux",
             "lat": 44.8378,
             "lon": -0.5792,
-            "note": "Return start"
+            "note": "Reciprocal official-course corridor; individual return road position not logged"
           },
           {
             "name": "Angoulême",
             "lat": 45.6484,
             "lon": 0.1562,
-            "note": "Unverified return corridor"
+            "note": "Reciprocal official-course corridor; individual return road position not logged"
           },
           {
             "name": "Poitiers",
             "lat": 46.5802,
             "lon": 0.3404,
-            "note": "Unverified return corridor"
+            "note": "Reciprocal official-course corridor; individual return road position not logged"
+          },
+          {
+            "name": "Les Ormes",
+            "lat": 46.97,
+            "lon": 0.606,
+            "note": "Reciprocal official-course corridor; individual return road position not logged"
           },
           {
             "name": "Tours",
             "lat": 47.3941,
             "lon": 0.6848,
-            "note": "Unverified return corridor"
+            "note": "Reciprocal official-course corridor; individual return road position not logged"
           },
           {
-            "name": "Chartres",
-            "lat": 48.4469,
-            "lon": 1.489,
-            "note": "Unverified return corridor"
+            "name": "Blois",
+            "lat": 47.5861,
+            "lon": 1.3359,
+            "note": "Reciprocal official-course corridor; individual return road position not logged"
+          },
+          {
+            "name": "Meung-sur-Loire",
+            "lat": 47.8278,
+            "lon": 1.6959,
+            "note": "Reciprocal official-course corridor; individual return road position not logged"
+          },
+          {
+            "name": "Orléans",
+            "lat": 47.9029,
+            "lon": 1.9093,
+            "note": "Reciprocal official-course corridor; individual return road position not logged"
+          },
+          {
+            "name": "Étampes",
+            "lat": 48.4344,
+            "lon": 2.161,
+            "note": "Reciprocal official-course corridor; individual return road position not logged"
+          },
+          {
+            "name": "Versailles",
+            "lat": 48.8049,
+            "lon": 2.1204,
+            "note": "Reciprocal official-course corridor; individual return road position not logged"
           },
           {
             "name": "Paris",
             "lat": 48.8566,
             "lon": 2.3522,
-            "note": "Finish"
+            "note": "Paris finish"
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Paris–Bordeaux–Paris",
+    "wiki_url": "https://en.wikipedia.org/wiki/Paris%E2%80%93Bordeaux%E2%80%93Paris"
   },
   {
     "id": "french-grand-prix-1906",
@@ -1309,7 +1423,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "1906 French Grand Prix",
+    "wiki_url": "https://en.wikipedia.org/wiki/1906_French_Grand_Prix"
   },
   {
     "id": "targa-florio-1906",
@@ -1397,69 +1513,13 @@
           }
         ]
       }
-    ]
-  },
-  {
-    "id": "monte-carlo-rally-1911",
-    "rank": 15,
-    "title": "First Monte-Carlo Rally",
-    "short_title": "Monte-Carlo Rally 1911",
-    "date": "1911-01",
-    "why_famous": "The inaugural winter rally created a celebrated European motoring event.",
-    "route_summary": "Henri Rougier's Paris-to-Monte-Carlo concentration run.",
-    "source_title": "Automobile Club de Monaco: Club history",
-    "source_url": "https://acm.mc/en/automobile-club/the-club/lautomobile-club-de-monaco/history/",
-    "geometry_confidence": "low",
-    "geometry_note": "Rougier's endpoints are established, but his specific chosen roads are not documented by this source. Intermediate cities are a broad southbound corridor.",
-    "segments": [
-      {
-        "mode": "road",
-        "track_type": "historical-corridor",
-        "source_url": "https://acm.mc/en/automobile-club/the-club/lautomobile-club-de-monaco/history/",
-        "anchors": [
-          {
-            "name": "Paris",
-            "lat": 48.8566,
-            "lon": 2.3522,
-            "note": "Rougier departure"
-          },
-          {
-            "name": "Auxerre",
-            "lat": 47.7982,
-            "lon": 3.5738,
-            "note": "Possible southeast corridor, unverified stop"
-          },
-          {
-            "name": "Lyon",
-            "lat": 45.764,
-            "lon": 4.8357,
-            "note": "Possible Rhône corridor, unverified stop"
-          },
-          {
-            "name": "Avignon",
-            "lat": 43.9493,
-            "lon": 4.8055,
-            "note": "Possible Rhône corridor, unverified stop"
-          },
-          {
-            "name": "Nice",
-            "lat": 43.7102,
-            "lon": 7.262,
-            "note": "Riviera approach corridor"
-          },
-          {
-            "name": "Monte Carlo",
-            "lat": 43.7384,
-            "lon": 7.4246,
-            "note": "Finish"
-          }
-        ]
-      }
-    ]
+    ],
+    "wiki_title": "Targa Florio",
+    "wiki_url": "https://en.wikipedia.org/wiki/Targa_Florio"
   },
   {
     "id": "indianapolis-500-1911",
-    "rank": 16,
+    "rank": 15,
     "title": "First Indianapolis 500",
     "short_title": "Indy 500 1911",
     "date": "1911-05-30",
@@ -1525,11 +1585,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "1911 Indianapolis 500",
+    "wiki_url": "https://en.wikipedia.org/wiki/1911_Indianapolis_500"
   },
   {
     "id": "golden-flier-1916",
-    "rank": 17,
+    "rank": 16,
     "title": "Golden Flier suffrage tour",
     "short_title": "Golden Flier",
     "date": "1916",
@@ -1538,11 +1600,11 @@
     "source_title": "Smithsonian: Traveling for Suffrage, Part 1",
     "source_url": "https://americanhistory.si.edu/explore/stories/traveling-suffrage-part-1-two-women-cat-car-and-mission",
     "geometry_confidence": "medium",
-    "geometry_note": "Smithsonian-listed principal stops are ordered as a tour; intermediate lines are regional corridors, not precise roads.",
+    "geometry_note": "Only Smithsonian-listed principal stops are mapped, in reported order. The connectors are broad regional corridors, not the actual roads traveled.",
     "segments": [
       {
         "mode": "road",
-        "track_type": "source-derived",
+        "track_type": "historical-corridor",
         "source_url": "https://americanhistory.si.edu/explore/stories/traveling-suffrage-part-1-two-women-cat-car-and-mission",
         "anchors": [
           {
@@ -1552,28 +1614,10 @@
             "note": "Departure"
           },
           {
-            "name": "Washington, D.C.",
-            "lat": 38.9072,
-            "lon": -77.0369,
-            "note": "Eastern corridor, unverified tour stop"
-          },
-          {
             "name": "New Orleans",
             "lat": 29.9511,
             "lon": -90.0715,
             "note": "Documented principal stop"
-          },
-          {
-            "name": "Houston",
-            "lat": 29.7604,
-            "lon": -95.3698,
-            "note": "Southwest corridor, unverified tour stop"
-          },
-          {
-            "name": "El Paso",
-            "lat": 31.7619,
-            "lon": -106.485,
-            "note": "Southwest corridor, unverified tour stop"
           },
           {
             "name": "Los Angeles",
@@ -1586,12 +1630,6 @@
             "lat": 37.7749,
             "lon": -122.4194,
             "note": "Documented principal stop"
-          },
-          {
-            "name": "Portland",
-            "lat": 45.5152,
-            "lon": -122.6784,
-            "note": "Pacific northwest corridor, unverified tour stop"
           },
           {
             "name": "Seattle",
@@ -1625,11 +1663,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Women's suffrage in the United States",
+    "wiki_url": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_the_United_States"
   },
   {
     "id": "pikes-peak-1916",
-    "rank": 18,
+    "rank": 17,
     "title": "First Pikes Peak Auto Hill Climb",
     "short_title": "Pikes Peak 1916",
     "date": "1916",
@@ -1677,11 +1717,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Pikes Peak International Hill Climb",
+    "wiki_url": "https://en.wikipedia.org/wiki/Pikes_Peak_International_Hill_Climb"
   },
   {
     "id": "le-mans-1923",
-    "rank": 19,
+    "rank": 18,
     "title": "First 24 Hours of Le Mans",
     "short_title": "Le Mans 1923",
     "date": "1923-05-26/1923-05-27",
@@ -1753,11 +1795,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "1923 24 Hours of Le Mans",
+    "wiki_url": "https://en.wikipedia.org/wiki/1923_24_Hours_of_Le_Mans"
   },
   {
     "id": "mille-miglia-1927",
-    "rank": 20,
+    "rank": 19,
     "title": "First Mille Miglia",
     "short_title": "Mille Miglia 1927",
     "date": "1927-03-26/1927-03-27",
@@ -1967,11 +2011,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Mille Miglia",
+    "wiki_url": "https://en.wikipedia.org/wiki/Mille_Miglia"
   },
   {
     "id": "monaco-grand-prix-1929",
-    "rank": 21,
+    "rank": 20,
     "title": "First Monaco Grand Prix",
     "short_title": "Monaco GP 1929",
     "date": "1929-04-14",
@@ -2061,99 +2107,13 @@
           }
         ]
       }
-    ]
-  },
-  {
-    "id": "coronation-safari-1953",
-    "rank": 22,
-    "title": "East African Coronation Safari",
-    "short_title": "Safari Rally 1953",
-    "date": "1953-05-27/1953-06-01",
-    "why_famous": "The first Safari Rally became East Africa's legendary long-distance motorsport challenge.",
-    "route_summary": "Nairobi-starting field over a broad Lake Victoria region circuit through Kenya, Uganda and Tanganyika, returning to Nairobi.",
-    "source_title": "East African Safari Rally: Our history",
-    "source_url": "https://www.eastafricansafarirally.com/our-history",
-    "geometry_confidence": "low",
-    "geometry_note": "Illustrative Nairobi-start corridor. The 1953 rally used multiple starting points and individualized road choices; no specific crew's control card is available here. Inland anchors avoid drawing roads across Lake Victoria but are not asserted 1953 controls.",
-    "segments": [
-      {
-        "mode": "road",
-        "track_type": "historical-corridor",
-        "source_url": "https://www.thesafarirally.com/history/",
-        "anchors": [
-          {
-            "name": "Nairobi",
-            "lat": -1.2921,
-            "lon": 36.8219,
-            "note": "Kenyan starting point and finish"
-          },
-          {
-            "name": "Nakuru",
-            "lat": -0.3031,
-            "lon": 36.08,
-            "note": "Kenyan Lake Victoria corridor, not verified 1953 control"
-          },
-          {
-            "name": "Kisumu",
-            "lat": -0.0917,
-            "lon": 34.768,
-            "note": "Lake Victoria east shore corridor"
-          },
-          {
-            "name": "Kampala",
-            "lat": 0.3476,
-            "lon": 32.5825,
-            "note": "Ugandan capital starting-point region"
-          },
-          {
-            "name": "Masaka",
-            "lat": -0.3338,
-            "lon": 31.7341,
-            "note": "Ugandan lake corridor, not verified control"
-          },
-          {
-            "name": "Bukoba",
-            "lat": -1.3317,
-            "lon": 31.8122,
-            "note": "Tanganyikan lake corridor, not verified control"
-          },
-          {
-            "name": "Biharamulo",
-            "lat": -2.632,
-            "lon": 31.312,
-            "note": "Inland routing aid, not verified control"
-          },
-          {
-            "name": "Shinyanga",
-            "lat": -3.661,
-            "lon": 33.423,
-            "note": "Inland routing aid, not verified control"
-          },
-          {
-            "name": "Mwanza",
-            "lat": -2.5164,
-            "lon": 32.9175,
-            "note": "Tanganyikan lake corridor, not verified control"
-          },
-          {
-            "name": "Musoma",
-            "lat": -1.5,
-            "lon": 33.8,
-            "note": "East lake corridor, not verified control"
-          },
-          {
-            "name": "Nairobi",
-            "lat": -1.2921,
-            "lon": 36.8219,
-            "note": "Finish"
-          }
-        ]
-      }
-    ]
+    ],
+    "wiki_title": "1929 Monaco Grand Prix",
+    "wiki_url": "https://en.wikipedia.org/wiki/1929_Monaco_Grand_Prix"
   },
   {
     "id": "ford-le-mans-1966",
-    "rank": 23,
+    "rank": 21,
     "title": "Ford's first Le Mans win",
     "short_title": "Ford at Le Mans",
     "date": "1966-06-18/1966-06-19",
@@ -2225,11 +2185,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "1966 24 Hours of Le Mans",
+    "wiki_url": "https://en.wikipedia.org/wiki/1966_24_Hours_of_Le_Mans"
   },
   {
     "id": "london-sydney-1968",
-    "rank": 24,
+    "rank": 22,
     "title": "London–Sydney Marathon",
     "short_title": "London–Sydney 1968",
     "date": "1968-11-24/1968-12-18",
@@ -2473,11 +2435,13 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "1968 London–Sydney Marathon",
+    "wiki_url": "https://en.wikipedia.org/wiki/1968_London%E2%80%93Sydney_Marathon"
   },
   {
     "id": "london-mexico-1970",
-    "rank": 25,
+    "rank": 23,
     "title": "London–Mexico World Cup Rally",
     "short_title": "London–Mexico 1970",
     "date": "1970-04-19/1970-05-27",
@@ -2486,7 +2450,14 @@
     "source_title": "Historic Marathon Rally Group: London to Mexico World Cup Rally",
     "source_url": "https://historicmarathonrallygroup.co.uk/wcr40-website-archive/london-to-mexico-world-cup-rally/",
     "geometry_confidence": "medium",
-    "geometry_note": "Official control cities and sea transfers give the broad route; mountainous stage choices and the exact ship tracks remain unresolved.",
+    "geometry_note": "Documented control cities and sea transfers give the broad route. The Dover–Boulogne ferry is identified in a Ford rally retrospective; mountainous stage choices and ocean tracks remain unresolved.",
+    "additional_sources": [
+      {
+        "title": "Ford rally retrospective: Dover–Boulogne crossing",
+        "url": "https://www.gomw.co.uk/wp-content/uploads/2022/12/20170317080528_EscortFullPDFDoc.pdf",
+        "note": "Identifies the 1970 ferry crossing and interviews winning driver Hannu Mikkola."
+      }
+    ],
     "segments": [
       {
         "mode": "road",
@@ -2510,19 +2481,19 @@
       {
         "mode": "ship",
         "track_type": "historical-corridor",
-        "source_url": "https://historicmarathonrallygroup.co.uk/wcr40-website-archive/london-to-mexico-world-cup-rally/",
+        "source_url": "https://www.gomw.co.uk/wp-content/uploads/2022/12/20170317080528_EscortFullPDFDoc.pdf",
         "anchors": [
           {
             "name": "Dover",
             "lat": 51.1279,
             "lon": 1.3134,
-            "note": "Channel crossing, exact ferry itinerary unverified"
+            "note": "Ferry departure"
           },
           {
-            "name": "Calais",
-            "lat": 50.9513,
-            "lon": 1.8587,
-            "note": "Continental arrival"
+            "name": "Boulogne-sur-Mer",
+            "lat": 50.7252,
+            "lon": 1.6133,
+            "note": "Ferry arrival"
           }
         ]
       },
@@ -2532,9 +2503,9 @@
         "source_url": "https://historicmarathonrallygroup.co.uk/wcr40-website-archive/london-to-mexico-world-cup-rally/",
         "anchors": [
           {
-            "name": "Calais",
-            "lat": 50.9513,
-            "lon": 1.8587,
+            "name": "Boulogne-sur-Mer",
+            "lat": 50.7252,
+            "lon": 1.6133,
             "note": "European road restart"
           },
           {
@@ -2771,6 +2742,128 @@
             "lon": -99.1332,
             "note": "Finish"
           }
+        ]
+      }
+    ],
+    "wiki_title": "1970 London to Mexico World Cup Rally",
+    "wiki_url": "https://en.wikipedia.org/wiki/1970_London_to_Mexico_World_Cup_Rally"
+  },
+  {
+    "id": "army-motor-convoy-1919",
+    "rank": 24,
+    "title": "First U.S. Army transcontinental motor convoy",
+    "short_title": "Army Convoy 1919",
+    "date": "1919-07-07/1919-09-06",
+    "why_famous": "The Army's first coast-to-coast motor convoy tested whether heavy military vehicles could cross the United States; Dwight Eisenhower's experience later informed his support for improved national highways.",
+    "route_summary": "Washington's Zero Milestone to Gettysburg, then the 1919 Lincoln Highway corridor through the Midwest, Wyoming, Utah and Nevada to Oakland; the convoy ferried across San Francisco Bay to its terminus.",
+    "source_title": "Eisenhower Presidential Library — 1919 convoy daily log",
+    "source_url": "https://www.eisenhowerlibrary.gov/sites/default/files/research/online-documents/1919-convoy/daily-log.pdf",
+    "wiki_title": "1919 Motor Transport Corps convoy",
+    "wiki_url": "https://en.wikipedia.org/wiki/1919_Motor_Transport_Corps_convoy",
+    "geometry_confidence": "high",
+    "geometry_note": "Named towns and the final Oakland–San Francisco ferry come from the Army's day-by-day log. The line between them is a corridor, not a digitization of 1919 roadbeds; the convoy made local detours and the Lincoln Highway alignment changed over time.",
+    "additional_sources": [{"title":"Eisenhower Library expedition summary","url":"https://www.eisenhowerlibrary.gov/research/online-documents/1919-transcontinental-motor-convoy","note":"Confirms dates, 3,251-mile scope and Eisenhower's participation."}],
+    "segments": [
+      {
+        "mode": "road convoy",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.eisenhowerlibrary.gov/sites/default/files/research/online-documents/1919-convoy/daily-log.pdf",
+        "anchors": [
+          {"name":"Zero Milestone, Washington, DC","lat":38.8933,"lon":-77.0330,"note":"July 7 ceremonial departure"},
+          {"name":"Frederick, Maryland","lat":39.4143,"lon":-77.4105,"note":"July 7 camp"},
+          {"name":"Gettysburg, Pennsylvania","lat":39.8309,"lon":-77.2311,"note":"July 8; Lincoln Highway approach"},
+          {"name":"Chambersburg","lat":39.9376,"lon":-77.6611,"note":"July 8 camp"},
+          {"name":"Bedford","lat":40.0187,"lon":-78.5039,"note":"July 9 camp"},
+          {"name":"Greensburg","lat":40.3015,"lon":-79.5389,"note":"July 10 camp"},
+          {"name":"Sewickley / Pittsburgh","lat":40.5365,"lon":-80.1848,"note":"July 11 camp near Pittsburgh"},
+          {"name":"East Palestine","lat":40.8340,"lon":-80.5404,"note":"July 12 camp"},
+          {"name":"Bucyrus","lat":40.8084,"lon":-82.9755,"note":"Ohio log stop"},
+          {"name":"Delphos","lat":40.8434,"lon":-84.3416,"note":"Ohio log stop"},
+          {"name":"Fort Wayne","lat":41.0793,"lon":-85.1394,"note":"Indiana log stop"},
+          {"name":"South Bend","lat":41.6764,"lon":-86.2520,"note":"Indiana log stop"},
+          {"name":"DeKalb","lat":41.9295,"lon":-88.7504,"note":"Illinois log stop"},
+          {"name":"Clinton, Iowa","lat":41.8445,"lon":-90.1887,"note":"Iowa log stop"},
+          {"name":"Marshalltown","lat":42.0495,"lon":-92.9080,"note":"Iowa log stop"},
+          {"name":"Denison","lat":42.0178,"lon":-95.3553,"note":"Iowa log stop"},
+          {"name":"Omaha","lat":41.2565,"lon":-95.9345,"note":"July 29 log stop"},
+          {"name":"Grand Island","lat":40.9250,"lon":-98.3420,"note":"Nebraska log stop"},
+          {"name":"North Platte","lat":41.1239,"lon":-100.7654,"note":"Nebraska log stop"},
+          {"name":"Big Springs","lat":41.0610,"lon":-102.0730,"note":"Nebraska log stop"},
+          {"name":"Cheyenne","lat":41.1400,"lon":-104.8202,"note":"Wyoming log stop"},
+          {"name":"Laramie","lat":41.3114,"lon":-105.5911,"note":"Wyoming log stop"},
+          {"name":"Rawlins","lat":41.7911,"lon":-107.2387,"note":"Wyoming log stop"},
+          {"name":"Green River","lat":41.5286,"lon":-109.4662,"note":"Wyoming log stop"},
+          {"name":"Fort Bridger","lat":41.3178,"lon":-110.3927,"note":"Wyoming log stop"},
+          {"name":"Salt Lake City","lat":40.7608,"lon":-111.8910,"note":"August 19 log stop"},
+          {"name":"Great Salt Lake Desert","lat":40.7000,"lon":-113.4000,"note":"Approximate desert crossing region, not a logged fix"},
+          {"name":"Ely","lat":39.2474,"lon":-114.8886,"note":"Nevada log stop"},
+          {"name":"Austin","lat":39.4930,"lon":-117.0680,"note":"Nevada log stop"},
+          {"name":"Fallon","lat":39.4740,"lon":-118.7770,"note":"Nevada log stop"},
+          {"name":"Carson City","lat":39.1638,"lon":-119.7674,"note":"August 30–31 camp"},
+          {"name":"Meyers / Lake Tahoe","lat":38.8580,"lon":-120.0130,"note":"September 1 camp after Kingsbury Grade"},
+          {"name":"Placerville","lat":38.7296,"lon":-120.7985,"note":"September 2 camp"},
+          {"name":"Sacramento","lat":38.5816,"lon":-121.4944,"note":"September 3 camp"},
+          {"name":"Stockton","lat":37.9577,"lon":-121.2908,"note":"September 4 camp"},
+          {"name":"Oakland","lat":37.8044,"lon":-122.2712,"note":"September 5 camp and ferry embarkation"}
+        ]
+      },
+      {
+        "mode": "ferry",
+        "track_type": "source-derived",
+        "source_url": "https://www.eisenhowerlibrary.gov/sites/default/files/research/online-documents/1919-convoy/daily-log.pdf",
+        "anchors": [
+          {"name":"Oakland","lat":37.8044,"lon":-122.2712,"note":"September 6 ferry departure; exact terminal approximated"},
+          {"name":"San Francisco / Lincoln Park","lat":37.7817,"lon":-122.5033,"note":"Parade ended at the Lincoln Highway western milestone"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gordon-bennett-1903",
+    "rank": 25,
+    "title": "1903 Gordon Bennett Cup — Irish road circuit",
+    "short_title": "Gordon Bennett 1903",
+    "date": "1903-07-02",
+    "why_famous": "This international automobile race made the closed public-road circuit a model for early Grand Prix racing; Camille Jenatzy won for Germany in a Mercedes.",
+    "route_summary": "The figure-eight Athy circuit combined an eastern loop through Castledermot and Carlow with a western loop through Kildare, Monasterevin, the Heath and Stradbally.",
+    "source_title": "Into Kildare — historic Gordon Bennett route brochure",
+    "source_url": "https://intokildare.ie/wp-content/uploads/2021/06/Gordon-Bennett-brochure.pdf",
+    "wiki_title": "1903 Gordon Bennett Cup",
+    "wiki_url": "https://en.wikipedia.org/wiki/1903_Gordon_Bennett_Cup",
+    "geometry_confidence": "medium",
+    "geometry_note": "The two documented loops are drawn once each; the 1903 race repeated them (three eastern and four western laps). Town and control coordinates approximate the historic road course, not present-day driving directions. Ballyshannon is the Kildare crossroads, not the Donegal town.",
+    "additional_sources": [{"title":"Contemporary course map reproduced by motoring historians","url":"https://expo.fsfi.it/ectp2019/exhibits/35SpielerNW94MjdM.pdf","note":"Period route map shows the figure-eight control sequence."}],
+    "segments": [
+      {
+        "mode": "closed public-road race — eastern loop",
+        "track_type": "historical-corridor",
+        "source_url": "https://intokildare.ie/wp-content/uploads/2021/06/Gordon-Bennett-brochure.pdf",
+        "anchors": [
+          {"name":"Ballyshannon Crossroads start / finish","lat":53.0853,"lon":-6.8200,"note":"Historic Kildare start crossroads"},
+          {"name":"Old Kilcullen","lat":53.1220,"lon":-6.7660,"note":"Northern turn vicinity"},
+          {"name":"Ballitore","lat":53.0040,"lon":-6.8240,"note":"Eastern loop village"},
+          {"name":"Castledermot","lat":52.9070,"lon":-6.8420,"note":"Race control"},
+          {"name":"Carlow","lat":52.8380,"lon":-6.9340,"note":"Race control"},
+          {"name":"Athy","lat":52.9920,"lon":-6.9800,"note":"Race control"},
+          {"name":"Ballyshannon Crossroads","lat":53.0853,"lon":-6.8200,"note":"Loop closure"}
+        ]
+      },
+      {
+        "mode": "closed public-road race — western loop",
+        "track_type": "historical-corridor",
+        "source_url": "https://intokildare.ie/wp-content/uploads/2021/06/Gordon-Bennett-brochure.pdf",
+        "anchors": [
+          {"name":"Ballyshannon Crossroads","lat":53.0853,"lon":-6.8200,"note":"Western loop departure"},
+          {"name":"Kilcullen / Curragh turn","lat":53.1300,"lon":-6.7460,"note":"Northern turn vicinity"},
+          {"name":"The Curragh","lat":53.1530,"lon":-6.8370,"note":"Western loop corridor"},
+          {"name":"Kildare","lat":53.1560,"lon":-6.9100,"note":"Race control"},
+          {"name":"Monasterevin","lat":53.1410,"lon":-7.0630,"note":"Race control"},
+          {"name":"Ballybrittas","lat":53.1090,"lon":-7.1370,"note":"Western loop corridor"},
+          {"name":"The Heath / Maryborough turn","lat":53.0700,"lon":-7.2450,"note":"Approximate western turn near Portlaoise, documented in route brochure"},
+          {"name":"Stradbally","lat":53.0170,"lon":-7.1530,"note":"Race control"},
+          {"name":"Ballylynan","lat":52.9440,"lon":-7.0430,"note":"Approach to Athy"},
+          {"name":"Athy","lat":52.9920,"lon":-6.9800,"note":"Race control"},
+          {"name":"Ballyshannon Crossroads","lat":53.0853,"lon":-6.8200,"note":"Loop closure"}
         ]
       }
     ]

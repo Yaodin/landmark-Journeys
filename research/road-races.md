@@ -2,6 +2,8 @@
 
 Ranked for historical recognition, geographic variety, and route recoverability. `High` means an event-specific course or named road can probably be traced; `Medium` means historical waypoints are established but the road alignment or individual driver's path needs more work; `Low` means only a defensible corridor can currently be shown. Race routes must be tied to an **edition and participant**, since annual courses and individual choices vary. These are research candidates, not finished geometries.
 
+The 1911 Monte-Carlo Rally and 1953 Coronation Safari remain historical research candidates, but were removed from the atlas because the illustrated participant-specific routes could not be verified. The active 25 instead include the [1919 Army motor convoy's day-by-day logged route](https://www.eisenhowerlibrary.gov/sites/default/files/research/online-documents/1919-convoy/daily-log.pdf) and the [mapped 1903 Gordon Bennett Cup circuit](https://intokildare.ie/wp-content/uploads/2021/06/Gordon-Bennett-brochure.pdf). This table preserves the original candidate shortlist; the canonical active selections, evidence, and geometries are in `data/journeys/road-races.json` and the [geometry audit](geometry-audit.md).
+
 | # | Journey and date | Driver, vehicle, or event | Why it matters | Mappable route and qualification | Geometry | Source |
 |---:|---|---|---|---|---|---|
 | 1 | Bertha Benz long-distance drive, 1888 | Bertha Benz and sons, Patent-Motorwagen No. 3 | First long-distance automobile journey proved the car practical. | Mannheim–Pforzheim–Mannheim via documented historic towns; the return route differed and roads were unpaved. | Medium | [Mercedes-Benz history](https://group.mercedes-benz.com/company/tradition/company-history/1885-1886.html) |

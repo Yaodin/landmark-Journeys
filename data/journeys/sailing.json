@@ -6,16 +6,23 @@
     "short_title": "Magellan–Elcano",
     "date": "1519–1522",
     "why_famous": "The first completed circumnavigation of Earth.",
-    "route_summary": "Sanlúcar de Barrameda via South America, the Strait of Magellan, tropical Pacific, Philippines, Moluccas, Timor and Cape of Good Hope back to Spain.",
-    "source_title": "Ohio State University: Magellan's circumnavigation",
-    "source_url": "https://origins.osu.edu/milestones/magellan-circumnavigation-earth?language_content_entity=en",
+    "route_summary": "Sanlúcar de Barrameda via South America, the Strait of Magellan, tropical Pacific, Guam, Cebu, Bohol, Mindanao, Palawan, Brunei, Sulu/Celebes and the Moluccas, Timor and Cape of Good Hope back to Spain.",
+    "source_title": "National Historical Commission of the Philippines — First Circumnavigation route; Pigafetta chronology",
+    "source_url": "https://philhistoricsites.nhcp.gov.ph/labels/first-circumnavigation-of-the-world-in-the-ph/page/2/",
     "geometry_confidence": "medium",
-    "geometry_note": "Named ports are documented. Four broad Pacific sea controls keep the route in the historically supported west-northwest corridor; they are cartographic interpolation, not ship positions or claimed island sightings.",
+    "geometry_note": "Named ports are documented. The post-Cebu sequence follows the NHCP's Bohol–Mindanao–Mapun/Cagayan–Palawan–Brunei–Jolo–Celebes island chain before Tidore; points are approximate island/port locators, not recovered sailing fixes. Broad Pacific controls remain cartographic interpolation.",
+    "additional_sources": [
+      {
+        "title": "Pigafetta's account of Magellan's voyage",
+        "url": "https://en.wikisource.org/wiki/The_First_Voyage_Round_the_World/Pigafetta%27s_Account_of_Magellan%27s_Voyage",
+        "note": "Primary chronology supports the western Philippine detour, Brunei, later island sightings, and return toward the Moluccas; some island identifications remain uncertain."
+      }
+    ],
     "segments": [
       {
         "mode": "sailing",
         "track_type": "historical-corridor",
-        "source_url": "https://origins.osu.edu/milestones/magellan-circumnavigation-earth?language_content_entity=en",
+        "source_url": "https://philhistoricsites.nhcp.gov.ph/labels/first-circumnavigation-of-the-world-in-the-ph/page/2/",
         "anchors": [
           {
             "name": "Sanlúcar de Barrameda",
@@ -102,16 +109,70 @@
             "note": "Philippine landfall."
           },
           {
-            "name": "Sea south of Cebu",
-            "lat": 9.0,
-            "lon": 124.0,
-            "note": "Interpolated sea control; not a recorded ship position."
+            "name": "Bohol",
+            "lat": 9.85,
+            "lon": 124.1,
+            "note": "NHCP-listed island in the documented post-Cebu sequence; approximate island locator."
           },
           {
-            "name": "Philippine Sea east of Mindanao",
+            "name": "Mindanao",
             "lat": 8.0,
-            "lon": 129.0,
-            "note": "Interpolated offshore control; not a recorded ship position."
+            "lon": 125.0,
+            "note": "NHCP-listed island; approximate north-coast sector, not a log fix."
+          },
+          {
+            "name": "Mapun / Cagayan Islands",
+            "lat": 7.0,
+            "lon": 118.5,
+            "note": "NHCP-listed island group; approximate locator, not an exact anchorage."
+          },
+          {
+            "name": "Palawan",
+            "lat": 9.0,
+            "lon": 118.7,
+            "note": "NHCP-listed island; approximate coastal locator, not a logged position."
+          },
+          {
+            "name": "Brunei, Borneo",
+            "lat": 5.0,
+            "lon": 115.0,
+            "note": "NHCP-listed route stop; approximate coast locator."
+          },
+          {
+            "name": "Northern Borneo coast (approximate return passage)",
+            "lat": 7.5,
+            "lon": 117.5,
+            "note": "Approximate offshore/costal control for the return from Brunei; not a claimed port or stop."
+          },
+          {
+            "name": "Cagayan / Cipit passage (island identification uncertain)",
+            "lat": 7.0,
+            "lon": 118.7,
+            "note": "Primary narrative names a Cagayan/Cipit corridor; broad locator only, identification remains uncertain."
+          },
+          {
+            "name": "Jolo / Basilan sighting area",
+            "lat": 6.05,
+            "lon": 121.0,
+            "note": "Reported island sightings, not a documented landfall; approximate locator."
+          },
+          {
+            "name": "Southwest Mindanao coast",
+            "lat": 6.0,
+            "lon": 124.8,
+            "note": "Approximate passage control from Pigafetta's account; not a logged fix."
+          },
+          {
+            "name": "Sarangani anchorage area",
+            "lat": 5.4,
+            "lon": 125.2,
+            "note": "Approximate anchorage locator; coordinate is not a recovered historical fix."
+          },
+          {
+            "name": "Sanghir passage",
+            "lat": 3.6,
+            "lon": 125.5,
+            "note": "Approximate offshore passage control toward the Moluccas; not a landfall or exact ship position."
           },
           {
             "name": "Molucca Sea",
@@ -157,7 +218,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Magellan expedition",
+    "wiki_url": "https://en.wikipedia.org/wiki/Magellan_expedition"
   },
   {
     "id": "columbus-first-voyage",
@@ -240,7 +303,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Voyages of Christopher Columbus",
+    "wiki_url": "https://en.wikipedia.org/wiki/Voyages_of_Christopher_Columbus"
   },
   {
     "id": "cook-endeavour",
@@ -250,15 +315,15 @@
     "date": "1768–1771",
     "why_famous": "Observed the transit of Venus and charted New Zealand and Australia's east coast for Britain.",
     "route_summary": "Plymouth through Cape Horn to Tahiti, New Zealand and eastern Australia, then Batavia and home via the Cape of Good Hope.",
-    "source_title": "Royal Museums Greenwich: exploration research guide",
-    "source_url": "https://www.rmg.co.uk/collections/research-guides/research-guide-q1-exploration-discovery",
-    "geometry_confidence": "high",
-    "geometry_note": "Ports and coast sectors are supported by logs and charts; this file is a coarse waypoint interpretation, not a digitized log.",
+    "source_title": "National Library of Australia — Cook's Endeavour journal",
+    "source_url": "https://www.library.gov.au/research/research-guides-0/captain-cooks-endeavour-journal",
+    "geometry_confidence": "medium",
+    "geometry_note": "The voyage journal and NZ History account support the two-island circuit and its sequence. Named coastal controls replace the former across-land chords; they are mapped landmarks, not a digitized ship's track. Offshore portions remain interpolated.",
     "segments": [
       {
         "mode": "sailing",
-        "track_type": "source-derived",
-        "source_url": "https://www.rmg.co.uk/collections/research-guides/research-guide-q1-exploration-discovery",
+        "track_type": "historical-corridor",
+        "source_url": "https://nzhistory.govt.nz/page/european-voyaging-and-discovery",
         "anchors": [
           {
             "name": "Plymouth",
@@ -306,25 +371,127 @@
             "name": "Tolaga Bay, New Zealand",
             "lat": -38.37,
             "lon": 178.32,
-            "note": "Representative New Zealand east-coast charting anchor."
+            "note": "First New Zealand landing region; approximate bay point."
           },
           {
-            "name": "Cape Palliser",
-            "lat": -41.61,
-            "lon": 175.29,
-            "note": "Named headland used as coast-routing control, not a logged fix."
+            "name": "Cape Turnagain",
+            "lat": -40.46,
+            "lon": 176.19,
+            "note": "Documented coastline or headland; mapped geographic point, not a logged ship fix"
           },
           {
-            "name": "Cook Strait",
-            "lat": -41.25,
-            "lon": 174.6,
-            "note": "Named passage between the main islands."
+            "name": "Tolaga Bay, New Zealand (northbound return)",
+            "lat": -38.37,
+            "lon": 178.32,
+            "note": "Cook retraced north after reaching Cape Turnagain."
+          },
+          {
+            "name": "East Cape",
+            "lat": -37.69,
+            "lon": 178.55,
+            "note": "Documented coastline or headland; mapped geographic point, not a logged ship fix"
+          },
+          {
+            "name": "Cape Colville",
+            "lat": -36.43,
+            "lon": 175.31,
+            "note": "Documented coastline or headland; mapped geographic point, not a logged ship fix"
+          },
+          {
+            "name": "Cape Brett",
+            "lat": -35.17,
+            "lon": 174.33,
+            "note": "Documented coastline or headland; mapped geographic point, not a logged ship fix"
+          },
+          {
+            "name": "North Cape, New Zealand",
+            "lat": -34.42,
+            "lon": 172.68,
+            "note": "Documented coastline or headland; mapped geographic point, not a logged ship fix"
+          },
+          {
+            "name": "Cape Maria van Diemen",
+            "lat": -34.53,
+            "lon": 172.68,
+            "note": "Documented coastline or headland; mapped geographic point, not a logged ship fix"
+          },
+          {
+            "name": "Hokianga coast",
+            "lat": -35.52,
+            "lon": 173.5,
+            "note": "West coast sector; approximate coastal waypoint."
+          },
+          {
+            "name": "Cape Egmont",
+            "lat": -39.28,
+            "lon": 173.75,
+            "note": "Documented coastline or headland; mapped geographic point, not a logged ship fix"
+          },
+          {
+            "name": "Queen Charlotte Sound",
+            "lat": -41.12,
+            "lon": 174.15,
+            "note": "South Island circuit entry; named sound, approximate anchorage."
+          },
+          {
+            "name": "Cape Campbell",
+            "lat": -41.73,
+            "lon": 174.26,
+            "note": "Documented coastline or headland; mapped geographic point, not a logged ship fix"
+          },
+          {
+            "name": "Kaikōura Peninsula",
+            "lat": -42.42,
+            "lon": 173.7,
+            "note": "Documented coastline or headland; mapped geographic point, not a logged ship fix"
+          },
+          {
+            "name": "Banks Peninsula",
+            "lat": -43.9,
+            "lon": 172.9,
+            "note": "Documented coastline or headland; mapped geographic point, not a logged ship fix"
+          },
+          {
+            "name": "Otago coast",
+            "lat": -45.9,
+            "lon": 170.7,
+            "note": "Approximate coastline control to route around the South Island; not a logged fix."
+          },
+          {
+            "name": "Nugget Point, Otago",
+            "lat": -46.45,
+            "lon": 169.82,
+            "note": "Named coastal landmark used as an approximate coastline control, not a logged fix."
+          },
+          {
+            "name": "South Cape, Rakiura (Stewart Island)",
+            "lat": -47.28,
+            "lon": 167.53,
+            "note": "Documented coastline or headland; mapped geographic point, not a logged ship fix"
+          },
+          {
+            "name": "Puysegur Point",
+            "lat": -46.15,
+            "lon": 166.64,
+            "note": "Documented coastline or headland; mapped geographic point, not a logged ship fix"
+          },
+          {
+            "name": "Milford Sound",
+            "lat": -44.67,
+            "lon": 167.93,
+            "note": "Documented coastline or headland; mapped geographic point, not a logged ship fix"
+          },
+          {
+            "name": "Westport coast",
+            "lat": -41.75,
+            "lon": 171.6,
+            "note": "West coast sector; approximate coastal waypoint."
           },
           {
             "name": "Cape Farewell, New Zealand",
             "lat": -40.5,
             "lon": 172.68,
-            "note": "New Zealand circuit anchor."
+            "note": "Documented coastline or headland; mapped geographic point, not a logged ship fix"
           },
           {
             "name": "Botany Bay",
@@ -430,7 +597,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "First voyage of James Cook",
+    "wiki_url": "https://en.wikipedia.org/wiki/First_voyage_of_James_Cook"
   },
   {
     "id": "beagle-second-voyage",
@@ -638,7 +807,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Second voyage of HMS Beagle",
+    "wiki_url": "https://en.wikipedia.org/wiki/Second_voyage_of_HMS_Beagle"
   },
   {
     "id": "mayflower",
@@ -690,7 +861,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Mayflower",
+    "wiki_url": "https://en.wikipedia.org/wiki/Mayflower"
   },
   {
     "id": "vasco-da-gama-india",
@@ -863,7 +1036,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Vasco da Gama",
+    "wiki_url": "https://en.wikipedia.org/wiki/Vasco_da_Gama"
   },
   {
     "id": "drake-circumnavigation",
@@ -875,13 +1050,13 @@
     "route_summary": "Plymouth via South America and the Strait of Magellan, the Pacific coast, the Moluccas and Cape of Good Hope back to England.",
     "source_title": "Royal Museums Greenwich: Drake route chart",
     "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-544048",
-    "geometry_confidence": "medium",
-    "geometry_note": "Pacific landfall at New Albion is disputed and is omitted; mapped places are named passage regions, not a complete chart trace.",
+    "geometry_confidence": "low",
+    "geometry_note": "The California visit is documented, but the precise New Albion harbor remains disputed; the point marks the broad Point Reyes vicinity, not a settled anchorage. The voyage account documents a subsequent westward Pacific crossing, but intermediate ocean positions are not established and the long leg is schematic.",
     "segments": [
       {
         "mode": "sailing",
         "track_type": "historical-corridor",
-        "source_url": "https://www.rmg.co.uk/collections/objects/rmgc-object-544048",
+        "source_url": "https://www.nps.gov/pore/learn/historyculture/people_europeanexplorers_francisdrake.htm",
         "anchors": [
           {
             "name": "Plymouth",
@@ -974,6 +1149,48 @@
             "note": "Mexico coast raid region."
           },
           {
+            "name": "Acapulco coast (approximate passage control)",
+            "lat": 16.85,
+            "lon": -99.91,
+            "note": "Coastal control for the northbound New Spain shoreline leg; not a documented landing."
+          },
+          {
+            "name": "Cabo San Lucas (approximate passage control)",
+            "lat": 22.88,
+            "lon": -109.91,
+            "note": "Coastal control for the northbound shoreline leg; not a documented landing or exact track position."
+          },
+          {
+            "name": "Offshore southern California (approximate passage control)",
+            "lat": 32.5,
+            "lon": -118.0,
+            "note": "Offshore control on the northbound California approach; interpolated, not a logged fix."
+          },
+          {
+            "name": "New Albion coast, Point Reyes vicinity (harbor disputed)",
+            "lat": 38.03,
+            "lon": -122.94,
+            "note": "NPS confirms a California landfall but notes several proposed harbors near Point Reyes; regional point only, not a resolved anchorage."
+          },
+          {
+            "name": "Northeast Pacific west of California",
+            "lat": 33.0,
+            "lon": -140.0,
+            "note": "Interpolated offshore control to keep the schematic Pacific crossing over water; not a recorded position."
+          },
+          {
+            "name": "Central North Pacific",
+            "lat": 20.0,
+            "lon": -165.0,
+            "note": "Interpolated offshore control; no exact track position claimed."
+          },
+          {
+            "name": "Western North Pacific",
+            "lat": 8.0,
+            "lon": 175.0,
+            "note": "Interpolated offshore control; no exact track position claimed."
+          },
+          {
             "name": "Ternate",
             "lat": 0.8,
             "lon": 127.38,
@@ -1023,7 +1240,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Francis Drake",
+    "wiki_url": "https://en.wikipedia.org/wiki/Francis_Drake"
   },
   {
     "id": "endurance-james-caird",
@@ -1126,7 +1345,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Imperial Trans-Antarctic Expedition",
+    "wiki_url": "https://en.wikipedia.org/wiki/Imperial_Trans-Antarctic_Expedition"
   },
   {
     "id": "bligh-bounty-launch",
@@ -1172,7 +1393,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Mutiny on the Bounty",
+    "wiki_url": "https://en.wikipedia.org/wiki/Mutiny_on_the_Bounty"
   },
   {
     "id": "slocum-spray",
@@ -1362,7 +1585,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Joshua Slocum",
+    "wiki_url": "https://en.wikipedia.org/wiki/Joshua_Slocum"
   },
   {
     "id": "franklin-final-expedition",
@@ -1481,7 +1706,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Franklin's lost expedition",
+    "wiki_url": "https://en.wikipedia.org/wiki/Franklin's_lost_expedition"
   },
   {
     "id": "kon-tiki",
@@ -1515,7 +1742,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Kon-Tiki expedition",
+    "wiki_url": "https://en.wikipedia.org/wiki/Kon-Tiki_expedition"
   },
   {
     "id": "amundsen-gjoa",
@@ -1675,7 +1904,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Gjøa",
+    "wiki_url": "https://en.wikipedia.org/wiki/Gj%C3%B8a"
   },
   {
     "id": "zheng-he-first-voyage",
@@ -1866,7 +2097,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Ming treasure voyages",
+    "wiki_url": "https://en.wikipedia.org/wiki/Ming_treasure_voyages"
   },
   {
     "id": "hokulea-tahiti",
@@ -1919,7 +2152,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Hōkūleʻa",
+    "wiki_url": "https://en.wikipedia.org/wiki/H%C5%8Dk%C5%ABle%CA%BBa"
   },
   {
     "id": "first-fleet",
@@ -2019,7 +2254,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "First Fleet",
+    "wiki_url": "https://en.wikipedia.org/wiki/First_Fleet"
   },
   {
     "id": "nansen-fram",
@@ -2139,7 +2376,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Nansen's Fram expedition",
+    "wiki_url": "https://en.wikipedia.org/wiki/Nansen%27s_Fram_expedition"
   },
   {
     "id": "taeping-tea-race",
@@ -2227,7 +2466,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Great Tea Race of 1866",
+    "wiki_url": "https://en.wikipedia.org/wiki/Great_Tea_Race_of_1866"
   },
   {
     "id": "tasman-first-voyage",
@@ -2237,15 +2478,15 @@
     "date": "1642–1643",
     "why_famous": "First recorded European charting of Tasmania and New Zealand.",
     "route_summary": "Batavia via Mauritius and southern Indian Ocean to Tasmania, New Zealand, Tonga and Fiji, returning through Southeast Asia.",
-    "source_title": "National Library of Australia: Abel Tasman",
-    "source_url": "https://help.nla.gov.au/sites/default/files/blogs/m_1558_abel_tasman.pdf",
-    "geometry_confidence": "high",
-    "geometry_note": "Voyage journals and charts support major island and coastal stops; mapped line is still a coarse interpretation.",
+    "source_title": "New Zealand History — Abel Tasman's voyage",
+    "source_url": "https://nzhistory.govt.nz/people/abel-tasman",
+    "geometry_confidence": "medium",
+    "geometry_note": "NZ History records the west-coast New Zealand approach, Murderers Bay, Manawatū coast, Cape Maria van Diemen, Three Kings and Tonga sequence. Coast points are named geographic anchors, not ship fixes; added Southern Ocean controls are explicitly interpolated. The displayed route remains schematic.",
     "segments": [
       {
         "mode": "sailing",
-        "track_type": "source-derived",
-        "source_url": "https://help.nla.gov.au/sites/default/files/blogs/m_1558_abel_tasman.pdf",
+        "track_type": "historical-corridor",
+        "source_url": "https://nzhistory.govt.nz/people/abel-tasman",
         "anchors": [
           {
             "name": "Batavia",
@@ -2263,19 +2504,67 @@
             "name": "West coast Tasmania",
             "lat": -42.5,
             "lon": 145.5,
-            "note": "Van Diemen's Land sighting region."
+            "note": "Land sighting region; approximate coast point."
           },
           {
-            "name": "Golden Bay, New Zealand",
-            "lat": -40.75,
-            "lon": 172.8,
-            "note": "South Island contact region."
+            "name": "Southern Ocean south of Tasmania",
+            "lat": -44.5,
+            "lon": 151.0,
+            "note": "Interpolated offshore control; no recorded position claimed."
+          },
+          {
+            "name": "Southern Tasman Sea",
+            "lat": -44.0,
+            "lon": 162.0,
+            "note": "Interpolated offshore control; no recorded position claimed."
+          },
+          {
+            "name": "West coast South Island sighting region",
+            "lat": -43.7,
+            "lon": 169.0,
+            "note": "Approximate coastal sighting sector, not a logged fix."
+          },
+          {
+            "name": "Wharewharangi Bay, Golden Bay",
+            "lat": -40.81,
+            "lon": 172.82,
+            "note": "Documented anchorage region; approximate bay point."
+          },
+          {
+            "name": "Manawatū coast",
+            "lat": -40.47,
+            "lon": 175.25,
+            "note": "Documented North Island coast sector; approximate point."
+          },
+          {
+            "name": "Shelter east of Stephens and D'Urville Islands",
+            "lat": -40.72,
+            "lon": 174.15,
+            "note": "Approximate sheltered area identified in the NZ History account; not a recorded ship fix."
+          },
+          {
+            "name": "Cape Egmont coastal control",
+            "lat": -39.28,
+            "lon": 173.75,
+            "note": "Geographic coastline control for the schematic Cook Strait/west-coast passage; not a documented 1643 stop or ship fix."
+          },
+          {
+            "name": "Cape Maria van Diemen",
+            "lat": -34.53,
+            "lon": 172.68,
+            "note": "Documented coastline or headland; mapped geographic point, not a logged ship fix"
+          },
+          {
+            "name": "Three Kings Islands",
+            "lat": -34.16,
+            "lon": 172.13,
+            "note": "Documented approach before the north-east course to Tonga; approximate island-group point."
           },
           {
             "name": "Tonga",
             "lat": -20.0,
             "lon": -175.2,
-            "note": "Archipelago stop region."
+            "note": "Archipelago stop region; NZ History dates arrival to 21 January 1643."
           },
           {
             "name": "Fiji",
@@ -2315,7 +2604,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Abel Tasman",
+    "wiki_url": "https://en.wikipedia.org/wiki/Abel_Tasman"
   },
   {
     "id": "flinders-investigator",
@@ -2565,7 +2856,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Matthew Flinders",
+    "wiki_url": "https://en.wikipedia.org/wiki/Matthew_Flinders"
   },
   {
     "id": "chichester-gipsy-moth",
@@ -2708,7 +3001,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Francis Chichester",
+    "wiki_url": "https://en.wikipedia.org/wiki/Francis_Chichester"
   },
   {
     "id": "knox-johnston-suhaili",
@@ -2832,7 +3127,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Robin Knox-Johnston",
+    "wiki_url": "https://en.wikipedia.org/wiki/Robin_Knox-Johnston"
   },
   {
     "id": "maiden-whitbread",
@@ -2980,7 +3277,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Maiden (yacht)",
+    "wiki_url": "https://en.wikipedia.org/wiki/Maiden_(yacht)"
   },
   {
     "id": "america-isle-of-wight",
@@ -3050,7 +3349,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "America's Cup",
+    "wiki_url": "https://en.wikipedia.org/wiki/America's_Cup"
   },
   {
     "id": "ellen-macarthur-record",
@@ -3144,6 +3445,8 @@
           }
         ]
       }
-    ]
+    ],
+    "wiki_title": "Ellen MacArthur",
+    "wiki_url": "https://en.wikipedia.org/wiki/Ellen_MacArthur"
   }
 ]

@@ -171,6 +171,7 @@ async function inspectRoute(page, routeId, domain = "flights") {
     if (inspectOnly) {
       const domain = process.argv.find((argument) => argument.startsWith("--domain="))?.split("=", 2)[1] || "flights";
       const page = await browser.newPage({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 });
+      await page.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
       await page.goto(`${baseUrl}/?basemap=atlas`, { waitUntil: "networkidle" });
       if (domain !== "flights") await page.locator(`[role="tab"][data-domain="${domain}"]`).click();
       await page.locator(`.route-item[data-id="${inspectOnly}"]`).click();
@@ -186,6 +187,7 @@ async function inspectRoute(page, routeId, domain = "flights") {
       { name: "phone-site-info", viewport: { width: 390, height: 844 } },
     ]) {
       const context = await browser.newContext({ viewport: infoCase.viewport, deviceScaleFactor: 1 });
+      await context.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
       const page = await context.newPage();
       await page.goto(`${baseUrl}/?basemap=atlas`, { waitUntil: "networkidle" });
       await page.locator("#site-info-open").click();
@@ -203,7 +205,7 @@ async function inspectRoute(page, routeId, domain = "flights") {
       assert(info.open, `${infoCase.name}: information dialog did not open`);
       assert(info.rect.left >= 8 && info.rect.top >= 8 && info.rect.right <= infoCase.viewport.width - 8 && info.rect.bottom <= infoCase.viewport.height - 8, `${infoCase.name}: dialog escapes viewport: ${JSON.stringify(info.rect)}`);
       assert(info.sectionCount === 4, `${infoCase.name}: expected four information sections`);
-      for (const phrase of ["Route geometry and uncertainty", "Research sources", "Maps and photographs", "Data and access", "CC BY-SA 3.0"]) {
+      for (const phrase of ["Route geometry and uncertainty", "Research sources", "Maps and photographs", "Data and access", "Wikipedia W icon source and usage terms"]) {
         assert(info.text.includes(phrase), `${infoCase.name}: missing information: ${phrase}`);
       }
       assert(info.github === "https://github.com/Yaodin/vibe-flights", `${infoCase.name}: repository link is missing or wrong`);
@@ -216,6 +218,7 @@ async function inspectRoute(page, routeId, domain = "flights") {
 
     for (const testCase of cases) {
       const context = await browser.newContext({ viewport: testCase.viewport, deviceScaleFactor: 1 });
+      await context.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
       const page = await context.newPage();
       await page.goto(`${baseUrl}/?basemap=atlas`, { waitUntil: "networkidle" });
       await page.locator(`.route-item[data-id="${testCase.route}"]`).click();
@@ -241,6 +244,7 @@ async function inspectRoute(page, routeId, domain = "flights") {
       { name: "phone-all-routes", viewport: { width: 390, height: 844 }, polygonPoints: 4 },
     ]) {
       const context = await browser.newContext({ viewport: layout.viewport, deviceScaleFactor: 1 });
+      await context.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
       const page = await context.newPage();
       await page.goto(`${baseUrl}/?basemap=atlas`, { waitUntil: "networkidle" });
       const routeIds = await page.locator(".route-item").evaluateAll((items) => items.map((item) => item.dataset.id));
@@ -264,6 +268,7 @@ async function inspectRoute(page, routeId, domain = "flights") {
       const journeyDomains = ["sailing", "rail", "road-races", "overland", "ocean-liners", "river", "human-powered"];
       for (const domain of requestedDomain ? journeyDomains.filter((name) => name === requestedDomain) : journeyDomains) {
         const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 });
+        await context.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
         const page = await context.newPage();
         await page.goto(`${baseUrl}/?basemap=atlas`, { waitUntil: "networkidle" });
         const mapped = await page.evaluate(async (name) => (await fetch(`data/journeys/${name}.geojson?v=journey-1`)).ok, domain);
@@ -276,7 +281,7 @@ async function inspectRoute(page, routeId, domain = "flights") {
         await page.locator(`[role="tab"][data-domain="${domain}"]`).click();
         await page.locator(".route-item").first().waitFor();
         const routeIds = await page.locator(".route-item").evaluateAll((items) => items.map((item) => item.dataset.id));
-        assert(routeIds.length === 25, `${domain}: expected 25 mapped journeys, got ${routeIds.length}`);
+        assert(routeIds.length === 25, `${domain}: unexpected mapped journey count ${routeIds.length}`);
         for (const routeId of routeIds) {
           await page.locator(`.route-item[data-id="${routeId}"]`).click();
           await page.waitForFunction((route) => document.body.dataset.fitRoute === route, routeId);
@@ -293,6 +298,7 @@ async function inspectRoute(page, routeId, domain = "flights") {
         await context.close();
 
         const phoneContext = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1 });
+        await phoneContext.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
         const phonePage = await phoneContext.newPage();
         await phonePage.goto(`${baseUrl}/?basemap=atlas&domain=${domain}`, { waitUntil: "networkidle" });
         const phoneRoute = routeIds.at(-1);
