@@ -1,6 +1,7 @@
 const ROUTES_URL = "data/routes.geojson?v=smooth-routes-1";
 const BASEMAP_URL = "data/ne_110m_admin_0_countries.geojson";
 const AIRCRAFT_IMAGES_URL = "data/aircraft-images.json";
+const JOURNEY_IMAGES_URL = "data/journey-images.json?v=journey-images-2";
 const IMAGERY_TILE_URL = "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}";
 const TILE_SIZE = 256;
 const MAX_LAT = 85.05112878;
@@ -73,6 +74,12 @@ const THEMES = {
 
 function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));
+}
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, (character) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  })[character]);
 }
 
 function normalizeLon(lon) {
@@ -914,6 +921,7 @@ const state = {
   domainRequest: 0,
   visible: new Set(),
   selected: null,
+  journeyImages: {},
 };
 
 const routeList = document.querySelector("#route-list");
@@ -1145,10 +1153,10 @@ function renderDetail(feature) {
     const lineStyle = inferredLine(p, segment.track_type) ? "inferred" : "anchored";
     return `<li data-line-style="${lineStyle}"><b>${segment.mode}</b> · ${segment.track_type.replaceAll("-", " ")} · ${lineStyle === "inferred" ? "dashed" : "solid"} · <a href="${segment.source_url}" target="_blank" rel="noreferrer">source ↗</a></li>`;
   }).join("")}</ol></details>` : "";
-  const aircraftImage = p.image ? `
-    <figure class="aircraft-figure">
-      <img src="${p.image.path}" alt="${p.image.alt}" decoding="async" style="object-position:${p.image.position || "center"}">
-      <figcaption><a class="image-credit" href="${p.image.source_url}" target="_blank" rel="noreferrer">${p.image.credit}</a><a href="${p.image.license_url}" target="_blank" rel="noreferrer">${p.image.license} ↗</a></figcaption>
+  const journeyImage = p.image ? `
+    <figure class="journey-figure">
+      <img src="${escapeHtml(p.image.path)}" alt="${escapeHtml(p.image.alt)}" decoding="async" style="object-position:${escapeHtml(p.image.position || "center")}">
+      <figcaption><a class="image-credit" href="${escapeHtml(p.image.source_url)}" target="_blank" rel="noreferrer" title="${escapeHtml(p.image.credit)} · resized and padded to WebP">${escapeHtml(p.image.credit)} · resized for display</a><a href="${escapeHtml(p.image.license_url)}" target="_blank" rel="noreferrer">${escapeHtml(p.image.license)} ↗</a></figcaption>
     </figure>` : "";
   detailCard.innerHTML = `
     <button class="sheet-handle" type="button" aria-expanded="false" aria-label="Expand journey details"><span></span></button>
@@ -1157,7 +1165,7 @@ function renderDetail(feature) {
       <button class="close-detail" type="button" aria-label="Close details">×</button>
     </div>
     <div class="why-famous"><span>Why it was famous</span><p>${p.why_famous}</p></div>
-    ${aircraftImage}
+    ${journeyImage}
     <p class="route-summary">${p.route_summary}</p>
     ${overview}
     <div class="metrics">
@@ -1180,7 +1188,7 @@ function renderDetail(feature) {
   detailCard.querySelector(".close-detail").addEventListener("click", clearSelection);
   setSheetExpanded(false);
   bindSheetGesture();
-  detailCard.querySelector(".aircraft-figure img")?.addEventListener("error", (event) => {
+  detailCard.querySelector(".journey-figure img")?.addEventListener("error", (event) => {
     event.currentTarget.closest("figure").hidden = true;
   });
   detailCard.querySelector(".copy-wkt").addEventListener("click", async (event) => {
@@ -1240,6 +1248,9 @@ async function setDomain(domain, updateUrl = true) {
       if (response.ok) {
         collection = await response.json();
         if (collection.features?.length !== 25) throw new Error(`Expected 25 mapped journeys in ${domain}`);
+        collection.features.forEach((feature) => {
+          feature.properties.image = state.journeyImages[feature.properties.id] || null;
+        });
         collection.features.sort((a, b) => a.properties.rank - b.properties.rank);
         state.collections.set(domain, collection);
       }
@@ -1316,17 +1327,19 @@ siteInfo.addEventListener("click", (event) => {
 
 async function init() {
   try {
-    const [routesResponse, basemapResponse, imagesResponse] = await Promise.all([
+    const [routesResponse, basemapResponse, imagesResponse, journeyImagesResponse] = await Promise.all([
       fetch(ROUTES_URL),
       fetch(BASEMAP_URL),
       fetch(AIRCRAFT_IMAGES_URL),
+      fetch(JOURNEY_IMAGES_URL),
     ]);
-    if (!routesResponse.ok || !basemapResponse.ok || !imagesResponse.ok) {
-      throw new Error(`route HTTP ${routesResponse.status}; basemap HTTP ${basemapResponse.status}; images HTTP ${imagesResponse.status}`);
+    if (!routesResponse.ok || !basemapResponse.ok || !imagesResponse.ok || !journeyImagesResponse.ok) {
+      throw new Error(`route HTTP ${routesResponse.status}; basemap HTTP ${basemapResponse.status}; aircraft images HTTP ${imagesResponse.status}; journey images HTTP ${journeyImagesResponse.status}`);
     }
     state.collection = await routesResponse.json();
     state.countries = await basemapResponse.json();
     const aircraftImages = await imagesResponse.json();
+    state.journeyImages = await journeyImagesResponse.json();
     state.collection.features.forEach((feature) => {
       feature.properties.image = aircraftImages[feature.properties.id] || null;
     });

@@ -1,0 +1,1577 @@
+{
+  "kon-tiki": {
+    "path": "assets/journeys/kon-tiki.webp",
+    "commons_file": "File:Kon-Tiki raft - IMG 9224.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Kon-Tiki_raft_-_IMG_9224.jpg",
+    "alt": "The original Kon-Tiki raft on display at the Kon-Tiki Museum in Oslo.",
+    "credit": "Daderot · original raft in museum",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "beagle-second-voyage": {
+    "path": "assets/journeys/beagle-second-voyage.webp",
+    "commons_file": "File:HMSBeagle.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:HMSBeagle.jpg",
+    "alt": "Owen Stanley's 1841 watercolor of HMS Beagle, the ship that carried Darwin on its second voyage.",
+    "credit": "Owen Stanley · 1841 watercolor",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "titanic-maiden-1912": {
+    "path": "assets/journeys/titanic-maiden-1912.webp",
+    "commons_file": "File:RMS Titanic in Southampton, April 9th of 1912.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:RMS_Titanic_in_Southampton,_April_9th_of_1912.jpg",
+    "alt": "RMS Titanic berthed at Southampton in April 1912, just before its maiden voyage.",
+    "credit": "Unknown photographer · April 1912",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "queen-mary-final-1967": {
+    "path": "assets/journeys/queen-mary-final-1967.webp",
+    "commons_file": "File:RMS Queen Mary in Long Beach.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:RMS_Queen_Mary_in_Long_Beach.jpg",
+    "alt": "RMS Queen Mary preserved in Long Beach, California, decades after its final ocean voyage.",
+    "credit": "Andrek02 · preserved ship",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "rail-tokaido-1964": {
+    "path": "assets/journeys/rail-tokaido-1964.webp",
+    "commons_file": "File:0 Series Shinkansen at the National Railway Museum 2024-10-10.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:0_Series_Shinkansen_at_the_National_Railway_Museum_2024-10-10.jpg",
+    "alt": "Preserved 0 Series Shinkansen, the train type used when the Tōkaidō line opened in 1964.",
+    "credit": "Michael Gaylard · museum display",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "rail-mallard-1938": {
+    "path": "assets/journeys/rail-mallard-1938.webp",
+    "commons_file": "File:Mallard at The National Railway Museum, York - geograph.org.uk - 8361450.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mallard_at_The_National_Railway_Museum,_York_-_geograph.org.uk_-_8361450.jpg",
+    "alt": "The record-setting Mallard steam locomotive preserved at the National Railway Museum in York.",
+    "credit": "Rossographer · museum display",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  "bertha-benz-1888": {
+    "path": "assets/journeys/bertha-benz-1888.webp",
+    "commons_file": "File:Benz Patent-Motorwagen.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Benz_Patent-Motorwagen.jpg",
+    "alt": "A replica of the Benz Patent-Motorwagen, the type of car Bertha Benz drove in 1888.",
+    "credit": "RThiele · vehicle replica",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "new-york-paris-1908": {
+    "path": "assets/journeys/new-york-paris-1908.webp",
+    "commons_file": "File:1908 New York to Paris Race, Roberts.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:1908_New_York_to_Paris_Race,_Roberts.jpg",
+    "alt": "A Thomas car and driver Montague Roberts during the 1908 New York to Paris Race.",
+    "credit": "Bain News Service · Library of Congress",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "lewis-clark-expedition": {
+    "path": "assets/journeys/lewis-clark-expedition.webp",
+    "commons_file": "File:Lewis and clark-expedition.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lewis_and_clark-expedition.jpg",
+    "alt": "Charles M. Russell's 1905 watercolor imagining Lewis and Clark on the Lower Columbia River.",
+    "credit": "Charles M. Russell · later depiction",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "gandhi-salt-march": {
+    "path": "assets/journeys/gandhi-salt-march.webp",
+    "commons_file": "File:Marche sel.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Marche_sel.jpg",
+    "alt": "Mahatma Gandhi walking with companions during the Salt March in March 1930.",
+    "credit": "Unknown photographer · March 1930",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-fulton-clermont-1807": {
+    "path": "assets/journeys/river-fulton-clermont-1807.webp",
+    "commons_file": "File:The North River or Cleremont Robt Fulton 1807 RMG PU6632.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_North_River_or_Cleremont_Robt_Fulton_1807_RMG_PU6632.jpg",
+    "alt": "An 1848 hand-colored lithograph depicting Fulton's North River Steamboat, also known as Clermont.",
+    "credit": "J. C. Bourne / C. F. Cheffins · 1848 lithograph",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-sultana-1865": {
+    "path": "assets/journeys/river-sultana-1865.webp",
+    "commons_file": "File:Ill-fated Sultana, Helena, Arkansas, April 27, 1865.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ill-fated_Sultana,_Helena,_Arkansas,_April_27,_1865.jpg",
+    "alt": "The crowded steamboat Sultana on the Mississippi shortly before its 1865 disaster.",
+    "credit": "Unknown photographer · Library of Congress",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "human-thomas-stevens-1884": {
+    "path": "assets/journeys/human-thomas-stevens-1884.webp",
+    "commons_file": "File:Thomas Stevens bicycle.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Thomas_Stevens_bicycle.jpg",
+    "alt": "Thomas Stevens posing on the penny-farthing bicycle he rode around the world.",
+    "credit": "Unknown photographer · published 1887",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "human-annie-londonderry-1894": {
+    "path": "assets/journeys/human-annie-londonderry-1894.webp",
+    "commons_file": "File:Annie Londonderry vers 1896.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Annie_Londonderry_vers_1896.jpg",
+    "alt": "Studio portrait of cyclist Annie Londonderry around 1896.",
+    "credit": "Studio Tourne · circa 1896",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "magellan-elcano": {
+    "path": "assets/journeys/magellan-elcano.webp",
+    "commons_file": "File:Detail from a map of Ortelius - Magellan's ship Victoria.png",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Detail_from_a_map_of_Ortelius_-_Magellan%27s_ship_Victoria.png",
+    "alt": "A historic map detail showing Victoria, the ship that completed the circumnavigation",
+    "credit": "Abraham Ortelius",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "columbus-first-voyage": {
+    "path": "assets/journeys/columbus-first-voyage.webp",
+    "commons_file": "File:Viajes de colon en2.svg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Viajes_de_colon_en2.svg",
+    "alt": "A modern map of Columbus's Atlantic voyages, including the 1492 crossing",
+    "credit": "Rezza Editores",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "cook-endeavour": {
+    "path": "assets/journeys/cook-endeavour.webp",
+    "commons_file": "File:Cook's HM Bark Endeavour replica at National Maritime Museum.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cook%27s_HM_Bark_Endeavour_replica_at_National_Maritime_Museum.jpg",
+    "alt": "A replica of HMS Endeavour, Cook's ship",
+    "credit": "Dicklyon",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "mayflower": {
+    "path": "assets/journeys/mayflower.webp",
+    "commons_file": "File:Copyrighted and Published by A S Burbank, The Mayflower at Sea (NBY 21340).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Copyrighted_and_Published_by_A_S_Burbank,_The_Mayflower_at_Sea_(NBY_21340).jpg",
+    "alt": "A later painting of the Mayflower under sail",
+    "credit": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "vasco-da-gama-india": {
+    "path": "assets/journeys/vasco-da-gama-india.webp",
+    "commons_file": "File:Ignoto portoghese, ritratto di un cavaliere dell'ordine di cristo, 1525-50 ca. 02.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ignoto_portoghese,_ritratto_di_un_cavaliere_dell%27ordine_di_cristo,_1525-50_ca._02.jpg",
+    "alt": "A sixteenth-century portrait traditionally associated with Vasco da Gama",
+    "credit": "Sailko",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "drake-circumnavigation": {
+    "path": "assets/journeys/drake-circumnavigation.webp",
+    "commons_file": "File:Francis Drake's journey 1577-1580, by unknown c1590.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Francis_Drake%27s_journey_1577-1580,_by_unknown_c1590.jpg",
+    "alt": "A period map illustrating Francis Drake's 1577–80 circumnavigation",
+    "credit": "unattributed",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "endurance-james-caird": {
+    "path": "assets/journeys/endurance-james-caird.webp",
+    "commons_file": "File:Endurance under full sail Frank Hurley State Library NSW a090012h.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Endurance_under_full_sail_Frank_Hurley_State_Library_NSW_a090012h.jpg",
+    "alt": "Endurance under sail during Shackleton's Imperial Trans-Antarctic Expedition",
+    "credit": "Frank Hurley",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "bligh-bounty-launch": {
+    "path": "assets/journeys/bligh-bounty-launch.webp",
+    "commons_file": "File:Mutiny HMS Bounty.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mutiny_HMS_Bounty.jpg",
+    "alt": "A later painting of the Bounty mutiny that preceded Bligh's open-boat voyage",
+    "credit": "Robert Dodd",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "slocum-spray": {
+    "path": "assets/journeys/slocum-spray.webp",
+    "commons_file": "File:Joshua Slocum cph.3b46344.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Joshua_Slocum_cph.3b46344.jpg",
+    "alt": "A portrait of solo circumnavigator Joshua Slocum",
+    "credit": "Hollinger & Co.",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "franklin-final-expedition": {
+    "path": "assets/journeys/franklin-final-expedition.webp",
+    "commons_file": "File:Franklin's-Lost-Expedition.png",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Franklin%27s-Lost-Expedition.png",
+    "alt": "A map of Franklin's final Arctic expedition and search area",
+    "credit": "Hans van der Maarel",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "amundsen-gjoa": {
+    "path": "assets/journeys/amundsen-gjoa.webp",
+    "commons_file": "File:Gjøa.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Gj%C3%B8a.jpg",
+    "alt": "The preserved Gjøa, Amundsen's Northwest Passage vessel",
+    "credit": "Wikimedia Commons",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "zheng-he-first-voyage": {
+    "path": "assets/journeys/zheng-he-first-voyage.webp",
+    "commons_file": "File:Zheng He Treasure Ship Model (15829289311).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Zheng_He_Treasure_Ship_Model_(15829289311).jpg",
+    "alt": "A modern model of a Ming treasure ship",
+    "credit": "Gary Todd from Xinzheng, China",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "hokulea-tahiti": {
+    "path": "assets/journeys/hokulea-tahiti.webp",
+    "commons_file": "File:Hokule'a.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Hokule%27a.jpg",
+    "alt": "The Polynesian voyaging canoe Hōkūleʻa, photographed later",
+    "credit": "Phil Uhl",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "first-fleet": {
+    "path": "assets/journeys/first-fleet.webp",
+    "commons_file": "File:The First Fleet entering Port Jackson, January 26, 1788, drawn 1888 A9333001h.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_First_Fleet_entering_Port_Jackson,_January_26,_1788,_drawn_1888_A9333001h.jpg",
+    "alt": "An 1888 drawing of the First Fleet arriving at Port Jackson",
+    "credit": "E. Le Bihan",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "nansen-fram": {
+    "path": "assets/journeys/nansen-fram.webp",
+    "commons_file": "File:Fram Bergen 1893.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Fram_Bergen_1893.jpg",
+    "alt": "Fram at Bergen in 1893 before Nansen's Arctic drift",
+    "credit": "Unknown photographer · 1893",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "taeping-tea-race": {
+    "path": "assets/journeys/taeping-tea-race.webp",
+    "commons_file": "File:Jack Spurling - ARIEL & TAEPING, China Tea Clippers Race.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Jack_Spurling_-_ARIEL_%26_TAEPING,_China_Tea_Clippers_Race.jpg",
+    "alt": "A later painting of tea clippers Ariel and Taeping racing from China",
+    "credit": "Jack Spurling",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "tasman-first-voyage": {
+    "path": "assets/journeys/tasman-first-voyage.webp",
+    "commons_file": "File:Abel Tasman Navigateur en Australie (cropped).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Abel_Tasman_Navigateur_en_Australie_(cropped).jpg",
+    "alt": "A portrait of Dutch navigator Abel Tasman",
+    "credit": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "flinders-investigator": {
+    "path": "assets/journeys/flinders-investigator.webp",
+    "commons_file": "File:Toussaint Antoine DE CHAZAL DE Chamerel - Portrait of Captain Matthew Flinders, RN, 1774-1814 - Google Art Project.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Toussaint_Antoine_DE_CHAZAL_DE_Chamerel_-_Portrait_of_Captain_Matthew_Flinders,_RN,_1774-1814_-_Google_Art_Project.jpg",
+    "alt": "A portrait of navigator Matthew Flinders",
+    "credit": "Antoine Toussaint de Chazal",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "chichester-gipsy-moth": {
+    "path": "assets/journeys/chichester-gipsy-moth.webp",
+    "commons_file": "File:Gipsy MothIV.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Gipsy_MothIV.jpg",
+    "alt": "The preserved Gipsy Moth IV, Chichester's yacht",
+    "credit": "Alkivar at English Wikipedia",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "knox-johnston-suhaili": {
+    "path": "assets/journeys/knox-johnston-suhaili.webp",
+    "commons_file": "File:Suhaili.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Suhaili.jpg",
+    "alt": "Suhaili, Knox-Johnston's circumnavigation yacht",
+    "credit": "Thomas Keyser",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "maiden-whitbread": {
+    "path": "assets/journeys/maiden-whitbread.webp",
+    "commons_file": "File:Maiden in Mindelo, Cape Verde, 2022 2.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Maiden_in_Mindelo,_Cape_Verde,_2022_2.jpg",
+    "alt": "Maiden, photographed decades after the 1989–90 race",
+    "credit": "Addshore",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "america-isle-of-wight": {
+    "path": "assets/journeys/america-isle-of-wight.webp",
+    "commons_file": "File:The Yacht 'America' Winning the International Race Fitz Hugh Lane 1851.jpeg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_Yacht_%27America%27_Winning_the_International_Race_Fitz_Hugh_Lane_1851.jpeg",
+    "alt": "A period painting of America winning the 1851 race",
+    "credit": "Fitz Henry Lane",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "ellen-macarthur-record": {
+    "path": "assets/journeys/ellen-macarthur-record.webp",
+    "commons_file": "File:Ellen-McArthur (1).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ellen-McArthur_(1).jpg",
+    "alt": "Solo sailor Ellen MacArthur, photographed after her record voyage",
+    "credit": "Amplified2010",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "rail-transcontinental-1869": {
+    "path": "assets/journeys/rail-transcontinental-1869.webp",
+    "commons_file": "File:East and West Shaking hands at the laying of last rail Union Pacific Railroad - Restoration.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:East_and_West_Shaking_hands_at_the_laying_of_last_rail_Union_Pacific_Railroad_-_Restoration.jpg",
+    "alt": "Railroad officials at the 1869 Golden Spike ceremony at Promontory Summit",
+    "credit": "Andrew J. Russell / Adam Cuerden",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "rail-trans-siberian-1916": {
+    "path": "assets/journeys/rail-trans-siberian-1916.webp",
+    "commons_file": "File:The iron bridge on stone pillars. Ural. Trans-Siberian Railroad.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_iron_bridge_on_stone_pillars._Ural._Trans-Siberian_Railroad.jpg",
+    "alt": "A historic view of the Trans-Siberian Railway in the Urals",
+    "credit": "Sergei Prokudin-Gorskii",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "rail-express-dorient-1883": {
+    "path": "assets/journeys/rail-express-dorient-1883.webp",
+    "commons_file": "File:Lille flandres orient express wagon restaurant.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lille_flandres_orient_express_wagon_restaurant.jpg",
+    "alt": "A preserved Orient Express dining car",
+    "credit": "Velvet",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "rail-stockton-darlington-1825": {
+    "path": "assets/journeys/rail-stockton-darlington-1825.webp",
+    "commons_file": "File:Locomotion No. 1 New Bridge.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Locomotion_No._1_New_Bridge.jpg",
+    "alt": "The preserved Locomotion No. 1 locomotive",
+    "credit": "Kabelleger",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "rail-liverpool-manchester-1830": {
+    "path": "assets/journeys/rail-liverpool-manchester-1830.webp",
+    "commons_file": "File:Opening of the Liverpool and Manchester Railway.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Opening_of_the_Liverpool_and_Manchester_Railway.jpg",
+    "alt": "A period illustration of the Liverpool and Manchester Railway opening",
+    "credit": "I Shaw, Junior",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "rail-canadian-pacific-1886": {
+    "path": "assets/journeys/rail-canadian-pacific-1886.webp",
+    "commons_file": "File:Canadian Pacific First Train.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Canadian_Pacific_First_Train.jpg",
+    "alt": "The Canadian Pacific Railway's first transcontinental train",
+    "credit": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "rail-flying-scotsman-1928": {
+    "path": "assets/journeys/rail-flying-scotsman-1928.webp",
+    "commons_file": "File:Flying Scotsman 2005.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Flying_Scotsman_2005.jpg",
+    "alt": "The preserved Flying Scotsman locomotive",
+    "credit": "Mjirlam at English Wikipedia",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "rail-lincoln-funeral-1865": {
+    "path": "assets/journeys/rail-lincoln-funeral-1865.webp",
+    "commons_file": "File:The Lincoln Funeral Train, Philadelphia MET DP254768.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_Lincoln_Funeral_Train,_Philadelphia_MET_DP254768.jpg",
+    "alt": "The funeral train in Philadelphia during Lincoln's 1865 journey",
+    "credit": "Creator:Charles L. Philippi",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "rail-metropolitan-1863": {
+    "path": "assets/journeys/rail-metropolitan-1863.webp",
+    "commons_file": "File:Metropolitan Underground Railway stations.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Metropolitan_Underground_Railway_stations.jpg",
+    "alt": "A historic illustration of stations on London's Metropolitan Railway",
+    "credit": "Unknown (illegible)",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "rail-india-first-1853": {
+    "path": "assets/journeys/rail-india-first-1853.webp",
+    "commons_file": "File:W. H. Stanley's Bori Bunder station, 1854.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:W._H._Stanley%27s_Bori_Bunder_station,_1854.jpg",
+    "alt": "Bori Bunder station shortly after India's first passenger train",
+    "credit": "W. H. Stanley",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "rail-japan-first-1872": {
+    "path": "assets/journeys/rail-japan-first-1872.webp",
+    "commons_file": "File:First steam train leaving Yokohama.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:First_steam_train_leaving_Yokohama.jpg",
+    "alt": "A period woodcut of Japan's first railway",
+    "credit": "Utagawa Kunisada III",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "rail-darjeeling-1881": {
+    "path": "assets/journeys/rail-darjeeling-1881.webp",
+    "commons_file": "File:Darjeeling railway station 02.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Darjeeling_railway_station_02.jpg",
+    "alt": "Darjeeling Himalayan Railway station, photographed later",
+    "credit": "Bernard Gagnon",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "rail-overseas-1912": {
+    "path": "assets/journeys/rail-overseas-1912.webp",
+    "commons_file": "File:Train on Overseas Railroad Long Key Viaduct.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Train_on_Overseas_Railroad_Long_Key_Viaduct.jpg",
+    "alt": "A train crossing the Overseas Railroad's Long Key Viaduct",
+    "credit": "Key West News Co.",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "rail-suffrage-special-1916": {
+    "path": "assets/journeys/rail-suffrage-special-1916.webp",
+    "commons_file": "File:Suffrage special outside DC.png",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Suffrage_special_outside_DC.png",
+    "alt": "The Suffrage Special train outside Washington in 1916",
+    "credit": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "rail-glacier-express-1930": {
+    "path": "assets/journeys/rail-glacier-express-1930.webp",
+    "commons_file": "File:CH Landwasser 2.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:CH_Landwasser_2.jpg",
+    "alt": "A train on the Landwasser Viaduct, part of the Glacier Express route",
+    "credit": "Daniel Schwen",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "rail-ghan-1929": {
+    "path": "assets/journeys/rail-ghan-1929.webp",
+    "commons_file": "File:Journey Beyond Rail Ghan passenger train.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Journey_Beyond_Rail_Ghan_passenger_train.jpg",
+    "alt": "A later Ghan passenger train in Australia's interior",
+    "credit": "Tomoyn",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "rail-california-zephyr-1949": {
+    "path": "assets/journeys/rail-california-zephyr-1949.webp",
+    "commons_file": "File:California Zephyr north of Green River.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:California_Zephyr_north_of_Green_River.jpg",
+    "alt": "A later California Zephyr train in Utah",
+    "credit": "Braddah n8",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "rail-canadian-1955": {
+    "path": "assets/journeys/rail-canadian-1955.webp",
+    "commons_file": "File:Canadian Pacific FP7 1417 with Train 1, the Canadian at Ottawa, ON on May 30, 1971 (33988927700).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Canadian_Pacific_FP7_1417_with_Train_1,_the_Canadian_at_Ottawa,_ON_on_May_30,_1971_(33988927700).jpg",
+    "alt": "The Canadian passenger train in 1971",
+    "credit": "Roger Puta",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "rail-indian-pacific-1970": {
+    "path": "assets/journeys/rail-indian-pacific-1970.webp",
+    "commons_file": "File:Rawlinna (AU), Indian Pacific, NR Class Locomotive -- 2019 -- 0597.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Rawlinna_(AU),_Indian_Pacific,_NR_Class_Locomotive_--_2019_--_0597.jpg",
+    "alt": "The Indian Pacific train, photographed in 2019",
+    "credit": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "rail-tgv-1981": {
+    "path": "assets/journeys/rail-tgv-1981.webp",
+    "commons_file": "File:TGV Train à Grande Vitesse.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:TGV_Train_%C3%A0_Grande_Vitesse.jpg",
+    "alt": "A TGV Sud-Est train, the type introduced on the original Paris–Lyon service",
+    "credit": "joost j. bakker from ijmuiden, the netherlands",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "rail-eurostar-1994": {
+    "path": "assets/journeys/rail-eurostar-1994.webp",
+    "commons_file": "File:Croisement Thalys-Eurostar Neige en Savoie (février 2023).JPG",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Croisement_Thalys-Eurostar_Neige_en_Savoie_(f%C3%A9vrier_2023).JPG",
+    "alt": "A Eurostar train photographed after the 1994 opening",
+    "credit": "Florian Pépellin",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "rail-qinghai-tibet-2006": {
+    "path": "assets/journeys/rail-qinghai-tibet-2006.webp",
+    "commons_file": "File:Qingzang railway Train 01.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Qingzang_railway_Train_01.jpg",
+    "alt": "A train on the Qinghai–Tibet railway",
+    "credit": "Jan Reurink",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "rail-bernina-1910": {
+    "path": "assets/journeys/rail-bernina-1910.webp",
+    "commons_file": "File:RhB ABe 4-4 III mit Bernina-Express am Lago Bianco.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:RhB_ABe_4-4_III_mit_Bernina-Express_am_Lago_Bianco.jpg",
+    "alt": "A train on the Bernina railway beside Lago Bianco",
+    "credit": "Kabelleger / David Gubler ( http://www.bahnbilder.ch )",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "jackson-1903": {
+    "path": "assets/journeys/jackson-1903.webp",
+    "commons_file": "File:Winton touring car 'Vermont', 1903, automobile used for first motor trip across the United States - National Museum of American History - DSC08472.JPG",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Winton_touring_car_%27Vermont%27,_1903,_automobile_used_for_first_motor_trip_across_the_United_States_-_National_Museum_of_American_History_-_DSC08472.JPG",
+    "alt": "The original Winton Vermont automobile used in the 1903 crossing",
+    "credit": "Daderot",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "peking-paris-1907": {
+    "path": "assets/journeys/peking-paris-1907.webp",
+    "commons_file": "File:Peking To Paris Autorace (1907) Attribution Unk (RESTORED) (4074429874).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Peking_To_Paris_Autorace_(1907)_Attribution_Unk_(RESTORED)_(4074429874).jpg",
+    "alt": "A De Dion-Bouton car in Beijing at the start of the 1907 Peking–Paris race; restored photograph",
+    "credit": "ralph repo",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "moss-mille-miglia-1955": {
+    "path": "assets/journeys/moss-mille-miglia-1955.webp",
+    "commons_file": "File:1955-05-01 Mille Miglia winners Jenkinson and Moss.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:1955-05-01_Mille_Miglia_winners_Jenkinson_and_Moss.jpg",
+    "alt": "Stirling Moss and Denis Jenkinson at the 1955 Mille Miglia",
+    "credit": "Unknown photographer",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "paris-dakar-1979": {
+    "path": "assets/journeys/paris-dakar-1979.webp",
+    "commons_file": "File:Paris - Dakar route (1979) ru.svg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Paris_-_Dakar_route_(1979)_ru.svg",
+    "alt": "A map of the inaugural 1979 Paris–Dakar route",
+    "credit": "Das steinerne Herz · NASA/Goddard basemap",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "baja-1000-1967": {
+    "path": "assets/journeys/baja-1000-1967.webp",
+    "commons_file": "File:1967 Baja 1000 Donna Crean's Manx Porsche DSC 0748 (51729256880).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:1967_Baja_1000_Donna_Crean%27s_Manx_Porsche_DSC_0748_(51729256880).jpg",
+    "alt": "A vehicle from the inaugural 1967 Baja 1000, displayed later",
+    "credit": "Bill Abbott",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "carrera-panamericana-1950": {
+    "path": "assets/journeys/carrera-panamericana-1950.webp",
+    "commons_file": "File:La Carrera Panamericana arco de meta época antigua.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:La_Carrera_Panamericana_arco_de_meta_%C3%A9poca_antigua.jpg",
+    "alt": "A historic finish arch at the Carrera Panamericana",
+    "credit": "La Carrera Panamericana",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "alice-ramsey-1909": {
+    "path": "assets/journeys/alice-ramsey-1909.webp",
+    "commons_file": "File:Alice Ramsey ggbain.03065 (headshot).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Alice_Ramsey_ggbain.03065_(headshot).jpg",
+    "alt": "A portrait of transcontinental motorist Alice Huyler Ramsey",
+    "credit": "Bain News Service",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "london-brighton-1896": {
+    "path": "assets/journeys/london-brighton-1896.webp",
+    "commons_file": "File:De Dion-Bouton, BS 8122, London to Brighton Veteran Car Run 2019, 6 CV 1903 Type Q.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:De_Dion-Bouton,_BS_8122,_London_to_Brighton_Veteran_Car_Run_2019,_6_CV_1903_Type_Q.jpg",
+    "alt": "A veteran car in a later London to Brighton commemorative run",
+    "credit": "Ryansheldonholliday",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "paris-rouen-1894": {
+    "path": "assets/journeys/paris-rouen-1894.webp",
+    "commons_file": "File:Le Petit Journal - 6 August 1894.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Le_Petit_Journal_-_6_August_1894.jpg",
+    "alt": "A contemporary newspaper illustration of the 1894 Paris–Rouen contest",
+    "credit": "Image signed by T.Belack ? Artist name lost to history ? 118 years old.",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "paris-bordeaux-paris-1895": {
+    "path": "assets/journeys/paris-bordeaux-paris-1895.webp",
+    "commons_file": "File:Monument à Levassor 1907.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Monument_%C3%A0_Levassor_1907.jpg",
+    "alt": "A monument to Émile Levassor and the 1895 Paris–Bordeaux–Paris race",
+    "credit": "Siren-Com",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "french-grand-prix-1906": {
+    "path": "assets/journeys/french-grand-prix-1906.webp",
+    "commons_file": "File:Ferencz Szicz, Renault AK, Le Mans 1906.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ferencz_Szicz,_Renault_AK,_Le_Mans_1906.jpg",
+    "alt": "Ferenc Szisz racing a Renault in the 1906 French Grand Prix",
+    "credit": "Milan Tošnar",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "targa-florio-1906": {
+    "path": "assets/journeys/targa-florio-1906.webp",
+    "commons_file": "File:Alessandro cagno.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Alessandro_cagno.jpg",
+    "alt": "A portrait of Alessandro Cagno, winner of the first Targa Florio",
+    "credit": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "monte-carlo-rally-1911": {
+    "path": "assets/journeys/monte-carlo-rally-1911.webp",
+    "commons_file": "File:Rallye Monte Carlo 1911, la Gobron-Brillié 40Hp de J. de Aspiagu, à Avignon.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Rallye_Monte_Carlo_1911,_la_Gobron-Brilli%C3%A9_40Hp_de_J._de_Aspiagu,_%C3%A0_Avignon.jpg",
+    "alt": "A competitor in the inaugural 1911 Monte Carlo Rally",
+    "credit": "L'Auto-vélo",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "indianapolis-500-1911": {
+    "path": "assets/journeys/indianapolis-500-1911.webp",
+    "commons_file": "File:Marmon Wasp 1911 Indy 500 Winner - Ray Harroun.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Marmon_Wasp_1911_Indy_500_Winner_-_Ray_Harroun.jpg",
+    "alt": "The Marmon Wasp that won the first Indianapolis 500",
+    "credit": "OctaviaCombi",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "golden-flier-1916": {
+    "path": "assets/journeys/golden-flier-1916.webp",
+    "commons_file": "File:Carrie Chapman Catt on April 6, 1916 christening the Golden Flyer.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Carrie_Chapman_Catt_on_April_6,_1916_christening_the_Golden_Flyer.jpg",
+    "alt": "Carrie Chapman Catt christening the suffrage car Golden Flyer",
+    "credit": "Bain News Service, publisher",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "pikes-peak-1916": {
+    "path": "assets/journeys/pikes-peak-1916.webp",
+    "commons_file": "File:Pikes Peak Course.svg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pikes_Peak_Course.svg",
+    "alt": "A modern map of the Pikes Peak hill-climb course",
+    "credit": "Maxxl2",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "le-mans-1923": {
+    "path": "assets/journeys/le-mans-1923.webp",
+    "commons_file": "File:Le tableau d'affichage des 24 Heures du Mans 1923.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Le_tableau_d%27affichage_des_24_Heures_du_Mans_1923.jpg",
+    "alt": "The scoreboard at the first 24 Hours of Le Mans in 1923",
+    "credit": "Le Miroir des sports",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "mille-miglia-1927": {
+    "path": "assets/journeys/mille-miglia-1927.webp",
+    "commons_file": "File:Mille Miglia 2020 partenza N 29 Lancia Lambda Spider 1927 in Viale Venezia a Brescia.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mille_Miglia_2020_partenza_N_29_Lancia_Lambda_Spider_1927_in_Viale_Venezia_a_Brescia.jpg",
+    "alt": "A 1927-model Lancia at a later Mille Miglia historic event",
+    "credit": "Wolfgang Moroder",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "monaco-grand-prix-1929": {
+    "path": "assets/journeys/monaco-grand-prix-1929.webp",
+    "commons_file": "File:1929-04-14 Monaco Maserati Tipo 26B de Sterlich.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:1929-04-14_Monaco_Maserati_Tipo_26B_de_Sterlich.jpg",
+    "alt": "A Maserati competing in the first Monaco Grand Prix",
+    "credit": "Unknown photographer",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "coronation-safari-1953": {
+    "path": "assets/journeys/coronation-safari-1953.webp",
+    "commons_file": "File:Kenya KCB Rally Naivasha 3.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Kenya_KCB_Rally_Naivasha_3.jpg",
+    "alt": "A later Safari Rally car in Kenya; not a vehicle from the 1953 race",
+    "credit": "Jared-G-Maina",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "ford-le-mans-1966": {
+    "path": "assets/journeys/ford-le-mans-1966.webp",
+    "commons_file": "File:GT40 at Goodwood.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:GT40_at_Goodwood.jpg",
+    "alt": "A preserved Ford GT40, the model that won Le Mans in 1966",
+    "credit": "edvvc from London, UK",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "london-sydney-1968": {
+    "path": "assets/journeys/london-sydney-1968.webp",
+    "commons_file": "File:Staepelaere Lampinen London-Sydney 1968.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Staepelaere_Lampinen_London-Sydney_1968.jpg",
+    "alt": "Competitors in the 1968 London–Sydney Marathon",
+    "credit": "FTC-GB - Ford Taunus Club of Great Britain",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "london-mexico-1970": {
+    "path": "assets/journeys/london-mexico-1970.webp",
+    "commons_file": "File:1970 World Cup Rally Ford Escort 08.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:1970_World_Cup_Rally_Ford_Escort_08.jpg",
+    "alt": "A Ford Escort associated with the 1970 London to Mexico rally",
+    "credit": "paulb4uk",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "xuanzang-pilgrimage": {
+    "path": "assets/journeys/xuanzang-pilgrimage.webp",
+    "commons_file": "File:Xuanzang w.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Xuanzang_w.jpg",
+    "alt": "A historic depiction of the Buddhist pilgrim Xuanzang",
+    "credit": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "ibn-battuta-travels": {
+    "path": "assets/journeys/ibn-battuta-travels.webp",
+    "commons_file": "File:MS Arabe 2291 تحفة النظار في غرائب الأمصار وعجائب الأسفار (cropped).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:MS_Arabe_2291_%D8%AA%D8%AD%D9%81%D8%A9_%D8%A7%D9%84%D9%86%D8%B8%D8%A7%D8%B1_%D9%81%D9%8A_%D8%BA%D8%B1%D8%A7%D8%A6%D8%A8_%D8%A7%D9%84%D8%A3%D9%85%D8%B5%D8%A7%D8%B1_%D9%88%D8%B9%D8%AC%D8%A7%D8%A6%D8%A8_%D8%A7%D9%84%D8%A3%D8%B3%D9%81%D8%A7%D8%B1_(cropped).jpg",
+    "alt": "A manuscript page from Ibn Battuta's account of his travels",
+    "credit": "أبو عبد الله محمد بن جزي ابن بطوطة",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "marco-polo-travels": {
+    "path": "assets/journeys/marco-polo-travels.webp",
+    "commons_file": "File:Marco Polo - Battle of the King of Burma against the Mongols.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Marco_Polo_-_Battle_of_the_King_of_Burma_against_the_Mongols.jpg",
+    "alt": "A medieval manuscript illustration from The Travels of Marco Polo",
+    "credit": "Maître de la Mazarine et al. .",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "cherokee-removal-northern-route": {
+    "path": "assets/journeys/cherokee-removal-northern-route.webp",
+    "commons_file": "File:Trails of Tears en.png",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Trails_of_Tears_en.png",
+    "alt": "A map of the forced Cherokee removal routes, including the northern land route",
+    "credit": "User:Nikater",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "oregon-trail-migrations": {
+    "path": "assets/journeys/oregon-trail-migrations.webp",
+    "commons_file": "File:Wpdms nasa topo oregon trail.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Wpdms_nasa_topo_oregon_trail.jpg",
+    "alt": "A modern map tracing the Oregon Trail across North America",
+    "credit": "Matthew Trump",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "burke-wills-expedition": {
+    "path": "assets/journeys/burke-wills-expedition.webp",
+    "commons_file": "File:Burke and Wills Track.png",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Burke_and_Wills_Track.png",
+    "alt": "A map tracing the Burke and Wills expedition through Australia",
+    "credit": "Rocketfrog at en.wikipedia",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "california-trail-migrations": {
+    "path": "assets/journeys/california-trail-migrations.webp",
+    "commons_file": "File:Pioneer Historic Byway - Walk the Oregon-California Trail Wagon Ruts - NARA - 7721145.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pioneer_Historic_Byway_-_Walk_the_Oregon-California_Trail_Wagon_Ruts_-_NARA_-_7721145.jpg",
+    "alt": "Surviving Oregon–California Trail wagon ruts",
+    "credit": "Unknown author Unknown author or not provided",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "anza-colonizing-expedition": {
+    "path": "assets/journeys/anza-colonizing-expedition.webp",
+    "commons_file": "File:Portrait of Juan Bautista de Anza (Painted by Fray Orci; 1774, Mexico City).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Juan_Bautista_de_Anza_(Painted_by_Fray_Orci;_1774,_Mexico_City).jpg",
+    "alt": "A portrait of Juan Bautista de Anza",
+    "credit": "Fray Orci",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "pony-express-service": {
+    "path": "assets/journeys/pony-express-service.webp",
+    "commons_file": "File:Pony Express'60 West bound 1860.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pony_Express%2760_West_bound_1860.jpg",
+    "alt": "A historic image of a Pony Express rider",
+    "credit": "pony express",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "mormon-pioneer-vanguard": {
+    "path": "assets/journeys/mormon-pioneer-vanguard.webp",
+    "commons_file": "File:Adrien-Emmanuel-Marie-A-caravan-of-Mormon-neophytes-en-route-1874.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Adrien-Emmanuel-Marie-A-caravan-of-Mormon-neophytes-en-route-1874.jpg",
+    "alt": "A later painting of Mormon pioneers traveling by wagon",
+    "credit": "Adrien Marie",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "becknell-santa-fe-journey": {
+    "path": "assets/journeys/becknell-santa-fe-journey.webp",
+    "commons_file": "File:Train of covered wagons on the Santa Fe Trail.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Train_of_covered_wagons_on_the_Santa_Fe_Trail.jpg",
+    "alt": "A later depiction of wagons on the Santa Fe Trail",
+    "credit": "California Historical Society / C.C. Pierce Collection",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "coronado-expedition": {
+    "path": "assets/journeys/coronado-expedition.webp",
+    "commons_file": "File:Coronado-Remington (cropped).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Coronado-Remington_(cropped).jpg",
+    "alt": "Frederic Remington's later painting of Coronado's expedition",
+    "credit": "Frederic Remington",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "de-soto-expedition": {
+    "path": "assets/journeys/de-soto-expedition.webp",
+    "commons_file": "File:De Soto by Telfer & Sartain.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:De_Soto_by_Telfer_%26_Sartain.jpg",
+    "alt": "A later portrait of Spanish explorer Hernando de Soto",
+    "credit": "John Sartain",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "livingstone-crossing": {
+    "path": "assets/journeys/livingstone-crossing.webp",
+    "commons_file": "File:David Livingstone by Thomas Annan.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:David_Livingstone_by_Thomas_Annan.jpg",
+    "alt": "A portrait photograph of explorer David Livingstone",
+    "credit": "Thomas Annan / Adam Cuerden",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "heinrich-barth-expedition": {
+    "path": "assets/journeys/heinrich-barth-expedition.webp",
+    "commons_file": "File:Heinrich Barth H.Günter BNF Gallica.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Heinrich_Barth_H.G%C3%BCnter_BNF_Gallica.jpg",
+    "alt": "A portrait of explorer Heinrich Barth",
+    "credit": "Hermann Günter (?) Upload, stitch and restoration by Jebulon",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "stuart-crossing": {
+    "path": "assets/journeys/stuart-crossing.webp",
+    "commons_file": "File:John McDouall Stuart (Portrait).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:John_McDouall_Stuart_(Portrait).jpg",
+    "alt": "A portrait of Australian explorer John McDouall Stuart",
+    "credit": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "leichhardt-first-expedition": {
+    "path": "assets/journeys/leichhardt-first-expedition.webp",
+    "commons_file": "File:Ludwig Leichhardt.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ludwig_Leichhardt.jpg",
+    "alt": "A portrait of Australian explorer Ludwig Leichhardt",
+    "credit": "Friedrich August Schmalfuß (1791–1876), (Leichhardt-Museum, Trebatsch)",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "gertrude-bell-euphrates": {
+    "path": "assets/journeys/gertrude-bell-euphrates.webp",
+    "commons_file": "File:Gertrude Bell Fattuh 1907.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Gertrude_Bell_Fattuh_1907.jpg",
+    "alt": "Gertrude Bell with Fattuh in 1907",
+    "credit": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "aurel-stein-first-expedition": {
+    "path": "assets/journeys/aurel-stein-first-expedition.webp",
+    "commons_file": "File:Aurel Stein 1909.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Aurel_Stein_1909.jpg",
+    "alt": "A portrait of archaeologist and explorer Aurel Stein",
+    "credit": "Thompson, The Grosvenor Studios",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "lady-anne-blunt-arabian-journeys": {
+    "path": "assets/journeys/lady-anne-blunt-arabian-journeys.webp",
+    "commons_file": "File:Blunt, Lady Anne, par Maull and Fox, BNF Gallica.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Blunt,_Lady_Anne,_par_Maull_and_Fox,_BNF_Gallica.jpg",
+    "alt": "A portrait photograph of Arabian traveler Lady Anne Blunt",
+    "credit": "Maull and Fox . Upload, stitch and restoration by Jebulon",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "faxian-pilgrimage": {
+    "path": "assets/journeys/faxian-pilgrimage.webp",
+    "commons_file": "File:Faxian statue in Maritime Experiential Museum & Aquarium Singapore.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Faxian_statue_in_Maritime_Experiential_Museum_%26_Aquarium_Singapore.jpg",
+    "alt": "A modern statue of the Buddhist pilgrim Faxian",
+    "credit": "Ms Sarah Welch",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "cabeza-de-vaca-traverse": {
+    "path": "assets/journeys/cabeza-de-vaca-traverse.webp",
+    "commons_file": "File:Cabeza de Vaca Portrait.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cabeza_de_Vaca_Portrait.jpg",
+    "alt": "A later portrait attributed to Álvar Núñez Cabeza de Vaca",
+    "credit": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "camino-real-tierra-adentro": {
+    "path": "assets/journeys/camino-real-tierra-adentro.webp",
+    "commons_file": "File:CaminoRealAdentro.png",
+    "source_url": "https://commons.wikimedia.org/wiki/File:CaminoRealAdentro.png",
+    "alt": "A map of the historic Camino Real de Tierra Adentro",
+    "credit": "U.S. National Park Service",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "lusitania-final-1915": {
+    "path": "assets/journeys/lusitania-final-1915.webp",
+    "commons_file": "File:Last photo of Lusitania May 1 1915.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Last_photo_of_Lusitania_May_1_1915.jpg",
+    "alt": "The last known photograph of RMS Lusitania before its sinking",
+    "credit": "Rance, G R",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "andrea-doria-final-1956": {
+    "path": "assets/journeys/andrea-doria-final-1956.webp",
+    "commons_file": "File:SS Andrea Doria.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:SS_Andrea_Doria.jpg",
+    "alt": "The ocean liner Andrea Doria before its 1956 sinking",
+    "credit": "Unknown photographer",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "great-western-1838": {
+    "path": "assets/journeys/great-western-1838.webp",
+    "commons_file": "File:The Steamer Great Western of Bristol RMG A7626.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_Steamer_Great_Western_of_Bristol_RMG_A7626.jpg",
+    "alt": "A nineteenth-century print of SS Great Western",
+    "credit": "A. Robertson; Napoleon Sarony; Robinson, H. R.",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "carpathia-titanic-rescue-1912": {
+    "path": "assets/journeys/carpathia-titanic-rescue-1912.webp",
+    "commons_file": "File:RMS Carpathia.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:RMS_Carpathia.jpg",
+    "alt": "RMS Carpathia, the Titanic rescue ship",
+    "credit": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "mauretania-1909-record": {
+    "path": "assets/journeys/mauretania-1909-record.webp",
+    "commons_file": "File:Mauretania,1907 on Tyne.JPG",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mauretania,1907_on_Tyne.JPG",
+    "alt": "RMS Mauretania on the River Tyne in 1907",
+    "credit": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "normandie-1935-maiden": {
+    "path": "assets/journeys/normandie-1935-maiden.webp",
+    "commons_file": "File:SS Normandie at sea view.JPG",
+    "source_url": "https://commons.wikimedia.org/wiki/File:SS_Normandie_at_sea_view.JPG",
+    "alt": "The ocean liner Normandie at sea",
+    "credit": "Vick the Viking · crop by Altair78",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "queen-mary-1938-record": {
+    "path": "assets/journeys/queen-mary-1938-record.webp",
+    "commons_file": "File:Leaving New York on the Queen Mary 1938-10692077756.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Leaving_New_York_on_the_Queen_Mary_1938-10692077756.jpg",
+    "alt": "RMS Queen Mary departing New York in 1938",
+    "credit": "Richard",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "united-states-1952-record": {
+    "path": "assets/journeys/united-states-1952-record.webp",
+    "commons_file": "File:SS United States on maiden voyage from Southampton.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:SS_United_States_on_maiden_voyage_from_Southampton.jpg",
+    "alt": "SS United States on its 1952 maiden voyage",
+    "credit": "My late father",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "great-britain-1845": {
+    "path": "assets/journeys/great-britain-1845.webp",
+    "commons_file": "File:SS Great Britain by Talbot.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:SS_Great_Britain_by_Talbot.jpg",
+    "alt": "An early photograph of SS Great Britain",
+    "credit": "William Henry Fox Talbot",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "empress-ireland-1914": {
+    "path": "assets/journeys/empress-ireland-1914.webp",
+    "commons_file": "File:RMS Empress of Ireland Colored Picture.png",
+    "source_url": "https://commons.wikimedia.org/wiki/File:RMS_Empress_of_Ireland_Colored_Picture.png",
+    "alt": "A colorized image of the liner Empress of Ireland",
+    "credit": "HefePine23",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "britannia-1840": {
+    "path": "assets/journeys/britannia-1840.webp",
+    "commons_file": "File:RMS Britannia 1840 paddlewheel.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:RMS_Britannia_1840_paddlewheel.jpg",
+    "alt": "An illustration of Cunard's paddle steamer Britannia",
+    "credit": "Wikid77",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "great-eastern-1860": {
+    "path": "assets/journeys/great-eastern-1860.webp",
+    "commons_file": "File:Great Eastern 1866-crop.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Great_Eastern_1866-crop.jpg",
+    "alt": "A historic photograph of the steamship Great Eastern",
+    "credit": "most likely Robert Edward Holloway (d. 1904) according to source",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "republic-wireless-1909": {
+    "path": "assets/journeys/republic-wireless-1909.webp",
+    "commons_file": "File:Jack Binns - RMS Republic.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Jack_Binns_-_RMS_Republic.jpg",
+    "alt": "A portrait of wireless operator Jack Binns of RMS Republic",
+    "credit": "N/A (Life time: December 8, 1959)",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "queen-elizabeth-1940": {
+    "path": "assets/journeys/queen-elizabeth-1940.webp",
+    "commons_file": "File:RMS Queen Elizabeth at Southampton 1967 (3).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:RMS_Queen_Elizabeth_at_Southampton_1967_(3).jpg",
+    "alt": "RMS Queen Elizabeth at Southampton in 1967, long after its first crossing",
+    "credit": "Wolfgang Fricke",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "qe2-maiden-1969": {
+    "path": "assets/journeys/qe2-maiden-1969.webp",
+    "commons_file": "File:ETH-BIB Com LC0090-001-001 RMS Queen Elizabeth 2 Glasgow 1967.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:ETH-BIB_Com_LC0090-001-001_RMS_Queen_Elizabeth_2_Glasgow_1967.jpg",
+    "alt": "Queen Elizabeth 2 under construction before its maiden voyage",
+    "credit": "hg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "qm2-first-atlantic-2004": {
+    "path": "assets/journeys/qm2-first-atlantic-2004.webp",
+    "commons_file": "File:Qm2 portboston (cropped).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Qm2_portboston_(cropped).jpg",
+    "alt": "Queen Mary 2 at Boston, photographed after its first Atlantic crossing",
+    "credit": "Oceanhistory46",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "aquitania-maiden-1914": {
+    "path": "assets/journeys/aquitania-maiden-1914.webp",
+    "commons_file": "File:SS Aquitania.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:SS_Aquitania.jpg",
+    "alt": "A historic image of RMS Aquitania",
+    "credit": "Detroit Publishing Co.",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "olympic-maiden-1911": {
+    "path": "assets/journeys/olympic-maiden-1911.webp",
+    "commons_file": "File:RMS Olympic, 1911.JPG",
+    "source_url": "https://commons.wikimedia.org/wiki/File:RMS_Olympic,_1911.JPG",
+    "alt": "RMS Olympic photographed in 1911",
+    "credit": "Paul Thompson",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "bremen-1929-maiden": {
+    "path": "assets/journeys/bremen-1929-maiden.webp",
+    "commons_file": "File:Liner SS Bremen.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Liner_SS_Bremen.jpg",
+    "alt": "The 1929 liner SS Bremen",
+    "credit": "Joost J. Bakker from IJmuiden",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "europa-1930-maiden": {
+    "path": "assets/journeys/europa-1930-maiden.webp",
+    "commons_file": "File:RMS Europa.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:RMS_Europa.jpg",
+    "alt": "The liner Europa",
+    "credit": "before 1866",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "ile-de-france-rescue-1956": {
+    "path": "assets/journeys/ile-de-france-rescue-1956.webp",
+    "commons_file": "File:Île de France at sea.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:%C3%8Ele_de_France_at_sea.jpg",
+    "alt": "SS Île de France at sea",
+    "credit": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "hikawa-maru-chaplin-1932": {
+    "path": "assets/journeys/hikawa-maru-chaplin-1932.webp",
+    "commons_file": "File:Hikawa Maru at Yokohama Port.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Hikawa_Maru_at_Yokohama_Port.jpg",
+    "alt": "Hikawa Maru preserved at Yokohama, decades after Chaplin sailed aboard",
+    "credit": "Tokyo538",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "arctic-final-1854": {
+    "path": "assets/journeys/arctic-final-1854.webp",
+    "commons_file": "File:'The Arctic' Steam-Ship - ILN 1854.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:%27The_Arctic%27_Steam-Ship_-_ILN_1854.jpg",
+    "alt": "An 1854 illustration of SS Arctic",
+    "credit": "Edwin Weedon",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-powell-1869": {
+    "path": "assets/journeys/river-powell-1869.webp",
+    "commons_file": "File:John powell camp.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:John_powell_camp.jpg",
+    "alt": "John Wesley Powell's expedition camp beside the Colorado River",
+    "credit": "E. 0. Beaman",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-orellana-amazon-1542": {
+    "path": "assets/journeys/river-orellana-amazon-1542.webp",
+    "commons_file": "File:Voyage of Francisco de Orellana Map by António Pereira 1546.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Voyage_of_Francisco_de_Orellana_Map_by_Ant%C3%B3nio_Pereira_1546.jpg",
+    "alt": "A 1546 map recording Orellana's Amazon voyage",
+    "credit": "Pereira, António, active 16th century",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-marquette-jolliet-1673": {
+    "path": "assets/journeys/river-marquette-jolliet-1673.webp",
+    "commons_file": "File:Marquette and Joliet entering the Mississippi, 1673, Milwaukee Public Museum (NBY 21193).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Marquette_and_Joliet_entering_the_Mississippi,_1673,_Milwaukee_Public_Museum_(NBY_21193).jpg",
+    "alt": "A later depiction of Marquette and Jolliet on the Mississippi",
+    "credit": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-lasalle-mississippi-1682": {
+    "path": "assets/journeys/river-lasalle-mississippi-1682.webp",
+    "commons_file": "File:George Catlin, La Salle's Party Entering the Mississippi in Canoes. February 6, 1682, 1847-1848, NGA 50640.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:George_Catlin,_La_Salle%27s_Party_Entering_the_Mississippi_in_Canoes._February_6,_1682,_1847-1848,_NGA_50640.jpg",
+    "alt": "A nineteenth-century painting of La Salle's river party",
+    "credit": "George Catlin",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "river-lewis-clark-1804": {
+    "path": "assets/journeys/river-lewis-clark-1804.webp",
+    "commons_file": "File:Lewis and Clark.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lewis_and_Clark.jpg",
+    "alt": "Portraits of Meriwether Lewis and William Clark",
+    "credit": "Wikimedia Commons",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-stanley-congo-1877": {
+    "path": "assets/journeys/river-stanley-congo-1877.webp",
+    "commons_file": "File:Stanley's Map, after his first crossing of the continent, 1877 - DPLA - 0a5b1a1646ff70de1e5c8a6af6bf3418.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Stanley%27s_Map,_after_his_first_crossing_of_the_continent,_1877_-_DPLA_-_0a5b1a1646ff70de1e5c8a6af6bf3418.jpg",
+    "alt": "Stanley's 1877 map of his African crossing",
+    "credit": "Stanley, Henry M. (Henry Morton), 1841-1904",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-roosevelt-rondon-1914": {
+    "path": "assets/journeys/river-roosevelt-rondon-1914.webp",
+    "commons_file": "File:River-doubt-team.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:River-doubt-team.jpg",
+    "alt": "Members of the Roosevelt–Rondon River of Doubt expedition",
+    "credit": "Wikimedia Commons",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-humboldt-casiquiare-1800": {
+    "path": "assets/journeys/river-humboldt-casiquiare-1800.webp",
+    "commons_file": "File:Alexander von Humboldt by Friedrich Georg Weitsch.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Alexander_von_Humboldt_by_Friedrich_Georg_Weitsch.jpg",
+    "alt": "A portrait of explorer Alexander von Humboldt",
+    "credit": "Friedrich Georg Weitsch",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-la-condamine-amazon-1744": {
+    "path": "assets/journeys/river-la-condamine-amazon-1744.webp",
+    "commons_file": "File:Charles Marie de La Condamine.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Charles_Marie_de_La_Condamine.jpg",
+    "alt": "A portrait of explorer Charles Marie de La Condamine",
+    "credit": "Pierre-Philippe Choffard / After Charles-Nicolas Cochin",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-teixeira-amazon-1639": {
+    "path": "assets/journeys/river-teixeira-amazon-1639.webp",
+    "commons_file": "File:Amazon River ESA387332.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Amazon_River_ESA387332.jpg",
+    "alt": "A satellite view of the Amazon River, the expedition setting",
+    "credit": "European Space Agency",
+    "license": "CC BY-SA 3.0 igo",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en"
+  },
+  "river-mackenzie-arctic-1789": {
+    "path": "assets/journeys/river-mackenzie-arctic-1789.webp",
+    "commons_file": "File:Alexander MacKenzie - portrait.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Alexander_MacKenzie_-_portrait.jpg",
+    "alt": "A portrait of explorer Alexander Mackenzie",
+    "credit": "William James Topley",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-thompson-columbia-1811": {
+    "path": "assets/journeys/river-thompson-columbia-1811.webp",
+    "commons_file": "File:David Thompson (1770-1857).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:David_Thompson_(1770-1857).jpg",
+    "alt": "A portrait of explorer and cartographer David Thompson",
+    "credit": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-fraser-1808": {
+    "path": "assets/journeys/river-fraser-1808.webp",
+    "commons_file": "File:Descent of Fraser River 1808.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Descent_of_Fraser_River_1808.jpg",
+    "alt": "A later depiction of Simon Fraser's river descent",
+    "credit": "Charles William Jefferys",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-mekong-commission-1866": {
+    "path": "assets/journeys/river-mekong-commission-1866.webp",
+    "commons_file": "File:Voyage d'exploration en Indo-Chine - effectue pendant les annees 1866 1867 et 1868 - v 1 002 crop.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Voyage_d%27exploration_en_Indo-Chine_-_effectue_pendant_les_annees_1866_1867_et_1868_-_v_1_002_crop.jpg",
+    "alt": "An illustration from the 1866–68 Mekong exploration commission",
+    "credit": "Émile Bayard",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-livingstone-zambezi-1858": {
+    "path": "assets/journeys/river-livingstone-zambezi-1858.webp",
+    "commons_file": "File:David Livingstone by Thomas Annan.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:David_Livingstone_by_Thomas_Annan.jpg",
+    "alt": "A portrait photograph of Zambezi explorer David Livingstone",
+    "credit": "Thomas Annan / Adam Cuerden",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-mungo-park-niger-1805": {
+    "path": "assets/journeys/river-mungo-park-niger-1805.webp",
+    "commons_file": "File:Mungo Park portrait bw.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mungo_Park_portrait_bw.jpg",
+    "alt": "A portrait of Niger explorer Mungo Park",
+    "credit": "Mungo_Park_portrait.jpg : Unknown derivative work: Materialscientist",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-lander-niger-1830": {
+    "path": "assets/journeys/river-lander-niger-1830.webp",
+    "commons_file": "File:Richard Lander portrait.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Richard_Lander_portrait.jpg",
+    "alt": "A portrait of explorer Richard Lander",
+    "credit": "Wikimedia Commons",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-pike-mississippi-1805": {
+    "path": "assets/journeys/river-pike-mississippi-1805.webp",
+    "commons_file": "File:ZebulonPikeByPeale.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:ZebulonPikeByPeale.jpg",
+    "alt": "A portrait of explorer Zebulon Pike",
+    "credit": "Charles Willson Peale",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-ives-colorado-1857": {
+    "path": "assets/journeys/river-ives-colorado-1857.webp",
+    "commons_file": "File:Report upon the Colorado River of the West (PLATE I) BHL32611321.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Report_upon_the_Colorado_River_of_the_West_(PLATE_I)_BHL32611321.jpg",
+    "alt": "A period illustration from Ives's Colorado River report",
+    "credit": "Gray, Asa; United States.",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-hudson-half-moon-1609": {
+    "path": "assets/journeys/river-hudson-half-moon-1609.webp",
+    "commons_file": "File:Half Moon in Hudson.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Half_Moon_in_Hudson.jpg",
+    "alt": "A later illustration of Hudson's Half Moon",
+    "credit": "Original uploader was Nonenmac at en.wikipedia",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-champlain-ottawa-1613": {
+    "path": "assets/journeys/river-champlain-ottawa-1613.webp",
+    "commons_file": "File:Samchamprifle.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Samchamprifle.jpg",
+    "alt": "A later depiction of explorer Samuel de Champlain",
+    "credit": "Samuel de Champlain",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-steamboat-race-1870": {
+    "path": "assets/journeys/river-steamboat-race-1870.webp",
+    "commons_file": "File:Race between the Robert E. Lee and the Natchez - DPLA - 17ec9cf92bfba46071715fa5d018608b.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Race_between_the_Robert_E._Lee_and_the_Natchez_-_DPLA_-_17ec9cf92bfba46071715fa5d018608b.jpg",
+    "alt": "A depiction of the Robert E. Lee–Natchez riverboat race",
+    "credit": "Donaldson Art Sign Company",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "river-franklin-coppermine-1821": {
+    "path": "assets/journeys/river-franklin-coppermine-1821.webp",
+    "commons_file": "File:Sir John Franklin by Thomas Phillips.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sir_John_Franklin_by_Thomas_Phillips.jpg",
+    "alt": "A portrait of Arctic explorer John Franklin",
+    "credit": "Thomas Phillips",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "human-jason-lewis-1994": {
+    "path": "assets/journeys/human-jason-lewis-1994.webp",
+    "commons_file": "File:Jason Lewis bicycling near Ostend, Sept 2007.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Jason_Lewis_bicycling_near_Ostend,_Sept_2007.jpg",
+    "alt": "Jason Lewis, photographed in 2007 during his human-powered world journey",
+    "credit": "Tammie6123",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "human-erden-eruc-2007": {
+    "path": "assets/journeys/human-erden-eruc-2007.webp",
+    "commons_file": "File:CIA WorldFactBook-Political world-ee.png",
+    "source_url": "https://commons.wikimedia.org/wiki/File:CIA_WorldFactBook-Political_world-ee.png",
+    "alt": "A map tracing Erden Eruç's human-powered circumnavigation",
+    "credit": "CIA World Factbook",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "human-nansen-greenland-1888": {
+    "path": "assets/journeys/human-nansen-greenland-1888.webp",
+    "commons_file": "File:Nansen's Greenland expedition crossing (cropped).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Nansen%27s_Greenland_expedition_crossing_(cropped).jpg",
+    "alt": "Nansen's 1888 Greenland crossing party",
+    "credit": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "human-scott-south-pole-1911": {
+    "path": "assets/journeys/human-scott-south-pole-1911.webp",
+    "commons_file": "File:Scott's party at the South Pole.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Scott%27s_party_at_the_South_Pole.jpg",
+    "alt": "Scott's party at the South Pole in 1912",
+    "credit": "Henry Bowers (1883–1912)",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "human-everest-hillary-tenzing-1953": {
+    "path": "assets/journeys/human-everest-hillary-tenzing-1953.webp",
+    "commons_file": "File:Tenzing Norgay (cropped).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Tenzing_Norgay_(cropped).jpg",
+    "alt": "A portrait of Tenzing Norgay, who summited Everest with Edmund Hillary",
+    "credit": "SAS Scandinavian Airlines",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "human-everest-messner-habeler-1978": {
+    "path": "assets/journeys/human-everest-messner-habeler-1978.webp",
+    "commons_file": "File:2024-02-26-Reinhold Messner-Hart aber fair-2539.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2024-02-26-Reinhold_Messner-Hart_aber_fair-2539.jpg",
+    "alt": "Reinhold Messner, photographed decades after his oxygen-free Everest ascent",
+    "credit": "Superbass",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "human-everest-messner-solo-1980": {
+    "path": "assets/journeys/human-everest-messner-solo-1980.webp",
+    "commons_file": "File:2024-02-26-Reinhold Messner-Hart aber fair-2539.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2024-02-26-Reinhold_Messner-Hart_aber_fair-2539.jpg",
+    "alt": "Reinhold Messner, photographed decades after his solo Everest ascent",
+    "credit": "Superbass",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "human-shaffer-appalachian-1948": {
+    "path": "assets/journeys/human-shaffer-appalachian-1948.webp",
+    "commons_file": "File:Appalachian Trail (45352799594).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Appalachian_Trail_(45352799594).jpg",
+    "alt": "The Appalachian Trail, shown in a later photograph",
+    "credit": "ShenandoahNPS",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "human-gatewood-appalachian-1955": {
+    "path": "assets/journeys/human-gatewood-appalachian-1955.webp",
+    "commons_file": "File:Emma Gatewood 414x425.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Emma_Gatewood_414x425.jpg",
+    "alt": "A portrait of Appalachian Trail hiker Emma 'Grandma' Gatewood",
+    "credit": "Stratness",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "human-strayed-pct-1995": {
+    "path": "assets/journeys/human-strayed-pct-1995.webp",
+    "commons_file": "File:Cheryl Strayed 2012.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cheryl_Strayed_2012.jpg",
+    "alt": "Cheryl Strayed, photographed years after her Pacific Crest Trail hike",
+    "credit": "Larry D. Moore",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "human-stafford-amazon-2008": {
+    "path": "assets/journeys/human-stafford-amazon-2008.webp",
+    "commons_file": "File:Aerial view of the Amazon Rainforest.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Amazon_Rainforest.jpg",
+    "alt": "The Amazon rainforest, the setting of Stafford's walk",
+    "credit": "lubasi",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "human-beaumont-world-cycle-2017": {
+    "path": "assets/journeys/human-beaumont-world-cycle-2017.webp",
+    "commons_file": "File:Mark Beaumont - 1.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mark_Beaumont_-_1.jpg",
+    "alt": "A portrait of round-the-world cyclist Mark Beaumont",
+    "credit": "Mark Beaumont",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "human-jenny-graham-world-cycle-2018": {
+    "path": "assets/journeys/human-jenny-graham-world-cycle-2018.webp",
+    "commons_file": "File:Jenny Graham(2018).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Jenny_Graham(2018).jpg",
+    "alt": "A map of Jenny Graham's 2018 cycling route",
+    "credit": "Htcltd",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "human-25th-infantry-bicycle-1897": {
+    "path": "assets/journeys/human-25th-infantry-bicycle-1897.webp",
+    "commons_file": "File:Members of the U.S. Army 25th Infantry Bicycle Corps stationed at Fort Missoula, 1897.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Members_of_the_U.S._Army_25th_Infantry_Bicycle_Corps_stationed_at_Fort_Missoula,_1897.webp",
+    "alt": "Members of the 25th Infantry Bicycle Corps in 1897",
+    "credit": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "human-oskar-speck-1932": {
+    "path": "assets/journeys/human-oskar-speck-1932.webp",
+    "commons_file": "File:Oskar Speck passport style photograph.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Oskar_Speck_passport_style_photograph.jpg",
+    "alt": "An archival portrait of kayaker Oskar Speck",
+    "credit": "Australian National Maritime Museum on The Commons",
+    "license": "No known copyright restrictions",
+    "license_url": "https://www.flickr.com/commons/usage/"
+  },
+  "human-paul-caffyn-australia-1981": {
+    "path": "assets/journeys/human-paul-caffyn-australia-1981.webp",
+    "commons_file": "File:Paul Caffyn, ONZM (cropped).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Paul_Caffyn,_ONZM_(cropped).jpg",
+    "alt": "A later portrait of Australia-circumnavigation kayaker Paul Caffyn",
+    "credit": "New Zealand Government, Office of the Governor-General",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "human-freya-hoffmeister-australia-2009": {
+    "path": "assets/journeys/human-freya-hoffmeister-australia-2009.webp",
+    "commons_file": "File:Freya Hoffmeister 2010.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Freya_Hoffmeister_2010.jpg",
+    "alt": "A later portrait of kayaker Freya Hoffmeister",
+    "credit": "Landesvertretung Schleswig-Holstein",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "human-doba-atlantic-kayak-2013": {
+    "path": "assets/journeys/human-doba-atlantic-kayak-2013.webp",
+    "commons_file": "File:JKRUK 20200726 ALEKSANDER DOBA BUSKO DSC 8583 (cropped).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:JKRUK_20200726_ALEKSANDER_DOBA_BUSKO_DSC_8583_(cropped).jpg",
+    "alt": "A later portrait of transatlantic kayaker Aleksander Doba",
+    "credit": "Jarosław Kruk (Jrkruk)",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "human-john-fairfax-atlantic-1969": {
+    "path": "assets/journeys/human-john-fairfax-atlantic-1969.webp",
+    "commons_file": "File:John Fairfax and Sylvia Cook 1968.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:John_Fairfax_and_Sylvia_Cook_1968.jpg",
+    "alt": "Ocean rower John Fairfax with Sylvia Cook in 1968",
+    "credit": "Virgil Lucky",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "human-tori-murden-atlantic-1999": {
+    "path": "assets/journeys/human-tori-murden-atlantic-1999.webp",
+    "commons_file": "File:Aurimas Mockus.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Aurimas_Mockus.jpg",
+    "alt": "A representative ocean-rowing boat; not Murden's own craft",
+    "credit": "Viktorija Žilinskaitė",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "human-roz-savage-pacific-2008": {
+    "path": "assets/journeys/human-roz-savage-pacific-2008.webp",
+    "commons_file": "File:Official portrait of Roz Savage MP crop 2.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Official_portrait_of_Roz_Savage_MP_crop_2.jpg",
+    "alt": "A later portrait of ocean rower Roz Savage",
+    "credit": "©House of Commons / Laurie Noble",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "human-sarah-outen-pacific-2013": {
+    "path": "assets/journeys/human-sarah-outen-pacific-2013.webp",
+    "commons_file": "File:Sarah Outen.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sarah_Outen.jpg",
+    "alt": "A portrait of ocean rower Sarah Outen",
+    "credit": "Sarah D Outen",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "human-felicity-aston-antarctica-2011": {
+    "path": "assets/journeys/human-felicity-aston-antarctica-2011.webp",
+    "commons_file": "File:Felicity Aston portrait.JPG",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Felicity_Aston_portrait.JPG",
+    "alt": "A portrait of Antarctic skier Felicity Aston",
+    "credit": "Felicity Aston",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  }
+}

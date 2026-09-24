@@ -303,11 +303,11 @@ button, select { color: inherit; }
 .detail-card h2 { margin: 5px 0 3px; font: 500 22px/1.1 Georgia, serif; letter-spacing: -.02em; }
 .detail-date { color: var(--muted); font-size: 11px; }
 .close-detail { flex: 0 0 auto; width: 27px; height: 27px; border: 1px solid var(--edge); border-radius: 50%; background: #1a1e26; color: var(--muted); cursor: pointer; }
-.aircraft-figure { margin: 14px 0 12px; overflow: hidden; background: #090c11; border: 1px solid var(--edge); border-radius: 8px; }
-.aircraft-figure img { display: block; width: 100%; aspect-ratio: 16 / 7.5; object-fit: cover; }
-.aircraft-figure figcaption { display: flex; justify-content: space-between; gap: 12px; padding: 6px 8px; color: #858995; font-size: 8px; line-height: 1.35; }
-.aircraft-figure figcaption a { flex: 0 0 auto; color: #b7bac3; text-decoration: none; }
-.aircraft-figure figcaption .image-credit { min-width: 0; flex: 1 1 auto; overflow: hidden; color: #858995; text-overflow: ellipsis; white-space: nowrap; }
+.journey-figure { margin: 14px 0 12px; overflow: hidden; background: #090c11; border: 1px solid var(--edge); border-radius: 8px; }
+.journey-figure img { display: block; width: 100%; aspect-ratio: 16 / 7.5; object-fit: cover; }
+.journey-figure figcaption { display: flex; justify-content: space-between; gap: 12px; padding: 6px 8px; color: #858995; font-size: 8px; line-height: 1.35; }
+.journey-figure figcaption a { flex: 0 0 auto; color: #b7bac3; text-decoration: none; }
+.journey-figure figcaption .image-credit { min-width: 0; flex: 1 1 auto; overflow: hidden; color: #858995; text-overflow: ellipsis; white-space: nowrap; }
 .route-summary { margin: 13px 0 9px; color: #e4e2dc; font-size: 12px; line-height: 1.45; }
 .overview { margin: 0; color: #b9bbc3; font-size: 10.5px; line-height: 1.55; }
 .why-famous { margin-top: 11px; padding: 9px 10px; background: rgba(255,255,255,.035); border: 1px solid var(--edge); border-radius: 7px; }
@@ -531,8 +531,8 @@ button, select { color: inherit; }
   }
   .sheet-expanded .sheet-handle span { background: var(--accent); }
   .detail-card h2 { font-size: 20px; }
-  .aircraft-figure { margin: 12px 0 10px; }
-  .aircraft-figure img { aspect-ratio: 16 / 8; }
+  .journey-figure { margin: 12px 0 10px; }
+  .journey-figure img { aspect-ratio: 16 / 8; }
   .route-summary { margin-top: 11px; }
   .overview { font-size: 10px; }
   .metrics { margin: 10px 0; }

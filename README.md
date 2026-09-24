@@ -114,9 +114,27 @@ Generated outputs:
 - `data/journeys/*.geojson` — 25 sourced features per nonflight domain in CRS84
 - `data/wkt/<domain>/*.wkt` — one WKT geometry per nonflight journey
 
-Aircraft photographs are stored under `assets/aircraft/`; their source, credit,
-and reuse license are recorded in `data/aircraft-images.json` and shown beside
-each image in the flight detail card.
+Sourced images are stored under `assets/aircraft/` and `assets/journeys/`.
+Their source, credit, and reuse terms are recorded in
+`data/aircraft-images.json` and `data/journey-images.json` and linked beside
+each image in the detail card. All 175 nonflight journeys have an image.
+Images of replicas, museum displays, route settings, and later depictions are
+labeled as such; they are not presented as photographs of the historical
+journey.
+
+To refresh the nonflight images, run
+`python scripts/fetch_aircraft_images.py --catalog journeys --skip-existing`;
+the downloader
+checks each Commons file's reported license against the catalog before
+creating a 1200 × 675 WebP. `scripts/journey_images_visual_test.cjs` checks
+that all 175 images load in headless Chrome and each of the seven nonflight
+domains has a working image on a phone. Reviewed choices and captions live in
+`data/journey-image-overrides.json`, `data/journey-image-captions.json`, and
+`data/journey-image-credits.json`. To research replacements for a complete
+catalog, run `python scripts/research_journey_images.py --all`, review its
+candidate file and the three reviewed data files, then run
+`python scripts/build_journey_image_catalog.py`. The checked-in catalog is
+authoritative; search results may change.
 
 Run `python scripts/build_routes.py` after editing flight anchors, or
 `python scripts/build_journeys.py` after editing nonflight anchors.

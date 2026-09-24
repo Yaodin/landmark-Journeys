@@ -115,7 +115,7 @@ def assert_selected_render(path: Path, dom: str) -> None:
     assert 'src="assets/aircraft/lindbergh-spirit-of-st-louis.webp"' in dom
     assert "Gary Lee Todd" in dom
     assert 'href="https://en.wikipedia.org/wiki/Spirit_of_St._Louis"' in dom
-    assert dom.index('class="why-famous"') < dom.index('class="aircraft-figure"'), "why-famous block should precede the aircraft image"
+    assert dom.index('class="why-famous"') < dom.index('class="journey-figure"'), "why-famous block should precede the journey image"
 
 
 def assert_satellite_render(path: Path, dom: str) -> None:
@@ -187,7 +187,7 @@ def assert_phone_expanded(path: Path, dom: str) -> None:
     assert 'data-sheet-state="expanded"' in dom
     assert 'aria-label="Collapse journey details"' in dom
     assert 'src="assets/aircraft/lindbergh-spirit-of-st-louis.webp"' in dom
-    assert dom.index('class="why-famous"') < dom.index('class="aircraft-figure"'), "expanded phone card should lead with why-famous"
+    assert dom.index('class="why-famous"') < dom.index('class="journey-figure"'), "expanded phone card should lead with why-famous"
 
 
 def assert_phone_landscape(path: Path, dom: str, route_colors: list[tuple[int, int, int]]) -> None:
