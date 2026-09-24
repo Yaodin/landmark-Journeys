@@ -19,7 +19,7 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 DOMAINS = ("sailing", "rail", "road-races", "overland", "ocean-liners", "river", "human-powered")
-USER_AGENT = "LandmarkJourneysResearch/1.0 (https://github.com/Yaodin/vibe-flights)"
+USER_AGENT = "LandmarkJourneysResearch/1.0 (https://github.com/Yaodin/landmark-Journeys)"
 LAST_REQUEST = 0.0
 
 

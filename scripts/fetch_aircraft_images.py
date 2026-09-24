@@ -17,7 +17,7 @@ from PIL import Image, ImageOps
 
 
 ROOT = Path(__file__).resolve().parents[1]
-USER_AGENT = "VibeFlightsAtlas/1.0 (https://github.com/Yaodin/vibe-flights)"
+USER_AGENT = "LandmarkJourneysAtlas/1.0 (https://github.com/Yaodin/landmark-Journeys)"
 TARGET_SIZE = (1200, 675)
 
 

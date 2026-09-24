@@ -208,7 +208,7 @@ async function inspectRoute(page, routeId, domain = "flights") {
       for (const phrase of ["Route geometry and uncertainty", "Research sources", "Maps and photographs", "Data and access", "Wikipedia W icon source and usage terms"]) {
         assert(info.text.includes(phrase), `${infoCase.name}: missing information: ${phrase}`);
       }
-      assert(info.github === "https://github.com/Yaodin/vibe-flights", `${infoCase.name}: repository link is missing or wrong`);
+      assert(info.github === "https://github.com/Yaodin/landmark-Journeys", `${infoCase.name}: repository link is missing or wrong`);
       await page.screenshot({ path: path.join(outputDir, `${infoCase.name}.png`) });
       await page.locator("#site-info-close").click();
       assert(await page.locator("#site-info").evaluate((dialog) => !dialog.open), `${infoCase.name}: close button did not close dialog`);

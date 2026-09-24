@@ -25,7 +25,7 @@ python server.py --port 8765
 Open <http://127.0.0.1:8765>.
 
 The public GitHub Pages deployment is available at
-<https://yaodin.github.io/vibe-flights/>. Pushes to `main` deploy through
+<https://yaodin.github.io/landmark-Journeys/>. Pushes to `main` deploy through
 `.github/workflows/pages.yml`.
 
 ## Render test

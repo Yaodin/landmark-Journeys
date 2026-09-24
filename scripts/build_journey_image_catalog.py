@@ -19,7 +19,7 @@ from urllib.request import Request, urlopen
 
 
 ROOT = Path(__file__).resolve().parents[1]
-USER_AGENT = "LandmarkJourneys/1.0 (https://github.com/Yaodin/vibe-flights)"
+USER_AGENT = "LandmarkJourneys/1.0 (https://github.com/Yaodin/landmark-Journeys)"
 PUBLIC_DOMAIN = "https://creativecommons.org/publicdomain/mark/1.0/"
 
 
