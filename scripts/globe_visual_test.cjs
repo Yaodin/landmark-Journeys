@@ -25,6 +25,10 @@ function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
+async function dismissSplash(page) {
+  if (await page.locator("#welcome-splash").isVisible()) await page.locator("#welcome-continue").click();
+}
+
 async function assertDetailImage(page, label) {
   await page.locator("#detail .journey-figure img").waitFor();
   await page.waitForFunction(() => {
@@ -64,6 +68,7 @@ async function runCase(browser, name, viewport) {
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));
   await page.goto(`${baseUrl}/globe.html`, { waitUntil: "domcontentloaded" });
+  await dismissSplash(page);
   await page.waitForFunction(() => window.__globeDebug?.().ready === true, {
     timeout: 45000,
   });
@@ -292,6 +297,7 @@ async function testModeSwitch(browser) {
     `${baseUrl}/index.html?domain=overland&journey=donner-party-1846&basemap=atlas`,
     { waitUntil: "domcontentloaded" },
   );
+  await dismissSplash(page);
   await page.locator('#detail-card h2').filter({ hasText: "Donner" }).waitFor();
   await page.locator("#open-globe").click();
   await page.waitForURL((url) =>
@@ -316,6 +322,7 @@ async function testModeSwitch(browser) {
 
   const spaceEntry = await browser.newPage({ viewport: { width: 1440, height: 900 } });
   await spaceEntry.goto(`${baseUrl}/index.html?basemap=atlas`, { waitUntil: "domcontentloaded" });
+  await dismissSplash(spaceEntry);
   await spaceEntry.locator("#tab-space").click();
   await spaceEntry.waitForURL((url) => url.pathname.endsWith("/globe.html") && url.searchParams.get("domain") === "space");
   await spaceEntry.waitForFunction(() => window.__globeDebug?.().ready && window.__globeDebug().domain === "space", { timeout: 45000 });
@@ -326,6 +333,7 @@ async function testModeSwitch(browser) {
 async function testSpaceMobile(browser) {
   const page = await browser.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1 });
   await page.goto(`${baseUrl}/globe.html?domain=space&journey=apollo-11`, { waitUntil: "domcontentloaded" });
+  await dismissSplash(page);
   await page.waitForFunction(() => window.__globeDebug?.().selectedEntities > 0, { timeout: 45000 });
   await page.waitForTimeout(1600);
   const card = await page.locator("#detail").boundingBox();
@@ -342,6 +350,7 @@ async function testAllSpaceMissions(browser) {
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));
   await page.goto(`${baseUrl}/globe.html?domain=space`, { waitUntil: "domcontentloaded" });
+  await dismissSplash(page);
   await page.waitForFunction(() => window.__globeDebug?.().ready && window.__globeDebug().domain === "space", { timeout: 45000 });
   const missions = await page.evaluate(async () => (await (await fetch("spaceflight/index.json")).json()).missions);
   for (const mission of missions) {
@@ -365,6 +374,7 @@ async function testAllSpaceMissions(browser) {
 async function testShowAllHighlight(browser) {
   const page = await browser.newPage({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 });
   await page.goto(`${baseUrl}/globe.html?domain=all&journey=apollo-11`, { waitUntil: "domcontentloaded" });
+  await dismissSplash(page);
   await page.waitForFunction(() => {
     const state = window.__globeDebug?.();
     return state?.selectedEntities > 0 && state.spacePreviewEntities >= 24;
@@ -388,6 +398,7 @@ async function testAltitudeExtremes(browser) {
   for (const flight of cases) {
     const page = await browser.newPage({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 });
     await page.goto(`${baseUrl}/globe.html?journey=${flight.id}`, { waitUntil: "domcontentloaded" });
+    await dismissSplash(page);
     await page.waitForFunction(() => window.__globeDebug?.().selectedEntities > 0, { timeout: 45000 });
     const state = await page.evaluate(() => window.__globeDebug());
     assert(
@@ -413,6 +424,7 @@ async function testBellPreviewAndSpace(browser) {
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));
   await page.goto(`${baseUrl}/globe.html`, { waitUntil: "domcontentloaded" });
+  await dismissSplash(page);
   await page.waitForFunction(() => window.__globeDebug?.().ready);
   const previewVertices = (await page.evaluate(() => window.__globeDebug())).bellPreviewVertices;
   assert(previewVertices >= 175, `Bell X-1 preview has only ${previewVertices} points`);
@@ -510,12 +522,14 @@ async function testSharedStyles(browser, name, viewport) {
   };
   const mapPage = await browser.newPage({ viewport, deviceScaleFactor: 1 });
   await mapPage.goto(`${baseUrl}/index.html?journey=lindbergh-spirit-of-st-louis&basemap=atlas`, { waitUntil: "domcontentloaded" });
+  await dismissSplash(mapPage);
   await mapPage.locator("#detail-card:not(.empty) h2").waitFor();
   const mapStyles = await mapPage.evaluate(snapshot);
   await mapPage.close();
 
   const globePage = await browser.newPage({ viewport, deviceScaleFactor: 1 });
   await globePage.goto(`${baseUrl}/globe.html?journey=lindbergh-spirit-of-st-louis`, { waitUntil: "domcontentloaded" });
+  await dismissSplash(globePage);
   await globePage.waitForFunction(() => window.__globeDebug?.().selectedEntities > 0);
   const globeStyles = await globePage.evaluate(snapshot);
   await globePage.close();
@@ -545,6 +559,7 @@ async function testSharedStyles(browser, name, viewport) {
     if (chandrayaanOnly) {
       const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
       await page.goto(`${baseUrl}/globe.html?domain=space&journey=chandrayaan-3`, { waitUntil: "domcontentloaded" });
+      await dismissSplash(page);
       await page.waitForFunction(() => window.__globeDebug?.().selectedEntities > 0, { timeout: 45000 });
       await page.waitForTimeout(1400);
       await page.locator("#detail").evaluate((card) => { card.style.display = "none"; });

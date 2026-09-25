@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/cesium@1.145.0/Build/Cesium/Widgets/widgets.css"
     />
-    <link rel="stylesheet" href="style.css?v=alignment-20260925-2" />
+    <link rel="stylesheet" href="style.css?v=ai-notice-1" />
     <link rel="stylesheet" href="globe.css?v=alignment-20260925-2" />
     <script>
       window.CESIUM_BASE_URL =
@@ -79,6 +79,16 @@
         </section>
       </main>
     </div>
+    <dialog id="welcome-splash" class="welcome-splash" aria-labelledby="welcome-title" aria-describedby="welcome-description">
+      <div class="welcome-splash-shell">
+        <div class="welcome-emblem" aria-hidden="true">↗</div>
+        <div class="eyebrow">Landmark Journeys · Before you explore</div>
+        <h2 id="welcome-title">A note on accuracy</h2>
+        <p id="welcome-description" class="welcome-lead">Each journey is researched, with sources linked in its route card. Where possible, we combine maps, logs, and historical accounts; many lines interpolate between known points rather than follow a recorded track. Much of the atlas was created with generative AI, so its routes and descriptions may or may not be accurate.</p>
+        <p class="welcome-caution">For entertainment only. The lines are approximate interpretations, not verified tracks. Do not use them for navigation or as a historical source; check the linked sources when accuracy matters.</p>
+        <button id="welcome-continue" class="welcome-continue" type="button" autofocus>Explore the atlas <span aria-hidden="true">↗</span></button>
+      </div>
+    </dialog>
     <dialog id="site-info" class="site-info" aria-labelledby="site-info-title">
       <div class="site-info-shell">
         <header class="site-info-header">
@@ -96,5 +106,6 @@
         <footer class="site-info-footer"><span>Approximate route reconstructions · 9 domains</span><a href="https://github.com/Yaodin/landmark-Journeys" target="_blank" rel="noreferrer">View source on GitHub ↗</a></footer>
       </div>
     </dialog>
+    <script src="splash.js?v=ai-notice-1"></script>
   </body>
 </html>

@@ -32,6 +32,12 @@ python server.py --port 8765
 
 Open <http://127.0.0.1:8765>.
 
+On the first visit in a browser session, the 2D map and 3D globe show a short
+notice explaining that the researched, source-linked routes are AI-assisted
+reconstructions for entertainment, not verified tracks. Dismissing it carries
+across the two views for that session. The notice has a desktop-and-phone
+browser test in `scripts/splash_visual_test.cjs`.
+
 The public GitHub Pages deployment is available at
 <https://yaodin.github.io/landmark-Journeys/>. Pushes to `main` deploy through
 `.github/workflows/pages.yml`.

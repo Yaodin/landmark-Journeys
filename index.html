@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <title>Landmark Journeys — Historic Routes</title>
-  <link rel="stylesheet" href="style.css?v=alignment-20260925-2">
+  <link rel="stylesheet" href="style.css?v=ai-notice-1">
 </head>
 <body>
   <aside class="sidebar" aria-label="Journey selector">
@@ -43,6 +43,17 @@
     <section id="route-list" class="route-list" role="tabpanel" aria-labelledby="tab-flights" aria-live="polite"></section>
 
   </aside>
+
+  <dialog id="welcome-splash" class="welcome-splash" aria-labelledby="welcome-title" aria-describedby="welcome-description">
+    <div class="welcome-splash-shell">
+      <div class="welcome-emblem" aria-hidden="true">↗</div>
+      <div class="eyebrow">Landmark Journeys · Before you explore</div>
+      <h2 id="welcome-title">A note on accuracy</h2>
+      <p id="welcome-description" class="welcome-lead">Each journey is researched, with sources linked in its route card. Where possible, we combine maps, logs, and historical accounts; many lines interpolate between known points rather than follow a recorded track. Much of the atlas was created with generative AI, so its routes and descriptions may or may not be accurate.</p>
+      <p class="welcome-caution">For entertainment only. The lines are approximate interpretations, not verified tracks. Do not use them for navigation or as a historical source; check the linked sources when accuracy matters.</p>
+      <button id="welcome-continue" class="welcome-continue" type="button" autofocus>Explore the atlas <span aria-hidden="true">↗</span></button>
+    </div>
+  </dialog>
 
   <dialog id="site-info" class="site-info" aria-labelledby="site-info-title">
     <div class="site-info-shell">
@@ -131,6 +142,7 @@
     <div id="loading" class="loading"><span></span>Loading routes…</div>
   </main>
 
+  <script src="splash.js?v=ai-notice-1"></script>
   <script type="module" src="app.js?v=alignment-20260925-2"></script>
   <!-- Cloudflare Web Analytics -->
   <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"a531a20e2b934b0b8e5e5cb0eb596ca2"}'></script>

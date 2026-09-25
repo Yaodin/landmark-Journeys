@@ -14,6 +14,10 @@ function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
+async function dismissSplash(page) {
+  if (await page.locator("#welcome-splash").isVisible()) await page.locator("#welcome-continue").click();
+}
+
 async function selectedRoutePixels(page, color = [255, 159, 67]) {
   return page.evaluate((expected) => {
     const canvas = document.querySelector("#map-canvas");
@@ -30,6 +34,7 @@ async function runCase(browser, name, viewport) {
   const page = await browser.newPage({ viewport, deviceScaleFactor: 1 });
   await page.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
   await page.goto(`${baseUrl}/?basemap=atlas`);
+  await dismissSplash(page);
   await page.waitForFunction(() => window.__atlasReady === true);
   const analyticsBeacon = page.locator('script[src="https://static.cloudflareinsights.com/beacon.min.js"]');
   assert(await analyticsBeacon.count() === 1, `${name}: Cloudflare analytics beacon is missing`);
@@ -149,6 +154,7 @@ async function runCase(browser, name, viewport) {
     const narrow = await browser.newPage({ viewport: { width: 320, height: 700 } });
     await narrow.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
     await narrow.goto(`${baseUrl}/?basemap=atlas`);
+    await dismissSplash(narrow);
     await narrow.waitForFunction(() => window.__atlasReady === true);
     const narrowTabs = await narrow.locator(".domain-tabs").evaluate((container) => ({
       scrollWidth: container.scrollWidth,
@@ -162,12 +168,14 @@ async function runCase(browser, name, viewport) {
     const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
     await page.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
     await page.goto(`${baseUrl}/?basemap=atlas&domain=rail`);
+    await dismissSplash(page);
     await page.waitForFunction(() => window.__atlasReady === true);
     assert(await page.locator("#tab-rail").getAttribute("aria-selected") === "true", "deep link did not select rail");
     await page.close();
     const allLink = await browser.newPage({ viewport: { width: 390, height: 844 } });
     await allLink.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
     await allLink.goto(`${baseUrl}/?basemap=atlas&domain=all&journey=rail-tokaido-1964`);
+    await dismissSplash(allLink);
     await allLink.waitForFunction(() => window.__atlasReady === true);
     assert(await allLink.locator("#tab-all").getAttribute("aria-selected") === "true", "deep link did not select Show all");
     assert(await allLink.locator("body").getAttribute("data-full-geometry-route") === "rail-tokaido-1964", "deep link did not load full selected geometry");

@@ -19,6 +19,10 @@ function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
+async function dismissSplash(page) {
+  if (await page.locator("#welcome-splash").isVisible()) await page.locator("#welcome-continue").click();
+}
+
 async function inspectRoute(page, routeId, domain = "flights") {
   return page.evaluate(async ({ selectedId, domainName }) => {
     const canvas = document.querySelector("#map-canvas");
@@ -173,6 +177,7 @@ async function inspectRoute(page, routeId, domain = "flights") {
       const page = await browser.newPage({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 });
       await page.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
       await page.goto(`${baseUrl}/?basemap=atlas`, { waitUntil: "networkidle" });
+      await dismissSplash(page);
       if (domain !== "flights") await page.locator(`[role="tab"][data-domain="${domain}"]`).click();
       await page.locator(`.route-item[data-id="${inspectOnly}"]`).click();
       await page.waitForFunction((route) => document.body.dataset.fitRoute === route, inspectOnly);
@@ -190,6 +195,7 @@ async function inspectRoute(page, routeId, domain = "flights") {
       await context.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
       const page = await context.newPage();
       await page.goto(`${baseUrl}/?basemap=atlas`, { waitUntil: "networkidle" });
+      await dismissSplash(page);
       await page.locator("#site-info-open").click();
       await page.locator("#site-info[open]").waitFor();
       const info = await page.locator("#site-info").evaluate((dialog) => {
@@ -221,6 +227,7 @@ async function inspectRoute(page, routeId, domain = "flights") {
       await context.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
       const page = await context.newPage();
       await page.goto(`${baseUrl}/?basemap=atlas`, { waitUntil: "networkidle" });
+      await dismissSplash(page);
       await page.locator(`.route-item[data-id="${testCase.route}"]`).click();
       await page.waitForFunction((route) => document.body.dataset.fitRoute === route, testCase.route);
       await page.waitForTimeout(150);
@@ -247,6 +254,7 @@ async function inspectRoute(page, routeId, domain = "flights") {
       await context.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
       const page = await context.newPage();
       await page.goto(`${baseUrl}/?basemap=atlas`, { waitUntil: "networkidle" });
+      await dismissSplash(page);
       const routeIds = await page.locator(".route-item").evaluateAll((items) => items.map((item) => item.dataset.id));
       for (const routeId of routeIds) {
         await page.locator(`.route-item[data-id="${routeId}"]`).click();
@@ -271,6 +279,7 @@ async function inspectRoute(page, routeId, domain = "flights") {
         await context.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
         const page = await context.newPage();
         await page.goto(`${baseUrl}/?basemap=atlas`, { waitUntil: "networkidle" });
+        await dismissSplash(page);
         const mapped = await page.evaluate(async (name) => (await fetch(`data/journeys/${name}.geojson?v=journey-1`)).ok, domain);
         if (!mapped && !process.argv.includes("--all-mapped")) {
           console.log(`SKIP ${domain}: geometry not generated yet`);
@@ -301,6 +310,7 @@ async function inspectRoute(page, routeId, domain = "flights") {
         await phoneContext.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
         const phonePage = await phoneContext.newPage();
         await phonePage.goto(`${baseUrl}/?basemap=atlas&domain=${domain}`, { waitUntil: "networkidle" });
+        await dismissSplash(phonePage);
         const phoneRoute = routeIds.at(-1);
         await phonePage.locator(`.route-item[data-id="${phoneRoute}"]`).click();
         await phonePage.waitForFunction((route) => document.body.dataset.fitRoute === route, phoneRoute);

@@ -184,6 +184,67 @@ button, select { color: inherit; }
 .route-toggle:checked { background: color-mix(in srgb, var(--route-color) 42%, #303541); }
 .route-toggle:checked::after { transform: translateX(12px); background: var(--route-color); }
 
+.welcome-splash {
+  width: min(520px, calc(100vw - 24px));
+  max-height: calc(100dvh - 24px);
+  padding: 0;
+  overflow: auto;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(240, 199, 94, .17), transparent 42%),
+    radial-gradient(circle at 0% 100%, rgba(60, 113, 147, .17), transparent 50%),
+    #151a21;
+  border: 1px solid rgba(240, 199, 94, .38);
+  border-radius: 18px;
+  box-shadow: 0 32px 100px rgba(0, 0, 0, .72);
+}
+.welcome-splash::backdrop { background: rgba(2, 5, 9, .87); backdrop-filter: blur(7px); }
+.welcome-splash-shell { padding: clamp(23px, 5vw, 36px); }
+.welcome-emblem {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 24px;
+  color: #1c1b16;
+  background: var(--accent);
+  border-radius: 12px;
+  font: 29px/1 Georgia, serif;
+}
+.welcome-splash h2 {
+  margin: 10px 0 16px;
+  font: 500 clamp(30px, 8vw, 42px)/1.08 Georgia, serif;
+  letter-spacing: -.035em;
+}
+.welcome-lead { margin: 0 0 17px; color: #e9e6de; font-size: 15px; line-height: 1.6; }
+.welcome-caution { margin: 0 0 25px; padding: 12px 14px; color: #d3c8b0; background: rgba(240, 199, 94, .08); border-left: 2px solid var(--accent); border-radius: 0 7px 7px 0; font-size: 12px; line-height: 1.55; }
+.welcome-continue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 13px 17px;
+  color: #17191e;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 750;
+}
+.welcome-continue:hover { background: #ffdb7c; }
+.welcome-continue:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+.welcome-continue span { font-size: 19px; line-height: 1; }
+@media (max-width: 400px) and (max-height: 650px) {
+  .welcome-splash-shell { padding: 17px 20px; }
+  .welcome-emblem { width: 32px; height: 32px; margin-bottom: 12px; border-radius: 9px; font-size: 22px; }
+  .welcome-splash h2 { margin: 7px 0 10px; font-size: 28px; }
+  .welcome-lead { margin-bottom: 12px; font-size: 13px; line-height: 1.46; }
+  .welcome-caution { margin-bottom: 16px; padding: 9px 11px; font-size: 11px; line-height: 1.4; }
+  .welcome-continue { padding: 10px 13px; }
+}
+
 .site-info {
   width: min(760px, calc(100vw - 32px));
   max-height: min(84dvh, 760px);

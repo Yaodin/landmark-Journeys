@@ -22,6 +22,7 @@ function assert(condition, message) {
       if (request.url().includes("/data/journeys/") && request.url().includes(".geojson")) requestedDomains.push(request.url());
     });
     await page.goto(`${baseUrl}/?basemap=atlas`);
+    if (await page.locator("#welcome-splash").isVisible()) await page.locator("#welcome-continue").click();
     await page.waitForFunction(() => window.__atlasReady === true);
     const started = Date.now();
     await page.locator("#tab-all").click();

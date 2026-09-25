@@ -15,6 +15,10 @@ function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
+async function dismissSplash(page) {
+  if (await page.locator("#welcome-splash").isVisible()) await page.locator("#welcome-continue").click();
+}
+
 async function inspectImage(page, id, metadata, context) {
   await page.locator(`.route-item[data-id="${id}"]`).click();
   const figure = page.locator("#detail-card .journey-figure");
@@ -55,6 +59,7 @@ async function inspectImage(page, id, metadata, context) {
     const desktop = await browser.newPage({ viewport: { width: 1440, height: 900 } });
     await desktop.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
     await desktop.goto(`${baseUrl}/?basemap=atlas`);
+    await dismissSplash(desktop);
     await desktop.waitForFunction(() => window.__atlasReady === true);
     for (const domain of domains) {
       await desktop.locator(`#tab-${domain}`).click();
@@ -69,6 +74,7 @@ async function inspectImage(page, id, metadata, context) {
     const phone = await browser.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1 });
     await phone.route("https://static.cloudflareinsights.com/**", (route) => route.abort());
     await phone.goto(`${baseUrl}/?basemap=atlas`);
+    await dismissSplash(phone);
     await phone.waitForFunction(() => window.__atlasReady === true);
     for (const domain of domains) {
       await phone.locator(`#tab-${domain}`).click();
