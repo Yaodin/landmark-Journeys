@@ -11,7 +11,7 @@ const GLOBE_DOMAINS = [
   ["space", "Space"],
   ["all", "Show all"],
 ];
-const GEOMETRY_VERSION = "alignment-20260924-1";
+const GEOMETRY_VERSION = "alignment-20260925-2";
 const WHOLE_EARTH_DESTINATION = [-24, 31, 19_000_000];
 // A sub-pixel lift at global scale avoids ground-polyline z-fighting. With
 // 0.5-degree tessellation, segment sagitta stays below this clearance.

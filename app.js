@@ -1,4 +1,4 @@
-const GEOMETRY_VERSION = "alignment-20260924-1";
+const GEOMETRY_VERSION = "alignment-20260925-2";
 const ROUTES_URL = `data/routes.geojson?v=${GEOMETRY_VERSION}`;
 const ALL_OVERVIEW_URL = `data/all-overview.geojson?v=${GEOMETRY_VERSION}`;
 const BASEMAP_URL = "data/ne_110m_admin_0_countries.geojson";
