@@ -33,7 +33,19 @@
         "raw_response_sha256": "78d00400b89582d670a5e6d0eb0b8448c3293ed236ae3621e4cbb2480715b48e"
       }
     ],
-    "retrieved_utc_date": "2026-09-24"
+    "retrieved_utc_date": "2026-09-24",
+    "sample_origin_ranges": [
+      {
+        "first_index": 0,
+        "last_index": 124,
+        "origin": "modeled_launch_or_gap"
+      },
+      {
+        "first_index": 125,
+        "last_index": 4219,
+        "origin": "jpl_horizons_vectors"
+      }
+    ]
   },
   "stats": {
     "point_count": 4220,

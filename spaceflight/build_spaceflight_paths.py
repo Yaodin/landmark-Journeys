@@ -51,9 +51,9 @@ MISSIONS = [
         "vehicle": "Vostok 3KA", "kind": "earth_orbit",
         "description": "Yuri Gagarin completed one Earth orbit and landed by parachute near Engels.",
         "why_famous": "First human in space and first human to orbit Earth.",
-        "confidence": "B", "approximation": "Representative inclined orbit through the launch site, with estimated ascent and reentry constrained to the published landing area.",
-        "sources": ["https://www.esa.int/About_Us/50_years_of_ESA/50_years_of_humans_in_space/The_flight_of_Vostok_1", "https://science.nasa.gov/resource/yuri-gagarin-first-human-in-space/"],
-        "launch": [45.9200, 63.3420], "launch_time": "1961-04-12T06:07:00Z", "duration_min": 108, "orbits": 1.0, "inclination": 64.95, "altitude": 251, "landing": [51.0, 45.0],
+        "confidence": "B", "approximation": "Representative inclined orbit through the launch site using the published 181 km perigee, 327 km apogee and 65-degree inclination; plane phase, ascent and reentry remain modeled and the landing is constrained to the published region.",
+        "sources": ["https://www.esa.int/About_Us/50_years_of_ESA/50_years_of_humans_in_space/The_flight_of_Vostok_1", "https://ntrs.nasa.gov/api/citations/19900009927/downloads/19900009927.pdf", "https://www.fai.org/sites/default/files/documents/record_file_gagarin_1.pdf"],
+        "launch": [45.9200, 63.3420], "launch_time": "1961-04-12T06:07:00Z", "duration_min": 108, "orbits": 1.0, "inclination": 65.0, "perigee": 181, "apogee": 327, "landing": [51.0, 45.0],
     },
     {
         "rank": 3, "id": "sputnik-1", "title": "Sputnik 1", "date": "1957-10-04/1958-01-04",
@@ -69,9 +69,9 @@ MISSIONS = [
         "vehicle": "Saturn V; CSM-103", "kind": "lunar_return",
         "description": "The first crewed flight to the Moon and first human lunar orbit.",
         "why_famous": "Its crew saw the lunar farside and made the iconic Earthrise photograph.",
-        "confidence": "B", "approximation": "Mission-event reconstruction with Moon motion sampled from JPL and ten representative lunar orbits between NASA's insertion and departure times.",
-        "sources": ["https://www.nasa.gov/mission/apollo-8/", "https://www.nasa.gov/history/50-years-ago-apollo-8-in-lunar-orbit/"],
-        "launch": [28.5729, -80.6490], "launch_time": "1968-12-21T12:51:00Z", "moon_time": "1968-12-24T09:59:00Z", "moon_departure_time": "1968-12-25T06:13:40Z", "return_time": "1968-12-27T15:51:42Z", "landing": [8.10, -165.00], "lunar_orbits": 10,
+        "confidence": "B", "approximation": "Mission-event reconstruction with moving-Moon JPL ephemeris. NASA's initial 60.0 by 168.5 nmi lunar ellipse and 73:35:07 MET circularization replace two formerly circular representative revolutions; the remaining eight are approximately 60 nmi circular. Orbit plane orientation and full sample positions are modeled, not tracking telemetry.",
+        "sources": ["https://www.nasa.gov/mission/apollo-8/", "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a410/A08_MissionReport.pdf"],
+        "launch": [28.5729, -80.6490], "launch_time": "1968-12-21T12:51:00Z", "moon_time": "1968-12-24T09:59:00Z", "lunar_circularization_time": "1968-12-24T14:26:07Z", "initial_lunar_orbits": 2, "initial_lunar_perilune_nmi": 60.0, "initial_lunar_apolune_nmi": 168.5, "moon_departure_time": "1968-12-25T06:13:40Z", "return_time": "1968-12-27T15:51:42Z", "landing": [8.10, -165.00], "lunar_orbits": 10,
     },
     {
         "rank": 5, "id": "apollo-13", "title": "Apollo 13", "date": "1970-04-11/1970-04-17",
@@ -95,18 +95,18 @@ MISSIONS = [
         "vehicle": "Space Shuttle Columbia", "kind": "earth_orbit",
         "description": "The first orbital test of the reusable Space Transportation System completed 37 revolutions.",
         "why_famous": "First Space Shuttle mission and first crewed maiden flight of a U.S. spacecraft system.",
-        "confidence": "B+", "approximation": "Representative inclined orbit at published altitude, with estimated ascent and final 60-minute deorbit/entry arc constrained to Edwards AFB; not Shuttle telemetry.",
-        "sources": ["https://www.nasa.gov/mission/sts-1/", "https://www.nasa.gov/wp-content/uploads/2023/04/sp-4407-etuv4.pdf"],
-        "launch": [28.6084, -80.6043], "launch_time": "1981-04-12T12:00:03Z", "duration_min": 3260.9, "orbits": 37, "inclination": 40.3, "altitude": 307, "landing": [34.9054, -117.8837], "descent_min": 60,
+        "confidence": "B+", "approximation": "Representative inclined orbit using NASA's achieved 238 km perigee, 250 km apogee and 40.3-degree inclination; estimated ascent and final 60-minute deorbit/entry arc are constrained to Edwards AFB. Orbital plane phase and sample states are modeled, not Shuttle telemetry.",
+        "sources": ["https://www.nasa.gov/mission/sts-1/", "https://ntrs.nasa.gov/api/citations/19920074895/downloads/19920074895.pdf", "https://www.nasa.gov/wp-content/uploads/2023/04/sp-4407-etuv4.pdf"],
+        "launch": [28.6084, -80.6043], "launch_time": "1981-04-12T12:00:03Z", "duration_min": 3260.9, "orbits": 37, "inclination": 40.3, "perigee": 238, "apogee": 250, "landing": [34.9054, -117.8837], "descent_min": 60,
     },
     {
         "rank": 8, "id": "friendship-7", "title": "Friendship 7", "date": "1962-02-20",
         "vehicle": "Mercury-Atlas 6", "kind": "earth_orbit",
         "description": "John Glenn became the first American to orbit Earth, completing three revolutions.",
         "why_famous": "A central early U.S. Space Race achievement.",
-        "confidence": "B+", "approximation": "Representative inclined orbit using published duration and Mercury inclination, with estimated ascent/reentry ending at documented splashdown.",
-        "sources": ["https://www.nasa.gov/history/friendship7/", "https://www.nasa.gov/history/60-years-ago-john-glenn-the-first-american-to-orbit-the-earth-aboard-friendship-7/"],
-        "launch": [28.4910, -80.5380], "launch_time": "1962-02-20T14:47:39Z", "duration_min": 295.38, "orbits": 3, "inclination": 32.5, "altitude": 220, "landing": [21.35, -68.68],
+        "confidence": "B+", "approximation": "Representative inclined orbit using NASA's achieved 100 by 162.2 statute-mile orbit (rounded to 161 by 261 km) and 32.54-degree inclination; orbital plane phase and estimated ascent/reentry remain modeled, with the endpoint constrained to the documented splashdown region.",
+        "sources": ["https://www.nasa.gov/mission/mercury-atlas-6-friendship-7/", "https://ntrs.nasa.gov/api/citations/20160000809/downloads/20160000809.pdf"],
+        "launch": [28.4910, -80.5380], "launch_time": "1962-02-20T14:47:39Z", "duration_min": 295.38, "orbits": 3, "inclination": 32.54, "perigee": 161, "apogee": 261, "landing": [21.35, -68.68],
     },
     {
         "rank": 9, "id": "vostok-6", "title": "Vostok 6", "date": "1963-06-16/1963-06-19",
@@ -233,9 +233,9 @@ MISSIONS = [
         "vehicle": "Long March 2F; Shenzhou 5", "kind": "earth_orbit",
         "description": "Yang Liwei completed 14 Earth orbits and landed in Inner Mongolia.",
         "why_famous": "Made China the third nation to independently launch and return a human from orbit.",
-        "confidence": "B+", "approximation": "Representative inclined orbit using CMSA's published insertion/circularization data, with estimated ascent/reentry to the landing region.",
-        "sources": ["https://en.cmse.gov.cn/missions/shenzhouv/", "https://www.cnsa.gov.cn/english/n6465652/n6465653/c6799621/content.html"],
-        "launch": [40.9580, 100.2910], "launch_time": "2003-10-15T01:00:00Z", "duration_min": 1283, "orbits": 14, "inclination": 42.4, "altitude": 343, "landing": [42.37, 111.43],
+        "confidence": "B+", "approximation": "Representative inclined orbit using CMSA's achieved 199.14 by 347.8 km insertion ellipse and fifth-circuit transition to a 343 km circular orbit; the burn is placed at 07:54 UTC from the contemporary 15:54 Beijing-time report. Orbital plane phase and ascent/reentry states remain modeled.",
+        "sources": ["https://en.cmse.gov.cn/missions/shenzhouv/", "https://cn.govopendata.com/renminribao/2003/10/16/2/", "https://www.cnsa.gov.cn/english/n6465652/n6465653/c6799621/content.html"],
+        "launch": [40.9580, 100.2910], "launch_time": "2003-10-15T01:00:00Z", "duration_min": 1283, "orbits": 14, "inclination": 42.4, "altitude": 343, "initial_perigee": 199.14, "initial_apogee": 347.8, "circularization_time": "2003-10-15T07:54:00Z", "circularization_revolutions": 4.5, "landing": [42.37, 111.43],
     },
     {
         "rank": 24, "id": "artemis-1", "title": "Artemis I", "date": "2022-11-16/2022-12-11",
@@ -387,6 +387,7 @@ def earth_orbit(m):
         projected_angle = math.atan2(vdot(landing_vec, q), vdot(landing_vec, p))
         turns += math.atan2(math.sin(projected_angle), math.cos(projected_angle)) / (2*math.pi)
     ascent_seconds = min(9 * 60.0, duration * 0.15)
+    circularization_seconds = (dt(m["circularization_time"])-start).total_seconds() if m.get("circularization_time") else None
     descent_seconds = min(float(m.get("descent_min", 30)) * 60.0, duration * 0.35) if landing else 0.0
     terminal_orbit_direction = vadd(vmul(p, math.cos(2*math.pi*turns)), vmul(q, math.sin(2*math.pi*turns)))
     landing_direction = vunit(landing_vec) if landing_vec else None
@@ -394,6 +395,9 @@ def earth_orbit(m):
     # chord of a landed mission otherwise clips below the surface even when
     # both endpoints themselves are above it.
     sample_seconds = {round(duration*i/(samples-1)) for i in range(samples)}
+    sample_seconds.add(round(ascent_seconds))
+    if circularization_seconds is not None:
+        sample_seconds.add(round(circularization_seconds))
     sample_seconds.update(range(0, math.ceil(ascent_seconds), 30))
     if landing:
         sample_seconds.update(range(math.floor(duration-descent_seconds), math.ceil(duration), 30))
@@ -409,9 +413,27 @@ def earth_orbit(m):
         if seconds < ascent_seconds:
             ascent_u = seconds/ascent_seconds
             theta = ascent_angle * ascent_u**2 * (2-ascent_u)
+        elif circularization_seconds is not None and seconds < circularization_seconds:
+            # Fifth-circuit circularization occurs close to an apogee. The
+            # modeled phase reaches 4.5 revolutions there, keeping the burn
+            # a small radial adjustment instead of a spurious large jump.
+            theta = ascent_angle + 2*math.pi*float(m["circularization_revolutions"])*(seconds-ascent_seconds)/(circularization_seconds-ascent_seconds)
+        elif circularization_seconds is not None:
+            angle_at_burn = ascent_angle + 2*math.pi*float(m["circularization_revolutions"])
+            theta = angle_at_burn + (total_angle-angle_at_burn)*(seconds-circularization_seconds)/(duration-circularization_seconds)
         else:
             theta = ascent_angle + (total_angle-ascent_angle)*(seconds-ascent_seconds)/(duration-ascent_seconds)
-        radius = a * (1 - e*e) / (1 + e * math.cos(theta))
+        # Put the representative perigee at orbital insertion, not at the
+        # launch-pad phase. The historical argument of perigee is not known
+        # for most of these missions and remains an explicit model choice.
+        if circularization_seconds is not None and seconds < circularization_seconds:
+            initial_rp = EARTH_RADIUS_KM + float(m["initial_perigee"])
+            initial_ra = EARTH_RADIUS_KM + float(m["initial_apogee"])
+            initial_a = (initial_rp + initial_ra)/2
+            initial_e = (initial_ra - initial_rp)/(initial_ra + initial_rp)
+            radius = initial_a * (1-initial_e*initial_e)/(1+initial_e*math.cos(theta-ascent_angle))
+        else:
+            radius = a * (1 - e*e) / (1 + e * math.cos(theta-ascent_angle))
         if seconds < ascent_seconds:
             launch_radius = vnorm(launch_vec)
             radius = launch_radius + (radius-launch_radius)*smoothstep(seconds/ascent_seconds)
@@ -539,7 +561,7 @@ def moon_ephemeris(start: datetime, end: datetime):
     """One hourly Horizons query per mission; interpolate moving Moon at path times."""
     query_start = "'" + (start - timedelta(hours=1)).strftime("%Y-%m-%d %H:%M") + "'"
     query_end = "'" + (end + timedelta(hours=2)).strftime("%Y-%m-%d %H:%M") + "'"
-    rows, _, _ = horizons_result("301", query_start, query_end, "1h")
+    rows, query_url, response_sha256 = horizons_result("301", query_start, query_end, "1h")
     times = [dt(row[0]).timestamp() for row in rows]
 
     def at(value: datetime):
@@ -551,14 +573,14 @@ def moon_ephemeris(start: datetime, end: datetime):
         fraction = (stamp-times[lower])/(times[upper]-times[lower])
         return vadd(vmul(rows[lower][1:4], 1-fraction), vmul(rows[upper][1:4], fraction))
 
-    return at
+    return at, query_url, response_sha256
 
 
 def lunar_path(m):
     start = dt(m["launch_time"])
     encounter = dt(m["moon_time"])
     end = dt(m["return_time"]) if m.get("return_time") else encounter
-    moon_at = moon_ephemeris(start, end)
+    moon_at, moon_query_url, moon_response_sha256 = moon_ephemeris(start, end)
     launch = m["launch"]
     launch_vec = surface_eci(launch[0], launch[1], start)
     launch_radius = vnorm(launch_vec)
@@ -594,7 +616,7 @@ def lunar_path(m):
         # A body-centre endpoint was 1,737 km below the lunar surface.
         impact = vsub(moon_at_encounter, vmul(vunit(moon_at_encounter), 1737.4))
         transfer_segment(ascent_end, encounter, start_pos, impact, 12000.0, False)
-        return positions
+        return positions, moon_query_url, moon_response_sha256
 
     if m["id"] == "apollo-13":
         # NASA SVS gives a 1,988.8 km pericynthion and a five-hour flyby
@@ -626,7 +648,7 @@ def lunar_path(m):
             positions.append([iso(when), *[round(x, 6) for x in pos]])
         departure_pos = positions[-1][1:4]
     else:
-        orbit_radius = 1837.4
+        orbit_radius = 1737.4 + float(m.get("initial_lunar_perilune_nmi", 100/1.852))*1.852
         # Start exactly on the first lunar-orbit sample, rather than at the
         # Moon's centre and then leaping 1,837 km at the same timestamp.
         normal = vunit(moon_at_encounter)
@@ -640,26 +662,42 @@ def lunar_path(m):
         for i in range(1, orbit_samples):
             u = i/(orbit_samples-1)
             when = encounter + (departure-encounter)*u
-            angle = 2*math.pi*orbit_count*u
-            local = vadd(vmul(uvec, orbit_radius*math.cos(angle)), vmul(vvec, orbit_radius*math.sin(angle)))
+            if m.get("lunar_circularization_time"):
+                circularized = dt(m["lunar_circularization_time"])
+                initial_orbits = int(m["initial_lunar_orbits"])
+                if when <= circularized:
+                    fraction = (when-encounter)/(circularized-encounter)
+                    angle = 2*math.pi*initial_orbits*fraction
+                    rp = 1737.4 + float(m["initial_lunar_perilune_nmi"])*1.852
+                    ra = 1737.4 + float(m["initial_lunar_apolune_nmi"])*1.852
+                    semimajor = (rp+ra)/2
+                    eccentricity = (ra-rp)/(ra+rp)
+                    local_radius = semimajor*(1-eccentricity*eccentricity)/(1+eccentricity*math.cos(angle))
+                else:
+                    fraction = (when-circularized)/(departure-circularized)
+                    angle = 2*math.pi*(initial_orbits+(orbit_count-initial_orbits)*fraction)
+                    local_radius = orbit_radius
+            else:
+                angle = 2*math.pi*orbit_count*u
+                local_radius = orbit_radius
+            local = vadd(vmul(uvec, local_radius*math.cos(angle)), vmul(vvec, local_radius*math.sin(angle)))
             pos = vadd(moon_at(when), local)
             positions.append([iso(when), *[round(x, 6) for x in pos]])
         departure_pos = positions[-1][1:4]
     landing = surface_eci(m["landing"][0], m["landing"][1], end)
     transfer_segment(departure, end, departure_pos, landing, 9000.0, False)
-    return positions
+    return positions, moon_query_url, moon_response_sha256
 
 
 def body_heliocentric(body: str, start: datetime, stop: datetime, step="1d"):
-    positions, _, _ = horizons_result(body, "'"+start.strftime("%Y-%m-%d %H:%M")+"'", "'"+stop.strftime("%Y-%m-%d %H:%M")+"'", step, center="500@10")
-    return positions
+    return horizons_result(body, "'"+start.strftime("%Y-%m-%d %H:%M")+"'", "'"+stop.strftime("%Y-%m-%d %H:%M")+"'", step, center="500@10")
 
 
 def planet_transfer(m):
     start = dt(m["launch_time"])
     end = dt(m["arrival_time"])
-    earth = body_heliocentric("399", start, end)
-    target = body_heliocentric(m["target"], start, end)
+    earth, earth_query, earth_digest = body_heliocentric("399", start, end)
+    target, target_query, target_digest = body_heliocentric(m["target"], start, end)
     n = min(len(earth), len(target))
     earth0 = earth[0][1:4]
     target1 = target[n-1][1:4]
@@ -678,7 +716,25 @@ def planet_transfer(m):
     # at the surface, not at Earth's centre. Preserve that truthful endpoint.
     launch = surface_eci(m["launch"][0], m["launch"][1], start)
     positions[0] = [iso(start), *[round(x, 6) for x in launch]]
-    return positions
+    supplemental = [
+        {"role": "JPL Earth body ephemeris used for reconstructed transfer", "query_url": earth_query, "raw_response_sha256": earth_digest},
+        {"role": f"JPL {m['target_name']} body ephemeris used for reconstructed transfer", "query_url": target_query, "raw_response_sha256": target_digest},
+    ]
+    return positions, supplemental
+
+
+def sample_origin_ranges(m, positions):
+    """Label modeled and Horizons-derived samples without implying telemetry precision."""
+    if m["kind"] != "horizons":
+        return [{"first_index": 0, "last_index": len(positions)-1, "origin": "modeled_reconstruction"}]
+    first_query = "1977-08-20 15:32" if m["id"] == "voyager-2" else m["start"].strip("'")
+    first_jpl_time = dt(first_query.replace(" ", "T") + "Z")
+    first_jpl_index = next(i for i, row in enumerate(positions) if dt(row[0]) >= first_jpl_time)
+    result = []
+    if first_jpl_index:
+        result.append({"first_index": 0, "last_index": first_jpl_index-1, "origin": "modeled_launch_or_gap"})
+    result.append({"first_index": first_jpl_index, "last_index": len(positions)-1, "origin": "jpl_horizons_vectors"})
+    return result
 
 
 def write_path(m, positions, source_query=None, source_sha256=None, supplemental_queries=None):
@@ -703,6 +759,7 @@ def write_path(m, positions, source_query=None, source_sha256=None, supplemental
             "query_url": source_query,
             "raw_response_sha256": source_sha256,
             "supplemental_queries": supplemental_queries or [],
+            "sample_origin_ranges": sample_origin_ranges(m, positions),
             "retrieved_utc_date": "2026-09-24",
         },
         "stats": {"point_count": len(positions), "max_earth_center_distance_km": round(max_radius, 3)},
@@ -718,10 +775,11 @@ def main():
     scope.add_argument("--lunar-only", action="store_true", help="rebuild the four lunar reconstructions without resampling other missions")
     scope.add_argument("--earth-orbit-only", action="store_true", help="rebuild representative Earth-orbit paths without resampling other missions")
     scope.add_argument("--surface-endpoints-only", action="store_true", help="correct existing Horizons/transfer launch fixes to WGS84 without resampling JPL states")
+    scope.add_argument("--annotate-sample-origins-only", action="store_true", help="label existing samples without resampling JPL states")
     scope.add_argument("--mission", metavar="ID", help="rebuild one mission and update the catalog without resampling the others")
     args = parser.parse_args()
     PATH_DIR.mkdir(parents=True, exist_ok=True)
-    if args.lunar_only or args.earth_orbit_only or args.surface_endpoints_only or args.mission:
+    if args.lunar_only or args.earth_orbit_only or args.surface_endpoints_only or args.annotate_sample_origins_only or args.mission:
         catalog_path = ROOT / "index.json"
         catalog = json.loads(catalog_path.read_text())
         by_id = {mission["id"]: mission for mission in catalog["missions"]}
@@ -730,6 +788,13 @@ def main():
         for m in MISSIONS:
             by_id[m["id"]]["launch_site"] = LAUNCH_SITES[m["id"]]
         for m in MISSIONS:
+            if args.annotate_sample_origins_only:
+                path_file = PATH_DIR / f"{m['id']}.json"
+                payload = json.loads(path_file.read_text())
+                payload["provenance"]["sample_origin_ranges"] = sample_origin_ranges(m, payload["positions"])
+                path_file.write_text(json.dumps(payload, indent=2) + "\n")
+                print(f"{m['id']}: sample origins labeled; positions preserved")
+                continue
             if args.surface_endpoints_only:
                 if m["kind"] not in ("horizons", "planet_transfer"):
                     continue
@@ -753,9 +818,12 @@ def main():
             elif m["kind"] == "earth_orbit":
                 positions, query, digest, supplemental = earth_orbit(m), None, None, []
             elif m["kind"] in ("lunar_return", "lunar_impact"):
-                positions, query, digest, supplemental = lunar_path(m), None, None, []
+                positions, moon_query, moon_digest = lunar_path(m)
+                query, digest = None, None
+                supplemental = [{"role": "JPL Moon body ephemeris used for reconstructed path", "query_url": moon_query, "raw_response_sha256": moon_digest}]
             elif m["kind"] == "planet_transfer":
-                positions, query, digest, supplemental = planet_transfer(m), None, None, []
+                positions, supplemental = planet_transfer(m)
+                query, digest = None, None
             else:
                 raise ValueError(m["kind"])
             stats = write_path(m, positions, query, digest, supplemental)
@@ -772,9 +840,10 @@ def main():
         elif m["kind"] == "earth_orbit":
             positions = earth_orbit(m)
         elif m["kind"] in ("lunar_return", "lunar_impact"):
-            positions = lunar_path(m)
+            positions, moon_query, moon_digest = lunar_path(m)
+            supplemental = [{"role": "JPL Moon body ephemeris used for reconstructed path", "query_url": moon_query, "raw_response_sha256": moon_digest}]
         elif m["kind"] == "planet_transfer":
-            positions = planet_transfer(m)
+            positions, supplemental = planet_transfer(m)
         else:
             raise ValueError(m["kind"])
         stats = write_path(m, positions, query, digest, supplemental)

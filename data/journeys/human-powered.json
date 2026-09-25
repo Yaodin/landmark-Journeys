@@ -1584,11 +1584,18 @@
     "short_title": "Cheryl Strayed",
     "date": "1995",
     "why_famous": "The solo walk became the subject of the memoir Wild and introduced many readers to long-distance hiking.",
-    "route_summary": "Tehachapi Pass through California and Oregon to Bridge of the Gods, the section she actually hiked.",
+    "route_summary": "Walked from Tehachapi Pass to Trail Pass, bypassed the snowy High Sierra by road, then resumed walking from Sierra City to Bridge of the Gods.",
     "source_title": "Pacific Crest Trail Association — Hikes from Wild",
     "source_url": "https://wild.pcta.org/hikes/hikes-from-wild/",
     "geometry_confidence": "medium",
-    "geometry_note": "PCTA confirms selected locations. Connecting lines approximate the walking corridor and should not imply every intervening mile was walked.",
+    "geometry_note": "Two walking corridors are separated by an unmapped bus-transfer gap from the Trail Pass/Horseshoe Meadows exit to Sierra City. PCTA confirms the bypass; connecting lines within each walked section remain approximate rather than a 1995 trail survey.",
+    "additional_sources": [
+      {
+        "title": "PCTA — I am Greg; the first-person story from Wild",
+        "url": "https://wild.pcta.org/2015/01/28/greg-first-person-story-wild/",
+        "note": "A hiking companion confirms Strayed exited near Trail Pass/Horseshoe Meadows and took a bus to Sierra City to bypass the snowy High Sierra."
+      }
+    ],
     "segments": [
       {
         "mode": "walking",
@@ -1608,10 +1615,23 @@
             "note": "Southern Sierra approach"
           },
           {
+            "name": "Trail Pass",
+            "lat": 36.4272,
+            "lon": -118.1759,
+            "note": "Approximate PCT exit for the Horseshoe Meadows descent; the onward bus transfer is not drawn"
+          }
+        ]
+      },
+      {
+        "mode": "walking",
+        "track_type": "historical-corridor",
+        "source_url": "https://wild.pcta.org/2015/01/28/greg-first-person-story-wild/",
+        "anchors": [
+          {
             "name": "Sierra City",
             "lat": 39.566,
             "lon": -120.634,
-            "note": "Named resupply stop"
+            "note": "Walking resumed here after the High Sierra bus bypass"
           },
           {
             "name": "Hat Creek Rim",
@@ -3168,7 +3188,14 @@
     "source_title": "Expedition Kayak — Caffyn Australia",
     "source_url": "https://www.expeditionkayak.com/expeditions/caffyn-australia-1982.html",
     "geometry_confidence": "medium",
-    "geometry_note": "Coastal capes and towns outline the voyage, not daily landings. Northern Gulf waypoints follow the shore rather than drawing a shortcut across land.",
+    "geometry_note": "Coastal capes and towns outline the voyage, not daily landings. Caffyn followed the Gulf of Carpentaria shore rather than Hoffmeister's later direct crossing. Added Cape Don, Steep Point, Kalbarri, Jurien Bay, and Walpole offshore controls prevent major cartographic cuts across land; these are inferred water-safe controls, not observed positions.",
+    "additional_sources": [
+      {
+        "title": "Northern Territory Place Names Register — Cape Don",
+        "url": "https://www.ntlis.nt.gov.au/placenames/print_extract.jsp?id=11542",
+        "note": "Official geographic position of Cape Don; the plotted offshore control is inferred north of the cape."
+      }
+    ],
     "segments": [
       {
         "mode": "sea kayaking",
@@ -3350,6 +3377,12 @@
             "note": "Northern coast"
           },
           {
+            "name": "Cape Don offshore approach",
+            "lat": -11.2,
+            "lon": 131.78,
+            "note": "Inferred water-safe control north of Cape Don; not an observed landing or GPS fix"
+          },
+          {
             "name": "Darwin",
             "lat": -12.42,
             "lon": 130.82,
@@ -3410,6 +3443,24 @@
             "note": "West coast"
           },
           {
+            "name": "Steep Point offshore",
+            "lat": -26.16,
+            "lon": 113.08,
+            "note": "Inferred offshore control around Shark Bay; not a documented landing"
+          },
+          {
+            "name": "Kalbarri offshore",
+            "lat": -27.72,
+            "lon": 113.98,
+            "note": "Inferred water-safe control along the west coast; not a documented Caffyn landing or GPS position"
+          },
+          {
+            "name": "Jurien Bay offshore",
+            "lat": -30.29,
+            "lon": 114.85,
+            "note": "Inferred water-safe control; not an observed GPS position"
+          },
+          {
             "name": "Perth coast",
             "lat": -31.97,
             "lon": 115.7,
@@ -3420,6 +3471,12 @@
             "lat": -34.38,
             "lon": 115.13,
             "note": "Southwest cape"
+          },
+          {
+            "name": "Walpole coast offshore",
+            "lat": -35.18,
+            "lon": 116.73,
+            "note": "Inferred water-safe control on the south-coast corridor; not a logged position"
           },
           {
             "name": "Albany coast",
@@ -3510,7 +3567,19 @@
     "source_title": "Freya Hoffmeister — Australia expedition",
     "source_url": "https://www.freyahoffmeister.com/expeditions/australia-2009/plan-and-facts-aus/plan-and-facts-aus-english",
     "geometry_confidence": "medium",
-    "geometry_note": "Major coastal points come from the expedition record. The Gulf of Carpentaria crossing is shown offshore; other stretches are simplified coastal corridors.",
+    "geometry_note": "The Gulf of Carpentaria direct crossing is documented by Hoffmeister; other stretches remain simplified coastal corridors. Her expedition archive identifies Nhulunbuy–Darwin, Kalbarri–Perth, and Perth–Esperance sections. Added Cape Don, Steep Point, Kalbarri, Jurien Bay, and Walpole offshore controls avoid major cuts across land, but they are inferred water-safe controls, not observed GPS fixes.",
+    "additional_sources": [
+      {
+        "title": "Hoffmeister expedition archive — Australia sections",
+        "url": "https://www.freyahoffmeister.com/expeditions/australia-2009/pictures-bilder-oz/aus-sections",
+        "note": "Records broad consecutive regions including Nhulunbuy–Darwin and Kalbarri–Perth."
+      },
+      {
+        "title": "Northern Territory Place Names Register — Cape Don",
+        "url": "https://www.ntlis.nt.gov.au/placenames/print_extract.jsp?id=11542",
+        "note": "Official geographic position of Cape Don; the plotted offshore control is inferred north of the cape."
+      }
+    ],
     "segments": [
       {
         "mode": "sea kayaking",
@@ -3656,6 +3725,12 @@
             "note": "Northern coast"
           },
           {
+            "name": "Cape Don offshore approach",
+            "lat": -11.2,
+            "lon": 131.78,
+            "note": "Inferred water-safe control north of Cape Don; not an observed landing or GPS fix"
+          },
+          {
             "name": "Darwin",
             "lat": -12.42,
             "lon": 130.82,
@@ -3716,6 +3791,24 @@
             "note": "West coast"
           },
           {
+            "name": "Steep Point offshore",
+            "lat": -26.16,
+            "lon": 113.08,
+            "note": "Inferred offshore control around Shark Bay; not a documented landing"
+          },
+          {
+            "name": "Kalbarri offshore",
+            "lat": -27.72,
+            "lon": 113.98,
+            "note": "Inferred water-safe control; Hoffmeister's expedition archive documents the Kalbarri–Perth section, but this is not an observed GPS position"
+          },
+          {
+            "name": "Jurien Bay offshore",
+            "lat": -30.29,
+            "lon": 114.85,
+            "note": "Inferred water-safe control; not an observed GPS position"
+          },
+          {
             "name": "Perth coast",
             "lat": -31.97,
             "lon": 115.7,
@@ -3726,6 +3819,12 @@
             "lat": -34.38,
             "lon": 115.13,
             "note": "Southwest cape"
+          },
+          {
+            "name": "Walpole coast offshore",
+            "lat": -35.18,
+            "lon": 116.73,
+            "note": "Inferred water-safe control on the south-coast corridor; not a logged position"
           },
           {
             "name": "Albany coast",
@@ -3974,28 +4073,90 @@
     "short_title": "Roz Savage",
     "date": "2008–2010",
     "why_famous": "Savage became the first woman to row the Pacific solo, completing it in three stages.",
-    "route_summary": "San Francisco–Hawaii–Tarawa, Kiribati–Papua New Guinea.",
-    "source_title": "Guinness World Records — Savage Pacific row",
-    "source_url": "https://www.guinnessworldrecords.com/world-records/first-female-to-row-the-pacific-ocean-solo-three-stages",
+    "route_summary": "San Francisco–Hawaii–Tarawa, Kiribati–Madang, Papua New Guinea, in three separate ocean-rowing stages.",
+    "source_title": "Roz Savage — Pacific Ocean voyage account",
+    "source_url": "https://www.rozsavage.com/voyages/pacific/",
     "geometry_confidence": "medium",
-    "geometry_note": "Stage endpoints are supported by the record source; open-water points are illustrative and each stage is separate.",
+    "geometry_note": "Dated mid-ocean fixes are Savage's reported GPS positions converted from degrees and decimal minutes where needed. Lines between sparse fixes are interpolation, not her continuous GPS trace; the three stages remain separate. The final landfall is Madang, not a generic Papua New Guinea coast point.",
+    "additional_sources": [
+      {
+        "title": "Guinness World Records — first female to row the Pacific solo",
+        "url": "https://www.guinnessworldrecords.com/world-records/first-female-to-row-the-pacific-ocean-solo-three-stages",
+        "note": "Record and three-stage voyage context."
+      },
+      {
+        "title": "U.S. National Geospatial-Intelligence Agency — Sailing Directions, Madang Harbor",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-D5-PURL-gpo10258/pdf/GOVPUB-D5-PURL-gpo10258.pdf",
+        "note": "Gives Madang Harbor's approximate position as 5°13'S, 145°49'E."
+      }
+    ],
     "segments": [
       {
         "mode": "ocean rowing",
-        "track_type": "waypoint-interpolation",
-        "source_url": "https://www.guinnessworldrecords.com/world-records/first-female-to-row-the-pacific-ocean-solo-three-stages",
+        "track_type": "source-derived",
+        "source_url": "https://www.rozsavage.com/voyages/pacific/",
         "anchors": [
           {
             "name": "San Francisco",
             "lat": 37.81,
             "lon": -122.47,
-            "note": "Stage one departure"
+            "note": "Stage one departure beneath the Golden Gate Bridge, May 2008"
           },
           {
-            "name": "Northeast Pacific",
-            "lat": 28,
-            "lon": -140,
-            "note": "Illustrative open-water waypoint"
+            "name": "Day 39 reported GPS fix",
+            "lat": 29.018633,
+            "lon": -126.2449,
+            "note": "Reported in degrees and decimal minutes; converted to decimal degrees",
+            "source_url": "https://www.rozsavage.com/day-39-on-courage/"
+          },
+          {
+            "name": "Day 42 reported GPS fix",
+            "lat": 28.124,
+            "lon": -127.53205,
+            "note": "Reported in degrees and decimal minutes; converted to decimal degrees",
+            "source_url": "https://www.rozsavage.com/day-42-training/"
+          },
+          {
+            "name": "Day 50 reported GPS fix",
+            "lat": 26.107,
+            "lon": -130.002883,
+            "note": "Reported in degrees and decimal minutes; converted to decimal degrees",
+            "source_url": "https://www.rozsavage.com/day-50-tomorrow-never-comes/"
+          },
+          {
+            "name": "Day 60 reported GPS fix",
+            "lat": 24.370667,
+            "lon": -135.796733,
+            "note": "Reported in degrees and decimal minutes; converted to decimal degrees",
+            "source_url": "https://www.rozsavage.com/day-60-superstitious/"
+          },
+          {
+            "name": "Day 70 reported GPS fix",
+            "lat": 23.791967,
+            "lon": -141.283517,
+            "note": "Reported in degrees and decimal minutes; converted to decimal degrees",
+            "source_url": "https://www.rozsavage.com/day-70-free-will/"
+          },
+          {
+            "name": "Day 80 reported GPS fix",
+            "lat": 23.096,
+            "lon": -147.266017,
+            "note": "Reported in degrees and decimal minutes; converted to decimal degrees",
+            "source_url": "https://www.rozsavage.com/day-80-a-pile-of-junk/"
+          },
+          {
+            "name": "Day 90 reported GPS fix",
+            "lat": 22.288167,
+            "lon": -152.76735,
+            "note": "Reported in degrees and decimal minutes; converted to decimal degrees",
+            "source_url": "https://www.rozsavage.com/day-90-time-flies/"
+          },
+          {
+            "name": "Day 98 reported GPS fix",
+            "lat": 21.43,
+            "lon": -157.00165,
+            "note": "Reported in degrees and decimal minutes near Hawaii; converted to decimal degrees",
+            "source_url": "https://www.rozsavage.com/day-98-countdown-to-rozs-arrival/"
           },
           {
             "name": "Hawaii",
@@ -4007,8 +4168,8 @@
       },
       {
         "mode": "ocean rowing",
-        "track_type": "waypoint-interpolation",
-        "source_url": "https://www.guinnessworldrecords.com/world-records/first-female-to-row-the-pacific-ocean-solo-three-stages",
+        "track_type": "source-derived",
+        "source_url": "https://www.rozsavage.com/voyages/pacific/",
         "anchors": [
           {
             "name": "Hawaii",
@@ -4017,10 +4178,67 @@
             "note": "Stage two departure"
           },
           {
-            "name": "Equatorial Pacific",
-            "lat": 8,
-            "lon": -175,
-            "note": "Illustrative open-water waypoint"
+            "name": "Day 20 reported GPS fix",
+            "lat": 16.1452,
+            "lon": -163.6946,
+            "note": "Reported in degrees and decimal minutes; converted to decimal degrees",
+            "source_url": "https://www.rozsavage.com/day-20-theres-no-business-like-row-business/"
+          },
+          {
+            "name": "Day 30 reported GPS fix",
+            "lat": 12.96875,
+            "lon": -167.4296,
+            "note": "Reported in degrees and decimal minutes; converted to decimal degrees",
+            "source_url": "https://www.rozsavage.com/day-30-rowing-naked-in-the-rain/"
+          },
+          {
+            "name": "Day 40 reported GPS fix",
+            "lat": 9.7264,
+            "lon": -171.810917,
+            "note": "Reported in degrees and decimal minutes; converted to decimal degrees",
+            "source_url": "https://www.rozsavage.com/day-40-forty-days-and-forty-nights/"
+          },
+          {
+            "name": "Day 51 reported GPS fix",
+            "lat": 6.104017,
+            "lon": -175.81615,
+            "note": "Reported in degrees and decimal minutes; converted to decimal degrees",
+            "source_url": "https://www.rozsavage.com/day-51-wiggling-westwards-struggling-southwards/"
+          },
+          {
+            "name": "Day 60 reported GPS fix",
+            "lat": 4.643317,
+            "lon": -175.17885,
+            "note": "Reported in degrees and decimal minutes; converted to decimal degrees",
+            "source_url": "https://www.rozsavage.com/day-60-strange-days-indeed/"
+          },
+          {
+            "name": "Day 71 reported GPS fix",
+            "lat": 3.073867,
+            "lon": -175.758367,
+            "note": "Reported in degrees and decimal minutes; converted to decimal degrees",
+            "source_url": "https://www.rozsavage.com/singalonga-itcz/"
+          },
+          {
+            "name": "Day 80 reported GPS fix",
+            "lat": 2.156783,
+            "lon": -177.207933,
+            "note": "Reported in degrees and decimal minutes; converted to decimal degrees",
+            "source_url": "https://www.rozsavage.com/day-80-upon-my-soul/"
+          },
+          {
+            "name": "Day 90 reported GPS fix",
+            "lat": 0.475,
+            "lon": 179.866667,
+            "note": "Reported near the antimeridian in degrees and decimal minutes; converted to decimal degrees",
+            "source_url": "https://www.rozsavage.com/day-90-fortune-neptune-and-loony-tune/"
+          },
+          {
+            "name": "Day 95 reported GPS fix",
+            "lat": -0.369483,
+            "lon": 178.829567,
+            "note": "Reported south of the equator before Savage changed course toward Tarawa; converted from degrees and decimal minutes",
+            "source_url": "https://www.rozsavage.com/day-95-putting-a-brave-face-on-it/"
           },
           {
             "name": "Tarawa",
@@ -4032,26 +4250,183 @@
       },
       {
         "mode": "ocean rowing",
-        "track_type": "waypoint-interpolation",
-        "source_url": "https://www.guinnessworldrecords.com/world-records/first-female-to-row-the-pacific-ocean-solo-three-stages",
+        "track_type": "source-derived",
+        "source_url": "https://www.rozsavage.com/voyages/pacific/pacific-ocean-stage-three/",
         "anchors": [
           {
             "name": "Tarawa",
             "lat": 1.36,
             "lon": 173.16,
-            "note": "Stage three departure"
+            "note": "Stage three departure, April 2010",
+            "source_url": "https://www.rozsavage.com/voyages/pacific/pacific-ocean-stage-three/"
           },
           {
-            "name": "Southwest Pacific",
-            "lat": -2,
-            "lon": 155,
-            "note": "Illustrative open-water waypoint"
+            "name": "Day 13 reported GPS fix",
+            "lat": -1.294733,
+            "lon": 165.390267,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-13-kettle-overboard/"
           },
           {
-            "name": "Papua New Guinea",
-            "lat": -6.6,
-            "lon": 147.85,
-            "note": "Stage three arrival region"
+            "name": "Day 15 reported GPS fix",
+            "lat": -2.1209,
+            "lon": 163.574183,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-15-email-declared-dead-rip/"
+          },
+          {
+            "name": "Day 19 reported GPS fix",
+            "lat": -3.64156,
+            "lon": 160.1875,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-19-let-me-listen-to-me/"
+          },
+          {
+            "name": "Day 21 reported GPS fix",
+            "lat": -4.1193,
+            "lon": 158.68321,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-21-extreme-dreams/"
+          },
+          {
+            "name": "Day 25 reported GPS fix",
+            "lat": -4.74758,
+            "lon": 154.9169,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-25-this-is-all-so-sudden/"
+          },
+          {
+            "name": "Day 26 reported GPS fix",
+            "lat": -5.19215,
+            "lon": 154.35426,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-26-is-this-is-eventful-can-i-have-boring-back-please/"
+          },
+          {
+            "name": "Day 27 reported GPS fix",
+            "lat": -5.65077,
+            "lon": 154.01086,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-27-looks-like-i-spoke-too-soon/"
+          },
+          {
+            "name": "Day 28 reported GPS fix",
+            "lat": -5.97063,
+            "lon": 154.01878,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-28-return-of-the-watermaker/"
+          },
+          {
+            "name": "Day 30 reported GPS fix",
+            "lat": -6.46732,
+            "lon": 154.13231,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-30-ban-the-bottle/"
+          },
+          {
+            "name": "Day 31 reported GPS fix",
+            "lat": -6.88196,
+            "lon": 154.14308,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-31-character-building-stuff/"
+          },
+          {
+            "name": "Day 32 reported GPS fix",
+            "lat": -7.55639,
+            "lon": 153.92323,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-32-feeling-grotty/"
+          },
+          {
+            "name": "Day 33 reported GPS fix",
+            "lat": -8.1904,
+            "lon": 153.6232,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-33-change-the-thinking-change-the-world/"
+          },
+          {
+            "name": "Day 34 reported GPS fix",
+            "lat": -8.44295,
+            "lon": 153.37978,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-34-the-end-of-the-world-as-we-know-it/"
+          },
+          {
+            "name": "Day 35 reported GPS fix",
+            "lat": -8.36666,
+            "lon": 152.78629,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-35-a-perfect-day/"
+          },
+          {
+            "name": "Day 36 reported GPS fix",
+            "lat": -8.1085,
+            "lon": 152.09482,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-36-a-parcel-of-peace/"
+          },
+          {
+            "name": "Day 37 reported GPS fix",
+            "lat": -7.82018,
+            "lon": 151.47119,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-37-body-talk/"
+          },
+          {
+            "name": "Day 38 reported GPS fix",
+            "lat": -7.55791,
+            "lon": 150.80957,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-38-so-sorry-fishy-friends/"
+          },
+          {
+            "name": "Day 39 reported GPS fix",
+            "lat": -7.30892,
+            "lon": 150.22197,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-39-brain-dead-zombi-ocean-rower/"
+          },
+          {
+            "name": "Day 40 reported GPS fix",
+            "lat": -7.08271,
+            "lon": 149.71378,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-40-happy-days/"
+          },
+          {
+            "name": "Day 41 reported GPS fix",
+            "lat": -6.92651,
+            "lon": 149.12079,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-41-traffic-jams/"
+          },
+          {
+            "name": "Day 42 reported GPS fix",
+            "lat": -6.56893,
+            "lon": 148.59792,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-42-plastic-fantastic/"
+          },
+          {
+            "name": "Day 43 reported GPS fix",
+            "lat": -5.99745,
+            "lon": 147.96181,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-43-dire-straits/"
+          },
+          {
+            "name": "Day 45 reported GPS fix",
+            "lat": -5.47589,
+            "lon": 146.30901,
+            "note": "Savage's reported GPS position; intervening line is interpolated",
+            "source_url": "https://www.rozsavage.com/day-45-madang-here-i-come/"
+          },
+          {
+            "name": "Madang Harbor",
+            "lat": -5.216667,
+            "lon": 145.816667,
+            "note": "Stage three landfall at Madang, June 4, 2010; harbor position from NGA Sailing Directions",
+            "source_url": "https://www.rozsavage.com/voyages/pacific/pacific-ocean-stage-three/"
           }
         ]
       }

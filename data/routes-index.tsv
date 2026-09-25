@@ -4,14 +4,14 @@ rank	id	title	date	distance_km	vertices	geometry	quality	wkt_file
 3	enola-gay-hiroshima	Enola Gay — Hiroshima mission	1945-08-06	5097.1	1024	LineString	Navigator-log waypoints	data/wkt/enola-gay-hiroshima.wkt
 4	earhart-solo-atlantic	Amelia Earhart — solo Atlantic crossing	1932-05-20/21	3241.6	650	LineString	Documented endpoints + geodesic reconstruction	data/wkt/earhart-solo-atlantic.wkt
 5	bell-x1-sound-barrier	Bell X-1 — first supersonic flight	1947-10-14	34.5	175	LineString	Documented local profile; illustrative plan-view path	data/wkt/bell-x1-sound-barrier.wkt
-6	us-airways-1549	US Airways 1549 — Hudson River ditching	2009-01-15	28.6	291	LineString	NTSB secondary-radar track reconstruction	data/wkt/us-airways-1549.wkt
+6	us-airways-1549	US Airways 1549 — Hudson River ditching	2009-01-15	29.2	303	LineString	NTSB secondary-radar positions	data/wkt/us-airways-1549.wkt
 7	concorde-ba300	Concorde BA300 — inaugural commercial service	1976-01-21	5093.2	1020	LineString	Documented endpoints + geodesic reconstruction	data/wkt/concorde-ba300.wkt
-8	rutan-voyager	Rutan Voyager — nonstop unrefueled circumnavigation	1986-12-14/23	41387.1	8288	MultiLineString	Published-map corridor approximation	data/wkt/rutan-voyager.wkt
+8	rutan-voyager	Rutan Voyager — nonstop unrefueled circumnavigation	1986-12-14/23	41380	8287	MultiLineString	1987 flight-data map corridor approximation	data/wkt/rutan-voyager.wkt
 9	alcock-brown-atlantic	Alcock and Brown — first nonstop Atlantic crossing	1919-06-14/15	3041.7	610	LineString	Documented endpoints + geodesic reconstruction	data/wkt/alcock-brown-atlantic.wkt
 10	bleriot-channel	Blériot XI — first airplane crossing of the Channel	1909-07-25	42.8	87	LineString	Documented takeoff, landfall and landing	data/wkt/bleriot-channel.wkt
 11	vin-fiz-transcontinental	Vin Fiz — first U.S. transcontinental flight	1911-09-17/11-05	5157.3	1042	LineString	Documented corridor + major-stop reconstruction	data/wkt/vin-fiz-transcontinental.wkt
 12	jannus-first-airline	St. Petersburg–Tampa Airboat Line — inaugural flight	1914-01-01	25.9	105	LineString	Documented city endpoints + bay crossing	data/wkt/jannus-first-airline.wkt
-13	douglas-world-cruisers	Douglas World Cruisers — first aerial circumnavigation	1924-04-06/09-28	38437.5	7719	MultiLineString	Documented major stops	data/wkt/douglas-world-cruisers.wkt
+13	douglas-world-cruisers	Douglas World Cruisers — first aerial circumnavigation	1924-04-06/09-28	38529.9	7738	MultiLineString	Documented major stops	data/wkt/douglas-world-cruisers.wkt
 14	southern-cross-transpacific	Southern Cross — first U.S.–Australia trans-Pacific flight	1928-05-31/06-09	11941.1	2394	MultiLineString	Documented stops	data/wkt/southern-cross-transpacific.wkt
 15	wiley-post-solo-world	Wiley Post — first solo circumnavigation	1933-07-15/22	24938.2	4995	MultiLineString	Documented stops	data/wkt/wiley-post-solo-world.wkt
 16	china-clipper-airmail	China Clipper — inaugural trans-Pacific airmail flight	1935-11-22/29	12855.5	2577	MultiLineString	Documented stops	data/wkt/china-clipper-airmail.wkt

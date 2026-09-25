@@ -8,10 +8,10 @@
     "scripts/build_routes.py:split_dateline",
     "scripts/build_routes.py:as_wkt"
   ],
-  "shared_geometry_sha256": "e6e042675be86827c982e59bb82cbd4c6f45620b493dfa507485fcbbdea268aa",
+  "shared_geometry_sha256": "7cafc56790a553baa27a067e60f0d7ee02a0f6aa0a5e7fa74f05c8c06f7deb22",
   "display_preview": {
     "path": "data/all-overview.geojson",
-    "sha256": "6183beda58f3c39f1b5c8fc9ffa3359e6ae4841514496d96f4b014bf40eca9d0",
+    "sha256": "cfdccc647056bcb314dd9c61b9533f503180b23a40809dc23f730526bc173320",
     "builder": "scripts/build_overview.py",
     "builder_sha256": "089e7b4d7ef539c6211b3e173f96bd8005f3b999cc20131ce254d7a893bd382b"
   },
@@ -19,11 +19,11 @@
     {
       "domain": "flights",
       "source": "scripts/build_routes.py",
-      "source_sha256": "e6e042675be86827c982e59bb82cbd4c6f45620b493dfa507485fcbbdea268aa",
+      "source_sha256": "7cafc56790a553baa27a067e60f0d7ee02a0f6aa0a5e7fa74f05c8c06f7deb22",
       "builder": "scripts/build_routes.py",
-      "builder_sha256": "e6e042675be86827c982e59bb82cbd4c6f45620b493dfa507485fcbbdea268aa",
+      "builder_sha256": "7cafc56790a553baa27a067e60f0d7ee02a0f6aa0a5e7fa74f05c8c06f7deb22",
       "geometry": "data/routes.geojson",
-      "geometry_sha256": "7cdb2a8e35313b8c37506cdb41cb475cec0db18a8cab9d0e7e4ba253a8bf14f4",
+      "geometry_sha256": "6834f917a294c279f394cdf4ddfc847808b0a02aeae976a6cdff49db49b47b0c",
       "method": "Great-circle interpolation for two-point routes; spherical cardinal interpolation through multi-point route anchors",
       "routes": [
         {
@@ -58,9 +58,9 @@
         },
         {
           "id": "us-airways-1549",
-          "vertices": 291,
+          "vertices": 303,
           "wkt": "data/wkt/us-airways-1549.wkt",
-          "wkt_sha256": "23c38be467f5ffc2611141e4396b22a96eca337896f786c731096c7d7c83dd48"
+          "wkt_sha256": "bf789a59f9e67fda0ff357f6584869dfce332ce2d5198730e496cc9c372f4ac8"
         },
         {
           "id": "concorde-ba300",
@@ -70,9 +70,9 @@
         },
         {
           "id": "rutan-voyager",
-          "vertices": 8288,
+          "vertices": 8287,
           "wkt": "data/wkt/rutan-voyager.wkt",
-          "wkt_sha256": "e531df28a30e39c780096d8dff31150b853950bed0a07e8e8fc4fe26db9ef3fd"
+          "wkt_sha256": "e1596a5fd38afb7c0328226b12d9d192be593f39b30883eaa6130a1fd59cf1f8"
         },
         {
           "id": "alcock-brown-atlantic",
@@ -100,9 +100,9 @@
         },
         {
           "id": "douglas-world-cruisers",
-          "vertices": 7719,
+          "vertices": 7738,
           "wkt": "data/wkt/douglas-world-cruisers.wkt",
-          "wkt_sha256": "1149e53840934c52b64f0684fbf7087df0369f49eecbda7d55f980bce1118c2f"
+          "wkt_sha256": "be30e21305ae78ce3ca885cfe786409723142bab2d38a8e1ea8387293204bf55"
         },
         {
           "id": "southern-cross-transpacific",
@@ -181,11 +181,11 @@
     {
       "domain": "sailing",
       "source": "data/journeys/sailing.json",
-      "source_sha256": "27bcfe69081d07ef0160ad2925d434bd37ecbe9c399f62c8bc7f233748591eb2",
+      "source_sha256": "dadd9b28d5cf6ffc20b34c5f6e90a74a889c6a49557393fade5ed8aaa9c346fd",
       "builder": "scripts/build_journeys.py",
       "builder_sha256": "b8c546f050d57224a326790eb0eab8d316fd890f93264a141fb0230874e283d3",
       "geometry": "data/journeys/sailing.geojson",
-      "geometry_sha256": "10696ea15c656953bfb9965535af780f6c9965f8568cc19604963474c8addda8",
+      "geometry_sha256": "e5d8f9839f688a91f52d0030ec7618c935cf326f18fbf0e25b07dd74f9f2f5c7",
       "method": "Conservative offshore spherical-cardinal smoothing between sailing anchors where safe, otherwise great-circle samples; independent route segments remain separate",
       "routes": [
         {
@@ -244,9 +244,9 @@
         },
         {
           "id": "slocum-spray",
-          "vertices": 12447,
+          "vertices": 12543,
           "wkt": "data/wkt/sailing/slocum-spray.wkt",
-          "wkt_sha256": "a39acd993ec3a069a6c3c4e425398819ee8acc701fefd921ebc585208583ff2f"
+          "wkt_sha256": "56fc68cb96e123aae2190d980673cc12d11b06bbc8bda61165470ab68af0e470"
         },
         {
           "id": "franklin-final-expedition",
@@ -322,9 +322,9 @@
         },
         {
           "id": "maiden-whitbread",
-          "vertices": 12187,
+          "vertices": 12205,
           "wkt": "data/wkt/sailing/maiden-whitbread.wkt",
-          "wkt_sha256": "d705b70f6874db482cf4e7af3b947f576aaa08c8c91ce7a6c5fd9143338d28ce"
+          "wkt_sha256": "ece8054b72b085a071f6f90413999729de0cf66d107cccfecde432a61124bc25"
         },
         {
           "id": "america-isle-of-wight",
@@ -343,11 +343,11 @@
     {
       "domain": "rail",
       "source": "data/journeys/rail.json",
-      "source_sha256": "476f0e762456dcd118ef490bdde9760461d053d44ad8ce051c5991819d2b0ef3",
+      "source_sha256": "d6496b072fd742d680088ec8c68facb7dc04cda5b2f46bc5310d17f37fca213b",
       "builder": "scripts/build_journeys.py",
       "builder_sha256": "b8c546f050d57224a326790eb0eab8d316fd890f93264a141fb0230874e283d3",
       "geometry": "data/journeys/rail.geojson",
-      "geometry_sha256": "b877406be8bbe4b15b4d98907343d1dd718ca9e27b182994318f633a4e97f816",
+      "geometry_sha256": "33488b5d8f8945e344379f7fed2e877feeff53881a70811bc9f42e5c1456d427",
       "method": "Great-circle rendering samples between sourced place anchors; independent route segments remain separate",
       "routes": [
         {
@@ -460,9 +460,9 @@
         },
         {
           "id": "rail-california-zephyr-1949",
-          "vertices": 3510,
+          "vertices": 3519,
           "wkt": "data/wkt/rail/rail-california-zephyr-1949.wkt",
-          "wkt_sha256": "642565c842a088ca43425991904d0c168a3d5cfa6af90bb7be5d031e1cbc7d11"
+          "wkt_sha256": "a3ecc7068db097cd1bf52e579888471e1fc59d5067e6cacc189accc7909e35ef"
         },
         {
           "id": "rail-canadian-1955",
@@ -484,9 +484,9 @@
         },
         {
           "id": "rail-eurostar-1994",
-          "vertices": 3506,
+          "vertices": 3510,
           "wkt": "data/wkt/rail/rail-eurostar-1994.wkt",
-          "wkt_sha256": "28b46147698e0745ee517fd7e8bbb3964367e64c045d5b8d646b3ab2dcd15917"
+          "wkt_sha256": "7e74b646e4d1ff3d1fc7d808535789da5cde18a3b64cd00de8cde0da06153b92"
         },
         {
           "id": "rail-qinghai-tibet-2006",
@@ -505,11 +505,11 @@
     {
       "domain": "road-races",
       "source": "data/journeys/road-races.json",
-      "source_sha256": "212ff3e825b25f598f0a1416fe482c237f3fb1fd6d5641523c32a51c7c899eba",
+      "source_sha256": "a01886f8ca090d692160078cb5a4de9209ace7b68a7e29d27d43ee010f2abef7",
       "builder": "scripts/build_journeys.py",
       "builder_sha256": "b8c546f050d57224a326790eb0eab8d316fd890f93264a141fb0230874e283d3",
       "geometry": "data/journeys/road-races.geojson",
-      "geometry_sha256": "897452d5986855ed337f6820a1f404cd92e7df5f8cb2a508785360dba8d92a4e",
+      "geometry_sha256": "06e0c58173a539b047206a3b37ddecc5eb9d985c57e6818a535b2ed6581e6538",
       "method": "Great-circle rendering samples between sourced place anchors; independent route segments remain separate",
       "routes": [
         {
@@ -550,9 +550,9 @@
         },
         {
           "id": "baja-1000-1967",
-          "vertices": 3506,
+          "vertices": 4337,
           "wkt": "data/wkt/road-races/baja-1000-1967.wkt",
-          "wkt_sha256": "474a7e9b8305b7ff68fe841c6173b0d7096503da165be7e3380af1759315f2bd"
+          "wkt_sha256": "0b0be58b13c45070daa8223b07ee4a33950f09483cc0b8820edcef156bb4447c"
         },
         {
           "id": "carrera-panamericana-1950",
@@ -667,11 +667,11 @@
     {
       "domain": "overland",
       "source": "data/journeys/overland.json",
-      "source_sha256": "e91e15be1e7b1696f6bec19c3bf7a538097a0a49740c732ca5320a8a475f6ca9",
+      "source_sha256": "7570eec7f9f8e6a5e4b6d8fd8c231837d02c3609abc253f85fcc79dbbe2f1677",
       "builder": "scripts/build_journeys.py",
       "builder_sha256": "b8c546f050d57224a326790eb0eab8d316fd890f93264a141fb0230874e283d3",
       "geometry": "data/journeys/overland.geojson",
-      "geometry_sha256": "8dcefbd99093419196804cff8e5837d252db1caab0086396a6c5b02f2e5497bf",
+      "geometry_sha256": "0bc630ad3e694ec5236f852ea8522882a667c15e17c06c9e320d057a1926c939",
       "method": "Great-circle rendering samples between sourced place anchors; independent route segments remain separate",
       "routes": [
         {
@@ -700,15 +700,15 @@
         },
         {
           "id": "cherokee-removal-northern-route",
-          "vertices": 3504,
+          "vertices": 3502,
           "wkt": "data/wkt/overland/cherokee-removal-northern-route.wkt",
-          "wkt_sha256": "337f77888730ef0eca486f5e52c2670488cd77d6b27fe99147514cce4ae9d358"
+          "wkt_sha256": "7cb659d9612bfbd4f3abd707957eca2eff0689263cf0cc63884cd29d0ca762fc"
         },
         {
           "id": "oregon-trail-migrations",
-          "vertices": 6226,
+          "vertices": 6331,
           "wkt": "data/wkt/overland/oregon-trail-migrations.wkt",
-          "wkt_sha256": "18f23425fabb483c1c583ba78caeee015de94b815517013ba13915dc209be8c5"
+          "wkt_sha256": "bb40450d7d272d134a2b738b93b762ddd748b57075fbac127894df5b21fbdb51"
         },
         {
           "id": "gandhi-salt-march",
@@ -730,9 +730,9 @@
         },
         {
           "id": "anza-colonizing-expedition",
-          "vertices": 5218,
+          "vertices": 8822,
           "wkt": "data/wkt/overland/anza-colonizing-expedition.wkt",
-          "wkt_sha256": "32e4c73420aac02dce6ddcee4006911643b444f603905096583dfc3110950961"
+          "wkt_sha256": "3e2306f6e3a7c0b9df49a4597589f48e8ddf6ceacf8d7eac697eb6c1498ed61a"
         },
         {
           "id": "pony-express-service",
@@ -829,18 +829,18 @@
     {
       "domain": "ocean-liners",
       "source": "data/journeys/ocean-liners.json",
-      "source_sha256": "63c017532a52a4edb55c686dd6210a372569deb578ba460132f7ecec15d05c23",
+      "source_sha256": "ab6f25220b555a0df916f98e5485383b03c77c941d722fc45e70cc3645d719fa",
       "builder": "scripts/build_journeys.py",
       "builder_sha256": "b8c546f050d57224a326790eb0eab8d316fd890f93264a141fb0230874e283d3",
       "geometry": "data/journeys/ocean-liners.geojson",
-      "geometry_sha256": "c9cfd1b113b2235ccacf5ec98f4611e07331c1ea73f99bfd7e2af2ffb97567db",
+      "geometry_sha256": "dd4c5ac59d930874d85678cede43671f38bdbd7111257f803d6a2ee444e4b3a1",
       "method": "Land-checked spherical cardinal interpolation through sourced ports and illustrative shipping corridors; independent route segments remain separate",
       "routes": [
         {
           "id": "titanic-maiden-1912",
-          "vertices": 3506,
+          "vertices": 3507,
           "wkt": "data/wkt/ocean-liners/titanic-maiden-1912.wkt",
-          "wkt_sha256": "0448182df4d25fbcb523b99eaea6cbdfc6a5c83bb8e4b586ad0bd6030259a716"
+          "wkt_sha256": "1f53c4830974cd2fae293ce1c9eebcb6f7ec5b040cf8e5f32b936e831ec9a309"
         },
         {
           "id": "lusitania-final-1915",
@@ -991,18 +991,18 @@
     {
       "domain": "river",
       "source": "data/journeys/river.json",
-      "source_sha256": "20a337ee2ffac9f968d8e7c7d9036e0627a5ffcd720f9af5562c72ffea2a4626",
+      "source_sha256": "e0e4e58477ee2d97205bf8f74ce689457a0646c74e46f5d31b8f8b2ce688f350",
       "builder": "scripts/build_journeys.py",
       "builder_sha256": "b8c546f050d57224a326790eb0eab8d316fd890f93264a141fb0230874e283d3",
       "geometry": "data/journeys/river.geojson",
-      "geometry_sha256": "b445507cc4be946d5bfa38f30d7934dfb62f9e0400fb1cf1f962d905ac596570",
+      "geometry_sha256": "8f5d19d3569af7701740e435e83d06b189a74d84eea0df5166c2c3830544e451",
       "method": "Great-circle rendering samples between sourced place anchors; independent route segments remain separate",
       "routes": [
         {
           "id": "river-powell-1869",
           "vertices": 3508,
           "wkt": "data/wkt/river/river-powell-1869.wkt",
-          "wkt_sha256": "575a1fb4ccfca4733560be23d398372004829b25363a87ae5a87e2f19e319401"
+          "wkt_sha256": "701afc61046a8c3ed8ec545da9a88c044cdd59fe7878a0bb1719084c80e8a085"
         },
         {
           "id": "river-orellana-amazon-1542",
@@ -1153,11 +1153,11 @@
     {
       "domain": "human-powered",
       "source": "data/journeys/human-powered.json",
-      "source_sha256": "2e777be702761e0c87235cf7f10c84b174a7dc3b90d637ebd7419dd86a863339",
+      "source_sha256": "7e231d8a15f84144988031fd4e0839b4e953358e52304e97c37b80818f6d9178",
       "builder": "scripts/build_journeys.py",
       "builder_sha256": "b8c546f050d57224a326790eb0eab8d316fd890f93264a141fb0230874e283d3",
       "geometry": "data/journeys/human-powered.geojson",
-      "geometry_sha256": "f32f1422e48bfff3070f2cbf5d79135412084374ab90a7d713de8bfcbaa3ba39",
+      "geometry_sha256": "afc3aa080f88ab641d481176bd375dd4a83884af93241535bd08ec2a977fc8aa",
       "method": "Great-circle rendering samples between sourced place anchors; independent route segments remain separate",
       "routes": [
         {
@@ -1216,9 +1216,9 @@
         },
         {
           "id": "human-strayed-pct-1995",
-          "vertices": 3506,
+          "vertices": 5100,
           "wkt": "data/wkt/human-powered/human-strayed-pct-1995.wkt",
-          "wkt_sha256": "bf1827e5bb04d47b684802c55b2b634fbffc9348df1318c1ed9bccbd94120c89"
+          "wkt_sha256": "e0952303f8257baef472060c503db38b96319a3bd84f627731edf8fb22136c26"
         },
         {
           "id": "human-stafford-amazon-2008",
@@ -1266,13 +1266,13 @@
           "id": "human-paul-caffyn-australia-1981",
           "vertices": 3528,
           "wkt": "data/wkt/human-powered/human-paul-caffyn-australia-1981.wkt",
-          "wkt_sha256": "f601ce9613ffefa3d80448e3702da17bfb7b471d3e5c3a51def3e0ed6551276f"
+          "wkt_sha256": "daa7ebf235ea6d435a8070de18af4c9b04bb8e13c5dc838a048b5c19475dd331"
         },
         {
           "id": "human-freya-hoffmeister-australia-2009",
-          "vertices": 3523,
+          "vertices": 3526,
           "wkt": "data/wkt/human-powered/human-freya-hoffmeister-australia-2009.wkt",
-          "wkt_sha256": "4f98cc755cc2d920b3a33cf9aa322de2df96bbc9901923af6c33e811c405de3d"
+          "wkt_sha256": "a4ef2230c1314ff09ddd064c9174a8aecd12fea1d3d509d74eb6c398bf025535"
         },
         {
           "id": "human-doba-atlantic-kayak-2013",
@@ -1294,9 +1294,9 @@
         },
         {
           "id": "human-roz-savage-pacific-2008",
-          "vertices": 10508,
+          "vertices": 10527,
           "wkt": "data/wkt/human-powered/human-roz-savage-pacific-2008.wkt",
-          "wkt_sha256": "4bec42e07952d54bbfaeab9ce7b0f52d26c8418f2c2dd7cb594603a262c96dfc"
+          "wkt_sha256": "187c2dbffece3010478f84332c2c4925eafe37433448235a06e3934e025efd1b"
         },
         {
           "id": "human-sarah-outen-pacific-2013",

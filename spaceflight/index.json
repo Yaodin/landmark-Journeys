@@ -32,14 +32,15 @@
       "description": "Yuri Gagarin completed one Earth orbit and landed by parachute near Engels.",
       "why_famous": "First human in space and first human to orbit Earth.",
       "confidence": "B",
-      "trajectory_method": "Representative inclined orbit through the launch site, with estimated ascent and reentry constrained to the published landing area.",
+      "trajectory_method": "Representative inclined orbit through the launch site using the published 181 km perigee, 327 km apogee and 65-degree inclination; plane phase, ascent and reentry remain modeled and the landing is constrained to the published region.",
       "sources": [
         "https://www.esa.int/About_Us/50_years_of_ESA/50_years_of_humans_in_space/The_flight_of_Vostok_1",
-        "https://science.nasa.gov/resource/yuri-gagarin-first-human-in-space/"
+        "https://ntrs.nasa.gov/api/citations/19900009927/downloads/19900009927.pdf",
+        "https://www.fai.org/sites/default/files/documents/record_file_gagarin_1.pdf"
       ],
       "path": "paths/vostok-1.json",
-      "point_count": 237,
-      "max_earth_center_distance_km": 6629.137,
+      "point_count": 238,
+      "max_earth_center_distance_km": 6705.137,
       "launch_site": "Baikonur Cosmodrome"
     },
     {
@@ -57,8 +58,8 @@
         "https://www.nasa.gov/history/sputnik/sputorig.html"
       ],
       "path": "paths/sputnik-1.json",
-      "point_count": 177,
-      "max_earth_center_distance_km": 7317.134,
+      "point_count": 178,
+      "max_earth_center_distance_km": 7317.137,
       "launch_site": "Baikonur Cosmodrome"
     },
     {
@@ -70,14 +71,14 @@
       "description": "The first crewed flight to the Moon and first human lunar orbit.",
       "why_famous": "Its crew saw the lunar farside and made the iconic Earthrise photograph.",
       "confidence": "B",
-      "trajectory_method": "Mission-event reconstruction with Moon motion sampled from JPL and ten representative lunar orbits between NASA's insertion and departure times.",
+      "trajectory_method": "Mission-event reconstruction with moving-Moon JPL ephemeris. NASA's initial 60.0 by 168.5 nmi lunar ellipse and 73:35:07 MET circularization replace two formerly circular representative revolutions; the remaining eight are approximately 60 nmi circular. Orbit plane orientation and full sample positions are modeled, not tracking telemetry.",
       "sources": [
         "https://www.nasa.gov/mission/apollo-8/",
-        "https://www.nasa.gov/history/50-years-ago-apollo-8-in-lunar-orbit/"
+        "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a410/A08_MissionReport.pdf"
       ],
       "path": "paths/apollo-8.json",
       "point_count": 543,
-      "max_earth_center_distance_km": 381839.486,
+      "max_earth_center_distance_km": 381846.097,
       "launch_site": "Kennedy Space Center"
     },
     {
@@ -130,14 +131,15 @@
       "description": "The first orbital test of the reusable Space Transportation System completed 37 revolutions.",
       "why_famous": "First Space Shuttle mission and first crewed maiden flight of a U.S. spacecraft system.",
       "confidence": "B+",
-      "trajectory_method": "Representative inclined orbit at published altitude, with estimated ascent and final 60-minute deorbit/entry arc constrained to Edwards AFB; not Shuttle telemetry.",
+      "trajectory_method": "Representative inclined orbit using NASA's achieved 238 km perigee, 250 km apogee and 40.3-degree inclination; estimated ascent and final 60-minute deorbit/entry arc are constrained to Edwards AFB. Orbital plane phase and sample states are modeled, not Shuttle telemetry.",
       "sources": [
         "https://www.nasa.gov/mission/sts-1/",
+        "https://ntrs.nasa.gov/api/citations/19920074895/downloads/19920074895.pdf",
         "https://www.nasa.gov/wp-content/uploads/2023/04/sp-4407-etuv4.pdf"
       ],
       "path": "paths/sts-1.json",
-      "point_count": 1470,
-      "max_earth_center_distance_km": 6685.137,
+      "point_count": 1471,
+      "max_earth_center_distance_km": 6628.137,
       "launch_site": "Kennedy Space Center"
     },
     {
@@ -149,14 +151,14 @@
       "description": "John Glenn became the first American to orbit Earth, completing three revolutions.",
       "why_famous": "A central early U.S. Space Race achievement.",
       "confidence": "B+",
-      "trajectory_method": "Representative inclined orbit using published duration and Mercury inclination, with estimated ascent/reentry ending at documented splashdown.",
+      "trajectory_method": "Representative inclined orbit using NASA's achieved 100 by 162.2 statute-mile orbit (rounded to 161 by 261 km) and 32.54-degree inclination; orbital plane phase and estimated ascent/reentry remain modeled, with the endpoint constrained to the documented splashdown region.",
       "sources": [
-        "https://www.nasa.gov/history/friendship7/",
-        "https://www.nasa.gov/history/60-years-ago-john-glenn-the-first-american-to-orbit-the-earth-aboard-friendship-7/"
+        "https://www.nasa.gov/mission/mercury-atlas-6-friendship-7/",
+        "https://ntrs.nasa.gov/api/citations/20160000809/downloads/20160000809.pdf"
       ],
       "path": "paths/friendship-7.json",
-      "point_count": 237,
-      "max_earth_center_distance_km": 6598.137,
+      "point_count": 238,
+      "max_earth_center_distance_km": 6639.137,
       "launch_site": "Cape Canaveral"
     },
     {
@@ -174,7 +176,7 @@
         "https://www.nasa.gov/wp-content/uploads/2023/04/sp-4004-1963.pdf"
       ],
       "path": "paths/vostok-6.json",
-      "point_count": 1806,
+      "point_count": 1807,
       "max_earth_center_distance_km": 6609.137,
       "launch_site": "Baikonur Cosmodrome"
     },
@@ -251,8 +253,8 @@
         "https://www.nasa.gov/missions/explorer/explorer-1-fast-facts/"
       ],
       "path": "paths/explorer-1.json",
-      "point_count": 176,
-      "max_earth_center_distance_km": 8892.376,
+      "point_count": 177,
+      "max_earth_center_distance_km": 8892.988,
       "launch_site": "Cape Canaveral"
     },
     {
@@ -346,7 +348,7 @@
         "https://www.nasa.gov/missions/apollo-soyuz/the-apollo-soyuz-mission/"
       ],
       "path": "paths/apollo-soyuz.json",
-      "point_count": 5045,
+      "point_count": 5046,
       "max_earth_center_distance_km": 6607.137,
       "launch_site": "Kennedy Space Center"
     },
@@ -365,7 +367,7 @@
         "https://historycollection.jsc.nasa.gov/history/shuttle-mir/references/documents/mirhh-part1.pdf"
       ],
       "path": "paths/soyuz-11.json",
-      "point_count": 13866,
+      "point_count": 13867,
       "max_earth_center_distance_km": 6598.137,
       "launch_site": "Baikonur Cosmodrome"
     },
@@ -438,14 +440,15 @@
       "description": "Yang Liwei completed 14 Earth orbits and landed in Inner Mongolia.",
       "why_famous": "Made China the third nation to independently launch and return a human from orbit.",
       "confidence": "B+",
-      "trajectory_method": "Representative inclined orbit using CMSA's published insertion/circularization data, with estimated ascent/reentry to the landing region.",
+      "trajectory_method": "Representative inclined orbit using CMSA's achieved 199.14 by 347.8 km insertion ellipse and fifth-circuit transition to a 343 km circular orbit; the burn is placed at 07:54 UTC from the contemporary 15:54 Beijing-time report. Orbital plane phase and ascent/reentry states remain modeled.",
       "sources": [
         "https://en.cmse.gov.cn/missions/shenzhouv/",
+        "https://cn.govopendata.com/renminribao/2003/10/16/2/",
         "https://www.cnsa.gov.cn/english/n6465652/n6465653/c6799621/content.html"
       ],
       "path": "paths/shenzhou-5.json",
-      "point_count": 581,
-      "max_earth_center_distance_km": 6721.137,
+      "point_count": 583,
+      "max_earth_center_distance_km": 6725.93,
       "launch_site": "Jiuquan Satellite Launch Center"
     },
     {

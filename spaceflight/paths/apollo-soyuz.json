@@ -25,10 +25,18 @@
     ],
     "query_url": null,
     "raw_response_sha256": null,
+    "supplemental_queries": [],
+    "sample_origin_ranges": [
+      {
+        "first_index": 0,
+        "last_index": 5045,
+        "origin": "modeled_reconstruction"
+      }
+    ],
     "retrieved_utc_date": "2026-09-24"
   },
   "stats": {
-    "point_count": 5045,
+    "point_count": 5046,
     "max_earth_center_distance_km": 6607.137
   },
   "positions": [
@@ -157,6 +165,12 @@
       -4613.046162,
       130.171394,
       4725.41732
+    ],
+    [
+      "1975-07-15T19:59:00Z",
+      -4550.075587,
+      -50.684554,
+      4790.459536
     ],
     [
       "1975-07-15T20:00:30Z",

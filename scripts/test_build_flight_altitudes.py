@@ -42,7 +42,6 @@ class FlightAltitudeBuildTests(unittest.TestCase):
         by_id = {feature["properties"]["id"]: feature for feature in self.full["features"]}
         documented = {
             "bell-x1-sound-barrier": (2, 13106),
-            "us-airways-1549": (4, 859),
             "enola-gay-hiroshima": (4, 9468),
             "rutan-voyager": (9, 6248),
             "air-canada-143-gimli-glider": (3, 10668),
@@ -52,6 +51,18 @@ class FlightAltitudeBuildTests(unittest.TestCase):
             vertex_index = feature["properties"]["altitude_estimate"]["anchor_vertex_indices"][anchor]
             vertices = [point for line in altitude.lines_of(feature["geometry"]) for point in line]
             self.assertAlmostEqual(vertices[vertex_index][2], expected_m, delta=1, msg=route_id)
+
+    def test_flight_1549_radar_altitudes_and_ground_anchors(self) -> None:
+        feature = next(
+            item for item in self.full["features"]
+            if item["properties"]["id"] == "us-airways-1549"
+        )
+        indices = feature["properties"]["altitude_estimate"]["anchor_vertex_indices"]
+        vertices = [point for line in altitude.lines_of(feature["geometry"]) for point in line]
+        for anchor, expected_m in {0: 0, 1: 0, 2: 305, 6: 884, 7: 975, 20: 61, 21: 0, 22: 0}.items():
+            self.assertAlmostEqual(vertices[indices[anchor]][2], expected_m, delta=1)
+        self.assertTrue(all(point[2] == 0 for point in vertices[indices[0]:indices[1] + 1]))
+        self.assertTrue(all(point[2] == 0 for point in vertices[indices[21]:indices[22] + 1]))
 
     def test_generated_files_are_current(self) -> None:
         for path, collection in ((altitude.FULL_OUTPUT, self.full), (altitude.OVERVIEW_OUTPUT, self.preview)):

@@ -124,11 +124,24 @@ def main():
         launch_bearings[mission["id"]] = initial_bearing(rows)
         terminal_radius[mission["id"]] = math.sqrt(sum(float(v)**2 for v in rows[-1][1:]))
         assert path["provenance"]["sources"]
+        ranges = path["provenance"]["sample_origin_ranges"]
+        assert ranges and ranges[0]["first_index"] == 0, f"{mission['id']}: sample origins do not begin at zero"
+        assert ranges[-1]["last_index"] == len(rows)-1, f"{mission['id']}: sample origins do not cover the path"
+        assert all(a["last_index"]+1 == b["first_index"] for a, b in zip(ranges, ranges[1:])), f"{mission['id']}: sample origins have a gap or overlap"
+        supplements = path["provenance"].get("supplemental_queries", [])
+        assert all(source["query_url"].startswith("https://ssd.jpl.nasa.gov/api/horizons.api?")
+                   and len(source["raw_response_sha256"]) == 64 for source in supplements), f"{mission['id']}: incomplete supplemental provenance"
         if path["provenance"]["query_url"]:
             horizons_count += 1
             assert path["provenance"]["raw_response_sha256"]
+            assert ranges[-1]["origin"] == "jpl_horizons_vectors", f"{mission['id']}: JPL samples mislabeled"
         else:
             reconstructed_count += 1
+            assert ranges == [{"first_index": 0, "last_index": len(rows)-1, "origin": "modeled_reconstruction"}], f"{mission['id']}: modeled samples mislabeled"
+            if mission["id"] in {"apollo-11", "apollo-8", "apollo-13", "luna-2"}:
+                assert len(supplements) == 1 and "Moon" in supplements[0]["role"], f"{mission['id']}: Moon ephemeris provenance missing"
+            if mission["id"] in {"viking-1", "mariner-4", "venera-7"}:
+                assert len(supplements) == 2 and "Earth" in supplements[0]["role"], f"{mission['id']}: planetary ephemeris provenance missing"
         # A path that leaves Earth must remain visibly outside the globe. This
         # catches accidental lon/lat-as-Cartesian and metre/kilometre mixups.
         if mission["id"] in {"voyager-1", "voyager-2", "cassini-huygens", "new-horizons", "rosetta", "hayabusa2", "curiosity-msl", "artemis-1", "chandrayaan-3", "apollo-8", "apollo-11", "apollo-13", "luna-2", "viking-1", "mariner-4", "venera-7"}:

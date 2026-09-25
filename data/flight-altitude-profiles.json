@@ -33,10 +33,11 @@
       "basis": "NASA reports the B-29 carrier at about 20,000 feet; NASA's X-1 account gives an approximately 43,000-foot test height. The carrier segment and rocket climb are generalized.", "confidence": "medium"
     },
     "us-airways-1549": {
-      "cruise_m": 859, "climb_km": 3, "descent_km": 3,
-      "controls_m": {"1": 35, "2": 240, "3": 560, "4": 859, "5": 780, "6": 650, "7": 420, "8": 230},
-      "altitude_source_url": "https://www.ntsb.gov/investigations/AccidentReports/Reports/AAR1003.pdf",
-      "basis": "The NTSB gives 2,818 feet AGL at the bird encounter. Other event heights are smoothed estimates along the reported radar track, not FDR samples.", "confidence": "medium"
+      "cruise_m": 900, "climb_km": 3, "descent_km": 3,
+      "controls_m": {"1": 0, "2": 305, "3": 579, "4": 671, "5": 792, "6": 884, "7": 975, "8": 914, "9": 701, "10": 640, "11": 549, "12": 488, "13": 457, "14": 396, "15": 366, "16": 244, "17": 122, "18": 30, "19": 91, "20": 61, "21": 0},
+      "segment_peaks_m": {"0": 0, "21": 0},
+      "altitude_source_url": "https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=.PDF&FileName=Aircraft+Performance+13+-+Factual+Report+of+Group+Chairman-Master.PDF&ID=40322563",
+      "basis": "The 19 radar-position anchors use rounded metre conversions of the NTSB Table 1a Mode C pressure altitudes. Intermediate heights are interpolated; the runway and ditching anchors are grounded estimates. Mode C is coarse MSL pressure altitude, not exact height above terrain or an FDR trace.", "confidence": "high"
     },
     "concorde-ba300": {
       "cruise_m": 16764, "climb_km": 550, "descent_km": 480,
@@ -73,7 +74,7 @@
     },
     "douglas-world-cruisers": {
       "cruise_m": 1800, "climb_km": 30, "descent_km": 30, "stops": "all",
-      "segment_peaks_m": {"37": 2400, "38": 2200},
+      "segment_peaks_m": {"39": 2400, "40": 2200},
       "altitude_source_url": "https://airandspace.si.edu/learn/programs/soar-together/firsts-flight",
       "basis": "Illustrative 1924 biplane cruise heights between named stations. Some anchors were overflights rather than stops, so local descents should not be read as a flight log.", "confidence": "low"
     },

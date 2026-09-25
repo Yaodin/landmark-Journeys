@@ -803,14 +803,21 @@
     "short_title": "Baja 1000 1967",
     "date": "1967",
     "why_famous": "The first sanctioned Mexican 1000 established Baja's iconic desert endurance race.",
-    "route_summary": "Tijuana and Ensenada south along Baja California to La Paz.",
+    "route_summary": "Ceremonial start in Tijuana, untimed drive to Ensenada, then the timed Mexican 1000 race south to La Paz.",
     "source_title": "SCORE International: First Baja 1000",
     "source_url": "https://score-international.com/score-news-story.php?newsID=2229",
     "geometry_confidence": "medium",
-    "geometry_note": "1967 peninsula control corridor, not today's Baja 1000 course or exact desert trails.",
+    "geometry_note": "SCORE records an official Tijuana start on 31 October 1967, a leisure-speed transfer to Ensenada, and a restart the next day for the timed run to La Paz; NORRA separately describes the competition as Ensenada–La Paz. These are distinct segments. Intermediate peninsula towns are broad controls, not a recovered 1967 course or modern Baja 1000 alignment.",
+    "additional_sources": [
+      {
+        "title": "NORRA — Mexican 1000 history",
+        "url": "https://www.norra.com/norra.php",
+        "note": "Original organizer identifies Tijuana beginning and Ensenada–La Paz race course."
+      }
+    ],
     "segments": [
       {
-        "mode": "off-road",
+        "mode": "road transit",
         "track_type": "historical-corridor",
         "source_url": "https://score-international.com/score-news-story.php?newsID=2229",
         "anchors": [
@@ -818,13 +825,26 @@
             "name": "Tijuana",
             "lat": 32.5149,
             "lon": -117.0382,
-            "note": "Northern departure corridor"
+            "note": "Official ceremonial start, 31 October 1967; vehicles drove to Ensenada at leisure speeds."
           },
           {
             "name": "Ensenada",
             "lat": 31.8667,
             "lon": -116.6,
-            "note": "Race start region"
+            "note": "End of untimed transfer; timed race restarted here the next day."
+          }
+        ]
+      },
+      {
+        "mode": "off-road",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.norra.com/norra.php",
+        "anchors": [
+          {
+            "name": "Ensenada",
+            "lat": 31.8667,
+            "lon": -116.6,
+            "note": "Timed race restart, 1 November 1967."
           },
           {
             "name": "San Quintín",

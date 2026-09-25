@@ -26,7 +26,19 @@
     ],
     "query_url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=-76&EPHEM_TYPE=VECTORS&CENTER=500%40399&START_TIME=%272011-11-27+00%3A00%27&STOP_TIME=%272012-08-06+05%3A00%27&STEP_SIZE=12h&OUT_UNITS=KM-S&REF_PLANE=FRAME&REF_SYSTEM=ICRF&VEC_TABLE=2&VEC_CORR=NONE&TIME_TYPE=UT&CSV_FORMAT=YES",
     "raw_response_sha256": "00bc1fed3fa8af1358af235c4aa25038bab0e7bc02f60e532aedfb07a188be84",
-    "retrieved_utc_date": "2026-09-24"
+    "retrieved_utc_date": "2026-09-24",
+    "sample_origin_ranges": [
+      {
+        "first_index": 0,
+        "last_index": 0,
+        "origin": "modeled_launch_or_gap"
+      },
+      {
+        "first_index": 1,
+        "last_index": 507,
+        "origin": "jpl_horizons_vectors"
+      }
+    ]
   },
   "stats": {
     "point_count": 508,

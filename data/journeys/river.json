@@ -6,11 +6,11 @@
     "short_title": "Powell expedition",
     "date": "1869-05-24 to 1869-08-30",
     "why_famous": "The first recorded complete boat descent of the Green and Colorado canyons through the Grand Canyon by a U.S. scientific party.",
-    "route_summary": "Green River, Wyoming → Green River canyons → Colorado confluence → Grand Canyon → St. Thomas, Nevada.",
+    "route_summary": "Green River, Wyoming → Green River canyons → Colorado confluence → Grand Canyon → historic Virgin–Colorado confluence near Rioville.",
     "source_title": "National Park Service — John Wesley Powell",
     "source_url": "https://www.nps.gov/dino/learn/historyculture/john-wesley-powell.htm",
     "geometry_confidence": "medium",
-    "geometry_note": "Named canyon and confluence anchors trace the pre-dam river corridor. Lake Flaming Gorge, Lake Powell, and Lake Mead now obscure major reaches; interpolated lines do not recover the 1869 channel.",
+    "geometry_note": "Named canyon and confluence anchors trace the pre-dam river corridor. The boat journey ended at the historic Virgin–Colorado confluence, not at the inland St. Thomas town marker. Separation Canyon marks the documented departure of three crew, but its point is only a modern canyon locator. Lake Flaming Gorge, Lake Powell, and Lake Mead obscure major reaches; interpolated lines do not recover the 1869 channel or exact former confluence.",
     "segments": [
       {
         "mode": "river",
@@ -114,18 +114,36 @@
             "note": "Approximate named route waypoint"
           },
           {
+            "name": "Separation Canyon",
+            "lat": 35.823,
+            "lon": -113.57,
+            "note": "Documented 28 August 1869 crew separation; coordinate is a modern canyon-area locator, not an 1869 survey fix."
+          },
+          {
             "name": "Grand Wash Cliffs",
             "lat": 36.12,
             "lon": -113.94,
             "note": "Approximate named route waypoint"
           },
           {
-            "name": "St. Thomas, Nevada",
-            "lat": 36.468,
-            "lon": -114.363,
-            "note": "Journey endpoint; town later submerged"
+            "name": "Historic Virgin–Colorado confluence near Rioville",
+            "lat": 36.15,
+            "lon": -114.4,
+            "note": "1869 boat-journey endpoint documented by NPS and USGS; coordinate is an approximate former-confluence region near historic Rioville, now inundated by Lake Mead, not a surveyed 1869 fix."
           }
         ]
+      }
+    ],
+    "additional_sources": [
+      {
+        "title": "NPS: Lake Mead early explorers and settlers",
+        "url": "https://www.nps.gov/lake/learn/historyculture/early-explorers-and-settlers.htm",
+        "note": "Confirms the 30 August 1869 endpoint at the Virgin–Colorado confluence."
+      },
+      {
+        "title": "NPS: Separation Canyon history",
+        "url": "https://www.nps.gov/media/video/view.htm?id=410B30E2-CB92-40FC-BF4D-4267D86612DC",
+        "note": "Describes the crew split at Separation Canyon on 27–28 August 1869."
       }
     ],
     "wiki_title": "Powell Geographic Expedition of 1869",

@@ -6,13 +6,25 @@
     "short_title": "Golden Spike",
     "date": "1869-05-10",
     "why_famous": "The Central Pacific and Union Pacific joined at Promontory Summit, linking the U.S. rail networks.",
-    "route_summary": "Separate ceremonial approaches from Sacramento and Omaha to Promontory Summit.",
+    "route_summary": "Central Pacific and Union Pacific construction corridors from Sacramento and Omaha converging at Promontory Summit; not the May 10 locomotives' complete trips.",
     "source_title": "National Park Service — Golden Spike",
     "source_url": "https://www.nps.gov/gosp/faqs.htm",
     "wiki_title": "First transcontinental railroad",
     "wiki_url": "https://en.wikipedia.org/wiki/First_transcontinental_railroad",
     "geometry_confidence": "medium",
-    "geometry_note": "Two approach corridors, not a single coast-to-coast train. Promontory's original grade was later bypassed; city anchors are approximate.",
+    "geometry_note": "Two network-construction corridors, not a single coast-to-coast train or the exact May 10 trips of Jupiter and No. 119. Their ceremonial specials joined these lines nearer Promontory; city anchors remain approximate. The 1869 grade at Promontory was later bypassed, and parallel unfinished grades must not be mistaken for the used track.",
+    "additional_sources": [
+      {
+        "title": "NPS — The Story of Jupiter and No. 119",
+        "url": "https://www.nps.gov/gosp/learn/historyculture/everlasting-steam-the-story-of-jupiter-and-no-119.htm",
+        "note": "The ceremonial trains and locomotive substitutions; disproves a continuous Omaha-to-Promontory No. 119 trip on May 10."
+      },
+      {
+        "title": "NPS DataStore — 1869 established railroad grade",
+        "url": "https://irmadev.nps.gov/DataStore/Reference/Profile/1020405",
+        "note": "Digitized park-local 1869 grade exists but is not incorporated in this corridor-scale geometry."
+      }
+    ],
     "segments": [
       {
         "mode": "rail",
@@ -548,7 +560,7 @@
     "segments": [
       {
         "mode": "rail",
-        "track_type": "source-derived",
+        "track_type": "historical-corridor",
         "source_url": "https://global.jr-central.co.jp/en/company/about_shinkansen/",
         "anchors": [
           {
@@ -646,7 +658,19 @@
     "wiki_title": "Stockton and Darlington Railway",
     "wiki_url": "https://en.wikipedia.org/wiki/Stockton_and_Darlington_Railway",
     "geometry_confidence": "medium",
-    "geometry_note": "Historic station and junction locations are approximate; several original grade sections are no longer in use.",
+    "geometry_note": "Shildon-to-Stockton locomotive corridor uses approximate historic place anchors, not a modern rail-centerline snap. Historic England documents a surviving 1 km piece of 1825 grade through Preston Park and an 1852 replacement about 250 m to the west; the Eaglescliffe anchor is a geographic cue, not an 1825 station stop.",
+    "additional_sources": [
+      {
+        "title": "Historic England — 1825 Preston Park railway earthworks",
+        "url": "https://historicengland.org.uk/listing/the-list/list-entry/1484556",
+        "note": "Original 1825 grade east of its 1852 replacement; the listed site has national grid reference NZ4262915571."
+      },
+      {
+        "title": "Historic England — original-line aerial mapping report",
+        "url": "https://historicengland.org.uk/research/results/reports/28-2019",
+        "note": "Archaeological route survey; map geometry should be checked against it before tracing detailed 1825 curves."
+      }
+    ],
     "segments": [
       {
         "mode": "rail",
@@ -675,7 +699,7 @@
             "name": "Eaglescliffe",
             "lat": 54.529,
             "lon": -1.349,
-            "note": "Tees approach"
+            "note": "Original 1825 corridor in the Eaglescliffe vicinity; current station was not an opening-day stop"
           },
           {
             "name": "Stockton-on-Tees",
@@ -932,7 +956,7 @@
     "segments": [
       {
         "mode": "rail",
-        "track_type": "source-derived",
+        "track_type": "historical-corridor",
         "source_url": "https://blog.railwaymuseum.org.uk/take-part-in-our-thankstoyou-competition-and-win-an-exclusive-tour-of-flying-scotsman-and-champagne-afternoon-tea/",
         "anchors": [
           {
@@ -1222,7 +1246,7 @@
     "segments": [
       {
         "mode": "rail",
-        "track_type": "source-derived",
+        "track_type": "historical-corridor",
         "source_url": "https://library.ltmuseum.co.uk/Portal/Default/en-GB/RecordView/Index/108",
         "anchors": [
           {
@@ -1596,7 +1620,19 @@
     "wiki_title": "Suffrage Special",
     "wiki_url": "https://en.wikipedia.org/wiki/Suffrage_Special",
     "geometry_confidence": "low",
-    "geometry_note": "Only documented Kansas and Colorado station sequences are drawn. The complete 38-day itinerary and exact railroads require a full reading of the contemporary itinerary before connecting these fragments into one line.",
+    "geometry_note": "Only documented Kansas and Colorado stop sequences are drawn as separate illustrative fragments. The Library of Congress preserves a contemporary whole-tour map, but it is too schematic to identify every railroad and junction; the pamphlet itinerary should be transcribed before connecting the fragments into a continuous track.",
+    "additional_sources": [
+      {
+        "title": "Library of Congress — contemporary route map of Suffrage Special envoys",
+        "url": "https://www.loc.gov/item/mnwp000270/",
+        "note": "Original 1916 map supports the broad cross-country tour but not exact rail-centerline tracing."
+      },
+      {
+        "title": "Library of Congress — National Woman's Party detailed chronology",
+        "url": "https://www.loc.gov/static/collections/women-of-protest/images/detchron.pdf",
+        "note": "Lists the order and dates of visited states from April 9 to May 16, 1916."
+      }
+    ],
     "segments": [
       {
         "mode": "rail",
@@ -1919,7 +1955,7 @@
     "segments": [
       {
         "mode": "rail",
-        "track_type": "source-derived",
+        "track_type": "historical-corridor",
         "source_url": "https://railwaycodes.org.uk/elrs/_mileages/e/ecm1.shtm",
         "anchors": [
           {
@@ -1981,18 +2017,66 @@
     "wiki_title": "California Zephyr",
     "wiki_url": "https://en.wikipedia.org/wiki/California_Zephyr",
     "geometry_confidence": "medium",
-    "geometry_note": "Original Western Pacific route via Feather River is used, not the modern Amtrak Donner Pass route. City and junction anchors simplify historic tracks.",
+    "geometry_note": "A railroad-issued December 1949 timetable confirms the Western Pacific approach to Oakland through Stockton, Pleasanton and Niles, the Feather River route, and the through corridor to Chicago; this is not the modern Amtrak Donner Pass route. The timetable is nine months after the first run, so continuity back to March is inferred. Added places are approximate geographic anchors, not measured track centerline or necessarily inaugural-train stops.",
+    "additional_sources": [
+      {
+        "title": "California Zephyr museum — March 20, 1949 timetable covers",
+        "url": "https://www.californiazephyr.org/exhibits/timetables/",
+        "note": "Inaugural-date railroad timetable covers; confirms the service/date, but the online image is not a legible station schedule."
+      },
+      {
+        "title": "Western Pacific — December 1949 California Zephyr timetable",
+        "url": "https://streamlinermemories.info/RG/WP49-12TT.pdf",
+        "note": "Railroad-issued complete mainline and condensed through schedules; a nine-month-later alignment proxy for the first run."
+      }
+    ],
     "segments": [
       {
         "mode": "rail",
         "track_type": "historical-corridor",
-        "source_url": "https://media.amtrak.com/2024/03/happy-anniversary-california-zephyr/",
+        "source_url": "https://streamlinermemories.info/RG/WP49-12TT.pdf",
         "anchors": [
           {
             "name": "Oakland",
             "lat": 37.804,
             "lon": -122.272,
-            "note": "Pacific terminal"
+            "note": "Western Pacific terminal area; city anchor, not surveyed platform"
+          },
+          {
+            "name": "Hayward",
+            "lat": 37.668,
+            "lon": -122.081,
+            "note": "Western Pacific timetable place; approximate city anchor"
+          },
+          {
+            "name": "Niles",
+            "lat": 37.578,
+            "lon": -121.975,
+            "note": "Western Pacific timetable place; approximate district anchor"
+          },
+          {
+            "name": "Pleasanton",
+            "lat": 37.662,
+            "lon": -121.875,
+            "note": "Western Pacific timetable place; approximate station-area anchor"
+          },
+          {
+            "name": "Livermore",
+            "lat": 37.682,
+            "lon": -121.768,
+            "note": "Western Pacific timetable place; approximate city anchor"
+          },
+          {
+            "name": "Altamont",
+            "lat": 37.728,
+            "lon": -121.651,
+            "note": "Western Pacific timetable place at the pass; approximate geographic anchor"
+          },
+          {
+            "name": "Stockton",
+            "lat": 37.958,
+            "lon": -121.291,
+            "note": "Western Pacific timetable place; approximate station-area anchor"
           },
           {
             "name": "Sacramento",
@@ -2025,6 +2109,12 @@
             "note": "Feather River route"
           },
           {
+            "name": "Gerlach",
+            "lat": 40.652,
+            "lon": -119.355,
+            "note": "Western Pacific desert corridor; approximate town anchor"
+          },
+          {
             "name": "Winnemucca",
             "lat": 40.973,
             "lon": -117.735,
@@ -2041,6 +2131,12 @@
             "lat": 40.76,
             "lon": -111.891,
             "note": "Utah hub"
+          },
+          {
+            "name": "Provo",
+            "lat": 40.233,
+            "lon": -111.659,
+            "note": "Rio Grande timetable place; approximate station-area anchor"
           },
           {
             "name": "Helper",
@@ -2091,16 +2187,46 @@
             "note": "Front Range stop"
           },
           {
+            "name": "McCook",
+            "lat": 40.202,
+            "lon": -100.625,
+            "note": "Burlington timetable place; approximate city anchor"
+          },
+          {
+            "name": "Hastings",
+            "lat": 40.589,
+            "lon": -98.39,
+            "note": "Burlington timetable place; approximate city anchor"
+          },
+          {
+            "name": "Lincoln",
+            "lat": 40.813,
+            "lon": -96.702,
+            "note": "Burlington timetable place; approximate city anchor"
+          },
+          {
             "name": "Omaha",
             "lat": 41.259,
             "lon": -95.942,
             "note": "Plains corridor"
           },
           {
+            "name": "Ottumwa",
+            "lat": 41.017,
+            "lon": -92.433,
+            "note": "Burlington timetable place; approximate city anchor"
+          },
+          {
             "name": "Burlington Iowa",
             "lat": 40.808,
             "lon": -91.1,
             "note": "Burlington route"
+          },
+          {
+            "name": "Galesburg",
+            "lat": 40.947,
+            "lon": -90.371,
+            "note": "Burlington timetable place; approximate city anchor"
           },
           {
             "name": "Chicago",
@@ -2517,12 +2643,24 @@
     "wiki_title": "Eurostar",
     "wiki_url": "https://en.wikipedia.org/wiki/Eurostar",
     "geometry_confidence": "medium",
-    "geometry_note": "Uses Waterloo and the pre-HS1 British network. Channel Tunnel portals are approximate, and French high-speed alignment is station-level.",
+    "geometry_note": "Uses Waterloo and the pre-HS1 British network via the Nine Elms connection, Brixton, Herne Hill, Orpington, Sevenoaks, Tonbridge and Ashford, not Clapham Junction or the later St Pancras/HS1 corridor. These are routing waypoints rather than passenger stops or a measured centerline; the 1994 inaugural train's exact pathing may differ from later typical services. Tunnel portals and the French high-speed alignment remain approximate.",
+    "additional_sources": [
+      {
+        "title": "UK Department for Transport — HS1 second evaluation",
+        "url": "https://assets.publishing.service.gov.uk/media/682f37fbb33f68eaba9539cd/hs1-second-evaluation.pdf",
+        "note": "Reconstructs pre-HS1 Eurostar paths to Waterloo through Nine Elms and the Orpington–Sevenoaks classic-network corridor."
+      },
+      {
+        "title": "Network Rail — Waterloo station history",
+        "url": "https://www.networkrail.co.uk/who-we-are/our-history/iconic-infrastructure/the-history-of-london-waterloo-station/",
+        "note": "Confirms Waterloo International was the 1994 London terminal."
+      }
+    ],
     "segments": [
       {
         "mode": "rail",
         "track_type": "historical-corridor",
-        "source_url": "https://mediacentre.eurostar.com/mc_view?article_Id=ka43z000000kOZFAA2&language=fr-fr",
+        "source_url": "https://assets.publishing.service.gov.uk/media/682f37fbb33f68eaba9539cd/hs1-second-evaluation.pdf",
         "anchors": [
           {
             "name": "London Waterloo International",
@@ -2531,16 +2669,40 @@
             "note": "Original London terminal"
           },
           {
-            "name": "Clapham Junction",
-            "lat": 51.465,
-            "lon": -0.169,
-            "note": "South London corridor"
+            "name": "Nine Elms connection",
+            "lat": 51.48,
+            "lon": -0.14,
+            "note": "Approximate connection from Waterloo to the Kent-bound classic network; not Clapham Junction"
+          },
+          {
+            "name": "Brixton",
+            "lat": 51.463,
+            "lon": -0.115,
+            "note": "South London routing waypoint, not a Eurostar stop"
+          },
+          {
+            "name": "Herne Hill",
+            "lat": 51.453,
+            "lon": -0.102,
+            "note": "South London routing waypoint, not a Eurostar stop"
           },
           {
             "name": "Bromley South",
             "lat": 51.4,
             "lon": 0.018,
-            "note": "Kent corridor"
+            "note": "Pre-HS1 Kent routing waypoint, not a Eurostar stop"
+          },
+          {
+            "name": "Orpington",
+            "lat": 51.373,
+            "lon": 0.089,
+            "note": "Pre-HS1 routing junction; approximate station-area anchor"
+          },
+          {
+            "name": "Sevenoaks",
+            "lat": 51.277,
+            "lon": 0.182,
+            "note": "Pre-HS1 Kent routing waypoint, not a Eurostar stop"
           },
           {
             "name": "Tonbridge",
@@ -2549,10 +2711,28 @@
             "note": "Kent corridor"
           },
           {
+            "name": "Paddock Wood",
+            "lat": 51.183,
+            "lon": 0.389,
+            "note": "Classic Kent railway corridor; approximate station-area anchor"
+          },
+          {
+            "name": "Headcorn",
+            "lat": 51.166,
+            "lon": 0.627,
+            "note": "Classic Kent railway corridor; approximate station-area anchor"
+          },
+          {
             "name": "Ashford",
             "lat": 51.143,
             "lon": 0.874,
             "note": "Kent junction"
+          },
+          {
+            "name": "Westenhanger",
+            "lat": 51.094,
+            "lon": 1.038,
+            "note": "Classic-line approach to Cheriton; approximate station-area anchor"
           },
           {
             "name": "Folkestone terminal",
@@ -2617,7 +2797,7 @@
     "segments": [
       {
         "mode": "rail",
-        "track_type": "source-derived",
+        "track_type": "historical-corridor",
         "source_url": "https://www.china.org.cn/english/2006/Jul/173352.htm",
         "anchors": [
           {
@@ -2701,7 +2881,7 @@
     "segments": [
       {
         "mode": "rail",
-        "track_type": "source-derived",
+        "track_type": "historical-corridor",
         "source_url": "https://whc.unesco.org/document/152235",
         "anchors": [
           {

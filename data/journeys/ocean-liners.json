@@ -10,12 +10,12 @@
     "source_title": "Royal Museums Greenwich: Titanic facts and voyage timeline",
     "source_url": "https://www.rmg.co.uk/stories/topics/rms-titanic-facts?open=",
     "geometry_confidence": "high",
-    "geometry_note": "Three embarkation ports are documented. The final point is NOAA's surveyed bow wreck position, not necessarily the exact iceberg-impact or sinking surface position. Ocean controls indicate only a plausible offshore corridor; New York is excluded from the sailed line.",
+    "geometry_note": "Three embarkation ports and the southern liner track's approximate 42°N, 47°W turning area are documented by the British inquiry; Titanic continued roughly 10 miles southwest before altering course. The plotted turn is a regional estimate, not an observed fix. The final point is NOAA's surveyed bow wreck position, not necessarily the exact impact or sinking surface position. Other ocean controls remain illustrative; New York was not reached.",
     "segments": [
       {
         "mode": "ocean liner",
         "track_type": "source-derived",
-        "source_url": "https://www.rmg.co.uk/stories/topics/rms-titanic-facts?open=",
+        "source_url": "https://www.titanicinquiry.org/BOTInq/BOTRepFindings.php",
         "anchors": [
           {
             "name": "Southampton",
@@ -72,12 +72,25 @@
             "note": "Offshore corridor control, not a logged fix."
           },
           {
+            "name": "Southern track turning area, southwest of 42°N 47°W",
+            "lat": 41.9,
+            "lon": -47.2,
+            "note": "Approximate regional control from British inquiry finding: Titanic stood on about 10 miles beyond the 42°N, 47°W lane corner before turning S 86° W at 5:50 p.m.; not a measured position."
+          },
+          {
             "name": "Titanic wreck, bow section",
             "lat": 41.733,
             "lon": -49.947,
             "note": "Approximate surveyed wreck position; NOAA 2004 expedition: 41°43′57″N 49°56′49″W."
           }
         ]
+      }
+    ],
+    "additional_sources": [
+      {
+        "title": "British Wreck Commissioner's Inquiry: findings on Titanic's route",
+        "url": "https://www.titanicinquiry.org/BOTInq/BOTRepFindings.php",
+        "note": "Identifies the outward southern track and approximate course alteration near 42°N, 47°W; the plotted offset is an estimate."
       }
     ],
     "wiki_title": "Titanic",
@@ -666,15 +679,15 @@
     "date": "1952-07-03–07",
     "why_famous": "Set the fastest transatlantic passenger-liner crossing record on its maiden voyage.",
     "route_summary": "New York–Ambrose Lightship–Bishop Rock–Le Havre–Southampton, eastbound.",
-    "source_title": "Mariners' Museum: United States 1952 voyage log",
-    "source_url": "https://catalogs.marinersmuseum.org/media/Media/00001/MS15.19524%20United%20States00635822369151364486.pdf",
+    "source_title": "Mariners' Museum: United States maiden-voyage log holding",
+    "source_url": "https://catalogs.marinersmuseum.org/object/CL20698",
     "geometry_confidence": "high",
-    "geometry_note": "Voyage and timing endpoints have a museum log. The plotted Atlantic path is still waypoint interpolation; full log positions have not been transcribed.",
+    "geometry_note": "The Mariners' Museum catalog confirms that it holds the maiden-voyage log, but no log positions have been transcribed into this atlas. The plotted Atlantic path is waypoint interpolation; it must not be described as log-derived. A previously cited PDF is a 1969 passenger list, not the 1952 log.",
     "segments": [
       {
         "mode": "express liner",
         "track_type": "waypoint-interpolation",
-        "source_url": "https://catalogs.marinersmuseum.org/media/Media/00001/MS15.19524%20United%20States00635822369151364486.pdf",
+        "source_url": "https://catalogs.marinersmuseum.org/object/CL20698",
         "anchors": [
           {
             "name": "New York",
@@ -737,6 +750,13 @@
             "note": "Final scheduled destination."
           }
         ]
+      }
+    ],
+    "additional_sources": [
+      {
+        "title": "Mariners' Museum ship history",
+        "url": "https://catalogs.marinersmuseum.org/object/CL20552",
+        "note": "Confirms the 1952 eastbound and westbound records; does not publish daily track positions."
       }
     ],
     "wiki_title": "SS United States",

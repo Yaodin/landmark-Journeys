@@ -25,7 +25,26 @@
     ],
     "query_url": null,
     "raw_response_sha256": null,
-    "retrieved_utc_date": "2026-09-24"
+    "supplemental_queries": [
+      {
+        "role": "JPL Earth body ephemeris used for reconstructed transfer",
+        "query_url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=399&EPHEM_TYPE=VECTORS&CENTER=500%4010&START_TIME=%271964-11-28+14%3A22%27&STOP_TIME=%271965-07-15+01%3A00%27&STEP_SIZE=1d&OUT_UNITS=KM-S&REF_PLANE=FRAME&REF_SYSTEM=ICRF&VEC_TABLE=2&VEC_CORR=NONE&TIME_TYPE=UT&CSV_FORMAT=YES",
+        "raw_response_sha256": "e732ea510f25a7b6ff7edca0fcbdf118cb9ba048a6e0e49e3b089abdf3e15dc2"
+      },
+      {
+        "role": "JPL Mars body ephemeris used for reconstructed transfer",
+        "query_url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=499&EPHEM_TYPE=VECTORS&CENTER=500%4010&START_TIME=%271964-11-28+14%3A22%27&STOP_TIME=%271965-07-15+01%3A00%27&STEP_SIZE=1d&OUT_UNITS=KM-S&REF_PLANE=FRAME&REF_SYSTEM=ICRF&VEC_TABLE=2&VEC_CORR=NONE&TIME_TYPE=UT&CSV_FORMAT=YES",
+        "raw_response_sha256": "b526f8eb8a8cd1a1b7a8ea54b75377180dfe6ca7a98f6c8aa295022f2b6fcbb0"
+      }
+    ],
+    "retrieved_utc_date": "2026-09-24",
+    "sample_origin_ranges": [
+      {
+        "first_index": 0,
+        "last_index": 228,
+        "origin": "modeled_reconstruction"
+      }
+    ]
   },
   "stats": {
     "point_count": 229,

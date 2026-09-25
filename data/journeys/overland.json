@@ -621,11 +621,18 @@
     "short_title": "Cherokee removal",
     "date": "1838–1839",
     "why_famous": "The U.S. government forced Cherokee communities from their homelands, causing widespread death and dispossession.",
-    "route_summary": "A representative northern land route from southeastern Cherokee territory through Tennessee, Kentucky, Illinois, Missouri, and Arkansas to Indian Territory.",
+    "route_summary": "Representative Cherokee northern forced-removal corridor from the Fort Cass-area camps in Tennessee through Kentucky, Illinois, Missouri, and Arkansas to Indian Territory.",
     "source_title": "National Park Service: Trail of Tears route map",
     "source_url": "https://www.nps.gov/trte/planyourvisit/upload/National-Park-Service-Trail-of-Tears-Map-508.pdf",
+    "additional_sources": [
+      {
+        "title": "NPS National Register documentation — Cherokee northern removal route",
+        "url": "https://www.nps.gov/trte/learn/historyculture/upload/National-Register-of-Historic-Places-Multiple-Properties-508.pdf",
+        "note": "Records eleven northern-route detachments, nine departing camps near Fort Cass/Camp Ross, and the separate Taylor variation."
+      }
+    ],
     "geometry_confidence": "medium",
-    "geometry_note": "Represents one northern overland removal corridor, not all detachments. The NPS maps multiple land and water routes; place controls do not identify a single named detachment.",
+    "geometry_note": "Represents the northern overland removal corridor, not one person's track or every detachment. NPS records nine of eleven northern-route detachments leaving from camps near Fort Cass and Camp Ross; two used the Taylor variation near Chattanooga. Red Clay is a Cherokee homeland council site, not a documented origin for this corridor, so it is not plotted as its first route anchor. Place-to-place connectors are schematic, pending careful tracing of the NPS route GIS; the NPS maps multiple other land and water routes.",
     "segments": [
       {
         "mode": "forced overland migration",
@@ -633,16 +640,10 @@
         "source_url": "https://www.nps.gov/trte/planyourvisit/upload/National-Park-Service-Trail-of-Tears-Map-508.pdf",
         "anchors": [
           {
-            "name": "Red Clay council site",
-            "lat": 34.99,
-            "lon": -84.96,
-            "note": "Cherokee homeland site near removal origin; not every detachment began here."
-          },
-          {
             "name": "Fort Cass area",
             "lat": 35.27,
             "lon": -84.52,
-            "note": "Removal staging region."
+            "note": "Removal staging region; nine of eleven northern-route detachments departed camps near Fort Cass/Camp Ross according to NPS."
           },
           {
             "name": "Mantle Rock",
@@ -691,66 +692,1327 @@
     "source_title": "National Park Service: historic trail GIS",
     "source_url": "https://www.nps.gov/orgs/1453/gis-data.htm",
     "geometry_confidence": "medium",
-    "geometry_note": "Collective migration over decades, not one itinerary. Before 1846 emigrants had to float the Columbia from The Dalles; after the Barlow Road opened in 1846, it became a wagon alternative while water transport remained available. The branches are schematic, and individual migrant routes varied.",
+    "geometry_note": "The Independence–The Dalles wagon corridor now follows 218 sampled vertices of the NPS approximate designated Oregon National Historic Trail GIS alignment. Nine named controls were matched to nearby mapped vertices (maximum offset 3.2 km); two multipart joins under 55 m were inferred. The 1:100,000-scale designation is not a verified individual emigrant trace. Columbia water travel and the post-1846 Barlow Road remain schematic alternatives, not a single journey.",
+    "additional_sources": [
+      {
+        "title": "Data.gov — Oregon National Historic Trail feature service metadata",
+        "url": "https://catalog.data.gov/dataset/oregon-national-historic-trail",
+        "note": "Describes the NPS dataset as an approximate designated route rather than a measured emigrant track."
+      }
+    ],
     "segments": [
       {
         "mode": "wagon and foot",
-        "track_type": "historical-corridor",
-        "source_url": "https://www.nps.gov/orgs/1453/gis-data.htm",
+        "track_type": "source-derived",
+        "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/OREG_NHT/FeatureServer/0",
         "anchors": [
           {
             "name": "Independence",
-            "lat": 39.09,
-            "lon": -94.42,
-            "note": "Representative Missouri departure."
+            "lat": 39.0902,
+            "lon": -94.417,
+            "note": "NPS designated alignment near named control; original landmark offset 0.3 km; this is an approximate historic corridor"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 001",
+            "lat": 38.9813,
+            "lon": -94.4893,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 002",
+            "lat": 38.9,
+            "lon": -94.6145,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 003",
+            "lat": 38.8544,
+            "lon": -94.7611,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 004",
+            "lat": 38.8021,
+            "lon": -94.9134,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 005",
+            "lat": 38.8593,
+            "lon": -95.0251,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 006",
+            "lat": 38.915,
+            "lon": -95.1495,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 007",
+            "lat": 38.9651,
+            "lon": -95.2497,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 008",
+            "lat": 38.9972,
+            "lon": -95.4014,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 009",
+            "lat": 39.0492,
+            "lon": -95.5586,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 010",
+            "lat": 39.0904,
+            "lon": -95.7008,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 011",
+            "lat": 39.0903,
+            "lon": -95.8544,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 012",
+            "lat": 39.1621,
+            "lon": -95.9965,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 013",
+            "lat": 39.2243,
+            "lon": -96.1451,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 014",
+            "lat": 39.2787,
+            "lon": -96.2909,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 015",
+            "lat": 39.3787,
+            "lon": -96.3953,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 016",
+            "lat": 39.5011,
+            "lon": -96.4283,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 017",
+            "lat": 39.6292,
+            "lon": -96.4683,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 018",
+            "lat": 39.7175,
+            "lon": -96.5891,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 019",
+            "lat": 39.7688,
+            "lon": -96.7193,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 020",
+            "lat": 39.8758,
+            "lon": -96.8135,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 021",
+            "lat": 39.9855,
+            "lon": -96.8975,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 022",
+            "lat": 40.0771,
+            "lon": -97.0065,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 023",
+            "lat": 40.1588,
+            "lon": -97.1429,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 024",
+            "lat": 40.2317,
+            "lon": -97.2829,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 025",
+            "lat": 40.2216,
+            "lon": -97.4523,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 026",
+            "lat": 40.2028,
+            "lon": -97.621,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 027",
+            "lat": 40.2273,
+            "lon": -97.79,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 028",
+            "lat": 40.2649,
+            "lon": -97.9448,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 029",
+            "lat": 40.3429,
+            "lon": -98.0702,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 030",
+            "lat": 40.404,
+            "lon": -98.2215,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 031",
+            "lat": 40.4624,
+            "lon": -98.3704,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 032",
+            "lat": 40.539,
+            "lon": -98.5087,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 033",
+            "lat": 40.5953,
+            "lon": -98.6596,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 034",
+            "lat": 40.6582,
+            "lon": -98.7931,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 035",
+            "lat": 40.6499,
+            "lon": -98.9694,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
           },
           {
             "name": "Fort Kearny",
-            "lat": 40.65,
+            "lat": 40.6503,
             "lon": -98.99,
-            "note": "Platte River corridor."
+            "note": "NPS designated alignment near named control; original landmark offset 0.0 km; this is an approximate historic corridor"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 036",
+            "lat": 40.6547,
+            "lon": -99.163,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 037",
+            "lat": 40.6582,
+            "lon": -99.3393,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 038",
+            "lat": 40.6658,
+            "lon": -99.5172,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 039",
+            "lat": 40.6894,
+            "lon": -99.6876,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 040",
+            "lat": 40.7509,
+            "lon": -99.8444,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 041",
+            "lat": 40.8247,
+            "lon": -99.989,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 042",
+            "lat": 40.8839,
+            "lon": -100.1457,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 043",
+            "lat": 40.9506,
+            "lon": -100.2985,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 044",
+            "lat": 40.9891,
+            "lon": -100.4568,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 045",
+            "lat": 41.0574,
+            "lon": -100.6069,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 046",
+            "lat": 41.0912,
+            "lon": -100.7794,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 047",
+            "lat": 41.1236,
+            "lon": -100.95,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 048",
+            "lat": 41.1319,
+            "lon": -101.1226,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 049",
+            "lat": 41.1103,
+            "lon": -101.2979,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 050",
+            "lat": 41.104,
+            "lon": -101.4772,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 051",
+            "lat": 41.1113,
+            "lon": -101.6537,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 052",
+            "lat": 41.0855,
+            "lon": -101.8278,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 053",
+            "lat": 41.1049,
+            "lon": -101.9866,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 054",
+            "lat": 41.2117,
+            "lon": -102.0941,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 055",
+            "lat": 41.3152,
+            "lon": -102.1595,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 056",
+            "lat": 41.3621,
+            "lon": -102.3174,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 057",
+            "lat": 41.4275,
+            "lon": -102.4706,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 058",
+            "lat": 41.4834,
+            "lon": -102.6261,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 059",
+            "lat": 41.5422,
+            "lon": -102.782,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 060",
+            "lat": 41.597,
+            "lon": -102.9435,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 061",
+            "lat": 41.655,
+            "lon": -103.104,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 062",
+            "lat": 41.7075,
+            "lon": -103.2786,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
           },
           {
             "name": "Chimney Rock",
-            "lat": 41.7,
-            "lon": -103.35,
-            "note": "Trail landmark."
+            "lat": 41.7258,
+            "lon": -103.3493,
+            "note": "NPS designated alignment near named control; original landmark offset 2.9 km; this is an approximate historic corridor"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 063",
+            "lat": 41.7786,
+            "lon": -103.5121,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 064",
+            "lat": 41.7876,
+            "lon": -103.6776,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 065",
+            "lat": 41.8142,
+            "lon": -103.8474,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 066",
+            "lat": 41.9071,
+            "lon": -103.9749,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 067",
+            "lat": 41.9939,
+            "lon": -104.1,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 068",
+            "lat": 42.0603,
+            "lon": -104.2498,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 069",
+            "lat": 42.1266,
+            "lon": -104.3975,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 070",
+            "lat": 42.2053,
+            "lon": -104.5312,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
           },
           {
             "name": "Fort Laramie",
-            "lat": 42.21,
-            "lon": -104.52,
-            "note": "Trail junction."
+            "lat": 42.2063,
+            "lon": -104.5317,
+            "note": "NPS designated alignment near named control; original landmark offset 1.0 km; this is an approximate historic corridor"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 071",
+            "lat": 42.2465,
+            "lon": -104.6833,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 072",
+            "lat": 42.2966,
+            "lon": -104.8442,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 073",
+            "lat": 42.3826,
+            "lon": -104.9547,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 074",
+            "lat": 42.4786,
+            "lon": -105.0624,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 075",
+            "lat": 42.5215,
+            "lon": -105.2188,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 076",
+            "lat": 42.5969,
+            "lon": -105.3574,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 077",
+            "lat": 42.6908,
+            "lon": -105.4516,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 078",
+            "lat": 42.754,
+            "lon": -105.5994,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 079",
+            "lat": 42.8168,
+            "lon": -105.7271,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 080",
+            "lat": 42.8644,
+            "lon": -105.8893,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 081",
+            "lat": 42.8663,
+            "lon": -106.0646,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 082",
+            "lat": 42.8555,
+            "lon": -106.233,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 083",
+            "lat": 42.8467,
+            "lon": -106.3943,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 084",
+            "lat": 42.8353,
+            "lon": -106.5589,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 085",
+            "lat": 42.7339,
+            "lon": -106.6617,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 086",
+            "lat": 42.6626,
+            "lon": -106.8096,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 087",
+            "lat": 42.6038,
+            "lon": -106.9686,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 088",
+            "lat": 42.5106,
+            "lon": -107.0907,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 089",
+            "lat": 42.4384,
+            "lon": -107.2298,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 090",
+            "lat": 42.4795,
+            "lon": -107.3946,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 091",
+            "lat": 42.4611,
+            "lon": -107.5625,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 092",
+            "lat": 42.511,
+            "lon": -107.7233,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 093",
+            "lat": 42.5241,
+            "lon": -107.8958,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 094",
+            "lat": 42.5197,
+            "lon": -108.0709,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 095",
+            "lat": 42.516,
+            "lon": -108.2476,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 096",
+            "lat": 42.4664,
+            "lon": -108.399,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 097",
+            "lat": 42.4348,
+            "lon": -108.551,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 098",
+            "lat": 42.3941,
+            "lon": -108.7096,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 099",
+            "lat": 42.3483,
+            "lon": -108.8596,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
           },
           {
             "name": "South Pass",
-            "lat": 42.37,
-            "lon": -108.91,
-            "note": "Continental Divide crossing."
+            "lat": 42.3421,
+            "lon": -108.9013,
+            "note": "NPS designated alignment near named control; original landmark offset 3.2 km; this is an approximate historic corridor"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 100",
+            "lat": 42.2844,
+            "lon": -109.0609,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 101",
+            "lat": 42.2585,
+            "lon": -109.2242,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 102",
+            "lat": 42.1836,
+            "lon": -109.37,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 103",
+            "lat": 42.0898,
+            "lon": -109.4929,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 104",
+            "lat": 41.9984,
+            "lon": -109.6217,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 105",
+            "lat": 41.926,
+            "lon": -109.7676,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 106",
+            "lat": 41.8058,
+            "lon": -109.7982,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 107",
+            "lat": 41.7075,
+            "lon": -109.861,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 108",
+            "lat": 41.6132,
+            "lon": -109.9439,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 109",
+            "lat": 41.5463,
+            "lon": -110.0827,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 110",
+            "lat": 41.4381,
+            "lon": -110.177,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 111",
+            "lat": 41.3613,
+            "lon": -110.2932,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
           },
           {
             "name": "Fort Bridger",
-            "lat": 41.32,
-            "lon": -110.39,
-            "note": "Western junction."
+            "lat": 41.3195,
+            "lon": -110.3888,
+            "note": "NPS designated alignment near named control; original landmark offset 0.1 km; this is an approximate historic corridor"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 112",
+            "lat": 41.4285,
+            "lon": -110.4633,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 113",
+            "lat": 41.5528,
+            "lon": -110.4855,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 114",
+            "lat": 41.5877,
+            "lon": -110.6387,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 115",
+            "lat": 41.6532,
+            "lon": -110.7485,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 116",
+            "lat": 41.7164,
+            "lon": -110.8702,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 117",
+            "lat": 41.7378,
+            "lon": -110.9982,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 118",
+            "lat": 41.8517,
+            "lon": -110.971,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 119",
+            "lat": 41.9864,
+            "lon": -110.9415,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 120",
+            "lat": 42.1165,
+            "lon": -110.9583,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 121",
+            "lat": 42.2203,
+            "lon": -111.061,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 122",
+            "lat": 42.2426,
+            "lon": -111.1898,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 123",
+            "lat": 42.3354,
+            "lon": -111.2985,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 124",
+            "lat": 42.4604,
+            "lon": -111.3623,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 125",
+            "lat": 42.5731,
+            "lon": -111.4581,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 126",
+            "lat": 42.6525,
+            "lon": -111.5952,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 127",
+            "lat": 42.6876,
+            "lon": -111.7478,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 128",
+            "lat": 42.7897,
+            "lon": -111.8578,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 129",
+            "lat": 42.893,
+            "lon": -111.9517,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 130",
+            "lat": 42.9767,
+            "lon": -112.0731,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 131",
+            "lat": 43.0087,
+            "lon": -112.2317,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 132",
+            "lat": 43.0258,
+            "lon": -112.3894,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 133",
+            "lat": 43.045,
+            "lon": -112.5656,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
           },
           {
             "name": "Fort Hall",
-            "lat": 43.02,
-            "lon": -112.63,
-            "note": "Snake River corridor."
+            "lat": 43.0179,
+            "lon": -112.6304,
+            "note": "NPS designated alignment near named control; original landmark offset 0.2 km; this is an approximate historic corridor"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 134",
+            "lat": 42.9066,
+            "lon": -112.7263,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 135",
+            "lat": 42.8093,
+            "lon": -112.8479,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 136",
+            "lat": 42.7046,
+            "lon": -112.9412,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 137",
+            "lat": 42.6274,
+            "lon": -113.0824,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 138",
+            "lat": 42.5719,
+            "lon": -113.2388,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 139",
+            "lat": 42.5378,
+            "lon": -113.4097,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 140",
+            "lat": 42.5256,
+            "lon": -113.5919,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 141",
+            "lat": 42.5143,
+            "lon": -113.7669,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 142",
+            "lat": 42.5263,
+            "lon": -113.9326,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 143",
+            "lat": 42.4958,
+            "lon": -114.1047,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 144",
+            "lat": 42.4584,
+            "lon": -114.2764,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 145",
+            "lat": 42.5254,
+            "lon": -114.4228,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 146",
+            "lat": 42.6008,
+            "lon": -114.5493,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 147",
+            "lat": 42.6396,
+            "lon": -114.6852,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 148",
+            "lat": 42.6835,
+            "lon": -114.8326,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 149",
+            "lat": 42.7643,
+            "lon": -114.9404,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 150",
+            "lat": 42.85,
+            "lon": -115.0658,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 151",
+            "lat": 42.9079,
+            "lon": -115.2106,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 152",
+            "lat": 42.9426,
+            "lon": -115.3751,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 153",
+            "lat": 42.9406,
+            "lon": -115.5434,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 154",
+            "lat": 42.9324,
+            "lon": -115.7243,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 155",
+            "lat": 42.918,
+            "lon": -115.9021,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 156",
+            "lat": 42.9637,
+            "lon": -116.0494,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 157",
+            "lat": 43.0456,
+            "lon": -116.1958,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 158",
+            "lat": 43.124,
+            "lon": -116.3306,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 159",
+            "lat": 43.2014,
+            "lon": -116.4511,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 160",
+            "lat": 43.2826,
+            "lon": -116.5496,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 161",
+            "lat": 43.383,
+            "lon": -116.6646,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 162",
+            "lat": 43.4851,
+            "lon": -116.7883,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 163",
+            "lat": 43.5926,
+            "lon": -116.8744,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 164",
+            "lat": 43.6733,
+            "lon": -117.0137,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 165",
+            "lat": 43.754,
+            "lon": -117.0859,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 166",
+            "lat": 43.8385,
+            "lon": -117.0758,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 167",
+            "lat": 43.7698,
+            "lon": -116.9163,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 168",
+            "lat": 43.7073,
+            "lon": -116.7528,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 169",
+            "lat": 43.6756,
+            "lon": -116.584,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 170",
+            "lat": 43.6684,
+            "lon": -116.3992,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 171",
+            "lat": 43.6187,
+            "lon": -116.2326,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
           },
           {
             "name": "Boise River crossing",
-            "lat": 43.62,
-            "lon": -116.2,
-            "note": "Snake Basin route region."
+            "lat": 43.6083,
+            "lon": -116.219,
+            "note": "NPS designated alignment near named control; original landmark offset 2.0 km; this is an approximate historic corridor"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 172",
+            "lat": 43.6718,
+            "lon": -116.3779,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 173",
+            "lat": 43.6737,
+            "lon": -116.5569,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 174",
+            "lat": 43.702,
+            "lon": -116.7336,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 175",
+            "lat": 43.7626,
+            "lon": -116.9004,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 176",
+            "lat": 43.8287,
+            "lon": -117.0549,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 177",
+            "lat": 43.9218,
+            "lon": -117.1833,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 178",
+            "lat": 44.0387,
+            "lon": -117.2534,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 179",
+            "lat": 44.1626,
+            "lon": -117.2567,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 180",
+            "lat": 44.2777,
+            "lon": -117.2213,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 181",
+            "lat": 44.3815,
+            "lon": -117.306,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 182",
+            "lat": 44.4839,
+            "lon": -117.3501,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 183",
+            "lat": 44.5591,
+            "lon": -117.4265,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 184",
+            "lat": 44.6492,
+            "lon": -117.5602,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 185",
+            "lat": 44.7504,
+            "lon": -117.6459,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 186",
+            "lat": 44.847,
+            "lon": -117.7803,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 187",
+            "lat": 44.9595,
+            "lon": -117.8753,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 188",
+            "lat": 45.0741,
+            "lon": -117.9364,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 189",
+            "lat": 45.2002,
+            "lon": -117.996,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 190",
+            "lat": 45.3098,
+            "lon": -118.0741,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 191",
+            "lat": 45.3452,
+            "lon": -118.2267,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 192",
+            "lat": 45.4321,
+            "lon": -118.357,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 193",
+            "lat": 45.5295,
+            "lon": -118.4658,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 194",
+            "lat": 45.6233,
+            "lon": -118.5265,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 195",
+            "lat": 45.6621,
+            "lon": -118.6937,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 196",
+            "lat": 45.6811,
+            "lon": -118.8829,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 197",
+            "lat": 45.6954,
+            "lon": -119.0781,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 198",
+            "lat": 45.7278,
+            "lon": -119.2377,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 199",
+            "lat": 45.6972,
+            "lon": -119.416,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 200",
+            "lat": 45.6584,
+            "lon": -119.5946,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 201",
+            "lat": 45.6362,
+            "lon": -119.7671,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 202",
+            "lat": 45.6157,
+            "lon": -119.9388,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 203",
+            "lat": 45.6251,
+            "lon": -120.1081,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 204",
+            "lat": 45.6059,
+            "lon": -120.2836,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 205",
+            "lat": 45.5865,
+            "lon": -120.4392,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 206",
+            "lat": 45.6277,
+            "lon": -120.6009,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 207",
+            "lat": 45.6158,
+            "lon": -120.7733,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 208",
+            "lat": 45.6319,
+            "lon": -120.9193,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
+          },
+          {
+            "name": "NPS Oregon Trail alignment 209",
+            "lat": 45.6052,
+            "lon": -121.0823,
+            "note": "NPS 1:100,000-scale designated-route sample; exact historic wagon track not verified"
           },
           {
             "name": "The Dalles",
-            "lat": 45.6,
-            "lon": -121.18,
-            "note": "Columbia River decision point."
+            "lat": 45.5996,
+            "lon": -121.1807,
+            "note": "NPS designated alignment near named control; original landmark offset 0.1 km; this is an approximate historic corridor"
           }
         ]
       },
@@ -1092,11 +2354,11 @@
     "short_title": "Anza expedition",
     "date": "1775–1776",
     "why_famous": "A well-documented Spanish colonizing caravan reached the San Francisco Bay region from Sonora, accelerating the colonization of Alta California.",
-    "route_summary": "Horcasitas to Tubac, Yuma, San Gabriel and Monterey; Anza then explored the San Francisco Bay with a smaller party.",
+    "route_summary": "The 1775–76 colonizing caravan traveled from Horcasitas to Monterey; Anza's smaller reconnaissance party continued to San Francisco Bay and returned to Monterey.",
     "source_title": "National Park Service: Anza expedition campsite mapping",
     "source_url": "https://www.nps.gov/juba/learn/historyculture/mapping-historic-campsites-of-the-anza-colonizing-expedition.htm",
     "geometry_confidence": "medium",
-    "geometry_note": "NPS distinguishes fixed from hypothesized camps; these are selected named controls, not the complete campsite GIS. Bay reconnaissance was by Anza's smaller party after the colonists stopped at Monterey.",
+    "geometry_note": "The published NPS campsite table supplies 96 geocoded rows used here: 57 classified fixed and 39 hypothesized. One listed camp lacks coordinates and is omitted; the report mentions 106 camps, so this is not a complete camp inventory. Segments connect NPS research estimates, not a surveyed 1775–76 trail trace. The Bay reconnaissance and return were by Anza's smaller party after the colonists stopped at Monterey.",
     "segments": [
       {
         "mode": "horse and pack caravan",
@@ -1105,88 +2367,605 @@
         "anchors": [
           {
             "name": "Horcasitas",
-            "lat": 29.49,
-            "lon": -110.72,
-            "note": "NPS fixed campsite; departure of mapped colonizing leg."
+            "lat": 29.489444,
+            "lon": -110.721667,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
           },
           {
-            "name": "Magdalena",
-            "lat": 30.63,
-            "lon": -110.98,
-            "note": "NPS fixed campsite."
+            "name": "El Vado",
+            "lat": 29.502222,
+            "lon": -110.735556,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
           },
           {
-            "name": "Tubac",
-            "lat": 31.6,
-            "lon": -111.05,
-            "note": "NPS fixed presidio campsite."
+            "name": "Chupisonora",
+            "lat": 29.616667,
+            "lon": -110.799722,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "La Palma",
+            "lat": 29.753889,
+            "lon": -110.863333,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Charco del Canelo",
+            "lat": 29.9475,
+            "lon": -110.950833,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "El Puerto de los Conejos",
+            "lat": 30.137778,
+            "lon": -111.101389,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "El Charco de Guana",
+            "lat": 30.362778,
+            "lon": -111.101389,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Santa Ana",
+            "lat": 30.545556,
+            "lon": -111.121944,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Santa Maira Magdalena",
+            "lat": 30.626944,
+            "lon": -110.983333,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "San Ignacio Mission",
+            "lat": 30.731111,
+            "lon": -110.913889,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Ymuris",
+            "lat": 30.793333,
+            "lon": -110.849444,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "El Guambut",
+            "lat": 30.937222,
+            "lon": -110.855833,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Sibuta",
+            "lat": 31.056111,
+            "lon": -110.893056,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Las Lagunas",
+            "lat": 31.391667,
+            "lon": -110.954722,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Real Presidio de San Ignacio de Tubac",
+            "lat": 31.595833,
+            "lon": -111.046111,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Paraje la Canoa",
+            "lat": 31.790278,
+            "lon": -111.012778,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Punta de los Llanos",
+            "lat": 31.876111,
+            "lon": -110.976667,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
           },
           {
             "name": "Mission San Xavier del Bac",
-            "lat": 32.11,
+            "lat": 32.1075,
+            "lon": -111.006389,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "North of Tuquison (a fuera)",
+            "lat": 32.253056,
             "lon": -111.01,
-            "note": "NPS fixed campsite."
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
           },
           {
-            "name": "Picacho Peak",
-            "lat": 32.62,
-            "lon": -111.53,
-            "note": "NPS fixed control."
+            "name": "Puerto del Azotado",
+            "lat": 32.390278,
+            "lon": -111.136944,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
           },
           {
-            "name": "Gila–Colorado confluence",
-            "lat": 32.72,
-            "lon": -114.62,
-            "note": "Yuma crossing with Quechan help; exact camp area varies."
+            "name": "Oytapar (old town)",
+            "lat": 32.504167,
+            "lon": -111.361944,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
           },
           {
-            "name": "Borrego Springs region",
-            "lat": 33.26,
+            "name": "Tacca (Picacho Peak)",
+            "lat": 32.624444,
+            "lon": -111.533056,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "La Laguna-Comari",
+            "lat": 33.046389,
+            "lon": -111.637222,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Paraje de Uturituc",
+            "lat": 33.113889,
+            "lon": -111.815278,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Paraje de Sutuquison",
+            "lat": 33.151667,
+            "lon": -111.979722,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Laguna del Hospital",
+            "lat": 33.173611,
+            "lon": -112.064444,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Arroyo Seco",
+            "lat": 33.077778,
+            "lon": -112.318056,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "San Simon y Judas de Uparsoytac",
+            "lat": 32.986667,
+            "lon": -112.709167,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Rancherias de San Martin",
+            "lat": 32.988889,
+            "lon": -112.82,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Rancheria San Diego",
+            "lat": 33.009167,
+            "lon": -113.014444,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Aritoac / La Rinconada",
+            "lat": 33.018611,
+            "lon": -113.143611,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Agua Caliente",
+            "lat": 32.985833,
+            "lon": -113.316944,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Vicinity of San Bernardino",
+            "lat": 32.876667,
+            "lon": -113.618611,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "El Pescador",
+            "lat": 32.835833,
+            "lon": -113.669722,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Cerro de San Pascual",
+            "lat": 32.7875,
+            "lon": -113.796111,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Cerro del Metate (Santa Cecilia)",
+            "lat": 32.713333,
+            "lon": -114.014444,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Laguna Salobre (Salada)",
+            "lat": 32.663333,
+            "lon": -114.183056,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Cerros del Cajon (el Bonete)",
+            "lat": 32.724722,
+            "lon": -114.330278,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Los Cerritos (Anza)",
+            "lat": 32.760833,
+            "lon": -114.395833,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Southern shore of the Colorado River",
+            "lat": 32.727778,
+            "lon": -114.576389,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Northern shore of the Colorado River",
+            "lat": 32.733611,
+            "lon": -114.569167,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Village of Chief Palma",
+            "lat": 32.718056,
+            "lon": -114.594722,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Village of Captain Pablos",
+            "lat": 32.711111,
+            "lon": -114.73,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Laguna de los Cojat",
+            "lat": 32.604444,
+            "lon": -114.830556,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Santa Olaya",
+            "lat": 32.471111,
+            "lon": -114.900278,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Pozo Salobre del Carrizal",
+            "lat": 32.553333,
+            "lon": -115.183611,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Arroyo Hondo",
+            "lat": 32.605278,
+            "lon": -115.443889,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Santa Rosa de la Lajas",
+            "lat": 32.714444,
+            "lon": -115.876389,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Arroyo Seco",
+            "lat": 32.822778,
+            "lon": -115.879444,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "San Sebastian",
+            "lat": 33.110833,
+            "lon": -115.921389,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Los Puertecitos (Anza)",
+            "lat": 33.139444,
+            "lon": -116.084167,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "San Gregorio",
+            "lat": 33.273889,
+            "lon": -116.273333,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "El Vado",
+            "lat": 33.343333,
             "lon": -116.38,
-            "note": "Anza–Borrego desert corridor."
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Santa Catharina Spring",
+            "lat": 33.377222,
+            "lon": -116.443889,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Los Danzantes",
+            "lat": 33.440278,
+            "lon": -116.523056,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Puerto de San Carlos",
+            "lat": 33.485556,
+            "lon": -116.586944,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "San Patricio",
+            "lat": 33.603889,
+            "lon": -116.738611,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Arroyo de San Jose",
+            "lat": 33.766667,
+            "lon": -116.909444,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Villa de San Jose",
+            "lat": 33.84,
+            "lon": -117.084167,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Rio Santa Ana southern bank and northern bank",
+            "lat": 33.968333,
+            "lon": -117.436111,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Arroyo de Los Alisos",
+            "lat": 34.083889,
+            "lon": -117.765556,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Rio de San Gabriel",
+            "lat": 34.107222,
+            "lon": -117.984167,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
           },
           {
             "name": "Mission San Gabriel",
-            "lat": 34.1,
-            "lon": -118.11,
-            "note": "Documented California stop."
+            "lat": 34.096389,
+            "lon": -118.105833,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
           },
           {
-            "name": "San Luis Obispo",
-            "lat": 35.28,
-            "lon": -120.66,
-            "note": "Coastal corridor."
+            "name": "El Puertezuelo",
+            "lat": 34.129444,
+            "lon": -118.3475,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
           },
           {
-            "name": "Presidio of Monterey",
-            "lat": 36.6,
-            "lon": -121.89,
-            "note": "Colonist destination."
+            "name": "Agua Escondida",
+            "lat": 34.151667,
+            "lon": -118.694167,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Rio de Santa Clara",
+            "lat": 34.241111,
+            "lon": -119.188333,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "La Rinconada",
+            "lat": 34.376111,
+            "lon": -119.477222,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Close to Rancherias de Mescaltitan",
+            "lat": 34.448611,
+            "lon": -119.804444,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Rancheria Nueva",
+            "lat": 34.462778,
+            "lon": -120.082778,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Rancheria del Cojo",
+            "lat": 34.455,
+            "lon": -120.406667,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Rio de Santa Rosa",
+            "lat": 34.686667,
+            "lon": -120.595833,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Laguna Graciosa",
+            "lat": 34.798611,
+            "lon": -120.620556,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Rancheria del Buchon",
+            "lat": 35.149722,
+            "lon": -120.631667,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Mission San Luis Obispo",
+            "lat": 35.280556,
+            "lon": -120.664444,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "La Asuncion",
+            "lat": 35.545833,
+            "lon": -120.698889,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Primer Vado",
+            "lat": 35.793889,
+            "lon": -120.872222,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Mission San Antonio de los Robles",
+            "lat": 36.016111,
+            "lon": -121.249444,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Los Ositos",
+            "lat": 36.270278,
+            "lon": -121.180556,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Los Correos",
+            "lat": 36.522222,
+            "lon": -121.516944,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Real Presidio del Puerto de Monterey",
+            "lat": 36.595833,
+            "lon": -121.886944,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
           }
         ]
       },
       {
         "mode": "horseback reconnaissance",
-        "track_type": "historical-corridor",
-        "source_url": "https://www.nps.gov/juba/learn/historyculture/california-anza-trail-sites.htm",
+        "track_type": "source-derived",
+        "source_url": "https://www.nps.gov/juba/learn/historyculture/mapping-historic-campsites-of-the-anza-colonizing-expedition.htm",
         "anchors": [
           {
-            "name": "Presidio of Monterey",
-            "lat": 36.6,
-            "lon": -121.89,
-            "note": "Anza's smaller party departed after colonists settled."
+            "name": "Real Presidio del Puerto de Monterey",
+            "lat": 36.595833,
+            "lon": -121.886944,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
           },
           {
-            "name": "San Juan Bautista region",
-            "lat": 36.85,
-            "lon": -121.54,
-            "note": "Historic corridor."
+            "name": "La Natividad-Asuncion",
+            "lat": 36.779722,
+            "lon": -121.600833,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
           },
           {
-            "name": "San Francisco Bay peninsula",
-            "lat": 37.76,
-            "lon": -122.45,
-            "note": "Reconnaissance destination, not colonists' 1776 destination."
+            "name": "Arroyo de Las Llagas",
+            "lat": 37.091667,
+            "lon": -121.6375,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Arroyo de San Josef de Cupertino",
+            "lat": 37.29,
+            "lon": -122.034444,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Arroyito past Arroyo de San Mateo",
+            "lat": 37.576111,
+            "lon": -122.3475,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Puerto de San Francisco",
+            "lat": 37.788056,
+            "lon": -122.469444,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          }
+        ]
+      },
+      {
+        "mode": "horseback reconnaissance",
+        "track_type": "source-derived",
+        "source_url": "https://www.nps.gov/juba/learn/historyculture/mapping-historic-campsites-of-the-anza-colonizing-expedition.htm",
+        "anchors": [
+          {
+            "name": "Puerto de San Francisco",
+            "lat": 37.788056,
+            "lon": -122.469444,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Arroyo de San Mateo",
+            "lat": 37.563056,
+            "lon": -122.327222,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Rio de Guadalupe",
+            "lat": 37.401389,
+            "lon": -121.941389,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Arroyo de San Salvador/Arina",
+            "lat": 37.675278,
+            "lon": -122.081111,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Arroyo del Puerto Dulce",
+            "lat": 38.020556,
+            "lon": -122.260278,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "Santa Angela de Fulgino",
+            "lat": 37.9775,
+            "lon": -122.053611,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "San Ricardo",
+            "lat": 38.017222,
+            "lon": -121.755,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Returning Camp",
+            "lat": 37.736389,
+            "lon": -121.72,
+            "note": "NPS mapped 1775–76 campsite (hypothesized); location is a historical research estimate"
+          },
+          {
+            "name": "San Vicente",
+            "lat": 37.368611,
+            "lon": -121.482222,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Arroyo del Coyote (un altito)",
+            "lat": 37.071944,
+            "lon": -121.478056,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Rio de Monterey",
+            "lat": 36.675278,
+            "lon": -121.751111,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
+          },
+          {
+            "name": "Presidio de Monterey",
+            "lat": 36.595833,
+            "lon": -121.886111,
+            "note": "NPS mapped 1775–76 campsite (fixed); location is a historical research estimate"
           }
         ]
       }

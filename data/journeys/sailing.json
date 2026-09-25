@@ -1450,12 +1450,12 @@
     "source_title": "Smithsonian Libraries: Sailing Alone Around the World",
     "source_url": "https://www.si.edu/object/sailing-alone-around-world-captain-joshua-slocum-illustrated-thomas-fogarty-george-varian%3Asiris_sil_561337",
     "geometry_confidence": "high",
-    "geometry_note": "Slocum's account records stops; the line here joins selected stops and does not claim day-by-day fixes.",
+    "geometry_note": "Slocum's first-person account records Rio de Janeiro, Maldonado, Montevideo, and Buenos Aires before the Magellan passage. The line joins selected stops and illustrative offshore controls, not day-by-day fixes.",
     "segments": [
       {
         "mode": "sailing",
-        "track_type": "source-derived",
-        "source_url": "https://www.si.edu/object/sailing-alone-around-world-captain-joshua-slocum-illustrated-thomas-fogarty-george-varian%3Asiris_sil_561337",
+        "track_type": "historical-corridor",
+        "source_url": "https://www.siranah.de/sources/Sailing_Alone_Around_the_World__by__Joshua_Slocum.pdf",
         "anchors": [
           {
             "name": "Boston",
@@ -1500,6 +1500,12 @@
             "note": "Interpolated offshore control; not a recorded ship position."
           },
           {
+            "name": "Rio de Janeiro",
+            "lat": -22.91,
+            "lon": -43.17,
+            "note": "Documented November 1895 stop in Slocum's account; harbor locator, not a logged fix."
+          },
+          {
             "name": "South Atlantic off southeastern Brazil",
             "lat": -27.0,
             "lon": -45.0,
@@ -1512,10 +1518,28 @@
             "note": "Interpolated offshore control; not a recorded ship position."
           },
           {
+            "name": "Maldonado",
+            "lat": -34.92,
+            "lon": -54.95,
+            "note": "Documented anchorage in Slocum's account; bay locator, not a logged fix."
+          },
+          {
             "name": "Montevideo",
             "lat": -34.91,
             "lon": -56.16,
             "note": "South America stop."
+          },
+          {
+            "name": "Buenos Aires",
+            "lat": -34.6,
+            "lon": -58.37,
+            "note": "Documented stop and departure on 26 January 1896 in Slocum's account; harbor locator, not a logged fix."
+          },
+          {
+            "name": "Río de la Plata mouth (illustrative control)",
+            "lat": -35.25,
+            "lon": -57.0,
+            "note": "Illustrative estuary exit corridor; not a recorded ship position."
           },
           {
             "name": "South Atlantic east of Río de la Plata (illustrative control)",
@@ -1656,6 +1680,13 @@
             "note": "Voyage completion."
           }
         ]
+      }
+    ],
+    "additional_sources": [
+      {
+        "title": "Slocum's first-person voyage narrative",
+        "url": "https://www.siranah.de/sources/Sailing_Alone_Around_the_World__by__Joshua_Slocum.pdf",
+        "note": "Documents South American ports and Cape Virgins passage; no daily track digitized here."
       }
     ],
     "wiki_title": "Joshua Slocum",
@@ -3250,7 +3281,7 @@
     "source_title": "The Maiden Factor: Maiden's story",
     "source_url": "https://www.themaidenfactor.org/the-maiden-factor",
     "geometry_confidence": "high",
-    "geometry_note": "Race stopovers are known; each offshore racing leg is waypoint interpolation, not a navigational track.",
+    "geometry_note": "Race stopovers are known. A contemporary account describes Maiden's unusually southerly Punta del Este–Fremantle strategy; the south Indian Ocean controls depict that broad strategy without claiming recorded latitudes. Other offshore racing legs are likewise waypoint interpolation, not a navigational track.",
     "segments": [
       {
         "mode": "ocean racing",
@@ -3304,6 +3335,24 @@
             "lat": -34.36,
             "lon": 18.5,
             "note": "Great-cape routing control, not a logged fix."
+          },
+          {
+            "name": "South Indian Ocean west sector (illustrative southerly strategy)",
+            "lat": -45.0,
+            "lon": 40.0,
+            "note": "Illustrative southerly racing corridor consistent with the documented strategy; not a logged position or claimed latitude."
+          },
+          {
+            "name": "South Indian Ocean central sector (illustrative southerly strategy)",
+            "lat": -48.0,
+            "lon": 70.0,
+            "note": "Illustrative southerly racing corridor; not a logged position or claimed latitude."
+          },
+          {
+            "name": "South Indian Ocean east sector (illustrative southerly strategy)",
+            "lat": -44.0,
+            "lon": 100.0,
+            "note": "Illustrative southerly racing corridor; not a logged position or claimed latitude."
           },
           {
             "name": "Fremantle",
@@ -3402,6 +3451,13 @@
             "note": "Race finish."
           }
         ]
+      }
+    ],
+    "additional_sources": [
+      {
+        "title": "Maiden documentary voyage chronology",
+        "url": "https://www.sonyclassics.com/maiden/",
+        "note": "Describes the southerly Punta del Este–Fremantle strategy; does not supply exact positions."
       }
     ],
     "wiki_title": "Maiden (yacht)",

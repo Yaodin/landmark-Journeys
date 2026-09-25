@@ -25,7 +25,21 @@
     ],
     "query_url": null,
     "raw_response_sha256": null,
-    "retrieved_utc_date": "2026-09-24"
+    "supplemental_queries": [
+      {
+        "role": "JPL Moon body ephemeris used for reconstructed path",
+        "query_url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=301&EPHEM_TYPE=VECTORS&CENTER=500%40399&START_TIME=%271969-07-16+12%3A32%27&STOP_TIME=%271969-07-24+18%3A50%27&STEP_SIZE=1h&OUT_UNITS=KM-S&REF_PLANE=FRAME&REF_SYSTEM=ICRF&VEC_TABLE=2&VEC_CORR=NONE&TIME_TYPE=UT&CSV_FORMAT=YES",
+        "raw_response_sha256": "fc2566a2c8c8b1259db49aedbf9a53f315dc6321da2acbdd9ccd5bb635f37d92"
+      }
+    ],
+    "retrieved_utc_date": "2026-09-24",
+    "sample_origin_ranges": [
+      {
+        "first_index": 0,
+        "last_index": 1262,
+        "origin": "modeled_reconstruction"
+      }
+    ]
   },
   "stats": {
     "point_count": 1263,
